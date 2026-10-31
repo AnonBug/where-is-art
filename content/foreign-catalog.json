@@ -1,0 +1,3284 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-01",
+  "scopeNote": "西方绘画主线首批；时期为便于浏览的编辑分组，日期为大致范围，流派之间允许交叠。画家可跨越多个风格，本批归入一个主要目录。",
+  "periods": [
+    {
+      "id": "medieval",
+      "category": "foreign",
+      "name": "中世纪晚期",
+      "dateLabel": "13—14世纪",
+      "sourceUrl": "https://www.metmuseum.org/essays/italian-painting-of-the-later-middle-ages"
+    },
+    {
+      "id": "renaissance",
+      "category": "foreign",
+      "name": "文艺复兴",
+      "dateLabel": "约14—16世纪",
+      "sourceUrl": "https://www.nationalgalleries.org/art-and-artists/glossary-terms/renaissance"
+    },
+    {
+      "id": "mannerism",
+      "category": "foreign",
+      "name": "风格主义",
+      "dateLabel": "16世纪至17世纪初",
+      "sourceUrl": "https://www.metmuseum.org/essays/mannerism-bronzino-1503-1572-and-his-contemporaries"
+    },
+    {
+      "id": "baroque",
+      "category": "foreign",
+      "name": "巴洛克",
+      "dateLabel": "17世纪至18世纪初",
+      "sourceUrl": "https://www.nga.gov/artworks/baroque"
+    },
+    {
+      "id": "rococo",
+      "category": "foreign",
+      "name": "洛可可",
+      "dateLabel": "18世纪",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65364&service=ExternalInterface"
+    },
+    {
+      "id": "neoclassicism",
+      "category": "foreign",
+      "name": "新古典主义",
+      "dateLabel": "18世纪后期—19世纪",
+      "sourceUrl": "https://www.metmuseum.org/essays/neoclassicism"
+    },
+    {
+      "id": "romanticism",
+      "category": "foreign",
+      "name": "浪漫主义",
+      "dateLabel": "18世纪末—19世纪",
+      "sourceUrl": "https://www.metmuseum.org/essays/romanticism"
+    },
+    {
+      "id": "realism",
+      "category": "foreign",
+      "name": "现实主义",
+      "dateLabel": "19世纪中后期",
+      "sourceUrl": "https://www.metmuseum.org/essays/gustave-courbet-1819-1877"
+    },
+    {
+      "id": "impressionism",
+      "category": "foreign",
+      "name": "印象派",
+      "dateLabel": "19世纪后期",
+      "sourceUrl": "https://www.metmuseum.org/essays/impressionism-art-and-modernity"
+    },
+    {
+      "id": "post-impressionism",
+      "category": "foreign",
+      "name": "后印象派",
+      "dateLabel": "19世纪末—20世纪初",
+      "sourceUrl": "https://www.metmuseum.org/essays/post-impressionism"
+    },
+    {
+      "id": "neo-impressionism",
+      "category": "foreign",
+      "name": "新印象派",
+      "dateLabel": "19世纪后期",
+      "sourceUrl": "https://www.metmuseum.org/essays/post-impressionism"
+    },
+    {
+      "id": "symbolism",
+      "category": "foreign",
+      "name": "象征与新艺术",
+      "dateLabel": "19世纪末—20世纪初",
+      "sourceUrl": "https://www.belvedere.at/en/press/klimt-collection-belvedere"
+    },
+    {
+      "id": "expressionism",
+      "category": "foreign",
+      "name": "表现主义先声",
+      "dateLabel": "19世纪末—20世纪初",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939"
+    },
+    {
+      "id": "fauvism",
+      "category": "foreign",
+      "name": "野兽派",
+      "dateLabel": "约1904—1908",
+      "sourceUrl": "https://www.nga.gov/artworks/fauvism"
+    },
+    {
+      "id": "cubism",
+      "category": "foreign",
+      "name": "立体主义",
+      "dateLabel": "20世纪初",
+      "sourceUrl": "https://www.nga.gov/artworks/cubism"
+    },
+    {
+      "id": "abstraction",
+      "category": "foreign",
+      "name": "早期抽象绘画",
+      "dateLabel": "20世纪初",
+      "sourceUrl": "https://www.nga.gov/educational-resources/inquiring-eye-early-modernism-1900-1940"
+    }
+  ],
+  "artists": [
+    {
+      "id": "duccio",
+      "name": "杜乔",
+      "category": "foreign",
+      "periodId": "medieval",
+      "lifeLabel": "1278年前已活跃，卒于1318或1319",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/438754"
+    },
+    {
+      "id": "botticelli",
+      "name": "桑德罗·波提切利",
+      "category": "foreign",
+      "periodId": "renaissance",
+      "lifeLabel": "1445—1510",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/birth-of-venus"
+    },
+    {
+      "id": "raphael",
+      "name": "拉斐尔",
+      "category": "foreign",
+      "periodId": "renaissance",
+      "lifeLabel": "1483—1520",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437372"
+    },
+    {
+      "id": "bruegel",
+      "name": "老彼得·勃鲁盖尔",
+      "category": "foreign",
+      "periodId": "renaissance",
+      "lifeLabel": "约1525—1569",
+      "countryLabel": "尼德兰",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435809"
+    },
+    {
+      "id": "el-greco",
+      "name": "埃尔·格列柯",
+      "category": "foreign",
+      "periodId": "mannerism",
+      "lifeLabel": "1541—1614",
+      "countryLabel": "希腊，活跃于西班牙",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436575"
+    },
+    {
+      "id": "caravaggio",
+      "name": "卡拉瓦乔",
+      "category": "foreign",
+      "periodId": "baroque",
+      "lifeLabel": "1571—1610",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus"
+    },
+    {
+      "id": "rembrandt",
+      "name": "伦勃朗",
+      "category": "foreign",
+      "periodId": "baroque",
+      "lifeLabel": "1606—1669",
+      "countryLabel": "荷兰",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437394"
+    },
+    {
+      "id": "vermeer",
+      "name": "约翰内斯·维米尔",
+      "category": "foreign",
+      "periodId": "baroque",
+      "lifeLabel": "1632—1675",
+      "countryLabel": "荷兰",
+      "sourceUrl": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring"
+    },
+    {
+      "id": "velazquez",
+      "name": "迭戈·委拉斯开兹",
+      "category": "foreign",
+      "periodId": "baroque",
+      "lifeLabel": "1599—1660",
+      "countryLabel": "西班牙",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437869"
+    },
+    {
+      "id": "fragonard",
+      "name": "让-奥诺雷·弗拉戈纳尔",
+      "category": "foreign",
+      "periodId": "rococo",
+      "lifeLabel": "1732—1806",
+      "countryLabel": "法国",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65364&service=ExternalInterface"
+    },
+    {
+      "id": "david",
+      "name": "雅克-路易·大卫",
+      "category": "foreign",
+      "periodId": "neoclassicism",
+      "lifeLabel": "1748—1825",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436105"
+    },
+    {
+      "id": "ingres",
+      "name": "让-奥古斯特-多米尼克·安格尔",
+      "category": "foreign",
+      "periodId": "neoclassicism",
+      "lifeLabel": "1780—1867",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436708"
+    },
+    {
+      "id": "goya",
+      "name": "弗朗西斯科·戈雅",
+      "category": "foreign",
+      "periodId": "romanticism",
+      "lifeLabel": "1746—1828",
+      "countryLabel": "西班牙",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-3-of-may-in-madrid-or-the-executions/5e177409-2993-4240-97fb-847a02c6496c"
+    },
+    {
+      "id": "turner",
+      "name": "约瑟夫·马洛德·威廉·透纳",
+      "category": "foreign",
+      "periodId": "romanticism",
+      "lifeLabel": "1775—1851",
+      "countryLabel": "英国",
+      "sourceUrl": "https://www.clevelandart.org/art/1942.647"
+    },
+    {
+      "id": "delacroix",
+      "name": "欧仁·德拉克洛瓦",
+      "category": "foreign",
+      "periodId": "romanticism",
+      "lifeLabel": "1798—1863",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436180"
+    },
+    {
+      "id": "courbet",
+      "name": "古斯塔夫·库尔贝",
+      "category": "foreign",
+      "periodId": "realism",
+      "lifeLabel": "1819—1877",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436002"
+    },
+    {
+      "id": "millet",
+      "name": "让-弗朗索瓦·米勒",
+      "category": "foreign",
+      "periodId": "realism",
+      "lifeLabel": "1814—1875",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/des-glaneuses-342"
+    },
+    {
+      "id": "manet",
+      "name": "爱德华·马奈",
+      "category": "foreign",
+      "periodId": "impressionism",
+      "lifeLabel": "1832—1883",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436964"
+    },
+    {
+      "id": "monet",
+      "name": "克洛德·莫奈",
+      "category": "foreign",
+      "periodId": "impressionism",
+      "lifeLabel": "1840—1926",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.artic.edu/artworks/16568"
+    },
+    {
+      "id": "renoir",
+      "name": "皮埃尔-奥古斯特·雷诺阿",
+      "category": "foreign",
+      "periodId": "impressionism",
+      "lifeLabel": "1841—1919",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.artic.edu/artworks/14655"
+    },
+    {
+      "id": "degas",
+      "name": "埃德加·德加",
+      "category": "foreign",
+      "periodId": "impressionism",
+      "lifeLabel": "1834—1917",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436155"
+    },
+    {
+      "id": "cassatt",
+      "name": "玛丽·卡萨特",
+      "category": "foreign",
+      "periodId": "impressionism",
+      "lifeLabel": "1844—1926",
+      "countryLabel": "美国，活跃于法国",
+      "sourceUrl": "https://www.artic.edu/artworks/111442"
+    },
+    {
+      "id": "cezanne",
+      "name": "保罗·塞尚",
+      "category": "foreign",
+      "periodId": "post-impressionism",
+      "lifeLabel": "1839—1906",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435868"
+    },
+    {
+      "id": "van-gogh",
+      "name": "文森特·梵高",
+      "category": "foreign",
+      "periodId": "post-impressionism",
+      "lifeLabel": "1853—1890",
+      "countryLabel": "荷兰",
+      "sourceUrl": "https://www.moma.org/collection/works/79802"
+    },
+    {
+      "id": "gauguin",
+      "name": "保罗·高更",
+      "category": "foreign",
+      "periodId": "post-impressionism",
+      "lifeLabel": "1848—1903",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436449"
+    },
+    {
+      "id": "seurat",
+      "name": "乔治·修拉",
+      "category": "foreign",
+      "periodId": "neo-impressionism",
+      "lifeLabel": "1859—1891",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.artic.edu/artworks/27992"
+    },
+    {
+      "id": "klimt",
+      "name": "古斯塔夫·克里姆特",
+      "category": "foreign",
+      "periodId": "symbolism",
+      "lifeLabel": "1862—1918",
+      "countryLabel": "奥地利",
+      "sourceUrl": "https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar"
+    },
+    {
+      "id": "munch",
+      "name": "爱德华·蒙克",
+      "category": "foreign",
+      "periodId": "expressionism",
+      "lifeLabel": "1863—1944",
+      "countryLabel": "挪威",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939"
+    },
+    {
+      "id": "matisse",
+      "name": "亨利·马蒂斯",
+      "category": "foreign",
+      "periodId": "fauvism",
+      "lifeLabel": "1869—1954",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.nga.gov/artworks/106384-open-window-collioure"
+    },
+    {
+      "id": "gris",
+      "name": "胡安·格里斯",
+      "category": "foreign",
+      "periodId": "cubism",
+      "lifeLabel": "1887—1927",
+      "countryLabel": "西班牙，活跃于法国",
+      "sourceUrl": "https://www.artic.edu/artworks/8624"
+    },
+    {
+      "id": "kandinsky",
+      "name": "瓦西里·康定斯基",
+      "category": "foreign",
+      "periodId": "abstraction",
+      "lifeLabel": "1866—1944",
+      "countryLabel": "俄国出生，活跃于德法",
+      "sourceUrl": "https://www.artic.edu/artworks/8991"
+    },
+    {
+      "id": "mondrian",
+      "name": "皮特·蒙德里安",
+      "category": "foreign",
+      "periodId": "abstraction",
+      "lifeLabel": "1872—1944",
+      "countryLabel": "荷兰",
+      "sourceUrl": "https://www.artic.edu/artworks/109819"
+    }
+  ],
+  "artworks": [
+    {
+      "id": "duccio-madonna",
+      "artistIds": [
+        "duccio"
+      ],
+      "title": "圣母子",
+      "dateLabel": "约1290—1300年",
+      "medium": "木板蛋彩、金",
+      "description": "金色背景中的圣母低头注视怀中的孩子。纤细的衣纹和两人相接的视线，将庄严的圣像转化为亲密的母子形象。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/438754",
+      "note": ""
+    },
+    {
+      "id": "botticelli-birth-venus",
+      "artistIds": [
+        "botticelli"
+      ],
+      "title": "维纳斯的诞生",
+      "dateLabel": "约1485年",
+      "medium": "布面蛋彩",
+      "description": "维纳斯站在贝壳上抵达海岸，风神与迎接她的人物分列两侧。起伏的发丝、衣褶与海浪以线条贯穿画面。",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/birth-of-venus",
+      "note": ""
+    },
+    {
+      "id": "raphael-colonna-madonna",
+      "artistIds": [
+        "raphael"
+      ],
+      "title": "圣母子与诸圣（科隆纳祭坛画）",
+      "dateLabel": "约1504年",
+      "medium": "木板油彩、金",
+      "description": "圣母子居于高座中央，周围圣人的姿态形成稳定而有层次的群像。拱形画幅与均衡布局展现拉斐尔早期的祭坛画语言。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437372",
+      "note": "此处收录大都会馆藏的主体画板；原祭坛画的附属画板已分藏。"
+    },
+    {
+      "id": "bruegel-harvesters",
+      "artistIds": [
+        "bruegel"
+      ],
+      "title": "收割者",
+      "dateLabel": "1565年",
+      "medium": "橡木板油画",
+      "description": "近处的农人劳作、用餐和休息，远处的村庄与田野延伸至海面。收获季节的日常活动构成一幅开阔的乡村全景。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435809",
+      "note": ""
+    },
+    {
+      "id": "el-greco-toledo",
+      "artistIds": [
+        "el-greco"
+      ],
+      "title": "托莱多风景",
+      "dateLabel": "约1599—1600年",
+      "medium": "布面油画",
+      "description": "乌云压低了天空，城市轮廓在明亮的绿色山丘上浮现。建筑与山势经过重新组织，光色让风景带上强烈的情绪。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436575",
+      "note": ""
+    },
+    {
+      "id": "caravaggio-emmaus",
+      "artistIds": [
+        "caravaggio"
+      ],
+      "title": "以马忤斯的晚餐",
+      "dateLabel": "1601年",
+      "medium": "布面油画",
+      "description": "门徒在餐桌旁认出基督，伸展的手臂与前倾的身体将惊讶带向观者。明暗对比强化了人物动作和桌上静物的存在感。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus",
+      "note": "伦敦国家美术馆 NG172；与米兰布雷拉美术馆的1606年版本不同。"
+    },
+    {
+      "id": "rembrandt-aristotle",
+      "artistIds": [
+        "rembrandt"
+      ],
+      "title": "亚里士多德凝视荷马胸像",
+      "dateLabel": "1653年",
+      "medium": "布面油画",
+      "description": "亚里士多德的手停在荷马胸像上，衣料、金链与石膏像从暗处显现。光线把人物的思索和对历史的凝望留在同一空间。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437394",
+      "note": ""
+    },
+    {
+      "id": "vermeer-pearl",
+      "artistIds": [
+        "vermeer"
+      ],
+      "title": "戴珍珠耳环的少女",
+      "dateLabel": "约1665年",
+      "medium": "布面油画",
+      "description": "少女回首望向观者，头巾与耳环从深色背景中亮起。柔和的面部过渡与少量高光，使这一瞬间显得安静而鲜明。",
+      "sourceUrl": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring",
+      "note": "毛里茨皇家美术馆编号670；属于人物习作（tronie），并非身份已确定的委托肖像。"
+    },
+    {
+      "id": "vermeer-pitcher",
+      "artistIds": [
+        "vermeer"
+      ],
+      "title": "持水壶的年轻女子",
+      "dateLabel": "约1662年",
+      "medium": "布面油画",
+      "description": "窗边的女子一手触碰窗框，一手扶着水壶。窗光落在头巾、金属器皿和织物上，把日常室内凝聚为清晰的光色关系。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437881",
+      "note": ""
+    },
+    {
+      "id": "velazquez-pareja",
+      "artistIds": [
+        "velazquez"
+      ],
+      "title": "胡安·德·帕雷哈肖像",
+      "dateLabel": "1650年",
+      "medium": "布面油画",
+      "description": "人物略侧身体，目光直视观者。暗色衣服、白色衣领与自然的面部描绘，构成简洁而有力量的肖像。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437869",
+      "note": ""
+    },
+    {
+      "id": "fragonard-swing",
+      "artistIds": [
+        "fragonard"
+      ],
+      "title": "秋千",
+      "dateLabel": "约1767—1768年",
+      "medium": "布面油画",
+      "description": "粉色衣裙的女子荡向光亮处，花园的枝叶与曲线环绕人物。飞起的鞋子和隐约可见的旁观者，让画面充满轻巧的戏剧性。",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65364&service=ExternalInterface",
+      "note": ""
+    },
+    {
+      "id": "david-socrates",
+      "artistIds": [
+        "david"
+      ],
+      "title": "苏格拉底之死",
+      "dateLabel": "1787年",
+      "medium": "布面油画",
+      "description": "苏格拉底伸手接过毒药，另一只手仍举起讨论。弟子们的悲痛围绕着他，清晰的轮廓和建筑秩序凸显这一伦理抉择。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436105",
+      "note": ""
+    },
+    {
+      "id": "ingres-grisaille",
+      "artistIds": [
+        "ingres"
+      ],
+      "title": "灰调宫女",
+      "dateLabel": "约1824—1834年",
+      "medium": "布面油画",
+      "description": "安格尔以灰色层次描绘横卧人物，简化色彩后，伸展的身体轮廓成为视觉中心。画面可用来观察线条如何组织体积。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436708",
+      "note": "馆方署名为安格尔及其工作室（Ingres and Workshop）。大都会收藏的灰调版本；不是卢浮宫1814年的《大宫女》。"
+    },
+    {
+      "id": "goya-third-may",
+      "artistIds": [
+        "goya"
+      ],
+      "title": "1808年5月3日的枪杀",
+      "dateLabel": "1814年",
+      "medium": "布面油画",
+      "description": "灯光照亮了张开双臂的男子，行刑队的背影形成冷硬的重复。强烈的明暗和人物表情把战争暴力置于观者面前。",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-3-of-may-in-madrid-or-the-executions/5e177409-2993-4240-97fb-847a02c6496c",
+      "note": "画题中的1808年是事件发生年份；作品绘于1814年。"
+    },
+    {
+      "id": "turner-parliament",
+      "artistIds": [
+        "turner"
+      ],
+      "title": "议会大厦失火",
+      "dateLabel": "1835年",
+      "medium": "布面油画",
+      "description": "燃烧的建筑、烟云和倒影在河面上化成明亮的色带。桥梁与岸边人群保留空间尺度，火光则几乎吞没了物体的边界。",
+      "sourceUrl": "https://www.clevelandart.org/art/1942.647",
+      "note": "描绘1834年10月16日的火灾，绘于1835年；此处为克利夫兰馆藏版本。"
+    },
+    {
+      "id": "delacroix-natchez",
+      "artistIds": [
+        "delacroix"
+      ],
+      "title": "纳切兹人",
+      "dateLabel": "1823—1824年、1835年",
+      "medium": "布面油画",
+      "description": "一对夫妇带着婴儿停留在荒野中，低沉的暮色与远方的风景包围他们。人物的姿态和相互依靠，成为画面的情感中心。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436180",
+      "note": ""
+    },
+    {
+      "id": "courbet-parrot",
+      "artistIds": [
+        "courbet"
+      ],
+      "title": "女人与鹦鹉",
+      "dateLabel": "1866年",
+      "medium": "布面油画",
+      "description": "女子斜卧在白色织物上，抬手与鹦鹉相接。身体、披散的头发与凌乱布料，以直接的质感呈现现实中的人物。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436002",
+      "note": ""
+    },
+    {
+      "id": "millet-gleaners",
+      "artistIds": [
+        "millet"
+      ],
+      "title": "拾穗者",
+      "dateLabel": "1857年",
+      "medium": "布面油画",
+      "description": "三名妇女在收割后的田地里弯腰拾穗，反复的动作排列在前景。远方丰收的景象，与近处缓慢而辛苦的劳动形成对照。",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/des-glaneuses-342",
+      "note": ""
+    },
+    {
+      "id": "manet-young-lady",
+      "artistIds": [
+        "manet"
+      ],
+      "title": "1866年的年轻女子",
+      "dateLabel": "1866年",
+      "medium": "布面油画",
+      "description": "身穿粉色长袍的女子站在浅暗背景前，鹦鹉与剥开的橙子分布在身旁。简化的空间与宽阔色面，突出了现代人物的姿态。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436964",
+      "note": "马奈与印象派关系密切，但没有参加印象派联展；此处按现代绘画主线编排。"
+    },
+    {
+      "id": "monet-water-lilies",
+      "artistIds": [
+        "monet"
+      ],
+      "title": "睡莲",
+      "dateLabel": "1906年",
+      "medium": "布面油画",
+      "description": "水面上的叶片、花朵和天空倒影相互交织，岸线退到画幅之外。短促而松动的笔触让水、光与植物难以完全分开。",
+      "sourceUrl": "https://www.artic.edu/artworks/16568",
+      "note": "芝加哥艺术博物馆1906年版本。"
+    },
+    {
+      "id": "monet-water-lily-pond",
+      "artistIds": [
+        "monet"
+      ],
+      "title": "睡莲池",
+      "dateLabel": "1900年",
+      "medium": "布面油画",
+      "description": "拱桥横跨浓密的绿意，池中的睡莲和倒影铺满前景。桥的弧线将上下两部分联系起来，形成一座由光色构成的花园。",
+      "sourceUrl": "https://www.artic.edu/artworks/87088",
+      "note": "芝加哥艺术博物馆1900年版本。"
+    },
+    {
+      "id": "renoir-two-sisters",
+      "artistIds": [
+        "renoir"
+      ],
+      "title": "两姐妹（露台上）",
+      "dateLabel": "1881年",
+      "medium": "布面油画",
+      "description": "两个人物坐在花木环绕的露台上，鲜艳的帽子与毛线篮呼应。细碎的笔触让背景保持流动，人物面部则相对清晰。",
+      "sourceUrl": "https://www.artic.edu/artworks/14655",
+      "note": "画题为《两姐妹》，但画中两位模特并非姐妹。"
+    },
+    {
+      "id": "degas-rehearsal",
+      "artistIds": [
+        "degas"
+      ],
+      "title": "舞台上的芭蕾排练",
+      "dateLabel": "约1874年",
+      "medium": "纸上油彩，兼用水彩、粉彩和钢笔墨线，后裱于画布",
+      "description": "舞者分散在舞台上，有人排练，有人等待。偏斜的视角、局部截断的人体和前后景差异，记录了演出之外的瞬间。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436155",
+      "note": ""
+    },
+    {
+      "id": "cassatt-bath",
+      "artistIds": [
+        "cassatt"
+      ],
+      "title": "孩子的沐浴",
+      "dateLabel": "1893年",
+      "medium": "布面油画",
+      "description": "女子俯身为孩子洗脚，环抱的手臂将两人连在一起。俯视的角度和地毯、衣裙上的图案，让日常照料具有鲜明的构图秩序。",
+      "sourceUrl": "https://www.artic.edu/artworks/111442",
+      "note": ""
+    },
+    {
+      "id": "cezanne-card-players",
+      "artistIds": [
+        "cezanne"
+      ],
+      "title": "玩纸牌者",
+      "dateLabel": "1890—1892年",
+      "medium": "布面油画",
+      "description": "桌旁的男子专注于纸牌，站立人物和背景器物构成平静的垂直关系。厚实的色块将人物、桌面与墙壁组织成稳定的结构。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435868",
+      "note": "大都会馆藏的多人版本；《玩纸牌者》系列另有不同构图。"
+    },
+    {
+      "id": "cezanne-apples",
+      "artistIds": [
+        "cezanne"
+      ],
+      "title": "苹果篮",
+      "dateLabel": "约1893年",
+      "medium": "布面油画",
+      "description": "苹果、酒瓶与白色桌布在倾斜的桌面上展开。不同物体仿佛来自略有差别的观看角度，色块与轮廓共同维持画面平衡。",
+      "sourceUrl": "https://www.artic.edu/artworks/111436",
+      "note": ""
+    },
+    {
+      "id": "van-gogh-starry-night",
+      "artistIds": [
+        "van-gogh"
+      ],
+      "title": "星月夜",
+      "dateLabel": "1889年6月",
+      "medium": "布面油画",
+      "description": "旋转的星空覆盖村庄，深色柏树向上伸入夜色。月亮、星光与山脉的曲线构成起伏的节奏，厚重笔触使天空具有流动感。",
+      "sourceUrl": "https://www.moma.org/collection/works/79802",
+      "note": "纽约现代艺术博物馆版本；创作日期沿用馆方记录，不与《罗讷河上的星夜》混淆。"
+    },
+    {
+      "id": "van-gogh-cypresses",
+      "artistIds": [
+        "van-gogh"
+      ],
+      "title": "有柏树的麦田",
+      "dateLabel": "1889年",
+      "medium": "布面油画",
+      "description": "金色麦田与深绿柏树相邻，云层在蓝天中盘旋。方向鲜明的笔触把麦穗、树木和云朵转化为相互回应的运动。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436535",
+      "note": "大都会馆藏版本；同题另有其他版本。"
+    },
+    {
+      "id": "gauguin-siesta",
+      "artistIds": [
+        "gauguin"
+      ],
+      "title": "午睡",
+      "dateLabel": "约1892—1894年",
+      "medium": "布面油画",
+      "description": "几位女子在屋檐下休息，前景的红褐色地面与远处的绿意相接。轮廓、平涂色面和人物之间的距离构成安静的节奏。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436449",
+      "note": ""
+    },
+    {
+      "id": "seurat-grande-jatte",
+      "artistIds": [
+        "seurat"
+      ],
+      "title": "大碗岛的星期日下午",
+      "dateLabel": "1884—1886年",
+      "medium": "布面油画（1888—1889年加绘边框）",
+      "description": "河岸上的游人、树影与船只被组织为整齐的形状。细密色点在观看距离中融合，静止的人群与明亮草地形成独特的节奏。",
+      "sourceUrl": "https://www.artic.edu/artworks/27992",
+      "note": "收录芝加哥的正式大画，不是大都会收藏的习作；画题中的1884不是唯一创作年份。"
+    },
+    {
+      "id": "klimt-kiss",
+      "artistIds": [
+        "klimt"
+      ],
+      "title": "吻",
+      "dateLabel": "约1907—1909年",
+      "medium": "布面油彩、金银及铂等金属箔",
+      "description": "一对恋人在花地边缘相拥，身体被金色织纹和几何图案包围。面部与双手保留真实质感，衣袍则融入平面的装饰空间。",
+      "sourceUrl": "https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar",
+      "note": "年代采用美景宫最新藏品记录；旧资料常写1908—1909年。图像使用Commons所载Google Art Project版本。"
+    },
+    {
+      "id": "munch-scream",
+      "artistIds": [
+        "munch"
+      ],
+      "title": "呐喊",
+      "dateLabel": "1893年",
+      "medium": "纸板上蛋彩与油性蜡笔",
+      "description": "前景人物捧住面颊，桥的直线通向远处，而天空与水岸弯曲起伏。形体的扭动和不自然的颜色把情绪变成可见的空间。",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939",
+      "note": "挪威国家博物馆 NG.M.00939；不混用1895年粉彩版或蒙克博物馆约1910年版本。媒材按现馆方记录。"
+    },
+    {
+      "id": "matisse-open-window",
+      "artistIds": [
+        "matisse"
+      ],
+      "title": "科利乌尔的敞窗",
+      "dateLabel": "1905年",
+      "medium": "布面油画",
+      "description": "敞开的窗扇围住港口景色，墙面、花盆与船帆被涂成鲜明色块。色彩不再只追随物体的自然外观，也直接组织空间和情绪。",
+      "sourceUrl": "https://www.nga.gov/artworks/106384-open-window-collioure",
+      "note": ""
+    },
+    {
+      "id": "gris-picasso",
+      "artistIds": [
+        "gris"
+      ],
+      "title": "巴勃罗·毕加索肖像",
+      "dateLabel": "1912年1—2月",
+      "medium": "布面油画",
+      "description": "人物的头部、衣服和手被分解为交叠的几何平面。有限的色调把形体连接起来，使肖像在可辨识的人物与抽象结构之间展开。",
+      "sourceUrl": "https://www.artic.edu/artworks/8624",
+      "note": "作者是胡安·格里斯，画中人物为毕加索；图像采用Commons公版复制品。"
+    },
+    {
+      "id": "kandinsky-cannons",
+      "artistIds": [
+        "kandinsky"
+      ],
+      "title": "即兴第30号（大炮）",
+      "dateLabel": "1913年",
+      "medium": "布面油画",
+      "description": "黑色线条穿过红、蓝、黄等色块，若隐若现的形象被自由节奏打散。画面保留“大炮”的联想，同时把注意力引向色彩与运动。",
+      "sourceUrl": "https://www.artic.edu/artworks/8991",
+      "note": ""
+    },
+    {
+      "id": "mondrian-lozenge",
+      "artistIds": [
+        "mondrian"
+      ],
+      "title": "黄、黑、蓝、红与灰的菱形构图",
+      "dateLabel": "1921年",
+      "medium": "布面油画",
+      "description": "画布旋转成菱形，黑色水平与垂直线仍保持正交。少量原色与灰白区域在边缘被切断，形成严格又不对称的平衡。",
+      "sourceUrl": "https://www.artic.edu/artworks/109819",
+      "note": ""
+    },
+    {
+      "id": "el-greco-vision",
+      "artistIds": [
+        "el-greco"
+      ],
+      "title": "圣约翰的异象",
+      "dateLabel": "约1608—1614年",
+      "medium": "布面油画",
+      "description": "拉长的人体与翻卷的衣褶构成上升的节奏，人物的手势指向画面之外。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436576",
+      "note": ""
+    },
+    {
+      "id": "el-greco-assumption",
+      "artistIds": [
+        "el-greco"
+      ],
+      "title": "圣母升天",
+      "dateLabel": "1577—1579年",
+      "medium": "布面油画",
+      "description": "地上的人物与云端的圣母形成上下呼应，明亮衣袍穿过深色背景。",
+      "sourceUrl": "https://www.artic.edu/artworks/87479",
+      "note": ""
+    },
+    {
+      "id": "el-greco-martin",
+      "artistIds": [
+        "el-greco"
+      ],
+      "title": "圣马丁与乞丐",
+      "dateLabel": "约1597—约1600年",
+      "medium": "布面油画",
+      "description": "骑士俯身分出披风，马匹、人物与远方城市被组织成修长的轮廓。",
+      "sourceUrl": "https://www.artic.edu/artworks/67362",
+      "note": "芝加哥馆藏的小幅版本；与华盛顿国家美术馆的大幅版本不同。"
+    },
+    {
+      "id": "rembrandt-gold-chain",
+      "artistIds": [
+        "rembrandt"
+      ],
+      "title": "戴金链的老人",
+      "dateLabel": "1631年",
+      "medium": "木板油画",
+      "description": "光线照亮老人的脸与金链，厚重衣料和暗色背景衬托出缓慢而专注的目光。",
+      "sourceUrl": "https://www.artic.edu/artworks/95998",
+      "note": ""
+    },
+    {
+      "id": "fragonard-letter",
+      "artistIds": [
+        "fragonard"
+      ],
+      "title": "情书",
+      "dateLabel": "1770年代初",
+      "medium": "布面油画",
+      "description": "女子从书写中回头，花束、纸张与衣袖将人物围在柔和的室内光线里。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436322",
+      "note": ""
+    },
+    {
+      "id": "fragonard-avenue",
+      "artistIds": [
+        "fragonard"
+      ],
+      "title": "林荫大道",
+      "dateLabel": "约1775年",
+      "medium": "木板油画",
+      "description": "高大的树冠遮住天空，林间道路把视线引向远处的小人物。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436324",
+      "note": ""
+    },
+    {
+      "id": "david-lavoisier",
+      "artistIds": [
+        "david"
+      ],
+      "title": "拉瓦锡夫妇肖像",
+      "dateLabel": "1788年",
+      "medium": "布面油画",
+      "description": "夫妻与实验器具出现在同一张肖像中，红色桌布和清晰轮廓强调人物与知识的联系。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436106",
+      "note": ""
+    },
+    {
+      "id": "david-pastoret",
+      "artistIds": [
+        "david"
+      ],
+      "title": "帕斯托雷夫人与儿子",
+      "dateLabel": "1791—1792年",
+      "medium": "布面油画",
+      "description": "母亲与孩子留在简朴的室内，未完全完成的背景让人物的神情更加突出。",
+      "sourceUrl": "https://www.artic.edu/artworks/27307",
+      "note": "馆方注明作品未完成。"
+    },
+    {
+      "id": "ingres-leblanc",
+      "artistIds": [
+        "ingres"
+      ],
+      "title": "勒布朗夫人肖像",
+      "dateLabel": "1823年",
+      "medium": "布面油画",
+      "description": "安格尔以严谨轮廓描绘人物与衣饰，面部的光滑色调和布料纹样形成对照。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436703",
+      "note": ""
+    },
+    {
+      "id": "delacroix-lion-hunt",
+      "artistIds": [
+        "delacroix"
+      ],
+      "title": "猎狮",
+      "dateLabel": "1860—1861年",
+      "medium": "布面油画",
+      "description": "人物与狮子交错成旋转的动势，激烈的姿态和密集色彩制造紧张感。",
+      "sourceUrl": "https://www.artic.edu/artworks/81505",
+      "note": ""
+    },
+    {
+      "id": "delacroix-rebecca",
+      "artistIds": [
+        "delacroix"
+      ],
+      "title": "丽贝卡被劫",
+      "dateLabel": "1846年",
+      "medium": "布面油画",
+      "description": "人物、马匹和建筑沿对角线展开，鲜亮衣料在烟尘中构成戏剧性的焦点。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/438814",
+      "note": ""
+    },
+    {
+      "id": "courbet-jo",
+      "artistIds": [
+        "courbet"
+      ],
+      "title": "乔，美丽的爱尔兰姑娘",
+      "dateLabel": "1865—1866年",
+      "medium": "布面油画",
+      "description": "红发女子注视镜中的自己，头发与皮肤的质感成为这幅近距离肖像的中心。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436001",
+      "note": ""
+    },
+    {
+      "id": "courbet-calm-sea",
+      "artistIds": [
+        "courbet"
+      ],
+      "title": "平静的海",
+      "dateLabel": "1869年",
+      "medium": "布面油画",
+      "description": "宽阔天空与水平海岸分割画面，细微色差把海面、沙滩与云层区分开。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436005",
+      "note": ""
+    },
+    {
+      "id": "millet-flock",
+      "artistIds": [
+        "millet"
+      ],
+      "title": "牧羊人",
+      "dateLabel": "1871—1874年",
+      "medium": "布面油画",
+      "description": "羊群聚拢在牧人的周围，土地与天空的沉静色调呼应缓慢的劳作。",
+      "sourceUrl": "https://www.artic.edu/artworks/4776",
+      "note": ""
+    },
+    {
+      "id": "millet-haystacks",
+      "artistIds": [
+        "millet"
+      ],
+      "title": "干草堆：秋",
+      "dateLabel": "约1874年",
+      "medium": "布面油画",
+      "description": "巨大的草堆立在田野上，人物和羊群的尺度衬托收获季节的乡村景象。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437097",
+      "note": ""
+    },
+    {
+      "id": "manet-races",
+      "artistIds": [
+        "manet"
+      ],
+      "title": "隆尚赛马",
+      "dateLabel": "1866年",
+      "medium": "布面油画",
+      "description": "赛马迎面而来，奔跑的马匹与观众形成快速而零碎的视觉印象。",
+      "sourceUrl": "https://www.artic.edu/artworks/81533",
+      "note": ""
+    },
+    {
+      "id": "monet-train",
+      "artistIds": [
+        "monet"
+      ],
+      "title": "诺曼底列车驶入圣拉扎尔车站",
+      "dateLabel": "1877年",
+      "medium": "布面油画",
+      "description": "蒸汽在车站钢架下升起，列车、行人与顶棚在光雾中时隐时现。",
+      "sourceUrl": "https://www.artic.edu/artworks/16571",
+      "note": ""
+    },
+    {
+      "id": "monet-wheat",
+      "artistIds": [
+        "monet"
+      ],
+      "title": "麦垛：夏末",
+      "dateLabel": "1890—1891年",
+      "medium": "布面油画",
+      "description": "两座麦垛占据田野前景，草地与天空的色彩变化让日常景物成为光线的记录。",
+      "sourceUrl": "https://www.artic.edu/artworks/64818",
+      "note": ""
+    },
+    {
+      "id": "monet-cliff",
+      "artistIds": [
+        "monet"
+      ],
+      "title": "普尔维尔的悬崖漫步",
+      "dateLabel": "1882年",
+      "medium": "布面油画",
+      "description": "人物沿草坡走向海边，风中的植物与海面短笔触连接成开阔的空气感。",
+      "sourceUrl": "https://www.artic.edu/artworks/14620",
+      "note": ""
+    },
+    {
+      "id": "monet-parliament",
+      "artistIds": [
+        "monet"
+      ],
+      "title": "伦敦议会大厦",
+      "dateLabel": "1900—1901年",
+      "medium": "布面油画",
+      "description": "议会大厦的剪影浮在水汽中，建筑和倒影被相近的冷暖色包围。",
+      "sourceUrl": "https://www.artic.edu/artworks/16584",
+      "note": ""
+    },
+    {
+      "id": "renoir-rowers",
+      "artistIds": [
+        "renoir"
+      ],
+      "title": "富尔奈斯餐厅的午餐",
+      "dateLabel": "1875年",
+      "medium": "布面油画",
+      "description": "露天餐桌旁的人物彼此交谈，衣服、餐具和树影在松动笔触中相接。",
+      "sourceUrl": "https://www.artic.edu/artworks/81555",
+      "note": "1875年的《富尔奈斯餐厅的午餐》，不同于菲利普斯收藏馆的《游船上的午餐》。"
+    },
+    {
+      "id": "renoir-piano",
+      "artistIds": [
+        "renoir"
+      ],
+      "title": "钢琴前的女子",
+      "dateLabel": "1875—1876年",
+      "medium": "布面油画",
+      "description": "弹琴者侧身坐在乐器前，衣裙的明亮色块与深色钢琴形成柔和对比。",
+      "sourceUrl": "https://www.artic.edu/artworks/25825",
+      "note": ""
+    },
+    {
+      "id": "degas-millinery",
+      "artistIds": [
+        "degas"
+      ],
+      "title": "女帽店",
+      "dateLabel": "1879—1886年",
+      "medium": "布面油画",
+      "description": "帽子从多个角度散布在室内，顾客与店员被安置在这些复杂形状之间。",
+      "sourceUrl": "https://www.artic.edu/artworks/14572",
+      "note": ""
+    },
+    {
+      "id": "degas-yellow-dancers",
+      "artistIds": [
+        "degas"
+      ],
+      "title": "黄色舞者（侧幕中）",
+      "dateLabel": "1874—1876年",
+      "medium": "布面油画",
+      "description": "黄裙舞者被舞台边缘截断，重叠身体和侧向视角表现候场的片刻。",
+      "sourceUrl": "https://www.artic.edu/artworks/18951",
+      "note": ""
+    },
+    {
+      "id": "degas-cafe-singer",
+      "artistIds": [
+        "degas"
+      ],
+      "title": "咖啡馆歌手",
+      "dateLabel": "1879年",
+      "medium": "布面油画",
+      "description": "灯光从下方照向歌手，演唱的手势与背景色块共同构成现场气氛。",
+      "sourceUrl": "https://www.artic.edu/artworks/84076",
+      "note": ""
+    },
+    {
+      "id": "cassatt-balcony",
+      "artistIds": [
+        "cassatt"
+      ],
+      "title": "阳台上",
+      "dateLabel": "1878—1879年",
+      "medium": "布面油画",
+      "description": "人物停在阳台的明暗交界处，栏杆与背景使日常姿态具有清楚的空间层次。",
+      "sourceUrl": "https://www.artic.edu/artworks/26650",
+      "note": ""
+    },
+    {
+      "id": "cassatt-bullfight",
+      "artistIds": [
+        "cassatt"
+      ],
+      "title": "斗牛之后",
+      "dateLabel": "1873年",
+      "medium": "布面油画",
+      "description": "斗牛士脱下表演时的紧张姿态，服装与身体的轮廓呈现休息中的人物。",
+      "sourceUrl": "https://www.artic.edu/artworks/31816",
+      "note": ""
+    },
+    {
+      "id": "cezanne-marseille",
+      "artistIds": [
+        "cezanne"
+      ],
+      "title": "从埃斯塔克眺望马赛湾",
+      "dateLabel": "约1885年",
+      "medium": "布面油画",
+      "description": "房屋、海湾与山脉被概括为层叠色块，树木在前景框住远处的蓝色。",
+      "sourceUrl": "https://www.artic.edu/artworks/16487",
+      "note": ""
+    },
+    {
+      "id": "cezanne-yellow-chair",
+      "artistIds": [
+        "cezanne"
+      ],
+      "title": "黄椅上的塞尚夫人",
+      "dateLabel": "1888—1890年",
+      "medium": "布面油画",
+      "description": "人物正坐于黄色椅中，面部、衣裙与背景以冷暖色块建立稳定的体积。",
+      "sourceUrl": "https://www.artic.edu/artworks/62371",
+      "note": ""
+    },
+    {
+      "id": "van-gogh-bedroom",
+      "artistIds": [
+        "van-gogh"
+      ],
+      "title": "阿尔勒的卧室",
+      "dateLabel": "1889年",
+      "medium": "布面油画",
+      "description": "家具与墙面倾斜相接，鲜明色彩把简朴房间转化为富有节奏的私人空间。",
+      "sourceUrl": "https://www.artic.edu/artworks/28560",
+      "note": "芝加哥艺术博物馆1889年版本；与阿姆斯特丹、巴黎所藏版本分别记录。"
+    },
+    {
+      "id": "van-gogh-self-portrait",
+      "artistIds": [
+        "van-gogh"
+      ],
+      "title": "自画像",
+      "dateLabel": "1887年",
+      "medium": "画板油画，后固定于木板",
+      "description": "短小而方向明确的色点围绕面部，眼神与胡须在冷暖交错中浮现。",
+      "sourceUrl": "https://www.artic.edu/artworks/80607",
+      "note": ""
+    },
+    {
+      "id": "van-gogh-roses",
+      "artistIds": [
+        "van-gogh"
+      ],
+      "title": "玫瑰",
+      "dateLabel": "1890年",
+      "medium": "布面油画",
+      "description": "白色花朵从绿色花瓶中涌出，弯曲枝叶和密集笔触把静物变成充满生长感的形状。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436534",
+      "note": "大都会所藏竖幅版本；与华盛顿国家美术馆的横幅玫瑰静物分开。"
+    },
+    {
+      "id": "gauguin-day-god",
+      "artistIds": [
+        "gauguin"
+      ],
+      "title": "神之日",
+      "dateLabel": "1894年",
+      "medium": "亚麻布面油画",
+      "description": "人物与雕像分布于海岸，前景水面转化为鲜明色块与弯曲形状。",
+      "sourceUrl": "https://www.artic.edu/artworks/27943",
+      "note": ""
+    },
+    {
+      "id": "gauguin-arlesiennes",
+      "artistIds": [
+        "gauguin"
+      ],
+      "title": "阿尔勒的女人们（西北风）",
+      "dateLabel": "1888年",
+      "medium": "黄麻布面油画",
+      "description": "几位女子穿过树木之间，倾斜路径与被风吹动的姿态构成不安的节奏。",
+      "sourceUrl": "https://www.artic.edu/artworks/19339",
+      "note": ""
+    },
+    {
+      "id": "gauguin-tehamana",
+      "artistIds": [
+        "gauguin"
+      ],
+      "title": "特哈玛娜的祖先",
+      "dateLabel": "1893年",
+      "medium": "黄麻布面油画",
+      "description": "女子正面端坐，背景符号与植物围绕人物，平面的颜色强调画中的象征关系。",
+      "sourceUrl": "https://www.artic.edu/artworks/60812",
+      "note": ""
+    },
+    {
+      "id": "seurat-sideshow",
+      "artistIds": [
+        "seurat"
+      ],
+      "title": "马戏团的招徕表演",
+      "dateLabel": "1887—1888年",
+      "medium": "布面油画",
+      "description": "夜色中的乐手与观众被灯光照亮，点彩和横向排列让热闹场景显得凝固。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437654",
+      "note": ""
+    },
+    {
+      "id": "kandinsky-poplars",
+      "artistIds": [
+        "kandinsky"
+      ],
+      "title": "两棵白杨的风景",
+      "dateLabel": "1912年",
+      "medium": "布面油画",
+      "description": "树木、道路与建筑仍可辨认，明亮色块却已开始脱离自然颜色独立运动。",
+      "sourceUrl": "https://www.artic.edu/artworks/8980",
+      "note": ""
+    },
+    {
+      "id": "kandinsky-green",
+      "artistIds": [
+        "kandinsky"
+      ],
+      "title": "绿色中心的绘画",
+      "dateLabel": "1913年",
+      "medium": "布面油画",
+      "description": "绿色色块成为画面的中心，黑线、圆弧和鲜艳颜色在周围形成张力。",
+      "sourceUrl": "https://www.artic.edu/artworks/8987",
+      "note": ""
+    },
+    {
+      "id": "kandinsky-troika",
+      "artistIds": [
+        "kandinsky"
+      ],
+      "title": "三驾马车",
+      "dateLabel": "1911年1月18日",
+      "medium": "纸板油画，含画家绘制的画框",
+      "description": "马车的轮廓融入强烈色彩和流动线条，具象场景逐渐转化为节奏。",
+      "sourceUrl": "https://www.artic.edu/artworks/8983",
+      "note": ""
+    },
+    {
+      "id": "mondrian-farm",
+      "artistIds": [
+        "mondrian"
+      ],
+      "title": "迪芬德雷赫特附近的农舍",
+      "dateLabel": "约1916年",
+      "medium": "布面油画",
+      "description": "树干与水中倒影形成近乎规则的线网，仍然可辨认的农舍隐藏在枝条后。",
+      "sourceUrl": "https://www.artic.edu/artworks/144467",
+      "note": ""
+    },
+    {
+      "id": "mondrian-gray-red",
+      "artistIds": [
+        "mondrian"
+      ],
+      "title": "构图（一号）：灰与红",
+      "dateLabel": "1935年",
+      "medium": "布面油画",
+      "description": "黑色直线切分灰白平面，少量红色改变画面重量，建立不对称的均衡。",
+      "sourceUrl": "https://www.artic.edu/artworks/65821",
+      "note": ""
+    },
+    {
+      "id": "duccio-maesta",
+      "artistIds": [
+        "duccio"
+      ],
+      "title": "庄严圣母（正面主画板）",
+      "dateLabel": "1308—1311年",
+      "medium": "木板蛋彩、金",
+      "description": "圣母子居于金色宝座，天使与圣人分列两旁，整齐的人群环绕着中央的安静形象。",
+      "sourceUrl": "https://archivi.operaduomo.siena.it/opere/scheda/?id=166",
+      "note": "此图为正面主画板；原祭坛画已拆分，附属画板不作为同一幅全图收录。"
+    },
+    {
+      "id": "duccio-crevole",
+      "artistIds": [
+        "duccio"
+      ],
+      "title": "克雷沃莱圣母",
+      "dateLabel": "约1283—1284年",
+      "medium": "木板蛋彩、金",
+      "description": "圣母的手托住孩子，细长指尖与衣袍上的金线延续圣像传统，脸部却出现柔和的明暗。",
+      "sourceUrl": "https://archivi.operaduomo.siena.it/opere/scheda/?id=137",
+      "note": ""
+    },
+    {
+      "id": "botticelli-spring",
+      "artistIds": [
+        "botticelli"
+      ],
+      "title": "春",
+      "dateLabel": "约1480年",
+      "medium": "木板油性蛋彩",
+      "description": "花木茂密的园中，人物沿横向展开，衣裙与手势将彼此连接成流动的节奏。",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/botticelli-spring",
+      "note": "年代采用乌菲齐现行记录“约1480年”。"
+    },
+    {
+      "id": "botticelli-magnificat",
+      "artistIds": [
+        "botticelli"
+      ],
+      "title": "圣母颂",
+      "dateLabel": "约1483年",
+      "medium": "木板蛋彩",
+      "description": "圣母在书页上书写，孩子与天使围绕她，弯曲的身体与圆形画幅互相呼应。",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/botticelli-madonna-of-the-magnificat",
+      "note": ""
+    },
+    {
+      "id": "botticelli-mystic-nativity",
+      "artistIds": [
+        "botticelli"
+      ],
+      "title": "神秘的诞生",
+      "dateLabel": "1500年",
+      "medium": "布面油画",
+      "description": "天使在天空中围成圆环，人物在地面拥抱，基督诞生的场景贯穿画面的上下层次。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/sandro-botticelli-mystic-nativity",
+      "note": ""
+    },
+    {
+      "id": "raphael-sistine",
+      "artistIds": [
+        "raphael"
+      ],
+      "title": "西斯廷圣母",
+      "dateLabel": "1512—1513年",
+      "medium": "布面油画",
+      "description": "帷幕向两旁打开，圣母抱着孩子踏云而来，下方的圣人与小天使引导观者的目光。",
+      "sourceUrl": "https://artsandculture.google.com/asset/the-sistine-madonna/CgEiMJRg7ZS6DA",
+      "note": ""
+    },
+    {
+      "id": "raphael-athens",
+      "artistIds": [
+        "raphael"
+      ],
+      "title": "雅典学院",
+      "dateLabel": "1509—1511年",
+      "medium": "湿壁画",
+      "description": "哲学家们在宏伟建筑中交谈、书写与思考，中央透视将人群和空间统一起来。",
+      "sourceUrl": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html",
+      "note": "原址壁画，位于梵蒂冈博物馆拉斐尔画室的签字厅。"
+    },
+    {
+      "id": "raphael-castiglione",
+      "artistIds": [
+        "raphael"
+      ],
+      "title": "巴尔达萨雷·卡斯蒂廖内肖像",
+      "dateLabel": "约1514—1515年",
+      "medium": "布面油画",
+      "description": "人物双手交叠，深浅相间的衣料围住沉静的面孔，柔和色调使肖像显得亲近。",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066418",
+      "note": ""
+    },
+    {
+      "id": "bruegel-hunters",
+      "artistIds": [
+        "bruegel"
+      ],
+      "title": "雪中猎人",
+      "dateLabel": "1565年",
+      "medium": "橡木板油画",
+      "description": "猎人与猎犬从坡上返回，冰面上的人群、村落和雪山将冬日生活铺展到远方。",
+      "sourceUrl": "https://press.khm.at/fileadmin/content/KHM/Presse/2018/Bruegel/PT_Bruegel_E.pdf",
+      "note": ""
+    },
+    {
+      "id": "bruegel-babel",
+      "artistIds": [
+        "bruegel"
+      ],
+      "title": "巴别塔",
+      "dateLabel": "1563年",
+      "medium": "橡木板油画",
+      "description": "尚在建造的高塔压过周围城市，巨大的拱层与细小工人呈现雄心和工程之间的悬殊。",
+      "sourceUrl": "https://press.khm.at/fileadmin/content/KHM/Presse/2018/Bruegel/PT_Bruegel_E.pdf",
+      "note": "维也纳版本；与鹿特丹博伊曼斯博物馆的小幅版本分开。"
+    },
+    {
+      "id": "bruegel-wedding",
+      "artistIds": [
+        "bruegel"
+      ],
+      "title": "农民婚礼",
+      "dateLabel": "约1568年",
+      "medium": "橡木板油画",
+      "description": "宾客挤在谷仓里的长桌旁，送菜的人穿过前景，食物与手势串起热闹的宴席。",
+      "sourceUrl": "https://press.khm.at/fileadmin/content/KHM/Presse/2018/Bruegel/PT_Bruegel_E.pdf",
+      "note": ""
+    },
+    {
+      "id": "caravaggio-matthew",
+      "artistIds": [
+        "caravaggio"
+      ],
+      "title": "圣马太蒙召",
+      "dateLabel": "1599—1600年",
+      "medium": "布面油画",
+      "description": "一道斜光照进昏暗房间，桌旁人物的目光与手势在突然到来的召唤中相互回应。",
+      "sourceUrl": "https://saintlouis-rome.net/horaires-visite-opening-hours/caravage/",
+      "note": "原址作品，位于罗马圣路易吉教堂孔塔雷利礼拜堂。"
+    },
+    {
+      "id": "caravaggio-bacchus",
+      "artistIds": [
+        "caravaggio"
+      ],
+      "title": "酒神巴克斯",
+      "dateLabel": "约1598年",
+      "medium": "布面油画",
+      "description": "戴葡萄叶冠的青年举起酒杯，水果与玻璃器皿靠近画面边缘，明暗凸显可触的质感。",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/caravaggio-bacchus",
+      "note": ""
+    },
+    {
+      "id": "caravaggio-musicians",
+      "artistIds": [
+        "caravaggio"
+      ],
+      "title": "音乐家们",
+      "dateLabel": "1597年",
+      "medium": "布面油画",
+      "description": "几位青年挤在浅窄空间里准备奏乐，乐器、乐谱和面孔在近距离中交叠。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435844",
+      "note": ""
+    },
+    {
+      "id": "rembrandt-night-watch",
+      "artistIds": [
+        "rembrandt"
+      ],
+      "title": "夜巡",
+      "dateLabel": "1642年",
+      "medium": "布面油画",
+      "description": "民兵队伍正在集合，光线落在前景人物与身后的少女上，使群像拥有舞台般的动势。",
+      "sourceUrl": "https://www.rijksmuseum.nl/en/collection/SK-C-5",
+      "note": ""
+    },
+    {
+      "id": "rembrandt-jewish-bride",
+      "artistIds": [
+        "rembrandt"
+      ],
+      "title": "犹太新娘（以撒与利百加）",
+      "dateLabel": "约1665—1669年",
+      "medium": "布面油画",
+      "description": "男子的手轻放在女子胸前，两人的姿态安静而亲密，厚重颜料赋予衣料温暖的光泽。",
+      "sourceUrl": "https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66",
+      "note": ""
+    },
+    {
+      "id": "vermeer-milkmaid",
+      "artistIds": [
+        "vermeer"
+      ],
+      "title": "倒牛奶的女仆",
+      "dateLabel": "约1660年",
+      "medium": "布面油画",
+      "description": "女子专注地倒出细细的牛奶，窗光照亮面包、陶罐与墙壁，让平常动作显得凝定。",
+      "sourceUrl": "https://www.rijksmuseum.nl/en/collection/object/The-Milkmaid--42dd0e658c2979aec8e144d2357c55c0",
+      "note": ""
+    },
+    {
+      "id": "vermeer-art-painting",
+      "artistIds": [
+        "vermeer"
+      ],
+      "title": "绘画的艺术",
+      "dateLabel": "约1666—1668年",
+      "medium": "布面油画",
+      "description": "帷幕揭开画室，画家背对观者描绘模特，地图、吊灯与地砖构成精密的室内空间。",
+      "sourceUrl": "https://www.khm.at/en/visit/only-in-vienna",
+      "note": ""
+    },
+    {
+      "id": "velazquez-meninas",
+      "artistIds": [
+        "velazquez"
+      ],
+      "title": "宫娥",
+      "dateLabel": "1656年",
+      "medium": "布面油画",
+      "description": "公主和侍从停留在画室中央，画家、镜中人物与门口来客共同构成复杂的观看关系。",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f",
+      "note": ""
+    },
+    {
+      "id": "velazquez-venus",
+      "artistIds": [
+        "velazquez"
+      ],
+      "title": "镜前的维纳斯",
+      "dateLabel": "1647—1651年",
+      "medium": "布面油画",
+      "description": "维纳斯背向观者躺卧，镜子映出模糊的脸庞，身体曲线与织物褶皱相互呼应。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/diego-velazquez-the-toilet-of-venus-the-rokeby-venus",
+      "note": ""
+    },
+    {
+      "id": "velazquez-breda",
+      "artistIds": [
+        "velazquez"
+      ],
+      "title": "布雷达的投降",
+      "dateLabel": "约1635年",
+      "medium": "布面油画",
+      "description": "交出钥匙的双方在战场中央相遇，密集长矛与开阔天空衬托这一克制的历史场面。",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-lances-or-the-surrender-of-breda/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a",
+      "note": ""
+    },
+    {
+      "id": "fragonard-reading",
+      "artistIds": [
+        "fragonard"
+      ],
+      "title": "读书的少女",
+      "dateLabel": "约1769年",
+      "medium": "布面油画",
+      "description": "少女靠在软垫上阅读，明亮的黄色衣裙和轻快笔触使这一安静片刻充满活力。",
+      "sourceUrl": "https://www.nga.gov/artworks/46303-young-girl-reading",
+      "note": ""
+    },
+    {
+      "id": "david-horatii",
+      "artistIds": [
+        "david"
+      ],
+      "title": "荷拉斯兄弟之誓",
+      "dateLabel": "1784—1785年",
+      "medium": "布面油画",
+      "description": "兄弟们向父亲举起的剑伸出手臂，左侧的坚决姿态与右侧家人的悲伤形成对照。",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010062239",
+      "note": "原作署年1784，馆方记录实际于1785年完成；不是吉罗代等人绘制的摹本。"
+    },
+    {
+      "id": "ingres-odalisque",
+      "artistIds": [
+        "ingres"
+      ],
+      "title": "大宫女",
+      "dateLabel": "1814年",
+      "medium": "布面油画",
+      "description": "横卧人物回首望来，延展的身体线条与披挂的织物让画面在平面装饰和体积之间游移。",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010065566",
+      "note": ""
+    },
+    {
+      "id": "ingres-bertin",
+      "artistIds": [
+        "ingres"
+      ],
+      "title": "贝尔坦先生肖像",
+      "dateLabel": "1832年",
+      "medium": "布面油画",
+      "description": "人物双手撑在膝头，身体前倾，深色衣服与直接的目光建立坚定而有重量的形象。",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066845",
+      "note": ""
+    },
+    {
+      "id": "goya-second-may",
+      "artistIds": [
+        "goya"
+      ],
+      "title": "1808年5月2日的马德里起义",
+      "dateLabel": "1814年",
+      "medium": "布面油画",
+      "description": "骑兵与人群在街头激烈交战，交错的武器、身体和马匹把冲突推到画面近处。",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-2nd-of-may-1808-in-madrid-or-the-fight-against-the-mamelukes/f9429c69-fab1-44ac-a2a0-6b5ac753c681",
+      "note": "画题中的1808年是事件年份；创作年份为1814年。"
+    },
+    {
+      "id": "goya-parasol",
+      "artistIds": [
+        "goya"
+      ],
+      "title": "阳伞",
+      "dateLabel": "1777年",
+      "medium": "布面油画",
+      "description": "青年为女子撑起绿色阳伞，人物与鲜明衣饰组成轻松的户外场景。",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-parasol/a230a80f-a899-4535-9e90-ad883bd096c5",
+      "note": ""
+    },
+    {
+      "id": "goya-saturn",
+      "artistIds": [
+        "goya"
+      ],
+      "title": "农神吞噬其子",
+      "dateLabel": "1820—1823年",
+      "medium": "混合技法壁画，后转移至画布",
+      "description": "黑暗中的巨人睁大双眼，紧握的双手与零碎亮色构成令人不安的神话形象。",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/saturn/18110a75-b0e7-430c-bc73-2a4d55893bd6",
+      "note": "创作年代与媒材采用普拉多现行记录；文件名中的1819年不是本项目的定年依据。"
+    },
+    {
+      "id": "turner-temeraire",
+      "artistIds": [
+        "turner"
+      ],
+      "title": "战舰“无畏号”最后的归航",
+      "dateLabel": "1839年",
+      "medium": "布面油画",
+      "description": "古老战舰由小拖船牵引，日落与水面映照着船身，清晰轮廓逐渐融入金色空气。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-the-fighting-temeraire",
+      "note": ""
+    },
+    {
+      "id": "turner-rain-steam",
+      "artistIds": [
+        "turner"
+      ],
+      "title": "雨、蒸汽和速度——大西部铁路",
+      "dateLabel": "1844年",
+      "medium": "布面油画",
+      "description": "火车沿桥梁迎面而来，雨雾与蒸汽模糊了空间，斜向轨道仍保持着强烈的速度感。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-rain-steam-and-speed-the-great-western-railway",
+      "note": ""
+    },
+    {
+      "id": "turner-snow-storm",
+      "artistIds": [
+        "turner"
+      ],
+      "title": "暴风雪——港口外的汽船",
+      "dateLabel": "1842年",
+      "medium": "布面油画",
+      "description": "船只几乎隐没在旋转的云、水与烟雾中，弧形笔触把观者卷入风暴中心。",
+      "sourceUrl": "https://www.getty.edu/mobile/gettyguide/center/exhibitions/turner/artifacts/248344_2111.html",
+      "note": "泰特馆藏；来源页为盖蒂博物馆借展作品说明。"
+    },
+    {
+      "id": "delacroix-liberty",
+      "artistIds": [
+        "delacroix"
+      ],
+      "title": "自由引导人民",
+      "dateLabel": "1830年",
+      "medium": "布面油画",
+      "description": "举旗的女性带领人群越过街垒，烟雾、武器和三色旗把画面汇聚为向前的动势。",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010065872",
+      "note": "描绘1830年七月革命；采用2024年修复后的公版复制图。"
+    },
+    {
+      "id": "courbet-ornans",
+      "artistIds": [
+        "courbet"
+      ],
+      "title": "奥尔南的葬礼",
+      "dateLabel": "1849—1850年",
+      "medium": "布面油画",
+      "description": "送葬者沿画面横向排列，平凡的人物与开阔土地占据了原本属于宏大历史画的尺度。",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/un-enterrement-ornans-924",
+      "note": ""
+    },
+    {
+      "id": "millet-angelus",
+      "artistIds": [
+        "millet"
+      ],
+      "title": "晚祷",
+      "dateLabel": "1857—1859年",
+      "medium": "布面油画",
+      "description": "两位农人在田地中停下劳动，低头祈祷，工具与远处教堂将人物留在暮色中的乡村。",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/langelus-345",
+      "note": ""
+    },
+    {
+      "id": "manet-olympia",
+      "artistIds": [
+        "manet"
+      ],
+      "title": "奥林匹亚",
+      "dateLabel": "1863年",
+      "medium": "布面油画",
+      "description": "女子从床上直视观者，白色床单与深色背景形成鲜明对照，花束和黑猫分列画面两侧。",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/olympia-712",
+      "note": ""
+    },
+    {
+      "id": "manet-luncheon",
+      "artistIds": [
+        "manet"
+      ],
+      "title": "草地上的午餐",
+      "dateLabel": "1863年",
+      "medium": "布面油画",
+      "description": "几个人在林间停坐，前景静物、人物的目光和远处水边的身影打破传统的叙事秩序。",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/le-dejeuner-sur-lherbe-904",
+      "note": ""
+    },
+    {
+      "id": "renoir-moulin",
+      "artistIds": [
+        "renoir"
+      ],
+      "title": "煎饼磨坊的舞会",
+      "dateLabel": "1876年",
+      "medium": "布面油画",
+      "description": "树影下的人群交谈起舞，斑驳光点散落在脸庞和衣服上，构成流动的巴黎日常。",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/bal-du-moulin-de-la-galette-497",
+      "note": "奥赛博物馆的大幅版本；不与私人收藏的小幅版本混用。"
+    },
+    {
+      "id": "van-gogh-sunflowers",
+      "artistIds": [
+        "van-gogh"
+      ],
+      "title": "向日葵",
+      "dateLabel": "1888年",
+      "medium": "布面油画",
+      "description": "不同开放阶段的花朵伸出陶罐，黄色之间的细微差别与厚重笔触赋予静物强烈生命感。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers",
+      "note": "伦敦国家美术馆NG3863，1888年版本；不是阿姆斯特丹所藏1889年版本。"
+    },
+    {
+      "id": "seurat-bathers",
+      "artistIds": [
+        "seurat"
+      ],
+      "title": "阿尼埃尔的浴者",
+      "dateLabel": "1884年",
+      "medium": "布面油画",
+      "description": "年轻人沿河岸休息，人物的静止轮廓与远处工业景观形成清楚而宁静的空间。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/georges-seurat-bathers-at-asnieres",
+      "note": ""
+    },
+    {
+      "id": "seurat-circus",
+      "artistIds": [
+        "seurat"
+      ],
+      "title": "马戏团",
+      "dateLabel": "1890—1891年",
+      "medium": "布面油画",
+      "description": "骑手、白马和小丑在马戏场中跳跃，明亮色点与弧线使运动呈现规则的节奏。",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/le-cirque-542",
+      "note": ""
+    },
+    {
+      "id": "klimt-judith",
+      "artistIds": [
+        "klimt"
+      ],
+      "title": "朱迪思一号",
+      "dateLabel": "1901年",
+      "medium": "布面油彩、金",
+      "description": "人物从金色纹样中浮现，面部、首饰和衣饰的细节共同营造出暧昧而强烈的神情。",
+      "sourceUrl": "https://digital.belvedere.at/objects/3492/judith",
+      "note": "1901年的《朱迪思一号》；与1909年《朱迪思二号》分别记录。"
+    },
+    {
+      "id": "klimt-adele",
+      "artistIds": [
+        "klimt"
+      ],
+      "title": "阿黛尔·布洛赫-鲍尔肖像一号",
+      "dateLabel": "1907年",
+      "medium": "布面油彩、金、银",
+      "description": "人物的脸与双手从金色几何纹样中显现，服饰与背景几乎融为一体。",
+      "sourceUrl": "https://www.neuegalerie.org/womaningold",
+      "note": ""
+    },
+    {
+      "id": "klimt-attersee",
+      "artistIds": [
+        "klimt"
+      ],
+      "title": "阿特湖畔卡默城堡三号",
+      "dateLabel": "约1911—1912年",
+      "medium": "布面油画",
+      "description": "城堡和树木倒映在水面，密集色点把建筑、叶丛与湖水连接成近乎平面的纹理。",
+      "sourceUrl": "https://www.belvedere.at/institution",
+      "note": "采用美景宫现行标注“约1911—1912年”；旧资料常作1910年。"
+    },
+    {
+      "id": "munch-madonna",
+      "artistIds": [
+        "munch"
+      ],
+      "title": "圣母",
+      "dateLabel": "1894—1895年",
+      "medium": "布面油画",
+      "description": "女子闭目仰头，深色轮廓与流动背景围住身体，形象介于肖像和象征之间。",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00841",
+      "note": "挪威国家博物馆油画版本；不是同题版画。"
+    },
+    {
+      "id": "munch-sickchild",
+      "artistIds": [
+        "munch"
+      ],
+      "title": "生病的孩子",
+      "dateLabel": "1885—1886年",
+      "medium": "布面油画",
+      "description": "苍白的孩子靠着枕头，陪伴者低垂着头，两只相接的手成为情感汇聚处。",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00839",
+      "note": ""
+    },
+    {
+      "id": "munch-dance-life",
+      "artistIds": [
+        "munch"
+      ],
+      "title": "生命之舞",
+      "dateLabel": "1899—1900年",
+      "medium": "布面油画",
+      "description": "海岸边的人们相拥起舞，白、红、黑衣的人物沿前景展开，静止与运动交织。",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00941",
+      "note": ""
+    },
+    {
+      "id": "matisse-dance",
+      "artistIds": [
+        "matisse"
+      ],
+      "title": "舞蹈",
+      "dateLabel": "1910年",
+      "medium": "布面油画",
+      "description": "五个人牵手围成圆环，红色身体、绿色地面与蓝色天空将节奏化为最直接的色彩关系。",
+      "sourceUrl": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf",
+      "note": "艾尔米塔什1910年版本，定位总参谋部大楼；与MoMA1909年习作分开。"
+    },
+    {
+      "id": "matisse-red-studio",
+      "artistIds": [
+        "matisse"
+      ],
+      "title": "红色画室",
+      "dateLabel": "1911年",
+      "medium": "布面油画",
+      "description": "红色覆盖地面、墙壁与家具，细线勾出物件，画室里的作品则以各自的颜色显现。",
+      "sourceUrl": "https://www.moma.org/collection/works/78389",
+      "note": ""
+    },
+    {
+      "id": "matisse-hat",
+      "artistIds": [
+        "matisse"
+      ],
+      "title": "戴帽子的女人",
+      "dateLabel": "1905年",
+      "medium": "布面油画",
+      "description": "人物的脸、帽子与衣服由鲜艳色块组成，绿色与红色跨越自然肤色，直接表达光与情绪。",
+      "sourceUrl": "https://www.sfmoma.org/artwork/91.161/",
+      "note": ""
+    },
+    {
+      "id": "gris-sunblind",
+      "artistIds": [
+        "gris"
+      ],
+      "title": "百叶窗",
+      "dateLabel": "1914年",
+      "medium": "布面油彩、剪贴纸、粉笔",
+      "description": "窗帘、桌面和报纸被拆分又重新叠合，材料的纹理与画出的形状相互穿插。",
+      "sourceUrl": "https://www.metmuseum.org/es/perspectives/cubism-visual-games-juan-gris",
+      "note": "馆藏归属由大都会立体主义专题文章交叉核对为泰特；旧文件名的NG编号不作为现馆藏依据。"
+    },
+    {
+      "id": "gris-checked",
+      "artistIds": [
+        "gris"
+      ],
+      "title": "方格桌布上的静物",
+      "dateLabel": "1915年春",
+      "medium": "布面油彩、石墨",
+      "description": "杯子、瓶子、吉他和方格桌布交叠在桌上，物体同时呈现多个角度，构成紧密的平面结构。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/646469",
+      "note": "馆方记录用于核对作品；下载图像采用Commons公版复制品。"
+    },
+    {
+      "id": "mondrian-red-tree",
+      "artistIds": [
+        "mondrian"
+      ],
+      "title": "傍晚：红树",
+      "dateLabel": "1908—1910年",
+      "medium": "布面油画",
+      "description": "红色树枝向蓝色天空伸展，扭转的枝干与色彩对比显示出走向抽象之前的探索。",
+      "sourceUrl": "https://www.kunstmuseum.nl/en/collection/avond-evening-red-tree",
+      "note": ""
+    },
+    {
+      "id": "cassatt-boating",
+      "artistIds": [
+        "cassatt"
+      ],
+      "title": "泛舟聚会",
+      "dateLabel": "1893—1894年",
+      "medium": "布面油画",
+      "description": "母亲、孩子与划船人占据小船，弯曲船身和宽阔水面把人物组织成鲜明的形状。",
+      "sourceUrl": "https://www.nga.gov/artworks/46569-boating-party",
+      "note": ""
+    }
+  ],
+  "venues": [
+    {
+      "id": "artic",
+      "name": "芝加哥艺术博物馆",
+      "city": "芝加哥",
+      "country": "美国",
+      "coordinates": [
+        -87.62388889,
+        41.87944444
+      ],
+      "sourceUrl": "https://www.artic.edu/visit",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Art_Institute_of_Chicago",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "mauritshuis",
+      "name": "毛里茨皇家美术馆",
+      "city": "海牙",
+      "country": "荷兰",
+      "coordinates": [
+        4.3143,
+        52.0804
+      ],
+      "sourceUrl": "https://www.mauritshuis.nl/en/visit",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Mauritshuis",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "wallace",
+      "name": "华莱士收藏馆",
+      "city": "伦敦",
+      "country": "英国",
+      "coordinates": [
+        -0.153,
+        51.5175
+      ],
+      "sourceUrl": "https://www.wallacecollection.org/visit/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Wallace_Collection",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "prado",
+      "name": "普拉多博物馆",
+      "city": "马德里",
+      "country": "西班牙",
+      "coordinates": [
+        -3.6922,
+        40.4139
+      ],
+      "sourceUrl": "https://www.museodelprado.es/en/visit-the-museum",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Museo_del_Prado",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "orsay",
+      "name": "奥赛博物馆",
+      "city": "巴黎",
+      "country": "法国",
+      "coordinates": [
+        2.326527,
+        48.859972
+      ],
+      "sourceUrl": "https://www.musee-orsay.fr/en/visit",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Mus%C3%A9e_d'Orsay",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "moma",
+      "name": "纽约现代艺术博物馆",
+      "city": "纽约",
+      "country": "美国",
+      "coordinates": [
+        -73.9775,
+        40.7617
+      ],
+      "sourceUrl": "https://www.moma.org/visit/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Museum_of_Modern_Art",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "belvedere",
+      "name": "美景宫美术馆",
+      "city": "维也纳",
+      "country": "奥地利",
+      "coordinates": [
+        16.3808,
+        48.1914
+      ],
+      "sourceUrl": "https://www.belvedere.at/en/visit/upper-belvedere",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/%C3%96sterreichische_Galerie_Belvedere",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "national-norway",
+      "name": "挪威国家博物馆",
+      "city": "奥斯陆",
+      "country": "挪威",
+      "coordinates": [
+        10.7292,
+        59.9117
+      ],
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/visit/locations/the-national-museum/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/National_Museum_of_Norway",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。定位2022年开放的新馆，不使用旧国家美术馆地址。"
+    },
+    {
+      "id": "siena-opera",
+      "name": "锡耶纳主教座堂博物馆",
+      "city": "锡耶纳",
+      "country": "意大利",
+      "coordinates": [
+        11.3296,
+        43.3177
+      ],
+      "sourceUrl": "https://operaduomo.siena.it/",
+      "coordinateSourceUrl": "https://it.wikipedia.org/wiki/Museo_dell'Opera_del_Duomo_(Siena)",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "dresden",
+      "name": "德累斯顿历代大师画廊",
+      "city": "德累斯顿",
+      "country": "德国",
+      "coordinates": [
+        13.73466,
+        51.05338
+      ],
+      "sourceUrl": "https://gemaeldegalerie.skd.museum/en/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Gem%C3%A4ldegalerie_Alte_Meister",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "san-luigi",
+      "name": "圣路易吉教堂",
+      "city": "罗马",
+      "country": "意大利",
+      "coordinates": [
+        12.47472222,
+        41.89972222
+      ],
+      "sourceUrl": "https://saintlouis-rome.net/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/San_Luigi_dei_Francesi",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "rijks",
+      "name": "荷兰国立博物馆",
+      "city": "阿姆斯特丹",
+      "country": "荷兰",
+      "coordinates": [
+        4.8853,
+        52.36
+      ],
+      "sourceUrl": "https://www.rijksmuseum.nl/en/visit",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Rijksmuseum",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "khm",
+      "name": "维也纳艺术史博物馆",
+      "city": "维也纳",
+      "country": "奥地利",
+      "coordinates": [
+        16.3616,
+        48.20388056
+      ],
+      "sourceUrl": "https://www.khm.at/en/visit",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Kunsthistorisches_Museum",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "tate-britain",
+      "name": "泰特不列颠美术馆",
+      "city": "伦敦",
+      "country": "英国",
+      "coordinates": [
+        -0.1275,
+        51.4911
+      ],
+      "sourceUrl": "https://www.tate.org.uk/visit/tate-britain",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Tate_Britain",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "tate-modern",
+      "name": "泰特现代美术馆",
+      "city": "伦敦",
+      "country": "英国",
+      "coordinates": [
+        -0.0994,
+        51.5078
+      ],
+      "sourceUrl": "https://www.tate.org.uk/visit/tate-modern",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Tate_Modern",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "neue-galerie",
+      "name": "纽约新画廊（Neue Galerie）",
+      "city": "纽约",
+      "country": "美国",
+      "coordinates": [
+        -73.9603,
+        40.7813
+      ],
+      "sourceUrl": "https://www.neuegalerie.org/visit",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Neue_Galerie_New_York",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "sfmoma",
+      "name": "旧金山现代艺术博物馆",
+      "city": "旧金山",
+      "country": "美国",
+      "coordinates": [
+        -122.40105111,
+        37.78571806
+      ],
+      "sourceUrl": "https://www.sfmoma.org/visit/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/San_Francisco_Museum_of_Modern_Art",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "kunstmuseum-den-haag",
+      "name": "海牙美术馆",
+      "city": "海牙",
+      "country": "荷兰",
+      "coordinates": [
+        4.2806,
+        52.0897
+      ],
+      "sourceUrl": "https://www.kunstmuseum.nl/en/visit",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Kunstmuseum_Den_Haag",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "hermitage-general-staff",
+      "name": "艾尔米塔什博物馆 · 总参谋部大楼",
+      "city": "圣彼得堡",
+      "country": "俄罗斯",
+      "coordinates": [
+        30.3172,
+        59.9381
+      ],
+      "sourceUrl": "https://www.hermitagemuseum.org/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/General_Staff_Building_(Saint_Petersburg)",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。本点为总参谋部大楼，与冬宫分别记录。"
+    },
+    {
+      "id": "vatican-raphael",
+      "name": "梵蒂冈博物馆 · 拉斐尔画室",
+      "city": "梵蒂冈城",
+      "country": "梵蒂冈",
+      "coordinates": [
+        12.45638889,
+        41.90361111
+      ],
+      "sourceUrl": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello.html",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Apostolic_Palace",
+      "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。以宗座宫建筑定位拉斐尔画室，与绘画馆分别记录。"
+    }
+  ],
+  "holdings": [
+    {
+      "artworkId": "duccio-madonna",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/438754"
+    },
+    {
+      "artworkId": "botticelli-birth-venus",
+      "venueId": "uffizi",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/birth-of-venus"
+    },
+    {
+      "artworkId": "raphael-colonna-madonna",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437372"
+    },
+    {
+      "artworkId": "bruegel-harvesters",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435809"
+    },
+    {
+      "artworkId": "el-greco-toledo",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436575"
+    },
+    {
+      "artworkId": "caravaggio-emmaus",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus"
+    },
+    {
+      "artworkId": "rembrandt-aristotle",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437394"
+    },
+    {
+      "artworkId": "vermeer-pearl",
+      "venueId": "mauritshuis",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring"
+    },
+    {
+      "artworkId": "vermeer-pitcher",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437881"
+    },
+    {
+      "artworkId": "velazquez-pareja",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437869"
+    },
+    {
+      "artworkId": "fragonard-swing",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65364&service=ExternalInterface"
+    },
+    {
+      "artworkId": "david-socrates",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436105"
+    },
+    {
+      "artworkId": "ingres-grisaille",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436708"
+    },
+    {
+      "artworkId": "goya-third-may",
+      "venueId": "prado",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-3-of-may-in-madrid-or-the-executions/5e177409-2993-4240-97fb-847a02c6496c"
+    },
+    {
+      "artworkId": "turner-parliament",
+      "venueId": "cleveland",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.clevelandart.org/art/1942.647"
+    },
+    {
+      "artworkId": "delacroix-natchez",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436180"
+    },
+    {
+      "artworkId": "courbet-parrot",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436002"
+    },
+    {
+      "artworkId": "millet-gleaners",
+      "venueId": "orsay",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/des-glaneuses-342"
+    },
+    {
+      "artworkId": "manet-young-lady",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436964"
+    },
+    {
+      "artworkId": "monet-water-lilies",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/16568"
+    },
+    {
+      "artworkId": "monet-water-lily-pond",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/87088"
+    },
+    {
+      "artworkId": "renoir-two-sisters",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/14655"
+    },
+    {
+      "artworkId": "degas-rehearsal",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436155"
+    },
+    {
+      "artworkId": "cassatt-bath",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/111442"
+    },
+    {
+      "artworkId": "cezanne-card-players",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435868"
+    },
+    {
+      "artworkId": "cezanne-apples",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/111436"
+    },
+    {
+      "artworkId": "van-gogh-starry-night",
+      "venueId": "moma",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.moma.org/collection/works/79802"
+    },
+    {
+      "artworkId": "van-gogh-cypresses",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436535"
+    },
+    {
+      "artworkId": "gauguin-siesta",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436449"
+    },
+    {
+      "artworkId": "seurat-grande-jatte",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/27992"
+    },
+    {
+      "artworkId": "klimt-kiss",
+      "venueId": "belvedere",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar"
+    },
+    {
+      "artworkId": "munch-scream",
+      "venueId": "national-norway",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939"
+    },
+    {
+      "artworkId": "matisse-open-window",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nga.gov/artworks/106384-open-window-collioure"
+    },
+    {
+      "artworkId": "gris-picasso",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/8624"
+    },
+    {
+      "artworkId": "kandinsky-cannons",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/8991"
+    },
+    {
+      "artworkId": "mondrian-lozenge",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/109819"
+    },
+    {
+      "artworkId": "el-greco-vision",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436576"
+    },
+    {
+      "artworkId": "el-greco-assumption",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/87479"
+    },
+    {
+      "artworkId": "el-greco-martin",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/67362"
+    },
+    {
+      "artworkId": "rembrandt-gold-chain",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/95998"
+    },
+    {
+      "artworkId": "fragonard-letter",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436322"
+    },
+    {
+      "artworkId": "fragonard-avenue",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436324"
+    },
+    {
+      "artworkId": "david-lavoisier",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436106"
+    },
+    {
+      "artworkId": "david-pastoret",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/27307"
+    },
+    {
+      "artworkId": "ingres-leblanc",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436703"
+    },
+    {
+      "artworkId": "delacroix-lion-hunt",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/81505"
+    },
+    {
+      "artworkId": "delacroix-rebecca",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/438814"
+    },
+    {
+      "artworkId": "courbet-jo",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436001"
+    },
+    {
+      "artworkId": "courbet-calm-sea",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436005"
+    },
+    {
+      "artworkId": "millet-flock",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/4776"
+    },
+    {
+      "artworkId": "millet-haystacks",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437097"
+    },
+    {
+      "artworkId": "manet-races",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/81533"
+    },
+    {
+      "artworkId": "monet-train",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/16571"
+    },
+    {
+      "artworkId": "monet-wheat",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/64818"
+    },
+    {
+      "artworkId": "monet-cliff",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/14620"
+    },
+    {
+      "artworkId": "monet-parliament",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/16584"
+    },
+    {
+      "artworkId": "renoir-rowers",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/81555"
+    },
+    {
+      "artworkId": "renoir-piano",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/25825"
+    },
+    {
+      "artworkId": "degas-millinery",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/14572"
+    },
+    {
+      "artworkId": "degas-yellow-dancers",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/18951"
+    },
+    {
+      "artworkId": "degas-cafe-singer",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/84076"
+    },
+    {
+      "artworkId": "cassatt-balcony",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/26650"
+    },
+    {
+      "artworkId": "cassatt-bullfight",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/31816"
+    },
+    {
+      "artworkId": "cezanne-marseille",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/16487"
+    },
+    {
+      "artworkId": "cezanne-yellow-chair",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/62371"
+    },
+    {
+      "artworkId": "van-gogh-bedroom",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/28560"
+    },
+    {
+      "artworkId": "van-gogh-self-portrait",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/80607"
+    },
+    {
+      "artworkId": "van-gogh-roses",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436534"
+    },
+    {
+      "artworkId": "gauguin-day-god",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/27943"
+    },
+    {
+      "artworkId": "gauguin-arlesiennes",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/19339"
+    },
+    {
+      "artworkId": "gauguin-tehamana",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/60812"
+    },
+    {
+      "artworkId": "seurat-sideshow",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437654"
+    },
+    {
+      "artworkId": "kandinsky-poplars",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/8980"
+    },
+    {
+      "artworkId": "kandinsky-green",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/8987"
+    },
+    {
+      "artworkId": "kandinsky-troika",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/8983"
+    },
+    {
+      "artworkId": "mondrian-farm",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/144467"
+    },
+    {
+      "artworkId": "mondrian-gray-red",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/65821"
+    },
+    {
+      "artworkId": "duccio-maesta",
+      "venueId": "siena-opera",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://archivi.operaduomo.siena.it/opere/scheda/?id=166"
+    },
+    {
+      "artworkId": "duccio-crevole",
+      "venueId": "siena-opera",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://archivi.operaduomo.siena.it/opere/scheda/?id=137"
+    },
+    {
+      "artworkId": "botticelli-spring",
+      "venueId": "uffizi",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/botticelli-spring"
+    },
+    {
+      "artworkId": "botticelli-magnificat",
+      "venueId": "uffizi",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/botticelli-madonna-of-the-magnificat"
+    },
+    {
+      "artworkId": "botticelli-mystic-nativity",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/sandro-botticelli-mystic-nativity"
+    },
+    {
+      "artworkId": "raphael-sistine",
+      "venueId": "dresden",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://artsandculture.google.com/asset/the-sistine-madonna/CgEiMJRg7ZS6DA"
+    },
+    {
+      "artworkId": "raphael-athens",
+      "venueId": "vatican-raphael",
+      "note": "原址作品；是否开放以场馆安排为准。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html"
+    },
+    {
+      "artworkId": "raphael-castiglione",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066418"
+    },
+    {
+      "artworkId": "bruegel-hunters",
+      "venueId": "khm",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://press.khm.at/fileadmin/content/KHM/Presse/2018/Bruegel/PT_Bruegel_E.pdf"
+    },
+    {
+      "artworkId": "bruegel-babel",
+      "venueId": "khm",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://press.khm.at/fileadmin/content/KHM/Presse/2018/Bruegel/PT_Bruegel_E.pdf"
+    },
+    {
+      "artworkId": "bruegel-wedding",
+      "venueId": "khm",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://press.khm.at/fileadmin/content/KHM/Presse/2018/Bruegel/PT_Bruegel_E.pdf"
+    },
+    {
+      "artworkId": "caravaggio-matthew",
+      "venueId": "san-luigi",
+      "note": "原址作品；是否开放以场馆安排为准。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://saintlouis-rome.net/horaires-visite-opening-hours/caravage/"
+    },
+    {
+      "artworkId": "caravaggio-bacchus",
+      "venueId": "uffizi",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/caravaggio-bacchus"
+    },
+    {
+      "artworkId": "caravaggio-musicians",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435844"
+    },
+    {
+      "artworkId": "rembrandt-night-watch",
+      "venueId": "rijks",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.rijksmuseum.nl/en/collection/SK-C-5"
+    },
+    {
+      "artworkId": "rembrandt-jewish-bride",
+      "venueId": "rijks",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.rijksmuseum.nl/en/collection/object/Isaac-and-Rebecca-Known-as-The-Jewish-Bride--019c1265e6dbf108d4587ab2b7c02c66"
+    },
+    {
+      "artworkId": "vermeer-milkmaid",
+      "venueId": "rijks",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.rijksmuseum.nl/en/collection/object/The-Milkmaid--42dd0e658c2979aec8e144d2357c55c0"
+    },
+    {
+      "artworkId": "vermeer-art-painting",
+      "venueId": "khm",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.khm.at/en/visit/only-in-vienna"
+    },
+    {
+      "artworkId": "velazquez-meninas",
+      "venueId": "prado",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+    },
+    {
+      "artworkId": "velazquez-venus",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/diego-velazquez-the-toilet-of-venus-the-rokeby-venus"
+    },
+    {
+      "artworkId": "velazquez-breda",
+      "venueId": "prado",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-lances-or-the-surrender-of-breda/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+    },
+    {
+      "artworkId": "fragonard-reading",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nga.gov/artworks/46303-young-girl-reading"
+    },
+    {
+      "artworkId": "david-horatii",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010062239"
+    },
+    {
+      "artworkId": "ingres-odalisque",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010065566"
+    },
+    {
+      "artworkId": "ingres-bertin",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066845"
+    },
+    {
+      "artworkId": "goya-second-may",
+      "venueId": "prado",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-2nd-of-may-1808-in-madrid-or-the-fight-against-the-mamelukes/f9429c69-fab1-44ac-a2a0-6b5ac753c681"
+    },
+    {
+      "artworkId": "goya-parasol",
+      "venueId": "prado",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/the-parasol/a230a80f-a899-4535-9e90-ad883bd096c5"
+    },
+    {
+      "artworkId": "goya-saturn",
+      "venueId": "prado",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/saturn/18110a75-b0e7-430c-bc73-2a4d55893bd6"
+    },
+    {
+      "artworkId": "turner-temeraire",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-the-fighting-temeraire"
+    },
+    {
+      "artworkId": "turner-rain-steam",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-rain-steam-and-speed-the-great-western-railway"
+    },
+    {
+      "artworkId": "turner-snow-storm",
+      "venueId": "tate-britain",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.getty.edu/mobile/gettyguide/center/exhibitions/turner/artifacts/248344_2111.html"
+    },
+    {
+      "artworkId": "delacroix-liberty",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010065872"
+    },
+    {
+      "artworkId": "courbet-ornans",
+      "venueId": "orsay",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/un-enterrement-ornans-924"
+    },
+    {
+      "artworkId": "millet-angelus",
+      "venueId": "orsay",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/langelus-345"
+    },
+    {
+      "artworkId": "manet-olympia",
+      "venueId": "orsay",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/olympia-712"
+    },
+    {
+      "artworkId": "manet-luncheon",
+      "venueId": "orsay",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/le-dejeuner-sur-lherbe-904"
+    },
+    {
+      "artworkId": "renoir-moulin",
+      "venueId": "orsay",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/bal-du-moulin-de-la-galette-497"
+    },
+    {
+      "artworkId": "van-gogh-sunflowers",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers"
+    },
+    {
+      "artworkId": "seurat-bathers",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/georges-seurat-bathers-at-asnieres"
+    },
+    {
+      "artworkId": "seurat-circus",
+      "venueId": "orsay",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.musee-orsay.fr/en/artworks/le-cirque-542"
+    },
+    {
+      "artworkId": "klimt-judith",
+      "venueId": "belvedere",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digital.belvedere.at/objects/3492/judith"
+    },
+    {
+      "artworkId": "klimt-adele",
+      "venueId": "neue-galerie",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.neuegalerie.org/womaningold"
+    },
+    {
+      "artworkId": "klimt-attersee",
+      "venueId": "belvedere",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.belvedere.at/institution"
+    },
+    {
+      "artworkId": "munch-madonna",
+      "venueId": "national-norway",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00841"
+    },
+    {
+      "artworkId": "munch-sickchild",
+      "venueId": "national-norway",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00839"
+    },
+    {
+      "artworkId": "munch-dance-life",
+      "venueId": "national-norway",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00941"
+    },
+    {
+      "artworkId": "matisse-dance",
+      "venueId": "hermitage-general-staff",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf"
+    },
+    {
+      "artworkId": "matisse-red-studio",
+      "venueId": "moma",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.moma.org/collection/works/78389"
+    },
+    {
+      "artworkId": "matisse-hat",
+      "venueId": "sfmoma",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.sfmoma.org/artwork/91.161/"
+    },
+    {
+      "artworkId": "gris-sunblind",
+      "venueId": "tate-modern",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/es/perspectives/cubism-visual-games-juan-gris"
+    },
+    {
+      "artworkId": "gris-checked",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/646469"
+    },
+    {
+      "artworkId": "mondrian-red-tree",
+      "venueId": "kunstmuseum-den-haag",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.kunstmuseum.nl/en/collection/avond-evening-red-tree"
+    },
+    {
+      "artworkId": "cassatt-boating",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nga.gov/artworks/46569-boating-party"
+    }
+  ],
+  "topics": [
+    {
+      "id": "western-journey",
+      "title": "西方绘画之旅",
+      "description": "从中世纪圣像到早期抽象绘画，沿32位画家、130幅作品走过西方绘画主要时期。",
+      "artworkIds": [
+        "duccio-madonna",
+        "duccio-maesta",
+        "duccio-crevole",
+        "botticelli-birth-venus",
+        "botticelli-spring",
+        "botticelli-magnificat",
+        "botticelli-mystic-nativity",
+        "raphael-colonna-madonna",
+        "raphael-sistine",
+        "raphael-athens",
+        "raphael-castiglione",
+        "bruegel-harvesters",
+        "bruegel-hunters",
+        "bruegel-babel",
+        "bruegel-wedding",
+        "el-greco-toledo",
+        "el-greco-vision",
+        "el-greco-assumption",
+        "el-greco-martin",
+        "caravaggio-emmaus",
+        "caravaggio-matthew",
+        "caravaggio-bacchus",
+        "caravaggio-musicians",
+        "rembrandt-aristotle",
+        "rembrandt-gold-chain",
+        "rembrandt-night-watch",
+        "rembrandt-jewish-bride",
+        "vermeer-pearl",
+        "vermeer-pitcher",
+        "vermeer-milkmaid",
+        "vermeer-art-painting",
+        "velazquez-pareja",
+        "velazquez-meninas",
+        "velazquez-venus",
+        "velazquez-breda",
+        "fragonard-swing",
+        "fragonard-letter",
+        "fragonard-avenue",
+        "fragonard-reading",
+        "david-socrates",
+        "david-lavoisier",
+        "david-pastoret",
+        "david-horatii",
+        "ingres-grisaille",
+        "ingres-leblanc",
+        "ingres-odalisque",
+        "ingres-bertin",
+        "goya-third-may",
+        "goya-second-may",
+        "goya-parasol",
+        "goya-saturn",
+        "turner-parliament",
+        "turner-temeraire",
+        "turner-rain-steam",
+        "turner-snow-storm",
+        "delacroix-natchez",
+        "delacroix-lion-hunt",
+        "delacroix-rebecca",
+        "delacroix-liberty",
+        "courbet-parrot",
+        "courbet-jo",
+        "courbet-calm-sea",
+        "courbet-ornans",
+        "millet-gleaners",
+        "millet-flock",
+        "millet-haystacks",
+        "millet-angelus",
+        "manet-young-lady",
+        "manet-races",
+        "manet-olympia",
+        "manet-luncheon",
+        "monet-water-lilies",
+        "monet-water-lily-pond",
+        "monet-train",
+        "monet-wheat",
+        "monet-cliff",
+        "monet-parliament",
+        "renoir-two-sisters",
+        "renoir-rowers",
+        "renoir-piano",
+        "renoir-moulin",
+        "degas-rehearsal",
+        "degas-millinery",
+        "degas-yellow-dancers",
+        "degas-cafe-singer",
+        "cassatt-bath",
+        "cassatt-balcony",
+        "cassatt-bullfight",
+        "cassatt-boating",
+        "cezanne-card-players",
+        "cezanne-apples",
+        "cezanne-marseille",
+        "cezanne-yellow-chair",
+        "van-gogh-starry-night",
+        "van-gogh-cypresses",
+        "van-gogh-bedroom",
+        "van-gogh-self-portrait",
+        "van-gogh-roses",
+        "van-gogh-sunflowers",
+        "gauguin-siesta",
+        "gauguin-day-god",
+        "gauguin-arlesiennes",
+        "gauguin-tehamana",
+        "seurat-grande-jatte",
+        "seurat-sideshow",
+        "seurat-bathers",
+        "seurat-circus",
+        "klimt-kiss",
+        "klimt-judith",
+        "klimt-adele",
+        "klimt-attersee",
+        "munch-scream",
+        "munch-madonna",
+        "munch-sickchild",
+        "munch-dance-life",
+        "matisse-open-window",
+        "matisse-dance",
+        "matisse-red-studio",
+        "matisse-hat",
+        "gris-picasso",
+        "gris-sunblind",
+        "gris-checked",
+        "kandinsky-cannons",
+        "kandinsky-poplars",
+        "kandinsky-green",
+        "kandinsky-troika",
+        "mondrian-lozenge",
+        "mondrian-farm",
+        "mondrian-gray-red",
+        "mondrian-red-tree"
+      ]
+    }
+  ]
+}

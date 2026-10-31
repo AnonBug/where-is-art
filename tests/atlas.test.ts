@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { existsSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 import catalog from "../public/catalog.json";
+import foreignCatalog from "../content/foreign-catalog.json";
 import {
   atlasSchema,
   validateRelations,
@@ -16,7 +17,7 @@ const data = atlasSchema.parse(catalog);
 describe("atlas content contract", () => {
   it("resolves all artwork, artist, venue, topic and image relations", () => {
     expect(validateRelations(data)).toEqual([]);
-    expect(data.artworks).toHaveLength(38);
+    expect(data.artworks).toHaveLength(38 + foreignCatalog.artworks.length);
     expect(scopeWorks(data, "artist:tang-yin")).toHaveLength(17);
     expect(data.images.filter((x) => x.delivery.kind === "dzi")).toHaveLength(
       6,
@@ -41,7 +42,7 @@ describe("atlas content contract", () => {
     expect(scopeVenues(copy, selected)).toHaveLength(2);
     const foreign = scopeWorks(data, "category:foreign");
     expect(new Set(foreign.map((w) => w.id)).size).toBe(foreign.length);
-    expect(foreign).toHaveLength(21);
+    expect(foreign).toHaveLength(21 + foreignCatalog.artworks.length);
   });
   it("does not mix topics and artist scopes", () => {
     const landscape = scopeWorks(data, "topic:landscape");

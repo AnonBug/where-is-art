@@ -1,6 +1,6 @@
 # 名画在哪里
 
-React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 和 OpenSeadragon。当前版本收录唐寅 17 幅作品、达·芬奇相关 21 幅作品，共 55 张图像、18 个收藏机构。开发目录沿用「达·芬奇名画地图」。
+React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 和 OpenSeadragon。当前版本收录唐寅 17 幅、达·芬奇相关 21 幅，以及新增 32 位西方画家的 130 幅作品，共 168 幅作品、185 张图像、38 个收藏地点。开发目录沿用「达·芬奇名画地图」。
 
 [在线浏览](https://anonbug.github.io/where-is-art/) · [GitHub 仓库](https://github.com/AnonBug/where-is-art)
 
@@ -26,7 +26,7 @@ npm run dev
 ```sh
 npm test               # 内容契约、关系去重、桌面/手机导航与旧数据兼容
 npm run typecheck      # TypeScript
-npm run media:check    # 唐寅图片尺寸、文件预算、全部瓦片与边缘解码
+npm run media:check    # 唐寅瓦片与新增西方图像的尺寸、体积、解码和来源校验
 npm run build          # 主题生成、类型检查、静态构建 → dist/
 npm run preview        # 预览 dist/，与 dev 使用同一端口
 ```
@@ -42,6 +42,7 @@ npm run preview        # 预览 dist/，与 dev 使用同一端口
 - 手机：目录、地图、看画独立占满屏幕；横屏继续使用同一场景。屏幕旋转按钮由用户点击触发系统能力，不支持时提示手动旋转。
 - 看画：整图保持原始比例，支持拖动、缩放、还原；长卷的馆方高清局部可单独选择。返回时在当前会话内恢复列表滚动、地图位置和看画视口；刷新后保留 URL 中的作品与范围，不保证恢复临时缩放状态。
 - 收藏地点未核实的作品仍可看画，不创建虚构坐标。机构位置不表示实时展出。
+- 藏品较多时，馆点的缩略图网格内部独立滚动，不触发地图缩放。直接打开画家地图或看画链接时，目录同步到对应分类、时期和画家；窄侧栏的长时期名称与年代分行展示。
 
 主要深链接（Hash 路由适配 GitHub Pages）：
 
@@ -78,12 +79,17 @@ src/
 content/
   tang-catalog.json            唐寅作品和馆藏依据
   media-manifest.json          唐寅图片尺寸、投递方式、来源与使用信息
+  foreign-catalog.json         新增西方画家、作品、馆藏和专题
+  foreign-sources.json         下载地址、来源证据与源文件 SHA-256
+  foreign-media-manifest.json  网页衍生图的尺寸、体积、哈希与署名
   map-style-base.json          OpenFreeMap Liberty 原始样式
 scripts/
-  build-catalog.mjs            合并唐寅和既有达·芬奇数据
+  build-catalog.mjs            合并唐寅、既有达·芬奇和新增西方绘画数据
   build-theme.mjs              单一配色源 → Sass 变量和地图样式
   prepare-media.mjs            离线生成缩略图、预览、整图或 DZI
-  check-media.mjs              验证实际交付文件
+  check-media.mjs              验证唐寅交付文件
+  prepare-foreign-media.mjs    生成西方绘画缩略图、预览和整图
+  check-foreign-media.mjs      核对文件哈希、完整解码和来源证据
 public/
   catalog.json                生成的前端目录数据
   map-style.json              生成的青绿样式
@@ -98,7 +104,7 @@ React 管理界面，MapLibre 和 OpenSeadragon 分别管理自己的画布生�
 
 ## 内容与图片维护
 
-修改 `content/tang-catalog.json` 或既有 `public/data.json` 后运行：
+修改 `content/tang-catalog.json`、`content/foreign-catalog.json` 或既有 `public/data.json` 后运行：
 
 ```sh
 npm run content:build
@@ -106,7 +112,7 @@ npm test
 npm run build
 ```
 
-时期、画家和专题编排目前集中在 `scripts/build-catalog.mjs`；后续增加一批数据可在这里接入。作品通过稳定 ID 引用画家；收藏关系独立存储，允许多馆藏关联；专题引用作品 ID，不复制作品记录；全图与高清局部是不同图像资源。
+新增西方内容的时期、画家和专题在 `content/foreign-catalog.json` 中维护，由 `scripts/build-catalog.mjs` 合并；无需修改 React 组件即可扩充同类数据。作品通过稳定 ID 引用画家；收藏关系独立存储，允许多馆藏关联；专题引用作品 ID，不复制作品记录；全图与高清局部是不同图像资源。
 
 网页资源已生成，克隆后无需原件即可开发、校验和部署。只有重新转换唐寅原件时需要交接包里的 `test-data/tang-yin/manifest.json`：
 
@@ -121,6 +127,24 @@ npm run content:build
 《溪山渔隐图》12 张、《采莲图》5 张高清局部分别关联原始馆方照片，不从低清全卷虚构细节。《吹箫仕女图》仅 423 × 800 像素，保留普通清晰度提示与资料不确定性。原始素材在转换前后做 SHA-256 校验，保持不变。
 
 图像来源与署名在作品详情展示；`publicationStatus` 记录素材核验状态。唐寅 4 幅的使用条款仍待确认，达·芬奇沿用素材尚未逐张重新审核。完整记录见 `docs/唐寅内容核验.md` 和 `content/media-manifest.json`。这些状态不会被转换脚本自动当作授权。
+
+## 西方绘画扩充（2026-11-01）
+
+新增 32 位画家、16 个时期或风格分组、130 幅作品和“西方绘画之旅”专题。28 位画家各 4 幅，杜乔、格里斯各 3 幅，莫奈、梵高各 6 幅；既有唐寅与达·芬奇记录保留。时期是浏览目录，允许年代交叠，不表示画家只属于单一流派。
+
+新素材来自大都会、芝加哥艺术博物馆、克利夫兰艺术博物馆的开放图像，以及逐文件核对的 Wikimedia Commons 公版复制品。作品资料来源与图像来源分开记录。文件下载到本地后生成随站点发布的缩略图、预览和 JPEG 整图；用户浏览时不依赖外部图片链接。
+
+整图最长边 3840 像素，不放大低分辨率源图；预览最长边 1280，缩略图 320。每幅整图上限 20 MB，原始来源地址、下载版本和 SHA-256 保留于来源清单。Commons 与芝加哥部分资源下载的是有界尺寸版本，不宣称保存了馆方最高分辨率扫描件。此批不新增瓦片；原有 6 幅唐寅 DZI 保留。
+
+重建新素材（下载缓存默认在被 Git 忽略的 output/foreign-originals，可传入已有缓存目录）：
+
+```sh
+npm run media:foreign -- '/本地下载缓存目录'
+npm run content:build
+npm run media:check
+```
+
+若下载文件与已记录哈希不一致，脚本会停止，需重新核实图片身份与许可后更新来源，不能直接接受替换。完整选目、版本差异和容量统计见 [西方绘画内容核验](docs/西方绘画内容核验.md)。
 
 ## GitHub Pages
 

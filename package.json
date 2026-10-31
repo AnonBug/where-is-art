@@ -1,6 +1,6 @@
 {
   "name": "art-atlas",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -16,7 +16,8 @@
     "predev": "node scripts/build-theme.mjs",
     "content:build": "node scripts/build-catalog.mjs",
     "media:prepare": "node scripts/prepare-media.mjs",
-    "media:check": "node scripts/check-media.mjs"
+    "media:foreign": "node scripts/prepare-foreign-media.mjs",
+    "media:check": "node scripts/check-media.mjs && node scripts/check-foreign-media.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

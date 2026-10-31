@@ -298,7 +298,7 @@ describe("navigation contracts", () => {
     const user = userEvent.setup();
     mount();
     await user.click(screen.getByRole("button", { name: "外国" }));
-    expect(await screen.findByText("地图作品数：21")).toBeTruthy();
+    expect(await screen.findByText("地图作品数：151")).toBeTruthy();
     await user.click(screen.getByRole("button", { name: "专题" }));
     await user.click(screen.getByRole("button", { name: /山水之间/ }));
     expect(await screen.findByText("地图作品数：10")).toBeTruthy();
@@ -322,6 +322,19 @@ describe("navigation contracts", () => {
     expect(screen.getByTestId("route").textContent).toContain(
       "/topics/landscape",
     );
+  });
+  it("opens a shared foreign artist map with the matching directory and period", async () => {
+    mount("/map?scope=artist:monet");
+    expect(await screen.findByText("地图作品数：6")).toBeTruthy();
+    expect(
+      screen.getByRole("button", { name: "外国" }).getAttribute("aria-current"),
+    ).toBe("page");
+    expect(screen.getByRole("button", { name: /克洛德·莫奈/ })).toBeTruthy();
+    expect(
+      screen
+        .getByRole("button", { name: /^印象派/ })
+        .getAttribute("aria-expanded"),
+    ).toBe("true");
   });
   it("keeps compact catalog, map and viewer as separate full-screen scenes", async () => {
     device.compact = true;

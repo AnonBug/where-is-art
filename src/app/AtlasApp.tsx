@@ -41,6 +41,7 @@ export function AtlasApp() {
   const expandedVenue = search.get("venue") || undefined;
   const catalogScene =
     path[0] === "catalog" || path[0] === "topics" || !path[0];
+  const scopeDrivenScene = !catalogScene;
   const orientation = useOrientation(
     isViewer || (!catalogScene && !isAllWorks),
   );
@@ -152,6 +153,23 @@ export function AtlasApp() {
     // Existing museum links now open their collection directly on the map.
     if (path[0] === "venues" && path[1]) go("/map", { venue: path[1] }, true);
   }, [location.pathname, go]);
+  useEffect(() => {
+    if (!data || !scopeDrivenScene) return;
+    const [kind, id] = scope.split(":");
+    if (kind === "artist") {
+      const artist = data.artists.find((item) => item.id === id);
+      if (!artist) return;
+      useSession.setState((state) => ({
+        tab: artist.category,
+        topicId: null,
+        expanded: { ...state.expanded, [artist.category]: artist.periodId },
+      }));
+    } else if (kind === "topic" && data.topics.some((item) => item.id === id)) {
+      useSession.setState({ tab: "topics", topicId: id });
+    } else if (kind === "category" && (id === "china" || id === "foreign")) {
+      useSession.setState({ tab: id, topicId: null });
+    }
+  }, [data, scope, scopeDrivenScene]);
   useEffect(() => {
     const handler = (event: KeyboardEvent) => {
       if (event.key === "Escape" && (panel || isViewer)) {

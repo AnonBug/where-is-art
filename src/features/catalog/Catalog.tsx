@@ -99,6 +99,16 @@ export function Catalog({
   const expanded = useSession((state) => state.expanded[tab]);
   const topic = data.topics.find((t) => t.id === topicId);
   const scrollRef = useSavedScroll(`catalog:${tab}`);
+  useLayoutEffect(() => {
+    if (
+      !scope.startsWith("artist:") ||
+      useSession.getState().scroll[`catalog:${tab}`] !== undefined
+    )
+      return;
+    scrollRef.current
+      ?.querySelector<HTMLElement>('button[aria-current="true"]')
+      ?.scrollIntoView?.({ block: "nearest" });
+  }, [scope, tab, expanded, scrollRef]);
   return (
     <aside className={s.catalog} aria-label="名画目录">
       <div className={s.brand}>

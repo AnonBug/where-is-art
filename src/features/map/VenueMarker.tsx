@@ -43,6 +43,10 @@ export function VenueMarker({
         className={s.thumbnails}
         role="group"
         aria-label={`${venue.name}的作品`}
+        onWheel={(event) => event.stopPropagation()}
+        onMouseDown={(event) => event.stopPropagation()}
+        onTouchStart={(event) => event.stopPropagation()}
+        onTouchMove={(event) => event.stopPropagation()}
         style={
           {
             "--columns": Math.min(4, Math.ceil(Math.sqrt(visibleWorks.length))),

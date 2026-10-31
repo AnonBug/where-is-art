@@ -5,16 +5,13 @@ import sharp from "sharp";
 const read = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 const tang = await read("content/tang-catalog.json");
 const media = await read("content/media-manifest.json");
+const foreign = await read("content/foreign-catalog.json");
+const foreignMedia = await read("content/foreign-media-manifest.json");
 const legacy = await read("public/data.json");
 const legacyImages = await read("public/assets/images.json");
 const periods = [
   { id: "ming", category: "china", name: "明", dateLabel: "1368—1644" },
-  {
-    id: "renaissance",
-    category: "foreign",
-    name: "文艺复兴",
-    dateLabel: "约14—16世纪",
-  },
+  ...foreign.periods,
 ];
 const artists = [
   {
@@ -41,6 +38,7 @@ const artists = [
     lifeLabel: "约1435—1488",
     countryLabel: "意大利",
   },
+  ...foreign.artists,
 ];
 const artworks = [
   ...tang.artworks.map((work) => ({
@@ -69,6 +67,7 @@ const artworks = [
       .filter(Boolean)
       .join(" "),
   })),
+  ...foreign.artworks,
 ];
 const venues = [
   ...tang.venues,
@@ -81,6 +80,7 @@ const venues = [
     sourceUrl: venue.source,
     coordinateNote: "机构参考位置，不代表具体展厅或实时展出。",
   })),
+  ...foreign.venues,
 ];
 const holdings = [
   ...tang.artworks
@@ -101,6 +101,7 @@ const holdings = [
       verifiedAt: "2026-10-20",
       sourceUrl: work.source,
     })),
+  ...foreign.holdings,
 ];
 const topics = [
   {
@@ -132,8 +133,9 @@ const topics = [
     description: "传世绘画、合作与争议，21 件作品的收藏足迹。",
     artworkIds: legacy.works.map((work) => work.id),
   },
+  ...foreign.topics,
 ];
-const images = [...media.images];
+const images = [...media.images, ...foreignMedia.images];
 for (const work of legacy.works) {
   const info = legacyImages[work.id];
   if (!info) continue;
@@ -195,7 +197,7 @@ for (const work of legacy.works) {
 }
 const data = {
   version: 1,
-  updatedAt: "2026-10-31",
+  updatedAt: foreign.updatedAt,
   periods,
   artists,
   artworks,
