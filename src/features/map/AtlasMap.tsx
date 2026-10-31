@@ -76,7 +76,7 @@ export default function AtlasMap({
 }: Props) {
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<LibreMap | null>(null);
-  const markers = useRef<Marker[]>([]);
+  const markers = useRef(new Map<string, Marker>());
   const preserveCameraOnNavigation = useRef(false);
   const venueSelection = useRef({
     id: expandedVenue,
@@ -238,7 +238,7 @@ export default function AtlasMap({
       clearTimeout(timer);
       observer.disconnect();
       markers.current.forEach((m) => m.remove());
-      markers.current = [];
+      markers.current.clear();
       map.remove();
       mapRef.current = null;
     };
@@ -316,8 +316,6 @@ export default function AtlasMap({
     if (!map) return;
     function update() {
       if (!map) return;
-      markers.current.forEach((marker) => marker.remove());
-      markers.current = [];
       const bounds = map.getBounds();
       const zoom = map.getZoom();
       const items = cluster.getClusters(
@@ -331,6 +329,7 @@ export default function AtlasMap({
       );
       const occupied: { x: number; y: number }[] = [];
       const next: RenderMarker[] = [];
+      const visibleKeys = new Set<string>();
       const ordered = [...items].sort((a, b) => {
         const aSelected =
           !("cluster" in a.properties) &&
@@ -365,18 +364,30 @@ export default function AtlasMap({
           (p) => Math.abs(p.x - point.x) < 180 && Math.abs(p.y - point.y) < 90,
         );
         if (showLabel) occupied.push(point);
-        const node = document.createElement("div");
+        const key = isCluster ? `cluster:${clusterId}` : ids[0];
+        visibleKeys.add(key);
+        // A portal needs the same container as well as the same key to retain
+        // its images, focus and scroll position across pan/zoom updates.
+        let marker = markers.current.get(key);
+        if (!marker) {
+          marker = new Marker({
+            element: document.createElement("div"),
+            anchor: "center",
+          })
+            .setLngLat(coordinates)
+            .addTo(map);
+          markers.current.set(key, marker);
+        } else {
+          marker.setLngLat(coordinates);
+        }
+        const node = marker.getElement();
         node.style.zIndex = ids.includes(expandedVenue ?? "")
           ? "3"
           : collection.some((work) => work.id === selected)
             ? "2"
             : "1";
-        const marker = new Marker({ element: node, anchor: "center" })
-          .setLngLat(coordinates)
-          .addTo(map);
-        markers.current.push(marker);
         next.push({
-          key: isCluster ? `cluster:${clusterId}` : ids[0],
+          key,
           node,
           venue: isCluster ? undefined : venues.find((v) => v.id === ids[0]),
           works: collection,
@@ -385,14 +396,19 @@ export default function AtlasMap({
           showLabel,
         });
       }
+      for (const [key, marker] of markers.current) {
+        if (!visibleKeys.has(key)) {
+          marker.remove();
+          markers.current.delete(key);
+        }
+      }
       setRenderMarkers(next);
     }
     update();
+    // MapLibre also fires moveend after zooming; one update covers both.
     map.on("moveend", update);
-    map.on("zoomend", update);
     return () => {
       map.off("moveend", update);
-      map.off("zoomend", update);
     };
   }, [data, works, venues, selected, expandedVenue, cluster, ready]);
   return (
