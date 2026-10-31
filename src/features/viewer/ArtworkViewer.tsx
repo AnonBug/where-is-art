@@ -1,0 +1,331 @@
+import { useEffect, useRef, useState } from "react";
+import OpenSeadragon from "openseadragon";
+import { useSession, type ImageView } from "../../application/session";
+import {
+  artistLabel,
+  assetUrl,
+  type Artwork,
+  type Atlas,
+} from "../../domain/atlas";
+import { ArtworkImage, IconButton } from "../../shared/ui";
+import s from "./ArtworkViewer.module.scss";
+interface Props {
+  data: Atlas;
+  work: Artwork;
+  assetId?: string;
+  compact: boolean;
+  infoOpen: boolean;
+  landscape: boolean;
+  onBack: () => void;
+  onInfo: () => void;
+  onCanvasInteraction?: () => void;
+  onRotate: () => void;
+  onAsset: (id: string) => void;
+}
+export default function ArtworkViewer({
+  data,
+  work,
+  assetId,
+  compact,
+  infoOpen,
+  landscape,
+  onBack,
+  onInfo,
+  onCanvasInteraction,
+  onRotate,
+  onAsset,
+}: Props) {
+  const images = data.images
+    .filter((image) => image.artworkId === work.id)
+    .sort((a, b) => a.order - b.order);
+  const asset =
+    images.find((image) => image.id === assetId) ??
+    images.find((image) => image.role === "whole");
+  const stage = useRef<HTMLDivElement>(null);
+  const root = useRef<HTMLDivElement>(null);
+  const viewer = useRef<OpenSeadragon.Viewer | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [hasImage, setHasImage] = useState(false);
+  const [error, setError] = useState("");
+  const [zoom, setZoom] = useState(100);
+  const [attempt, setAttempt] = useState(0);
+  const [picker, setPicker] = useState(false);
+  useEffect(() => {
+    if (!stage.current || !asset) return;
+    setLoading(true);
+    setHasImage(false);
+    setError("");
+    let dead = false;
+    const snapshotKey = `${work.id}:${asset.id}`;
+    const previous = useSession.getState().imageViews[snapshotKey];
+    const imageSource = {
+      type: "image",
+      url: assetUrl(asset.delivery.url),
+      buildPyramid: false,
+    };
+    const v = OpenSeadragon({
+      element: stage.current,
+      tileSources:
+        asset.delivery.kind === "dzi"
+          ? assetUrl(asset.delivery.url)
+          : imageSource,
+      showNavigationControl: false,
+      showNavigator: false,
+      homeFillsViewer: false,
+      visibilityRatio: 0.85,
+      constrainDuringPan: true,
+      maxZoomPixelRatio: asset.quality === "standard" ? 1 : 1.5,
+      minZoomImageRatio: 0.8,
+      imageLoaderLimit: compact ? 3 : 6,
+      maxImageCacheCount: compact ? 40 : 90,
+      loadTilesWithAjax: true,
+      timeout: 15000,
+      animationTime: 0.2,
+      blendTime: 0.1,
+      gestureSettingsMouse: {
+        scrollToZoom: true,
+        clickToZoom: false,
+        dblClickToZoom: true,
+      },
+      gestureSettingsTouch: {
+        pinchToZoom: true,
+        clickToZoom: false,
+        dblClickToZoom: true,
+        flickEnabled: true,
+      },
+      viewportMargins: {
+        top: compact ? 84 : 70,
+        bottom: 88,
+        left: 16,
+        right: 16,
+      },
+    });
+    viewer.current = v;
+    function capture(): ImageView | undefined {
+      const item = v.world.getItemAt(0);
+      if (!item) return;
+      const size = item.getContentSize();
+      const point = item.viewportToImageCoordinates(v.viewport.getCenter(true));
+      return {
+        x: point.x / size.x,
+        y: point.y / size.y,
+        scale: item.viewportToImageZoom(v.viewport.getZoom(true)),
+        home:
+          Math.abs(v.viewport.getZoom(true) / v.viewport.getHomeZoom() - 1) <
+          0.015,
+      };
+    }
+    function restore(state: ImageView) {
+      const item = v.world.getItemAt(0);
+      if (!item) return;
+      if (state.home) {
+        v.viewport.goHome(true);
+        return;
+      }
+      const size = item.getContentSize();
+      v.viewport.zoomTo(item.imageToViewportZoom(state.scale), undefined, true);
+      v.viewport.panTo(
+        item.imageToViewportCoordinates(state.x * size.x, state.y * size.y),
+        true,
+      );
+      v.viewport.applyConstraints(true);
+    }
+    function save() {
+      if (dead) return;
+      const state = capture();
+      if (state) useSession.getState().saveImageView(snapshotKey, state);
+      setZoom(
+        Math.round((v.viewport.getZoom(true) / v.viewport.getHomeZoom()) * 100),
+      );
+    }
+    const timer = setTimeout(() => {
+      if (!dead) setError("高清画面加载较慢，可以稍候或重试。");
+    }, 15000);
+    v.addHandler("open", () => {
+      if (dead) return;
+      if (previous) restore(previous);
+      else v.viewport.goHome(true);
+      save();
+    });
+    v.addHandler("tile-loaded", () => {
+      if (dead) return;
+      clearTimeout(timer);
+      setLoading(false);
+      setHasImage(true);
+      setError((value) => (value.startsWith("高清画面加载较慢") ? "" : value));
+    });
+    v.addHandler("open-failed", () => {
+      if (!dead) {
+        clearTimeout(timer);
+        setLoading(false);
+        setError("高清图暂时无法加载。已保留预览。");
+      }
+    });
+    v.addHandler("tile-load-failed", () => {
+      if (!dead) setError("部分画面未能加载，请重试。");
+    });
+    v.addHandler("animation-finish", save);
+    const observer = new ResizeObserver(() => {
+      const element = stage.current;
+      if (!element || !element.clientWidth || !element.clientHeight) return;
+      const state = capture();
+      v.viewport.resize(
+        new OpenSeadragon.Point(element.clientWidth, element.clientHeight),
+        true,
+      );
+      if (state) restore(state);
+    });
+    observer.observe(stage.current);
+    return () => {
+      const state = capture();
+      if (state) useSession.getState().saveImageView(snapshotKey, state);
+      dead = true;
+      clearTimeout(timer);
+      observer.disconnect();
+      v.destroy();
+      viewer.current = null;
+    };
+  }, [asset, work.id, compact, attempt]);
+  useEffect(() => {
+    if (!infoOpen) {
+      root.current
+        ?.querySelector<HTMLButtonElement>("button")
+        ?.focus({ preventScroll: true });
+    }
+    // Opening/closing information must not steal focus during a canvas gesture.
+  }, [work.id]);
+  function changeZoom(factor: number) {
+    const v = viewer.current;
+    if (!v) return;
+    v.viewport.zoomBy(factor);
+    v.viewport.applyConstraints();
+  }
+  return (
+    <div
+      ref={root}
+      className={s.viewer}
+      role="dialog"
+      aria-modal={infoOpen ? undefined : true}
+      aria-label={`欣赏${work.title}`}
+      onKeyDown={(event) => {
+        if (!infoOpen && event.key === "Tab") {
+          const controls = [
+            ...(root.current?.querySelectorAll<HTMLElement>(
+              "button:not(:disabled), select",
+            ) ?? []),
+          ].filter((el) => el.offsetParent !== null);
+          const first = controls[0],
+            last = controls.at(-1);
+          if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last?.focus();
+          } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first?.focus();
+          }
+        }
+      }}
+    >
+      <div className={s.preview} hidden={hasImage}>
+        <ArtworkImage key={asset?.id} src={asset?.preview.url} alt="" />
+      </div>
+      <div
+        ref={stage}
+        className={s.stage}
+        onPointerDownCapture={onCanvasInteraction}
+        onWheelCapture={onCanvasInteraction}
+      />
+      <header className={s.header}>
+        <IconButton
+          icon={compact ? "back" : "close"}
+          label="退出看画"
+          onClick={onBack}
+        />
+        <div>
+          <h1>{work.title}</h1>
+          {!compact && (
+            <p>
+              {artistLabel(data, work)} · {work.dateLabel}
+            </p>
+          )}
+        </div>
+        <IconButton
+          icon="info"
+          label="查看作品信息"
+          onClick={onInfo}
+          data-viewer-info
+        />
+      </header>
+      {loading && !error && (
+        <div className={s.loading} role="status">
+          正在加载画作细节…
+        </div>
+      )}
+      {error && (
+        <div className={s.error} role="status">
+          <span>{error}</span>
+          <button onClick={() => setAttempt((n) => n + 1)}>重试</button>
+        </div>
+      )}
+      <div className={s.toolbar}>
+        <IconButton
+          icon="minus"
+          label="缩小画作"
+          onClick={() => changeZoom(1 / 1.35)}
+        />
+        <span>{zoom}%</span>
+        <IconButton
+          icon="plus"
+          label="放大画作"
+          onClick={() => changeZoom(1.35)}
+        />
+        <i />
+        <IconButton
+          icon="reset"
+          label="还原全图"
+          onClick={() => viewer.current?.viewport.goHome()}
+        />
+      </div>
+      {images.length > 1 && (
+        <div className={s.parts}>
+          <button
+            onClick={() => setPicker((value) => !value)}
+            aria-expanded={picker}
+          >
+            {asset?.role === "whole" ? "全卷" : asset?.label}
+            <span>⌃</span>
+          </button>
+          {picker && (
+            <div className={s.picker} aria-label="选择全卷或高清局部">
+              {images.map((image) => (
+                <button
+                  key={image.id}
+                  aria-current={asset?.id === image.id ? "true" : undefined}
+                  onClick={() => {
+                    onAsset(image.id);
+                    setPicker(false);
+                  }}
+                >
+                  {image.role === "whole" ? "全卷" : image.label}
+                </button>
+              ))}
+              <p>局部为馆方独立图像</p>
+            </div>
+          )}
+        </div>
+      )}
+      {compact && (
+        <div className={s.rotate}>
+          <IconButton
+            icon={landscape ? "collapse" : "expand"}
+            label={landscape ? "切换竖屏" : "切换横屏"}
+            onClick={onRotate}
+          />
+        </div>
+      )}
+      {asset?.quality === "standard" && (
+        <span className={s.resolution}>普通清晰度</span>
+      )}
+    </div>
+  );
+}

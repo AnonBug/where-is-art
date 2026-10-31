@@ -1,0 +1,225 @@
+{
+  "artworks": [
+    {
+      "id": "tang-yin-01",
+      "title": "王蜀宫妓图",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "绢本设色，立轴",
+      "description": "四位宫中女子盛装而立，衣纹、发饰与面部神态各不相同。故宫将画中故事考订为前蜀王衍宫事，题名由旧称《孟蜀宫妓图》调整为《王蜀宫妓图》。",
+      "venueId": "palace-beijing",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/228271.html"
+    },
+    {
+      "id": "tang-yin-02",
+      "title": "事茗图卷",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "纸本设色，手卷",
+      "description": "山石围合的屋舍中，主人临案品茗，远山与水面将茶室引入开阔天地。这是唐寅为友人陈事茗所作，卷首另有文徵明题写的“事茗”二字。",
+      "venueId": "palace-beijing",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/234421.html"
+    },
+    {
+      "id": "tang-yin-03",
+      "title": "桐阴清梦图",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "纸本水墨，立轴",
+      "description": "梧桐浓荫下，一位文士倚椅而眠。疏落的笔墨和大片留白营造清静气息，题诗则流露出远离仕途、安于闲居的心境。",
+      "venueId": "palace-beijing",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/229559.html"
+    },
+    {
+      "id": "tang-yin-04",
+      "title": "幽人燕坐图",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "纸本墨笔，立轴",
+      "description": "山峰与云气占据修长画幅，水边亭中有人静坐，案上置书与茶具。沿溪另一人物与亭中人形成呼应，可从细密的山石皴线中体会幽居之意。",
+      "venueId": "palace-beijing",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/231313.html"
+    },
+    {
+      "id": "tang-yin-05",
+      "title": "墨梅图",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "纸本墨笔，立轴",
+      "description": "梅干以干笔浓墨写成，枝梢与花朵则有浓淡变化。花枝、题诗与印章共同构成画面，适合放大观察笔触的枯润和墨色层次。",
+      "venueId": "palace-beijing",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/231483.html"
+    },
+    {
+      "id": "tang-yin-06",
+      "title": "秋风纨扇图",
+      "dateLabel": "明代，唐寅晚年",
+      "medium": "纸本水墨，立轴",
+      "description": "庭院一角，女子执扇沉思，柔婉面容与劲健衣纹相映。画家借班婕妤与秋扇的文学典故寄托身世之感，馆方将其列为晚年作品。",
+      "venueId": "shanghai-museum",
+      "sourceUrl": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00000875"
+    },
+    {
+      "id": "tang-yin-07",
+      "title": "落霞孤鹜图",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "绢本设色，立轴",
+      "description": "高柳、山峰与临水亭阁依次展开，远处烟水为空间留下余韵。题诗借王勃与滕王阁的意象，把江山景色与文学记忆联系起来。",
+      "venueId": "shanghai-museum",
+      "sourceUrl": "https://www.dpm.org.cn/Uploads/File/2020/05/15/u5ebe35a9dda61.pdf",
+      "holdingNote": "收藏机构及材质据故宫博物院网站《紫禁城》刊物图版题注核验；尚未取得上博对应数字藏品页。"
+    },
+    {
+      "id": "tang-yin-08",
+      "title": "骑驴思归图",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "绢本设色，立轴",
+      "description": "骑驴的文士置身山水之间，人物的微小尺度更显山势深远。上海博物馆的展览说明关注此画兼具南宗意趣与北宗山水骨架的笔墨特点。",
+      "venueId": "shanghai-museum",
+      "sourceUrl": "https://www.shanghaimuseum.net/mu/asset2/20160713160842024/no3_01_22.html"
+    },
+    {
+      "id": "tang-yin-09",
+      "title": "葑田行犊图",
+      "dateLabel": "明代，未署年款",
+      "medium": "纸本水墨，立轴",
+      "description": "松下骑牛的人物让人联想到李密牛角挂书的典故。画面弱化故事细节，将重点放在松荫中的闲适情境和山水笔墨上。",
+      "venueId": "shanghai-museum",
+      "sourceUrl": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00000964"
+    },
+    {
+      "id": "tang-yin-10",
+      "title": "山路松声图",
+      "dateLabel": "1516年（明正德十一年）",
+      "medium": "绢本，立轴",
+      "description": "山路盘旋于层叠峰峦之间，松林与飞泉呼应“松声”的诗意。馆方考订此画作于1516年，是唐寅送给即将离任的吴县知县李经的作品。",
+      "venueId": "palace-taipei",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3265?dep=P&mode=full"
+    },
+    {
+      "id": "tang-yin-11",
+      "title": "溪山渔隐图",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "绢本设色，手卷",
+      "description": "山岸、舟船与茅舍随长卷逐段展开，渔人的活动串联起溪山生活。观看时可沿水道缓缓移动，在不同段落之间感受疏密与远近的变化。",
+      "venueId": "palace-taipei",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "holdingNote": "馆藏号故画000973。本幅为绢；引首及拖尾等装裱部分材质另有记录。"
+    },
+    {
+      "id": "tang-yin-12",
+      "title": "陶谷赠词图",
+      "dateLabel": "约1516年（馆方据画风推定）",
+      "medium": "绢本，立轴",
+      "description": "画面取材于陶谷出使时与秦弱兰相遇的故事：室中烛光、琵琶与人物相对的姿态，营造出叙事情境。精整的山石与人物笔法可与《山路松声图》对照。",
+      "venueId": "palace-taipei",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3629?dep=P&mode=full",
+      "holdingNote": "约1516年的断代来自馆方与《山路松声图》的风格比较，并非画上明确纪年。"
+    },
+    {
+      "id": "tang-yin-13",
+      "title": "采莲图",
+      "dateLabel": "1520年（明正德十五年）",
+      "medium": "纸本，手卷",
+      "description": "荷塘、舟船、岸柳与远山铺陈成一段江南水景。手卷的横向节奏适合逐段展开，沿途观察人物活动与水岸景物的转换。",
+      "venueId": "palace-taipei",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1896?dep=P&mode=full",
+      "holdingNote": "馆藏号中画000023；创作年据馆方数字典藏记录。"
+    },
+    {
+      "id": "tang-yin-14",
+      "title": "李端端落籍图",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "纸本设色，立轴",
+      "description": "这幅人物叙事画以李端端为题，是南京博物院收藏的唐寅作品。观看时可留意人物之间的关系、衣纹线条与设色在画面中的配合。",
+      "venueId": "nanjing-museum",
+      "sourceUrl": "https://www.heritagemuseum.gov.hk/tc/resources/past_events/women_in_ac.html",
+      "holdingNote": "收藏归属据香港文化博物馆与南京博物院合办展览的官方展品说明；曾赴香港展出不代表收藏机构变更。"
+    },
+    {
+      "id": "tang-yin-15",
+      "title": "吹箫仕女图",
+      "dateLabel": "年代待核实",
+      "medium": "材质待核实",
+      "description": "现有公开图像以吹箫仕女为题，图片发布者署名唐寅。作者归属、原作材质与收藏记录尚缺对应馆方资料，当前仅作为待核实示例保留。",
+      "venueId": null,
+      "sourceUrl": "https://www.flickr.com/photos/chinese-history-and-art-museum/3390942975/",
+      "holdingNote": "仅找到第三方图像发布记录，不能据其标题中的“南京”确认南京博物院收藏；不在地图上生成藏馆点。"
+    },
+    {
+      "id": "tang-yin-17",
+      "title": "华山图",
+      "dateLabel": "1506年（明正德元年）",
+      "medium": "纸本水墨淡设色，立轴",
+      "description": "骑驴文士经过华山，人物与高耸山势形成尺度对比。画上题诗写超脱功名的心境，款识纪年为正德元年正月。",
+      "venueId": "cleveland",
+      "sourceUrl": "https://www.clevelandart.org/art/1969.116",
+      "holdingNote": "藏品编号1969.116。馆方API未提供当前展厅位置，不据此声称正在展出。"
+    },
+    {
+      "id": "tang-yin-18",
+      "title": "观瀑图扇页",
+      "dateLabel": "明代，具体年份未详",
+      "medium": "洒金纸本水墨设色，折扇装册页",
+      "description": "小幅扇面容纳山峰、瀑布与观景人物，以有限空间表现悠远山水。作品现以册页形式保存，洒金纸地为墨色与设色增添细微变化。",
+      "venueId": "met",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/45772",
+      "holdingNote": "藏品编号1982.7.2。馆方未给出具体创作年或当前展厅；API中的1470—1524为作者相关范围，不作为作品纪年。"
+    }
+  ],
+  "venues": [
+    {
+      "id": "palace-beijing",
+      "name": "故宫博物院",
+      "city": "北京",
+      "country": "中国",
+      "branch": "紫禁城院区（机构参考点）",
+      "coordinates": [116.390833, 39.915556],
+      "sourceUrl": "https://www.dpm.org.cn/",
+      "coordinateNote": "机构级参考坐标，取自Wikidata Q2047427的地球经纬度。未核实作品当前库房、展厅或展出状态。"
+    },
+    {
+      "id": "shanghai-museum",
+      "name": "上海博物馆",
+      "city": "上海",
+      "country": "中国",
+      "branch": "人民广场馆（机构参考点）",
+      "coordinates": [121.470556, 31.230278],
+      "sourceUrl": "https://www.shanghaimuseum.net/",
+      "coordinateNote": "机构级参考坐标，取自Wikidata Q1051293。人民广场馆仅作上海博物馆的地图锚点，未确认这些作品位于人民广场馆或东馆。"
+    },
+    {
+      "id": "palace-taipei",
+      "name": "台北故宫博物院",
+      "city": "台北",
+      "country": "中国",
+      "branch": "台北院区（机构参考点）",
+      "coordinates": [121.548611, 25.102222],
+      "sourceUrl": "https://www.npm.gov.tw/",
+      "coordinateNote": "机构级参考坐标，取自Wikidata Q540668。未核实作品当前库房、展厅、借展或南北院区调拨情况。"
+    },
+    {
+      "id": "nanjing-museum",
+      "name": "南京博物院",
+      "city": "南京",
+      "country": "中国",
+      "coordinates": [118.819444, 32.0425],
+      "sourceUrl": "https://www.njmuseum.org.cn/zh/visitIndex",
+      "coordinateNote": "机构级参考坐标，取自Wikidata Q1815891，对应中山东路321号院址。未核实作品当前库房、展厅或展出状态。"
+    },
+    {
+      "id": "cleveland",
+      "name": "克利夫兰艺术博物馆",
+      "city": "克利夫兰",
+      "country": "美国",
+      "coordinates": [-81.611667, 41.508889],
+      "sourceUrl": "https://www.clevelandart.org/",
+      "coordinateNote": "机构级参考坐标，取自Wikidata Q657415的首选坐标。未核实作品当前展厅或展出状态。"
+    },
+    {
+      "id": "met",
+      "name": "大都会艺术博物馆",
+      "city": "纽约",
+      "country": "美国",
+      "branch": "第五大道馆（机构参考点）",
+      "coordinates": [-73.963333, 40.779444],
+      "sourceUrl": "https://www.metmuseum.org/",
+      "coordinateNote": "机构级参考坐标，取自Wikidata Q160236。未核实作品当前展厅或展出状态。"
+    }
+  ]
+}

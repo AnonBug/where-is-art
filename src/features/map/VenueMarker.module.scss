@@ -1,0 +1,132 @@
+.marker {
+  // Only the pin's hit area contributes to the MapLibre anchor box.
+  // Thumbnails and the label must never move the geographic point.
+  position: relative;
+  width: 44px;
+  height: 44px;
+  color: var(--ink);
+  pointer-events: none;
+}
+.pin {
+  position: absolute;
+  inset: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  pointer-events: auto;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid var(--paper);
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 1px rgba(104, 134, 106, 0.3);
+  }
+}
+.thumbnails {
+  position: absolute;
+  bottom: calc(50% + 18px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 60px);
+  gap: 8px;
+  pointer-events: auto;
+  button {
+    width: 100%;
+    min-width: 0;
+    padding: 3px;
+    border: 1px solid rgba(104, 134, 106, 0.45);
+    border-radius: 9px;
+    background: var(--white);
+    color: var(--ink);
+    box-shadow: 0 3px 7px rgba(37, 60, 59, 0.13);
+    overflow: hidden;
+    &:hover,
+    &.activeWork {
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(40, 95, 116, 0.2);
+    }
+  }
+}
+.image {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 5px;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.label {
+  position: absolute;
+  top: calc(50% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: rgba(246, 240, 226, 0.96);
+  border: 1px solid rgba(104, 134, 106, 0.3);
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  pointer-events: auto;
+  span {
+    padding-left: 7px;
+  }
+}
+.selected {
+  .pin::before {
+    background: var(--accent);
+  }
+  .label {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+.expanded .thumbnails {
+  grid-template-columns: repeat(var(--columns), 76px);
+  max-height: calc(50dvh - 105px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  padding: 4px;
+}
+.caption {
+  display: block;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 5px 2px 2px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 1023px), (pointer: coarse) {
+  .expanded .thumbnails {
+    grid-template-columns: repeat(var(--columns), 64px);
+  }
+}
+@media (orientation: landscape) and (max-height: 600px) {
+  .expanded .thumbnails {
+    grid-template-columns: none;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: 64px;
+    max-width: calc(100vw - 80px);
+    max-height: none;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "annunciation": {
+    "path": "assets/annunciation.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg/960px-Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+    "bytes": 147010
+  },
+  "carnation": {
+    "path": "assets/carnation.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/LEONARDO-DA-VINCI_-_MADONNA-MIT-DER-NELKE-7779_917154_BSTGS.jpg/960px-LEONARDO-DA-VINCI_-_MADONNA-MIT-DER-NELKE-7779_917154_BSTGS.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:LEONARDO-DA-VINCI_-_MADONNA-MIT-DER-NELKE-7779_917154_BSTGS.jpg",
+    "bytes": 462366
+  },
+  "baptism": {
+    "path": "assets/baptism.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Verrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg/960px-Verrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Verrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg",
+    "bytes": 356116
+  },
+  "ginevra": {
+    "path": "assets/ginevra.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg/960px-Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg",
+    "bytes": 309063
+  },
+  "benois": {
+    "path": "assets/benois.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Leonardo%2C_Madonna_Benois.JPG/960px-Leonardo%2C_Madonna_Benois.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo%2C_Madonna_Benois.JPG",
+    "bytes": 588735
+  },
+  "adoration": {
+    "path": "assets/adoration.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg/960px-Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg",
+    "bytes": 233936
+  },
+  "jerome": {
+    "path": "assets/jerome.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Leonardo_da_Vinci%2C_Saint_Jerome.jpg/960px-Leonardo_da_Vinci%2C_Saint_Jerome.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci%2C_Saint_Jerome.jpg",
+    "bytes": 211736
+  },
+  "litta": {
+    "path": "assets/litta.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg/960px-Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+    "bytes": 387449
+  },
+  "rocks-paris": {
+    "path": "assets/rocks-paris.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg/960px-Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg",
+    "bytes": 440901
+  },
+  "musician": {
+    "path": "assets/musician.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Leonardo_da_Vinci_-_Portrait_of_a_Musician_-_Pinacoteca_Ambrosiana.jpg/960px-Leonardo_da_Vinci_-_Portrait_of_a_Musician_-_Pinacoteca_Ambrosiana.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Portrait_of_a_Musician_-_Pinacoteca_Ambrosiana.jpg",
+    "bytes": 289191
+  },
+  "ermine": {
+    "path": "assets/ermine.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Lady_with_an_Ermine_-_Leonardo_da_Vinci_%28adjusted_levels%29.jpg/960px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_%28adjusted_levels%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lady_with_an_Ermine_-_Leonardo_da_Vinci_%28adjusted_levels%29.jpg",
+    "bytes": 241130
+  },
+  "ferronniere": {
+    "path": "assets/ferronniere.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg/960px-Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg",
+    "bytes": 234933
+  },
+  "rocks-london": {
+    "path": "assets/rocks-london.png",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29.png/960px-Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29.png",
+    "bytes": 2205810
+  },
+  "supper": {
+    "path": "assets/supper.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg/960px-Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg",
+    "bytes": 155638
+  },
+  "asse": {
+    "path": "assets/asse.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/6.2_1980-1990_Saporetti_angolo_sud.jpg/960px-6.2_1980-1990_Saporetti_angolo_sud.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:6.2_1980-1990_Saporetti_angolo_sud.jpg",
+    "bytes": 377080,
+    "credit": "摄影：Castello Sforzesco · CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "licenseLabel": "CC BY-SA 4.0 许可 · 原图缩放展示"
+  },
+  "cartoon": {
+    "path": "assets/cartoon.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Leonardo_-_St._Anne_cartoon.jpg/960px-Leonardo_-_St._Anne_cartoon.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_-_St._Anne_cartoon.jpg",
+    "bytes": 342997
+  },
+  "salvator": {
+    "path": "assets/salvator.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg/960px-Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg",
+    "bytes": 425298
+  },
+  "anne": {
+    "path": "assets/anne.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Sainte_Anne_Leonard.jpg/960px-Sainte_Anne_Leonard.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sainte_Anne_Leonard.jpg",
+    "bytes": 303806
+  },
+  "mona": {
+    "path": "assets/mona.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/960px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    "bytes": 517340
+  },
+  "scapigliata": {
+    "path": "assets/scapigliata.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Leonardo_da_Vinci_-_Female_head_%28La_Scapigliata%29_-_WGA12716.jpg/960px-Leonardo_da_Vinci_-_Female_head_%28La_Scapigliata%29_-_WGA12716.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Female_head_%28La_Scapigliata%29_-_WGA12716.jpg",
+    "bytes": 300776
+  },
+  "john": {
+    "path": "assets/john.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg/960px-Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+    "bytes": 214761
+  }
+}

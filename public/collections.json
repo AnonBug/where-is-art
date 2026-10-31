@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "title": "名画在哪里",
+  "description": "以名画为线索，探索中外艺术作品的收藏地址。",
+  "collections": [
+    {
+      "id": "leonardo",
+      "title": "达·芬奇名画地图",
+      "description": "沿着21件传世作品，探索达·芬奇相关画作的收藏分布与艺术看点。",
+      "coverWorkId": "mona",
+      "workIds": [
+        "mona",
+        "rocks-paris",
+        "ferronniere",
+        "anne",
+        "john",
+        "annunciation",
+        "adoration",
+        "supper",
+        "musician",
+        "jerome",
+        "carnation",
+        "ermine",
+        "ginevra",
+        "benois",
+        "scapigliata",
+        "rocks-london",
+        "baptism",
+        "asse",
+        "litta",
+        "salvator",
+        "cartoon"
+      ],
+      "eyebrow": "沿着画作，重新认识达·芬奇",
+      "introTitle": [
+        "名画散落世界，",
+        "目光在此相遇。"
+      ],
+      "introDescription": "从巴黎的一抹微笑，到米兰的一次晚餐。循着收藏地点，走近画布上的细节。",
+      "mapHint": "点击地点，展开一座博物馆的专题作品。",
+      "featuredWorkId": "mona",
+      "defaultRegion": "europe",
+      "updatedAt": "2026-10-20",
+      "scope": "收录21件作品：16件按馆方署名展示的绘画、2件合作作品、2件归属争议作品，以及1件大型纸本画稿。这个数字是本专题的收录范围，不能理解为学界一致认可的亲笔作品总数。",
+      "attributionNotes": [
+        {
+          "label": "馆方署名",
+          "description": "收藏机构将其列为达·芬奇作品。不同作品的学术共识程度不同；涉及工作室参与或历史归属争议时，详情另作说明。"
+        },
+        {
+          "label": "合作作品",
+          "description": "达·芬奇参与或主持、由多人完成的作品和装饰工程。"
+        },
+        {
+          "label": "归属争议",
+          "description": "《丽塔圣母》与《救世主》单列展示。《救世主》的确切存放地点尚未获可靠公开确认，因此不设置地图坐标。"
+        },
+        {
+          "label": "纸本画稿",
+          "description": "《伯灵顿宫画稿》是大型炭笔、白粉笔作品，不与油画混为一谈。"
+        }
+      ]
+    }
+  ]
+}

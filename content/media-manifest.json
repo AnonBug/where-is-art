@@ -1,0 +1,1745 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "id": "tang-yin-01-whole",
+      "artworkId": "tang-yin-01",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 6845,
+      "height": 12694,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-01-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 7592
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-01-whole/preview.webp",
+        "width": 690,
+        "height": 1280,
+        "bytes": 54814
+      },
+      "delivery": {
+        "kind": "dzi",
+        "url": "media/tang-yin/tang-yin-01-whole/detail.dzi",
+        "width": 6845,
+        "height": 12694,
+        "tileSize": 512,
+        "overlap": 1,
+        "tileCount": 489,
+        "totalBytes": 22831858,
+        "maxTileBytes": 88203
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%AF%85%E7%8E%8B%E8%9C%80%E5%AE%AB%E5%A6%93%E5%9B%BE%E8%BD%B4.png",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/%E5%94%90%E5%AF%85%E7%8E%8B%E8%9C%80%E5%AE%AB%E5%A6%93%E5%9B%BE%E8%BD%B4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "272e0793340c05507c02ba383cbb2fd2fcb914b9d6f2cec0d725dc61ba7e0b1f",
+      "credit": "唐寅《王蜀宫妓图》，图像来源：Wikimedia Commons",
+      "licenseLabel": "Public Domain（来源页标注）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "quality": 86,
+        "chromaSubsampling": "4:4:4",
+        "colourspace": "srgb",
+        "sourceWidth": 8556,
+        "sourceHeight": 15868,
+        "boundedMasterBytes": 17643934,
+        "boundedMasterPublished": false
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 4291,
+        "width": 8556,
+        "height": 8556
+      }
+    },
+    {
+      "id": "tang-yin-02-whole",
+      "artworkId": "tang-yin-02",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 42561,
+      "height": 3688,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-02-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 12886
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-02-whole/preview.webp",
+        "width": 1280,
+        "height": 111,
+        "bytes": 19218
+      },
+      "delivery": {
+        "kind": "dzi",
+        "url": "media/tang-yin/tang-yin-02-whole/detail.dzi",
+        "width": 42561,
+        "height": 3688,
+        "tileSize": 512,
+        "overlap": 1,
+        "tileCount": 914,
+        "totalBytes": 25117092,
+        "maxTileBytes": 66860
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%AF%85%E4%BA%8B%E8%8C%97%E5%9B%BE%E5%8D%B7.png",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E5%94%90%E5%AF%85%E4%BA%8B%E8%8C%97%E5%9B%BE%E5%8D%B7.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "8ab2a9cf3e8fde7407b1eb35b82294532e5dd61b07cd4613340ccb4a9060de29",
+      "credit": "唐寅《事茗图卷》，图像来源：Wikimedia Commons",
+      "licenseLabel": "Public Domain（来源页标注）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "quality": 86,
+        "chromaSubsampling": "4:4:4",
+        "colourspace": "srgb",
+        "sourceWidth": 42561,
+        "sourceHeight": 3688,
+        "boundedMasterBytes": 17405556,
+        "boundedMasterPublished": false
+      },
+      "thumbnailCrop": {
+        "left": 23267,
+        "top": 0,
+        "width": 3688,
+        "height": 3688
+      }
+    },
+    {
+      "id": "tang-yin-03-whole",
+      "artworkId": "tang-yin-03",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 4029,
+      "height": 7546,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-03-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 5664
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-03-whole/preview.webp",
+        "width": 683,
+        "height": 1280,
+        "bytes": 71910
+      },
+      "delivery": {
+        "kind": "dzi",
+        "url": "media/tang-yin/tang-yin-03-whole/detail.dzi",
+        "width": 4029,
+        "height": 7546,
+        "tileSize": 512,
+        "overlap": 1,
+        "tileCount": 172,
+        "totalBytes": 7304134,
+        "maxTileBytes": 67711
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%AF%85%E6%A1%90%E9%98%B4%E6%B8%85%E6%A2%A6%E5%9B%BE%E8%BD%B4.png",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/%E5%94%90%E5%AF%85%E6%A1%90%E9%98%B4%E6%B8%85%E6%A2%A6%E5%9B%BE%E8%BD%B4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "8e4d7b96bfaf0b7f74473f6ab755a6467ead942dbc644e16f025815d8a432315",
+      "credit": "唐寅《桐阴清梦图》，图像来源：Wikimedia Commons",
+      "licenseLabel": "Public Domain（来源页标注）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "quality": 90,
+        "chromaSubsampling": "4:4:4",
+        "colourspace": "srgb",
+        "sourceWidth": 4029,
+        "sourceHeight": 7546,
+        "boundedMasterBytes": 5256060,
+        "boundedMasterPublished": false
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 2664,
+        "width": 4029,
+        "height": 4029
+      }
+    },
+    {
+      "id": "tang-yin-04-whole",
+      "artworkId": "tang-yin-04",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 4266,
+      "height": 12958,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-04-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13960
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-04-whole/preview.webp",
+        "width": 421,
+        "height": 1280,
+        "bytes": 61272
+      },
+      "delivery": {
+        "kind": "dzi",
+        "url": "media/tang-yin/tang-yin-04-whole/detail.dzi",
+        "width": 4266,
+        "height": 12958,
+        "tileSize": 512,
+        "overlap": 1,
+        "tileCount": 340,
+        "totalBytes": 17402345,
+        "maxTileBytes": 110591
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%AF%85%E5%B9%BD%E4%BA%BA%E7%87%95%E5%9D%90%E5%9B%BE%E8%BD%B4.png",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/%E5%94%90%E5%AF%85%E5%B9%BD%E4%BA%BA%E7%87%95%E5%9D%90%E5%9B%BE%E8%BD%B4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "52dd34f1b677d3d4da27846a3e0db8ba5518bb50eca5d281225255666776dcd6",
+      "credit": "唐寅《幽人燕坐图》，图像来源：Wikimedia Commons",
+      "licenseLabel": "Public Domain（来源页标注）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "quality": 90,
+        "chromaSubsampling": "4:4:4",
+        "colourspace": "srgb",
+        "sourceWidth": 4266,
+        "sourceHeight": 12958,
+        "boundedMasterBytes": 12829860,
+        "boundedMasterPublished": false
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 5123,
+        "width": 4266,
+        "height": 4266
+      }
+    },
+    {
+      "id": "tang-yin-05-whole",
+      "artworkId": "tang-yin-05",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 4717,
+      "height": 11892,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-05-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 7136
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-05-whole/preview.webp",
+        "width": 508,
+        "height": 1280,
+        "bytes": 41996
+      },
+      "delivery": {
+        "kind": "dzi",
+        "url": "media/tang-yin/tang-yin-05-whole/detail.dzi",
+        "width": 4717,
+        "height": 11892,
+        "tileSize": 512,
+        "overlap": 1,
+        "tileCount": 336,
+        "totalBytes": 15390382,
+        "maxTileBytes": 81151
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%AF%85%E5%A2%A8%E6%A2%85%E5%9B%BE%E8%BD%B4.png",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E5%94%90%E5%AF%85%E5%A2%A8%E6%A2%85%E5%9B%BE%E8%BD%B4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "fca42b142c69886c36e08c19c1097700c253f1694355055b9db734f0621e8a1d",
+      "credit": "唐寅《墨梅图》，图像来源：Wikimedia Commons",
+      "licenseLabel": "Public Domain（来源页标注）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "quality": 90,
+        "chromaSubsampling": "4:4:4",
+        "colourspace": "srgb",
+        "sourceWidth": 4717,
+        "sourceHeight": 11892,
+        "boundedMasterBytes": 11419999,
+        "boundedMasterPublished": false
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 4777,
+        "width": 4717,
+        "height": 4717
+      }
+    },
+    {
+      "id": "tang-yin-06-whole",
+      "artworkId": "tang-yin-06",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 2060,
+      "height": 4020,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-06-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 10680
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-06-whole/preview.webp",
+        "width": 656,
+        "height": 1280,
+        "bytes": 77328
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-06-whole/detail.jpg",
+        "width": 2060,
+        "height": 4020,
+        "bytes": 709471,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00000875",
+      "sourceImageUrl": "https://www.shanghaimuseum.net/mu/upload/202311/0f8307f3-3d38-4c42-a79f-1ca327e8544c.jpg",
+      "sourceHash": "87f859dd4164893dff842d21cf4f3b159f4fdd2467755eb08804ad7739f86ce4",
+      "credit": "唐寅《秋风纨扇图》，上海博物馆公开图像",
+      "licenseLabel": "使用条款待核实",
+      "publicationStatus": "review-required",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 2060,
+        "sourceHeight": 4020
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 1382,
+        "width": 2060,
+        "height": 2060
+      }
+    },
+    {
+      "id": "tang-yin-07-whole",
+      "artworkId": "tang-yin-07",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 3214,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-07-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15442
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-07-whole/preview.webp",
+        "width": 765,
+        "height": 1280,
+        "bytes": 160310
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-07-whole/detail.jpg",
+        "width": 1920,
+        "height": 3214,
+        "bytes": 1632970,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%AF%85%E8%90%BD%E9%9C%9E%E5%AD%A4%E9%B9%9C%E5%9B%BE%E8%BD%B4.png",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/%E5%94%90%E5%AF%85%E8%90%BD%E9%9C%9E%E5%AD%A4%E9%B9%9C%E5%9B%BE%E8%BD%B4.png/1920px-%E5%94%90%E5%AF%85%E8%90%BD%E9%9C%9E%E5%AD%A4%E9%B9%9C%E5%9B%BE%E8%BD%B4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "10e5cab28fc12ef43d678fc29c442f9c941c7f928fb666e4b904cd917308560d",
+      "credit": "唐寅《落霞孤鹜图》，图像：Yoohhee1982 / Wikimedia Commons",
+      "licenseLabel": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "quality": 90,
+        "chromaSubsampling": "4:4:4",
+        "colourspace": "srgb",
+        "sourceWidth": 1920,
+        "sourceHeight": 3214
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 647,
+        "width": 1920,
+        "height": 1920
+      }
+    },
+    {
+      "id": "tang-yin-08-whole",
+      "artworkId": "tang-yin-08",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1500,
+      "height": 3099,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-08-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 16964
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-08-whole/preview.webp",
+        "width": 620,
+        "height": 1280,
+        "bytes": 162206
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-08-whole/detail.jpg",
+        "width": 1500,
+        "height": 3099,
+        "bytes": 3748680,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://www.shanghaimuseum.net/mu/asset2/20160713160842024/no3_01_22.html",
+      "sourceImageUrl": "https://www.shanghaimuseum.net/mu/asset2/20160713160842024/images/no3/1/45513_big.jpg",
+      "sourceHash": "edacd04a5a54339d71104206c34791f76487b7a988b915f62ead91ee7cdef6ef",
+      "credit": "唐寅《骑驴思归图》，上海博物馆公开图像",
+      "licenseLabel": "使用条款待核实",
+      "publicationStatus": "review-required",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 1500,
+        "sourceHeight": 3099
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 800,
+        "width": 1500,
+        "height": 1500
+      }
+    },
+    {
+      "id": "tang-yin-09-whole",
+      "artworkId": "tang-yin-09",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1376,
+      "height": 2400,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-09-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23022
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-09-whole/preview.webp",
+        "width": 734,
+        "height": 1280,
+        "bytes": 213266
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-09-whole/detail.jpg",
+        "width": 1376,
+        "height": 2400,
+        "bytes": 636144,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%94%90%E5%AF%85_%E8%91%91%E7%94%B0%E8%A1%8C%E7%8A%8A%E5%9B%BE%E8%BD%B4.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E5%94%90%E5%AF%85_%E8%91%91%E7%94%B0%E8%A1%8C%E7%8A%8A%E5%9B%BE%E8%BD%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "4297392f8b5129fdf154d27245b8efb4f2e16bf6d062f1954d300f9e11c7d5d2",
+      "credit": "唐寅《葑田行犊图》，图像来源：Wikimedia Commons",
+      "licenseLabel": "Public Domain（来源页标注）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 1376,
+        "sourceHeight": 2400
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 512,
+        "width": 1376,
+        "height": 1376
+      }
+    },
+    {
+      "id": "tang-yin-10-whole",
+      "artworkId": "tang-yin-10",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 2291,
+      "height": 3055,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-10-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21984
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-10-whole/preview.webp",
+        "width": 960,
+        "height": 1280,
+        "bytes": 216764
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-10-whole/detail.jpg",
+        "width": 2291,
+        "height": 3055,
+        "bytes": 1412010,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3265?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000466N000000000PAB/full/full/0/default.jpg",
+      "sourceHash": "79a55cb205b6bd083eb2f1cc0ef6bfa414370fbd661babbfb51cab3cbdee0b04",
+      "credit": "唐寅《山路松声图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 2291,
+        "sourceHeight": 3055
+      },
+      "thumbnailCrop": {
+        "left": 389,
+        "top": 1207,
+        "width": 1558,
+        "height": 1558
+      }
+    },
+    {
+      "id": "tang-yin-11-whole",
+      "artworkId": "tang-yin-11",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 11688,
+      "height": 514,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 25556
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-whole/preview.webp",
+        "width": 1280,
+        "height": 56,
+        "bytes": 16954
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-whole/detail.jpg",
+        "width": 11688,
+        "height": 514,
+        "bytes": 2428427,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000SDAAA/full/full/0/default.jpg",
+      "sourceHash": "50640481473df2884cbaa12682883e38024ffd22be48aca79a46fd0e761a27b1",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 11688,
+        "sourceHeight": 514
+      },
+      "thumbnailCrop": {
+        "left": 6405,
+        "top": 0,
+        "width": 514,
+        "height": 514
+      }
+    },
+    {
+      "id": "tang-yin-12-whole",
+      "artworkId": "tang-yin-12",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 4192,
+      "height": 6672,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-12-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13946
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-12-whole/preview.webp",
+        "width": 804,
+        "height": 1280,
+        "bytes": 150960
+      },
+      "delivery": {
+        "kind": "dzi",
+        "url": "media/tang-yin/tang-yin-12-whole/detail.dzi",
+        "width": 4192,
+        "height": 6672,
+        "tileSize": 512,
+        "overlap": 1,
+        "tileCount": 187,
+        "totalBytes": 12783542,
+        "maxTileBytes": 133803
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tao_Gu_Presents_a_Poem_by_Tang_Yin.JPG",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Tao_Gu_Presents_a_Poem_by_Tang_Yin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "2baba96ed76d2d961bbe31443055b24ed9208c8fae0a952b9dd1dc1c1ea99068",
+      "credit": "唐寅《陶谷赠词图》，图像来源：Wikimedia Commons",
+      "licenseLabel": "Public Domain（来源页标注）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "quality": 90,
+        "chromaSubsampling": "4:4:4",
+        "colourspace": "srgb",
+        "sourceWidth": 4192,
+        "sourceHeight": 6672,
+        "boundedMasterBytes": 9425350,
+        "boundedMasterPublished": false
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 2174,
+        "width": 4192,
+        "height": 4192
+      }
+    },
+    {
+      "id": "tang-yin-13-whole",
+      "artworkId": "tang-yin-13",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 9740,
+      "height": 617,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-13-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18060
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-13-whole/preview.webp",
+        "width": 1280,
+        "height": 81,
+        "bytes": 27848
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-13-whole/detail.jpg",
+        "width": 9740,
+        "height": 617,
+        "bytes": 2082655,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1896?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000023N000000000SDAAA/full/full/0/default.jpg",
+      "sourceHash": "679616e6b93a77a66ff194008ec178c5089db5ce7ee7bf005c3509d54daf0b86",
+      "credit": "唐寅《采莲图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 9740,
+        "sourceHeight": 617
+      },
+      "thumbnailCrop": {
+        "left": 6802,
+        "top": 0,
+        "width": 617,
+        "height": 617
+      }
+    },
+    {
+      "id": "tang-yin-14-whole",
+      "artworkId": "tang-yin-14",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1024,
+      "height": 2176,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-14-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18686
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-14-whole/preview.webp",
+        "width": 602,
+        "height": 1280,
+        "bytes": 168990
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-14-whole/detail.jpg",
+        "width": 1024,
+        "height": 2176,
+        "bytes": 1156065,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://www.heritagemuseum.gov.hk/tc/resources/past_events/women_in_ac.html",
+      "sourceImageUrl": "https://www.heritagemuseum.gov.hk/images/resourceandservice/pastevent/women_in_ac/Li%20Duanduan.jpg",
+      "sourceHash": "85f63a2d3f7c6239cb8dab871358fea35b6c6b19af141565d5c1d2459133ca41",
+      "credit": "唐寅《李端端落籍图》，南京博物院提供，香港文化博物馆展览图像",
+      "licenseLabel": "使用条款待核实",
+      "publicationStatus": "review-required",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 1024,
+        "sourceHeight": 2176
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 576,
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "id": "tang-yin-17-whole",
+      "artworkId": "tang-yin-17",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1442,
+      "height": 3400,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-17-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21062
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-17-whole/preview.webp",
+        "width": 543,
+        "height": 1280,
+        "bytes": 129798
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-17-whole/detail.jpg",
+        "width": 1442,
+        "height": 3400,
+        "bytes": 3181551,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://www.clevelandart.org/art/1969.116",
+      "sourceImageUrl": "https://openaccess-cdn.clevelandart.org/1969.116/1969.116_print.jpg",
+      "sourceHash": "074ec92ffb92e893da32c1c43f6fbebc2f18fd750a5a453f6bce9d46908bf777",
+      "credit": "唐寅《华山图》，克利夫兰艺术博物馆，1969.116",
+      "licenseLabel": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 1442,
+        "sourceHeight": 3400
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 979,
+        "width": 1442,
+        "height": 1442
+      }
+    },
+    {
+      "id": "tang-yin-18-whole",
+      "artworkId": "tang-yin-18",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 2000,
+      "height": 1033,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-18-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18098
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-18-whole/preview.webp",
+        "width": 1280,
+        "height": 661,
+        "bytes": 129646
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-18-whole/detail.jpg",
+        "width": 2000,
+        "height": 1033,
+        "bytes": 1607985,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/45772",
+      "sourceImageUrl": "https://images.metmuseum.org/CRDImages/as/original/DP153572.jpg",
+      "sourceHash": "170deb0b09b62b094203224549b83051dffbd054b48592342f93358d516f6d1e",
+      "credit": "唐寅《观瀑图扇页》，大都会艺术博物馆",
+      "licenseLabel": "Public Domain / Open Access",
+      "licenseUrl": "https://www.metmuseum.org/policies/image-resources",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 2000,
+        "sourceHeight": 1033
+      },
+      "thumbnailCrop": {
+        "left": 484,
+        "top": 0,
+        "width": 1033,
+        "height": 1033
+      }
+    },
+    {
+      "id": "tang-yin-15-whole",
+      "artworkId": "tang-yin-15",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 423,
+      "height": 800,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-15-whole/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22634
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-15-whole/preview.jpg",
+        "width": 423,
+        "height": 800,
+        "bytes": 65973
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-15-whole/detail.jpg",
+        "width": 423,
+        "height": 800,
+        "bytes": 65973,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://www.flickr.com/photos/chinese-history-and-art-museum/3390942975/",
+      "sourceImageUrl": "https://live.staticflickr.com/3540/3390942975_0c9922fc91_c.jpg",
+      "sourceHash": "0c69aba69c255df46098c9b37e3daedded692270e818469327d23516a2ad444d",
+      "credit": "唐寅《吹箫仕女图》，China Online Museum / Flickr",
+      "licenseLabel": "使用条款待核实",
+      "publicationStatus": "review-required",
+      "quality": "standard",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 423,
+        "sourceHeight": 800
+      },
+      "thumbnailCrop": {
+        "left": 0,
+        "top": 189,
+        "width": 423,
+        "height": 423
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-01",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 1",
+      "order": 1,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-01/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24084
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-01/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 323162
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-01/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2435484,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PAT/full/full/0/default.jpg",
+      "sourceHash": "b2f6582395f11dee0a550144c0b15f4d882bb784a8bd035e5d765792b62b829b",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-02",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 2",
+      "order": 2,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-02/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23638
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-02/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 333366
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-02/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2595094,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PAU/full/full/0/default.jpg",
+      "sourceHash": "8af020991daa87658aeecfb2dba21445a8a9b8353c114de981b8bfe836bdf6e3",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-03",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 3",
+      "order": 3,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-03/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 14326
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-03/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 239804
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-03/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2296645,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PAV/full/full/0/default.jpg",
+      "sourceHash": "2b97c6687d71dcd77862cb14aebafd7eef76682f45de5e79cce1651849ab7f21",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-04",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 4",
+      "order": 4,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-04/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23086
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-04/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 307464
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-04/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2509848,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PAW/full/full/0/default.jpg",
+      "sourceHash": "01ccf500238482b5adc8fb9083ba24c30f9486265e7e0e7e6b87077924072a79",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-05",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 5",
+      "order": 5,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-05/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22812
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-05/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 321754
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-05/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2549834,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PAX/full/full/0/default.jpg",
+      "sourceHash": "daac3d3e304e2ca4c2d1ea1eb18c1a9deb79f8d58c80007d2ce7914cc929c3ee",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-06",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 6",
+      "order": 6,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-06/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23510
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-06/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 316346
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-06/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2526444,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PAY/full/full/0/default.jpg",
+      "sourceHash": "d179f38895d0979bd91c182ce5882eae0cb60b98aac229af23bcb0cc33f233db",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-07",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 7",
+      "order": 7,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-07/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24480
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-07/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 331016
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-07/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2557663,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PAZ/full/full/0/default.jpg",
+      "sourceHash": "279e7c9e052510a317b8171f5f738aa21c30fe10bd988794e6f3f28f301e700f",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-08",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 8",
+      "order": 8,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-08/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 20838
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-08/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 295794
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-08/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2459989,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PBA/full/full/0/default.jpg",
+      "sourceHash": "e51f1e7406515642032f49dcc2a159887efc2f276c352bb0e3646e5beedbdc68",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-09",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 9",
+      "order": 9,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-09/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24634
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-09/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 315628
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-09/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2474930,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PBB/full/full/0/default.jpg",
+      "sourceHash": "c18f8f855b925e8270228874266fcfde5bbf478e30b3b6857a8a987bc7dc0d38",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-10",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 10",
+      "order": 10,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-10/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19528
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-10/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 262852
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-10/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2351893,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PBC/full/full/0/default.jpg",
+      "sourceHash": "bd1e72ce7b569094761575c1f417715322c2d64eaebb8f2af3b606d60297195d",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-11",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 11",
+      "order": 11,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-11/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 17188
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-11/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 250044
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-11/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2306773,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PBD/full/full/0/default.jpg",
+      "sourceHash": "e8e216ba54069a19f31b989a687753465fd81ab8e5f2f6caa1820e1392a91c1f",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-11-detail-12",
+      "artworkId": "tang-yin-11",
+      "role": "detail",
+      "label": "局部 12",
+      "order": 12,
+      "width": 3056,
+      "height": 2290,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-11-detail-12/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18598
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-11-detail-12/preview.webp",
+        "width": 1280,
+        "height": 959,
+        "bytes": 280536
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-11-detail-12/detail.jpg",
+        "width": 3056,
+        "height": 2290,
+        "bytes": 2440461,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/3656?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000973N000000000PBE/full/full/0/default.jpg",
+      "sourceHash": "6a85c9331e306b6b8ffa6a06fccac0fb256e93ad8c5bd174eff35afa2717e8b1",
+      "credit": "唐寅《溪山渔隐图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3056,
+        "sourceHeight": 2290
+      },
+      "thumbnailCrop": {
+        "left": 383,
+        "top": 0,
+        "width": 2290,
+        "height": 2290
+      }
+    },
+    {
+      "id": "tang-yin-13-detail-01",
+      "artworkId": "tang-yin-13",
+      "role": "detail",
+      "label": "局部 1",
+      "order": 1,
+      "width": 3058,
+      "height": 2289,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-13-detail-01/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 11502
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-13-detail-01/preview.webp",
+        "width": 1280,
+        "height": 958,
+        "bytes": 149794
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-13-detail-01/detail.jpg",
+        "width": 3058,
+        "height": 2289,
+        "bytes": 1362910,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1896?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000023N000000000PAA/full/full/0/default.jpg",
+      "sourceHash": "0fd1059c4bc0a2dcedd4ce04d38d6dff1832db47db188fe433f71a026d8a4153",
+      "credit": "唐寅《采莲图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3058,
+        "sourceHeight": 2289
+      },
+      "thumbnailCrop": {
+        "left": 385,
+        "top": 0,
+        "width": 2289,
+        "height": 2289
+      }
+    },
+    {
+      "id": "tang-yin-13-detail-02",
+      "artworkId": "tang-yin-13",
+      "role": "detail",
+      "label": "局部 2",
+      "order": 2,
+      "width": 3058,
+      "height": 2289,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-13-detail-02/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 10102
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-13-detail-02/preview.webp",
+        "width": 1280,
+        "height": 958,
+        "bytes": 117962
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-13-detail-02/detail.jpg",
+        "width": 3058,
+        "height": 2289,
+        "bytes": 1126660,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1896?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000023N000000000PAB/full/full/0/default.jpg",
+      "sourceHash": "45ebdb34c35b6886369b180b02add1bae923b92943088cf05907956494a9ca63",
+      "credit": "唐寅《采莲图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3058,
+        "sourceHeight": 2289
+      },
+      "thumbnailCrop": {
+        "left": 385,
+        "top": 0,
+        "width": 2289,
+        "height": 2289
+      }
+    },
+    {
+      "id": "tang-yin-13-detail-03",
+      "artworkId": "tang-yin-13",
+      "role": "detail",
+      "label": "局部 3",
+      "order": 3,
+      "width": 3058,
+      "height": 2289,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-13-detail-03/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 11654
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-13-detail-03/preview.webp",
+        "width": 1280,
+        "height": 958,
+        "bytes": 134792
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-13-detail-03/detail.jpg",
+        "width": 3058,
+        "height": 2289,
+        "bytes": 1274531,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1896?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000023N000000000PAC/full/full/0/default.jpg",
+      "sourceHash": "d8e1eb1a3065f99157a4943e59d0816972d788122903ae45bb3befef85146cd5",
+      "credit": "唐寅《采莲图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3058,
+        "sourceHeight": 2289
+      },
+      "thumbnailCrop": {
+        "left": 385,
+        "top": 0,
+        "width": 2289,
+        "height": 2289
+      }
+    },
+    {
+      "id": "tang-yin-13-detail-04",
+      "artworkId": "tang-yin-13",
+      "role": "detail",
+      "label": "局部 4",
+      "order": 4,
+      "width": 3058,
+      "height": 2289,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-13-detail-04/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 16390
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-13-detail-04/preview.webp",
+        "width": 1280,
+        "height": 958,
+        "bytes": 162936
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-13-detail-04/detail.jpg",
+        "width": 3058,
+        "height": 2289,
+        "bytes": 1335383,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1896?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000023N000000000PAD/full/full/0/default.jpg",
+      "sourceHash": "6a61b2a75d5735b5532c923a351514f641d76a709868363a29f8a9ff419f90cd",
+      "credit": "唐寅《采莲图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3058,
+        "sourceHeight": 2289
+      },
+      "thumbnailCrop": {
+        "left": 385,
+        "top": 0,
+        "width": 2289,
+        "height": 2289
+      }
+    },
+    {
+      "id": "tang-yin-13-detail-05",
+      "artworkId": "tang-yin-13",
+      "role": "detail",
+      "label": "局部 5",
+      "order": 5,
+      "width": 3058,
+      "height": 2289,
+      "thumbnail": {
+        "url": "media/tang-yin/tang-yin-13-detail-05/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15786
+      },
+      "preview": {
+        "url": "media/tang-yin/tang-yin-13-detail-05/preview.webp",
+        "width": 1280,
+        "height": 958,
+        "bytes": 179594
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/tang-yin/tang-yin-13-detail-05/detail.jpg",
+        "width": 3058,
+        "height": 2289,
+        "bytes": 1439348,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/opendata/Pub/Detail/1896?dep=P&mode=full",
+      "sourceImageUrl": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000023N000000000PAE/full/full/0/default.jpg",
+      "sourceHash": "16cd4ca05fa5e5c8383470c8344e4dc7783b59e47cb18fd4c0be02a6427c5c98",
+      "credit": "唐寅《采莲图》，国立故宫博物院，台北",
+      "licenseLabel": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "publicationStatus": "cleared",
+      "quality": "high",
+      "processing": {
+        "pipelineVersion": 1,
+        "format": "jpeg",
+        "sourcePreserved": true,
+        "sourceWidth": 3058,
+        "sourceHeight": 2289
+      },
+      "thumbnailCrop": {
+        "left": 385,
+        "top": 0,
+        "width": 2289,
+        "height": 2289
+      }
+    }
+  ]
+}
