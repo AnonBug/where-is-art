@@ -99,7 +99,30 @@ export function Catalog({
   const expanded = useSession((state) => state.expanded[tab]);
   const topic = data.topics.find((t) => t.id === topicId);
   const scrollRef = useSavedScroll(`catalog:${tab}`);
+  const pendingPeriod = useRef<{
+    element: HTMLElement;
+    id: string;
+    tab: Category;
+  } | null>(null);
   useLayoutEffect(() => {
+    const target = pendingPeriod.current;
+    pendingPeriod.current = null;
+    const directory = scrollRef.current;
+    if (
+      compact &&
+      target &&
+      target.id === expanded &&
+      target.tab === tab &&
+      directory?.contains(target.element)
+    ) {
+      // Measure the section after the previous one has collapsed. The heading
+      // itself may already be sticky, so its position cannot locate the section.
+      directory.scrollTop +=
+        target.element.getBoundingClientRect().top -
+        directory.getBoundingClientRect().top -
+        directory.clientTop;
+      return;
+    }
     if (
       !scope.startsWith("artist:") ||
       useSession.getState().scroll[`catalog:${tab}`] !== undefined
@@ -108,7 +131,7 @@ export function Catalog({
     scrollRef.current
       ?.querySelector<HTMLElement>('button[aria-current="true"]')
       ?.scrollIntoView?.({ block: "nearest" });
-  }, [scope, tab, expanded, scrollRef]);
+  }, [scope, tab, expanded, scrollRef, compact]);
   return (
     <aside className={s.catalog} aria-label="名画目录">
       <div className={s.brand}>
@@ -181,13 +204,24 @@ export function Catalog({
             : data.periods
                 .filter((period) => period.category === tab)
                 .map((period) => (
-                  <section key={period.id} className={s.period}>
+                  <section
+                    key={period.id}
+                    className={`${s.period} ${expanded === period.id ? s.expandedPeriod : ""}`}
+                  >
                     <button
                       className={s.periodHeading}
                       aria-expanded={expanded === period.id}
-                      onClick={() =>
-                        useSession.getState().togglePeriod(tab, period.id)
-                      }
+                      onClick={(event) => {
+                        pendingPeriod.current =
+                          compact && expanded !== period.id
+                            ? {
+                                element: event.currentTarget.parentElement!,
+                                id: period.id,
+                                tab,
+                              }
+                            : null;
+                        useSession.getState().togglePeriod(tab, period.id);
+                      }}
                     >
                       <Icon
                         name={expanded === period.id ? "down" : "chevron"}

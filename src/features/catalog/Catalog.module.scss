@@ -256,7 +256,21 @@
     }
   }
   .directory {
-    padding: 20px 24px;
+    --directory-padding: 20px;
+    padding: var(--directory-padding) 24px;
+    overflow-anchor: none;
+  }
+  .period:last-child {
+    // Leave room at the end so even the final, short section can reach the top.
+    min-height: calc(100% + var(--directory-padding));
+    margin-bottom: 0;
+  }
+  .expandedPeriod > .periodHeading {
+    position: sticky;
+    // Cover the scroll container's top padding while pinned below the tabs.
+    top: calc(-1 * var(--directory-padding));
+    z-index: 1;
+    background: var(--paper);
   }
   .artist {
     padding: 19px 15px;
