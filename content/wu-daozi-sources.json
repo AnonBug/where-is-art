@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-02",
+  "scope": "仅送子天王图、八十七神仙卷；道子墨宝暂不纳入。",
+  "artist": {
+    "id": "wu-daozi",
+    "name": "吴道子",
+    "en": "Wu Daozi",
+    "dynasty": "唐",
+    "lifeDisplay": "约686—约760；确切生卒不详",
+    "birthYear": null,
+    "deathYear": null,
+    "activePeriod": "8世纪",
+    "biography": "又名吴道玄，阳翟人。以佛道人物与壁画著称，兼画山水，衣纹线条富于运动感，被后世尊为画圣。吴家样影响深远，传名画卷不等于亲笔遗存。",
+    "paintingSpecialties": "佛道人物、壁画、线描",
+    "lifeNote": "采用巫鸿2022年论文约年；馆方旧条目另载约685—758或卒792等异说，不能当作确定日期。",
+    "sourceIds": [
+      "wu-scholar",
+      "hidden-gems"
+    ],
+    "checkedDate": "2026-11-01",
+    "historicalStanding": "画圣；佛道人物与壁画的标志性画家"
+  },
+  "evidence": [
+    {
+      "url": "https://theme.npm.edu.tw/exh110/HiddenGems/ch/page-2.html",
+      "use": "送子天王图收藏机构、画面内容及后世摹本判断。"
+    },
+    {
+      "url": "https://www.cafa.com.cn/cn/special_topics/details/5210049",
+      "use": "八十七神仙卷材质、佚名归属、徐悲鸿纪念馆藏。"
+    },
+    {
+      "url": "https://www.cafa.com.cn/cn/research/details/8310082",
+      "use": "八十七神仙卷年代和作者争议；北宋初为作者观点，不是定论。"
+    },
+    {
+      "url": "https://knowledge.uchicago.edu/record/5048/files/Unearthing-Wu-Daozi.pdf",
+      "use": "吴道子约年生卒及历史背景。"
+    }
+  ],
+  "images": [
+    {
+      "artworkId": "wu-daozi-songzi",
+      "file": "songzi.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%80%81%E5%AD%90%E5%A4%A9%E7%8E%8B%E5%9B%BE.%E4%BC%A0%E5%94%90.%E5%90%B4%E9%81%93%E5%AD%90%E7%BB%98.%E7%BA%B8%E6%9C%AC%E5%A2%A8%E7%AC%94.%E5%A4%A7%E9%98%AA%E5%B8%82%E7%AB%8B%E7%BE%8E%E6%9C%AF%E9%A6%86%E8%97%8F.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/%E9%80%81%E5%AD%90%E5%A4%A9%E7%8E%8B%E5%9B%BE.%E4%BC%A0%E5%94%90.%E5%90%B4%E9%81%93%E5%AD%90%E7%BB%98.%E7%BA%B8%E6%9C%AC%E5%A2%A8%E7%AC%94.%E5%A4%A7%E9%98%AA%E5%B8%82%E7%AB%8B%E7%BE%8E%E6%9C%AF%E9%A6%86%E8%97%8F.jpg",
+      "width": 29312,
+      "height": 3000,
+      "bytes": 19998638,
+      "sha256": "f9a564429c4ec10697b5188684fec85924f9dd08c3f7deb706f8861771212240",
+      "credit": "送子天王图，大阪市立美术馆藏；图像：Wikimedia Commons，原作者不详。",
+      "licenseLabel": "公共领域（Wikimedia Commons 文件页标注）",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:%E9%80%81%E5%AD%90%E5%A4%A9%E7%8E%8B%E5%9B%BE.%E4%BC%A0%E5%94%90.%E5%90%B4%E9%81%93%E5%AD%90%E7%BB%98.%E7%BA%B8%E6%9C%AC%E5%A2%A8%E7%AC%94.%E5%A4%A7%E9%98%AA%E5%B8%82%E7%AB%8B%E7%BE%8E%E6%9C%AF%E9%A6%86%E8%97%8F.jpg#Licensing",
+      "publicationStatus": "cleared",
+      "checkedAt": "2026-11-02",
+      "imageNote": "下载来源提供的完整画幅；不含全部装裱与题跋，不宣称馆方最高分辨率。",
+      "thumbnailFocus": [
+        0.26,
+        0.5
+      ]
+    },
+    {
+      "artworkId": "wu-daozi-eightyseven",
+      "file": "eightyseven.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eighty-seven_Celestials.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Eighty-seven_Celestials.jpg",
+      "width": 25902,
+      "height": 2800,
+      "bytes": 17394493,
+      "sha256": "5118e732ac47560263eef924f65b26adc1dab6369dbf3ad8d6d5a8c4c8a3c38a",
+      "credit": "八十七神仙卷，徐悲鸿纪念馆藏；图像：Wikimedia Commons，原作者不详。",
+      "licenseLabel": "公共领域（Wikimedia Commons 文件页标注）",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Eighty-seven_Celestials.jpg#Licensing",
+      "publicationStatus": "cleared",
+      "checkedAt": "2026-11-02",
+      "imageNote": "下载来源提供的完整画幅；不含全部装裱与题跋，不宣称馆方最高分辨率。",
+      "thumbnailFocus": [
+        0.8,
+        0.5
+      ]
+    }
+  ]
+}

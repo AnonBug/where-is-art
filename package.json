@@ -17,7 +17,8 @@
     "content:build": "node scripts/build-catalog.mjs",
     "media:prepare": "node scripts/prepare-media.mjs",
     "media:foreign": "node scripts/prepare-foreign-media.mjs",
-    "media:check": "node scripts/check-media.mjs && node scripts/check-foreign-media.mjs"
+    "media:wu-daozi": "node scripts/prepare-wu-daozi-media.mjs",
+    "media:check": "node scripts/check-media.mjs && node scripts/check-foreign-media.mjs && node scripts/check-wu-daozi-media.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

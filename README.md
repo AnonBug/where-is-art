@@ -1,6 +1,6 @@
 # 名画在哪里
 
-React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 和 OpenSeadragon。当前版本收录唐寅 17 幅、达·芬奇相关 21 幅，以及新增 33 位西方画家的 134 幅作品，共 172 幅作品、189 张图像、40 个收藏地点。开发目录沿用「达·芬奇名画地图」。
+React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 和 OpenSeadragon。当前版本收录唐寅 17 幅、达·芬奇相关 21 幅，33 位西方画家的 134 幅作品，以及传吴道子的两幅长卷，共 174 幅作品、191 张图像、42 个收藏地点。开发目录沿用「达·芬奇名画地图」。
 
 [在线浏览](https://anonbug.github.io/where-is-art/) · [GitHub 仓库](https://github.com/AnonBug/where-is-art)
 
@@ -26,7 +26,7 @@ npm run dev
 ```sh
 npm test               # 内容契约、关系去重、桌面/手机导航与旧数据兼容
 npm run typecheck      # TypeScript
-npm run media:check    # 唐寅瓦片与新增西方图像的尺寸、体积、解码和来源校验
+npm run media:check    # 唐寅、吴道子瓦片与西方图像的尺寸、体积、解码和来源校验
 npm run build          # 主题生成、类型检查、静态构建 → dist/
 npm run preview        # 预览 dist/，与 dev 使用同一端口
 ```
@@ -79,6 +79,9 @@ src/
 content/
   tang-catalog.json            唐寅作品和馆藏依据
   media-manifest.json          唐寅图片尺寸、投递方式、来源与使用信息
+  wu-daozi-catalog.json        两幅吴道子传名长卷、画家和馆藏
+  wu-daozi-sources.json        归属依据、原图下载地址和 SHA-256
+  wu-daozi-media-manifest.json 原始分辨率瓦片与全文件哈希
   foreign-catalog.json         新增西方画家、作品、馆藏和专题
   foreign-sources.json         下载地址、来源证据与源文件 SHA-256
   foreign-media-manifest.json  网页衍生图的尺寸、体积、哈希与署名
@@ -104,7 +107,7 @@ React 管理界面，MapLibre 和 OpenSeadragon 分别管理自己的画布生�
 
 ## 内容与图片维护
 
-修改 `content/tang-catalog.json`、`content/foreign-catalog.json` 或既有 `public/data.json` 后运行：
+修改 `content/tang-catalog.json`、`content/foreign-catalog.json`、`content/wu-daozi-catalog.json` 或既有 `public/data.json` 后运行：
 
 ```sh
 npm run content:build
@@ -122,7 +125,7 @@ npm run media:check
 npm run content:build
 ```
 
-6 幅采用 DZI，共 2,438 张瓦片。普通整图不超过 20,000,000 字节；DZI 只发布缩略图、预览和瓦片，不发布巨幅整图作为回退。瓦片总大小可能超过 20 MB，浏览器只请求当前视野所需层级。普通图和 DZI 共用看画器。
+唐寅 6 幅、传吴道子 2 幅采用 DZI，共 3,360 张瓦片。普通整图不超过 20,000,000 字节；DZI 只发布缩略图、预览和瓦片，不发布巨幅整图作为回退。瓦片总大小可能超过 20 MB，浏览器只请求当前视野所需层级。普通图和 DZI 共用看画器。
 
 《溪山渔隐图》12 张、《采莲图》5 张高清局部分别关联原始馆方照片，不从低清全卷虚构细节。《吹箫仕女图》仅 423 × 800 像素，保留普通清晰度提示与资料不确定性。原始素材在转换前后做 SHA-256 校验，保持不变。
 
@@ -145,6 +148,20 @@ npm run media:check
 ```
 
 若下载文件与已记录哈希不一致，脚本会停止，需重新核实图片身份与许可后更新来源，不能直接接受替换。完整选目、版本差异和容量统计见 [西方绘画内容核验](docs/西方绘画内容核验.md)。
+
+## 吴道子传名作品（2026-11-02）
+
+本次仅加入《送子天王图》（大阪市立美术馆）和《八十七神仙卷》（徐悲鸿纪念馆）。《道子墨宝》暂不纳入；王维、阎立本尚未导入网站。两卷均在详情中注明传名和归属判断，不计作确认亲笔。
+
+下载来源的完整画幅分别为 29,312 × 3,000 和 25,902 × 2,800 像素；按原始分辨率生成 922 张 DZI 瓦片，支持缩放查看细节。原件保存在忽略目录 `output/wu-daozi-originals/`，下载链接与 SHA-256 存入来源清单。网页资源随仓库保存，原件不进入站点构建。
+
+```sh
+npm run media:wu-daozi  # 缓存缺失时下载；哈希不符即停止
+npm run content:build
+npm run media:check
+```
+
+馆藏、归属、图像版本和容量记录见 [吴道子内容核验](docs/吴道子内容核验.md)。
 
 ## GitHub Pages
 

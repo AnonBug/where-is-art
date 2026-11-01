@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-02",
+  "periods": [
+    {
+      "id": "tang",
+      "category": "china",
+      "name": "唐",
+      "dateLabel": "618—907"
+    }
+  ],
+  "artists": [
+    {
+      "id": "wu-daozi",
+      "name": "吴道子",
+      "category": "china",
+      "periodId": "tang",
+      "lifeLabel": "约686—约760（生卒不详）",
+      "countryLabel": "中国"
+    }
+  ],
+  "artworks": [
+    {
+      "id": "wu-daozi-songzi",
+      "title": "送子天王图",
+      "artistIds": [
+        "wu-daozi"
+      ],
+      "dateLabel": "传吴道子；后世摹本，具体年代未定",
+      "medium": "纸本墨笔，手卷",
+      "description": "又名《天王送子图》《释迦降生图》。长卷描绘释迦牟尼降生故事，卷尾净饭王怀抱悉达多太子，与摩耶夫人拜谒神庙，众神向婴儿礼拜。人物衣纹与动态保存了后世所称“吴家样”的笔意。",
+      "sourceUrl": "https://theme.npm.edu.tw/exh110/HiddenGems/ch/page-2.html",
+      "note": "大阪市立美术馆藏。台北故宫2021年借展说明认为此卷应属后人托名的摹本或再摹本，不能作为吴道子亲笔。借展地点不等于收藏地点。"
+    },
+    {
+      "id": "wu-daozi-eightyseven",
+      "title": "八十七神仙卷",
+      "artistIds": [
+        "wu-daozi"
+      ],
+      "dateLabel": "传吴道子；作者、年代有争议",
+      "medium": "绢本水墨白描，手卷",
+      "description": "以绵密而流动的线条描绘八十七位仙真列队行进，人物、衣带、仪仗彼此穿插，是研究中国古代宗教人物画与白描传统的重要长卷。徐悲鸿购藏后视为珍宝，现藏徐悲鸿纪念馆。",
+      "sourceUrl": "https://www.cafa.com.cn/cn/special_topics/details/5210049",
+      "note": "央美2018年展览图录列作者为“佚名”。历史上有归于吴道子、晚唐、北宋或南宋的不同观点；李凇的研究主张北宋初期。这里按传名关联吴道子，不确认为其亲笔，也不将其定为已有共识的吴道子摹本。"
+    }
+  ],
+  "venues": [
+    {
+      "id": "osaka",
+      "name": "大阪市立美术馆",
+      "city": "大阪",
+      "country": "日本",
+      "coordinates": [
+        135.510523,
+        34.650096
+      ],
+      "sourceUrl": "https://www.osaka-art-museum.jp/collection?dl=ZH-HANS",
+      "coordinateNote": "收藏机构参考位置，不代表实时展出或具体库房。坐标来源：https://www.openstreetmap.org/way/173693696；OpenStreetMap / Nominatim，ODbL 1.0。"
+    },
+    {
+      "id": "xu-beihong",
+      "name": "徐悲鸿纪念馆",
+      "city": "北京",
+      "country": "中国",
+      "coordinates": [
+        116.3653196,
+        39.9436848
+      ],
+      "sourceUrl": "https://www.cafa.edu.cn/st/2018/90119072.htm",
+      "coordinateNote": "收藏机构参考位置，不代表实时展出或具体库房。坐标来源：https://www.openstreetmap.org/way/738094476；OpenStreetMap / Nominatim，ODbL 1.0。"
+    }
+  ],
+  "holdings": [
+    {
+      "artworkId": "wu-daozi-songzi",
+      "venueId": "osaka",
+      "note": "馆藏归属；不代表当前正在展出。",
+      "verifiedAt": "2026-11-02",
+      "sourceUrl": "https://theme.npm.edu.tw/exh110/HiddenGems/ch/page-2.html"
+    },
+    {
+      "artworkId": "wu-daozi-eightyseven",
+      "venueId": "xu-beihong",
+      "note": "馆藏归属；不代表当前正在展出。",
+      "verifiedAt": "2026-11-02",
+      "sourceUrl": "https://www.cafa.com.cn/cn/special_topics/details/5210049"
+    }
+  ]
+}

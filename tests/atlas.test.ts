@@ -3,6 +3,7 @@ import { existsSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 import catalog from "../public/catalog.json";
 import foreignCatalog from "../content/foreign-catalog.json";
+import wuDaoziCatalog from "../content/wu-daozi-catalog.json";
 import {
   atlasSchema,
   validateRelations,
@@ -17,11 +18,39 @@ const data = atlasSchema.parse(catalog);
 describe("atlas content contract", () => {
   it("resolves all artwork, artist, venue, topic and image relations", () => {
     expect(validateRelations(data)).toEqual([]);
-    expect(data.artworks).toHaveLength(38 + foreignCatalog.artworks.length);
+    expect(data.artworks).toHaveLength(
+      38 + foreignCatalog.artworks.length + wuDaoziCatalog.artworks.length,
+    );
     expect(scopeWorks(data, "artist:tang-yin")).toHaveLength(17);
     expect(data.images.filter((x) => x.delivery.kind === "dzi")).toHaveLength(
-      6,
+      8,
     );
+  });
+  it("maps only the two selected Wu Daozi attributed scrolls with native-resolution images", () => {
+    const works = scopeWorks(data, "artist:wu-daozi");
+    expect(works.map((work) => work.id)).toEqual([
+      "wu-daozi-songzi",
+      "wu-daozi-eightyseven",
+    ]);
+    expect(
+      data.artists.find((artist) => artist.id === "wu-daozi")?.periodId,
+    ).toBe("tang");
+    expect(workVenues(data, works[0].id).map((venue) => venue.name)).toEqual([
+      "大阪市立美术馆",
+    ]);
+    expect(workVenues(data, works[1].id).map((venue) => venue.name)).toEqual([
+      "徐悲鸿纪念馆",
+    ]);
+    expect(works[0].note).toContain("后人托名");
+    expect(works[1].note).toContain("佚名");
+    for (const work of works) {
+      expect(work.dateLabel).toContain("传吴道子");
+      const image = primaryImage(data, work.id)!;
+      expect(image.delivery.kind).toBe("dzi");
+      expect(image.delivery.width).toBe(image.width);
+      expect(image.delivery.height).toBe(image.height);
+      expect(image.width).toBeGreaterThan(25_000);
+    }
   });
   it("keeps unknown locations off the map while preserving their works", () => {
     for (const id of ["tang-yin-15", "salvator"]) {
