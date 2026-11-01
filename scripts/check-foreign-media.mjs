@@ -38,7 +38,10 @@ for (const image of images) {
   assert.equal(image.sourceHash, source.downloadSha256);
   assert.equal(image.sourceImageUrl, source.downloadUrl);
   assert.equal(image.sourceUrl, source.sourceUrl);
-  assert.equal(image.publicationStatus, "cleared");
+  assert.equal(image.publicationStatus, source.publicationStatus ?? "cleared");
+  if (image.publicationStatus === "review-required") {
+    assert.ok(source.rightsEvidence.reviewNote?.length > 20);
+  }
   assert.match(
     image.licenseUrl,
     /^https:\/\/creativecommons\.org\/publicdomain\//,
@@ -57,6 +60,9 @@ for (const image of images) {
   if (source.provider === "commons") {
     assert.equal(source.rightsEvidence.license, "Public domain");
     assert.equal(source.rightsEvidence.copyrighted, "False");
+    if (source.rightsEvidence.unitedStatesCopyrightWarning) {
+      assert.equal(image.publicationStatus, "review-required");
+    }
     if (
       !source.rightsEvidence.licenseTemplates.some((s) => s.startsWith("PD-"))
     ) {

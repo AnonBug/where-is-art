@@ -106,6 +106,8 @@ async function publish(bytes, directory, filename, size, byteLimit, format) {
 
 const images = [];
 for (const source of sources.sources) {
+  const publicationStatus = source.publicationStatus ?? "cleared";
+  assert.ok(["cleared", "review-required"].includes(publicationStatus));
   const bytes = await sourceBytes(source);
   const existing = previous.find(
     (image) => image.artworkId === source.artworkId,
@@ -117,7 +119,8 @@ for (const source of sources.sources) {
     existing.sourceImageUrl === source.downloadUrl &&
     existing.credit === source.credit &&
     existing.licenseLabel === source.licenseLabel &&
-    existing.licenseUrl === source.licenseUrl
+    existing.licenseUrl === source.licenseUrl &&
+    existing.publicationStatus === publicationStatus
   ) {
     // Only reuse derivatives that still match their recorded contents.
     const valid = await Promise.all(
@@ -194,7 +197,7 @@ for (const source of sources.sources) {
     licenseLabel: source.licenseLabel,
     licenseUrl: source.licenseUrl,
     quality: Math.max(full.width, full.height) >= 1600 ? "high" : "standard",
-    publicationStatus: "cleared",
+    publicationStatus,
     processing: {
       profile,
       sourceWidth: metadata.width,

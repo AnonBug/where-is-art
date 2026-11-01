@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "sources": [
     {
       "artworkId": "duccio-madonna",
@@ -3943,6 +3943,110 @@
       "downloadSha256": "4b5701addca99d083059206fc01b144f250e44b127ad2db355984f285948f595",
       "downloadBytes": 9248373,
       "cacheFilename": "titian-europa.jpg"
+    },
+    {
+      "artworkId": "mondrian-red-blue-yellow",
+      "provider": "kunsthaus-zurich",
+      "metadataUrl": "https://collection.kunsthaus.ch/en/collection/item/2455/",
+      "objectSourceUrl": "https://collection.kunsthaus.ch/en/collection/item/2455/",
+      "retrievedAt": "2026-11-02",
+      "licenseLabel": "Public domain（公版二维绘画的忠实复制图；非馆方CC0声明）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "credit": "Piet Mondrian；Kunsthaus Zürich；Donated by Alfred Roth, 1987；1987/0028",
+      "originalImageUrl": "https://collection.kunsthaus.ch/multimedia/9/multimedia-989209.extra-large.jpg",
+      "downloadUrl": "https://collection.kunsthaus.ch/multimedia/9/multimedia-989209.extra-large.jpg",
+      "downloadKind": "museum-rendition",
+      "sourceUrl": "https://collection.kunsthaus.ch/en/collection/item/2455/",
+      "sourceTitle": "Composition with Red, Blue and Yellow (B217)",
+      "accessionNumber": "1987/0028",
+      "catalogueRaisonne": "B217",
+      "rightsEvidence": {
+        "isPublicDomain": true,
+        "basis": "作品创作于1930年，作者1944年去世；Commons对应B217的文件标为PD-Art (PD-old)。采用馆方公开提供的同一二维公版绘画忠实复制图，不将馆方图片声明为CC0。",
+        "supportingFilePage": "https://commons.wikimedia.org/wiki/File:Mondrian_-_B217.jpg",
+        "supportingLicense": "Public domain",
+        "supportingCopyrighted": "False",
+        "identitySourceUrl": "https://pietmondrian.rkdstudies.nl/paris-2-1920-1937-b104-b281312/1929-1930-b206-b225/"
+      },
+      "originalWidth": 2994,
+      "originalHeight": 3000,
+      "downloadSha256": "bf6ae82526837ad5488884514dca3bc2649810905d397025e656152e1aabe969",
+      "downloadBytes": 863101,
+      "cacheFilename": "mondrian-red-blue-yellow.jpg"
+    },
+    {
+      "artworkId": "mondrian-broadway-boogie",
+      "provider": "commons",
+      "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3APiet+Mondrian%2C+1942+-+Broadway+Boogie+Woogie.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+      "objectSourceUrl": "https://www.moma.org/collection/works/78682",
+      "retrievedAt": "2026-11-02",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "credit": "Piet Mondrian；The Museum of Modern Art；Wikimedia Commons",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Piet_Mondrian%2C_1942_-_Broadway_Boogie_Woogie.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Piet_Mondrian%2C_1942_-_Broadway_Boogie_Woogie.jpg",
+      "downloadKind": "original",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piet_Mondrian,_1942_-_Broadway_Boogie_Woogie.jpg",
+      "sourceTitle": "File:Piet Mondrian, 1942 - Broadway Boogie Woogie.jpg",
+      "originalBytes": 1266424,
+      "rightsEvidence": {
+        "pageId": 37640791,
+        "license": "Public domain",
+        "copyrighted": "False",
+        "licenseTemplates": [
+          "PD-Art (PD-old-auto)",
+          "PD US no notice",
+          "PD-old-80",
+          "CC-PD-Mark",
+          "PD US no notice-old-80"
+        ],
+        "creditHtml": "<bdi lang=\"en\" dir=\"ltr\">Transferred from <span class=\"plainlinks\"><a class=\"external text\" data-mw-original-href=\"//en.wikipedia.org\" href=\"https://en.wikipedia.org\">en.wikipedia</a></span> to Commons.</bdi>",
+        "artistHtml": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Piet_Mondrian\" class=\"extiw\" title=\"w:en:Piet Mondrian\"><span title=\"Dutch painter (1872–1944)\">Piet Mondrian</span></a></bdi>",
+        "commonsMetadataTimestamp": "2016-01-02 14:33:08"
+      },
+      "originalWidth": 4104,
+      "originalHeight": 4111,
+      "downloadSha256": "2a2ed27a24e64f6d3eabef9badd7988de4e04ce558b9a8e971582da9006ada59",
+      "downloadBytes": 1266424,
+      "cacheFilename": "mondrian-broadway-boogie.jpg"
+    },
+    {
+      "artworkId": "mondrian-victory-boogie",
+      "provider": "commons",
+      "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3APiet+Mondriaan+Victory+Boogie+Woogie.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+      "objectSourceUrl": "https://www.kunstmuseum.nl/en/collection/victory-boogie-woogie",
+      "retrievedAt": "2026-11-02",
+      "licenseLabel": "Commons标为Public domain；文件页另有美国版权提示，发布使用待核验",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "credit": "Piet Mondrian；Kunstmuseum Den Haag；Wikimedia Commons",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Piet_Mondriaan_Victory_Boogie_Woogie.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Piet_Mondriaan_Victory_Boogie_Woogie.jpg",
+      "downloadKind": "original",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piet_Mondriaan_Victory_Boogie_Woogie.jpg",
+      "sourceTitle": "File:Piet Mondriaan Victory Boogie Woogie.jpg",
+      "originalBytes": 13191652,
+      "rightsEvidence": {
+        "pageId": 37614350,
+        "license": "Public domain",
+        "copyrighted": "False",
+        "licenseTemplates": [
+          "PD-Art (PD-old-70)",
+          "CC-PD-Mark"
+        ],
+        "creditHtml": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.gemeentemuseum.nl/collection/item/4444\">Gemeentemuseum Den Haag</a>",
+        "artistHtml": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Piet_Mondrian\" class=\"extiw\" title=\"w:en:Piet Mondrian\"><span title=\"Dutch painter (1872–1944)\">Piet Mondrian</span></a></bdi>",
+        "commonsMetadataTimestamp": "2015-01-03 14:51:35",
+        "unitedStatesCopyrightWarning": true,
+        "reviewNote": "Commons的API字段标为Public domain/Copyrighted=False，但文件说明页同时保留美国版权恢复（URAA）提示；两种证据均原样记录，发布状态保留review-required，未认定全球可自由使用。",
+        "reviewUrl": "https://commons.wikimedia.org/wiki/File:Piet_Mondriaan_Victory_Boogie_Woogie.jpg#Licensing",
+        "reviewedAt": "2026-11-02"
+      },
+      "publicationStatus": "review-required",
+      "originalWidth": 4724,
+      "originalHeight": 4724,
+      "downloadSha256": "4f595ebcf5571ea68427e7945680d258373643c386b05bcb67563f3b493c5a5d",
+      "downloadBytes": 13191652,
+      "cacheFilename": "mondrian-victory-boogie.jpg"
     }
   ]
 }

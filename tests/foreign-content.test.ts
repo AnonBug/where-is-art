@@ -13,7 +13,7 @@ const data = atlasSchema.parse(catalog);
 describe("Western painting corpus", () => {
   it("makes each researched artist available in a populated period and scope", () => {
     expect(foreign.artists).toHaveLength(33);
-    expect(foreign.artworks).toHaveLength(134);
+    expect(foreign.artworks).toHaveLength(137);
     for (const artist of foreign.artists) {
       expect(
         data.periods.some(
@@ -37,14 +37,17 @@ describe("Western painting corpus", () => {
     expect(scopeWorks(data, "artist:van-gogh")).toHaveLength(6);
   });
 
-  it("connects every addition to a sourced holding and a local licensed whole image", () => {
+  it("connects every addition to a sourced holding and a local whole image with its reviewed status", () => {
     for (const work of foreign.artworks) {
       const venue = workVenues(data, work.id);
       expect(venue).toHaveLength(1);
       expect(venue[0].coordinates).not.toBeNull();
       const image = primaryImage(data, work.id)!;
       expect(image.delivery.url).toMatch(/^media\/foreign\//);
-      expect(image.publicationStatus).toBe("cleared");
+      const source = sources.sources.find((s) => s.artworkId === work.id)!;
+      expect(image.publicationStatus).toBe(
+        "publicationStatus" in source ? source.publicationStatus : "cleared",
+      );
       expect(
         sources.sources.find((s) => s.artworkId === work.id)?.objectSourceUrl,
       ).toBe(work.sourceUrl);

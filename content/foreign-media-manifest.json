@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "images": [
     {
       "id": "duccio-madonna-whole",
@@ -6564,6 +6564,153 @@
         "sourceHeight": 2382,
         "sourceBytes": 9248373,
         "downloadKind": "commons-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "mondrian-red-blue-yellow-whole",
+      "artworkId": "mondrian-red-blue-yellow",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 2994,
+      "height": 3000,
+      "thumbnail": {
+        "url": "media/foreign/mondrian-red-blue-yellow/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 3616,
+        "sha256": "afbda6a469c3d22ed7382ccd0531afa78125f82697c49efe1cdcc79bdda9e8af"
+      },
+      "preview": {
+        "url": "media/foreign/mondrian-red-blue-yellow/preview.webp",
+        "width": 1277,
+        "height": 1280,
+        "bytes": 94472,
+        "sha256": "f923847ee36ef9947ce12a4d25524287614d1ac321d60c36c1b12af14247fd7b"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/mondrian-red-blue-yellow/detail.jpg",
+        "width": 2994,
+        "height": 3000,
+        "bytes": 800637,
+        "sha256": "9372d00bc506585e93ed084ab5ac07b341443befd39e118656096d5ef03ccb87",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://collection.kunsthaus.ch/en/collection/item/2455/",
+      "sourceImageUrl": "https://collection.kunsthaus.ch/multimedia/9/multimedia-989209.extra-large.jpg",
+      "sourceHash": "bf6ae82526837ad5488884514dca3bc2649810905d397025e656152e1aabe969",
+      "credit": "Piet Mondrian；Kunsthaus Zürich；Donated by Alfred Roth, 1987；1987/0028",
+      "licenseLabel": "Public domain（公版二维绘画的忠实复制图；非馆方CC0声明）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 2994,
+        "sourceHeight": 3000,
+        "sourceBytes": 863101,
+        "downloadKind": "museum-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "mondrian-broadway-boogie-whole",
+      "artworkId": "mondrian-broadway-boogie",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3833,
+      "height": 3840,
+      "thumbnail": {
+        "url": "media/foreign/mondrian-broadway-boogie/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19144,
+        "sha256": "b9bcbcab9ec3dd5e67efa515fd7e068c5c8df1a66b0e4c9810aae14c632c755e"
+      },
+      "preview": {
+        "url": "media/foreign/mondrian-broadway-boogie/preview.webp",
+        "width": 1278,
+        "height": 1280,
+        "bytes": 115780,
+        "sha256": "4f3d048c24feda96cbcc3f4a3f006a2e10649e4496026a46b21ab93e083ce761"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/mondrian-broadway-boogie/detail.jpg",
+        "width": 3833,
+        "height": 3840,
+        "bytes": 1211227,
+        "sha256": "85c1aaed7bcb20c7beb03d4612fa7f1548e1fb7725ff6637a7e99337bca7e372",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piet_Mondrian,_1942_-_Broadway_Boogie_Woogie.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/30/Piet_Mondrian%2C_1942_-_Broadway_Boogie_Woogie.jpg",
+      "sourceHash": "2a2ed27a24e64f6d3eabef9badd7988de4e04ce558b9a8e971582da9006ada59",
+      "credit": "Piet Mondrian；The Museum of Modern Art；Wikimedia Commons",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 4104,
+        "sourceHeight": 4111,
+        "sourceBytes": 1266424,
+        "downloadKind": "original",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "mondrian-victory-boogie-whole",
+      "artworkId": "mondrian-victory-boogie",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3840,
+      "height": 3840,
+      "thumbnail": {
+        "url": "media/foreign/mondrian-victory-boogie/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13182,
+        "sha256": "fb8dcabb57d1eb37c8539bc0ed67dbf0b9ec39ce1f84a4f009df90f678138c87"
+      },
+      "preview": {
+        "url": "media/foreign/mondrian-victory-boogie/preview.webp",
+        "width": 1280,
+        "height": 1280,
+        "bytes": 106016,
+        "sha256": "ab5c0f4407297655a7b371ba8c4bb943e49a751e2564bca71647a11e4e2cecfe"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/mondrian-victory-boogie/detail.jpg",
+        "width": 3840,
+        "height": 3840,
+        "bytes": 1351690,
+        "sha256": "0108a4c2ddf99171d11f96b80028cbb5145198e589b4fdb94f14784a38ab825f",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piet_Mondriaan_Victory_Boogie_Woogie.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Piet_Mondriaan_Victory_Boogie_Woogie.jpg",
+      "sourceHash": "4f595ebcf5571ea68427e7945680d258373643c386b05bcb67563f3b493c5a5d",
+      "credit": "Piet Mondrian；Kunstmuseum Den Haag；Wikimedia Commons",
+      "licenseLabel": "Commons标为Public domain；文件页另有美国版权提示，发布使用待核验",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "review-required",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 4724,
+        "sourceHeight": 4724,
+        "sourceBytes": 13191652,
+        "downloadKind": "original",
         "longestEdgeLimit": 3840,
         "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
       }

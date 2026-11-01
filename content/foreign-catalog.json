@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "scopeNote": "西方绘画主线首批；时期为便于浏览的编辑分组，日期为大致范围，流派之间允许交叠。画家可跨越多个风格，本批归入一个主要目录。",
   "periods": [
     {
@@ -2023,6 +2023,42 @@
       "artistIds": [
         "titian"
       ]
+    },
+    {
+      "id": "mondrian-red-blue-yellow",
+      "artistIds": [
+        "mondrian"
+      ],
+      "title": "红、蓝、黄的构图",
+      "dateLabel": "1930年",
+      "medium": "布面油画",
+      "description": "粗黑线把画面分成大小不一的矩形，右上的大片红色与左下的蓝色、右下的黄色相互平衡。白色区域和线条宽度的差异，让简洁的几何结构保持张力。",
+      "sourceUrl": "https://collection.kunsthaus.ch/en/collection/item/2455/",
+      "note": "苏黎世美术馆藏，编号1987/0028，作品全集编号B217，45×45厘米。不要与构图相近、全集编号B219的《构图二号》混用。"
+    },
+    {
+      "id": "mondrian-broadway-boogie",
+      "artistIds": [
+        "mondrian"
+      ],
+      "title": "百老汇爵士乐",
+      "dateLabel": "1942—1943年",
+      "medium": "布面油画",
+      "description": "黄色线网在白色画面中交错，红、蓝与灰色小块沿线跳动。原先连续的黑线被彩色节拍取代，呼应纽约街道的格局与布吉伍吉音乐的切分节奏。",
+      "sourceUrl": "https://www.moma.org/collection/works/78682",
+      "note": "又译《百老汇布吉伍吉》。纽约现代艺术博物馆藏，编号73.1943，127×127厘米；为蒙德里安最后完成的绘画。"
+    },
+    {
+      "id": "mondrian-victory-boogie",
+      "artistIds": [
+        "mondrian"
+      ],
+      "title": "胜利爵士乐",
+      "dateLabel": "1942—1944年（未完成）",
+      "medium": "布面油彩、胶带、纸、炭笔与铅笔",
+      "description": "菱形画布上，红、黄、蓝与灰白色块密集交织，节奏比《百老汇爵士乐》更加细碎。留在画面的胶带和纸片，保存了艺术家不断调整构图的过程。",
+      "sourceUrl": "https://www.kunstmuseum.nl/en/collection/victory-boogie-woogie",
+      "note": "又译《胜利布吉伍吉》。蒙德里安去世时仍未完成的最后作品。荷兰国家所有，长期借展于海牙美术馆，馆号0810747；馆藏归属不代表实时展出。"
     }
   ],
   "venues": [
@@ -2310,6 +2346,19 @@
       ],
       "sourceUrl": "https://www.gardnermuseum.org/",
       "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "kunsthaus-zurich",
+      "name": "苏黎世美术馆",
+      "city": "苏黎世",
+      "country": "瑞士",
+      "coordinates": [
+        8.5481,
+        47.3703
+      ],
+      "sourceUrl": "https://www.kunsthaus.ch/en/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Kunsthaus_Z%C3%BCrich",
       "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
     }
   ],
@@ -3251,13 +3300,34 @@
       "note": "馆藏归属已核对，不代表实时展出。",
       "verifiedAt": "2026-11-01",
       "sourceUrl": "https://www.gardnermuseum.org/experience/collection/10978"
+    },
+    {
+      "artworkId": "mondrian-red-blue-yellow",
+      "venueId": "kunsthaus-zurich",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-02",
+      "sourceUrl": "https://collection.kunsthaus.ch/en/collection/item/2455/"
+    },
+    {
+      "artworkId": "mondrian-broadway-boogie",
+      "venueId": "moma",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-02",
+      "sourceUrl": "https://www.moma.org/collection/works/78682"
+    },
+    {
+      "artworkId": "mondrian-victory-boogie",
+      "venueId": "kunstmuseum-den-haag",
+      "note": "荷兰国家所有，长期借展于海牙美术馆；不代表实时展出。",
+      "verifiedAt": "2026-11-02",
+      "sourceUrl": "https://www.kunstmuseum.nl/en/collection/victory-boogie-woogie"
     }
   ],
   "topics": [
     {
       "id": "western-journey",
       "title": "西方绘画之旅",
-      "description": "从中世纪圣像到早期抽象绘画，沿33位画家、134幅作品走过西方绘画主要时期。",
+      "description": "从中世纪圣像到早期抽象绘画，沿33位画家、137幅作品走过西方绘画主要时期。",
       "artworkIds": [
         "duccio-madonna",
         "duccio-maesta",
@@ -3392,7 +3462,10 @@
         "mondrian-lozenge",
         "mondrian-farm",
         "mondrian-gray-red",
-        "mondrian-red-tree"
+        "mondrian-red-tree",
+        "mondrian-red-blue-yellow",
+        "mondrian-broadway-boogie",
+        "mondrian-victory-boogie"
       ]
     }
   ]
