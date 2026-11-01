@@ -6371,6 +6371,202 @@
         "longestEdgeLimit": 3840,
         "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
       }
+    },
+    {
+      "id": "titian-assumption-whole",
+      "artworkId": "titian-assumption",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1050,
+      "height": 1932,
+      "thumbnail": {
+        "url": "media/foreign/titian-assumption/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 36562,
+        "sha256": "9919e8e008e4956260fc491861f2516c656827b3861bde065e1a4e92734740ac"
+      },
+      "preview": {
+        "url": "media/foreign/titian-assumption/preview.webp",
+        "width": 696,
+        "height": 1280,
+        "bytes": 294884,
+        "sha256": "a10e4f3958cc39e24d23d54393a99baa211a56bf8439fb59470b9fd6433443db"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/titian-assumption/detail.jpg",
+        "width": 1050,
+        "height": 1932,
+        "bytes": 537426,
+        "sha256": "e6295688272cb63e6326d7964319724f58f8121742469acf22fea1ed770480e9",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tizian_041.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Tizian_041.jpg",
+      "sourceHash": "1359e0b25202bc9602afac3eb66165f75fea8cb14662877368e31a8ace86dd59",
+      "credit": "提香；Wikimedia Commons；Tizian 041.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1050,
+        "sourceHeight": 1932,
+        "sourceBytes": 1475547,
+        "downloadKind": "commons-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "titian-bacchus-ariadne-whole",
+      "artworkId": "titian-bacchus-ariadne",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3840,
+      "height": 3475,
+      "thumbnail": {
+        "url": "media/foreign/titian-bacchus-ariadne/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22256,
+        "sha256": "4849a079f1925bd73a1f883358b8504ca94aa434cbf8105c29a68c3f67c76a6f"
+      },
+      "preview": {
+        "url": "media/foreign/titian-bacchus-ariadne/preview.webp",
+        "width": 1280,
+        "height": 1158,
+        "bytes": 251090,
+        "sha256": "1498f7c5c1df29dfc8541833a5bcb6cada07db30a0444dad1b01aa81698a1e13"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/titian-bacchus-ariadne/detail.jpg",
+        "width": 3840,
+        "height": 3475,
+        "bytes": 2852773,
+        "sha256": "21cdd29f29ecb300999c2e512293ace93ee6652ec56947df9fa604813824fb72",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Titian_Bacchus_and_Ariadne.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Titian_Bacchus_and_Ariadne.jpg/3840px-Titian_Bacchus_and_Ariadne.jpg",
+      "sourceHash": "8432343c75ddb645699caa58aca2e313b090717170dc328b799a0223dae0bc08",
+      "credit": "提香；Wikimedia Commons；Titian Bacchus and Ariadne.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 3840,
+        "sourceHeight": 3475,
+        "sourceBytes": 3637154,
+        "downloadKind": "commons-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "titian-venus-urbino-whole",
+      "artworkId": "titian-venus-urbino",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3000,
+      "height": 2110,
+      "thumbnail": {
+        "url": "media/foreign/titian-venus-urbino/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 17712,
+        "sha256": "72d6f542f139371012aa7639f4e35f7fce485425e66bb370c81a6281e92798de"
+      },
+      "preview": {
+        "url": "media/foreign/titian-venus-urbino/preview.webp",
+        "width": 1280,
+        "height": 900,
+        "bytes": 189010,
+        "sha256": "edec96d6982c02b2ade60da84a23a80f64fe4429b3110c298f2db8cddd30c049"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/titian-venus-urbino/detail.jpg",
+        "width": 3000,
+        "height": 2110,
+        "bytes": 692812,
+        "sha256": "f276024561ab21451d3f7d56fef8e716134c03c2230d9402f51d470e10b5dc60",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+      "sourceHash": "a84bdbabbb83162b1daf7322831b8dc0f40b2b9806afccd1f1526a860cd1bd46",
+      "credit": "提香；Wikimedia Commons；Tiziano - Venere di Urbino - Google Art Project.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 3000,
+        "sourceHeight": 2110,
+        "sourceBytes": 3595731,
+        "downloadKind": "commons-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "titian-europa-whole",
+      "artworkId": "titian-europa",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 2717,
+      "height": 2382,
+      "thumbnail": {
+        "url": "media/foreign/titian-europa/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21458,
+        "sha256": "b9d9a1c7938f63f0fe90e222a1076504cfc4c75538e527923e0c5b05b2132c0c"
+      },
+      "preview": {
+        "url": "media/foreign/titian-europa/preview.webp",
+        "width": 1280,
+        "height": 1122,
+        "bytes": 332820,
+        "sha256": "d394896e15901e928f58321b149a295713dea67377df4be14d79edc58bd7187b"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/titian-europa/detail.jpg",
+        "width": 2717,
+        "height": 2382,
+        "bytes": 1487667,
+        "sha256": "0a2f0434558b873e5187f81caf5d44519c3a63f530c9ea8275713d7d114d40ae",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Titian_-_The_Rape_of_Europa.jpeg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Titian_-_The_Rape_of_Europa.jpeg",
+      "sourceHash": "4b5701addca99d083059206fc01b144f250e44b127ad2db355984f285948f595",
+      "credit": "提香；Wikimedia Commons；Titian - The Rape of Europa.jpeg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 2717,
+        "sourceHeight": 2382,
+        "sourceBytes": 9248373,
+        "downloadKind": "commons-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
     }
   ]
 }

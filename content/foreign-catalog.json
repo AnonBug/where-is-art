@@ -145,6 +145,15 @@
       "sourceUrl": "https://www.metmuseum.org/art/collection/search/437372"
     },
     {
+      "id": "titian",
+      "name": "提香",
+      "category": "foreign",
+      "periodId": "renaissance",
+      "lifeLabel": "约1488/1490—1576",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/venus-urbino-titian"
+    },
+    {
       "id": "bruegel",
       "name": "老彼得·勃鲁盖尔",
       "category": "foreign",
@@ -1966,6 +1975,54 @@
       "description": "母亲、孩子与划船人占据小船，弯曲船身和宽阔水面把人物组织成鲜明的形状。",
       "sourceUrl": "https://www.nga.gov/artworks/46569-boating-party",
       "note": ""
+    },
+    {
+      "id": "titian-assumption",
+      "title": "圣母升天",
+      "dateLabel": "1516—1518年",
+      "medium": "木板油画",
+      "description": "使徒仰望升起的圣母，云中的天使与上方金色光辉连接起三个层次。人物的红衣和向上的手势强化了整幅祭坛画的升腾感。",
+      "sourceUrl": "https://www.basilicadeifrari.it/wp-content/uploads/2023/10/ITALIANO-2023.pdf",
+      "note": "威尼斯弗拉里圣母荣耀大殿主祭坛原作；与提香为维罗纳大教堂创作的同题祭坛画分别记录。",
+      "artistIds": [
+        "titian"
+      ]
+    },
+    {
+      "id": "titian-bacchus-ariadne",
+      "title": "巴克斯与阿里阿德涅",
+      "dateLabel": "1520—1523年",
+      "medium": "布面油画",
+      "description": "巴克斯跃下战车，奔向被遗留在岛上的阿里阿德涅。蓝天、红色披风与热闹的随从形成强烈色彩对照，左上方的星群呼应神话中的冠冕。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/titian-bacchus-and-ariadne",
+      "note": "伦敦国家美术馆藏，编号NG35；不与里奇等画家的同题作品混用。",
+      "artistIds": [
+        "titian"
+      ]
+    },
+    {
+      "id": "titian-venus-urbino",
+      "title": "乌尔比诺的维纳斯",
+      "dateLabel": "1538年",
+      "medium": "布面油画",
+      "description": "维纳斯斜倚在白色床单上，手持玫瑰，脚边的小狗安然入睡。远处两名侍女翻检衣箱，将前景人物与日常室内生活连接起来。",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/venus-urbino-titian",
+      "note": "乌菲齐原作，馆藏编号1890 no. 1437。",
+      "artistIds": [
+        "titian"
+      ]
+    },
+    {
+      "id": "titian-europa",
+      "title": "劫夺欧罗巴",
+      "dateLabel": "1559—1562年",
+      "medium": "布面油画",
+      "description": "化为白牛的朱庇特载着欧罗巴离开海岸。她回望远处的同伴，红色布巾在空中翻卷，海浪与飞翔的丘比特让画面充满不安的动势。",
+      "sourceUrl": "https://www.gardnermuseum.org/experience/collection/10978",
+      "note": "波士顿加德纳博物馆藏提香原作，编号P26e1；不与普拉多的鲁本斯摹本或其他同题作品混用。",
+      "artistIds": [
+        "titian"
+      ]
     }
   ],
   "venues": [
@@ -2228,6 +2285,32 @@
       "sourceUrl": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello.html",
       "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Apostolic_Palace",
       "coordinateNote": "机构或建筑参考位置，不代表具体展厅或实时展出。以宗座宫建筑定位拉斐尔画室，与绘画馆分别记录。"
+    },
+    {
+      "id": "frari",
+      "name": "弗拉里圣母荣耀大殿",
+      "city": "威尼斯",
+      "country": "意大利",
+      "coordinates": [
+        12.32611,
+        45.43667
+      ],
+      "sourceUrl": "https://www.basilicadeifrari.it/come-arrivare/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Santa_Maria_Gloriosa_dei_Frari",
+      "coordinateNote": "大殿参考位置；《圣母升天》属于主祭坛原址作品，不代表实时开放状态。"
+    },
+    {
+      "id": "gardner",
+      "name": "伊莎贝拉·斯图尔特·加德纳博物馆",
+      "city": "波士顿",
+      "country": "美国",
+      "coordinates": [
+        -71.09889,
+        42.33861
+      ],
+      "sourceUrl": "https://www.gardnermuseum.org/",
+      "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum",
+      "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
     }
   ],
   "holdings": [
@@ -3140,13 +3223,41 @@
       "note": "馆藏归属已核对，不代表实时展出。",
       "verifiedAt": "2026-11-01",
       "sourceUrl": "https://www.nga.gov/artworks/46569-boating-party"
+    },
+    {
+      "artworkId": "titian-assumption",
+      "venueId": "frari",
+      "note": "大殿主祭坛原址作品；开放情况以大殿公告为准。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.basilicadeifrari.it/wp-content/uploads/2023/10/ITALIANO-2023.pdf"
+    },
+    {
+      "artworkId": "titian-bacchus-ariadne",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/titian-bacchus-and-ariadne"
+    },
+    {
+      "artworkId": "titian-venus-urbino",
+      "venueId": "uffizi",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.uffizi.it/en/artworks/venus-urbino-titian"
+    },
+    {
+      "artworkId": "titian-europa",
+      "venueId": "gardner",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.gardnermuseum.org/experience/collection/10978"
     }
   ],
   "topics": [
     {
       "id": "western-journey",
       "title": "西方绘画之旅",
-      "description": "从中世纪圣像到早期抽象绘画，沿32位画家、130幅作品走过西方绘画主要时期。",
+      "description": "从中世纪圣像到早期抽象绘画，沿33位画家、134幅作品走过西方绘画主要时期。",
       "artworkIds": [
         "duccio-madonna",
         "duccio-maesta",
@@ -3159,6 +3270,10 @@
         "raphael-sistine",
         "raphael-athens",
         "raphael-castiglione",
+        "titian-assumption",
+        "titian-bacchus-ariadne",
+        "titian-venus-urbino",
+        "titian-europa",
         "bruegel-harvesters",
         "bruegel-hunters",
         "bruegel-babel",

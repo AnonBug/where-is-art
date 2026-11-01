@@ -12,8 +12,8 @@ import {
 const data = atlasSchema.parse(catalog);
 describe("Western painting corpus", () => {
   it("makes each researched artist available in a populated period and scope", () => {
-    expect(foreign.artists).toHaveLength(32);
-    expect(foreign.artworks).toHaveLength(130);
+    expect(foreign.artists).toHaveLength(33);
+    expect(foreign.artworks).toHaveLength(134);
     for (const artist of foreign.artists) {
       expect(
         data.periods.some(
