@@ -23,7 +23,7 @@ const delivery = z.discriminatedUnion("kind", [
 export const imageSchema = z.object({
   id: z.string(),
   artworkId: z.string(),
-  role: z.enum(["whole", "detail"]),
+  role: z.enum(["whole", "detail", "reference"]),
   label: z.string(),
   order: z.number(),
   width: z.number(),
@@ -73,6 +73,7 @@ export const atlasSchema = z.object({
       description: z.string(),
       sourceUrl: z.string(),
       note: z.string().default(""),
+      imageStatus: z.literal("unavailable").optional(),
     }),
   ),
   venues: z.array(
@@ -170,7 +171,11 @@ export function scopeVenues(data: Atlas, works: Artwork[]) {
   return data.venues.filter((v) => ids.has(v.id) && v.coordinates);
 }
 export const primaryImage = (data: Atlas, id: string) =>
-  data.images.find((image) => image.artworkId === id && image.role === "whole");
+  data.images.find(
+    (image) =>
+      image.artworkId === id &&
+      (image.role === "whole" || image.role === "reference"),
+  );
 export const artistLabel = (data: Atlas, work: Artwork) =>
   work.artistIds
     .map(
@@ -209,12 +214,16 @@ export function validateRelations(data: Atlas): string[] {
       work.artistIds.some((id) => !artistIds.has(id))
     )
       errors.push(`作品 ${work.id} 的画家不存在`);
-    if (
-      data.images.filter(
-        (image) => image.artworkId === work.id && image.role === "whole",
+    const images = data.images.filter((image) => image.artworkId === work.id);
+    if (work.imageStatus === "unavailable") {
+      if (images.length) errors.push(`作品 ${work.id} 标记无图但存在图像`);
+    } else if (
+      images.filter(
+        (image) => image.role === "whole" || image.role === "reference",
       ).length !== 1
-    )
-      errors.push(`作品 ${work.id} 必须有且仅有一张全图`);
+    ) {
+      errors.push(`作品 ${work.id} 必须有且仅有一张全图或参考主图`);
+    }
   }
   for (const venue of data.venues)
     if (

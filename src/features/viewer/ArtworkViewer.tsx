@@ -4,6 +4,7 @@ import { useSession, type ImageView } from "../../application/session";
 import {
   artistLabel,
   assetUrl,
+  primaryImage,
   type Artwork,
   type Atlas,
 } from "../../domain/atlas";
@@ -39,8 +40,7 @@ export default function ArtworkViewer({
     .filter((image) => image.artworkId === work.id)
     .sort((a, b) => a.order - b.order);
   const asset =
-    images.find((image) => image.id === assetId) ??
-    images.find((image) => image.role === "whole");
+    images.find((image) => image.id === assetId) ?? primaryImage(data, work.id);
   const stage = useRef<HTMLDivElement>(null);
   const root = useRef<HTMLDivElement>(null);
   const viewer = useRef<OpenSeadragon.Viewer | null>(null);
@@ -264,7 +264,12 @@ export default function ArtworkViewer({
           data-viewer-info
         />
       </header>
-      {loading && !error && (
+      {!asset && (
+        <div className={s.error} role="status">
+          暂无可用图像，可通过作品信息查看资料与收藏位置。
+        </div>
+      )}
+      {asset && loading && !error && (
         <div className={s.loading} role="status">
           正在加载画作细节…
         </div>
@@ -275,32 +280,34 @@ export default function ArtworkViewer({
           <button onClick={() => setAttempt((n) => n + 1)}>重试</button>
         </div>
       )}
-      <div className={s.toolbar}>
-        <IconButton
-          icon="minus"
-          label="缩小画作"
-          onClick={() => changeZoom(1 / 1.35)}
-        />
-        <span>{zoom}%</span>
-        <IconButton
-          icon="plus"
-          label="放大画作"
-          onClick={() => changeZoom(1.35)}
-        />
-        <i />
-        <IconButton
-          icon="reset"
-          label="还原全图"
-          onClick={() => viewer.current?.viewport.goHome()}
-        />
-      </div>
+      {asset && (
+        <div className={s.toolbar}>
+          <IconButton
+            icon="minus"
+            label="缩小画作"
+            onClick={() => changeZoom(1 / 1.35)}
+          />
+          <span>{zoom}%</span>
+          <IconButton
+            icon="plus"
+            label="放大画作"
+            onClick={() => changeZoom(1.35)}
+          />
+          <i />
+          <IconButton
+            icon="reset"
+            label="还原全图"
+            onClick={() => viewer.current?.viewport.goHome()}
+          />
+        </div>
+      )}
       {images.length > 1 && (
         <div className={s.parts}>
           <button
             onClick={() => setPicker((value) => !value)}
             aria-expanded={picker}
           >
-            {asset?.role === "whole" ? "全卷" : asset?.label}
+            {asset?.label}
             <span>⌃</span>
           </button>
           {picker && (
@@ -314,10 +321,10 @@ export default function ArtworkViewer({
                     setPicker(false);
                   }}
                 >
-                  {image.role === "whole" ? "全卷" : image.label}
+                  {image.label}
                 </button>
               ))}
-              <p>局部为馆方独立图像</p>
+              <p>包含全幅、分段、局部或题跋；每张图片不另计为作品。</p>
             </div>
           )}
         </div>
@@ -333,6 +340,9 @@ export default function ArtworkViewer({
       )}
       {asset?.quality === "standard" && (
         <span className={s.resolution}>普通清晰度</span>
+      )}
+      {asset?.role === "reference" && asset.quality !== "standard" && (
+        <span className={s.resolution}>局部参考图</span>
       )}
     </div>
   );

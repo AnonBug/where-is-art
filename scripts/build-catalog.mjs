@@ -9,6 +9,10 @@ const foreign = await read("content/foreign-catalog.json");
 const foreignMedia = await read("content/foreign-media-manifest.json");
 const wuDaozi = await read("content/wu-daozi-catalog.json");
 const wuDaoziMedia = await read("content/wu-daozi-media-manifest.json");
+const tangExpansion = await read("content/tang-expansion-catalog.json");
+const tangExpansionMedia = await read(
+  "content/tang-expansion-media-manifest.json",
+);
 const legacy = await read("public/data.json");
 const legacyImages = await read("public/assets/images.json");
 const periods = [
@@ -18,6 +22,7 @@ const periods = [
 ];
 const artists = [
   ...wuDaozi.artists,
+  ...tangExpansion.artists,
   {
     id: "tang-yin",
     name: "唐寅",
@@ -46,6 +51,7 @@ const artists = [
 ];
 const artworks = [
   ...wuDaozi.artworks,
+  ...tangExpansion.artworks,
   ...tang.artworks.map((work) => ({
     id: work.id,
     title: work.title,
@@ -76,6 +82,7 @@ const artworks = [
 ];
 const venues = [
   ...wuDaozi.venues,
+  ...tangExpansion.venues,
   ...tang.venues,
   ...Object.entries(legacy.museums).map(([id, venue]) => ({
     id,
@@ -90,6 +97,7 @@ const venues = [
 ];
 const holdings = [
   ...wuDaozi.holdings,
+  ...tangExpansion.holdings,
   ...tang.artworks
     .filter((work) => work.venueId)
     .map((work) => ({
@@ -144,6 +152,7 @@ const topics = [
 ];
 // File hashes are build/CI evidence; the viewer only needs the image contract.
 const images = [
+  ...tangExpansionMedia.images.map(({ files, processing, ...image }) => image),
   ...media.images,
   ...foreignMedia.images,
   ...wuDaoziMedia.images.map(({ files, processing, ...image }) => image),
@@ -209,7 +218,9 @@ for (const work of legacy.works) {
 }
 const data = {
   version: 1,
-  updatedAt: [foreign.updatedAt, wuDaozi.updatedAt].sort().at(-1),
+  updatedAt: [foreign.updatedAt, wuDaozi.updatedAt, tangExpansion.updatedAt]
+    .sort()
+    .at(-1),
   periods,
   artists,
   artworks,

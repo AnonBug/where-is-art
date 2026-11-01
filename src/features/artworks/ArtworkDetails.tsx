@@ -24,12 +24,12 @@ export function ArtworkDetails({
     <ArtworkImage
       key={work.id}
       src={image?.preview.url}
-      alt={`${work.title}全图`}
+      alt={`${work.title}${!image ? "暂无可用图像" : image.role === "reference" ? "参考图" : "全图"}`}
     />
   );
   return (
     <article className={s.details}>
-      {onView ? (
+      {onView && image ? (
         <button
           className={s.preview}
           onClick={onView}
@@ -49,6 +49,12 @@ export function ArtworkDetails({
           {artistLabel(data, work)} · {work.dateLabel}
         </p>
         <p className={s.medium}>{work.medium}</p>
+        {!image && (
+          <p className={s.note}>暂无可用图像，可查看作品资料与收藏位置。</p>
+        )}
+        {image?.role === "reference" && (
+          <p className={s.note}>当前展示局部或分段参考图，不是完整长卷。</p>
+        )}
         <p className={s.description}>{work.description}</p>
         {work.note && <p className={s.note}>{work.note}</p>}
         <div className={s.venues}>

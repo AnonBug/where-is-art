@@ -1,0 +1,865 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-02",
+  "artists": [
+    {
+      "id": "wang-wei",
+      "name": "王维",
+      "category": "china",
+      "periodId": "tang",
+      "lifeLabel": "701—761；另说699—759",
+      "countryLabel": "中国"
+    },
+    {
+      "id": "yan-liben",
+      "name": "阎立本",
+      "category": "china",
+      "periodId": "tang",
+      "lifeLabel": "生年不详—约673",
+      "countryLabel": "中国"
+    }
+  ],
+  "artworks": [
+    {
+      "id": "wang-wei-freer-F1919.124",
+      "title": "万山积雪图卷",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名；旧传王维；明或清，17—18世纪",
+      "medium": "绢本水墨设色",
+      "description": "连续展开的积雪群山景观，属于后世借王维之名流传的雪景画。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1919.124/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：32.5 × 267.4厘米（画幅）。 馆藏号：F1919.124。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "wang-wei-freer-F1916.74",
+      "title": "冬景山水图",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名；旧传王维；明或清，15—18世纪",
+      "medium": "绢本水墨设色",
+      "description": "冬季山水景象，旧归王维，现存作品被馆方放在明清范围。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.74/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：53.5 × 73.1厘米（画幅）。 馆藏号：F1916.74。"
+    },
+    {
+      "id": "wang-wei-freer-F1916.402",
+      "title": "雪景山水图轴",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名；旧传王维；清代，18世纪末至19世纪",
+      "medium": "绢本水墨设色",
+      "description": "大型雪景山水立轴；馆方断为清代18世纪末至19世纪。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.402/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：187.2 × 96.5厘米（画幅）。 馆藏号：F1916.402。"
+    },
+    {
+      "id": "wang-wei-honolulu",
+      "title": "长江积雪图卷",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传王维；后世摹传本；与晚明作伪问题相关",
+      "medium": "材质待核实",
+      "description": "积雪江山长卷，与台北《江干雪意图》和日本小川旧藏本构成可比较的传本组。",
+      "sourceUrl": "https://www.dpm.org.cn/Uploads/File/2023/12/19/u65814715bff3e.pdf",
+      "note": "藏地获2023及2025学术资料交叉确认；尚无现行馆藏号与开放图像。 尺寸：28.8×449.3厘米（论文）。 暂未取得可用图像，保留作品资料与馆藏位置。",
+      "imageStatus": "unavailable"
+    },
+    {
+      "id": "wang-wei-met-snow",
+      "title": "江岸雪霁图卷",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名；王维伪款；明（1368—1644）或清（1644—1911）",
+      "medium": "绢本水墨设色",
+      "description": "雪后江岸与山水展开成卷，保留王维名下雪景画的后世接受史。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/40409",
+      "note": "馆方列明清佚名，带王维伪款；按旧传对象收录。 尺寸：26.7×203.7厘米。 馆藏号：45.170.2。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "wang-wei-npm-14893",
+      "title": "千岩万壑图卷",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传王维；明晚期，董其昌之后",
+      "medium": "绢本",
+      "description": "山谷、江岸、瀑布、村舍连续铺陈，采用反复的树石形式组成长卷。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/14893?dep=P",
+      "note": "馆方依据笔法与董其昌的联系判断为明晚期拟古作品，与王维亲笔无关。 尺寸：31.5×705.9厘米。 馆藏号：故畫001382N000000000。"
+    },
+    {
+      "id": "wang-wei-wangchuan",
+      "title": "宋人临辋川图卷",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名宋人，承辋川图式；宋（馆藏定名），图式与题跋仍有讨论",
+      "medium": "绢本设色",
+      "description": "将辋川别业的山水名胜组织成连续画面，并配相关诗文。作品体现王维诗意、别业景观与后世绘画传统之间的联系。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/285?dep=P",
+      "note": "实际作者为佚名宋人，关联王维指图式与诗意来源；不得据旧题与传说将实物写成王维原作。 尺寸：画心30.5×368.5厘米。 馆藏号：故畫001490N000000000。"
+    },
+    {
+      "id": "wang-wei-npm-15545",
+      "title": "山阴图卷",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传王维；后世传本，确切年代未定",
+      "medium": "绢本",
+      "description": "林下人物对坐、濯足，后段有人乘舟；题意联系王羲之及友人的山阴雅集。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/15545?dep=P",
+      "note": "馆方指出人物姿态与早期记载不合，米芾题跋与画无关且应属伪仿。 尺寸：26.3×84厘米。 馆藏号：故畫000978N000000000。"
+    },
+    {
+      "id": "wang-wei-snow-river",
+      "title": "江干雪意图卷",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传王维，后世作品；后世作品；具体断代有讨论",
+      "medium": "绢本水墨",
+      "description": "江边村舍、寒林与飞雁铺陈冬日景色，以疏淡墨色营造空寂感。是研究后世如何理解王维水墨山水的重要案例。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/14672?dep=P",
+      "note": "2021馆方说明称画法近北宋赵令穰，恐非王维；2025研究还讨论后世摹制与题跋问题。不与来源不明的雪溪图册页混同。 尺寸：24.8×162.8厘米。 馆藏号：故畫000979N000000000。"
+    },
+    {
+      "id": "wang-wei-npm-12069",
+      "title": "稷神山图册页（天下名山图利册）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传王维；旧题唐，实物年代待考",
+      "medium": "绢本",
+      "description": "《天下名山图》册中以稷神山为题的一开，按馆方单幅编目收录。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/12069?dep=P",
+      "note": "传统署王维；册中名家署名不等于现存实物即由该画家亲笔绘制。 尺寸：62.7×41.1厘米。 馆藏号：故畫003586N000000006。"
+    },
+    {
+      "id": "wang-wei-npm-15090",
+      "title": "雪景册页（唐宋元集绘册）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传王维；旧题唐，实物年代待考",
+      "medium": "绢本",
+      "description": "集绘册中独立编目的雪景山水页，保留王维名下雪景传统的收藏史线索。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/15090?dep=P",
+      "note": "画上王维款不能单独证明作者；当前公开条目未给出可靠的现代断代。 尺寸：39.4×31.1厘米。 馆藏号：故畫003459N000000002。"
+    },
+    {
+      "id": "wang-wei-fusheng",
+      "title": "伏生授经图卷",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传王维；唐至宋（大阪2018展览目录）",
+      "medium": "绢本设色",
+      "description": "描绘年迈学者伏生持卷授经的形象，以细致线描表现须发、衣纹和神态，与《尚书》在秦汉间的传承故事相联系。",
+      "sourceUrl": "https://www.osaka-art-museum.jp/sites/default/files/2019/04/20d456649686b0690eac6ed60a2cf5b1.pdf",
+      "note": "馆方列传王维，展览清单的时代范围为唐～宋。不能写成王维唯一确定真迹。 尺寸：25.4×44.7厘米（宽度有异说，待馆方图录复核）。 馆藏号：1-123。"
+    },
+    {
+      "id": "wang-wei-bm-style",
+      "title": "山水图卷（王维风格，赵孟頫伪款）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名；王维风格，伪赵孟頫款；清代，1644—1889年",
+      "medium": "材质待核实",
+      "description": "馆方检索列表同时标注王维风格和赵孟頫伪款的长卷；中文标题为便于检索的描述性译名。",
+      "sourceUrl": "https://www.britishmuseum.org/collection/search?image=true&keyword=Painting&material_culture=Qing+dynasty&page=2&sort=object_name__asc&view=grid",
+      "note": "具体藏品页返回403，作品身份由馆方列表及唯一馆藏号确认；不推定为某一已知辋川版本。 馆藏号：1889,1111,0.1。 暂未取得可用图像，保留作品资料与馆藏位置。",
+      "imageStatus": "unavailable"
+    },
+    {
+      "id": "wang-wei-chicago-49039",
+      "title": "辋川图卷（芝加哥明清本）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名；明或清，17—18世纪",
+      "medium": "绢本水墨、设色与金",
+      "description": "根据1617年辋川图石刻传播的图式所作长卷，与馆藏13世纪本为不同实物。",
+      "sourceUrl": "https://www.artic.edu/artworks/49039",
+      "note": "馆方作者为佚名，说明明确联系1617年刻石版本；列为辋川图式的后世传承。 馆藏号：1943.1158。 暂未取得可用图像，保留作品资料与馆藏位置。",
+      "imageStatus": "unavailable"
+    },
+    {
+      "id": "wang-wei-chicago",
+      "title": "辋川图卷（芝加哥本）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名；伪李公麟款；金或稍晚，13世纪",
+      "medium": "绢本水墨",
+      "description": "描绘辋川别业的早期传本，以连续山水组织诸景。",
+      "sourceUrl": "https://www.artic.edu/artworks/96627",
+      "note": "有李公麟伪款；馆方认为是王维失传图式的后世重构，不能标为王维真迹。 尺寸：26.3×554厘米。 馆藏号：1950.1369。 暂未取得可用图像，保留作品资料与馆藏位置。",
+      "imageStatus": "unavailable"
+    },
+    {
+      "id": "wang-wei-freer-estate",
+      "title": "辋川别业图卷（传宋旭）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传宋旭；旧传王蒙；明代1570年代",
+      "medium": "绢本水墨设色",
+      "description": "描绘辋川别业的明代长卷，现归传宋旭，原先曾归王蒙。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1909.207/",
+      "note": "与王维的关系在于辋川图式，馆方并未把该卷当作王维真迹。 尺寸：30 × 1075.6厘米（画幅）。 馆藏号：F1909.207。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "wang-wei-kyoto",
+      "title": "辋川图卷（京都本）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传唐棣，馆定明代；明代；有1342年唐棣款",
+      "medium": "绢本水墨设色",
+      "description": "长卷展示辋川山居景观，公开图像包含画面分段与题跋。",
+      "sourceUrl": "https://knmdb.kyohaku.go.jp/eng/7758.html",
+      "note": "馆方断为明代，署款1342不能直接当作现存画作年；关联王维图式。 尺寸：34.8×509.1厘米。 馆藏号：AK664。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "wang-wei-miami",
+      "title": "辋川图卷（Zhang Jishu本）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "Zhang Jishu；1676年",
+      "medium": "纸本水墨设色",
+      "description": "清代画家对辋川景观图式的再现，馆方作者为Zhang Jishu。",
+      "sourceUrl": "https://emuseum.miami.edu/objects/8493/wangchuan-villa",
+      "note": "属于明确的后世辋川题材传承，不视为王维本人作品。 尺寸：画幅30.2×399.4厘米；全卷36.8×1120.8厘米。 馆藏号：73.029.003。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "wang-wei-npm-14073",
+      "title": "仿王维江干积雪图卷（传燕文贵）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "传燕文贵，仿王维；旧题宋，实物年代待考",
+      "medium": "绢本",
+      "description": "以王维名下江干雪景为临仿对象的山水卷，保存明确的临仿关系。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/14073?dep=P",
+      "note": "馆方旧题燕文贵仿王维，收在后世传承附录，不计为王维本人作品。 尺寸：39.5×163.3厘米。 馆藏号：故畫001404N000000000。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "wang-wei-sf",
+      "title": "仿王维辋川图卷（宋旭1574年本）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "宋旭；1574年",
+      "medium": "绢本水墨设色",
+      "description": "宋旭应朋友之请作辋川长卷，包含约二十处景物；题跋提到朋友看过王蒙临王维本。",
+      "sourceUrl": "https://searchcollection.asianart.org/objects/2432/landscape-after-wang-weis-wangchuan-picture",
+      "note": "临仿链条为王维图式、王蒙传本与宋旭再创作；与弗利尔宋旭本分别建档。 尺寸：画幅31.4×889厘米；全卷32.1×1191.3厘米。 馆藏号：B67D2。 暂未取得可用图像，保留作品资料与馆藏位置。",
+      "imageStatus": "unavailable"
+    },
+    {
+      "id": "wang-wei-seattle",
+      "title": "辋川图卷（西雅图本）",
+      "artistIds": [
+        "wang-wei"
+      ],
+      "dateLabel": "佚名，王维风格；17世纪",
+      "medium": "绢本水墨设色",
+      "description": "描绘辋川别业景物的后世长卷，馆方列作者为佚名、王维风格。",
+      "sourceUrl": "https://art.seattleartmuseum.org/objects/15057/wangchuan-villa",
+      "note": "当前馆方标注 Style of Wang Wei，按图式传承收录。 尺寸：馆方Overall：36英尺×11 13/16英寸（约1097.3×30.0厘米，长×高）。 馆藏号：47.142。 暂未取得可用图像，保留作品资料与馆藏位置。",
+      "imageStatus": "unavailable"
+    },
+    {
+      "id": "yan-liben-freer-F1917.129",
+      "title": "净瓶杨柳观音像",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "佚名；旧传阎立本；明代（1368—1644）",
+      "medium": "绢本设色，裱于板上",
+      "description": "观音持净瓶、杨柳的单体尊像；旧藏家曾归于阎立本。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1917.129/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：156.8 × 76.8厘米（画幅）。 馆藏号：F1917.129。"
+    },
+    {
+      "id": "yan-liben-freer-newyear",
+      "title": "宫女婴孩庆新年图",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "佚名；旧传阎立本；明代15—16世纪",
+      "medium": "绢本水墨设色",
+      "description": "庭院中的宫女和孩童过年，包含燃放爆竹与悬钟馗像等细节。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.403/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：160.3 × 106.2厘米（画幅）。 馆藏号：F1916.403。"
+    },
+    {
+      "id": "yan-liben-freer-princes",
+      "title": "异域诸王图",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "佚名；旧传阎立本；明或清，17—19世纪",
+      "medium": "绢本水墨设色",
+      "description": "表现外域来人的小幅人物画，反映阎立本职贡画声名的后世传播。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.557/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：28.1 × 35.4厘米（画幅）。 馆藏号：F1916.557。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "yan-liben-freer-F1916.520",
+      "title": "洗象图",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传崔子忠；旧传阎立本；明代17世纪前中期",
+      "medium": "绫本水墨设色",
+      "description": "人物为象洗沐的场景，现归传崔子忠，保留旧阎立本归属记录。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.520/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：124.3 × 52.1厘米（画幅）。 馆藏号：F1916.520。"
+    },
+    {
+      "id": "yan-liben-freer-woman",
+      "title": "绿衣妇人像",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "佚名；旧传阎立本；或明代，17世纪？",
+      "medium": "绢本水墨设色",
+      "description": "穿绿衣的妇人肖像；归属由阎立本旧题改为明代或17世纪作品。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.186/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：129.5 × 75厘米（画幅）。 馆藏号：F1916.186。"
+    },
+    {
+      "id": "yan-liben-freer-F1916.581",
+      "title": "进贡珍兽图卷",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "佚名；旧传阎立本；明代（1368—1644）",
+      "medium": "绢本水墨设色",
+      "description": "外域来人携珍禽异兽朝贡的横卷，延续古代职贡题材。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.581/",
+      "note": "馆方保留“Formerly attributed to”记录；现存实物的年代见断代栏。 尺寸：30.5 × 114.5厘米（画幅）。 馆藏号：F1916.581。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "yan-liben-freer-F1911.235",
+      "title": "锁谏图卷",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "佚名；旧传阎立本；明代15世纪",
+      "medium": "绢本水墨设色",
+      "description": "以宫廷谏诤故事为题的叙事长卷，馆方今定为明代。",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1911.235/",
+      "note": "馆方保留“Traditionally attributed to”记录；现存实物的年代见断代栏。 尺寸：36.9 × 207.9厘米（画幅）。 馆藏号：F1911.235。 现有主图为局部或分段参考图，不代表完整长卷。"
+    },
+    {
+      "id": "yan-liben-xiaoyi-liaoning",
+      "title": "萧翼赚兰亭图卷（辽宁本）",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "宋代佚名，旧传阎立本；宋代摹本",
+      "medium": "绢本设色",
+      "description": "较完整的萧翼与辩才故事传本，刻画交谈与侍者活动。",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/231761.html",
+      "note": "藏地与宋本身份由故宫馆藏页交叉确认；尺寸来自辽宁日报。 尺寸：26.5×75.7厘米（辽宁日报报道，待馆藏卡复核）。 暂未取得可用图像，保留作品资料与馆藏位置。",
+      "imageStatus": "unavailable"
+    },
+    {
+      "id": "yan-liben-thirteen-emperors",
+      "title": "历代帝王图卷",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传阎立本；7世纪后半，含后世替换部分（MFA供稿旧记录）",
+      "medium": "绢本水墨设色",
+      "description": "以帝王和侍从的组合呈现历代君主，借衣冠、表情和姿态表达身份与评价，是早期帝王肖像图式的重要传世卷。",
+      "sourceUrl": "https://collections.mfa.org/objects/29071/the-thirteen-emperors",
+      "note": "不能将整卷一概标为阎立本亲笔；MFA供给AMICA的记录明确含后世替换。本次主站记录遇JS验证。 尺寸：51.3×531厘米。 馆藏号：31.643。"
+    },
+    {
+      "id": "yan-liben-npm-5509",
+      "title": "十八学士于志宁书赞卷",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传阎立本；后世传本，确切年代未定",
+      "medium": "绢本",
+      "description": "以秦府十八学士为题，图像与书赞合卷，反映唐太宗礼贤的政治叙事。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/5509?dep=P",
+      "note": "旧传阎立本；馆方指出拖尾记语存在错讹，疑后人添加。 尺寸：29.7×475厘米。 馆藏号：故畫001545N000000000。"
+    },
+    {
+      "id": "yan-liben-regal-assembly",
+      "title": "王会图卷",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传阎立本；旧题唐；现存卷断代待进一步研究",
+      "medium": "绢本设色",
+      "description": "以外国使者及国名题记排列成卷，题记包括波斯、百济、龟兹等名称。可与《职贡图》比较朝贡图像的不同组织方式。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/14747?dep=P",
+      "note": "作为独立馆藏实物记录，不与职贡图合并。馆藏题名归阎立本，当前证据不足以确认亲笔及具体制作世纪。 尺寸：画心28.1×238.1厘米。 馆藏号：故畫001379N000000000。"
+    },
+    {
+      "id": "yan-liben-npm-10",
+      "title": "竹林五君图轴",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传阎立本；后人作品，确切年代未定",
+      "medium": "绢本",
+      "description": "竹林中五位人物的雅集。清高宗将其理解为七贤中去掉两人后的“五君”。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/10?dep=P",
+      "note": "竹竿处有阎立本款；馆方中文说明明确认为是后人假托。 尺寸：137.2×74.3厘米。 馆藏号：故畫000002N000000000。"
+    },
+    {
+      "id": "yan-liben-tribute",
+      "title": "职贡图卷",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传阎立本；旧题唐；现存卷精确断代未确定",
+      "medium": "绢本设色",
+      "description": "描绘持珍禽异兽和器物入贡的使者队列，面貌、服饰和贡物构成对外交流的视觉叙事。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/25?dep=P",
+      "note": "馆方英文正文明确为traditionally attributed。题签和唐代主题不能独立证明作者与实物年代。 尺寸：画心61.5×191.5厘米。 馆藏号：中畫000001N000000000。"
+    },
+    {
+      "id": "yan-liben-npm-6",
+      "title": "萧翼赚兰亭图卷（台北本）",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传阎立本；宋代摹本",
+      "medium": "绢本",
+      "description": "以辩才与萧翼的谈话为中心，旁有煎茶侍者，表现取得《兰亭序》的故事。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/6?dep=P",
+      "note": "馆方旧题阎立本，专题说明定为保存唐代图式的宋代摹本；与北京、辽宁两本分别建档。 尺寸：27.4×64.7厘米。 馆藏号：故畫000975N000000000。"
+    },
+    {
+      "id": "yan-liben-npm-15086",
+      "title": "雪景山水册页（唐宋元明四朝合璧册）",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传阎立本；旧题唐，实物年代待考",
+      "medium": "绢本",
+      "description": "合璧册中的雪景山水一开，作为独立图像有明确册页编号。",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/15086?dep=P",
+      "note": "数据库作者字段沿用阎立本；不能据旧题或清宫著录确证为唐人真迹。 尺寸：25.6×24.8厘米。 馆藏号：故畫003458N000000001。"
+    },
+    {
+      "id": "yan-liben-buniantu",
+      "title": "步辇图卷",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "传阎立本；馆方题唐；宋摹说与唐代原作说并存",
+      "medium": "绢本设色",
+      "description": "表现唐太宗与吐蕃使臣禄东赞的会见。人物大小、位置及侍从的安排突出礼仪秩序，细线重彩刻画不同人物的神态。",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/234620.html",
+      "note": "馆藏页列阎立本作，院刊亦列出宋摹本观点。641是所绘事件年代，不能直接等同现存卷制作年。 尺寸：画心38.5×129厘米。 馆藏号：新00119106。"
+    },
+    {
+      "id": "yan-liben-xiaoyi-beijing",
+      "title": "萧翼赚兰亭图卷（北京本）",
+      "artistIds": [
+        "yan-liben"
+      ],
+      "dateLabel": "宋代佚名，传承阎立本图式；宋代",
+      "medium": "绢本设色",
+      "description": "萧翼与辩才对谈，画面四人，较辽宁、台北两卷简略。",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/231761.html",
+      "note": "馆方列为宋人摹本，三本同题画分别对应不同现存实物。 尺寸：26.6×44.3厘米。 馆藏号：新00186239。"
+    }
+  ],
+  "venues": [
+    {
+      "id": "liaoning",
+      "name": "辽宁省博物馆",
+      "city": "沈阳",
+      "country": "中国",
+      "coordinates": [
+        123.453763,
+        41.67567
+      ],
+      "sourceUrl": "https://www.museumschina.cn/museums/details?id=202208231952479944",
+      "coordinateNote": "收藏机构已核实；轮换、借展与当前展出状态另行查询。 坐标来源：https://www.openstreetmap.org/relation/9571476；OpenStreetMap / Nominatim，ODbL 1.0"
+    },
+    {
+      "id": "mfa-boston",
+      "name": "波士顿美术馆",
+      "city": "波士顿",
+      "country": "美国",
+      "coordinates": [
+        -71.093897,
+        42.339457
+      ],
+      "sourceUrl": "https://www.mfa.org/visit/getting-here",
+      "coordinateNote": "收藏机构已核实；轮换、借展与当前展出状态另行查询。 坐标来源：https://www.openstreetmap.org/relation/63938；OpenStreetMap / Nominatim，ODbL 1.0"
+    },
+    {
+      "id": "freer",
+      "name": "史密森尼国立亚洲艺术博物馆（弗利尔收藏）",
+      "city": "华盛顿",
+      "country": "美国",
+      "coordinates": [
+        -77.027368,
+        38.888068
+      ],
+      "sourceUrl": "https://www.loc.gov/pictures/item/dc1181/",
+      "coordinateNote": "收藏机构已核实；轮换、借展与当前展出状态另行查询。 坐标来源：https://www.loc.gov/pictures/item/dc1181/；美国国会图书馆HABS测绘记录"
+    },
+    {
+      "id": "seattle",
+      "name": "西雅图艺术博物馆",
+      "city": "西雅图",
+      "country": "美国",
+      "coordinates": [
+        -122.3385575,
+        47.6077008
+      ],
+      "sourceUrl": "https://www.seattleartmuseum.org/",
+      "coordinateNote": "使用SAM市中心机构代表点；亚洲收藏可能在亚洲馆或库房，非实物实时位置。 坐标来源：https://www.openstreetmap.org/node/1851741441；OpenStreetMap / Nominatim，ODbL 1.0"
+    },
+    {
+      "id": "kyoto",
+      "name": "京都国立博物馆",
+      "city": "京都",
+      "country": "日本",
+      "coordinates": [
+        135.7728606,
+        34.989896
+      ],
+      "sourceUrl": "https://www.kyohaku.go.jp/",
+      "coordinateNote": "点位代表收藏机构；不承诺当前在展。 坐标来源：https://www.openstreetmap.org/way/31843043；OpenStreetMap / Nominatim，ODbL 1.0"
+    },
+    {
+      "id": "miami",
+      "name": "迈阿密大学洛威艺术博物馆",
+      "city": "科勒尔盖布尔斯／迈阿密",
+      "country": "美国",
+      "coordinates": [
+        -80.2755732,
+        25.7192672
+      ],
+      "sourceUrl": "https://www.lowe.miami.edu/",
+      "coordinateNote": "点位代表收藏机构；不承诺当前在展。 坐标来源：https://www.openstreetmap.org/relation/6462117；OpenStreetMap / Nominatim，ODbL 1.0"
+    },
+    {
+      "id": "sanfrancisco",
+      "name": "旧金山亚洲艺术博物馆",
+      "city": "旧金山",
+      "country": "美国",
+      "coordinates": [
+        -122.4159922,
+        37.780315
+      ],
+      "sourceUrl": "https://asianart.org/",
+      "coordinateNote": "点位代表收藏机构；不承诺当前在展。 坐标来源：https://www.openstreetmap.org/way/24588037；OpenStreetMap / Nominatim，ODbL 1.0"
+    },
+    {
+      "id": "honolulu",
+      "name": "檀香山艺术博物馆",
+      "city": "檀香山",
+      "country": "美国",
+      "coordinates": [
+        -157.84808,
+        21.3041931
+      ],
+      "sourceUrl": "https://honolulumuseum.org/",
+      "coordinateNote": "点位代表收藏机构；不承诺当前在展。 坐标来源：https://www.openstreetmap.org/relation/14355002；OpenStreetMap / Nominatim，ODbL 1.0"
+    },
+    {
+      "id": "british-museum",
+      "name": "大英博物馆",
+      "city": "伦敦",
+      "country": "英国",
+      "coordinates": [
+        -0.1267051,
+        51.5193118
+      ],
+      "sourceUrl": "https://www.britishmuseum.org/",
+      "coordinateNote": "点位代表收藏机构；不承诺当前在展。 坐标来源：https://www.openstreetmap.org/relation/177044；OpenStreetMap / Nominatim，ODbL 1.0"
+    }
+  ],
+  "holdings": [
+    {
+      "artworkId": "wang-wei-freer-F1919.124",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1919.124/"
+    },
+    {
+      "artworkId": "wang-wei-freer-F1916.74",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.74/"
+    },
+    {
+      "artworkId": "wang-wei-freer-F1916.402",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.402/"
+    },
+    {
+      "artworkId": "wang-wei-honolulu",
+      "venueId": "honolulu",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.dpm.org.cn/Uploads/File/2023/12/19/u65814715bff3e.pdf"
+    },
+    {
+      "artworkId": "wang-wei-met-snow",
+      "venueId": "met",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/40409"
+    },
+    {
+      "artworkId": "wang-wei-npm-14893",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/14893?dep=P"
+    },
+    {
+      "artworkId": "wang-wei-wangchuan",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/285?dep=P"
+    },
+    {
+      "artworkId": "wang-wei-npm-15545",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/15545?dep=P"
+    },
+    {
+      "artworkId": "wang-wei-snow-river",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/14672?dep=P"
+    },
+    {
+      "artworkId": "wang-wei-npm-12069",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/12069?dep=P"
+    },
+    {
+      "artworkId": "wang-wei-npm-15090",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/15090?dep=P"
+    },
+    {
+      "artworkId": "wang-wei-fusheng",
+      "venueId": "osaka",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.osaka-art-museum.jp/sites/default/files/2019/04/20d456649686b0690eac6ed60a2cf5b1.pdf"
+    },
+    {
+      "artworkId": "wang-wei-bm-style",
+      "venueId": "british-museum",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.britishmuseum.org/collection/search?image=true&keyword=Painting&material_culture=Qing+dynasty&page=2&sort=object_name__asc&view=grid"
+    },
+    {
+      "artworkId": "wang-wei-chicago-49039",
+      "venueId": "artic",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/49039"
+    },
+    {
+      "artworkId": "wang-wei-chicago",
+      "venueId": "artic",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.artic.edu/artworks/96627"
+    },
+    {
+      "artworkId": "wang-wei-freer-estate",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1909.207/"
+    },
+    {
+      "artworkId": "wang-wei-kyoto",
+      "venueId": "kyoto",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://knmdb.kyohaku.go.jp/eng/7758.html"
+    },
+    {
+      "artworkId": "wang-wei-miami",
+      "venueId": "miami",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://emuseum.miami.edu/objects/8493/wangchuan-villa"
+    },
+    {
+      "artworkId": "wang-wei-npm-14073",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/14073?dep=P"
+    },
+    {
+      "artworkId": "wang-wei-sf",
+      "venueId": "sanfrancisco",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://searchcollection.asianart.org/objects/2432/landscape-after-wang-weis-wangchuan-picture"
+    },
+    {
+      "artworkId": "wang-wei-seattle",
+      "venueId": "seattle",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://art.seattleartmuseum.org/objects/15057/wangchuan-villa"
+    },
+    {
+      "artworkId": "yan-liben-freer-F1917.129",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1917.129/"
+    },
+    {
+      "artworkId": "yan-liben-freer-newyear",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.403/"
+    },
+    {
+      "artworkId": "yan-liben-freer-princes",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.557/"
+    },
+    {
+      "artworkId": "yan-liben-freer-F1916.520",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.520/"
+    },
+    {
+      "artworkId": "yan-liben-freer-woman",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.186/"
+    },
+    {
+      "artworkId": "yan-liben-freer-F1916.581",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1916.581/"
+    },
+    {
+      "artworkId": "yan-liben-freer-F1911.235",
+      "venueId": "freer",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://asia-archive.si.edu/object/F1911.235/"
+    },
+    {
+      "artworkId": "yan-liben-xiaoyi-liaoning",
+      "venueId": "liaoning",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/231761.html"
+    },
+    {
+      "artworkId": "yan-liben-thirteen-emperors",
+      "venueId": "mfa-boston",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://collections.mfa.org/objects/29071/the-thirteen-emperors"
+    },
+    {
+      "artworkId": "yan-liben-npm-5509",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/5509?dep=P"
+    },
+    {
+      "artworkId": "yan-liben-regal-assembly",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/14747?dep=P"
+    },
+    {
+      "artworkId": "yan-liben-npm-10",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/10?dep=P"
+    },
+    {
+      "artworkId": "yan-liben-tribute",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/25?dep=P"
+    },
+    {
+      "artworkId": "yan-liben-npm-6",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/6?dep=P"
+    },
+    {
+      "artworkId": "yan-liben-npm-15086",
+      "venueId": "palace-taipei",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://digitalarchive.npm.gov.tw/Collection/Detail/15086?dep=P"
+    },
+    {
+      "artworkId": "yan-liben-buniantu",
+      "venueId": "palace-beijing",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/234620.html"
+    },
+    {
+      "artworkId": "yan-liben-xiaoyi-beijing",
+      "venueId": "palace-beijing",
+      "note": "收藏机构参考位置，不代表当前展出。",
+      "verifiedAt": "2026-11-01",
+      "sourceUrl": "https://www.dpm.org.cn/collection/paint/231761.html"
+    }
+  ]
+}

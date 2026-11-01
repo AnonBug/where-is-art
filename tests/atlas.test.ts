@@ -4,6 +4,8 @@ import { resolve } from "node:path";
 import catalog from "../public/catalog.json";
 import foreignCatalog from "../content/foreign-catalog.json";
 import wuDaoziCatalog from "../content/wu-daozi-catalog.json";
+import tangExpansion from "../content/tang-expansion-catalog.json";
+import tangExpansionMedia from "../content/tang-expansion-media-manifest.json";
 import {
   atlasSchema,
   validateRelations,
@@ -19,11 +21,17 @@ describe("atlas content contract", () => {
   it("resolves all artwork, artist, venue, topic and image relations", () => {
     expect(validateRelations(data)).toEqual([]);
     expect(data.artworks).toHaveLength(
-      38 + foreignCatalog.artworks.length + wuDaoziCatalog.artworks.length,
+      38 +
+        foreignCatalog.artworks.length +
+        wuDaoziCatalog.artworks.length +
+        tangExpansion.artworks.length,
     );
     expect(scopeWorks(data, "artist:tang-yin")).toHaveLength(17);
     expect(data.images.filter((x) => x.delivery.kind === "dzi")).toHaveLength(
-      8,
+      8 +
+        tangExpansionMedia.images.filter(
+          (image) => image.delivery.kind === "dzi",
+        ).length,
     );
   });
   it("maps only the two selected Wu Daozi attributed scrolls with native-resolution images", () => {

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 8775 --strictPort",
-    "build": "node scripts/build-theme.mjs && tsc --noEmit && vite build",
+    "build": "node scripts/build-theme.mjs && tsc --noEmit && vite build && node scripts/check-site-size.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 8775 --strictPort",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
@@ -18,7 +18,8 @@
     "media:prepare": "node scripts/prepare-media.mjs",
     "media:foreign": "node scripts/prepare-foreign-media.mjs",
     "media:wu-daozi": "node scripts/prepare-wu-daozi-media.mjs",
-    "media:check": "node scripts/check-media.mjs && node scripts/check-foreign-media.mjs && node scripts/check-wu-daozi-media.mjs"
+    "media:tang-expansion": "node scripts/prepare-tang-expansion-media.mjs",
+    "media:check": "node scripts/check-media.mjs && node scripts/check-foreign-media.mjs && node scripts/check-wu-daozi-media.mjs && node scripts/check-tang-expansion-media.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
