@@ -91,7 +91,7 @@ export default function ArtworkViewer({
         pinchToZoom: true,
         clickToZoom: false,
         dblClickToZoom: true,
-        flickEnabled: true,
+        flickEnabled: false,
       },
       viewportMargins: {
         top: compact ? 84 : 70,
@@ -165,6 +165,14 @@ export default function ArtworkViewer({
       if (!dead) setError("部分画面未能加载，请重试。");
     });
     v.addHandler("animation-finish", save);
+    v.addHandler("canvas-drag-end", (event) => {
+      if (event.pointerType !== "touch") return;
+      // Stop at the displayed position instead of finishing the pan spring
+      // after the finger lifts. Zoom animations keep their own spring.
+      v.viewport.panTo(v.viewport.getCenter(true), true);
+      v.viewport.applyConstraints(true);
+      save();
+    });
     const observer = new ResizeObserver(() => {
       const element = stage.current;
       if (!element || !element.clientWidth || !element.clientHeight) return;
