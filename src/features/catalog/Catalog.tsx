@@ -3,6 +3,7 @@ import { useSession } from "../../application/session";
 import {
   artistLabel,
   primaryImage,
+  scopeWorks,
   type Artwork,
   type Atlas,
   type Category,
@@ -98,6 +99,7 @@ export function Catalog({
   const tab = useSession((state) => state.tab);
   const expanded = useSession((state) => state.expanded[tab]);
   const topic = data.topics.find((t) => t.id === topicId);
+  const topicWorks = topic ? scopeWorks(data, `topic:${topic.id}`) : [];
   const scrollRef = useSavedScroll(`catalog:${tab}`);
   const pendingPeriod = useRef<{
     element: HTMLElement;
@@ -173,13 +175,11 @@ export function Catalog({
               <h1>{topic.title}</h1>
               <IconButton icon="map" label="查看专题整体分布" onClick={onMap} />
             </div>
-            <p>{topic.artworkIds.length} 幅作品</p>
+            <p>{topicWorks.length} 幅作品</p>
           </div>
           <ArtworkList
             data={data}
-            works={topic.artworkIds.flatMap(
-              (id) => data.artworks.find((w) => w.id === id) ?? [],
-            )}
+            works={topicWorks}
             selected={selected}
             onSelect={onWork}
             scrollKey={`topic:${topic.id}`}

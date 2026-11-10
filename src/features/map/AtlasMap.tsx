@@ -20,6 +20,7 @@ import {
   type Venue,
 } from "../../domain/atlas";
 import { IconButton } from "../../shared/ui";
+import { ClusterMarker } from "./ClusterMarker";
 import { VenueMarker } from "./VenueMarker";
 import { bindVenueZoom, VENUE_FOCUS_ZOOM } from "./venueZoom";
 import { createTiandituStyle } from "../../infrastructure/tianditu";
@@ -423,10 +424,12 @@ export default function AtlasMap({
       {renderMarkers.map((marker) =>
         createPortal(
           marker.cluster !== undefined ? (
-            <button
-              className={s.cluster}
-              aria-label={`${marker.works.length} 幅作品，放大查看收藏地`}
-              onClick={() => {
+            <ClusterMarker
+              data={data}
+              works={marker.works}
+              selected={selected}
+              onWork={onWork}
+              onExpand={() => {
                 const map = mapRef.current;
                 if (!map) return;
                 map.easeTo({
@@ -438,18 +441,7 @@ export default function AtlasMap({
                   duration: 450,
                 });
               }}
-            >
-              <span
-                style={{
-                  fontSize: Math.min(
-                    17,
-                    60 / String(marker.works.length).length,
-                  ),
-                }}
-              >
-                {marker.works.length}
-              </span>
-            </button>
+            />
           ) : (
             marker.venue && (
               <VenueMarker

@@ -11,6 +11,7 @@ const paths = {
   close: "M18 6 6 18M6 6l12 12",
   plus: "M12 5v14M5 12h14",
   minus: "M5 12h14",
+  download: "M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4",
   chevron: "m9 18 6-6-6-6",
   down: "m6 9 6 6 6-6",
   info: "M12 16v-4M12 8h.01",

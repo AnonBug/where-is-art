@@ -9,6 +9,7 @@ import {
   type Atlas,
 } from "../../domain/atlas";
 import { ArtworkImage, IconButton } from "../../shared/ui";
+import { ArtworkDownload } from "../artworks/ArtworkDownload";
 import s from "./ArtworkViewer.module.scss";
 interface Props {
   data: Atlas;
@@ -44,7 +45,6 @@ export default function ArtworkViewer({
   const stage = useRef<HTMLDivElement>(null);
   const root = useRef<HTMLDivElement>(null);
   const viewer = useRef<OpenSeadragon.Viewer | null>(null);
-  const [loading, setLoading] = useState(true);
   const [hasImage, setHasImage] = useState(false);
   const [error, setError] = useState("");
   const [zoom, setZoom] = useState(100);
@@ -52,10 +52,11 @@ export default function ArtworkViewer({
   const [picker, setPicker] = useState(false);
   useEffect(() => {
     if (!stage.current || !asset) return;
-    setLoading(true);
     setHasImage(false);
     setError("");
     let dead = false;
+    let hasCanvasImage = false;
+    let detail: OpenSeadragon.TiledImage | undefined;
     const snapshotKey = `${work.id}:${asset.id}`;
     const previous = useSession.getState().imageViews[snapshotKey];
     const imageSource = {
@@ -65,10 +66,16 @@ export default function ArtworkViewer({
     };
     const v = OpenSeadragon({
       element: stage.current,
-      tileSources:
-        asset.delivery.kind === "dzi"
-          ? assetUrl(asset.delivery.url)
-          : imageSource,
+      // One preview tile uses the final image's coordinate system. The canvas
+      // can open immediately, with identical pan/zoom limits at either quality.
+      tileSources: {
+        width: asset.delivery.width,
+        height: asset.delivery.height,
+        tileSize: Math.max(asset.delivery.width, asset.delivery.height),
+        minLevel: 0,
+        maxLevel: 0,
+        getTileUrl: () => assetUrl(asset.preview.url),
+      },
       showNavigationControl: false,
       showNavigator: false,
       homeFillsViewer: false,
@@ -101,6 +108,19 @@ export default function ArtworkViewer({
       },
     });
     viewer.current = v;
+    function updateZoomLimit() {
+      // 100% means fit-to-window. Allow at least 400% even for small images,
+      // while retaining the higher native-resolution limit of detailed works.
+      // The runtime exposes this option, but @types omits it from Viewport.
+      const viewport = v.viewport as OpenSeadragon.Viewport & {
+        maxZoomLevel: number | undefined;
+      };
+      viewport.maxZoomLevel = undefined;
+      viewport.maxZoomLevel = Math.max(
+        viewport.getMaxZoom(),
+        viewport.getHomeZoom() * 4,
+      );
+    }
     function capture(): ImageView | undefined {
       const item = v.world.getItemAt(0);
       if (!item) return;
@@ -139,30 +159,59 @@ export default function ArtworkViewer({
       );
     }
     const timer = setTimeout(() => {
-      if (!dead) setError("高清画面加载较慢，可以稍候或重试。");
+      if (!dead && !hasCanvasImage) setError("画作加载较慢，可以稍候或重试。");
     }, 15000);
     v.addHandler("open", () => {
       if (dead) return;
+      updateZoomLimit();
       if (previous) restore(previous);
       else v.viewport.goHome(true);
       save();
+      // Add detail over the interactive preview without reopening the viewer
+      // or restoring an old viewport. Unloaded tiles keep showing the preview.
+      v.addTiledImage({
+        tileSource:
+          asset.delivery.kind === "dzi"
+            ? assetUrl(asset.delivery.url)
+            : imageSource,
+        x: 0,
+        y: 0,
+        width: 1,
+        success: () => {
+          if (!dead) {
+            detail = v.world.getItemAt(1);
+            updateZoomLimit();
+          }
+        },
+        error: () => {
+          if (!dead) setError("高清图暂时无法加载，可继续浏览预览。");
+        },
+      });
     });
-    v.addHandler("tile-loaded", () => {
+    v.addHandler("update-viewport", () => {
       if (dead) return;
-      clearTimeout(timer);
-      setLoading(false);
-      setHasImage(true);
-      setError((value) => (value.startsWith("高清画面加载较慢") ? "" : value));
+      // This event runs after drawing, so the static first frame disappears
+      // only when an interactive image is actually on screen.
+      const detailReady = detail?.getFullyLoaded();
+      if (hasCanvasImage && !detailReady) return;
+      if (v.world.getItemAt(0)?.getFullyLoaded() || detailReady) {
+        hasCanvasImage = true;
+        clearTimeout(timer);
+        setHasImage(true);
+        setError((value) =>
+          detailReady || value.startsWith("画作加载较慢") ? "" : value,
+        );
+      }
     });
     v.addHandler("open-failed", () => {
       if (!dead) {
         clearTimeout(timer);
-        setLoading(false);
-        setError("高清图暂时无法加载。已保留预览。");
+        setError("画作暂时无法加载，请重试。");
       }
     });
-    v.addHandler("tile-load-failed", () => {
-      if (!dead) setError("部分画面未能加载，请重试。");
+    v.addHandler("tile-load-failed", ({ tiledImage }) => {
+      if (!dead && tiledImage === detail)
+        setError("部分高清细节未能加载，可继续浏览或重试。");
     });
     v.addHandler("animation-finish", save);
     v.addHandler("canvas-drag-end", (event) => {
@@ -181,6 +230,7 @@ export default function ArtworkViewer({
         new OpenSeadragon.Point(element.clientWidth, element.clientHeight),
         true,
       );
+      updateZoomLimit();
       if (state) restore(state);
     });
     observer.observe(stage.current);
@@ -219,7 +269,7 @@ export default function ArtworkViewer({
         if (!infoOpen && event.key === "Tab") {
           const controls = [
             ...(root.current?.querySelectorAll<HTMLElement>(
-              "button:not(:disabled), select",
+              "button:not(:disabled), a[href], select",
             ) ?? []),
           ].filter((el) => el.offsetParent !== null);
           const first = controls[0],
@@ -257,21 +307,19 @@ export default function ArtworkViewer({
             </p>
           )}
         </div>
-        <IconButton
-          icon="info"
-          label="查看作品信息"
-          onClick={onInfo}
-          data-viewer-info
-        />
+        <div className={s.headerActions}>
+          <ArtworkDownload work={work} image={asset} iconOnly />
+          <IconButton
+            icon="info"
+            label="查看作品信息"
+            onClick={onInfo}
+            data-viewer-info
+          />
+        </div>
       </header>
       {!asset && (
         <div className={s.error} role="status">
           暂无可用图像，可通过作品信息查看资料与收藏位置。
-        </div>
-      )}
-      {asset && loading && !error && (
-        <div className={s.loading} role="status">
-          正在加载画作细节…
         </div>
       )}
       {error && (
@@ -295,7 +343,7 @@ export default function ArtworkViewer({
           />
           <i />
           <IconButton
-            icon="reset"
+            icon="expand"
             label="还原全图"
             onClick={() => viewer.current?.viewport.goHome()}
           />

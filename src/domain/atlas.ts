@@ -119,9 +119,12 @@ export type Scope =
   | "category:foreign";
 
 export function scopeWorks(data: Atlas, scope: string): Artwork[] {
+  // Keep researched records in the catalog, but only browse works with a
+  // whole image or a usable reference image. New media makes them visible again.
+  const visible = data.artworks.filter((work) => primaryImage(data, work.id));
   const [kind, id] = scope.split(":");
   if (kind === "topic") {
-    const byId = new Map(data.artworks.map((work) => [work.id, work]));
+    const byId = new Map(visible.map((work) => [work.id, work]));
     return [
       ...new Set(
         data.topics.find((topic) => topic.id === id)?.artworkIds ?? [],
@@ -135,9 +138,7 @@ export function scopeWorks(data: Atlas, scope: string): Artwork[] {
       )
       .map((artist) => artist.id),
   );
-  return data.artworks.filter((work) =>
-    work.artistIds.some((id) => ids.has(id)),
-  );
+  return visible.filter((work) => work.artistIds.some((id) => ids.has(id)));
 }
 export function scopeLabel(data: Atlas, scope: string) {
   const [kind, id] = scope.split(":");

@@ -12,8 +12,14 @@
   inset: 0;
   touch-action: none;
 }
+.stage {
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+}
 .preview {
-  padding: 80px 16px 88px;
+  padding: 70px 16px 88px;
   pointer-events: none;
   img {
     display: block;
@@ -58,6 +64,14 @@
   button {
     pointer-events: auto;
   }
+  .headerActions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 4px;
+    padding-top: 0;
+    pointer-events: auto;
+  }
 }
 .toolbar {
   position: absolute;
@@ -83,17 +97,6 @@
     background: rgba(246, 240, 226, 0.17);
     margin: 0 4px;
   }
-}
-.loading {
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 12px;
-  padding: 8px 12px;
-  border-radius: 4px;
-  background: rgba(31, 45, 41, 0.85);
-  white-space: nowrap;
 }
 .error {
   position: absolute;
@@ -181,6 +184,9 @@
   font-size: 11px;
 }
 @media (max-width: 1023px), (pointer: coarse) {
+  .preview {
+    padding-top: 84px;
+  }
   .header {
     padding: calc(14px + env(safe-area-inset-top))
       calc(12px + env(safe-area-inset-right)) 38px

@@ -6,43 +6,57 @@ import {
   type Atlas,
 } from "../../domain/atlas";
 import { ArtworkImage, Icon } from "../../shared/ui";
+import { ArtworkDownload } from "./ArtworkDownload";
 import s from "./ArtworkDetails.module.scss";
 export function ArtworkDetails({
   data,
   work,
+  assetId,
   onView,
   onVenue,
 }: {
   data: Atlas;
   work: Artwork;
+  assetId?: string;
   onView?: () => void;
   onVenue: (id: string) => void;
 }) {
-  const image = primaryImage(data, work.id);
+  const image =
+    data.images.find(
+      (image) => image.id === assetId && image.artworkId === work.id,
+    ) ?? primaryImage(data, work.id);
   const venues = workVenues(data, work.id);
   const preview = (
     <ArtworkImage
-      key={work.id}
+      key={image?.id ?? work.id}
       src={image?.preview.url}
-      alt={`${work.title}${!image ? "暂无可用图像" : image.role === "reference" ? "参考图" : "全图"}`}
+      alt={`${work.title}${!image ? "暂无可用图像" : image.role === "reference" ? "参考图" : image.label}`}
     />
   );
   return (
     <article className={s.details}>
-      {onView && image ? (
-        <button
-          className={s.preview}
-          onClick={onView}
-          aria-label={`放大欣赏${work.title}`}
-        >
-          {preview}
-          <span className={s.viewAction}>
-            <Icon name="expand" size={15} /> 放大欣赏
-          </span>
-        </button>
-      ) : (
-        <div className={`${s.preview} ${s.staticPreview}`}>{preview}</div>
-      )}
+      <div className={s.previewContainer}>
+        {onView && image ? (
+          <button
+            className={s.preview}
+            onClick={onView}
+            aria-label={`放大欣赏${work.title}`}
+          >
+            {preview}
+            <span className={s.viewAction}>
+              <Icon name="expand" size={15} /> 放大欣赏
+            </span>
+          </button>
+        ) : (
+          <div className={`${s.preview} ${s.staticPreview}`}>{preview}</div>
+        )}
+        <ArtworkDownload
+          work={work}
+          image={image}
+          iconOnly
+          className={s.previewDownload}
+        />
+      </div>
       <div className={s.copy}>
         <h1>{work.title}</h1>
         <p className={s.byline}>

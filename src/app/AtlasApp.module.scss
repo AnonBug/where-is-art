@@ -7,8 +7,24 @@
   background: var(--paper);
 }
 .desktop {
+  --catalog-duration: 280ms;
+  --catalog-easing: cubic-bezier(0.22, 1, 0.36, 1);
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr);
+  transition: grid-template-columns var(--catalog-duration)
+    var(--catalog-easing);
+  .sidebar {
+    // Keep text at its normal width while the panel slides out of the layout.
+    width: 280px;
+    overflow: hidden;
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    transition:
+      transform var(--catalog-duration) var(--catalog-easing),
+      opacity var(--catalog-duration) ease,
+      visibility 0s;
+  }
 }
 .sidebar {
   min-height: 0;
@@ -21,10 +37,16 @@
   height: 100%;
 }
 .collapsed {
-  grid-template-columns: 0 minmax(0, 1fr);
+  grid-template-columns: 0px minmax(0, 1fr);
   .sidebar {
+    transform: translateX(-100%);
+    opacity: 0;
     visibility: hidden;
-    overflow: hidden;
+    pointer-events: none;
+    transition-delay: 0s, 0s, var(--catalog-duration);
+  }
+  .fold svg {
+    transform: rotate(0deg);
   }
 }
 .fold {
@@ -39,7 +61,18 @@
   border-radius: 0 5px 5px 0;
   background: var(--paper);
   color: var(--muted);
-  font-size: 25px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  svg {
+    transform: rotate(180deg);
+    transition: transform var(--catalog-duration) var(--catalog-easing);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .desktop {
+    --catalog-duration: 0s;
+  }
 }
 .mapPlaceholder {
   position: absolute;

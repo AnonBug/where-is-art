@@ -7,6 +7,7 @@ import {
   atlasSchema,
   primaryImage,
   scopeWorks,
+  scopeVenues,
   validateRelations,
   workVenues,
 } from "../src/domain/atlas";
@@ -18,8 +19,24 @@ afterEach(cleanup);
 
 describe("Wang Wei and Yan Liben collection", () => {
   it("retains all researched records and all 265 images with attribution evidence", () => {
-    expect(scopeWorks(data, "artist:wang-wei")).toHaveLength(21);
-    expect(scopeWorks(data, "artist:yan-liben")).toHaveLength(17);
+    expect(
+      data.artworks.filter((work) => work.artistIds.includes("wang-wei")),
+    ).toHaveLength(21);
+    expect(
+      data.artworks.filter((work) => work.artistIds.includes("yan-liben")),
+    ).toHaveLength(17);
+    const visibleWangWei = scopeWorks(data, "artist:wang-wei");
+    expect(visibleWangWei).toHaveLength(15);
+    expect(scopeWorks(data, "artist:yan-liben")).toHaveLength(16);
+    expect(scopeWorks(data, "category:china")).toHaveLength(50);
+    expect(
+      scopeVenues(data, visibleWangWei).some(
+        (venue) => venue.id === "honolulu",
+      ),
+    ).toBe(false);
+    expect(visibleWangWei.every((work) => primaryImage(data, work.id))).toBe(
+      true,
+    );
     for (const source of sources.works) {
       const work = data.artworks.find((work) => work.id === source.id)!;
       expect(work.dateLabel).toContain(source.displayArtist);
@@ -62,6 +79,7 @@ describe("Wang Wei and Yan Liben collection", () => {
       screen.getByText("暂无可用图像，可查看作品资料与收藏位置。"),
     ).toBeTruthy();
     expect(screen.queryByRole("button", { name: /放大欣赏/ })).toBeNull();
+    expect(screen.queryByRole("link", { name: /^下载/ })).toBeNull();
   });
   it("shows an explicit empty state when a no-image viewer URL is opened directly", () => {
     const work = data.artworks.find(

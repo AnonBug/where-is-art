@@ -1,6 +1,28 @@
 .details {
   min-height: 100%;
 }
+.previewContainer {
+  position: relative;
+}
+a.previewDownload {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  color: var(--ink);
+  background: rgba(255, 251, 241, 0.78);
+  border-radius: 5px;
+  transition: background 160ms ease;
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+  &:hover,
+  &:focus-visible {
+    background: rgba(255, 251, 241, 0.96);
+  }
+}
 .preview {
   display: block;
   position: relative;
@@ -124,7 +146,11 @@
     height: 160px;
   }
   .preview.staticPreview {
-    display: none;
+    height: 120px;
+  }
+  a.previewDownload {
+    width: 44px;
+    height: 44px;
   }
   .description {
     font-size: 16px;

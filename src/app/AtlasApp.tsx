@@ -21,7 +21,7 @@ import { useCompact, useOrientation } from "../platform/usePlatform";
 import { Catalog, ArtworkList } from "../features/catalog/Catalog";
 import { ArtworkDetails } from "../features/artworks/ArtworkDetails";
 import { ArtworkInfoPanel } from "../features/artworks/ArtworkInfoPanel";
-import { EmptyState, IconButton } from "../shared/ui";
+import { EmptyState, Icon, IconButton } from "../shared/ui";
 import s from "./AtlasApp.module.scss";
 const AtlasMap = lazy(() => import("../features/map/AtlasMap"));
 const ArtworkViewer = lazy(() => import("../features/viewer/ArtworkViewer"));
@@ -277,6 +277,7 @@ export function AtlasApp() {
     <ArtworkDetails
       data={data}
       work={work}
+      assetId={isViewer ? search.get("asset") || undefined : undefined}
       onView={
         isDetail
           ? () =>
@@ -303,7 +304,14 @@ export function AtlasApp() {
       {!isViewer && (
         <>
           {(!compact || catalogScene) && (
-            <div className={s.sidebar}>{renderCatalog()}</div>
+            <div
+              id="atlas-catalog"
+              className={s.sidebar}
+              inert={!compact && collapsed}
+              aria-hidden={!compact && collapsed}
+            >
+              {renderCatalog()}
+            </div>
           )}
           {(!compact || !catalogScene) && (
             <section className={s.mapArea} aria-label="探索收藏地">
@@ -350,9 +358,11 @@ export function AtlasApp() {
                 <button
                   className={s.fold}
                   aria-label={collapsed ? "展开目录" : "收起目录"}
+                  aria-expanded={!collapsed}
+                  aria-controls="atlas-catalog"
                   onClick={() => useSession.getState().setCollapsed(!collapsed)}
                 >
-                  <span>{collapsed ? "›" : "‹"}</span>
+                  <Icon name="chevron" size={18} />
                 </button>
               )}
               {compact && !panel && (
