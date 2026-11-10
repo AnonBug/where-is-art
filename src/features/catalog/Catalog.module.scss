@@ -10,17 +10,17 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 28px 24px 25px;
+  padding: 18px 18px 16px;
   flex-shrink: 0;
   span {
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 600;
     letter-spacing: 1px;
     white-space: nowrap;
   }
   img {
-    width: 43px;
-    height: 48px;
+    width: 36px;
+    height: 40px;
     object-fit: contain;
   }
   button {
@@ -29,15 +29,15 @@
 }
 .tabs {
   display: flex;
-  padding: 0 24px;
-  gap: 28px;
+  padding: 0 20px;
+  gap: 26px;
   border-bottom: 1px solid var(--line);
   flex-shrink: 0;
   button {
-    padding: 15px 0 16px;
+    padding: 11px 0 12px;
     border: 0;
     background: none;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--muted);
     position: relative;
   }
@@ -56,55 +56,103 @@
 }
 .directory {
   overflow-y: auto;
-  padding: 22px 16px;
+  padding: 12px;
   flex: 1;
   scrollbar-width: thin;
 }
 .period {
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 .periodHeading {
   display: flex;
   align-items: center;
   width: 100%;
   border: 0;
-  background: none;
-  padding: 15px 6px;
-  gap: 12px;
+  background: color-mix(in srgb, var(--line) 28%, transparent);
+  border-radius: 5px;
+  padding: 8px;
+  gap: 8px;
+  min-height: 46px;
   text-align: left;
+  > svg {
+    flex-shrink: 0;
+    color: var(--muted);
+  }
+  &:hover {
+    background: color-mix(in srgb, var(--line) 48%, transparent);
+  }
+}
+.folderIcon {
+  display: flex;
+  color: var(--ochre);
+  flex-shrink: 0;
+}
+.periodCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
   strong {
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
   }
   small {
-    margin-left: auto;
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 1.4;
     color: var(--muted);
   }
 }
+.artists {
+  margin: 3px 0 7px 22px;
+  padding-left: 8px;
+  border-left: 1px solid var(--line);
+}
 .artist {
   display: flex;
-  flex-direction: column;
-  width: calc(100% - 25px);
-  margin: 5px 0 5px 25px;
-  padding: 15px 13px;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 46px;
+  margin: 2px 0;
+  padding: 7px 8px;
   text-align: left;
   gap: 8px;
   border: 0;
   border-radius: 5px;
   background: none;
+  > svg {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--muted);
+  }
   strong {
-    font-weight: 500;
-    font-size: 18px;
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.45;
   }
   small {
-    font-size: 13px;
+    display: block;
+    margin-top: 2px;
+    font-size: 11px;
     color: var(--muted);
     line-height: 1.5;
   }
   &:hover {
     background: color-mix(in srgb, var(--sage) 55%, transparent);
   }
+  &.selected {
+    box-shadow: inset 2px 0 var(--accent);
+    > svg {
+      color: var(--accent);
+    }
+    strong {
+      font-weight: 500;
+    }
+  }
+}
+.artistCopy {
+  min-width: 0;
 }
 .selected {
   background: var(--sage) !important;
@@ -119,19 +167,19 @@
   background: none;
   border: 0;
   border-bottom: 1px solid var(--line);
-  padding: 23px 8px;
+  padding: 14px 8px;
   text-align: left;
   strong {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
   small {
     display: block;
-    font-size: 13px;
-    line-height: 1.8;
+    font-size: 12px;
+    line-height: 1.6;
     color: var(--muted);
   }
   svg {
@@ -233,7 +281,7 @@
   gap: 6px;
   color: var(--muted);
   font-size: 10px;
-  padding: 17px 12px;
+  padding: 12px;
   letter-spacing: 0.4px;
 }
 .dot {
@@ -244,20 +292,20 @@
 }
 @media (max-width: 1023px), (pointer: coarse) {
   .brand {
-    padding: calc(20px + env(safe-area-inset-top)) 24px 18px;
+    padding: calc(14px + env(safe-area-inset-top)) 18px 12px;
   }
   .tabs {
     gap: 0;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 24px;
     button {
       min-width: 50px;
-      font-size: 19px;
+      font-size: 17px;
     }
   }
   .directory {
-    --directory-padding: 20px;
-    padding: var(--directory-padding) 24px;
+    --directory-padding: 12px;
+    padding: var(--directory-padding) 16px;
     overflow-anchor: none;
   }
   .period:last-child {
@@ -270,37 +318,37 @@
     // Cover the scroll container's top padding while pinned below the tabs.
     top: calc(-1 * var(--directory-padding));
     z-index: 1;
-    background: var(--paper);
+    background: color-mix(in srgb, var(--line) 28%, var(--paper));
   }
   .artist {
-    padding: 19px 15px;
-    margin-bottom: 12px;
+    min-height: 52px;
+    padding: 8px 10px;
     strong {
-      font-size: 21px;
+      font-size: 16px;
     }
     small {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
   .periodHeading {
     strong {
-      font-size: 22px;
+      font-size: 17px;
     }
     small {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
   .topic {
-    padding: 25px 4px;
+    padding: 16px 4px;
     strong {
-      font-size: 20px;
+      font-size: 17px;
     }
     small {
-      font-size: 14px;
+      font-size: 13px;
     }
   }
   .footnote {
-    padding-bottom: calc(18px + env(safe-area-inset-bottom));
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
     font-size: 11px;
   }
   .workRow {
@@ -315,21 +363,5 @@
   .thumb {
     width: 55px;
     height: 65px;
-  }
-}
-
-@container (max-width: 340px) {
-  .periodHeading {
-    display: grid;
-    grid-template-columns: 16px minmax(0, 1fr);
-    gap: 6px 12px;
-    > svg {
-      grid-row: 1 / 3;
-      align-self: center;
-    }
-    small {
-      grid-column: 2;
-      margin-left: 0;
-    }
   }
 }

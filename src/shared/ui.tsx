@@ -14,6 +14,9 @@ const paths = {
   download: "M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4",
   chevron: "m9 18 6-6-6-6",
   down: "m6 9 6 6 6-6",
+  folder:
+    "M3 7V5a2 2 0 0 1 2-2h4l3 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z",
+  artist: "M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM5 21v-2a7 7 0 0 1 14 0v2",
   info: "M12 16v-4M12 8h.01",
   map: "m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15",
   expand:

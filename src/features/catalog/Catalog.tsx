@@ -225,32 +225,44 @@ export function Catalog({
                     >
                       <Icon
                         name={expanded === period.id ? "down" : "chevron"}
-                        size={15}
+                        size={13}
                       />
-                      <strong>{period.name}</strong>
-                      <small>{period.dateLabel}</small>
+                      <span className={s.folderIcon}>
+                        <Icon name="folder" size={18} />
+                      </span>
+                      <span className={s.periodCopy}>
+                        <strong>{period.name}</strong>
+                        <small>{period.dateLabel}</small>
+                      </span>
                     </button>
-                    {expanded === period.id &&
-                      data.artists
-                        .filter((artist) => artist.periodId === period.id)
-                        .map((artist) => (
-                          <button
-                            key={artist.id}
-                            className={`${s.artist} ${scope === `artist:${artist.id}` ? s.selected : ""}`}
-                            aria-current={
-                              scope === `artist:${artist.id}`
-                                ? "true"
-                                : undefined
-                            }
-                            onClick={() => onArtist(artist.id)}
-                          >
-                            <strong>{artist.name}</strong>
-                            <small>
-                              {artist.lifeLabel}
-                              {tab === "foreign" && ` · ${artist.countryLabel}`}
-                            </small>
-                          </button>
-                        ))}
+                    {expanded === period.id && (
+                      <div className={s.artists}>
+                        {data.artists
+                          .filter((artist) => artist.periodId === period.id)
+                          .map((artist) => (
+                            <button
+                              key={artist.id}
+                              className={`${s.artist} ${scope === `artist:${artist.id}` ? s.selected : ""}`}
+                              aria-current={
+                                scope === `artist:${artist.id}`
+                                  ? "true"
+                                  : undefined
+                              }
+                              onClick={() => onArtist(artist.id)}
+                            >
+                              <Icon name="artist" size={15} />
+                              <span className={s.artistCopy}>
+                                <strong>{artist.name}</strong>
+                                <small>
+                                  {artist.lifeLabel}
+                                  {tab === "foreign" &&
+                                    ` · ${artist.countryLabel}`}
+                                </small>
+                              </span>
+                            </button>
+                          ))}
+                      </div>
+                    )}
                   </section>
                 ))}
         </div>
