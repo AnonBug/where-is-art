@@ -23,7 +23,6 @@ vi.mock("../src/infrastructure/useContent", () => ({
 }));
 vi.mock("../src/platform/usePlatform", () => ({
   useCompact: () => device.compact,
-  useOrientation: () => ({ landscape: false, notice: "", toggle: vi.fn() }),
 }));
 vi.mock("../src/features/map/AtlasMap", () => ({
   default: ({

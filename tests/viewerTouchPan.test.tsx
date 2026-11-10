@@ -46,10 +46,8 @@ function mount() {
       work={data.artworks.find((work) => work.id === "tang-yin-01")!}
       compact
       infoOpen={false}
-      landscape={false}
       onBack={vi.fn()}
       onInfo={vi.fn()}
-      onRotate={vi.fn()}
       onAsset={vi.fn()}
     />,
   );

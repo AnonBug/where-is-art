@@ -17,11 +17,9 @@ interface Props {
   assetId?: string;
   compact: boolean;
   infoOpen: boolean;
-  landscape: boolean;
   onBack: () => void;
   onInfo: () => void;
   onCanvasInteraction?: () => void;
-  onRotate: () => void;
   onAsset: (id: string) => void;
 }
 export default function ArtworkViewer({
@@ -30,11 +28,9 @@ export default function ArtworkViewer({
   assetId,
   compact,
   infoOpen,
-  landscape,
   onBack,
   onInfo,
   onCanvasInteraction,
-  onRotate,
   onAsset,
 }: Props) {
   const images = data.images
@@ -78,6 +74,9 @@ export default function ArtworkViewer({
       },
       showNavigationControl: false,
       showNavigator: false,
+      // The observer below restores our saved framing after a size change.
+      // Avoid applying the SDK's automatic resize scale a second time.
+      autoResize: false,
       homeFillsViewer: false,
       visibilityRatio: 0.85,
       constrainDuringPan: true,
@@ -239,6 +238,7 @@ export default function ArtworkViewer({
       );
       updateZoomLimit();
       if (state) restore(state);
+      v.forceRedraw();
     });
     observer.observe(stage.current);
     return () => {
@@ -382,15 +382,6 @@ export default function ArtworkViewer({
               <p>包含全幅、分段、局部或题跋；每张图片不另计为作品。</p>
             </div>
           )}
-        </div>
-      )}
-      {compact && (
-        <div className={s.rotate}>
-          <IconButton
-            icon={landscape ? "collapse" : "expand"}
-            label={landscape ? "切换竖屏" : "切换横屏"}
-            onClick={onRotate}
-          />
         </div>
       )}
       {asset?.quality === "standard" && (

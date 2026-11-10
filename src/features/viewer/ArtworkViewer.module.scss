@@ -169,13 +169,6 @@
     padding: 8px 12px;
   }
 }
-.rotate {
-  position: absolute;
-  bottom: calc(29px + env(safe-area-inset-bottom));
-  right: calc(16px + env(safe-area-inset-right));
-  background: var(--dark-control);
-  border-radius: 6px;
-}
 .resolution {
   position: absolute;
   bottom: 90px;
@@ -226,8 +219,7 @@
     padding-top: 8px;
     padding-bottom: 24px;
   }
-  .toolbar,
-  .rotate {
+  .toolbar {
     bottom: calc(14px + env(safe-area-inset-bottom));
   }
   .parts {

@@ -91,10 +91,8 @@ describe("Wang Wei and Yan Liben collection", () => {
         work={work}
         compact={false}
         infoOpen={false}
-        landscape={false}
         onBack={vi.fn()}
         onInfo={vi.fn()}
-        onRotate={vi.fn()}
         onAsset={vi.fn()}
       />,
     );

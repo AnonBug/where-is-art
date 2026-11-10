@@ -17,7 +17,7 @@ import {
   type Artwork,
   type Category,
 } from "../domain/atlas";
-import { useCompact, useOrientation } from "../platform/usePlatform";
+import { useCompact } from "../platform/usePlatform";
 import { Catalog, ArtworkList } from "../features/catalog/Catalog";
 import { ArtworkDetails } from "../features/artworks/ArtworkDetails";
 import { ArtworkInfoPanel } from "../features/artworks/ArtworkInfoPanel";
@@ -42,9 +42,6 @@ export function AtlasApp() {
   const catalogScene =
     path[0] === "catalog" || path[0] === "topics" || !path[0];
   const scopeDrivenScene = !catalogScene;
-  const orientation = useOrientation(
-    isViewer || (!catalogScene && !isAllWorks),
-  );
   const topicId = useSession((state) => state.topicId);
   const collapsed = useSession((state) => state.collapsed);
   const [focus, setFocus] = useState<{ ids: string[]; nonce: number } | null>(
@@ -366,24 +363,15 @@ export function AtlasApp() {
                 </button>
               )}
               {compact && !panel && (
-                <>
-                  <header className={s.mapHeader}>
-                    <IconButton icon="back" label="返回目录" onClick={back} />
-                    <h1>{title}</h1>
-                    <IconButton
-                      icon="list"
-                      label="浏览当前作品"
-                      onClick={() => go("/works")}
-                    />
-                  </header>
-                  <div className={s.rotate}>
-                    <IconButton
-                      icon={orientation.landscape ? "collapse" : "expand"}
-                      label={orientation.landscape ? "切换竖屏" : "切换横屏"}
-                      onClick={orientation.toggle}
-                    />
-                  </div>
-                </>
+                <header className={s.mapHeader}>
+                  <IconButton icon="back" label="返回目录" onClick={back} />
+                  <h1>{title}</h1>
+                  <IconButton
+                    icon="list"
+                    label="浏览当前作品"
+                    onClick={() => go("/works")}
+                  />
+                </header>
               )}
               {isDetail && (
                 <ArtworkInfoPanel
@@ -431,7 +419,6 @@ export function AtlasApp() {
             assetId={search.get("asset") || undefined}
             compact={compact}
             infoOpen={isInfo}
-            landscape={orientation.landscape}
             onBack={back}
             onInfo={() =>
               isInfo
@@ -444,7 +431,6 @@ export function AtlasApp() {
                   })
             }
             onCanvasInteraction={isInfo ? dismissInformation : undefined}
-            onRotate={orientation.toggle}
             onAsset={(id) =>
               go(
                 `/artworks/${work.id}/view`,
@@ -465,11 +451,6 @@ export function AtlasApp() {
       )}
       {isInfo && (
         <ArtworkInfoPanel onClose={back}>{information}</ArtworkInfoPanel>
-      )}
-      {orientation.notice && (
-        <div className={s.toast} role="status">
-          {orientation.notice}
-        </div>
       )}
     </main>
   );

@@ -53,6 +53,7 @@ function mount(workId = "tang-yin-01") {
     world: { getItemAt: (index: number) => (index === 0 ? preview : detail) },
     addHandler: events.addHandler.bind(events),
     addTiledImage,
+    forceRedraw: vi.fn(),
     destroy,
   });
   const view = render(
@@ -61,10 +62,8 @@ function mount(workId = "tang-yin-01") {
       work={data.artworks.find((work) => work.id === workId)!}
       compact={false}
       infoOpen={false}
-      landscape={false}
       onBack={vi.fn()}
       onInfo={vi.fn()}
-      onRotate={vi.fn()}
       onAsset={vi.fn()}
     />,
   );

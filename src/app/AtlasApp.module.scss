@@ -191,27 +191,6 @@
     color: var(--accent);
   }
 }
-.rotate {
-  position: absolute;
-  right: calc(16px + env(safe-area-inset-right));
-  bottom: calc(28px + env(safe-area-inset-bottom));
-  border-radius: 6px;
-  background: rgba(246, 240, 226, 0.92);
-  color: var(--accent);
-}
-.toast {
-  position: absolute;
-  bottom: 110px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-  border-radius: 7px;
-  background: var(--ink);
-  color: var(--paper);
-  font-size: 13px;
-  padding: 12px 20px;
-  box-shadow: 0 4px 20px #0002;
-}
 .compact {
   .sidebar {
     height: 100%;
