@@ -171,6 +171,7 @@ export default function AtlasMap({
         pitchWithRotate: false,
         dragRotate: false,
         renderWorldCopies: false,
+        trackResize: false,
       });
     } catch {
       setError("当前浏览器无法绘制地图，可继续浏览作品。");
@@ -229,8 +230,11 @@ export default function AtlasMap({
       setReady((n) => n + 1);
     });
     map.on("moveend", save);
+    // Resize and repaint together before the browser composites the next frame.
+    // Keep one observer so the SDK's throttled observer cannot race the animation.
     const observer = new ResizeObserver(() => {
       map.resize();
+      map.redraw();
     });
     observer.observe(container.current);
     return () => {
