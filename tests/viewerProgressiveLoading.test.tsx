@@ -173,6 +173,46 @@ it.each(["tang-yin-01", "tang-yin-02", "mona"])(
   },
 );
 
+it.each([
+  ["放大画作", 270],
+  ["缩小画作", Math.round(200 / 1.35)],
+  ["还原全图", 100],
+])(
+  "updates the zoom percentage throughout %s, before the animation finishes",
+  (label, target) => {
+    const { viewport, emit, drawPreview } = mount("tang-yin-15");
+    drawPreview();
+    viewport.zoomTo(viewport.getHomeZoom() * 2, undefined, true);
+    emit("animation-finish");
+    expect(screen.getByText("200%")).toBeTruthy();
+    const saved = useSession.getState().imageViews;
+
+    fireEvent.click(screen.getByRole("button", { name: label }));
+    act(() => {
+      vi.advanceTimersByTime(40);
+      viewport.update();
+    });
+    emit("update-viewport");
+    const intermediate = Math.round(
+      (viewport.getZoom(true) / viewport.getHomeZoom()) * 100,
+    );
+    expect(intermediate).not.toBe(200);
+    expect(intermediate).not.toBe(target);
+    expect(screen.getByText(`${intermediate}%`)).toBeTruthy();
+    // Display updates must not save a new session snapshot on every frame.
+    expect(useSession.getState().imageViews).toBe(saved);
+
+    act(() => {
+      vi.advanceTimersByTime(200);
+      viewport.update();
+    });
+    emit("update-viewport");
+    expect(screen.getByText(`${target}%`)).toBeTruthy();
+    emit("animation-finish");
+    expect(useSession.getState().imageViews).not.toBe(saved);
+  },
+);
+
 it("lets a low-resolution image reach 400% before and after detail loads and after resizing", () => {
   const { viewport, detail, addTiledImage, emit, drawPreview, zoomIn } =
     mount("tang-yin-15");

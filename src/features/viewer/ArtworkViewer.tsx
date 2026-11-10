@@ -150,13 +150,17 @@ export default function ArtworkViewer({
       );
       v.viewport.applyConstraints(true);
     }
+    function updateZoom() {
+      if (dead) return;
+      setZoom(
+        Math.round((v.viewport.getZoom(true) / v.viewport.getHomeZoom()) * 100),
+      );
+    }
     function save() {
       if (dead) return;
       const state = capture();
       if (state) useSession.getState().saveImageView(snapshotKey, state);
-      setZoom(
-        Math.round((v.viewport.getZoom(true) / v.viewport.getHomeZoom()) * 100),
-      );
+      updateZoom();
     }
     const timer = setTimeout(() => {
       if (!dead && !hasCanvasImage) setError("画作加载较慢，可以稍候或重试。");
@@ -190,6 +194,9 @@ export default function ArtworkViewer({
     });
     v.addHandler("update-viewport", () => {
       if (dead) return;
+      // Follow the rendered scale during gestures and animation, while saving
+      // the session view only when the interaction finishes.
+      updateZoom();
       // This event runs after drawing, so the static first frame disappears
       // only when an interactive image is actually on screen.
       const detailReady = detail?.getFullyLoaded();
