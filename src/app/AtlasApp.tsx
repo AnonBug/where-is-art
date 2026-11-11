@@ -26,6 +26,10 @@ import { EmptyState, Icon, IconButton } from "../shared/ui";
 import s from "./AtlasApp.module.scss";
 const AtlasMap = lazy(() => import("../features/map/AtlasMap"));
 const ArtworkViewer = lazy(() => import("../features/viewer/ArtworkViewer"));
+// RRP 58 was a second record of the existing Chicago painting. Keep shared
+// links working after restoring the distinct Kassel RRP 82 to the catalog.
+const canonicalArtworkId = (id: string | undefined) =>
+  id === "rembrandt-rrp-58" ? "rembrandt-gold-chain" : id;
 export function AtlasApp() {
   const { data, error, retry } = useContent();
   const location = useLocation();
@@ -62,9 +66,30 @@ export function AtlasApp() {
     () => (data ? scopeWorks(data, scope) : []),
     [data, scope],
   );
-  const work = data?.artworks.find((w) => w.id === path[1]);
-  const selected =
-    isDetail || isViewer ? path[1] : search.get("artwork") || undefined;
+  const work = data?.artworks.find((w) => w.id === canonicalArtworkId(path[1]));
+  const selected = canonicalArtworkId(
+    isDetail || isViewer ? path[1] : search.get("artwork") || undefined,
+  );
+  useEffect(() => {
+    const parts = location.pathname.split("/");
+    const query = new URLSearchParams(location.search);
+    let changed = false;
+    if (parts[1] === "artworks" && parts[2] === "rembrandt-rrp-58") {
+      parts[2] = "rembrandt-gold-chain";
+      if (query.get("asset") === "rembrandt-rrp-58-whole")
+        query.set("asset", "rembrandt-gold-chain-whole");
+      changed = true;
+    }
+    if (query.get("artwork") === "rembrandt-rrp-58") {
+      query.set("artwork", "rembrandt-gold-chain");
+      changed = true;
+    }
+    if (changed)
+      navigate(`${parts.join("/")}?${query}`, {
+        replace: true,
+        state: location.state,
+      });
+  }, [location.pathname, location.search, location.state, navigate]);
   const title = data ? scopeLabel(data, scope) : "名画在哪里";
   const go = useCallback(
     (pathname: string, extra: Record<string, string> = {}, replace = false) => {
@@ -276,6 +301,7 @@ export function AtlasApp() {
       data={data}
       work={work}
       assetId={isViewer ? search.get("asset") || undefined : undefined}
+      showPreview={!isViewer}
       onView={
         isDetail
           ? () =>

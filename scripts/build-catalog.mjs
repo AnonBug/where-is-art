@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import assert from "node:assert/strict";
+import { enrichArtworkGuides } from "./build-artwork-guides.mjs";
 const read = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 const tang = await read("content/tang-catalog.json");
 const media = await read("content/media-manifest.json");
@@ -183,7 +184,7 @@ const data = {
     .at(-1),
   periods,
   artists,
-  artworks,
+  artworks: await enrichArtworkGuides(artworks, artists),
   venues,
   holdings,
   topics,

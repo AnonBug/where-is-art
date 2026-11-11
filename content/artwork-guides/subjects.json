@@ -1,0 +1,1231 @@
+{
+  "Q16519437": {
+    "name": "以马忤斯的晚餐",
+    "story": "《路加福音》记述，两名门徒前往以马忤斯，沿途与复活的耶稣交谈，却未认出他。直到一起进餐，耶稣祝福并掰开面包，他们才认出他的身份。这个题材的关键是从熟悉的日常动作中发生“认出”的转变；不同版本可以选取惊讶、沉思或尚未察觉的瞬间。",
+    "looking": "先找面包、餐桌与人物的手，再比较各人的视线。谁似乎已经明白眼前的事，谁还停留在平常的用餐状态？用面部与身体反应来判断。",
+    "patterns": [
+      "Emmaus",
+      "以马忤斯",
+      "以馬忤斯"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 24:13-35（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%2024%3A13-35&version=KJV"
+    }
+  },
+  "Q154326": {
+    "name": "圣母领报",
+    "story": "在《路加福音》的故事中，天使加百列向玛利亚宣告她将生下耶稣。玛利亚先惊讶、询问，随后接受这一使命。绘画常把一段对话浓缩成两人的姿态与相互距离，因此读画时既要看天使带来的消息，也要看玛利亚怎样回应。",
+    "looking": "比较天使与玛利亚的手势、身体朝向和两人之间的空隙。画面把相遇处理得突然，还是安静而有秩序？",
+    "patterns": [
+      "Annunciation",
+      "天使报喜",
+      "圣母领报",
+      "圣母领讯"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 1:26-38（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%201%3A26-38&version=KJV"
+    }
+  },
+  "Q56856844": {
+    "name": "撒迦利亚获告施洗约翰将诞生",
+    "story": "《路加福音》记述，年老的祭司撒迦利亚在圣殿供职时，天使加百列向他宣告：妻子以利沙伯将生下一子，也就是日后的施洗约翰。撒迦利亚因年老而怀疑，被告知在事情实现前不能说话。题材围绕意外的启示、人的疑虑与回应展开。",
+    "looking": "观察画家如何表现突如其来的消息：若天使没有直接出现，光线、人物抬头的方向与停顿的动作是否承担了叙事作用？",
+    "patterns": [
+      "Zacharias",
+      "Zechariah",
+      "撒迦利亚"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 1:5-25（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%201%3A5-25&version=KJV"
+    }
+  },
+  "Q837143": {
+    "name": "逃往埃及",
+    "story": "《马太福音》记述，约瑟在梦中受警告，带着玛利亚和婴儿耶稣逃往埃及，躲避希律的追杀。这是关于一家人迁徙与庇护的故事；画家可以强调夜行、艰难的道路，或途中停留的安静片刻。",
+    "looking": "找出一家人在环境中的位置，比较人物与道路、树木或远方空间的大小。画面怎样让旅行显得危险、疲惫，或受到保护？",
+    "patterns": [
+      "Flight into Egypt",
+      "逃往埃及",
+      "逃亡埃及"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 2:13-15（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%202%3A13-15&version=KJV"
+    }
+  },
+  "Q3427290": {
+    "name": "逃往埃及途中的休息",
+    "story": "“逃往埃及途中的休息”由《马太福音》中圣家避难的旅程发展而来；经文没有逐一描述画中的休息细节。绘画将漫长的迁徙暂停为亲密的照料场面，使避难、疲惫与母子相伴同时进入观看。",
+    "looking": "观察休息中的人物与周围环境怎样相接。树荫、地面和远景是提供庇护，还是提醒观者他们仍在旅途中？",
+    "patterns": [
+      "Rest on the Flight",
+      "逃往埃及途中"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 2:13-15（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%202%3A13-15&version=KJV"
+    }
+  },
+  "Q128710": {
+    "name": "约瑟的梦",
+    "story": "《马太福音》中，天使多次在梦里向约瑟传达有关玛利亚、耶稣及避难行程的指示。具体画面表现哪一次梦，需要结合题名与作品资料判断。这个题材把外部的神圣消息与沉睡者无法直接看见的经验联系起来。",
+    "looking": "先辨认睡眠与清醒的人物，再看天使或光线怎样进入场景。画家用哪些办法让观者同时看见梦境和现实？",
+    "patterns": [
+      "Joseph's Dream",
+      "Dream of Joseph",
+      "约瑟的梦"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 1:18-25;2:13-23（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%201%3A18-25%3B2%3A13-23&version=KJV"
+    }
+  },
+  "Q152771": {
+    "name": "献耶稣于圣殿",
+    "story": "《路加福音》记述，玛利亚与约瑟带婴儿耶稣来到圣殿，老人西面抱起孩子，认出他所盼望的救赎；女先知亚拿也来到近旁。这个题材把初生的生命与长久的等待放在一起，也包含西面对未来苦难的预言。",
+    "looking": "观察婴儿与老人身体的尺度差异，以及抱持动作是否构成画面中心。再追踪旁观者的目光，看看共同关注如何把一群人联系起来。",
+    "patterns": [
+      "Simeon in the Temple",
+      "Presentation in the Temple",
+      "Simeon's Song",
+      "献耶稣",
+      "西面"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 2:22-38（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%202%3A22-38&version=KJV"
+    }
+  },
+  "Q1029715": {
+    "name": "牧羊人的朝拜",
+    "story": "《路加福音》中的牧羊人先在夜间得到天使的消息，随后来到婴儿耶稣所在之处。他们并非显贵，而是日常劳动者。这一题材常借人物靠近婴儿的动作，把庄严的信仰事件转化为惊讶、亲切和共同见证。",
+    "looking": "将目光从婴儿移向围拢的人，比较低头、跪拜与伸手的不同动作。观察明暗是否让某个普通人物获得特别突出的存在感。",
+    "patterns": [
+      "Adoration of the Shepherds",
+      "牧羊人的朝拜",
+      "牧羊人来拜"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 2:8-20（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%202%3A8-20&version=KJV"
+    }
+  },
+  "Q488841": {
+    "name": "博士来拜",
+    "story": "《马太福音》中的东方博士循星而来，向婴儿耶稣献上黄金、乳香和没药。经文提到三种礼物，并未明确说有三位国王；后来绘画传统逐渐形成三位尊贵来客的形象。画中的年龄、服饰与队伍可以帮助组织这一跨地域相遇。",
+    "looking": "先找礼物及献礼的动作，再观察不同人物的衣料、年龄和姿态。拥挤的人群中，哪些线条或目光最终指向婴儿？",
+    "patterns": [
+      "Adoration of the Magi",
+      "Adoration of the Kings",
+      "三博士",
+      "三王来拜"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 2:1-12（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%202%3A1-12&version=KJV"
+    }
+  },
+  "Q51628": {
+    "name": "耶稣降生",
+    "story": "耶稣降生的故事在《路加福音》中与伯利恒、马槽和牧羊人的来访相连。后世图像会加入不同的建筑、动物与光线安排，不能把所有可见细节都当成经文逐字记载。理解这一题材，可以从脆弱的新生儿与周围人的照料关系入手。",
+    "looking": "比较婴儿的尺度与周围空间的大小，再看光线落在何处。画家怎样在简朴环境中强调这一出生事件的意义？",
+    "patterns": [
+      "Nativity of Christ",
+      "耶稣降生",
+      "耶稣诞生"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 2:1-20（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%202%3A1-20&version=KJV"
+    },
+    "exactTitles": [
+      "The Nativity",
+      "Nativity"
+    ]
+  },
+  "Q13510036": {
+    "name": "耶稣行割礼",
+    "story": "《路加福音》记述，婴儿出生第八天接受割礼，并被命名为耶稣。这个仪式题材不同于稍后的献殿：观看时需要分清施行仪式的人、扶持孩子的人和见证者，不能仅因出现在宗教建筑中就把两者混为一谈。",
+    "looking": "比较围绕婴儿的几组手势：扶持、施行仪式、祈祷或旁观分别怎样表现？光线和人物排列是否使关键动作清楚可见？",
+    "patterns": [
+      "Circumcision",
+      "割礼"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 2:21（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%202%3A21&version=KJV"
+    }
+  },
+  "Q691810": {
+    "name": "圣母访亲",
+    "story": "在《路加福音》中，怀孕的玛利亚探望同样怀孕的亲属以利沙伯。两人的相见连接了耶稣与施洗约翰的出生故事。题材的情感核心是问候、辨认与共同的喜悦，不必依靠宏大的场景也能成立。",
+    "looking": "从两人的迎接动作开始，比较她们的年龄、倾身方向与手的位置。周围人物和建筑是在强化相遇，还是为这段亲密交流留出空间？",
+    "patterns": [
+      "Visitation",
+      "圣母访亲"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 1:39-56（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%201%3A39-56&version=KJV"
+    }
+  },
+  "Q217048": {
+    "name": "耶稣受洗",
+    "story": "《马太福音》记述，耶稣来到约旦河接受施洗约翰的洗礼，圣灵如鸽子降下，并有来自天上的声音宣告他的身份。绘画常把水中的仪式、天上的显现和岸边的见证安排在同一画面。",
+    "looking": "先观察水与身体的接触，再寻找从上向下的视觉联系。约翰的手、耶稣的姿态和可能出现的鸽子怎样构成一个整体？",
+    "patterns": [
+      "Baptism of Christ",
+      "基督受洗"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 3:13-17（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%203%3A13-17&version=KJV"
+    }
+  },
+  "Q2158299": {
+    "name": "耶稣受试探",
+    "story": "《马太福音》叙述耶稣在旷野禁食后受魔鬼试探：食物、奇迹与世俗权力都成为考验。画家可以只选其中一幕，因此需要用场景和人物动作分辨具体阶段，而不是把所有诱惑同时套进画面。",
+    "looking": "观察两个人物之间的距离与手势，以及岩石、远景或建筑承担的叙事作用。哪一方在提出要求，哪一方在保持拒绝或沉默？",
+    "patterns": [
+      "Temptation of Christ",
+      "基督受试探"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 4:1-11（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%204%3A1-11&version=KJV"
+    }
+  },
+  "Q1267621": {
+    "name": "清理圣殿",
+    "story": "《约翰福音》中，耶稣将商贩与兑换钱币的人赶出圣殿，反对把礼拜之所变成交易场所。这个题材很适合表现动作的连锁反应：一个人的举动让桌子、物件与旁观者都发生变化。",
+    "looking": "从耶稣的动作出发，沿着人群的退避方向看过去。画家怎样通过倾斜、拥挤和散落物件，让你感到事情正在发生？",
+    "patterns": [
+      "Cleansing of the Temple",
+      "Money Changers",
+      "驱逐商贩"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 2:13-17（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%202%3A13-17&version=KJV"
+    }
+  },
+  "Q492663": {
+    "name": "被指控通奸的妇人",
+    "story": "《约翰福音》中的人群把一名被指控通奸的妇人带到耶稣面前，试图迫使他作出判决。耶稣要求没有罪的人先投石，人群逐渐散去。题材强调审判、羞辱与宽恕之间的张力；被指控者的处境与人群的反应同样值得注意。",
+    "looking": "看谁被放在显眼、孤立的位置，谁拥有发问或指责的空间。再观察耶稣的手势与旁观者的目光，画家怎样让审判的气氛发生变化？",
+    "patterns": [
+      "Adultery",
+      "Adulteress",
+      "通奸"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 8:1-11（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%208%3A1-11&version=KJV"
+    }
+  },
+  "Q504136": {
+    "name": "纳税银与归于凯撒",
+    "story": "《马太福音》中，有人用是否向凯撒纳税的问题试探耶稣。耶稣让他们拿出钱币，问上面是谁的肖像与名号，再作出关于凯撒与上帝的回答。小小的钱币因此成为言语交锋的中心，而非一般的买卖道具。",
+    "looking": "寻找钱币以及拿取、指向它的手，再比较人物的眼神。画面怎样用一个很小的物件，把看似安静的对话变成紧张的较量？",
+    "patterns": [
+      "Tribute Money",
+      "纳税银",
+      "凯撒的"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 22:15-22（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%2022%3A15-22&version=KJV"
+    }
+  },
+  "Q625236": {
+    "name": "平息风浪",
+    "story": "《马可福音》中，耶稣与门徒乘船时遇到风暴，门徒惊慌唤醒沉睡的耶稣；他使风浪平静，并询问他们为何惧怕。这个故事让同处一条船的人显现出不同反应，海面的力量与人的恐惧形成对照。",
+    "looking": "比较船只的倾斜、浪的方向和人物用力的姿态。再找出相对平静的人物：画家如何让混乱与安定同时存在？",
+    "patterns": [
+      "Storm on the Sea of Galilee",
+      "加利利",
+      "平息风浪"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Mark 4:35-41（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Mark%204%3A35-41&version=KJV"
+    }
+  },
+  "Q3937194": {
+    "name": "拉撒路复活",
+    "story": "《约翰福音》记述，耶稣来到已经安葬的拉撒路墓前，呼唤他出来。拉撒路的姐妹马大与玛利亚，以及在场的见证者，使这一事件包含哀伤、疑惑和震惊等不同层次的反应。",
+    "looking": "从墓穴、裹尸布或复起的人体开始，再看其他人物的手与脸。画面如何表现生命重新出现的瞬间，而不是只描绘一群人围观？",
+    "patterns": [
+      "Raising of Lazarus",
+      "拉撒路"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 11:1-44（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2011%3A1-44&version=KJV"
+    }
+  },
+  "Q261103": {
+    "name": "好撒马利亚人",
+    "story": "《路加福音》中的比喻讲到，一名旅人遭抢劫后受伤倒地，数人经过，最后由一位撒马利亚人施救并送到旅店。故事把“谁是邻人”的问题转向实际的照料行动；绘画可能选择路边救助，也可能表现抵达旅店的后续。",
+    "looking": "看伤者的身体怎样被扶持，再观察救助者、动物或旅店人物的分工。善意在画面中通过哪些具体动作体现，而不仅是一种表情？",
+    "patterns": [
+      "Good Samaritan",
+      "好撒马利亚"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 10:25-37（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%2010%3A25-37&version=KJV"
+    }
+  },
+  "Q262135": {
+    "name": "浪子回头",
+    "story": "《路加福音》的比喻中，小儿子挥霍财产后贫困归家，父亲迎接并恢复他的家庭地位；一直留在家中的长子却为此不满。故事不只关于悔改，也提出宽恕与公平之间的难题。不同人物的距离和反应，可以成为理解这一难题的入口。",
+    "looking": "比较父亲与归家者的身体接触，再看其他人物站得多近、朝向何处。画面把你放在拥抱之内，还是像旁观者一样留在外面？",
+    "patterns": [
+      "Prodigal Son",
+      "浪子"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 15:11-32（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%2015%3A11-32&version=KJV"
+    }
+  },
+  "Q2467856": {
+    "name": "客西马尼园的祈祷",
+    "story": "《马太福音》记述，受难前夜，耶稣在客西马尼园祈祷，门徒却因困倦睡去。题材将独自面对命运的清醒者与未能陪伴的同伴并置；画面中的苦恼可以从这一叙事关系理解。",
+    "looking": "寻找清醒与沉睡之间的对比，再观察人物之间是否被暗处、地形或距离分开。画家如何把共同处在一地的人画成不同的精神状态？",
+    "patterns": [
+      "Agony in the Garden",
+      "客西马尼",
+      "花园中苦恼"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 26:36-46（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%2026%3A36-46&version=KJV"
+    }
+  },
+  "Q534805": {
+    "name": "试观此人",
+    "story": "《约翰福音》记述，彼拉多把受鞭打、戴荆棘冠的耶稣带到人群面前，宣告“看这个人”。这一题材可能画出公开审判的场面，也可能只留下受辱的半身像，让观者直接面对他的处境。",
+    "looking": "先看荆棘冠、披衣与双手，再观察眼神的方向。若画面没有画出群众，观者是否被安排在原本围观人群的位置上？",
+    "patterns": [
+      "Ecce Homo",
+      "试观此人",
+      "試觀此人"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:1-16（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A1-16&version=KJV"
+    }
+  },
+  "Q63977136": {
+    "name": "荆棘冠冕",
+    "story": "受难叙事中，士兵以荆棘编成冠冕，让耶稣披上象征王权的衣服，并用嘲弄的方式称他为王。这里的冠冕与服饰承担着反讽：本应尊荣的物件被用作伤害与羞辱。",
+    "looking": "看施暴者的动作怎样朝向中心人物，再比较冠冕、衣料与肉身的触感。构图是在强调外部冲突，还是突出承受者的沉默？",
+    "patterns": [
+      "Crowning with Thorns",
+      "荆棘冠",
+      "荊棘冠"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:1-5（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A1-5&version=KJV"
+    }
+  },
+  "Q5791726": {
+    "name": "柱旁的基督",
+    "story": "柱旁的基督属于受鞭打题材的图像传统。《约翰福音》记述彼拉多命人鞭打耶稣，但没有详细规定柱子的形状或场景。绘画常将叙事压缩为被束缚的身体，让观者关注脆弱、受辱与忍耐。",
+    "looking": "比较身体与柱子的垂直方向，再看束缚、皮肤和光线之间的关系。画面通过哪些细节让静止的人体仍然传达紧张？",
+    "patterns": [
+      "Christ at the Column",
+      "柱旁"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:1-5（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A1-5&version=KJV"
+    }
+  },
+  "Q2033105": {
+    "name": "鞭打基督",
+    "story": "鞭打发生在耶稣被交付钉十字架之前。绘画通常围绕被束缚的身体与施暴动作组织场景，表现一种不对等的力量关系。具体的施刑者数量、建筑与动作属于画家的视觉安排。",
+    "looking": "比较施刑者和承受者的身体方向，留意手臂、鞭子或绳索形成的线。明暗是在强化猛烈动作，还是将注意力留在受伤者身上？",
+    "patterns": [
+      "Flagellation",
+      "鞭打"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:1-5（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A1-5&version=KJV"
+    }
+  },
+  "Q3399226": {
+    "name": "背负十字架",
+    "story": "《约翰福音》记述，耶稣背着十字架前往各各他受刑。这个题材位于审判与钉十字架之间，绘画可以强调行进的队伍，也可以把身体与沉重木架压缩在近距离画面中。",
+    "looking": "顺着十字架的长线看人物受力的方向，再比较肩、手和头部的姿态。画面如何让你感到重量，以及人物与前进道路之间的关系？",
+    "patterns": [
+      "Carrying the Cross",
+      "Bearing the Cross",
+      "背负十字架",
+      "背十字架"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:16-18（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A16-18&version=KJV"
+    }
+  },
+  "Q51636": {
+    "name": "耶稣被钉十字架",
+    "story": "《约翰福音》记述耶稣在各各他被钉十字架，母亲玛利亚与所爱的门徒在场。这一题材可以强调公开处刑，也可以把周围的人减少为少数哀悼者。人物之间的视线、距离与高度，往往承载叙事之外的情感。",
+    "looking": "比较高处的身体与地面人物的尺度和朝向，再观察十字架怎样划分天空。留意光线是让事件显得公开、剧烈，还是孤独而沉静。",
+    "patterns": [
+      "Crucifixion",
+      "Christ Crucified",
+      "钉十字架",
+      "耶稣受难"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:17-30（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A17-30&version=KJV"
+    }
+  },
+  "Q7759352": {
+    "name": "竖起十字架",
+    "story": "竖起十字架题材把受难故事展开为一个正在进行的动作。福音书记述钉十字架的事件，具体如何抬举、拉拽和配合，是画家的叙事构想。观看时可以把注意力放在个体的痛苦与众人共同完成的暴力之间。",
+    "looking": "顺着十字架的倾斜方向，寻找人物的拉力与支点。每个人都在做什么？身体、绳索和木架怎样组成一个共同的运动？",
+    "patterns": [
+      "Raising of the Cross",
+      "竖起十字架"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:17-24（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A17-24&version=KJV"
+    }
+  },
+  "Q13365963": {
+    "name": "卸下十字架",
+    "story": "《约翰福音》记述，亚利马太的约瑟取得许可领走耶稣的遗体，并与尼哥底母准备安葬。卸下十字架的图像把这一过程展开为多人扶持身体的场面，强调行动中的重量、协作与哀伤。",
+    "looking": "观察身体的重量由谁承接，手与布料怎样共同支撑。再看不同人物的表情与动作：忙于照料的人和沉浸悲痛的人是否形成区别？",
+    "patterns": [
+      "Descent from the Cross",
+      "Deposition",
+      "下十字架"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:38-42（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A38-42&version=KJV"
+    }
+  },
+  "Q51637": {
+    "name": "安葬耶稣",
+    "story": "受难之后，亚利马太的约瑟与尼哥底母按安葬习俗照料耶稣的遗体。安葬题材把注意力从公开的暴力转向亲近者的照护；画家可以选择抬运、裹尸、入墓或在墓前停顿的时刻。",
+    "looking": "从遗体的横向延伸开始，看其他人物怎样围绕它分布。双手、布料与墓口之间的关系，会怎样影响画面的沉重感和行动方向？",
+    "patterns": [
+      "Entombment",
+      "安葬耶稣"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:38-42（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A38-42&version=KJV"
+    }
+  },
+  "Q3155356": {
+    "name": "哀悼基督",
+    "story": "哀悼基督是由受难与安葬叙事发展出的图像主题，福音书并没有规定所有哀悼者的姿态与排列。它将叙事暂停在失去亲人后的时刻，让触碰、俯身与沉默成为情感的主要载体。",
+    "looking": "比较每位哀悼者与遗体的距离，观察哪些人直接触碰、哪些人只能远望。画面是把悲痛汇聚到中心，还是让不同情绪各自展开？",
+    "patterns": [
+      "Lamentation",
+      "哀悼基督"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 19:25-42（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2019%3A25-42&version=KJV"
+    }
+  },
+  "Q51624": {
+    "name": "耶稣复活",
+    "story": "《马太福音》中的妇女来到墓地，得知耶稣已经复活，随后与他相遇。绘画中的复活题材还可能直接表现升起的身体、守墓士兵和打开的墓，属于将经文与图像传统结合的视觉表达。",
+    "looking": "先比较复活者与其他人物的身体方向，再看墓、地面与天空的关系。画面如何用垂直运动和明暗变化，把死亡与新的生命联系起来？",
+    "patterns": [
+      "The Resurrection of Christ",
+      "The Risen Christ",
+      "耶稣复活",
+      "基督复活"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Matthew 28:1-10（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Matthew%2028%3A1-10&version=KJV"
+    }
+  },
+  "Q124362": {
+    "name": "不要碰我",
+    "story": "《约翰福音》记述，抹大拉的玛利亚在墓园中起初把复活的耶稣当成园丁，听见他呼唤自己的名字才认出他。耶稣随后让她去向门徒传递消息。“不要碰我”题材因此围绕认出、靠近与重新分离展开。",
+    "looking": "比较玛利亚伸向耶稣的动作与耶稣身体的回应，再看两人之间留下的空隙。画家怎样表现情感上的亲近与行动上的距离？",
+    "patterns": [
+      "Noli me Tangere",
+      "不要碰我",
+      "不要摸我"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 20:11-18（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2020%3A11-18&version=KJV"
+    }
+  },
+  "Q4924861": {
+    "name": "多马的怀疑",
+    "story": "《约翰福音》中，多马没有见到耶稣首次向门徒显现，表示要亲眼看见伤口才相信。后来耶稣邀请他查看。这个题材围绕目击与相信展开，伤口、手指和近距离的凝视成为重要线索。",
+    "looking": "观察各个人物靠得有多近，视线是否集中于同一个位置。身体接触在画面中是谨慎、急迫，还是被暂停在发生之前？",
+    "patterns": [
+      "Doubting Thomas",
+      "Incredulity",
+      "多马",
+      "多瑪"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 20:24-29（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2020%3A24-29&version=KJV"
+    }
+  },
+  "Q5686605": {
+    "name": "耶稣升天",
+    "story": "《使徒行传》记述，复活后的耶稣在门徒面前被云彩接去，他们望向天空，随后得知仍需回到生活中履行使命。题材的空间通常同时包含地面见证者与向上的离去。",
+    "looking": "先看上下两部分如何连接：目光、手势、云层或光线是否形成通道？再比较地面人物的反应，画家如何让不可触及的远方进入眼前？",
+    "patterns": [
+      "Ascension",
+      "耶稣升天",
+      "基督升天"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Acts 1:6-11（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Acts%201%3A6-11&version=KJV"
+    }
+  },
+  "Q65560542": {
+    "name": "圣灵降临",
+    "story": "《使徒行传》中的圣灵降临发生在人们聚集之时，他们经历如风的响声与如火的舌，并开始说不同语言。后世绘画将这种难以看见的经验转换为火焰、光线和共同仰望的姿态。",
+    "looking": "观察每个人头部或身体附近是否有重复的标记，再看众人的目光怎样连接。画面是在突出一个中心，还是让同一种经验分布到每个人身上？",
+    "patterns": [
+      "Pentecost",
+      "圣灵降临"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Acts 2:1-13（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Acts%202%3A1-13&version=KJV"
+    }
+  },
+  "Q51633": {
+    "name": "最后的晚餐",
+    "story": "《约翰福音》记述，耶稣在与门徒进餐时预告有人将出卖自己，门徒相互疑惑。绘画常把不同阶段浓缩在同一张桌子旁，因此既可以阅读人物的身份线索，也可以观察消息怎样在人群中传递。",
+    "looking": "从耶稣的姿态开始，依次比较门徒的手、头部与身体转向。谁在询问同伴，谁似乎独自承受消息？桌面物件怎样加强或打断这种交流？",
+    "patterns": [
+      "Last Supper",
+      "最后的晚餐"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》John 13:1-30（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=John%2013%3A1-30&version=KJV"
+    }
+  },
+  "Q123465926": {
+    "name": "司提反殉道",
+    "story": "《使徒行传》记述，司提反因宣讲而遭人投石，他临终祈祷，并为施暴者求宽恕。这是早期基督教殉道叙事，画面可以把向上的祈祷与周围的暴力动作相对照。",
+    "looking": "比较中心人物和投石者的朝向。手臂、石块与目光分别指向哪里？画家如何让群体的攻击与个人的祈祷同时可见？",
+    "patterns": [
+      "Stoning of Saint Stephen",
+      "Stoning of St Stephen",
+      "司提反"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Acts 7:54-60（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Acts%207%3A54-60&version=KJV"
+    }
+  },
+  "Q123422659": {
+    "name": "腓利为埃塞俄比亚人施洗",
+    "story": "《使徒行传》记述，腓利与一位埃塞俄比亚宫廷官员相遇，为他解释经文，并在途中为他施洗。题材将旅行、阅读和身份跨越结合在一起；车驾与随从若出现，也会提醒观者受洗者的社会地位。",
+    "looking": "观察施洗者与受洗者的高低关系，再看其他人物是否参与或旁观。路途、书卷和水在画面中怎样连接成一个转变的过程？",
+    "patterns": [
+      "Baptising the Eunuch",
+      "腓利"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Acts 8:26-40（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Acts%208%3A26-40&version=KJV"
+    }
+  },
+  "Q12404326": {
+    "name": "巴兰与驴",
+    "story": "《民数记》中，巴兰的驴看见持剑的天使挡住道路，而巴兰起初看不见，于是责打驴。故事后来让人和动物的认识发生倒转：被责怪的动物反而比主人更早察觉危险。",
+    "looking": "比较巴兰、驴和天使各自看向哪里。人物与动物的姿态怎样让观者先于画中主人明白道路上发生了什么？",
+    "patterns": [
+      "Balaam's Ass",
+      "巴兰"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Numbers 22:21-35（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Numbers%2022%3A21-35&version=KJV"
+    }
+  },
+  "Q5007906": {
+    "name": "亚伯拉罕献以撒",
+    "story": "《创世记》记述，亚伯拉罕被要求献出儿子以撒，却在最后关头被天使制止，以公羊代替。题材的核心常是动作被突然中断的一瞬：父亲、孩子与阻止他的力量被压缩到极近的距离。",
+    "looking": "寻找举起、压住、制止的不同手势，再看以撒的身体怎样被安排。画家如何让你感到时间停在不可挽回的行为发生之前？",
+    "patterns": [
+      "Sacrifice of Isaac",
+      "Abraham and Isaac",
+      "献以撒",
+      "以撒的牺牲"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Genesis 22:1-19（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Genesis%2022%3A1-19&version=KJV"
+    }
+  },
+  "Q124477969": {
+    "name": "亚伯拉罕接待三位访客",
+    "story": "《创世记》中，亚伯拉罕在帐棚附近接待三位来客，准备水和食物；来客预告年老的撒拉将生子。这个题材把日常的款待与超出常理的应许放在同一场相遇中。",
+    "looking": "先辨认主人、来客和准备食物的人，再看彼此的距离。画家怎样借日常动作表现尊敬、疑惑或未被立即认出的神圣身份？",
+    "patterns": [
+      "Abraham and the Three Angels",
+      "亚伯拉罕与三位"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Genesis 18:1-15（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Genesis%2018%3A1-15&version=KJV"
+    }
+  },
+  "Q1091067": {
+    "name": "雅各祝福约瑟的儿子",
+    "story": "《创世记》中，年老的雅各为约瑟的两个儿子祝福，却交叉双手，把右手放在较小的以法莲头上。约瑟试图纠正，雅各坚持自己的选择。手的位置因此是辨认故事的关键，不只是一般家庭相聚。",
+    "looking": "首先追踪两只祝福之手的方向，再看父亲和孩子如何回应。画家怎样把代际传承与打破长幼顺序的选择放进一个安静场景？",
+    "patterns": [
+      "Jacob Blessing",
+      "雅各祝福"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Genesis 48:8-20（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Genesis%2048%3A8-20&version=KJV"
+    }
+  },
+  "Q16930210": {
+    "name": "苏珊娜与长老",
+    "story": "《苏珊娜传》讲述两名长老窥视并胁迫苏珊娜，遭拒后又作伪证；但以理通过分别盘问揭穿他们。这个题材涉及权力滥用、胁迫和名誉，而不只是沐浴场景。绘画选择的阶段可能早于审判与获救。",
+    "looking": "看苏珊娜是否有退路，以及旁观者或窥视者怎样进入她的私人空间。身体转向、遮挡和人物间距如何表现不安与不对等？",
+    "patterns": [
+      "Susanna Bathing",
+      "Susanna and the Elders",
+      "苏珊娜与长老",
+      "蘇撒拿"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Daniel 13:1-64（NRSVCE）",
+      "url": "https://www.biblegateway.com/passage/?search=Daniel%2013%3A1-64&version=NRSVCE"
+    }
+  },
+  "Q13077250": {
+    "name": "犹滴与荷罗孚尼",
+    "story": "《犹滴传》中，犹滴进入围攻城邦的敌军营地，趁统帅荷罗孚尼醉睡时将他杀死，并与侍女带走首级。画家可能表现动手的一刻，也可能画行动之后的离开；判断具体阶段有助于理解人物的镇定或紧张。",
+    "looking": "比较主角与侍女各自承担的动作，再观察刀、布袋或首级的位置。画面让叙事集中在暴力行为，还是在行为之后的配合与心理张力？",
+    "patterns": [
+      "Judith",
+      "犹滴",
+      "朱迪思"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Judith 13:1-10（NRSVCE）",
+      "url": "https://www.biblegateway.com/passage/?search=Judith%2013%3A1-10&version=NRSVCE"
+    }
+  },
+  "Q13472331": {
+    "name": "大卫与歌利亚",
+    "story": "《撒母耳记上》中的少年大卫以投石器战胜巨人歌利亚，随后取下其首级。绘画可以描绘战斗、凯旋或面对首级的静默。年轻者与强敌之间的尺度反差，使勇气、力量与胜利后的感受成为不同的阅读方向。",
+    "looking": "观察胜者与战利品的距离，以及人物是朝观者展示还是低头凝视。武器、手势和身体尺度如何改变你对“胜利”的感受？",
+    "patterns": [
+      "Goliath",
+      "歌利亚",
+      "歌利亞"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》1 Samuel 17:1-58（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=1%20Samuel%2017%3A1-58&version=KJV"
+    }
+  },
+  "samson-delilah": {
+    "name": "参孙与大利拉",
+    "story": "《士师记》中，大利拉探知参孙力量与未剪头发有关，趁他睡着使人剃去头发，敌人随后将他制服并刺瞎双眼。不同作品可能选择诱问、熟睡或被捕的一刻；需要分清亲密表面下的背叛与暴力。",
+    "looking": "比较人物之间的身体接触与视线方向。谁似乎信任身旁的人，谁在向画外或同伙传递信息？把手、头发和可能出现的武器连起来阅读。",
+    "patterns": [
+      "Samson Betrayed by Delilah",
+      "Blinding of Samson",
+      "Samson and Delilah",
+      "参孙与大利拉",
+      "参孙被弄瞎"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Judges 16:4-21（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Judges%2016%3A4-21&version=KJV"
+    }
+  },
+  "bathsheba": {
+    "name": "拔示巴",
+    "story": "《撒母耳记下》记述，大卫王看见乌利亚的妻子拔示巴沐浴，召她入宫，后来安排乌利亚在战场上死亡。这个题材包含君王权力与私人生活被侵入的关系；画中的书信或侍女若出现，是画家将叙事转换为可见情境的方式。",
+    "looking": "留意身体的朝向与目光是否一致，再看梳洗、书信或随侍人物的位置。画面是强调被观看的身体，还是给人物留下沉思的空间？",
+    "patterns": [
+      "Bathsheba",
+      "拔示巴"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》2 Samuel 11:1-27（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=2%20Samuel%2011%3A1-27&version=KJV"
+    }
+  },
+  "peter-denial": {
+    "name": "彼得不认主",
+    "story": "《路加福音》中，耶稣被捕后，彼得三次否认自己认识他；鸡鸣之后，他想起此前的预告而悲痛。题材可以表现询问、否认或事后的悔恨，所以一个手势与一处目光就可能决定画面所处的时刻。",
+    "looking": "比较提问者与彼得的手势，再看火光或灯光照亮了谁。画家怎样通过人物靠近的程度，让一句否认显得急迫或不安？",
+    "patterns": [
+      "Denial of Peter",
+      "彼得不认主"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Luke 22:54-62（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Luke%2022%3A54-62&version=KJV"
+    }
+  },
+  "jacob-wrestling": {
+    "name": "雅各与天使角力",
+    "story": "《创世记》记述，雅各独自在夜间与一位神秘人物摔跤，直到天亮，并获得以色列之名。后来图像传统常把对手画成天使。这个题材既有身体的纠缠，也有祝福与身份改变的意义。",
+    "looking": "比较双方的手臂和腿部如何交织，动作更像对抗还是拥抱？再看面部与身体用力是否一致，画家是否让冲突保留了多种感受。",
+    "patterns": [
+      "Jacob Wrestling",
+      "雅各与天使"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Genesis 32:22-32（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Genesis%2032%3A22-32&version=KJV"
+    }
+  },
+  "joseph-dreams": {
+    "name": "约瑟讲述梦境",
+    "story": "《创世记》中的少年约瑟梦见兄长们的禾捆向自己下拜，又梦见日月和十一颗星向自己下拜。他把梦告诉家人，引起兄长嫉妒。这个约瑟不同于耶稣的养父；看画时需要分清人物与故事。",
+    "looking": "观察讲述者与听众的年龄、座次和反应。一个人说话时，周围人是在专注倾听、怀疑，还是彼此交换眼神？",
+    "patterns": [
+      "Joseph Telling his Dreams",
+      "约瑟讲述"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Genesis 37:1-11（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Genesis%2037%3A1-11&version=KJV"
+    }
+  },
+  "saul-david": {
+    "name": "扫罗与大卫",
+    "story": "《撒母耳记上》中，大卫以琴声使扫罗得到安慰，但他日益受欢迎也加深了扫罗的嫉妒。两人的关系包含欣赏、依赖与敌意，绘画可以把这种复杂关系放在奏乐者与倾听者之间。",
+    "looking": "先看乐器、奏乐的手与听者的动作，再比较二人的距离。画面中的声音虽然不可听见，人物反应是否让它变得可以想象？",
+    "patterns": [
+      "Saul and David",
+      "扫罗与大卫"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》1 Samuel 16:14-23;18:6-11（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=1%20Samuel%2016%3A14-23%3B18%3A6-11&version=KJV"
+    }
+  },
+  "belshazzar": {
+    "name": "伯沙撒的宴会",
+    "story": "《但以理书》中，伯沙撒在宴会上使用从耶路撒冷圣殿掠来的器皿，忽然有手在墙上写下文字。无人能解，直到但以理指出王国即将结束。题材把奢华宴饮与突如其来的警告压在同一时刻。",
+    "looking": "从墙上的字或异常光线开始，寻找人物惊惧的连锁反应。倾倒的器皿、转头和伸出的手怎样把静物变成事件的一部分？",
+    "patterns": [
+      "Belshazzar",
+      "伯沙撒"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Daniel 5:1-31（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Daniel%205%3A1-31&version=KJV"
+    }
+  },
+  "Q717996": {
+    "name": "该隐与亚伯",
+    "story": "《创世记》中，该隐与亚伯是兄弟，献祭后的嫉妒使该隐杀死亚伯。绘画若选择冲突的一刻，呈现的是亲缘关系内部发生的暴力；理解这一点，比把画面当成普通搏斗更接近题材。",
+    "looking": "比较两人的身体位置、动作主动性和逃避空间。画家如何让相似的人体形成极不平等的力量关系？",
+    "patterns": [
+      "Cain and Abel",
+      "该隐",
+      "該隱"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Genesis 4:1-16（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Genesis%204%3A1-16&version=KJV"
+    }
+  },
+  "Q1135949": {
+    "name": "亚当与夏娃",
+    "story": "《创世记》中的亚当与夏娃受蛇引诱，吃下禁果，随后意识到裸露并离开伊甸园。经文并未把果实指定为苹果。绘画的动作和遮挡方式，可以帮助判断画面表现诱惑、选择，还是选择之后的羞惭。",
+    "looking": "观察手与果实之间的关系，再看两人是否相互凝视。树、动物和身体姿态如何划分画面，并暗示行动即将发生或已经结束？",
+    "patterns": [
+      "Adam and Eve",
+      "Fall of Man",
+      "亚当与夏娃"
+    ],
+    "source": {
+      "label": "题材文献：《圣经》Genesis 3:1-24（KJV）",
+      "url": "https://www.biblegateway.com/passage/?search=Genesis%203%3A1-24&version=KJV"
+    }
+  },
+  "Q37739859": {
+    "name": "达娜厄",
+    "story": "在希腊罗马神话中，达娜厄被父亲囚禁，朱庇特化作金雨接近她，后来她生下珀尔修斯。画中金雨、金币、侍者或丘比特的安排，在不同版本中并不一致；它们会改变观者对欲望、财富与观看关系的理解。",
+    "looking": "先看“金雨”如何进入人物所在空间，再比较主角与旁观者的手势和目光。不要把某一版本中的侍者或物件直接套到另一幅上。",
+    "patterns": [
+      "Danae",
+      "Danaë",
+      "达娜厄",
+      "達娜厄"
+    ],
+    "source": {
+      "label": "题材参考：达娜厄",
+      "url": "https://classics.mit.edu/Ovid/metam.4.fourth.html"
+    }
+  },
+  "Q86855398": {
+    "name": "维纳斯与阿多尼斯",
+    "story": "《变形记》中，维纳斯爱上青年阿多尼斯，并警告他远离危险的猛兽。阿多尼斯后来在狩猎中遭野猪致命袭击。绘画可以选择相伴、挽留或哀悼；若画面表现出发前的离别，温柔动作中也包含观者预知的悲剧。",
+    "looking": "比较两人的身体运动是否一致，再看猎犬或狩猎装备的方向。是谁试图靠近，谁正要离开？这些相反的力怎样组织画面？",
+    "patterns": [
+      "Venus and Adonis",
+      "维纳斯与阿多尼斯",
+      "維納斯與阿多尼斯"
+    ],
+    "source": {
+      "label": "题材参考：维纳斯与阿多尼斯",
+      "url": "https://classics.mit.edu/Ovid/metam.10.tenth.html"
+    }
+  },
+  "Q5271357": {
+    "name": "戴安娜与阿克泰翁",
+    "story": "《变形记》中，猎人阿克泰翁偶然闯入戴安娜与侍女的沐浴处，随后被变成鹿，遭自己的猎犬杀死。故事的关键是无意间看见与不成比例的惩罚，而不是一次普通的狩猎相遇。",
+    "looking": "观察闯入者与沐浴人群之间的边界，再寻找遮挡、转头与伸手的反应。画面有没有预示后续命运的动物或狩猎物件？",
+    "patterns": [
+      "Diana and Actaeon",
+      "戴安娜与阿克泰翁"
+    ],
+    "source": {
+      "label": "题材参考：戴安娜与阿克泰翁",
+      "url": "https://classics.mit.edu/Ovid/metam.3.third.html"
+    }
+  },
+  "Q26831404": {
+    "name": "戴安娜与卡利斯托",
+    "story": "《变形记》中的卡利斯托遭朱庇特假扮戴安娜接近并侵犯，怀孕后又被戴安娜逐出同行队伍。后续故事中她被变成熊。绘画常选择怀孕被发现的时刻；需要看见被迫暴露者的处境，而不能把惩罚简单写成她应得的结果。",
+    "looking": "比较卡利斯托、命令者与围观者的位置。哪些动作在保护、哪些在暴露身体？画面让观者同情谁，又把谁放在掌握权力的位置？",
+    "patterns": [
+      "Diana and Callisto",
+      "Diana and Kallisto",
+      "卡利斯托",
+      "卡里斯托"
+    ],
+    "source": {
+      "label": "题材参考：戴安娜与卡利斯托",
+      "url": "https://classics.mit.edu/Ovid/metam.2.second.html"
+    }
+  },
+  "Q16943283": {
+    "name": "欧罗巴被劫",
+    "story": "《变形记》中，朱庇特化作温顺的白牛接近欧罗巴，诱使她骑上牛背，随后渡海将她带走。“劫夺”包含欺骗和强迫，并非单纯的浪漫旅行。岸边同伴与海上人物的距离，可以让事件的突变变得清楚。",
+    "looking": "观察骑乘者是否坐得稳、衣带怎样随运动变化，再比较牛的方向与人物回望的方向。海与岸的分离怎样加强失去控制的感觉？",
+    "patterns": [
+      "Europa",
+      "欧罗巴",
+      "歐羅巴"
+    ],
+    "source": {
+      "label": "题材参考：欧罗巴被劫",
+      "url": "https://classics.mit.edu/Ovid/metam.2.second.html"
+    }
+  },
+  "Q7103994": {
+    "name": "俄耳甫斯与欧律狄刻",
+    "story": "《变形记》中，俄耳甫斯以歌声打动冥界，获准带回亡妻欧律狄刻，但必须在离开前不回头。他在即将抵达时回望，第二次失去妻子。绘画所选的一眼、一段距离或一个手势，可能浓缩了整场悲剧。",
+    "looking": "辨别两个人物的前后关系与行进方向。画面怎样表现“想要确认对方仍在身后”的冲动，以及伸手却无法挽回的距离？",
+    "patterns": [
+      "Orpheus and Eurydice",
+      "俄耳甫斯",
+      "欧律狄刻"
+    ],
+    "source": {
+      "label": "题材参考：俄耳甫斯与欧律狄刻",
+      "url": "https://classics.mit.edu/Ovid/metam.10.tenth.html"
+    }
+  },
+  "Q104577827": {
+    "name": "伽倪墨得斯被劫",
+    "story": "神话中的美少年伽倪墨得斯被化作鹰的朱庇特带到奥林匹斯，成为诸神的斟酒者。不同画家会让这个故事显得庄严、惊惧或带有出人意料的日常感；不要只因结局在神界，就忽视被带走者在画中的反应。",
+    "looking": "看鹰与人体如何连接，再观察面部、四肢和衣料的反应。画家是在强调向上的运动，还是让你首先注意到被带走者的不安？",
+    "patterns": [
+      "Ganymede",
+      "伽倪墨得斯"
+    ],
+    "source": {
+      "label": "题材参考：伽倪墨得斯被劫",
+      "url": "https://classics.mit.edu/Ovid/metam.10.tenth.html"
+    }
+  },
+  "Q2132999": {
+    "name": "珀耳塞福涅被劫",
+    "story": "《变形记》中，冥王普鲁托把珀耳塞福涅带往冥界，她的母亲刻瑞斯四处寻找女儿。这个故事后来也与季节循环相连。劫夺场面的急剧动作，与母亲漫长的寻找属于不同叙事阶段，读画时应分开理解。",
+    "looking": "比较被带走者、驾车者与岸上或地面同伴的运动方向。衣料、手臂和马匹怎样把身体的挣扎扩展为整个构图的动势？",
+    "patterns": [
+      "Proserpina",
+      "Persephone",
+      "珀耳塞福涅"
+    ],
+    "source": {
+      "label": "题材参考：珀耳塞福涅被劫",
+      "url": "https://classics.mit.edu/Ovid/metam.5.fifth.html"
+    }
+  },
+  "Q637209": {
+    "name": "鲍西丝与费莱蒙",
+    "story": "《变形记》中，贫穷的老夫妇鲍西丝与费莱蒙热情接待化装为旅人的朱庇特和墨丘利。他们发现酒器不断自行充满，才意识到客人的身份。故事重视日常的好客，后来二人获准同生共死，化作相邻的树。",
+    "looking": "先看食物、器皿与照料客人的动作，再比较客人与主人的反应。画家如何让简朴室内出现超出日常经验的事情？",
+    "patterns": [
+      "Baucis",
+      "Philemon",
+      "鲍西丝"
+    ],
+    "source": {
+      "label": "题材参考：鲍西丝与费莱蒙",
+      "url": "https://classics.mit.edu/Ovid/metam.8.eighth.html"
+    }
+  },
+  "Q26988394": {
+    "name": "珀尔修斯与安德洛墨达",
+    "story": "《变形记》中，安德洛墨达被缚在海边，准备作为祭品交给海怪；珀尔修斯飞临并出手救援。画家可以把脆弱的等待与远处激烈的战斗同时呈现，因此看主角之外的海面也十分重要。",
+    "looking": "比较被束缚者与救援者的距离和尺度，再看怪兽、海浪或飞行路线。画面把危机放在近处，还是让它从远方逼近？",
+    "patterns": [
+      "Andromeda",
+      "安德洛墨达"
+    ],
+    "source": {
+      "label": "题材参考：珀尔修斯与安德洛墨达",
+      "url": "https://classics.mit.edu/Ovid/metam.4.fourth.html"
+    }
+  },
+  "Q117011484": {
+    "name": "阿波罗与马尔叙阿斯",
+    "story": "神话中的马尔叙阿斯与阿波罗比试音乐，失败后受到剥皮的残酷惩罚。这个题材同时牵涉艺术竞赛与神、人之间不平等的权力。理解画面时，不能把酷刑仅当作装饰性的神话细节。",
+    "looking": "观察奏乐、观看与实施惩罚的人分别处在何处。画家的色彩和身体安排，会让你关注技艺的较量，还是无法回避受罚者的痛苦？",
+    "patterns": [
+      "Marsyas",
+      "马尔叙阿斯",
+      "马西亚斯"
+    ],
+    "source": {
+      "label": "题材参考：阿波罗与马尔叙阿斯",
+      "url": "https://classics.mit.edu/Ovid/metam.6.sixth.html"
+    }
+  },
+  "Q117011210": {
+    "name": "维纳斯与马尔斯",
+    "story": "古典神话中的维纳斯与马尔斯分别与爱和战争相联系，他们的关系也包含违背婚姻约定的故事。后来的绘画可能描绘亲密相伴，也可能借两位神祇思考爱情与武力的关系；具体寓意须结合该幅作品资料。",
+    "looking": "比较两人的姿态与身旁物件：武器、衣料或丘比特若出现，是在强调冲突、休息，还是一种暂时的和谐？",
+    "patterns": [
+      "Mars and Venus",
+      "Venus and Mars",
+      "维纳斯与战神"
+    ],
+    "source": {
+      "label": "题材参考：维纳斯与马尔斯",
+      "url": "https://classics.mit.edu/Ovid/metam.4.fourth.html"
+    }
+  },
+  "Q3560343": {
+    "name": "塔昆与卢克蕾提亚",
+    "story": "古罗马叙事中的塞克斯图斯·塔昆威胁并侵犯卢克蕾提亚。她随后向亲人讲述遭遇，结束自己的生命，故事与罗马推翻王政的传统相连。绘画若表现侵犯的一刻，应把暴力与权力差异看清，而不把受害者的遭遇浪漫化。",
+    "looking": "比较双方身体所占的空间、逃离的可能与手中的武器。画面如何通过斜线、压迫与表情，使威胁成为可见的关系？",
+    "patterns": [
+      "Tarquin and Lucretia",
+      "塔昆与卢克蕾提亚"
+    ],
+    "source": {
+      "label": "题材参考：塔昆与卢克蕾提亚",
+      "url": "https://www.fitzmuseum.cam.ac.uk/explore-our-collection/highlights/914"
+    }
+  },
+  "Q65548687": {
+    "name": "卢克蕾提亚之死",
+    "story": "卢克蕾提亚在古罗马传统中是遭王子塔昆侵犯后自尽的女性，故事后来与共和政体的起源相连。画家也可能将宏大的政治叙事缩小为一个人面对创伤的时刻。人物的尊严与处境，比简单的道德标签更值得注意。",
+    "looking": "观察刀、手与身体之间的距离，再比较表情与动作是否同步。画面是在表现决定之前、行动的一瞬，还是行动之后的余波？",
+    "patterns": [
+      "Lucretia",
+      "卢克蕾提亚",
+      "盧克蕾提亞"
+    ],
+    "source": {
+      "label": "题材参考：卢克蕾提亚之死",
+      "url": "https://www.nga.gov/artworks/83-lucretia"
+    }
+  },
+  "Q370665": {
+    "name": "神圣对话",
+    "story": "“神圣对话”并不表示圣徒正在进行一段历史上真实发生的谈话，而是让圣母子与不同时代的圣徒共同处在同一空间。这样的安排服务于敬拜与默想；捐赠者有时也会被纳入，以姿态和位置表达自己的参与。",
+    "looking": "先找圣母子的位置，再看圣徒与捐赠者的朝向。哪些目光把画中人物联系起来，哪些人物似乎在把观者引入场景？",
+    "patterns": [],
+    "source": {
+      "label": "题材参考：神圣对话",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/sacra-conversazione"
+    }
+  },
+  "Q9309699": {
+    "name": "圣母子",
+    "story": "圣母子图像把玛利亚与婴儿耶稣的亲密关系作为观看中心。它可以强调母亲照料孩子的日常动作，也可以让婴儿的祝福手势、姿态与随身物件指向宗教意义。具体象征需要看作品资料，不能给每件物品都强加固定解释。",
+    "looking": "比较母子的视线、手和身体接触，再观察他们是否面向画外。画面让你首先感到家庭的亲密，还是庄严的敬拜距离？",
+    "patterns": [
+      "Madonna and Child",
+      "Virgin and Child",
+      "圣母子",
+      "聖母子"
+    ],
+    "source": {
+      "label": "题材参考：圣母子",
+      "url": "https://www.nationalgallery.org.uk/paintings/giorgio-schiavone-the-virgin-and-child"
+    }
+  },
+  "Q618057": {
+    "name": "圣家族",
+    "story": "圣家族题材通常以玛利亚、约瑟与耶稣为中心，有时还包括圣安妮、幼年施洗约翰等人物。这类图像经常把宗教身份与家庭照护放在一起；它不一定对应一段具体发生的家庭日常记录。",
+    "looking": "先看不同年龄人物的相互照料，再观察工作、阅读或休息的动作。谁在靠近婴儿，谁在稍远的位置守护或旁观？",
+    "patterns": [
+      "Holy Family",
+      "圣家族",
+      "聖家族"
+    ],
+    "source": {
+      "label": "题材参考：圣家族",
+      "url": "https://www.nationalgallery.org.uk/paintings/bartolome-esteban-murillo-the-heavenly-and-earthly-trinities"
+    }
+  },
+  "Q5989722": {
+    "name": "忏悔的抹大拉玛利亚",
+    "story": "抹大拉玛利亚在福音书中是耶稣的追随者与复活的见证者，后来的西方图像传统又赋予她退隐、忏悔的形象。这一传统不应被简化为已经证实的生平：观看时可关注祈祷与情感表达，而不是给人物贴上未经证实的身份标签。",
+    "looking": "留意抬头、合掌或触胸的动作，再比较头发、皮肤与暗处的质感。若出现书、药膏罐或骷髅，结合具体作品来源辨认其作用。",
+    "patterns": [
+      "Penitent Magdalene",
+      "忏悔的玛利亚",
+      "悔罪的",
+      "懺悔的"
+    ],
+    "source": {
+      "label": "题材参考：忏悔的抹大拉玛利亚",
+      "url": "https://www.getty.edu/art/collection/object/103R9F"
+    }
+  },
+  "Q57269677": {
+    "name": "荒野中的圣杰罗姆",
+    "story": "圣杰罗姆以学者和圣经译者的身份受到纪念，图像传统也把他表现为在荒野中苦修的隐士。因此，同一人物既可能在书斋阅读，也可能面对十字架祈祷；这里的荒野题材强调退隐、专注与身体的自我约束。",
+    "looking": "比较身体与岩石、植物的关系，再找书、十字架或狮子等身份线索。环境是在把人物隔离，还是让他的祈祷有了更大的回声？",
+    "patterns": [
+      "Jerome in the Wilderness",
+      "Jerome in Penitence",
+      "忏悔的圣杰罗姆"
+    ],
+    "source": {
+      "label": "题材参考：荒野中的圣杰罗姆",
+      "url": "https://www.nationalgallery.org.uk/paintings/sodoma-saint-jerome-in-penitence"
+    }
+  },
+  "Q66481349": {
+    "name": "荒野中的施洗约翰",
+    "story": "施洗约翰在基督教传统中是为耶稣预备道路的人物，常与荒野、简朴衣着和施洗活动相联系。单人图像有时以指向性的手势或羔羊提示他的角色；幼年形象则属于另一种与圣母子相联系的传统。",
+    "looking": "观察人物朝向与手势所指，再看身体与荒野之间的关系。若出现羊、十字杖或皮毛衣着，可把它们作为辨认人物的线索。",
+    "patterns": [
+      "John the Baptist in the Wilderness",
+      "John the Baptist Preaching",
+      "荒野中的施洗约翰"
+    ],
+    "source": {
+      "label": "题材参考：荒野中的施洗约翰",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/saint-john-the-baptist"
+    }
+  },
+  "Q162691": {
+    "name": "圣母升天",
+    "story": "圣母升天题材属于基督教关于玛利亚生命终结的传统，不是福音书直接记载的一幕。绘画常将地上的使徒、上升的玛利亚与天上世界连成多层空间；它与耶稣升天是不同题材。",
+    "looking": "从地面人物的目光与伸手动作向上看，观察各层怎样连接。颜色、云与人物姿态是否把你的视线持续引向高处？",
+    "patterns": [
+      "Assumption of the Virgin",
+      "圣母升天",
+      "聖母升天"
+    ],
+    "source": {
+      "label": "题材参考：圣母升天",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/assumption-of-the-virgin"
+    }
+  },
+  "Q1196075": {
+    "name": "痛苦圣母",
+    "story": "痛苦圣母图像集中表现玛利亚面对耶稣受难的哀伤。有些版本与受难基督成对，有些独立存在。它常把叙事背景减到很少，使面容、双手与衣料承担情感，而不依赖一整场事件。",
+    "looking": "比较双手、眼睛与嘴部的细小变化，再观察衣料是否像一个空间将面部围住。画家怎样让克制的动作传达强烈感受？",
+    "patterns": [
+      "Mater Dolorosa",
+      "Virgin of Sorrow",
+      "痛苦圣母"
+    ],
+    "source": {
+      "label": "题材参考：痛苦圣母",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/virgin-mary"
+    }
+  },
+  "Q223689": {
+    "name": "圣殇",
+    "story": "“圣殇”通常指玛利亚怀抱或扶持死去的耶稣的图像，形成于后来的敬拜传统，并非福音书逐字描述的姿态。它把母子图像中的亲密关系与死亡相连，让照料、重量与失去成为观看重点。",
+    "looking": "比较成人身体的重量与承托者的姿态，再看两张面孔和双手怎样相接。画面是在强调拥抱的封闭感，还是向观者敞开这一悲痛？",
+    "patterns": [
+      "Pietà",
+      "Pieta",
+      "圣殇",
+      "聖殤"
+    ],
+    "source": {
+      "label": "题材参考：圣殇",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/pieta"
+    }
+  },
+  "Q108739900": {
+    "name": "莎乐美与施洗约翰的首级",
+    "story": "《马可福音》中，希律的继女跳舞后得到索取赏赐的机会，在母亲指使下要求施洗约翰的首级。福音书没有写出她的名字，后世传统称她为莎乐美。绘画可以表现提出要求、交接首级或事件之后的沉默，不能把每个版本都理解为同一瞬间。",
+    "looking": "先看托盘与双手，再比较接收者、递交者和旁观者的目光。画家如何让一个看似静止的交接动作带着刚刚发生的暴力？",
+    "source": {
+      "label": "题材参考：莎乐美与施洗约翰的首级",
+      "url": "https://www.biblegateway.com/passage/?search=Mark%206%3A17-29&version=KJV"
+    },
+    "patterns": [
+      "Salome with the Head",
+      "莎乐美",
+      "莎樂美"
+    ]
+  },
+  "Q3530155": {
+    "name": "托比亚与天使",
+    "story": "《托比特传》中的青年托比亚在天使拉斐尔陪伴下远行，途中捕到鱼，并依指示保留鱼的部分内脏，后来用于帮助家人与妻子。绘画可能选择同行、捕鱼、返回或天使离开的时刻，人物的相互引导贯穿整个故事。",
+    "looking": "比较同伴之间的距离、手势和行进方向。若有鱼、旅途装备或小狗，可以把它们与故事联系起来，但仍应根据本幅画面判断它处在哪个阶段。",
+    "source": {
+      "label": "题材参考：托比亚与天使",
+      "url": "https://www.nationalgallery.org.uk/paintings/salvator-rosa-landscape-with-tobias-and-the-angel"
+    },
+    "patterns": [
+      "Tobias and the Angel",
+      "托比亚与天使"
+    ]
+  },
+  "Q297742": {
+    "name": "圣玛格丽特",
+    "story": "圣玛格丽特的传说讲到她因信仰受难，被龙吞下，又借十字架脱离危险。龙因此成为辨认她的重要图像标志，她也受到产妇的祈求。这里属于圣徒传说与敬拜传统，不能当作已经证实的历史事件来叙述。",
+    "looking": "观察人物与龙之间的尺度、距离和动作，再看十字架或祈祷手势是否形成另一种力量。画面如何让脆弱的身体与威胁相对？",
+    "source": {
+      "label": "题材参考：圣玛格丽特",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/st-margaret"
+    },
+    "patterns": [
+      "Saint Margaret",
+      "St Margaret",
+      "圣玛格丽特"
+    ]
+  },
+  "Q65508996": {
+    "name": "圣塞巴斯蒂安受难",
+    "story": "圣塞巴斯蒂安在传统中是一名因信仰受刑的罗马军人。箭成为他的身份标志，后世也向他祈求抵御瘟疫。图像中的裸体、束缚和箭伤，既讲述受难，也让观者集中观察身体如何承受外部力量。",
+    "looking": "看身体与树干或柱子怎样形成受力关系，再比较伤口、光线和面部朝向。画家是在突出疼痛的动作，还是让人物保持近乎静止的状态？",
+    "source": {
+      "label": "题材参考：圣塞巴斯蒂安受难",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/st-sebastian"
+    },
+    "patterns": [
+      "Saint Sebastian",
+      "St Sebastian",
+      "圣塞巴斯蒂安"
+    ]
+  },
+  "Q27539800": {
+    "name": "维纳斯梳妆",
+    "story": "维纳斯是罗马神话中的爱与美之神。梳妆或照镜子的图像把神话身份与日常观看联系起来，有时由丘比特协助。镜子不仅是道具，也可能让观者看见另一个角度，并意识到自己也在观看画中人的身体。",
+    "looking": "比较镜中与镜外的形象：哪些部分清楚，哪些模糊或被遮挡？镜子朝向谁，是否让画中人物与观者形成一种不完全对称的观看关系？",
+    "source": {
+      "label": "题材参考：维纳斯梳妆",
+      "url": "https://www.nationalgallery.org.uk/paintings/diego-velazquez-the-toilet-of-venus-the-rokeby-venus"
+    },
+    "patterns": [
+      "Toilet of Venus",
+      "Venus with a Mirror",
+      "镜前的维纳斯"
+    ]
+  },
+  "Q117007545": {
+    "name": "维纳斯与丘比特",
+    "story": "维纳斯与丘比特分别是古典神话中的爱神及其常见的幼年伴随形象。两者相伴可以呈现亲昵、嬉戏或有关爱情的寓意，并不总是对应一段固定故事。具体道具与动作要在这一幅作品中逐一辨认，而不是把所有爱神图像看成同一叙事。",
+    "looking": "比较成年人与孩子的尺度、身体接触和视线，再看弓箭、花朵或其他物件是否改变这种亲密关系。画面更像母子相伴，还是让你想到爱情带来的力量？",
+    "source": {
+      "label": "题材参考：维纳斯与丘比特",
+      "url": "https://www.nationalgallery.org.uk/paintings/correggio-venus-with-mercury-and-cupid-the-school-of-love"
+    },
+    "patterns": [
+      "Venus and Cupid",
+      "维纳斯与丘比特"
+    ]
+  },
+  "Q26714817": {
+    "name": "圣方济各领受圣痕",
+    "story": "圣方济各出身富商家庭，后来放弃财产，以贫穷、简朴和服务基督为生活理想。在宗教传统中，他祈祷时领受与基督受难相对应的伤痕，这就是“圣痕”。绘画表现的是这一信仰经验；圣徒的服装、伤痕与祈祷姿态，应结合题材传统来读。",
+    "looking": "先看身体与手掌的朝向，再比较人物和周围光线的关系。画面怎样让一种无法用普通动作说明的精神经验变得可见？",
+    "patterns": [
+      "Saint Francis Receiving the Stigmata",
+      "圣方济各领受圣痕"
+    ],
+    "source": {
+      "label": "伦敦国家美术馆：题材与圣徒辨识（圣方济各领受圣痕）",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/st-francis-of-assisi"
+    }
+  },
+  "Q179718": {
+    "name": "亚历山大的圣凯瑟琳",
+    "story": "圣凯瑟琳的传说将她描绘为坚持基督教信仰的女性：她被判在带刺的轮上受刑，轮子却奇迹般毁坏，后来被斩首。因此车轮与殉道的棕榈枝常用于辨认她。“神秘婚姻”则是另一种表现她与基督关系的宗教题材，不能与现实中的婚礼混为一谈。",
+    "looking": "寻找车轮、棕榈枝或祈祷手势等线索，再看人物是在面对观者、默想，还是仰望画外。具体出现哪些标志，要以本幅图像为准。",
+    "patterns": [
+      "Saint Catherine of Alexandria at Prayer",
+      "亚历山大的圣凯瑟琳"
+    ],
+    "source": {
+      "label": "伦敦国家美术馆：题材与圣徒辨识（亚历山大的圣凯瑟琳）",
+      "url": "https://www.nationalgallery.org.uk/paintings/raphael-saint-catherine-of-alexandria"
+    }
+  },
+  "Q85141899": {
+    "name": "圣彼得殉道者之死",
+    "story": "这位彼得是十三世纪的多明我会修士彼得殉道者，并非耶稣的使徒彼得。他在1252年旅途中遭刺杀，后来的图像常用黑白修会服装、头部伤口或凶器来辨认他。遇害场景中的抵抗、逃离与见证，把宗教殉道观念转化为具体的人物关系。",
+    "looking": "先区分受害者、袭击者与同行者，再观察各自行动的方向。人物的抬手、俯身或逃跑怎样使同一时刻包含不同的反应？",
+    "patterns": [
+      "Death of Saint Peter Martyr",
+      "Death of St Peter Martyr",
+      "圣彼得殉道者之死"
+    ],
+    "source": {
+      "label": "伦敦国家美术馆：题材与圣徒辨识（圣彼得殉道者之死）",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/st-peter-martyr"
+    }
+  },
+  "Q9200": {
+    "name": "使徒保罗",
+    "story": "在基督教绘画中，保罗常与书卷和剑联系在一起：前者提示著述与教导，后者关联他的殉道传统。十七世纪荷兰的宗教思想很重视保罗对福音的阐释，这为理解伦勃朗反复描绘这一人物提供了背景，但不能据此断定每幅画都有同一个委托目的。",
+    "looking": "先看阅读、书写或思考的姿态，再在画面中寻找书卷与其他身份线索。人物的年龄、服装和表情塑造了怎样的权威感或亲近感？",
+    "patterns": [
+      "The apostle Paul in Prison",
+      "The Apostle Paul at his Writing Desk"
+    ],
+    "source": {
+      "label": "伦敦国家美术馆：题材与圣徒辨识（使徒保罗）",
+      "url": "https://www.nationalgallery.org.uk/paintings/rembrandt-an-elderly-man-as-saint-paul"
+    }
+  }
+}

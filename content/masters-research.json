@@ -1384,18 +1384,18 @@
       "attributionCaution": false
     },
     {
-      "artworkId": "rembrandt-rrp-58",
+      "artworkId": "rembrandt-gold-chain",
       "artist": "rembrandt",
-      "existing": false,
+      "existing": true,
       "wikidataId": "Q14911808",
       "wikidataRevision": null,
       "originalTitle": "Half-figure of a Man Wearing a Gorget and Plumed Hat",
-      "reviewNote": null,
+      "reviewNote": "RRP 58 与既有芝加哥作品为同一件，合并至原有 ID。与卡塞尔 GK 233 / RRP 82 为两幅不同作品。",
       "rrpNumber": "58",
       "listRow": 57,
       "listUrl": "https://en.wikipedia.org/wiki/List_of_paintings_by_Rembrandt",
       "fileTitle": "Rembrandt Harmensz. van Rijn - Old Man with a Gold Chain - Google Art Project.jpg",
-      "sourceUrl": "https://www.wikidata.org/wiki/Q14911808",
+      "sourceUrl": "https://www.artic.edu/artworks/95998/old-man-with-a-gold-chain",
       "attributionQualifiers": {},
       "otherCreatorIds": [],
       "collectionIds": [
@@ -2059,18 +2059,18 @@
       "attributionCaution": true
     },
     {
-      "artworkId": "rembrandt-gold-chain",
+      "artworkId": "rembrandt-rrp-82",
       "artist": "rembrandt",
-      "existing": true,
+      "existing": false,
       "wikidataId": "Q21406264",
       "wikidataRevision": null,
       "originalTitle": "Study of an Old Man with a Gold Chain",
-      "reviewNote": null,
+      "reviewNote": "卡塞尔 GK 233：1632 年，59.3 × 49.3 cm；与芝加哥 1631 年作品 RRP 58 不同。馆方现列伦勃朗本人，归属曾有争议。",
       "rrpNumber": "82",
       "listRow": 85,
       "listUrl": "https://en.wikipedia.org/wiki/List_of_paintings_by_Rembrandt",
       "fileTitle": "Rembrandt Study of an Old Man with a Gold Chain - GK 233.jpg",
-      "sourceUrl": "https://www.wikidata.org/wiki/Q21406264",
+      "sourceUrl": "https://datenbank.museum-kassel.de/33757/",
       "attributionQualifiers": {},
       "otherCreatorIds": [],
       "collectionIds": [
@@ -2081,7 +2081,7 @@
         "Q687186"
       ],
       "imageAvailable": true,
-      "attributionCaution": false
+      "attributionCaution": true
     },
     {
       "artworkId": "rembrandt-rrp-83",

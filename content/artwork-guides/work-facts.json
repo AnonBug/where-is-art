@@ -1,0 +1,7506 @@
+{
+  "retrievedAt": "2026-11-12",
+  "license": "Wikidata structured data: CC0",
+  "records": {
+    "rembrandt-jewish-bride": {
+      "wikidataId": "Q766782",
+      "originalTitle": "‘Portrait Historié’ of a Couple as Isaac and Rebecca (known as ‘The Jewish Bride’)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307",
+        "Q1047337"
+      ],
+      "heightCm": 121.5,
+      "widthCm": 166.5
+    },
+    "titian-assumption": {
+      "wikidataId": "Q1899740",
+      "originalTitle": "Assumption of the Virgin",
+      "mainSubjects": [
+        "Q162691"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 668.0,
+      "widthCm": 344.0
+    },
+    "titian-bacchus-ariadne": {
+      "wikidataId": "Q1206860",
+      "originalTitle": "Bacchus and Ariadne",
+      "mainSubjects": [
+        "Q61702526"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 176.5,
+      "widthCm": 191.0
+    },
+    "titian-venus-urbino": {
+      "wikidataId": "Q727875",
+      "originalTitle": "Venus of Urbino",
+      "mainSubjects": [
+        "Q27539800",
+        "Q47652"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 119.0,
+      "widthCm": 165.5
+    },
+    "titian-europa": {
+      "wikidataId": "Q18002417",
+      "originalTitle": "The Rape of Europa",
+      "mainSubjects": [
+        "Q16943283"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 185.0,
+      "widthCm": 205.0
+    },
+    "rembrandt-rrp-2": {
+      "wikidataId": "Q21406034",
+      "originalTitle": "The Three Singers (Hearing)",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 21.6,
+      "widthCm": 17.8
+    },
+    "rembrandt-rrp-3": {
+      "wikidataId": "Q21406026",
+      "originalTitle": "The Operation (Touch)",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 21.6,
+      "widthCm": 17.7
+    },
+    "rembrandt-rrp-3a": {
+      "wikidataId": "Q27885055",
+      "originalTitle": "The Unconscious Patient (Smell)",
+      "mainSubjects": [
+        "Q1541064"
+      ],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 21.5,
+      "widthCm": 17.7
+    },
+    "rembrandt-rrp-4": {
+      "wikidataId": "Q21401840",
+      "originalTitle": "Christ Driving the Money-changers from the Temple",
+      "mainSubjects": [
+        "Q1267621"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 43.1,
+      "widthCm": 32.0
+    },
+    "rembrandt-rrp-5": {
+      "wikidataId": "Q2646680",
+      "originalTitle": "The Stoning of St. Stephen",
+      "mainSubjects": [
+        "Q123465926"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 89.5,
+      "widthCm": 123.6
+    },
+    "rembrandt-rrp-6": {
+      "wikidataId": "Q21406066",
+      "originalTitle": "Bust of a Man Wearing a Gorget and Plumed Beret",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 40.0,
+      "widthCm": 29.4
+    },
+    "rembrandt-rrp-7": {
+      "wikidataId": "Q13726955",
+      "originalTitle": "History Painting",
+      "mainSubjects": [],
+      "genres": [
+        "Q742333",
+        "Q192110"
+      ],
+      "heightCm": 90.1,
+      "widthCm": 121.3
+    },
+    "rembrandt-rrp-9": {
+      "wikidataId": "Q13571486",
+      "originalTitle": "The Baptism of the Eunuch",
+      "mainSubjects": [
+        "Q123422659"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 64.0,
+      "widthCm": 47.5
+    },
+    "rembrandt-rrp-10": {
+      "wikidataId": "Q650086",
+      "originalTitle": "Balaam and the Ass",
+      "mainSubjects": [
+        "Q12404326",
+        "Q574641"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 63.0,
+      "widthCm": 46.5
+    },
+    "rembrandt-rrp-11": {
+      "wikidataId": "Q3686099",
+      "originalTitle": "Musical Allegory",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ]
+    },
+    "rembrandt-rrp-12": {
+      "wikidataId": "Q16610825",
+      "originalTitle": "Tobit Accusing Anna of Stealing the Kid",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 39.5,
+      "widthCm": 30.0
+    },
+    "rembrandt-rrp-13": {
+      "wikidataId": "Q2488726",
+      "originalTitle": "The Flight into Egypt",
+      "mainSubjects": [
+        "Q837143"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 26.0,
+      "widthCm": 24.0
+    },
+    "rembrandt-rrp-15": {
+      "wikidataId": "Q16622054",
+      "originalTitle": "The apostle Paul in Prison",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 72.8,
+      "widthCm": 60.3
+    },
+    "rembrandt-rrp-16": {
+      "wikidataId": "Q21406189",
+      "originalTitle": "Simeon in the Temple",
+      "mainSubjects": [
+        "Q152771"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 55.4,
+      "widthCm": 43.7
+    },
+    "rembrandt-rrp-17": {
+      "wikidataId": "Q21549398",
+      "originalTitle": "The Foot Operation",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 31.8,
+      "widthCm": 24.4
+    },
+    "rembrandt-rrp-18": {
+      "wikidataId": "Q20178648",
+      "originalTitle": "Rembrandt Laughing",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 22.2,
+      "widthCm": 17.1
+    },
+    "rembrandt-rrp-19": {
+      "wikidataId": "Q16167060",
+      "originalTitle": "Self-Portrait Study in the Mirror (the Human Skin)",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ]
+    },
+    "rembrandt-rrp-20": {
+      "wikidataId": "Q3630753",
+      "originalTitle": "Lighting Study in the Mirror",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 22.6,
+      "widthCm": 18.7
+    },
+    "rembrandt-rrp-21": {
+      "wikidataId": "Q21473970",
+      "originalTitle": "Bust of a Man Wearing a Turban",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 26.7,
+      "widthCm": 20.3
+    },
+    "rembrandt-rrp-22": {
+      "wikidataId": "Q21451933",
+      "originalTitle": "Interior with figures, called La main chaude",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 21.0,
+      "widthCm": 27.0
+    },
+    "rembrandt-rrp-23": {
+      "wikidataId": "Q21422900",
+      "originalTitle": "Judas Repentant, Returning the Pieces of Silver",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 79.0,
+      "widthCm": 102.3
+    },
+    "rembrandt-rrp-24": {
+      "wikidataId": "Q3905873",
+      "originalTitle": "The Painter in his Studio (‘Idea’)",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 24.8,
+      "widthCm": 31.7
+    },
+    "rembrandt-rrp-25": {
+      "wikidataId": "Q21401882",
+      "originalTitle": "The Supper at Emmaus",
+      "mainSubjects": [
+        "Q16519437"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 39.0,
+      "widthCm": 42.0
+    },
+    "rembrandt-rrp-26": {
+      "wikidataId": "Q21406843",
+      "originalTitle": "An Old Man Asleep by the Fire (perhaps typifying ‘Sloth’)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 51.9,
+      "widthCm": 40.8
+    },
+    "rembrandt-rrp-27": {
+      "wikidataId": "Q9247900",
+      "originalTitle": "Two Old Men Disputing (St. Peter and St. Paul)",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337",
+        "Q2864737"
+      ],
+      "heightCm": 72.4,
+      "widthCm": 59.7
+    },
+    "rembrandt-rrp-28": {
+      "wikidataId": "Q21426047",
+      "originalTitle": "The apostle Paul at his Writing Desk",
+      "mainSubjects": [
+        "Q9200"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 47.2,
+      "widthCm": 38.6
+    },
+    "rembrandt-rrp-30": {
+      "wikidataId": "Q18655609",
+      "originalTitle": "Self-portrait with a Gorget",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 38.2,
+      "widthCm": 31.0
+    },
+    "rembrandt-rrp-31": {
+      "wikidataId": "Q21370789",
+      "originalTitle": "Self-portrait Lit from the Left",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 15.6,
+      "widthCm": 12.7
+    },
+    "rembrandt-rrp-33": {
+      "wikidataId": "Q18600931",
+      "originalTitle": "Self-portrait with Beret and Gathered Shirt (‘stilus mediocris’)",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 15.5,
+      "widthCm": 12.0
+    },
+    "rembrandt-rrp-36": {
+      "wikidataId": "Q21595893",
+      "originalTitle": "Bust of an Old Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 18.0,
+      "widthCm": 17.5
+    },
+    "rembrandt-rrp-38": {
+      "wikidataId": "Q9202853",
+      "originalTitle": "David Playing the Harp for King Saul",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 62.0,
+      "widthCm": 50.0
+    },
+    "rembrandt-rrp-39": {
+      "wikidataId": "Q740212",
+      "originalTitle": "Jeremiah Lamenting the Destruction of Jerusalem",
+      "mainSubjects": [
+        "Q1218"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 58.0,
+      "widthCm": 46.0
+    },
+    "rembrandt-rrp-42": {
+      "wikidataId": "Q21558277",
+      "originalTitle": "The Good Samaritan",
+      "mainSubjects": [
+        "Q261103"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 68.5,
+      "widthCm": 57.3
+    },
+    "rembrandt-rrp-43": {
+      "wikidataId": "Q21449986",
+      "originalTitle": "Bust of an Old Man Wearing a Fur Cap",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 21.5,
+      "widthCm": 17.0
+    },
+    "rembrandt-rrp-44": {
+      "wikidataId": "Q21416535",
+      "originalTitle": "Oil Study of an Old Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 24.3,
+      "widthCm": 20.3
+    },
+    "rembrandt-rrp-45": {
+      "wikidataId": "Q20397433",
+      "originalTitle": "Oil Study of an Old Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ]
+    },
+    "rembrandt-rrp-48": {
+      "wikidataId": "Q7759351",
+      "originalTitle": "The Raising of Lazarus",
+      "mainSubjects": [
+        "Q3937194"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 96.4,
+      "widthCm": 81.3
+    },
+    "rembrandt-rrp-49": {
+      "wikidataId": "Q3930502",
+      "originalTitle": "The Abduction of Proserpina",
+      "mainSubjects": [
+        "Q2132999"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 84.8,
+      "widthCm": 79.7
+    },
+    "rembrandt-rrp-50": {
+      "wikidataId": "Q1243299",
+      "originalTitle": "The Abduction of Europa",
+      "mainSubjects": [
+        "Q16943283"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 64.6,
+      "widthCm": 78.7
+    },
+    "rembrandt-rrp-51": {
+      "wikidataId": "Q11827829",
+      "originalTitle": "An Old Woman Reading, probably the Prophetess Anna",
+      "mainSubjects": [
+        "Q199657"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 60.0,
+      "widthCm": 48.0
+    },
+    "rembrandt-rrp-52": {
+      "wikidataId": "Q19850660",
+      "originalTitle": "Christ on the Cross",
+      "mainSubjects": [
+        "Q51636"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 99.9,
+      "widthCm": 72.6
+    },
+    "rembrandt-rrp-54": {
+      "wikidataId": "Q18688698",
+      "originalTitle": "Minerva in her Study",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 60.5,
+      "widthCm": 49.0
+    },
+    "rembrandt-rrp-55": {
+      "wikidataId": "Q21450677",
+      "originalTitle": "Bust of an Old Man with a Cap and Gold Chain",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 59.5,
+      "widthCm": 51.2
+    },
+    "rembrandt-rrp-56": {
+      "wikidataId": "Q20184501",
+      "originalTitle": "A Man Wearing a Gorget and Plumed Cap",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 65.7,
+      "widthCm": 51.8
+    },
+    "rembrandt-rrp-60": {
+      "wikidataId": "Q21450886",
+      "originalTitle": "Portrait of a Man at a Writing Desk, possibly Jacob Bruyningh",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 104.5,
+      "widthCm": 92.0
+    },
+    "rembrandt-rrp-61": {
+      "wikidataId": "Q18161363",
+      "originalTitle": "A Lady and Gentleman in Black",
+      "mainSubjects": [],
+      "genres": [
+        "Q1551015"
+      ],
+      "heightCm": 131.6,
+      "widthCm": 109.0
+    },
+    "rembrandt-rrp-62a": {
+      "wikidataId": "Q21468826",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 90.0,
+      "widthCm": 67.0
+    },
+    "rembrandt-rrp-62b": {
+      "wikidataId": "Q21468829",
+      "originalTitle": "Portrait of a Woman",
+      "mainSubjects": [
+        "Q467"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 90.0,
+      "widthCm": 67.5
+    },
+    "rembrandt-rrp-63a": {
+      "wikidataId": "Q20167032",
+      "originalTitle": "Portrait of a Man, probably a Member of the Van Beresteyn Family",
+      "mainSubjects": [
+        "Q108704736"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 111.8,
+      "widthCm": 88.9
+    },
+    "rembrandt-rrp-63b": {
+      "wikidataId": "Q20167179",
+      "originalTitle": "Portrait of a Woman, probably a Member of the Van Beresteyn Family",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 111.8,
+      "widthCm": 88.9
+    },
+    "rembrandt-rrp-64a": {
+      "wikidataId": "Q21406289",
+      "originalTitle": "Portrait of a Man Trimming his Quill",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 102.0,
+      "widthCm": 82.0
+    },
+    "rembrandt-rrp-64b": {
+      "wikidataId": "Q21406458",
+      "originalTitle": "Portrait of a Woman Seated",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 92.0,
+      "widthCm": 71.0
+    },
+    "rembrandt-rrp-65b": {
+      "wikidataId": "Q21401888",
+      "originalTitle": "Portrait of Princess Amalia van Solms",
+      "mainSubjects": [
+        "Q62511"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 68.5,
+      "widthCm": 55.5
+    },
+    "rembrandt-rrp-66": {
+      "wikidataId": "Q21418987",
+      "originalTitle": "Self-portrait as a Burger",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 64.4,
+      "widthCm": 47.6
+    },
+    "rembrandt-rrp-67": {
+      "wikidataId": "Q18642311",
+      "originalTitle": "Portrait of Maurits Huygens",
+      "mainSubjects": [
+        "Q52154034"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 31.1,
+      "widthCm": 24.5
+    },
+    "rembrandt-rrp-68": {
+      "wikidataId": "Q17343012",
+      "originalTitle": "Portrait of Jacob de Gheyn III",
+      "mainSubjects": [
+        "Q17343011"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 29.9,
+      "widthCm": 24.9
+    },
+    "rembrandt-rrp-69": {
+      "wikidataId": "Q21596800",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 21.8,
+      "widthCm": 16.3
+    },
+    "rembrandt-rrp-70": {
+      "wikidataId": "Q20198794",
+      "originalTitle": "Portrait of Joris de Caullery",
+      "mainSubjects": [
+        "Q21467935"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 102.9,
+      "widthCm": 84.3
+    },
+    "rembrandt-rrp-71": {
+      "wikidataId": "Q21509305",
+      "originalTitle": "Portrait of a Young Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 64.0,
+      "widthCm": 47.0
+    },
+    "rembrandt-rrp-72": {
+      "wikidataId": "Q20887903",
+      "originalTitle": "Portrait of Marten Looten",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 92.8,
+      "widthCm": 74.9
+    },
+    "rembrandt-rrp-73": {
+      "wikidataId": "Q19905235",
+      "originalTitle": "Portrait of a 40-year-old Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 75.6,
+      "widthCm": 52.1
+    },
+    "rembrandt-rrp-74": {
+      "wikidataId": "Q21596897",
+      "originalTitle": "Portrait of a 39-year-old Woman",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 76.5,
+      "widthCm": 59.0
+    },
+    "rembrandt-rrp-76": {
+      "wikidataId": "Q661378",
+      "originalTitle": "The Anatomy Lesson of Dr. Tulp",
+      "mainSubjects": [],
+      "genres": [
+        "Q1551015",
+        "Q134307"
+      ],
+      "heightCm": 169.5,
+      "widthCm": 216.5
+    },
+    "rembrandt-rrp-77b": {
+      "wikidataId": "Q21470281",
+      "originalTitle": "Portraits of Susanna van Collen and her Daughter Anna",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 155.3,
+      "widthCm": 122.5
+    },
+    "rembrandt-rrp-78": {
+      "wikidataId": "Q18225002",
+      "originalTitle": "Bust of a Young Woman",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099",
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-79": {
+      "wikidataId": "Q21467840",
+      "originalTitle": "Bust of a Young Woman in a Cap",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 68.7,
+      "widthCm": 53.5
+    },
+    "rembrandt-rrp-81": {
+      "wikidataId": "Q21541684",
+      "originalTitle": "Bearded Old Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 66.9,
+      "widthCm": 50.7
+    },
+    "rembrandt-rrp-84": {
+      "wikidataId": "Q987985",
+      "originalTitle": "Knee-length Figure of a Man in an Oriental Dress (‘The Noble Slav’)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 152.7,
+      "widthCm": 111.1
+    },
+    "rembrandt-rrp-85": {
+      "wikidataId": "Q21416454",
+      "originalTitle": "A Scholar Near a Window (a study in ‘kamerlicht’)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 60.0,
+      "widthCm": 48.0
+    },
+    "rembrandt-rrp-86": {
+      "wikidataId": "Q3381192",
+      "originalTitle": "Philosopher in Meditation",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 28.0,
+      "widthCm": 34.0
+    },
+    "rembrandt-rrp-87a": {
+      "wikidataId": "Q21421084",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 63.5,
+      "widthCm": 47.3
+    },
+    "rembrandt-rrp-88a": {
+      "wikidataId": "Q17064836",
+      "originalTitle": "Portrait of a Man Rising from his Chair",
+      "mainSubjects": [
+        "Q15026"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-88b": {
+      "wikidataId": "Q19911644",
+      "originalTitle": "Portrait of a Young Woman with a Fan",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 125.7,
+      "widthCm": 101.0
+    },
+    "rembrandt-rrp-89": {
+      "wikidataId": "Q21448559",
+      "originalTitle": "Portrait of Jan Rijcksen and his Wife Griet Jans",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 113.8,
+      "widthCm": 169.8
+    },
+    "rembrandt-rrp-90": {
+      "wikidataId": "Q17341268",
+      "originalTitle": "Portrait of Johannes Wtenbogaert",
+      "mainSubjects": [
+        "Q2542932"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 130.0,
+      "widthCm": 103.0
+    },
+    "rembrandt-rrp-91": {
+      "wikidataId": "Q18602834",
+      "originalTitle": "Portrait of Man",
+      "mainSubjects": [
+        "Q2119242"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 128.5,
+      "widthCm": 100.5
+    },
+    "rembrandt-rrp-92": {
+      "wikidataId": "Q21515060",
+      "originalTitle": "Portrait of a Man Wearing a Red Doublet",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 63.5,
+      "widthCm": 50.5
+    },
+    "rembrandt-rrp-93": {
+      "wikidataId": "Q21468651",
+      "originalTitle": "Portrait of a Young Woman",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-95": {
+      "wikidataId": "Q3937660",
+      "originalTitle": "Half-length Portrait of Saskia van Uylenburgh",
+      "mainSubjects": [
+        "Q109676"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 99.5,
+      "widthCm": 78.8
+    },
+    "rembrandt-rrp-96": {
+      "wikidataId": "Q21406865",
+      "originalTitle": "Self-portrait with Gold Chain",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 60.0,
+      "widthCm": 47.0
+    },
+    "rembrandt-rrp-97": {
+      "wikidataId": "Q21406872",
+      "originalTitle": "Self-portrait with Beret and Gold Chain",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 70.0,
+      "widthCm": 53.0
+    },
+    "rembrandt-rrp-98": {
+      "wikidataId": "Q17336120",
+      "originalTitle": "Bust of Young Woman",
+      "mainSubjects": [
+        "Q109676"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 65.0,
+      "widthCm": 48.0
+    },
+    "rembrandt-rrp-99": {
+      "wikidataId": "Q20177141",
+      "originalTitle": "Man in Oriental Costume",
+      "mainSubjects": [],
+      "genres": [
+        "Q30303254"
+      ],
+      "heightCm": 1028.0,
+      "widthCm": 788.0
+    },
+    "rembrandt-rrp-100": {
+      "wikidataId": "Q21451682",
+      "originalTitle": "A Young Woman (Esther? Judith?) at her Toilet",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 109.2,
+      "widthCm": 94.4
+    },
+    "rembrandt-rrp-101": {
+      "wikidataId": "Q19911626",
+      "originalTitle": "Bellona",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 127.0,
+      "widthCm": 97.5
+    },
+    "rembrandt-rrp-102": {
+      "wikidataId": "Q20178156",
+      "originalTitle": "Daniel Refuses to Worship the Idol Baal",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ]
+    },
+    "rembrandt-q21856038": {
+      "wikidataId": "Q21856038",
+      "originalTitle": "The Vision of Zacharias in the Temple",
+      "mainSubjects": [
+        "Q56856844"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 58.0,
+      "widthCm": 48.0
+    },
+    "rembrandt-rrp-103": {
+      "wikidataId": "Q21519504",
+      "originalTitle": "A Bust of an Old Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 10.6,
+      "widthCm": 7.2
+    },
+    "rembrandt-rrp-104": {
+      "wikidataId": "Q21369078",
+      "originalTitle": "Bust of a Man in Oriental Dress",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 85.8,
+      "widthCm": 63.8
+    },
+    "rembrandt-rrp-105": {
+      "wikidataId": "Q2246489",
+      "originalTitle": "The Storm on the Sea of Galilee",
+      "mainSubjects": [
+        "Q625236"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q158607"
+      ],
+      "heightCm": 160.0,
+      "widthCm": 128.0
+    },
+    "rembrandt-rrp-106": {
+      "wikidataId": "Q21372308",
+      "originalTitle": "The Raising of the Cross",
+      "mainSubjects": [
+        "Q7759352"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 96.2,
+      "widthCm": 72.2
+    },
+    "rembrandt-rrp-107": {
+      "wikidataId": "Q568100",
+      "originalTitle": "The Descent from the Cross",
+      "mainSubjects": [
+        "Q13365963"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 89.4,
+      "widthCm": 65.2
+    },
+    "rembrandt-rrp-109": {
+      "wikidataId": "Q21597595",
+      "originalTitle": "The Adoration of the Magi",
+      "mainSubjects": [
+        "Q488841"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 45.0,
+      "widthCm": 39.0
+    },
+    "rembrandt-rrp-111": {
+      "wikidataId": "Q21598836",
+      "originalTitle": "Christ and his Disciples in Gethsemane",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 35.7,
+      "widthCm": 47.8
+    },
+    "rembrandt-rrp-112": {
+      "wikidataId": "Q21455838",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805",
+        "Q8122413"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 54.5,
+      "widthCm": 44.5
+    },
+    "rembrandt-rrp-113": {
+      "wikidataId": "Q21467280",
+      "originalTitle": "The Lamentation",
+      "mainSubjects": [
+        "Q3155356"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 31.9,
+      "widthCm": 26.7
+    },
+    "rembrandt-rrp-114": {
+      "wikidataId": "Q18433275",
+      "originalTitle": "The Entombment",
+      "mainSubjects": [
+        "Q51637"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 32.1,
+      "widthCm": 40.3
+    },
+    "rembrandt-rrp-115": {
+      "wikidataId": "Q21504269",
+      "originalTitle": "Portrait of a Young Bachelor",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 70.5,
+      "widthCm": 52.0
+    },
+    "rembrandt-rrp-116": {
+      "wikidataId": "Q21469157",
+      "originalTitle": "Portrait of an 83-year Old Woman (possibly Aechje Claesdr, mother of Dirck Jansz Pesser)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 71.1,
+      "widthCm": 55.9
+    },
+    "rembrandt-rrp-117a": {
+      "wikidataId": "Q20881403",
+      "originalTitle": "Portrait of Dirck Jansz Pesser",
+      "mainSubjects": [
+        "Q5280189"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 64.8,
+      "widthCm": 50.5
+    },
+    "rembrandt-rrp-117b": {
+      "wikidataId": "Q17341036",
+      "originalTitle": "Portret of van Haesje Jacobsdr van Cleyburgh",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 68.6,
+      "widthCm": 53.4
+    },
+    "rembrandt-rrp-118a": {
+      "wikidataId": "Q20557864",
+      "originalTitle": "Portrait of a Man in a Broad-brimmed Hat",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 69.9,
+      "widthCm": 53.0
+    },
+    "rembrandt-rrp-118b": {
+      "wikidataId": "Q20557788",
+      "originalTitle": "Portrait of a Woman",
+      "mainSubjects": [
+        "Q467"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 69.5,
+      "widthCm": 53.0
+    },
+    "rembrandt-rrp-119a": {
+      "wikidataId": "Q21467975",
+      "originalTitle": "Portrait of a 41-year-old Man, possibly Pieter Sijen",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 69.3,
+      "widthCm": 54.8
+    },
+    "rembrandt-rrp-119b": {
+      "wikidataId": "Q21467968",
+      "originalTitle": "Portrait of a 40-year-old Woman, possibly Marretje Cornelisdr van Grotewal",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-121a": {
+      "wikidataId": "Q20557629",
+      "originalTitle": "Portrait of Reverend Johannes Elison",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 174.0,
+      "widthCm": 124.5
+    },
+    "rembrandt-rrp-121b": {
+      "wikidataId": "Q20557706",
+      "originalTitle": "Portrait of Maria Bockenolle",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 174.9,
+      "widthCm": 124.1
+    },
+    "rembrandt-rrp-122": {
+      "wikidataId": "Q21519550",
+      "originalTitle": "Oval Self-portrait with Shaded Eyes",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 71.1,
+      "widthCm": 56.0
+    },
+    "rembrandt-rrp-123": {
+      "wikidataId": "Q18688868",
+      "originalTitle": "Self-portrait in a Cap and Fur-trimmed Cloak",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 58.3,
+      "widthCm": 47.4
+    },
+    "rembrandt-rrp-124": {
+      "wikidataId": "Q21598760",
+      "originalTitle": "Cupid Blowing a Soap Bubble",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 75.0,
+      "widthCm": 92.6
+    },
+    "rembrandt-rrp-125": {
+      "wikidataId": "Q2225699",
+      "originalTitle": "Flora",
+      "mainSubjects": [
+        "Q109676"
+      ],
+      "genres": [
+        "Q30303254"
+      ]
+    },
+    "rembrandt-rrp-126": {
+      "wikidataId": "Q16954398",
+      "originalTitle": "The Descent from the Cross",
+      "mainSubjects": [
+        "Q13365963"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 158.0,
+      "widthCm": 117.0
+    },
+    "rembrandt-rrp-127": {
+      "wikidataId": "Q11791846",
+      "originalTitle": "The Incredulity of Thomas",
+      "mainSubjects": [
+        "Q4924861"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 53.1,
+      "widthCm": 50.5
+    },
+    "rembrandt-rrp-128": {
+      "wikidataId": "Q2479220",
+      "originalTitle": "Sophonisba Receiving the Poisoned Cup",
+      "mainSubjects": [
+        "Q13077250"
+      ],
+      "genres": [
+        "Q742333"
+      ],
+      "heightCm": 143.0,
+      "widthCm": 154.7
+    },
+    "rembrandt-rrp-129": {
+      "wikidataId": "Q21467323",
+      "originalTitle": "A Scholar, Seated at a Table with Books",
+      "mainSubjects": [
+        "Q2248623"
+      ],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 141.0,
+      "widthCm": 135.0
+    },
+    "rembrandt-rrp-130": {
+      "wikidataId": "Q153788",
+      "originalTitle": "Diana Bathing with her Nymphs, with the Stories of Actaeon and Callisto",
+      "mainSubjects": [
+        "Q5271357",
+        "Q26831404",
+        "Q26880565"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 73.5,
+      "widthCm": 93.5
+    },
+    "rembrandt-rrp-132a": {
+      "wikidataId": "Q21470339",
+      "originalTitle": "Portrait of Philips Lucasz",
+      "mainSubjects": [
+        "Q104307447"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 79.5,
+      "widthCm": 58.9
+    },
+    "rembrandt-rrp-132b": {
+      "wikidataId": "Q21470328",
+      "originalTitle": "Portrait of Petronella Buys",
+      "mainSubjects": [
+        "Q111529227"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-133a": {
+      "wikidataId": "Q21475075",
+      "originalTitle": "Portrait of a Man in a Slouched Hat and Bandoleer",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 76.0,
+      "widthCm": 63.5
+    },
+    "rembrandt-rrp-135": {
+      "wikidataId": "Q1111394",
+      "originalTitle": "Self-portrait as the Prodigal Son in the Tavern",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q30303254",
+        "Q2864737",
+        "Q192110"
+      ],
+      "heightCm": 161.0,
+      "widthCm": 131.0
+    },
+    "rembrandt-rrp-136": {
+      "wikidataId": "Q10749451",
+      "originalTitle": "Abraham's Sacrifice",
+      "mainSubjects": [
+        "Q5007906"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 193.0,
+      "widthCm": 132.0
+    },
+    "rembrandt-rrp-137": {
+      "wikidataId": "Q3930497",
+      "originalTitle": "The Rape of Ganymede",
+      "mainSubjects": [
+        "Q104577827"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 177.0,
+      "widthCm": 129.0
+    },
+    "rembrandt-rrp-139": {
+      "wikidataId": "Q18655576",
+      "originalTitle": "Minerva",
+      "mainSubjects": [
+        "Q126916"
+      ],
+      "genres": [
+        "Q30303254",
+        "Q3374376"
+      ],
+      "heightCm": 137.0,
+      "widthCm": 116.0
+    },
+    "rembrandt-rrp-140": {
+      "wikidataId": "Q16599633",
+      "originalTitle": "Samson Threatening his Father-in-law",
+      "mainSubjects": [
+        "Q214648"
+      ],
+      "genres": [
+        "Q2864737"
+      ]
+    },
+    "rembrandt-rrp-141": {
+      "wikidataId": "Q17334207",
+      "originalTitle": "Bust of a Man in Oriental Dress",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 72.0,
+      "widthCm": 54.5
+    },
+    "rembrandt-rrp-142": {
+      "wikidataId": "Q21469853",
+      "originalTitle": "Bust of a Bearded Old man in Fanciful Costume",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 72.6,
+      "widthCm": 62.3
+    },
+    "rembrandt-rrp-143": {
+      "wikidataId": "Q1167932",
+      "originalTitle": "Belshazzar’s Feast",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 167.6,
+      "widthCm": 209.2
+    },
+    "rembrandt-rrp-145": {
+      "wikidataId": "Q21382018",
+      "originalTitle": "The Ascension",
+      "mainSubjects": [
+        "Q5686605"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 92.7,
+      "widthCm": 68.3
+    },
+    "rembrandt-rrp-147": {
+      "wikidataId": "Q21467444",
+      "originalTitle": "The Standard-Bearer",
+      "mainSubjects": [],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 118.8,
+      "widthCm": 96.8
+    },
+    "rembrandt-rrp-148": {
+      "wikidataId": "Q1211651",
+      "originalTitle": "The Blinding of Samson",
+      "mainSubjects": [
+        "Q124490",
+        "Q214648",
+        "Q937827",
+        "Q467",
+        "Q8441",
+        "Q16334295"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 219.3,
+      "widthCm": 305.0
+    },
+    "rembrandt-rrp-149": {
+      "wikidataId": "Q2294441",
+      "originalTitle": "Danaë",
+      "mainSubjects": [
+        "Q37739859"
+      ],
+      "genres": [
+        "Q40446",
+        "Q3374376"
+      ],
+      "heightCm": 185.0,
+      "widthCm": 202.5
+    },
+    "rembrandt-rrp-150": {
+      "wikidataId": "Q9158957",
+      "originalTitle": "The Angel Raphael Leaving Tobit and his Family",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 66.0,
+      "widthCm": 52.0
+    },
+    "rembrandt-rrp-151": {
+      "wikidataId": "Q11826546",
+      "originalTitle": "The Parable of the Labourers in the Vineyard",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 31.0,
+      "widthCm": 42.0
+    },
+    "rembrandt-rrp-152": {
+      "wikidataId": "Q20900612",
+      "originalTitle": "River Landscape with Ruins",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 67.0,
+      "widthCm": 87.5
+    },
+    "rembrandt-rrp-153": {
+      "wikidataId": "Q3686309",
+      "originalTitle": "The Concord of the State",
+      "mainSubjects": [],
+      "genres": [
+        "Q742333"
+      ],
+      "heightCm": 74.6,
+      "widthCm": 101.0
+    },
+    "rembrandt-rrp-154": {
+      "wikidataId": "Q19844638",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 63.0,
+      "widthCm": 50.7
+    },
+    "rembrandt-rrp-155": {
+      "wikidataId": "Q9351747",
+      "originalTitle": "A Polish Nobleman",
+      "mainSubjects": [
+        "Q54054",
+        "Q973365"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 96.8,
+      "widthCm": 66.0
+    },
+    "rembrandt-rrp-156": {
+      "wikidataId": "Q21499511",
+      "originalTitle": "Portrait of the Preacher Eleazar Swalmius",
+      "mainSubjects": [
+        "Q21931606"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 132.0,
+      "widthCm": 109.0
+    },
+    "rembrandt-rrp-158": {
+      "wikidataId": "Q21448755",
+      "originalTitle": "Christ and St Mary Magdalen at the Tomb",
+      "mainSubjects": [
+        "Q124362"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q1047337"
+      ],
+      "heightCm": 61.0,
+      "widthCm": 49.5
+    },
+    "rembrandt-rrp-159": {
+      "wikidataId": "Q11747764",
+      "originalTitle": "Landscape with the Good Samaritan",
+      "mainSubjects": [],
+      "genres": [
+        "Q141399995",
+        "Q2864737"
+      ]
+    },
+    "rembrandt-rrp-160": {
+      "wikidataId": "Q16614604",
+      "originalTitle": "The Wedding of Samson",
+      "mainSubjects": [
+        "Q214648"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 126.0,
+      "widthCm": 175.0
+    },
+    "rembrandt-rrp-161": {
+      "wikidataId": "Q16580563",
+      "originalTitle": "Woman with a Mirror",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 39.5,
+      "widthCm": 32.5
+    },
+    "rembrandt-rrp-162": {
+      "wikidataId": "Q9393528",
+      "originalTitle": "The Entombment",
+      "mainSubjects": [
+        "Q51637"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 92.5,
+      "widthCm": 68.9
+    },
+    "rembrandt-rrp-163": {
+      "wikidataId": "Q21383336",
+      "originalTitle": "The Resurrection",
+      "mainSubjects": [
+        "Q51624"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 91.9,
+      "widthCm": 67.0
+    },
+    "rembrandt-rrp-164": {
+      "wikidataId": "Q11708247",
+      "originalTitle": "King Uzziah Stricken with Leprosy",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 102.8,
+      "widthCm": 78.8
+    },
+    "rembrandt-rrp-166": {
+      "wikidataId": "Q21475539",
+      "originalTitle": "A Dead Bittern",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q1047337",
+        "Q192110"
+      ],
+      "heightCm": 121.0,
+      "widthCm": 89.0
+    },
+    "rembrandt-rrp-168": {
+      "wikidataId": "Q21406310",
+      "originalTitle": "Portrait of a Man Standing, possibly Andries de Graeff",
+      "mainSubjects": [
+        "Q510583"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 200.0,
+      "widthCm": 124.2
+    },
+    "rembrandt-rrp-169": {
+      "wikidataId": "Q19928010",
+      "originalTitle": "Portrait of Aletta Adriaensdr",
+      "mainSubjects": [
+        "Q24327142"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-170": {
+      "wikidataId": "Q18226124",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 80.0,
+      "widthCm": 62.0
+    },
+    "rembrandt-rrp-171": {
+      "wikidataId": "Q20177135",
+      "originalTitle": "Bust of Young Woman",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ]
+    },
+    "rembrandt-rrp-172": {
+      "wikidataId": "Q21481383",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 111.6,
+      "widthCm": 89.2
+    },
+    "rembrandt-rrp-174": {
+      "wikidataId": "Q21479751",
+      "originalTitle": "The Visitation",
+      "mainSubjects": [
+        "Q691810"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 56.5,
+      "widthCm": 47.9
+    },
+    "rembrandt-q21477701": {
+      "wikidataId": "Q21477701",
+      "originalTitle": "Landscape with Arched Bridge",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 29.0,
+      "widthCm": 40.0
+    },
+    "rembrandt-rrp-175": {
+      "wikidataId": "Q4211284",
+      "originalTitle": "Landscape with a Stone Bridge",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 29.5,
+      "widthCm": 42.5
+    },
+    "rembrandt-rrp-176": {
+      "wikidataId": "Q16913186",
+      "originalTitle": "Mountain Landscape with Approaching Storm",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 51.3,
+      "widthCm": 71.5
+    },
+    "rembrandt-rrp-177a": {
+      "wikidataId": "Q18760265",
+      "originalTitle": "Portrait of Herman Doomer",
+      "mainSubjects": [
+        "Q2592423"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 75.2,
+      "widthCm": 55.2
+    },
+    "rembrandt-rrp-178": {
+      "wikidataId": "Q18688852",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 72.0,
+      "widthCm": 54.8
+    },
+    "rembrandt-rrp-179": {
+      "wikidataId": "Q3630751",
+      "originalTitle": "Self-Portrait at the Age of 34",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 102.0,
+      "widthCm": 80.0
+    },
+    "rembrandt-rrp-180": {
+      "wikidataId": "Q21481569",
+      "originalTitle": "Portrait of a Woman, possibly Anna Wijmer",
+      "mainSubjects": [
+        "Q104533798"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 99.5,
+      "widthCm": 81.5
+    },
+    "rembrandt-rrp-181": {
+      "wikidataId": "Q16599937",
+      "originalTitle": "Saskia as Flora",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376",
+        "Q134307"
+      ],
+      "heightCm": 98.5,
+      "widthCm": 82.5
+    },
+    "rembrandt-rrp-182": {
+      "wikidataId": "Q21597679",
+      "originalTitle": "Oil Study of a Woman Lit Obliquely from Behind",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 47.3,
+      "widthCm": 39.0
+    },
+    "rembrandt-rrp-183": {
+      "wikidataId": "Q3937500",
+      "originalTitle": "Portrait of the Mennonite Preacher Cornelius Claesz Anslo and his Wife Aaltje Gerritsdr Shouten",
+      "mainSubjects": [
+        "Q3046146",
+        "Q21451940"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 173.7,
+      "widthCm": 207.6
+    },
+    "rembrandt-rrp-184b": {
+      "wikidataId": "Q4373336",
+      "originalTitle": "Portrait of Maria Trip",
+      "mainSubjects": [
+        "Q24327971"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 107.0,
+      "widthCm": 82.0
+    },
+    "rembrandt-rrp-185": {
+      "wikidataId": "Q9364415",
+      "originalTitle": "A Scholar at a Writing Desk",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 105.7,
+      "widthCm": 76.4
+    },
+    "rembrandt-rrp-186": {
+      "wikidataId": "Q11695670",
+      "originalTitle": "Girl in Fanciful Costume in a Picture Frame",
+      "mainSubjects": [
+        "Q134307"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-187a": {
+      "wikidataId": "Q21449656",
+      "originalTitle": "Portrait of Nicolas van Bambeeck in a Picture Frame",
+      "mainSubjects": [
+        "Q4625873"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 105.5,
+      "widthCm": 84.0
+    },
+    "rembrandt-rrp-188": {
+      "wikidataId": "Q5800462",
+      "originalTitle": "David’s Parting from Jonathan",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 61.5,
+      "widthCm": 73.0
+    },
+    "rembrandt-rrp-191a": {
+      "wikidataId": "Q21500921",
+      "originalTitle": "Portrait of a Man with a Hawk",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 114.5,
+      "widthCm": 98.0
+    },
+    "rembrandt-rrp-191b": {
+      "wikidataId": "Q21500923",
+      "originalTitle": "Portrait of a Woman with a Fan",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 114.5,
+      "widthCm": 98.0
+    },
+    "rembrandt-rrp-193": {
+      "wikidataId": "Q4931571",
+      "originalTitle": "Bust of a Woman (Ruth?)",
+      "mainSubjects": [],
+      "genres": [
+        "Q2414609",
+        "Q1400853"
+      ]
+    },
+    "rembrandt-rrp-194": {
+      "wikidataId": "Q3766161",
+      "originalTitle": "Sarah Waiting for Tobias",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 81.1,
+      "widthCm": 67.8
+    },
+    "rembrandt-rrp-196": {
+      "wikidataId": "Q570163",
+      "originalTitle": "Christ and the Woman Taken in Adultery",
+      "mainSubjects": [
+        "Q492663"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 83.8,
+      "widthCm": 65.4
+    },
+    "rembrandt-rrp-197": {
+      "wikidataId": "Q18746675",
+      "originalTitle": "A Weeping Woman",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 21.3,
+      "widthCm": 16.8
+    },
+    "rembrandt-rrp-198": {
+      "wikidataId": "Q3944474",
+      "originalTitle": "Holy Family with Angels",
+      "mainSubjects": [
+        "Q618057"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 117.0,
+      "widthCm": 91.0
+    },
+    "rembrandt-rrp-200": {
+      "wikidataId": "Q11824948",
+      "originalTitle": "Girl Leaning on a Stone Window Sill",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337",
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-202": {
+      "wikidataId": "Q16600465",
+      "originalTitle": "Joseph's Dream in the Stable at Bethlehem",
+      "mainSubjects": [
+        "Q128710"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 20.0,
+      "widthCm": 27.0
+    },
+    "rembrandt-rrp-204": {
+      "wikidataId": "Q21484378",
+      "originalTitle": "Old Man with a Stick",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 128.0,
+      "widthCm": 112.0
+    },
+    "rembrandt-rrp-205": {
+      "wikidataId": "Q18397036",
+      "originalTitle": "Landscape with a Castle",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 44.0,
+      "widthCm": 60.0
+    },
+    "rembrandt-rrp-206": {
+      "wikidataId": "Q3224802",
+      "originalTitle": "The Mill",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 87.6,
+      "widthCm": 105.6
+    },
+    "rembrandt-rrp-207": {
+      "wikidataId": "Q21406281",
+      "originalTitle": "Winter Landscape",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 17.0,
+      "widthCm": 23.0
+    },
+    "rembrandt-rrp-208": {
+      "wikidataId": "Q9138433",
+      "originalTitle": "Abraham Serving the Three Angels",
+      "mainSubjects": [
+        "Q124477969"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 16.1,
+      "widthCm": 21.1
+    },
+    "rembrandt-rrp-209": {
+      "wikidataId": "Q21406322",
+      "originalTitle": "The Holy Family with Painted Frame and Curtain",
+      "mainSubjects": [
+        "Q618057"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 46.8,
+      "widthCm": 69.0
+    },
+    "rembrandt-rrp-210": {
+      "wikidataId": "Q21503254",
+      "originalTitle": "The Prophetess Anna in the Temple",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 43.0,
+      "widthCm": 34.8
+    },
+    "rembrandt-rrp-211a": {
+      "wikidataId": "Q11821341",
+      "originalTitle": "The Nativity",
+      "mainSubjects": [
+        "Q1029715"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 97.0,
+      "widthCm": 71.3
+    },
+    "rembrandt-rrp-213": {
+      "wikidataId": "Q16913597",
+      "originalTitle": "Susanna and the Elders",
+      "mainSubjects": [
+        "Q16930210"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q40446"
+      ],
+      "heightCm": 76.6,
+      "widthCm": 92.8
+    },
+    "rembrandt-rrp-214": {
+      "wikidataId": "Q21451906",
+      "originalTitle": "Nocturnal Landscape with the Holy Family",
+      "mainSubjects": [
+        "Q3427290"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q141399995"
+      ],
+      "heightCm": 34.0,
+      "widthCm": 48.0
+    },
+    "rembrandt-rrp-215": {
+      "wikidataId": "Q17335740",
+      "originalTitle": "Preparatory Oil Sketch for the Etched Portrait of Dr Ephraim Bueno",
+      "mainSubjects": [
+        "Q1122812"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-217a": {
+      "wikidataId": "Q1304358",
+      "originalTitle": "Oil Study of Christ",
+      "mainSubjects": [
+        "Q302"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q134307"
+      ],
+      "heightCm": 25.0,
+      "widthCm": 21.7
+    },
+    "rembrandt-rrp-217b": {
+      "wikidataId": "Q21518246",
+      "originalTitle": "Oil Study of Christ",
+      "mainSubjects": [
+        "Q302"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 25.5,
+      "widthCm": 20.1
+    },
+    "rembrandt-rrp-218": {
+      "wikidataId": "Q1241088",
+      "originalTitle": "The Supper at Emmaus",
+      "mainSubjects": [
+        "Q16519437"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 68.0,
+      "widthCm": 65.0
+    },
+    "rembrandt-rrp-219": {
+      "wikidataId": "Q21487137",
+      "originalTitle": "Christ Appearing to Mary Magdalene, ‘Noli me tangere’",
+      "mainSubjects": [
+        "Q124362"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 65.0,
+      "widthCm": 79.0
+    },
+    "rembrandt-rrp-220": {
+      "wikidataId": "Q18089111",
+      "originalTitle": "Girl at a Window",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 78.0,
+      "widthCm": 64.0
+    },
+    "rembrandt-rrp-222": {
+      "wikidataId": "Q21502401",
+      "originalTitle": "An Old Man in Fanciful Costume",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 78.5,
+      "widthCm": 67.5
+    },
+    "rembrandt-rrp-223": {
+      "wikidataId": "Q21500197",
+      "originalTitle": "Portrait of Hendrickje Stoffels",
+      "mainSubjects": [
+        "Q463440"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 101.9,
+      "widthCm": 83.7
+    },
+    "rembrandt-rrp-224": {
+      "wikidataId": "Q7448288",
+      "originalTitle": "The So-called Large Vienna Self-portrait with Beret",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ]
+    },
+    "rembrandt-rrp-225": {
+      "wikidataId": "Q21485255",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 92.5,
+      "widthCm": 73.5
+    },
+    "rembrandt-rrp-226": {
+      "wikidataId": "Q21402239",
+      "originalTitle": "Portrait of Nicolaes Bruyningh",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 106.8,
+      "widthCm": 91.5
+    },
+    "rembrandt-rrp-229": {
+      "wikidataId": "Q3766162",
+      "originalTitle": "A Woman Wading in a Pool (Callisto in the Wilderness)",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 61.8,
+      "widthCm": 47.0
+    },
+    "rembrandt-rrp-232": {
+      "wikidataId": "Q16590326",
+      "originalTitle": "Woman at an Open Half-door",
+      "mainSubjects": [
+        "Q463440"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 88.6,
+      "widthCm": 67.0
+    },
+    "rembrandt-rrp-233": {
+      "wikidataId": "Q3937582",
+      "originalTitle": "Portrait of Jan Six",
+      "mainSubjects": [
+        "Q327109"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 112.0,
+      "widthCm": 102.0
+    },
+    "rembrandt-rrp-234": {
+      "wikidataId": "Q18649144",
+      "originalTitle": "The Standard-Bearer (Floris Soop)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 140.3,
+      "widthCm": 114.9
+    },
+    "rembrandt-rrp-235a": {
+      "wikidataId": "Q19844627",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 72.0,
+      "widthCm": 58.5
+    },
+    "rembrandt-rrp-235b": {
+      "wikidataId": "Q21418803",
+      "originalTitle": "Portrait of Hendrickje Stoffels",
+      "mainSubjects": [
+        "Q463440"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 74.0,
+      "widthCm": 61.0
+    },
+    "rembrandt-rrp-236": {
+      "wikidataId": "Q3663892",
+      "originalTitle": "The Polish Rider",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 116.8,
+      "widthCm": 134.9
+    },
+    "rembrandt-rrp-237": {
+      "wikidataId": "Q11731706",
+      "originalTitle": "Joseph Accused by Potiphar’s Wife",
+      "mainSubjects": [],
+      "genres": [
+        "Q2414609"
+      ]
+    },
+    "rembrandt-rrp-238": {
+      "wikidataId": "Q21559229",
+      "originalTitle": "Oil Sketch of an Old Man",
+      "mainSubjects": [
+        "Q96630806"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 22.2,
+      "widthCm": 18.4
+    },
+    "rembrandt-rrp-239": {
+      "wikidataId": "Q18759548",
+      "originalTitle": "Man in Armour",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 137.5,
+      "widthCm": 104.5
+    },
+    "rembrandt-rrp-240": {
+      "wikidataId": "Q3646498",
+      "originalTitle": "Slaughtered Ox",
+      "mainSubjects": [],
+      "genres": [
+        "Q170571"
+      ],
+      "heightCm": 94.0,
+      "widthCm": 69.0
+    },
+    "rembrandt-rrp-241": {
+      "wikidataId": "Q12121888",
+      "originalTitle": "Old Woman Reading (Study in Lighting Effects)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 80.0,
+      "widthCm": 66.0
+    },
+    "rembrandt-rrp-242": {
+      "wikidataId": "Q16612320",
+      "originalTitle": "Titus at a Desk",
+      "mainSubjects": [
+        "Q200817"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 77.0,
+      "widthCm": 63.0
+    },
+    "rembrandt-rrp-243": {
+      "wikidataId": "Q21481447",
+      "originalTitle": "Unfinished Portrait of a Boy",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 64.8,
+      "widthCm": 55.9
+    },
+    "rembrandt-rrp-244": {
+      "wikidataId": "Q21519866",
+      "originalTitle": "Man with Beret and Tabard (a Falconer?)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-245": {
+      "wikidataId": "Q1679544",
+      "originalTitle": "Jacob Blessing the Sons of Joseph",
+      "mainSubjects": [
+        "Q1091067"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 173.0,
+      "widthCm": 209.0
+    },
+    "rembrandt-rrp-246": {
+      "wikidataId": "Q2252345",
+      "originalTitle": "The Anatomy Lesson of Dr. Jan Deyman",
+      "mainSubjects": [],
+      "genres": [
+        "Q1551015"
+      ],
+      "heightCm": 100.0,
+      "widthCm": 134.0
+    },
+    "rembrandt-rrp-247": {
+      "wikidataId": "Q20177567",
+      "originalTitle": "Young Man Seated at a Table",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 109.9,
+      "widthCm": 89.5
+    },
+    "rembrandt-rrp-248b": {
+      "wikidataId": "Q20177427",
+      "originalTitle": "Portrait of a Lady with an Ostrich Feather Fan",
+      "mainSubjects": [
+        "Q58326741"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 99.5,
+      "widthCm": 83.0
+    },
+    "rembrandt-rrp-250": {
+      "wikidataId": "Q17561117",
+      "originalTitle": "Portrait of poet Jeremias de Decker",
+      "mainSubjects": [
+        "Q711529"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 71.0,
+      "widthCm": 56.0
+    },
+    "rembrandt-rrp-252": {
+      "wikidataId": "Q21500872",
+      "originalTitle": "Juno",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 127.0,
+      "widthCm": 123.8
+    },
+    "rembrandt-rrp-253": {
+      "wikidataId": "Q3610098",
+      "originalTitle": "Pallas Athene",
+      "mainSubjects": [
+        "Q37122"
+      ],
+      "genres": [
+        "Q742333"
+      ],
+      "heightCm": 118.0,
+      "widthCm": 91.0
+    },
+    "rembrandt-rrp-254": {
+      "wikidataId": "Q20177450",
+      "originalTitle": "The Apostle Paul at his Writing Desk",
+      "mainSubjects": [
+        "Q9200"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 131.5,
+      "widthCm": 104.4
+    },
+    "rembrandt-rrp-255": {
+      "wikidataId": "Q21520257",
+      "originalTitle": "The Apostle Bartholomew",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 122.7,
+      "widthCm": 99.7
+    },
+    "rembrandt-rrp-256": {
+      "wikidataId": "Q21503301",
+      "originalTitle": "The So-called Small Vienna Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 48.0,
+      "widthCm": 40.6
+    },
+    "rembrandt-rrp-257": {
+      "wikidataId": "Q21402035",
+      "originalTitle": "Portrait of Titus van Rijn",
+      "mainSubjects": [
+        "Q200817"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 68.5,
+      "widthCm": 57.3
+    },
+    "rembrandt-rrp-258": {
+      "wikidataId": "Q16913601",
+      "originalTitle": "Portrait of Catharina Hooghsaet",
+      "mainSubjects": [
+        "Q2669602"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 123.5,
+      "widthCm": 95.0
+    },
+    "rembrandt-rrp-260": {
+      "wikidataId": "Q19905364",
+      "originalTitle": "Preparatory Oil Sketch for the Etched Portrait of Lieven Willemsz van Coppenol",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 36.5,
+      "widthCm": 28.9
+    },
+    "rembrandt-rrp-261": {
+      "wikidataId": "Q1986539",
+      "originalTitle": "Portrait of a Man with Arms Akimbo",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 107.4,
+      "widthCm": 87.0
+    },
+    "rembrandt-rrp-263": {
+      "wikidataId": "Q17064881",
+      "originalTitle": "Portrait of Dirck van Os",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 101.0,
+      "widthCm": 86.0
+    },
+    "rembrandt-rrp-264": {
+      "wikidataId": "Q3630750",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 133.7,
+      "widthCm": 103.8
+    },
+    "rembrandt-rrp-265": {
+      "wikidataId": "Q20177472",
+      "originalTitle": "Philemon and Baucis",
+      "mainSubjects": [
+        "Q637209"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 54.5,
+      "widthCm": 68.5
+    },
+    "rembrandt-rrp-266": {
+      "wikidataId": "Q19925707",
+      "originalTitle": "Tobit and Anna",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 40.3,
+      "widthCm": 54.0
+    },
+    "rembrandt-rrp-267": {
+      "wikidataId": "Q325267",
+      "originalTitle": "Moses Smashes the Stone Tablets with the Covenant",
+      "mainSubjects": [
+        "Q9077",
+        "Q34623"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 168.5,
+      "widthCm": 136.5
+    },
+    "rembrandt-rrp-269": {
+      "wikidataId": "Q3784800",
+      "originalTitle": "Posthumous Portrait of Saskia van Uylenburgh as Flora",
+      "mainSubjects": [
+        "Q209644"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q134307"
+      ],
+      "heightCm": 100.0,
+      "widthCm": 91.8
+    },
+    "rembrandt-rrp-270": {
+      "wikidataId": "Q21519561",
+      "originalTitle": "Portrait of a Man as the Apostle Paul",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 102.0,
+      "widthCm": 85.5
+    },
+    "rembrandt-rrp-271": {
+      "wikidataId": "Q19973906",
+      "originalTitle": "Oil Sketch for 272",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 68.5,
+      "widthCm": 55.5
+    },
+    "rembrandt-rrp-272": {
+      "wikidataId": "Q21501589",
+      "originalTitle": "The Knight with the Falcon",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 98.5,
+      "widthCm": 79.0
+    },
+    "rembrandt-rrp-273": {
+      "wikidataId": "Q21520005",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 52.7,
+      "widthCm": 42.7
+    },
+    "rembrandt-rrp-274": {
+      "wikidataId": "Q2872723",
+      "originalTitle": "Self Portrait with Beret and Turned-Up Collar",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 84.5,
+      "widthCm": 66.0
+    },
+    "rembrandt-rrp-275": {
+      "wikidataId": "Q21597702",
+      "originalTitle": "Self-portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 30.7,
+      "widthCm": 24.3
+    },
+    "rembrandt-rrp-276": {
+      "wikidataId": "Q21523399",
+      "originalTitle": "Lighting Study with an Old Man as a Model",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 38.1,
+      "widthCm": 26.8
+    },
+    "rembrandt-rrp-277": {
+      "wikidataId": "Q21515049",
+      "originalTitle": "Lighting Study with Hendrickje Stoffels in a Silk Gown as a Model",
+      "mainSubjects": [
+        "Q463440"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-278": {
+      "wikidataId": "Q19911539",
+      "originalTitle": "Hendrickje Stoffels",
+      "mainSubjects": [
+        "Q463440"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 78.4,
+      "widthCm": 68.9
+    },
+    "rembrandt-rrp-279": {
+      "wikidataId": "Q768333",
+      "originalTitle": "Titus van Rijn as St Francis",
+      "mainSubjects": [
+        "Q200817"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 79.5,
+      "widthCm": 67.7
+    },
+    "rembrandt-rrp-280": {
+      "wikidataId": "Q21550057",
+      "originalTitle": "A Smiling Young Man (Titus)",
+      "mainSubjects": [
+        "Q200817"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 81.3,
+      "widthCm": 68.7
+    },
+    "rembrandt-rrp-282": {
+      "wikidataId": "Q7311573",
+      "originalTitle": "Rembrandt: Self Portrait",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 80.3,
+      "widthCm": 67.3
+    },
+    "rembrandt-rrp-283": {
+      "wikidataId": "Q2589202",
+      "originalTitle": "Assuerus, Haman, and Esther",
+      "mainSubjects": [
+        "Q131068"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 73.0,
+      "widthCm": 94.0
+    },
+    "rembrandt-rrp-285": {
+      "wikidataId": "Q21523379",
+      "originalTitle": "Lighting Study of an Old Man in Profile",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 24.8,
+      "widthCm": 19.1
+    },
+    "rembrandt-rrp-286": {
+      "wikidataId": "Q20177576",
+      "originalTitle": "The Circumcision in the Stable",
+      "mainSubjects": [
+        "Q13510036"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 56.5,
+      "widthCm": 75.0
+    },
+    "rembrandt-rrp-289": {
+      "wikidataId": "Q9396869",
+      "originalTitle": "Saint Matthew and the Angel",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 96.0,
+      "widthCm": 81.0
+    },
+    "rembrandt-rrp-290": {
+      "wikidataId": "Q20178712",
+      "originalTitle": "The Apostle Bartholomew",
+      "mainSubjects": [
+        "Q43982"
+      ],
+      "genres": [
+        "Q2864737"
+      ]
+    },
+    "rembrandt-rrp-291": {
+      "wikidataId": "Q21523455",
+      "originalTitle": "The Apostle Simon",
+      "mainSubjects": [
+        "Q12871"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 98.5,
+      "widthCm": 79.0
+    },
+    "rembrandt-rrp-292": {
+      "wikidataId": "Q21520205",
+      "originalTitle": "The Apostle James the Greater",
+      "mainSubjects": [
+        "Q43999"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 91.1,
+      "widthCm": 74.9
+    },
+    "rembrandt-rrp-293": {
+      "wikidataId": "Q19911565",
+      "originalTitle": "The Apostle James the Less, or Christ with a Staff",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 95.3,
+      "widthCm": 82.6
+    },
+    "rembrandt-rrp-294": {
+      "wikidataId": "Q2267759",
+      "originalTitle": "Self-portrait as the Apostle Paul",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110",
+        "Q30303254"
+      ],
+      "heightCm": 91.0,
+      "widthCm": 77.0
+    },
+    "rembrandt-rrp-295": {
+      "wikidataId": "Q17276026",
+      "originalTitle": "Two Moors",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 77.8,
+      "widthCm": 64.4
+    },
+    "rembrandt-rrp-296": {
+      "wikidataId": "Q21502392",
+      "originalTitle": "The Small Margaretha de Geer",
+      "mainSubjects": [
+        "Q24277320"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 75.3,
+      "widthCm": 63.8
+    },
+    "rembrandt-rrp-297a": {
+      "wikidataId": "Q21500675",
+      "originalTitle": "Portrait of Jacob Trip",
+      "mainSubjects": [
+        "Q24278767"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 130.5,
+      "widthCm": 97.0
+    },
+    "rembrandt-rrp-297b": {
+      "wikidataId": "Q21500701",
+      "originalTitle": "Portrait of Margaretha de Geer",
+      "mainSubjects": [
+        "Q24277320"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 130.5,
+      "widthCm": 97.5
+    },
+    "rembrandt-rrp-298": {
+      "wikidataId": "Q2234397",
+      "originalTitle": "The Conspiracy of the Batavians under Claudius Civilis",
+      "mainSubjects": [],
+      "genres": [
+        "Q742333"
+      ],
+      "heightCm": 196.0,
+      "widthCm": 309.0
+    },
+    "rembrandt-rrp-299": {
+      "wikidataId": "Q1170480",
+      "originalTitle": "Portrait of the Syndics of the Amsterdam Clothmakers’ Guild, known as the ‘Staalmeesters’",
+      "mainSubjects": [],
+      "genres": [
+        "Q1551015"
+      ],
+      "heightCm": 191.5,
+      "widthCm": 279.0
+    },
+    "rembrandt-rrp-300": {
+      "wikidataId": "Q21520403",
+      "originalTitle": "Portrait of a Young Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-301": {
+      "wikidataId": "Q11710021",
+      "originalTitle": "Homer Dictating his Verses",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 107.0,
+      "widthCm": 82.0
+    },
+    "rembrandt-rrp-302": {
+      "wikidataId": "Q2267594",
+      "originalTitle": "Self-portrait as the Laughing Zeuxis while Painting an Old Woman",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110",
+        "Q30303254"
+      ],
+      "heightCm": 82.5,
+      "widthCm": 65.0
+    },
+    "rembrandt-rrp-303": {
+      "wikidataId": "Q21499502",
+      "originalTitle": "Equestrian Portrait of Frederick Rihel",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 294.5,
+      "widthCm": 241.0
+    },
+    "rembrandt-rrp-304": {
+      "wikidataId": "Q21526169",
+      "originalTitle": "Bust of a Bearded Young Man with a Skullcap",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 65.8,
+      "widthCm": 57.5
+    },
+    "rembrandt-rrp-305": {
+      "wikidataId": "Q18225459",
+      "originalTitle": "Portrait of a Woman with a Lapdog",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 81.3,
+      "widthCm": 64.1
+    },
+    "rembrandt-rrp-307": {
+      "wikidataId": "Q21491919",
+      "originalTitle": "Titus Reading (study in direct and reflected light)",
+      "mainSubjects": [
+        "Q200817"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-308": {
+      "wikidataId": "Q20183551",
+      "originalTitle": "Portrait of Gerard de Lairesse",
+      "mainSubjects": [
+        "Q533958"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 112.7,
+      "widthCm": 87.6
+    },
+    "rembrandt-rrp-309": {
+      "wikidataId": "Q21528774",
+      "originalTitle": "Portrait of Jan Boursse, Sitting by a Stove",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 47.3,
+      "widthCm": 40.7
+    },
+    "rembrandt-rrp-310": {
+      "wikidataId": "Q19905221",
+      "originalTitle": "A Presumed Sketch for the Male Sitter in the ‘Jewish Bride’",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 38.4,
+      "widthCm": 31.1
+    },
+    "rembrandt-rrp-313": {
+      "wikidataId": "Q3937684",
+      "originalTitle": "Family Portrait",
+      "mainSubjects": [],
+      "genres": [
+        "Q19547247"
+      ],
+      "heightCm": 126.0,
+      "widthCm": 167.0
+    },
+    "rembrandt-rrp-314": {
+      "wikidataId": "Q16913570",
+      "originalTitle": "Lucretia",
+      "mainSubjects": [
+        "Q65548687"
+      ],
+      "genres": [
+        "Q742333"
+      ],
+      "heightCm": 110.2,
+      "widthCm": 92.3
+    },
+    "rembrandt-rrp-315": {
+      "wikidataId": "Q20422149",
+      "originalTitle": "Portrait of a White-haired Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 108.9,
+      "widthCm": 92.7
+    },
+    "rembrandt-rrp-317": {
+      "wikidataId": "Q20651198",
+      "originalTitle": "Portrait of Titus van Rijn",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 72.0,
+      "widthCm": 56.0
+    },
+    "rembrandt-rrp-318": {
+      "wikidataId": "Q18522895",
+      "originalTitle": "Portrait of a Young Woman, possibly Magdalena van Loo",
+      "mainSubjects": [
+        "Q467"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 56.3,
+      "widthCm": 48.0
+    },
+    "rembrandt-rrp-319": {
+      "wikidataId": "Q2872725",
+      "originalTitle": "Self Portrait with Two Circles",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ]
+    },
+    "rembrandt-rrp-320": {
+      "wikidataId": "Q512755",
+      "originalTitle": "The Return of the Prodigal Son",
+      "mainSubjects": [
+        "Q262135"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 262.0,
+      "widthCm": 205.0
+    },
+    "rembrandt-rrp-321": {
+      "wikidataId": "Q3630743",
+      "originalTitle": "Self-Portrait at the Age of 63",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 86.0,
+      "widthCm": 70.5
+    },
+    "rembrandt-rrp-322": {
+      "wikidataId": "Q18226128",
+      "originalTitle": "Self-portrait with Beret",
+      "mainSubjects": [
+        "Q5598"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 74.0,
+      "widthCm": 55.0
+    },
+    "rembrandt-rrp-324": {
+      "wikidataId": "Q9344513",
+      "originalTitle": "Simeon in the Temple",
+      "mainSubjects": [
+        "Q152771"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 98.5,
+      "widthCm": 79.5
+    },
+    "titian-q3903609": {
+      "wikidataId": "Q3903609",
+      "originalTitle": "Endymion and his Flock",
+      "mainSubjects": [
+        "Q272047"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q191163"
+      ],
+      "heightCm": 27.6,
+      "widthCm": 127.6
+    },
+    "titian-q3907473": {
+      "wikidataId": "Q3907473",
+      "originalTitle": "Averoldi Polyptych",
+      "mainSubjects": [
+        "Q154326"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 278.0,
+      "widthCm": 252.0
+    },
+    "titian-q3910929": {
+      "wikidataId": "Q3910929",
+      "originalTitle": "The Presentation of the Virgin at the Temple",
+      "mainSubjects": [
+        "Q1124234"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 345.0,
+      "widthCm": 775.0
+    },
+    "titian-q3925598": {
+      "wikidataId": "Q3925598",
+      "originalTitle": "The Flaying of Marsyas",
+      "mainSubjects": [
+        "Q117011484"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 220.0,
+      "widthCm": 204.0
+    },
+    "titian-q3936368": {
+      "wikidataId": "Q3936368",
+      "originalTitle": "Rest on the Flight into Egypt",
+      "mainSubjects": [
+        "Q3427290"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 46.5,
+      "widthCm": 64.0
+    },
+    "titian-q3937389": {
+      "wikidataId": "Q3937389",
+      "originalTitle": "Giustiniani Portrait",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 58.0,
+      "widthCm": 46.0
+    },
+    "titian-q3937402": {
+      "wikidataId": "Q3937402",
+      "originalTitle": "Portrait of the Venetian Painter Giovanni Bellini (?)",
+      "mainSubjects": [
+        "Q17169"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 80.0,
+      "widthCm": 66.0
+    },
+    "titian-q3937403": {
+      "wikidataId": "Q3937403",
+      "originalTitle": "Portrait of a Man, Hand on His Belt",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 118.0,
+      "widthCm": 96.0
+    },
+    "titian-q3937401": {
+      "wikidataId": "Q3937401",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 94.0,
+      "widthCm": 72.0
+    },
+    "titian-q3937405": {
+      "wikidataId": "Q3937405",
+      "originalTitle": "The physician Gian Giacomo Bartolotti da Parma",
+      "mainSubjects": [
+        "Q102216540"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 88.0,
+      "widthCm": 75.0
+    },
+    "titian-q3937410": {
+      "wikidataId": "Q3937410",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 50.2,
+      "widthCm": 45.1
+    },
+    "titian-q3937409": {
+      "wikidataId": "Q3937409",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 73.7,
+      "widthCm": 62.2
+    },
+    "titian-q3937418": {
+      "wikidataId": "Q3937418",
+      "originalTitle": "Portrait of a Sick Man",
+      "mainSubjects": [
+        "Q814207"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 81.0,
+      "widthCm": 60.0
+    },
+    "titian-q3937416": {
+      "wikidataId": "Q3937416",
+      "originalTitle": "Giorgio Cornaro with a Falcon",
+      "mainSubjects": [
+        "Q89514526"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 109.0,
+      "widthCm": 94.0
+    },
+    "titian-q3937430": {
+      "wikidataId": "Q3937430",
+      "originalTitle": "Portrait of Count Antonio Porcia and Brugnera",
+      "mainSubjects": [
+        "Q124664022"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 105.0,
+      "widthCm": 90.0
+    },
+    "titian-q3937439": {
+      "wikidataId": "Q3937439",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 59.5,
+      "widthCm": 45.5
+    },
+    "titian-q3937456": {
+      "wikidataId": "Q3937456",
+      "originalTitle": "Portrait of Alfonso I d'Este",
+      "mainSubjects": [
+        "Q188346"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q23922": {
+      "wikidataId": "Q23922",
+      "originalTitle": "Woman with a Mirror",
+      "mainSubjects": [
+        "Q73273453"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 99.0,
+      "widthCm": 76.0
+    },
+    "titian-q24090": {
+      "wikidataId": "Q24090",
+      "originalTitle": "The Crowning with Thorns",
+      "mainSubjects": [
+        "Q63977136"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 303.0,
+      "widthCm": 180.0
+    },
+    "titian-q24249": {
+      "wikidataId": "Q24249",
+      "originalTitle": "Madonna of the Rabbit",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 71.0,
+      "widthCm": 87.0
+    },
+    "titian-q3937461": {
+      "wikidataId": "Q3937461",
+      "originalTitle": "Portrait of Andrea dei Franceschi",
+      "mainSubjects": [
+        "Q109996773"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 95.0,
+      "widthCm": 70.0
+    },
+    "titian-q3937464": {
+      "wikidataId": "Q3937464",
+      "originalTitle": "Portrait of Baldassare Castiglione",
+      "mainSubjects": [
+        "Q211133"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 124.0,
+      "widthCm": 97.0
+    },
+    "titian-q3937511": {
+      "wikidataId": "Q3937511",
+      "originalTitle": "Portrait of Eleonora Gonzaga della Rovere",
+      "mainSubjects": [
+        "Q286247"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 114.0,
+      "widthCm": 102.0
+    },
+    "titian-q3937527": {
+      "wikidataId": "Q3937527",
+      "originalTitle": "Portrait of Federico II Gonzaga",
+      "mainSubjects": [
+        "Q932200"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 125.0,
+      "widthCm": 99.0
+    },
+    "titian-q3937531": {
+      "wikidataId": "Q3937531",
+      "originalTitle": "Portrait of Francesco Maria della Rovere",
+      "mainSubjects": [
+        "Q555015"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 114.0,
+      "widthCm": 103.0
+    },
+    "titian-q3937551": {
+      "wikidataId": "Q3937551",
+      "originalTitle": "Portrait of Girolamo Fracastoro",
+      "mainSubjects": [
+        "Q318593"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 84.0,
+      "widthCm": 73.5
+    },
+    "titian-q3937553": {
+      "wikidataId": "Q3937553",
+      "originalTitle": "Portrait of Giulia Varano",
+      "mainSubjects": [
+        "Q16560426"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 113.0,
+      "widthCm": 87.0
+    },
+    "titian-q3937569": {
+      "wikidataId": "Q3937569",
+      "originalTitle": "Portrait of Ippolito de' Medici",
+      "mainSubjects": [
+        "Q378185"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 139.0,
+      "widthCm": 107.0
+    },
+    "titian-q3937574": {
+      "wikidataId": "Q3937574",
+      "originalTitle": "Portrait of Giacomo di Andrea Dolfin",
+      "mainSubjects": [
+        "Q123930035"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 105.0,
+      "widthCm": 91.0
+    },
+    "titian-q3937592": {
+      "wikidataId": "Q3937592",
+      "originalTitle": "Portrait of Laura Dianti",
+      "mainSubjects": [
+        "Q2308903"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 119.0,
+      "widthCm": 93.0
+    },
+    "titian-q3937643": {
+      "wikidataId": "Q3937643",
+      "originalTitle": "Portrait of Pope Paul III",
+      "mainSubjects": [
+        "Q133001"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 106.0,
+      "widthCm": 85.0
+    },
+    "titian-q3937673": {
+      "wikidataId": "Q3937673",
+      "originalTitle": "Portrait of Vincenzo Mosti",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 85.0,
+      "widthCm": 66.0
+    },
+    "titian-q3937697": {
+      "wikidataId": "Q3937697",
+      "originalTitle": "Portrait of a Member of the House of Farnese",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 94.0,
+      "widthCm": 72.0
+    },
+    "titian-q3937710": {
+      "wikidataId": "Q3937710",
+      "originalTitle": "The Supper at Emmaus",
+      "mainSubjects": [
+        "Q16519437"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 169.0,
+      "widthCm": 211.0
+    },
+    "titian-q3937708": {
+      "wikidataId": "Q3937708",
+      "originalTitle": "Portrait of a Young Man",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 100.0,
+      "widthCm": 84.0
+    },
+    "titian-q3937709": {
+      "wikidataId": "Q3937709",
+      "originalTitle": "Portrait of a Young Man",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 81.0,
+      "widthCm": 66.0
+    },
+    "titian-q3937717": {
+      "wikidataId": "Q3937717",
+      "originalTitle": "Portrait of a Young Man",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 20.0,
+      "widthCm": 17.0
+    },
+    "titian-q3937725": {
+      "wikidataId": "Q3937725",
+      "originalTitle": "Portrait of a Man in a Red Cap",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 82.0,
+      "widthCm": 71.0
+    },
+    "titian-q3937746": {
+      "wikidataId": "Q3937746",
+      "originalTitle": "Portrait of Jacopo Sannazaro",
+      "mainSubjects": [
+        "Q510621"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 85.7,
+      "widthCm": 72.7
+    },
+    "titian-q3643957": {
+      "wikidataId": "Q3643957",
+      "originalTitle": "The Bravo",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 75.0,
+      "widthCm": 67.0
+    },
+    "titian-q3677600": {
+      "wikidataId": "Q3677600",
+      "originalTitle": "The Circumcision of Christ",
+      "mainSubjects": [
+        "Q13510036"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 36.8,
+      "widthCm": 79.4
+    },
+    "titian-q3686076": {
+      "wikidataId": "Q3686076",
+      "originalTitle": "The Concert",
+      "mainSubjects": [
+        "Q182832"
+      ],
+      "genres": [
+        "Q134307",
+        "Q1047337"
+      ],
+      "heightCm": 87.0,
+      "widthCm": 124.0
+    },
+    "titian-q3686086": {
+      "wikidataId": "Q3686086",
+      "originalTitle": "Pastoral Concert",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 105.0,
+      "widthCm": 136.5
+    },
+    "titian-q3697619": {
+      "wikidataId": "Q3697619",
+      "originalTitle": "Christ and the Woman Taken in Adultery",
+      "mainSubjects": [
+        "Q492663"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 139.3,
+      "widthCm": 181.7
+    },
+    "titian-q3697665": {
+      "wikidataId": "Q3697665",
+      "originalTitle": "Christ Carrying the Cross",
+      "mainSubjects": [
+        "Q3399226"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 70.0,
+      "widthCm": 100.0
+    },
+    "titian-q3701422": {
+      "wikidataId": "Q3701422",
+      "originalTitle": "Danaë",
+      "mainSubjects": [
+        "Q37739859"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 135.0,
+      "widthCm": 152.0
+    },
+    "titian-q3701421": {
+      "wikidataId": "Q3701421",
+      "originalTitle": "Danaë",
+      "mainSubjects": [
+        "Q37739859"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 120.0,
+      "widthCm": 187.0
+    },
+    "titian-q3705716": {
+      "wikidataId": "Q3705716",
+      "originalTitle": "The Entombment of Christ",
+      "mainSubjects": [
+        "Q51637"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 148.0,
+      "widthCm": 212.0
+    },
+    "titian-q3705722": {
+      "wikidataId": "Q3705722",
+      "originalTitle": "The Entombment",
+      "mainSubjects": [
+        "Q51637"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 136.0,
+      "widthCm": 174.5
+    },
+    "titian-q3743879": {
+      "wikidataId": "Q3743879",
+      "originalTitle": "The Worship of Venus",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376",
+        "Q134307"
+      ],
+      "heightCm": 172.0,
+      "widthCm": 175.0
+    },
+    "titian-q3754066": {
+      "wikidataId": "Q3754066",
+      "originalTitle": "Flight into Egypt",
+      "mainSubjects": [
+        "Q837143"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 206.0,
+      "widthCm": 336.0
+    },
+    "titian-q3766166": {
+      "wikidataId": "Q3766166",
+      "originalTitle": "Young Woman in a Black Dress",
+      "mainSubjects": [
+        "Q73273453"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 59.5,
+      "widthCm": 44.5
+    },
+    "titian-q3771746": {
+      "wikidataId": "Q3771746",
+      "originalTitle": "Justice",
+      "mainSubjects": [
+        "Q6316865"
+      ],
+      "genres": [
+        "Q2839016",
+        "Q2864737"
+      ],
+      "heightCm": 212.0,
+      "widthCm": 346.0
+    },
+    "titian-q3784247": {
+      "wikidataId": "Q3784247",
+      "originalTitle": "La Bella",
+      "mainSubjects": [
+        "Q467"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 89.0,
+      "widthCm": 76.0
+    },
+    "titian-q3805922": {
+      "wikidataId": "Q3805922",
+      "originalTitle": "Jacopo Pesaro, Bishop of Paphos, being presented by Pope Alexander VI to Saint Peter",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 146.0,
+      "widthCm": 184.0
+    },
+    "titian-q3842385": {
+      "wikidataId": "Q3842385",
+      "originalTitle": "Bache Madonna",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 45.7,
+      "widthCm": 54.6
+    },
+    "titian-q3842413": {
+      "wikidataId": "Q3842413",
+      "originalTitle": "Lochis Madonna",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 38.8,
+      "widthCm": 48.3
+    },
+    "titian-q3842423": {
+      "wikidataId": "Q3842423",
+      "originalTitle": "Sciarra Madonna",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 281.0,
+      "widthCm": 195.0
+    },
+    "titian-q3842431": {
+      "wikidataId": "Q3842431",
+      "originalTitle": "The Virgin and Child with St John the Baptist and an Unidentified Saint",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 62.7,
+      "widthCm": 93.0
+    },
+    "titian-q3842561": {
+      "wikidataId": "Q3842561",
+      "originalTitle": "The Virgin and Child between Saint Anthony of Padua and Saint Roch",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 92.0,
+      "widthCm": 133.0
+    },
+    "titian-q3842565": {
+      "wikidataId": "Q3842565",
+      "originalTitle": "Madonna and Child with Four Saints",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 138.0,
+      "widthCm": 191.0
+    },
+    "titian-q3842591": {
+      "wikidataId": "Q3842591",
+      "originalTitle": "Serravalle Altarpiece",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 456.0,
+      "widthCm": 270.0
+    },
+    "titian-q3842692": {
+      "wikidataId": "Q3842692",
+      "originalTitle": "Madonna of the Cherries",
+      "mainSubjects": [
+        "Q117052708"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 81.0,
+      "widthCm": 99.5
+    },
+    "titian-q3842700": {
+      "wikidataId": "Q3842700",
+      "originalTitle": "Madonna of the Roses",
+      "mainSubjects": [
+        "Q3213796"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 69.0,
+      "widthCm": 96.5
+    },
+    "titian-q3842770": {
+      "wikidataId": "Q3842770",
+      "originalTitle": "Madonna and Child with Saint Jerome and Saint Dorothy",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 60.3,
+      "widthCm": 88.9
+    },
+    "titian-q3842771": {
+      "wikidataId": "Q3842771",
+      "originalTitle": "Madonna and Child with Saints Dorothy and George",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 86.0,
+      "widthCm": 130.0
+    },
+    "titian-q3842778": {
+      "wikidataId": "Q3842778",
+      "originalTitle": "The Gypsy Madonna",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 65.5,
+      "widthCm": 83.5
+    },
+    "titian-q3850314": {
+      "wikidataId": "Q3850314",
+      "originalTitle": "The Assassination of Saint Peter Martyr",
+      "mainSubjects": [
+        "Q85141899"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 515.0,
+      "widthCm": 308.0
+    },
+    "titian-q3853758": {
+      "wikidataId": "Q3853758",
+      "originalTitle": "Lucretia and her Husband Lucius Tarquinius Collatinus",
+      "mainSubjects": [
+        "Q65548687"
+      ],
+      "genres": [
+        "Q742333"
+      ],
+      "heightCm": 83.0,
+      "widthCm": 68.0
+    },
+    "titian-q3853901": {
+      "wikidataId": "Q3853901",
+      "originalTitle": "Portrait of Isabella d'Este",
+      "mainSubjects": [
+        "Q593626"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 102.0,
+      "widthCm": 64.0
+    },
+    "titian-q3870475": {
+      "wikidataId": "Q3870475",
+      "originalTitle": "The Birth of Adonis",
+      "mainSubjects": [
+        "Q78165754"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 35.0,
+      "widthCm": 162.0
+    },
+    "titian-q3877895": {
+      "wikidataId": "Q3877895",
+      "originalTitle": "Noli me tangere",
+      "mainSubjects": [
+        "Q124362"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 110.5,
+      "widthCm": 91.9
+    },
+    "titian-q3885620": {
+      "wikidataId": "Q3885620",
+      "originalTitle": "Orpheus and Eurydice",
+      "mainSubjects": [
+        "Q7103994"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 39.0,
+      "widthCm": 53.0
+    },
+    "titian-q3889203": {
+      "wikidataId": "Q3889203",
+      "originalTitle": "Gozzi Altarpiece",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 312.0,
+      "widthCm": 215.0
+    },
+    "titian-q180632": {
+      "wikidataId": "Q180632",
+      "originalTitle": "Pope Paul III and His Grandsons",
+      "mainSubjects": [
+        "Q133001"
+      ],
+      "genres": [
+        "Q19547247",
+        "Q1551015",
+        "Q134307"
+      ],
+      "heightCm": 210.0,
+      "widthCm": 176.0
+    },
+    "titian-q500812": {
+      "wikidataId": "Q500812",
+      "originalTitle": "Sleeping Venus",
+      "mainSubjects": [
+        "Q47652"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 108.5,
+      "widthCm": 175.0
+    },
+    "titian-q572697": {
+      "wikidataId": "Q572697",
+      "originalTitle": "Pesaro Madonna",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 478.0,
+      "widthCm": 268.0
+    },
+    "titian-q603703": {
+      "wikidataId": "Q603703",
+      "originalTitle": "Venus and Adonis",
+      "mainSubjects": [
+        "Q86855398"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 186.0,
+      "widthCm": 207.0
+    },
+    "titian-q698993": {
+      "wikidataId": "Q698993",
+      "originalTitle": "Portrait of Jacopo Strada",
+      "mainSubjects": [
+        "Q574388"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 125.0,
+      "widthCm": 95.0
+    },
+    "titian-q794077": {
+      "wikidataId": "Q794077",
+      "originalTitle": "Sacred and Profane Love",
+      "mainSubjects": [
+        "Q316"
+      ],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 118.0,
+      "widthCm": 279.0
+    },
+    "titian-q973260": {
+      "wikidataId": "Q973260",
+      "originalTitle": "Philip II in Armour",
+      "mainSubjects": [
+        "Q34417"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 193.0,
+      "widthCm": 111.0
+    },
+    "titian-q1112863": {
+      "wikidataId": "Q1112863",
+      "originalTitle": "Aldobrandini Madonna",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 100.6,
+      "widthCm": 142.2
+    },
+    "titian-q1123378": {
+      "wikidataId": "Q1123378",
+      "originalTitle": "Equestrian Portrait of Charles V",
+      "mainSubjects": [
+        "Q32500"
+      ],
+      "genres": [
+        "Q3399515"
+      ],
+      "heightCm": 335.0,
+      "widthCm": 283.0
+    },
+    "titian-q1133103": {
+      "wikidataId": "Q1133103",
+      "originalTitle": "Portrait of the Vendramin Family",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 206.1,
+      "widthCm": 288.5
+    },
+    "titian-q1161477": {
+      "wikidataId": "Q1161477",
+      "originalTitle": "Virgin and Child with Saint Paul",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q2348713"
+      ],
+      "heightCm": 108.0,
+      "widthCm": 96.5
+    },
+    "titian-q1238886": {
+      "wikidataId": "Q1238886",
+      "originalTitle": "Portrait of Gerolamo (?) Barbarigo",
+      "mainSubjects": [
+        "Q50359766"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 81.2,
+      "widthCm": 66.3
+    },
+    "titian-q1633898": {
+      "wikidataId": "Q1633898",
+      "originalTitle": "La Schiavona",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 119.4,
+      "widthCm": 96.5
+    },
+    "titian-q1652981": {
+      "wikidataId": "Q1652981",
+      "originalTitle": "Tarquin and Lucretia",
+      "mainSubjects": [
+        "Q3560343"
+      ],
+      "genres": [
+        "Q742333",
+        "Q3374376"
+      ],
+      "heightCm": 188.9,
+      "widthCm": 145.1
+    },
+    "titian-q1848811": {
+      "wikidataId": "Q1848811",
+      "originalTitle": "Man with a Glove",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 100.0,
+      "widthCm": 89.0
+    },
+    "titian-q2046100": {
+      "wikidataId": "Q2046100",
+      "originalTitle": "Flora",
+      "mainSubjects": [
+        "Q209644"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 79.0,
+      "widthCm": 63.0
+    },
+    "titian-q2459887": {
+      "wikidataId": "Q2459887",
+      "originalTitle": "The Tribute Money",
+      "mainSubjects": [
+        "Q504136"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 75.0,
+      "widthCm": 56.0
+    },
+    "titian-q2466780": {
+      "wikidataId": "Q2466780",
+      "originalTitle": "Venus Anadyomene",
+      "mainSubjects": [
+        "Q483760"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 75.8,
+      "widthCm": 57.6
+    },
+    "titian-q2528145": {
+      "wikidataId": "Q2528145",
+      "originalTitle": "Allegory of Prudence",
+      "mainSubjects": [],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 75.5,
+      "widthCm": 68.4
+    },
+    "titian-q2528177": {
+      "wikidataId": "Q2528177",
+      "originalTitle": "Diana and Actaeon",
+      "mainSubjects": [
+        "Q5271357"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 184.5,
+      "widthCm": 202.2
+    },
+    "titian-q2609585": {
+      "wikidataId": "Q2609585",
+      "originalTitle": "Portrait of Charles V",
+      "mainSubjects": [
+        "Q32500"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 203.5,
+      "widthCm": 122.0
+    },
+    "titian-q2665840": {
+      "wikidataId": "Q2665840",
+      "originalTitle": "Pietà",
+      "mainSubjects": [
+        "Q223689"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 352.0,
+      "widthCm": 349.0
+    },
+    "titian-q2883671": {
+      "wikidataId": "Q2883671",
+      "originalTitle": "Religion saved by Spain",
+      "mainSubjects": [],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 168.0,
+      "widthCm": 168.0
+    },
+    "titian-q2897084": {
+      "wikidataId": "Q2897084",
+      "originalTitle": "Shepherd with a Flute",
+      "mainSubjects": [
+        "Q81710"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 62.4,
+      "widthCm": 49.2
+    },
+    "titian-q2898121": {
+      "wikidataId": "Q2898121",
+      "originalTitle": "The Death of Actaeon",
+      "mainSubjects": [
+        "Q4425724"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 178.8,
+      "widthCm": 197.8
+    },
+    "titian-q2920183": {
+      "wikidataId": "Q2920183",
+      "originalTitle": "Annunciation",
+      "mainSubjects": [
+        "Q154326"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 403.0,
+      "widthCm": 235.0
+    },
+    "titian-q3495790": {
+      "wikidataId": "Q3495790",
+      "originalTitle": "Salome with the Head of John the Baptist",
+      "mainSubjects": [
+        "Q108739900"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 90.0,
+      "widthCm": 72.0
+    },
+    "titian-q3605571": {
+      "wikidataId": "Q3605571",
+      "originalTitle": "Virgin and Child with Saints Anthony Abbot, Jerome and Francis",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 102.8,
+      "widthCm": 139.0
+    },
+    "titian-q3612410": {
+      "wikidataId": "Q3612410",
+      "originalTitle": "Allegory of Marriage",
+      "mainSubjects": [],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 123.0,
+      "widthCm": 107.0
+    },
+    "titian-q3618192": {
+      "wikidataId": "Q3618192",
+      "originalTitle": "Malchiostro Annunciation",
+      "mainSubjects": [
+        "Q154326"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 179.0,
+      "widthCm": 207.0
+    },
+    "titian-q3627399": {
+      "wikidataId": "Q3627399",
+      "originalTitle": "Assumption of the Virgin",
+      "mainSubjects": [
+        "Q162691"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 394.0,
+      "widthCm": 222.0
+    },
+    "titian-q3632485": {
+      "wikidataId": "Q3632485",
+      "originalTitle": "The Bacchanal of the Andrians",
+      "mainSubjects": [
+        "Q331341"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 175.0,
+      "widthCm": 193.0
+    },
+    "titian-q3636748": {
+      "wikidataId": "Q3636748",
+      "originalTitle": "Baptism of Christ",
+      "mainSubjects": [
+        "Q217048"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 115.0,
+      "widthCm": 89.0
+    },
+    "titian-q3937752": {
+      "wikidataId": "Q3937752",
+      "originalTitle": "Portrait of a Musician",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 99.0,
+      "widthCm": 81.0
+    },
+    "titian-q3937761": {
+      "wikidataId": "Q3937761",
+      "originalTitle": "Knight of Malta",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 80.0,
+      "widthCm": 64.0
+    },
+    "titian-q3944495": {
+      "wikidataId": "Q3944495",
+      "originalTitle": "The Holy Family with a Shepherd",
+      "mainSubjects": [
+        "Q618057"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 99.1,
+      "widthCm": 139.1
+    },
+    "titian-q3944515": {
+      "wikidataId": "Q3944515",
+      "originalTitle": "Balbi Holy Conversation",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 138.0,
+      "widthCm": 185.0
+    },
+    "titian-q3946910": {
+      "wikidataId": "Q3946910",
+      "originalTitle": "Saint Christopher",
+      "mainSubjects": [
+        "Q193507"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 310.0,
+      "widthCm": 186.0
+    },
+    "titian-q3947211": {
+      "wikidataId": "Q3947211",
+      "originalTitle": "Saint George",
+      "mainSubjects": [
+        "Q2509393"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 128.0,
+      "widthCm": 67.0
+    },
+    "titian-q3947319": {
+      "wikidataId": "Q3947319",
+      "originalTitle": "St. Jerome in Penitence",
+      "mainSubjects": [
+        "Q57269677"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 80.0,
+      "widthCm": 102.0
+    },
+    "titian-q3947595": {
+      "wikidataId": "Q3947595",
+      "originalTitle": "Saint Mark Enthroned",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 230.0,
+      "widthCm": 149.0
+    },
+    "titian-q3954943": {
+      "wikidataId": "Q3954943",
+      "originalTitle": "The Legend of Polydoros",
+      "mainSubjects": [
+        "Q346634"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 35.0,
+      "widthCm": 162.0
+    },
+    "titian-q3973584": {
+      "wikidataId": "Q3973584",
+      "originalTitle": "Saint Francis Receiving the Stigmata",
+      "mainSubjects": [
+        "Q26714817"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 281.0,
+      "widthCm": 195.0
+    },
+    "titian-q3998115": {
+      "wikidataId": "Q3998115",
+      "originalTitle": "The Three Ages of Man",
+      "mainSubjects": [
+        "Q65465035"
+      ],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 90.0,
+      "widthCm": 150.7
+    },
+    "titian-q3998923": {
+      "wikidataId": "Q3998923",
+      "originalTitle": "Detroit Trio",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 84.0,
+      "widthCm": 69.0
+    },
+    "titian-q4008601": {
+      "wikidataId": "Q4008601",
+      "originalTitle": "Vanity",
+      "mainSubjects": [
+        "Q1321250"
+      ],
+      "genres": [
+        "Q2839016",
+        "Q733095"
+      ],
+      "heightCm": 97.0,
+      "widthCm": 81.2
+    },
+    "titian-q4009570": {
+      "wikidataId": "Q4009570",
+      "originalTitle": "Venus and Adonis",
+      "mainSubjects": [
+        "Q86855398"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 106.7,
+      "widthCm": 133.4
+    },
+    "titian-q4009569": {
+      "wikidataId": "Q4009569",
+      "originalTitle": "Venus and Adonis",
+      "mainSubjects": [
+        "Q86855398"
+      ],
+      "genres": [
+        "Q3374376"
+      ]
+    },
+    "titian-q4009572": {
+      "wikidataId": "Q4009572",
+      "originalTitle": "Venus and Adonis",
+      "mainSubjects": [
+        "Q86855398"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 106.8,
+      "widthCm": 136.0
+    },
+    "titian-q4009577": {
+      "wikidataId": "Q4009577",
+      "originalTitle": "Venus and Cupid",
+      "mainSubjects": [
+        "Q117007545"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 111.0,
+      "widthCm": 139.0
+    },
+    "titian-q4013804": {
+      "wikidataId": "Q4013804",
+      "originalTitle": "Violante",
+      "mainSubjects": [
+        "Q16747429"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 65.0,
+      "widthCm": 51.0
+    },
+    "titian-q4161055": {
+      "wikidataId": "Q4161055",
+      "originalTitle": "Diana and Callisto",
+      "mainSubjects": [
+        "Q26831404"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ]
+    },
+    "titian-q4252531": {
+      "wikidataId": "Q4252531",
+      "originalTitle": "Portrait of Cardinal Pietro Bembo",
+      "mainSubjects": [
+        "Q334188"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 94.5,
+      "widthCm": 76.5
+    },
+    "titian-q4317643": {
+      "wikidataId": "Q4317643",
+      "originalTitle": "Carrying of the Cross",
+      "mainSubjects": [
+        "Q3399226"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 89.0,
+      "widthCm": 77.0
+    },
+    "titian-q4411819": {
+      "wikidataId": "Q4411819",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 242.0,
+      "widthCm": 361.0
+    },
+    "titian-q4448822": {
+      "wikidataId": "Q4448822",
+      "originalTitle": "Penitent Magdalene",
+      "mainSubjects": [
+        "Q5989722"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 119.0,
+      "widthCm": 97.0
+    },
+    "titian-q4722116": {
+      "wikidataId": "Q4722116",
+      "originalTitle": "Alfonso d'Avalos Addressing his Troops",
+      "mainSubjects": [
+        "Q358614"
+      ],
+      "genres": [
+        "Q742333"
+      ],
+      "heightCm": 223.0,
+      "widthCm": 165.0
+    },
+    "titian-q5128805": {
+      "wikidataId": "Q5128805",
+      "originalTitle": "Portrait of Clarissa Strozzi",
+      "mainSubjects": [
+        "Q133829817"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 115.0,
+      "widthCm": 98.0
+    },
+    "titian-q5189812": {
+      "wikidataId": "Q5189812",
+      "originalTitle": "Crucifixion",
+      "mainSubjects": [
+        "Q51636"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 371.0,
+      "widthCm": 197.0
+    },
+    "titian-q5703292": {
+      "wikidataId": "Q5703292",
+      "originalTitle": "Archangel Raphael and Tobias",
+      "mainSubjects": [
+        "Q3530155"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 170.0,
+      "widthCm": 149.0
+    },
+    "titian-q5812626": {
+      "wikidataId": "Q5812626",
+      "originalTitle": "Mater Dolorosa with Clapsed Hands",
+      "mainSubjects": [
+        "Q1196075"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 68.0,
+      "widthCm": 61.0
+    },
+    "titian-q5963585": {
+      "wikidataId": "Q5963585",
+      "originalTitle": "La Gloria",
+      "mainSubjects": [
+        "Q37090"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 346.0,
+      "widthCm": 240.0
+    },
+    "titian-q6051752": {
+      "wikidataId": "Q6051752",
+      "originalTitle": "The Agony in the Garden",
+      "mainSubjects": [
+        "Q2467856"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 176.0,
+      "widthCm": 136.0
+    },
+    "titian-q6137282": {
+      "wikidataId": "Q6137282",
+      "originalTitle": "Sisyphus",
+      "mainSubjects": [
+        "Q102561"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 237.0,
+      "widthCm": 216.0
+    },
+    "titian-q6728397": {
+      "wikidataId": "Q6728397",
+      "originalTitle": "Madonna and Child with Saints Luke and Catherine of Alexandria",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 127.8,
+      "widthCm": 169.7
+    },
+    "titian-q7232270": {
+      "wikidataId": "Q7232270",
+      "originalTitle": "Portrait of Giacomo Doria",
+      "mainSubjects": [
+        "Q123479038"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 115.5,
+      "widthCm": 97.7
+    },
+    "titian-q7232280": {
+      "wikidataId": "Q7232280",
+      "originalTitle": "Portrait of Isabella of Portugal",
+      "mainSubjects": [
+        "Q331575"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 117.0,
+      "widthCm": 98.0
+    },
+    "titian-q7232287": {
+      "wikidataId": "Q7232287",
+      "originalTitle": "Portrait of Lavinia Vecellio",
+      "mainSubjects": [
+        "Q17072485"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 85.0,
+      "widthCm": 75.0
+    },
+    "titian-q7232305": {
+      "wikidataId": "Q7232305",
+      "originalTitle": "Portrait of Pietro Aretino",
+      "mainSubjects": [
+        "Q296272"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 96.7,
+      "widthCm": 77.6
+    },
+    "titian-q7401416": {
+      "wikidataId": "Q7401416",
+      "originalTitle": "Saint Jerome in Penitence",
+      "mainSubjects": [
+        "Q57269677"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 235.0,
+      "widthCm": 125.0
+    },
+    "titian-q52209260": {
+      "wikidataId": "Q52209260",
+      "originalTitle": "The Rokeby Venus and Adonis",
+      "mainSubjects": [
+        "Q86855398"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 150.0,
+      "widthCm": 200.0
+    },
+    "titian-q52219668": {
+      "wikidataId": "Q52219668",
+      "originalTitle": "Nicolò Zen (1515-1565)",
+      "mainSubjects": [
+        "Q16854442"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 125.7,
+      "widthCm": 96.8
+    },
+    "titian-q52252724": {
+      "wikidataId": "Q52252724",
+      "originalTitle": "An Unknown Cardinal",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 97.0,
+      "widthCm": 66.0
+    },
+    "titian-q52253159": {
+      "wikidataId": "Q52253159",
+      "originalTitle": "An Unknown Man in a Black Plumed Hat",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 70.5,
+      "widthCm": 63.0
+    },
+    "titian-q57530584": {
+      "wikidataId": "Q57530584",
+      "originalTitle": "Saint Dominic",
+      "mainSubjects": [
+        "Q44091"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q134307"
+      ],
+      "heightCm": 97.0,
+      "widthCm": 80.0
+    },
+    "titian-q58182190": {
+      "wikidataId": "Q58182190",
+      "originalTitle": "Venus and Adonis",
+      "mainSubjects": [
+        "Q86855398"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 175.5,
+      "widthCm": 198.0
+    },
+    "titian-q58241051": {
+      "wikidataId": "Q58241051",
+      "originalTitle": "Penitent Magdalene",
+      "mainSubjects": [
+        "Q5989722"
+      ],
+      "genres": [
+        "Q2864737"
+      ]
+    },
+    "titian-q59499752": {
+      "wikidataId": "Q59499752",
+      "originalTitle": "Daniele Barbaro",
+      "mainSubjects": [
+        "Q378870"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 85.8,
+      "widthCm": 71.5
+    },
+    "titian-q59675894": {
+      "wikidataId": "Q59675894",
+      "originalTitle": "The Adoration of the Magi",
+      "mainSubjects": [
+        "Q488841"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 141.0,
+      "widthCm": 219.0
+    },
+    "titian-q59676166": {
+      "wikidataId": "Q59676166",
+      "originalTitle": "Christ as the Gardener",
+      "mainSubjects": [
+        "Q302"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 68.0,
+      "widthCm": 62.0
+    },
+    "titian-q60840776": {
+      "wikidataId": "Q60840776",
+      "originalTitle": "Crucifixion",
+      "mainSubjects": [
+        "Q51636"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 219.0,
+      "widthCm": 111.0
+    },
+    "titian-q60840797": {
+      "wikidataId": "Q60840797",
+      "originalTitle": "Christ and the Good Thief",
+      "mainSubjects": [
+        "Q51636"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 137.0,
+      "widthCm": 149.0
+    },
+    "titian-q61767320": {
+      "wikidataId": "Q61767320",
+      "originalTitle": "Annunciation",
+      "mainSubjects": [
+        "Q154326"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 166.0,
+      "widthCm": 266.0
+    },
+    "titian-q64515617": {
+      "wikidataId": "Q64515617",
+      "originalTitle": "Portrait of a Bearded Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 80.6,
+      "widthCm": 70.5
+    },
+    "titian-q64515825": {
+      "wikidataId": "Q64515825",
+      "originalTitle": "Man Holding a Flute",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 100.2,
+      "widthCm": 77.6
+    },
+    "titian-q64515836": {
+      "wikidataId": "Q64515836",
+      "originalTitle": "Judith with the Head of Holofernes",
+      "mainSubjects": [
+        "Q13077250"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 113.0,
+      "widthCm": 95.3
+    },
+    "titian-q64528257": {
+      "wikidataId": "Q64528257",
+      "originalTitle": "Antoine Perrenot de Granvelle",
+      "mainSubjects": [
+        "Q451178"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 111.3,
+      "widthCm": 88.27
+    },
+    "titian-q64766792": {
+      "wikidataId": "Q64766792",
+      "originalTitle": "Portrait of Cardinal Alessandro Farnese",
+      "mainSubjects": [
+        "Q248459"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 97.0,
+      "widthCm": 73.0
+    },
+    "titian-q65128903": {
+      "wikidataId": "Q65128903",
+      "originalTitle": "The Descent of the Holy Spirit",
+      "mainSubjects": [
+        "Q65560542"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 570.0
+    },
+    "titian-q65130492": {
+      "wikidataId": "Q65130492",
+      "originalTitle": "Wisdom",
+      "mainSubjects": [
+        "Q799"
+      ],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 177.0,
+      "widthCm": 177.0
+    },
+    "titian-q66829562": {
+      "wikidataId": "Q66829562",
+      "originalTitle": "Portrait of Pope Paul III",
+      "mainSubjects": [
+        "Q133001"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q67561470": {
+      "wikidataId": "Q67561470",
+      "originalTitle": "Portrait of Antonio Cardinal Pallavicini",
+      "mainSubjects": [
+        "Q2345146"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 131.0,
+      "widthCm": 115.0
+    },
+    "titian-q77980588": {
+      "wikidataId": "Q77980588",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 73.4,
+      "widthCm": 56.0
+    },
+    "titian-q78644404": {
+      "wikidataId": "Q78644404",
+      "originalTitle": "Christ Shown to the People (Ecce Homo)",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 109.2,
+      "widthCm": 94.8
+    },
+    "titian-q78663115": {
+      "wikidataId": "Q78663115",
+      "originalTitle": "Portrait of a Lady and her Daughter",
+      "mainSubjects": [
+        "Q115558587"
+      ],
+      "genres": [
+        "Q19968941"
+      ],
+      "heightCm": 88.3,
+      "widthCm": 80.6
+    },
+    "titian-q79394822": {
+      "wikidataId": "Q79394822",
+      "originalTitle": "Portrait of a Cardinal",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 58.5,
+      "widthCm": 51.8
+    },
+    "titian-q81794155": {
+      "wikidataId": "Q81794155",
+      "originalTitle": "Portrait of Alfonso I d'Este",
+      "mainSubjects": [
+        "Q188346"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 133.0,
+      "widthCm": 111.0
+    },
+    "titian-q7401417": {
+      "wikidataId": "Q7401417",
+      "originalTitle": "Saint Jerome in Penitence",
+      "mainSubjects": [
+        "Q57269677"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 177.0,
+      "widthCm": 184.0
+    },
+    "titian-q7401482": {
+      "wikidataId": "Q7401482",
+      "originalTitle": "Saint John the Baptist",
+      "mainSubjects": [
+        "Q66481349"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 201.0,
+      "widthCm": 134.0
+    },
+    "titian-q7402169": {
+      "wikidataId": "Q7402169",
+      "originalTitle": "Saint Sebastian",
+      "mainSubjects": [
+        "Q65508996"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 210.0,
+      "widthCm": 115.5
+    },
+    "titian-q7422486": {
+      "wikidataId": "Q7422486",
+      "originalTitle": "Portrait of Cardinal Cristoforo Madruzzo",
+      "mainSubjects": [
+        "Q683106"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 210.0,
+      "widthCm": 110.0
+    },
+    "titian-q7447991": {
+      "wikidataId": "Q7447991",
+      "originalTitle": "Self-Portrait",
+      "mainSubjects": [
+        "Q47551"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 86.0,
+      "widthCm": 65.0
+    },
+    "titian-q7594135": {
+      "wikidataId": "Q7594135",
+      "originalTitle": "Saint Margaret and the Dragon",
+      "mainSubjects": [
+        "Q297742"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 209.0,
+      "widthCm": 183.0
+    },
+    "titian-q7750471": {
+      "wikidataId": "Q7750471",
+      "originalTitle": "The Martyrdom of Saint Lawrence",
+      "mainSubjects": [
+        "Q124726119"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 493.0,
+      "widthCm": 277.0
+    },
+    "titian-q7758761": {
+      "wikidataId": "Q7758761",
+      "originalTitle": "Tityus",
+      "mainSubjects": [
+        "Q112143886"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 253.0,
+      "widthCm": 217.0
+    },
+    "titian-q7920573": {
+      "wikidataId": "Q7920573",
+      "originalTitle": "Venus Blindfolding Cupid",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 118.0,
+      "widthCm": 185.0
+    },
+    "titian-q7920622": {
+      "wikidataId": "Q7920622",
+      "originalTitle": "Venus and Music",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376",
+        "Q2839016",
+        "Q40446"
+      ],
+      "heightCm": 138.0,
+      "widthCm": 222.4
+    },
+    "titian-q7920648": {
+      "wikidataId": "Q7920648",
+      "originalTitle": "Venus with a Mirror",
+      "mainSubjects": [
+        "Q27539800"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 124.5,
+      "widthCm": 105.5
+    },
+    "titian-q8011454": {
+      "wikidataId": "Q8011454",
+      "originalTitle": "Self-Portrait",
+      "mainSubjects": [
+        "Q47551"
+      ],
+      "genres": [
+        "Q192110"
+      ],
+      "heightCm": 96.0,
+      "widthCm": 75.0
+    },
+    "titian-q9140602": {
+      "wikidataId": "Q9140602",
+      "originalTitle": "The Fall of Man",
+      "mainSubjects": [
+        "Q1135949"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q40446"
+      ],
+      "heightCm": 240.0,
+      "widthCm": 186.0
+    },
+    "titian-q9248648": {
+      "wikidataId": "Q9248648",
+      "originalTitle": "Girl with a Platter of Fruit",
+      "mainSubjects": [
+        "Q73273453"
+      ],
+      "genres": [
+        "Q134307",
+        "Q1047337"
+      ],
+      "heightCm": 106.2,
+      "widthCm": 84.8
+    },
+    "titian-q9372007": {
+      "wikidataId": "Q9372007",
+      "originalTitle": "Jupiter and Antiope",
+      "mainSubjects": [
+        "Q1713752"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 196.0,
+      "widthCm": 385.0
+    },
+    "titian-q10296499": {
+      "wikidataId": "Q10296499",
+      "originalTitle": "The Crowning with Thorns",
+      "mainSubjects": [
+        "Q63977136"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 280.0,
+      "widthCm": 182.0
+    },
+    "titian-q11091772": {
+      "wikidataId": "Q11091772",
+      "originalTitle": "Pilgrims at Emmaus",
+      "mainSubjects": [
+        "Q16519437"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 169.0,
+      "widthCm": 244.0
+    },
+    "titian-q11136256": {
+      "wikidataId": "Q11136256",
+      "originalTitle": "Portrait of a Young Englishman",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 111.0,
+      "widthCm": 93.0
+    },
+    "titian-q11694943": {
+      "wikidataId": "Q11694943",
+      "originalTitle": "Doge Antonio Grimani Kneeling Before the Faith",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 365.0,
+      "widthCm": 500.0
+    },
+    "titian-q11824945": {
+      "wikidataId": "Q11824945",
+      "originalTitle": "Portrait of Doge Francesco Venier",
+      "mainSubjects": [
+        "Q774070"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 114.0,
+      "widthCm": 99.0
+    },
+    "titian-q12115903": {
+      "wikidataId": "Q12115903",
+      "originalTitle": "Cupid with the Wheel of Time",
+      "mainSubjects": [
+        "Q5011"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 66.0,
+      "widthCm": 55.3
+    },
+    "titian-q12146958": {
+      "wikidataId": "Q12146958",
+      "originalTitle": "Portrait of Ranuccio Farnese",
+      "mainSubjects": [
+        "Q708666"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 89.7,
+      "widthCm": 73.6
+    },
+    "titian-q14425553": {
+      "wikidataId": "Q14425553",
+      "originalTitle": "Danaë",
+      "mainSubjects": [
+        "Q37739859"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 129.8,
+      "widthCm": 181.2
+    },
+    "titian-q14425558": {
+      "wikidataId": "Q14425558",
+      "originalTitle": "Danaë",
+      "mainSubjects": [
+        "Q37739859"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 117.0,
+      "widthCm": 69.0
+    },
+    "titian-q15008032": {
+      "wikidataId": "Q15008032",
+      "originalTitle": "The Feast of the Gods",
+      "mainSubjects": [
+        "Q16980544"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 170.2,
+      "widthCm": 188.0
+    },
+    "titian-q15974339": {
+      "wikidataId": "Q15974339",
+      "originalTitle": "Penitent Magdalene",
+      "mainSubjects": [
+        "Q5989722"
+      ],
+      "genres": [
+        "Q2864737",
+        "Q40446"
+      ],
+      "heightCm": 84.0,
+      "widthCm": 69.0
+    },
+    "titian-q15974340": {
+      "wikidataId": "Q15974340",
+      "originalTitle": "Virgin and Child with Saints Stephen, Jerome and Maurice",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 110.0,
+      "widthCm": 137.0
+    },
+    "titian-q16467999": {
+      "wikidataId": "Q16467999",
+      "originalTitle": "Portrait of Ambassador Gabriel de Luetz d'Aramont",
+      "mainSubjects": [
+        "Q3094028"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 76.0,
+      "widthCm": 74.0
+    },
+    "titian-q16564804": {
+      "wikidataId": "Q16564804",
+      "originalTitle": "Christ Appearing to his Mother after his Resurrection",
+      "mainSubjects": [
+        "Q4536025"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 277.0,
+      "widthCm": 178.0
+    },
+    "titian-q16574831": {
+      "wikidataId": "Q16574831",
+      "originalTitle": "Virgin and Child with Saints Stephen, Jerome and Maurice",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 92.5,
+      "widthCm": 138.0
+    },
+    "titian-q17072626": {
+      "wikidataId": "Q17072626",
+      "originalTitle": "Portrait of a Lady in White",
+      "mainSubjects": [
+        "Q5533758"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 102.0,
+      "widthCm": 86.0
+    },
+    "titian-q18573255": {
+      "wikidataId": "Q18573255",
+      "originalTitle": "Portrait of Francis I",
+      "mainSubjects": [
+        "Q129857"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 109.0,
+      "widthCm": 89.0
+    },
+    "titian-q18689394": {
+      "wikidataId": "Q18689394",
+      "originalTitle": "The Virgin suckling the Infant Christ",
+      "mainSubjects": [
+        "Q1576172"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 76.2,
+      "widthCm": 63.5
+    },
+    "titian-q18689393": {
+      "wikidataId": "Q18689393",
+      "originalTitle": "The Tribute Money",
+      "mainSubjects": [
+        "Q504136"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 112.2,
+      "widthCm": 103.2
+    },
+    "titian-q18689396": {
+      "wikidataId": "Q18689396",
+      "originalTitle": "Venus with the Organ Player",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 115.0,
+      "widthCm": 210.0
+    },
+    "titian-q85860175": {
+      "wikidataId": "Q85860175",
+      "originalTitle": "Cain and Abel",
+      "mainSubjects": [
+        "Q717996"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 292.0,
+      "widthCm": 282.0
+    },
+    "titian-q86674529": {
+      "wikidataId": "Q86674529",
+      "originalTitle": "Sacrifice of Isaac",
+      "mainSubjects": [
+        "Q5007906"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 328.0,
+      "widthCm": 284.5
+    },
+    "titian-q86674601": {
+      "wikidataId": "Q86674601",
+      "originalTitle": "David and Goliath",
+      "mainSubjects": [
+        "Q13472331"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 300.0
+    },
+    "titian-q97061149": {
+      "wikidataId": "Q97061149",
+      "originalTitle": "Portrait of Giulia Gonzaga",
+      "mainSubjects": [
+        "Q2264063"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 92.0,
+      "widthCm": 81.0
+    },
+    "titian-q101193889": {
+      "wikidataId": "Q101193889",
+      "originalTitle": "Portrait of King Philip II of Spain",
+      "mainSubjects": [
+        "Q34417"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q105518134": {
+      "wikidataId": "Q105518134",
+      "originalTitle": "Portrait of Pietro Aretino",
+      "mainSubjects": [
+        "Q296272"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 58.5,
+      "widthCm": 46.5
+    },
+    "titian-q106130077": {
+      "wikidataId": "Q106130077",
+      "originalTitle": "Tarquin and Lucretia",
+      "mainSubjects": [
+        "Q3560343"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q742333"
+      ],
+      "heightCm": 114.0,
+      "widthCm": 100.0
+    },
+    "titian-q106364543": {
+      "wikidataId": "Q106364543",
+      "originalTitle": "Maltese Dog",
+      "mainSubjects": [
+        "Q38751"
+      ],
+      "genres": [
+        "Q16875712"
+      ],
+      "heightCm": 22.0,
+      "widthCm": 29.0
+    },
+    "titian-q106649932": {
+      "wikidataId": "Q106649932",
+      "originalTitle": "Portrait of Charles V",
+      "mainSubjects": [
+        "Q32500"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 98.0,
+      "widthCm": 71.0
+    },
+    "titian-q106684238": {
+      "wikidataId": "Q106684238",
+      "originalTitle": "Portrait of Pope Paul III with Camauro",
+      "mainSubjects": [
+        "Q133001"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q106766906": {
+      "wikidataId": "Q106766906",
+      "originalTitle": "Portrait of Cardinal Pietro Bembo",
+      "mainSubjects": [
+        "Q334188"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 114.0,
+      "widthCm": 97.0
+    },
+    "titian-q106766907": {
+      "wikidataId": "Q106766907",
+      "originalTitle": "Penitent Magdalene",
+      "mainSubjects": [
+        "Q5989722"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 128.0,
+      "widthCm": 103.0
+    },
+    "titian-q106766908": {
+      "wikidataId": "Q106766908",
+      "originalTitle": "Annunciation",
+      "mainSubjects": [
+        "Q154326"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 281.5,
+      "widthCm": 193.5
+    },
+    "titian-q106881550": {
+      "wikidataId": "Q106881550",
+      "originalTitle": "An Idyll:  A Mother and a Halberdier in a Wooded Landscape",
+      "mainSubjects": [],
+      "genres": []
+    },
+    "titian-q107436262": {
+      "wikidataId": "Q107436262",
+      "originalTitle": "Andrea Navagero (1438-1529)",
+      "mainSubjects": [
+        "Q172308"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 70.0,
+      "widthCm": 51.5
+    },
+    "titian-q107436593": {
+      "wikidataId": "Q107436593",
+      "originalTitle": "Portrait of a Young Man",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q107436869": {
+      "wikidataId": "Q107436869",
+      "originalTitle": "Portrait of the Venetian Admiral Giovanni Moro",
+      "mainSubjects": [
+        "Q124675497"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 83.0,
+      "widthCm": 67.0
+    },
+    "titian-q108335985": {
+      "wikidataId": "Q108335985",
+      "originalTitle": "Portrait of Pietro Aretino",
+      "mainSubjects": [
+        "Q296272"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 65.0,
+      "widthCm": 53.5
+    },
+    "titian-q109928591": {
+      "wikidataId": "Q109928591",
+      "originalTitle": "Holy Family with Saints Catherine of Alexandria and John the Baptist",
+      "mainSubjects": [
+        "Q618057"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 126.0
+    },
+    "titian-q114601165": {
+      "wikidataId": "Q114601165",
+      "originalTitle": "Tobias and the Angel",
+      "mainSubjects": [
+        "Q3530155"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 193.0,
+      "widthCm": 130.0
+    },
+    "titian-q115593466": {
+      "wikidataId": "Q115593466",
+      "originalTitle": "The Martyrdom of Saint Lawrence",
+      "mainSubjects": [
+        "Q124726119"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 415.0,
+      "widthCm": 297.5
+    },
+    "titian-q115632253": {
+      "wikidataId": "Q115632253",
+      "originalTitle": "Portrait of Pope Paul III",
+      "mainSubjects": [
+        "Q133001"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q115673024": {
+      "wikidataId": "Q115673024",
+      "originalTitle": "Diana and Callisto",
+      "mainSubjects": [
+        "Q26831404"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 156.0,
+      "widthCm": 142.0
+    },
+    "titian-q115673771": {
+      "wikidataId": "Q115673771",
+      "originalTitle": "Study for Allegory of Marriage",
+      "mainSubjects": [],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 100.0,
+      "widthCm": 101.0
+    },
+    "titian-q115676509": {
+      "wikidataId": "Q115676509",
+      "originalTitle": "Madonna and Child with Saint Agnes and Saint John the Baptist",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 128.0,
+      "widthCm": 161.0
+    },
+    "titian-q115787659": {
+      "wikidataId": "Q115787659",
+      "originalTitle": "Portrait of Pope Julius II",
+      "mainSubjects": [
+        "Q80516"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 100.0,
+      "widthCm": 82.5
+    },
+    "titian-q116774690": {
+      "wikidataId": "Q116774690",
+      "originalTitle": "Portrait of Nicolas Perrenot de Granvelle",
+      "mainSubjects": [
+        "Q1355746"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 105.0,
+      "widthCm": 86.0
+    },
+    "titian-q118680483": {
+      "wikidataId": "Q118680483",
+      "originalTitle": "Head of a Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 47.0,
+      "widthCm": 40.5
+    },
+    "titian-q118874839": {
+      "wikidataId": "Q118874839",
+      "originalTitle": "The Triumph of Love",
+      "mainSubjects": [
+        "Q56860959"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q2839016"
+      ],
+      "heightCm": 88.3,
+      "widthCm": 88.3
+    },
+    "titian-q20565519": {
+      "wikidataId": "Q20565519",
+      "originalTitle": "Saint Catherine of Alexandria at Prayer",
+      "mainSubjects": [
+        "Q179718"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 119.1,
+      "widthCm": 100.0
+    },
+    "titian-q20810177": {
+      "wikidataId": "Q20810177",
+      "originalTitle": "Portrait of Cardinal Filippo Archinto",
+      "mainSubjects": [
+        "Q1238866"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 114.8,
+      "widthCm": 88.7
+    },
+    "titian-q20891426": {
+      "wikidataId": "Q20891426",
+      "originalTitle": "The Temptation of Christ",
+      "mainSubjects": [
+        "Q2158299"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 89.85,
+      "widthCm": 69.69
+    },
+    "titian-q21711457": {
+      "wikidataId": "Q21711457",
+      "originalTitle": "The penitent Saint Jerome",
+      "mainSubjects": [
+        "Q57269677"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 138.0,
+      "widthCm": 97.0
+    },
+    "titian-q21711487": {
+      "wikidataId": "Q21711487",
+      "originalTitle": "Portrait of Antonio Anselmi",
+      "mainSubjects": [
+        "Q110313193"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 75.0,
+      "widthCm": 63.0
+    },
+    "titian-q21725095": {
+      "wikidataId": "Q21725095",
+      "originalTitle": "Madonna and Child with Mary Magdalene",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 98.0,
+      "widthCm": 82.0
+    },
+    "titian-q21733159": {
+      "wikidataId": "Q21733159",
+      "originalTitle": "Portrait of a Young Woman",
+      "mainSubjects": [
+        "Q73273453"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 96.0,
+      "widthCm": 75.0
+    },
+    "titian-q22337546": {
+      "wikidataId": "Q22337546",
+      "originalTitle": "Portrait of Pier Luigi Farnese",
+      "mainSubjects": [
+        "Q364023"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 111.0,
+      "widthCm": 87.0
+    },
+    "titian-q22337545": {
+      "wikidataId": "Q22337545",
+      "originalTitle": "Portrait of Philip II",
+      "mainSubjects": [
+        "Q34417"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 187.0,
+      "widthCm": 98.5
+    },
+    "titian-q24939843": {
+      "wikidataId": "Q24939843",
+      "originalTitle": "Portrait of Giulio Romano",
+      "mainSubjects": [
+        "Q215305"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 101.0,
+      "widthCm": 85.0
+    },
+    "titian-q26492355": {
+      "wikidataId": "Q26492355",
+      "originalTitle": "A Boy with a Bird",
+      "mainSubjects": [],
+      "genres": [
+        "Q1622217",
+        "Q191163"
+      ],
+      "heightCm": 34.9,
+      "widthCm": 48.9
+    },
+    "titian-q26706221": {
+      "wikidataId": "Q26706221",
+      "originalTitle": "The Music Lesson",
+      "mainSubjects": [
+        "Q555027"
+      ],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 99.0,
+      "widthCm": 120.0
+    },
+    "titian-q26712700": {
+      "wikidataId": "Q26712700",
+      "originalTitle": "Portrait of Fabrizio Salvaresio",
+      "mainSubjects": [
+        "Q26709038"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 112.0,
+      "widthCm": 88.0
+    },
+    "titian-q26715011": {
+      "wikidataId": "Q26715011",
+      "originalTitle": "Christ and the Adulteress",
+      "mainSubjects": [
+        "Q492663"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 82.5,
+      "widthCm": 136.5
+    },
+    "titian-q26831225": {
+      "wikidataId": "Q26831225",
+      "originalTitle": "Salome",
+      "mainSubjects": [
+        "Q108739900"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 86.4,
+      "widthCm": 73.7
+    },
+    "titian-q26831241": {
+      "wikidataId": "Q26831241",
+      "originalTitle": "Salome",
+      "mainSubjects": [
+        "Q108739900"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 87.0,
+      "widthCm": 80.0
+    },
+    "titian-q26899274": {
+      "wikidataId": "Q26899274",
+      "originalTitle": "Portrait of Benedetto Varchi",
+      "mainSubjects": [
+        "Q176833"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 117.0,
+      "widthCm": 91.0
+    },
+    "titian-q27697924": {
+      "wikidataId": "Q27697924",
+      "originalTitle": "Daniele Barbaro, Patriarch of Aquileia",
+      "mainSubjects": [
+        "Q378870"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 81.0,
+      "widthCm": 69.0
+    },
+    "titian-q27697966": {
+      "wikidataId": "Q27697966",
+      "originalTitle": "Knight with a Clock",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 122.0,
+      "widthCm": 101.0
+    },
+    "titian-q27697977": {
+      "wikidataId": "Q27697977",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 69.0,
+      "widthCm": 56.0
+    },
+    "titian-q27698003": {
+      "wikidataId": "Q27698003",
+      "originalTitle": "John Frederick I, Elector of Saxony",
+      "mainSubjects": [
+        "Q506182"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 129.0,
+      "widthCm": 93.0
+    },
+    "titian-q27698013": {
+      "wikidataId": "Q27698013",
+      "originalTitle": "Venus with an Organist and Cupid",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 150.2,
+      "widthCm": 218.2
+    },
+    "titian-q27698030": {
+      "wikidataId": "Q27698030",
+      "originalTitle": "Saint John the Baptist",
+      "mainSubjects": [
+        "Q66481349"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 195.0,
+      "widthCm": 127.5
+    },
+    "titian-q27698057": {
+      "wikidataId": "Q27698057",
+      "originalTitle": "Saint Catherine of Alexandria",
+      "mainSubjects": [
+        "Q179718"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 135.0,
+      "widthCm": 98.0
+    },
+    "titian-q27698075": {
+      "wikidataId": "Q27698075",
+      "originalTitle": "Christ on the Way to Calvary",
+      "mainSubjects": [
+        "Q3399226"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 98.0,
+      "widthCm": 116.0
+    },
+    "titian-q27698083": {
+      "wikidataId": "Q27698083",
+      "originalTitle": "Mater Dolorosa with her Hands apart",
+      "mainSubjects": [
+        "Q1196075"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 68.0,
+      "widthCm": 53.0
+    },
+    "titian-q27698396": {
+      "wikidataId": "Q27698396",
+      "originalTitle": "Christ carrying the Cross",
+      "mainSubjects": [
+        "Q3399226"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 67.0,
+      "widthCm": 77.0
+    },
+    "titian-q27698531": {
+      "wikidataId": "Q27698531",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 100.5,
+      "widthCm": 100.8
+    },
+    "titian-q119454838": {
+      "wikidataId": "Q119454838",
+      "originalTitle": "The Adoration of the Shepherds",
+      "mainSubjects": [
+        "Q1029715"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 93.7,
+      "widthCm": 112.0
+    },
+    "titian-q119455186": {
+      "wikidataId": "Q119455186",
+      "originalTitle": "Angel",
+      "mainSubjects": [
+        "Q284865",
+        "Q235113"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 41.0,
+      "widthCm": 24.5
+    },
+    "titian-q120199477": {
+      "wikidataId": "Q120199477",
+      "originalTitle": "Portrait of a Venetian admiral, probably Francesco Duodo",
+      "mainSubjects": [
+        "Q3749936"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 87.2,
+      "widthCm": 77.0
+    },
+    "titian-q123671285": {
+      "wikidataId": "Q123671285",
+      "originalTitle": "Resurrection of Christ",
+      "mainSubjects": [
+        "Q51624"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 145.0,
+      "widthCm": 88.0
+    },
+    "titian-q123709241": {
+      "wikidataId": "Q123709241",
+      "originalTitle": "Portrait of Pier Luigi Farnese",
+      "mainSubjects": [
+        "Q364023"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 100.0,
+      "widthCm": 77.0
+    },
+    "titian-q123737542": {
+      "wikidataId": "Q123737542",
+      "originalTitle": "Adoration of the Magi",
+      "mainSubjects": [
+        "Q488841"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 223.0,
+      "widthCm": 120.0
+    },
+    "titian-q18822501": {
+      "wikidataId": "Q18822501",
+      "originalTitle": "Tarquin and Lucretia",
+      "mainSubjects": [
+        "Q3560343"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q742333"
+      ],
+      "heightCm": 193.0,
+      "widthCm": 143.0
+    },
+    "titian-q18917829": {
+      "wikidataId": "Q18917829",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 60.0,
+      "widthCm": 46.2
+    },
+    "titian-q19798137": {
+      "wikidataId": "Q19798137",
+      "originalTitle": "Portrait of Charles V with a Dog",
+      "mainSubjects": [
+        "Q32500"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 194.0,
+      "widthCm": 112.7
+    },
+    "titian-q19857390": {
+      "wikidataId": "Q19857390",
+      "originalTitle": "Portrait of Pietro Aretino",
+      "mainSubjects": [
+        "Q296272"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 99.0,
+      "widthCm": 82.0
+    },
+    "titian-q19904807": {
+      "wikidataId": "Q19904807",
+      "originalTitle": "Portrait of Cardinal Filippo Archinto",
+      "mainSubjects": [
+        "Q1238866"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 118.1,
+      "widthCm": 94.0
+    },
+    "titian-q19925273": {
+      "wikidataId": "Q19925273",
+      "originalTitle": "Boy with Dogs in a Landscape",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307",
+        "Q16875712"
+      ]
+    },
+    "titian-q20068831": {
+      "wikidataId": "Q20068831",
+      "originalTitle": "Nymph and Shepherd",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 149.6,
+      "widthCm": 187.0
+    },
+    "titian-q20069326": {
+      "wikidataId": "Q20069326",
+      "originalTitle": "Girl in a Fur",
+      "mainSubjects": [
+        "Q73273453"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 95.5,
+      "widthCm": 63.7
+    },
+    "titian-q20069327": {
+      "wikidataId": "Q20069327",
+      "originalTitle": "John Frederick, Elector of Saxony",
+      "mainSubjects": [
+        "Q506182"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 103.5,
+      "widthCm": 83.0
+    },
+    "titian-q20088065": {
+      "wikidataId": "Q20088065",
+      "originalTitle": "Portrait of Alfonso d'Avalos, Marchese del Vasto, in Armor with a Page",
+      "mainSubjects": [
+        "Q670504"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 110.0,
+      "widthCm": 80.0
+    },
+    "titian-q20176286": {
+      "wikidataId": "Q20176286",
+      "originalTitle": "Vincenzo Cappello",
+      "mainSubjects": [
+        "Q4013144"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 141.0,
+      "widthCm": 118.1
+    },
+    "titian-q20176414": {
+      "wikidataId": "Q20176414",
+      "originalTitle": "Doge Andrea Gritti",
+      "mainSubjects": [
+        "Q345506"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 133.6,
+      "widthCm": 103.2
+    },
+    "titian-q20176536": {
+      "wikidataId": "Q20176536",
+      "originalTitle": "Woman Holding an Apple",
+      "mainSubjects": [
+        "Q467"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 97.8,
+      "widthCm": 73.8
+    },
+    "titian-q20181478": {
+      "wikidataId": "Q20181478",
+      "originalTitle": "The Penitent Magdalene",
+      "mainSubjects": [
+        "Q5989722"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 106.7,
+      "widthCm": 93.0
+    },
+    "titian-q20202606": {
+      "wikidataId": "Q20202606",
+      "originalTitle": "Portrait of a Friend of Titian, Marco Mantova Benevides",
+      "mainSubjects": [
+        "Q3846244"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 90.2,
+      "widthCm": 72.4
+    },
+    "titian-q20266718": {
+      "wikidataId": "Q20266718",
+      "originalTitle": "Portrait of a Lady",
+      "mainSubjects": [
+        "Q467"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 63.5,
+      "widthCm": 51.8
+    },
+    "titian-q20423120": {
+      "wikidataId": "Q20423120",
+      "originalTitle": "A monk with a book",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 84.5,
+      "widthCm": 74.5
+    },
+    "titian-q20426993": {
+      "wikidataId": "Q20426993",
+      "originalTitle": "Portrait of Willibald Imhoff",
+      "mainSubjects": [
+        "Q2581324"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 113.5,
+      "widthCm": 93.5
+    },
+    "titian-q20565485": {
+      "wikidataId": "Q20565485",
+      "originalTitle": "Portrait of a Man Holding a Book",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 97.8,
+      "widthCm": 77.2
+    },
+    "titian-q133273884": {
+      "wikidataId": "Q133273884",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 96.0,
+      "widthCm": 79.0
+    },
+    "titian-q133281009": {
+      "wikidataId": "Q133281009",
+      "originalTitle": "Saint John the Almoner",
+      "mainSubjects": [
+        "Q372668"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 264.0,
+      "widthCm": 148.0
+    },
+    "titian-q133857279": {
+      "wikidataId": "Q133857279",
+      "originalTitle": "Portrait of Sperone Speroni",
+      "mainSubjects": [
+        "Q352663"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 100.0,
+      "widthCm": 78.5
+    },
+    "titian-q136402646": {
+      "wikidataId": "Q136402646",
+      "originalTitle": "Portrait of a man with a black cap",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 46.5,
+      "widthCm": 36.5
+    },
+    "titian-q136408710": {
+      "wikidataId": "Q136408710",
+      "originalTitle": "Portrait of the Sculptor Martino Pasqualigo",
+      "mainSubjects": [
+        "Q130331663"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 79.3,
+      "widthCm": 63.5
+    },
+    "titian-q136445881": {
+      "wikidataId": "Q136445881",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 88.8,
+      "widthCm": 70.1
+    },
+    "titian-q136684512": {
+      "wikidataId": "Q136684512",
+      "originalTitle": "Portrait of Guidobaldo II della Rovere, Duke of Urbino (1514–1574), and his son, Francesco Maria II (1549–1631)",
+      "mainSubjects": [
+        "Q1397788"
+      ],
+      "genres": [
+        "Q19968941",
+        "Q134307",
+        "Q19547247"
+      ],
+      "heightCm": 198.0,
+      "widthCm": 113.0
+    },
+    "titian-q136722700": {
+      "wikidataId": "Q136722700",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 81.3,
+      "widthCm": 66.7
+    },
+    "titian-q136786290": {
+      "wikidataId": "Q136786290",
+      "originalTitle": "Portrait of a Man",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 127.2,
+      "widthCm": 97.2
+    },
+    "titian-q136840231": {
+      "wikidataId": "Q136840231",
+      "originalTitle": "Venus with a Mirror",
+      "mainSubjects": [
+        "Q27539800"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 115.0,
+      "widthCm": 84.0
+    },
+    "titian-q138601134": {
+      "wikidataId": "Q138601134",
+      "originalTitle": "Angel with a Tambourine",
+      "mainSubjects": [
+        "Q235113"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 98.2,
+      "widthCm": 66.8
+    },
+    "titian-q139378210": {
+      "wikidataId": "Q139378210",
+      "originalTitle": "Portrait of Mary of Hungary",
+      "mainSubjects": [
+        "Q157077"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q27698568": {
+      "wikidataId": "Q27698568",
+      "originalTitle": "The Burial of Christ",
+      "mainSubjects": [
+        "Q51637"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 130.0,
+      "widthCm": 168.0
+    },
+    "titian-q27698572": {
+      "wikidataId": "Q27698572",
+      "originalTitle": "Philip II offering the Infante don Fernando to the Heavens",
+      "mainSubjects": [],
+      "genres": [
+        "Q2839016"
+      ],
+      "heightCm": 335.0,
+      "widthCm": 274.0
+    },
+    "titian-q27899250": {
+      "wikidataId": "Q27899250",
+      "originalTitle": "Castello Roganzuolo Altarpiece",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ]
+    },
+    "titian-q27919787": {
+      "wikidataId": "Q27919787",
+      "originalTitle": "Man with Ermine Coat",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 115.8,
+      "widthCm": 89.0
+    },
+    "titian-q27954980": {
+      "wikidataId": "Q27954980",
+      "originalTitle": "Secretary",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 76.0,
+      "widthCm": 66.0
+    },
+    "titian-q27971261": {
+      "wikidataId": "Q27971261",
+      "originalTitle": "Adoration of the Christ Child",
+      "mainSubjects": [
+        "Q51628"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 46.0,
+      "widthCm": 39.0
+    },
+    "titian-q27974639": {
+      "wikidataId": "Q27974639",
+      "originalTitle": "Christ Blessing",
+      "mainSubjects": [
+        "Q51625"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 96.0,
+      "widthCm": 80.0
+    },
+    "titian-q27979720": {
+      "wikidataId": "Q27979720",
+      "originalTitle": "The Son of the Orator Francesco Filetto",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 89.0,
+      "widthCm": 67.0
+    },
+    "titian-q27980674": {
+      "wikidataId": "Q27980674",
+      "originalTitle": "Portrait of the Orator Francesco Filetto",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 83.0,
+      "widthCm": 63.0
+    },
+    "titian-q27980679": {
+      "wikidataId": "Q27980679",
+      "originalTitle": "Pope Paul III Farnese (1468-1549)",
+      "mainSubjects": [
+        "Q133001"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 89.0,
+      "widthCm": 78.0
+    },
+    "titian-q28034377": {
+      "wikidataId": "Q28034377",
+      "originalTitle": "The Lovers",
+      "mainSubjects": [],
+      "genres": [
+        "Q1047337"
+      ],
+      "heightCm": 74.5,
+      "widthCm": 65.2
+    },
+    "titian-q28035502": {
+      "wikidataId": "Q28035502",
+      "originalTitle": "Madonna and Child in a Landscape with Tobias and the Angel",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 85.2,
+      "widthCm": 120.3
+    },
+    "titian-q28045350": {
+      "wikidataId": "Q28045350",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 65.5,
+      "widthCm": 53.0
+    },
+    "titian-q28147005": {
+      "wikidataId": "Q28147005",
+      "originalTitle": "The Resurrected Christ",
+      "mainSubjects": [
+        "Q51624"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 133.2,
+      "widthCm": 83.2
+    },
+    "titian-q28148539": {
+      "wikidataId": "Q28148539",
+      "originalTitle": "Christ on Mount Olive",
+      "mainSubjects": [
+        "Q2467856"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 177.0,
+      "widthCm": 146.0
+    },
+    "titian-q28769138": {
+      "wikidataId": "Q28769138",
+      "originalTitle": "Portrait of a Man in Armor",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 85.2,
+      "widthCm": 68.3
+    },
+    "titian-q29477231": {
+      "wikidataId": "Q29477231",
+      "originalTitle": "Madonna and Child in an Evening Landscape",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 173.5,
+      "widthCm": 132.7
+    },
+    "titian-q29939692": {
+      "wikidataId": "Q29939692",
+      "originalTitle": "St. Magdalene as Penitent",
+      "mainSubjects": [
+        "Q5989722"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 125.5,
+      "widthCm": 93.4
+    },
+    "titian-q29953862": {
+      "wikidataId": "Q29953862",
+      "originalTitle": "Portrait of a Gentleman",
+      "mainSubjects": [
+        "Q1716875"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 89.3,
+      "widthCm": 74.3
+    },
+    "titian-q30093868": {
+      "wikidataId": "Q30093868",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 101.6,
+      "widthCm": 88.7
+    },
+    "titian-q30095359": {
+      "wikidataId": "Q30095359",
+      "originalTitle": "Venus and Cupid with a Mirror",
+      "mainSubjects": [
+        "Q27539800"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 116.5,
+      "widthCm": 101.0
+    },
+    "titian-q33003546": {
+      "wikidataId": "Q33003546",
+      "originalTitle": "Portrait of a General - Man in Military Costume",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 229.0
+    },
+    "titian-q34191856": {
+      "wikidataId": "Q34191856",
+      "originalTitle": "Perseus and Andromeda",
+      "mainSubjects": [
+        "Q26988394"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 183.3,
+      "widthCm": 199.3
+    },
+    "titian-q39751814": {
+      "wikidataId": "Q39751814",
+      "originalTitle": "Portrait of Marcantonio Trevisan, Doge of Venice",
+      "mainSubjects": [
+        "Q732524"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 86.5,
+      "widthCm": 100.0
+    },
+    "titian-q46943496": {
+      "wikidataId": "Q46943496",
+      "originalTitle": "King Philip II of Spain",
+      "mainSubjects": [
+        "Q34417"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 107.2,
+      "widthCm": 92.7
+    },
+    "titian-q47007884": {
+      "wikidataId": "Q47007884",
+      "originalTitle": "Portrait of a Venetian Gentleman (overpainted)",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 108.0,
+      "widthCm": 91.4
+    },
+    "titian-q49278215": {
+      "wikidataId": "Q49278215",
+      "originalTitle": "Portrait of Guidobaldo II della Rovere, Duke of Urbino",
+      "mainSubjects": [
+        "Q1397788"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 60.3,
+      "widthCm": 48.3
+    },
+    "titian-q49278270": {
+      "wikidataId": "Q49278270",
+      "originalTitle": "Diana and Callisto",
+      "mainSubjects": [
+        "Q26831404"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 68.58,
+      "widthCm": 66.04
+    },
+    "titian-q50323209": {
+      "wikidataId": "Q50323209",
+      "originalTitle": "Portrait of Lavinia",
+      "mainSubjects": [
+        "Q17072485"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q50323217": {
+      "wikidataId": "Q50323217",
+      "originalTitle": "Portrait of the paint dealer Alvise dalla Scala",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 138.0,
+      "widthCm": 116.0
+    },
+    "titian-q50422860": {
+      "wikidataId": "Q50422860",
+      "originalTitle": "Portrait of Pope Sixtus IV",
+      "mainSubjects": [
+        "Q163514"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 109.5,
+      "widthCm": 87.0
+    },
+    "titian-q50811851": {
+      "wikidataId": "Q50811851",
+      "originalTitle": "Venus and Cupid with a lute-player",
+      "mainSubjects": [],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 150.5,
+      "widthCm": 196.8
+    },
+    "titian-q50880887": {
+      "wikidataId": "Q50880887",
+      "originalTitle": "Man in Armour (Gregorio Vecellio?)",
+      "mainSubjects": [
+        "Q17074728"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 65.0,
+      "widthCm": 58.0
+    },
+    "titian-q50891699": {
+      "wikidataId": "Q50891699",
+      "originalTitle": "Portrait of Settimia Jacovacci (?)",
+      "mainSubjects": [
+        "Q467"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 80.0,
+      "widthCm": 61.5
+    },
+    "titian-q50947291": {
+      "wikidataId": "Q50947291",
+      "originalTitle": "Saint John the Baptist",
+      "mainSubjects": [
+        "Q66481349"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 174.5,
+      "widthCm": 128.0
+    },
+    "titian-q123751969": {
+      "wikidataId": "Q123751969",
+      "originalTitle": "Christ the Redeemer",
+      "mainSubjects": [
+        "Q7305703"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 77.0,
+      "widthCm": 57.0
+    },
+    "titian-q123753616": {
+      "wikidataId": "Q123753616",
+      "originalTitle": "Adoration of the Shepherds",
+      "mainSubjects": [
+        "Q1029715"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 95.0,
+      "widthCm": 112.5
+    },
+    "titian-q123765367": {
+      "wikidataId": "Q123765367",
+      "originalTitle": "Saint John the Baptist",
+      "mainSubjects": [
+        "Q66481349"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 185.0,
+      "widthCm": 114.0
+    },
+    "titian-q123905131": {
+      "wikidataId": "Q123905131",
+      "originalTitle": "Possible portrait of Giovanni d'Anna",
+      "mainSubjects": [
+        "Q123903903"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 105.8,
+      "widthCm": 79.5
+    },
+    "titian-q123912954": {
+      "wikidataId": "Q123912954",
+      "originalTitle": "Portrait of Bishop Ludovico Beccadelli",
+      "mainSubjects": [
+        "Q3839087"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 117.5,
+      "widthCm": 97.0
+    },
+    "titian-q123966044": {
+      "wikidataId": "Q123966044",
+      "originalTitle": "Venus with Cupid",
+      "mainSubjects": [
+        "Q117007545"
+      ],
+      "genres": [
+        "Q3374376",
+        "Q40446"
+      ],
+      "heightCm": 139.2,
+      "widthCm": 195.5
+    },
+    "titian-q124043063": {
+      "wikidataId": "Q124043063",
+      "originalTitle": "Portrait of Ippolito Riminaldi",
+      "mainSubjects": [
+        "Q59524584"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 113.0,
+      "widthCm": 93.0
+    },
+    "titian-q124056690": {
+      "wikidataId": "Q124056690",
+      "originalTitle": "Saint Francis Receiving the Stigmata",
+      "mainSubjects": [
+        "Q26714817"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 298.0,
+      "widthCm": 177.0
+    },
+    "titian-q124102355": {
+      "wikidataId": "Q124102355",
+      "originalTitle": "Adoration of the Christ Child",
+      "mainSubjects": [
+        "Q51628"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 19.1,
+      "widthCm": 16.2
+    },
+    "titian-q124152267": {
+      "wikidataId": "Q124152267",
+      "originalTitle": "Ecce Homo",
+      "mainSubjects": [
+        "Q534805"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 71.0,
+      "widthCm": 54.6
+    },
+    "titian-q124218595": {
+      "wikidataId": "Q124218595",
+      "originalTitle": "Scourged Christ",
+      "mainSubjects": [
+        "Q5791726",
+        "Q2033105"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 87.0,
+      "widthCm": 62.5
+    },
+    "titian-q124261369": {
+      "wikidataId": "Q124261369",
+      "originalTitle": "Altarpiece of San Nicolò della Lattuga",
+      "mainSubjects": [
+        "Q370665"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 388.0,
+      "widthCm": 270.0
+    },
+    "titian-q124286611": {
+      "wikidataId": "Q124286611",
+      "originalTitle": "Portrait of a Member of the House of Minerbetti",
+      "mainSubjects": [],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 179.0,
+      "widthCm": 114.0
+    },
+    "titian-q124287319": {
+      "wikidataId": "Q124287319",
+      "originalTitle": "Madonna and Child",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 124.0,
+      "widthCm": 96.0
+    },
+    "titian-q124370149": {
+      "wikidataId": "Q124370149",
+      "originalTitle": "Portrait of Gabriele Giolito de' Ferrari",
+      "mainSubjects": [
+        "Q1490296"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 115.6,
+      "widthCm": 94.3
+    },
+    "titian-q124630890": {
+      "wikidataId": "Q124630890",
+      "originalTitle": "The Madonna and Child with a Female Saint and the Infant Saint John the Baptist",
+      "mainSubjects": [
+        "Q9309699"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 105.4,
+      "widthCm": 148.3
+    },
+    "titian-q124940185": {
+      "wikidataId": "Q124940185",
+      "originalTitle": "Danaë",
+      "mainSubjects": [
+        "Q37739859"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 187.0,
+      "widthCm": 204.5
+    },
+    "titian-q124969652": {
+      "wikidataId": "Q124969652",
+      "originalTitle": "Portrait of Cardinal Pietro Bembo",
+      "mainSubjects": [
+        "Q334188"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 116.2,
+      "widthCm": 96.5
+    },
+    "titian-q125340053": {
+      "wikidataId": "Q125340053",
+      "originalTitle": "Saint Margaret and the Dragon",
+      "mainSubjects": [
+        "Q297742"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 210.0,
+      "widthCm": 170.0
+    },
+    "titian-q125889519": {
+      "wikidataId": "Q125889519",
+      "originalTitle": "Crucifixion with Three Angels",
+      "mainSubjects": [
+        "Q51636"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 21.5,
+      "widthCm": 16.5
+    },
+    "titian-q126476490": {
+      "wikidataId": "Q126476490",
+      "originalTitle": "The Penitent Magdalene",
+      "mainSubjects": [
+        "Q5989722"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 122.0,
+      "widthCm": 96.0
+    },
+    "titian-q127385022": {
+      "wikidataId": "Q127385022",
+      "originalTitle": "Portrait of a Bearded Man",
+      "mainSubjects": [
+        "Q8441"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 95.8,
+      "widthCm": 72.0
+    },
+    "titian-q127433409": {
+      "wikidataId": "Q127433409",
+      "originalTitle": "Last Supper",
+      "mainSubjects": [
+        "Q51633"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 163.0,
+      "widthCm": 104.0
+    },
+    "titian-q130891266": {
+      "wikidataId": "Q130891266",
+      "originalTitle": "Portrait of a Gentleman",
+      "mainSubjects": [
+        "Q749212"
+      ],
+      "genres": [
+        "Q134307"
+      ],
+      "heightCm": 87.0,
+      "widthCm": 71.1
+    },
+    "titian-q131584743": {
+      "wikidataId": "Q131584743",
+      "originalTitle": "Evening Landscape with Couple",
+      "mainSubjects": [],
+      "genres": [
+        "Q191163"
+      ],
+      "heightCm": 34.1,
+      "widthCm": 58.0
+    },
+    "titian-q131613579": {
+      "wikidataId": "Q131613579",
+      "originalTitle": "Cherub",
+      "mainSubjects": [
+        "Q185569"
+      ],
+      "genres": []
+    },
+    "titian-q131613786": {
+      "wikidataId": "Q131613786",
+      "originalTitle": "Mascarons",
+      "mainSubjects": [
+        "Q1365301"
+      ],
+      "genres": []
+    },
+    "titian-q131613914": {
+      "wikidataId": "Q131613914",
+      "originalTitle": "Simbolo dell'Evangelista Luca (toro)",
+      "mainSubjects": [
+        "Q60594377"
+      ],
+      "genres": []
+    },
+    "titian-q131613915": {
+      "wikidataId": "Q131613915",
+      "originalTitle": "Simbolo dell'Evangelista Marco (leone)",
+      "mainSubjects": [
+        "Q1861098"
+      ],
+      "genres": []
+    },
+    "titian-q131613913": {
+      "wikidataId": "Q131613913",
+      "originalTitle": "Simbolo dell'Evangelista Giovanni (aquila)",
+      "mainSubjects": [
+        "Q9098119"
+      ],
+      "genres": []
+    },
+    "titian-q131613916": {
+      "wikidataId": "Q131613916",
+      "originalTitle": "Simbolo dell'Evangelista Matteo (angelo)",
+      "mainSubjects": [
+        "Q60594452"
+      ],
+      "genres": []
+    },
+    "titian-q133258148": {
+      "wikidataId": "Q133258148",
+      "originalTitle": "The Mater Dolorosa",
+      "mainSubjects": [
+        "Q1196075"
+      ],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 67.8,
+      "widthCm": 56.7
+    },
+    "titian-q653930": {
+      "wikidataId": "Q653930",
+      "originalTitle": "The Jealous Husband",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 340.0,
+      "widthCm": 185.0
+    },
+    "titian-q3858712": {
+      "wikidataId": "Q3858712",
+      "originalTitle": "Miracle of the Newborn Infant",
+      "mainSubjects": [],
+      "genres": [
+        "Q2864737"
+      ],
+      "heightCm": 340.0,
+      "widthCm": 355.0
+    },
+    "rembrandt-q123786559": {
+      "wikidataId": "Q123786559",
+      "originalTitle": "Portrait of Jan Willemsz van der Pluym",
+      "mainSubjects": [
+        "Q130235586"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-q123786572": {
+      "wikidataId": "Q123786572",
+      "originalTitle": "Portrait of Jaapgen Carelsdr.",
+      "mainSubjects": [
+        "Q130235580"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "titian-q27980685": {
+      "wikidataId": "Q27980685",
+      "originalTitle": "Mars, Venus and Amor",
+      "mainSubjects": [
+        "Q117011210"
+      ],
+      "genres": [
+        "Q3374376"
+      ],
+      "heightCm": 97.0,
+      "widthCm": 109.0
+    },
+    "rembrandt-gold-chain": {
+      "wikidataId": "Q14911808",
+      "originalTitle": "Half-figure of a Man Wearing a Gorget and Plumed Hat",
+      "mainSubjects": [
+        "Q17330745"
+      ],
+      "genres": [
+        "Q134307"
+      ]
+    },
+    "rembrandt-rrp-82": {
+      "wikidataId": "Q21406264",
+      "originalTitle": "Study of an Old Man with a Gold Chain",
+      "mainSubjects": [],
+      "genres": [
+        "Q1433099"
+      ],
+      "heightCm": 59.3,
+      "widthCm": 49.3
+    }
+  }
+}

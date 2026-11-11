@@ -73,6 +73,18 @@ export const atlasSchema = z.object({
       description: z.string(),
       sourceUrl: z.string(),
       note: z.string().default(""),
+      guide: z
+        .object({
+          background: z.string(),
+          story: z.string(),
+          looking: z.array(z.string()).min(1),
+          scope: z.enum(["individual", "contextual"]),
+          scopeNote: z.string().optional(),
+          sources: z
+            .array(z.object({ label: z.string(), url: z.string().url() }))
+            .min(1),
+        })
+        .optional(),
       imageStatus: z.literal("unavailable").optional(),
     }),
   ),

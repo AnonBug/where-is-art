@@ -14163,39 +14163,39 @@
       }
     },
     {
-      "id": "rembrandt-rrp-58-whole",
-      "artworkId": "rembrandt-rrp-58",
+      "id": "rembrandt-rrp-82-whole",
+      "artworkId": "rembrandt-rrp-82",
       "role": "whole",
       "label": "全图",
       "order": 0,
-      "width": 3476,
+      "width": 3158,
       "height": 3840,
       "thumbnail": {
-        "url": "media/masters/rembrandt-rrp-58/323a2caf04c8/thumb.webp",
+        "url": "media/masters/rembrandt-rrp-82/20f86c947393/thumb.webp",
         "width": 320,
         "height": 320,
-        "bytes": 6286,
-        "sha256": "c0d944c166d107bde0676b17483d5275281a6e7defdec76b819037f969839dfc"
+        "bytes": 4300,
+        "sha256": "8facdf82920b87f90d821470e108711067c7f29b5c939d8126efff65184c069d"
       },
       "preview": {
-        "url": "media/masters/rembrandt-rrp-58/323a2caf04c8/preview.webp",
-        "width": 1158,
+        "url": "media/masters/rembrandt-rrp-82/20f86c947393/preview.webp",
+        "width": 1053,
         "height": 1280,
-        "bytes": 94080,
-        "sha256": "5700f48d9ed3b17ddf406e9c09e443587cc9000d464e794ebc802095c90344ea"
+        "bytes": 48034,
+        "sha256": "088e417cf5363b0e3e4b75bec5d8767a09a656ecdc101023293c7e7f5409f68e"
       },
       "delivery": {
         "kind": "image",
         "format": "jpeg",
-        "url": "media/masters/rembrandt-rrp-58/323a2caf04c8/detail.jpg",
-        "width": 3476,
+        "url": "media/masters/rembrandt-rrp-82/20f86c947393/detail.jpg",
+        "width": 3158,
         "height": 3840,
-        "bytes": 1200340,
-        "sha256": "b63ba9f80501151727b6b1615cf5cf7e6cc96acda375e856807bbcad3e8a1534"
+        "bytes": 826409,
+        "sha256": "95e48ddfd32c23619d3611162ea49c4ec5dc697adb356b8803b2a53ac90c8dde"
       },
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Old_Man_with_a_Gold_Chain_-_Google_Art_Project.jpg",
-      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Rembrandt_Harmensz._van_Rijn_-_Old_Man_with_a_Gold_Chain_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "sourceHash": "323a2caf04c8b1501c3b6928a69484701dd640f05bbcd2eee8ab5bdf66792114",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rembrandt_Study_of_an_Old_Man_with_a_Gold_Chain_-_GK_233.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Rembrandt_Study_of_an_Old_Man_with_a_Gold_Chain_-_GK_233.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "20f86c947393c06d3ab240f53e9806dbad50869d77c52eefff4835b81e1eb23d",
       "credit": "Rembrandt / Wikimedia Commons；网页版本经缩放、格式转换，缩略图经裁切。",
       "licenseLabel": "Public domain",
       "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
@@ -14203,9 +14203,9 @@
       "publicationStatus": "cleared",
       "processing": {
         "profile": "masters-v1-jpeg84-webp84-3840",
-        "sourceWidth": 3787,
-        "sourceHeight": 4184,
-        "sourceBytes": 4324751,
+        "sourceWidth": 4934,
+        "sourceHeight": 6000,
+        "sourceBytes": 4048044,
         "longestEdgeLimit": 3840,
         "note": "保留原比例与来源许可；不放大原图；缩略图为裁切图，预览与全图为完整画面。"
       }

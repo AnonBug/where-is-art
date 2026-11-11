@@ -8162,24 +8162,6 @@
       "md5": "6fc08e7590b63a85a53af7dd07d8b065"
     },
     {
-      "url": "media/masters/rembrandt-rrp-58/323a2caf04c8/detail.jpg",
-      "bytes": 1200340,
-      "sha256": "b63ba9f80501151727b6b1615cf5cf7e6cc96acda375e856807bbcad3e8a1534",
-      "md5": "037d67c2fc043fd24a3dd29ca482a1aa"
-    },
-    {
-      "url": "media/masters/rembrandt-rrp-58/323a2caf04c8/preview.webp",
-      "bytes": 94080,
-      "sha256": "5700f48d9ed3b17ddf406e9c09e443587cc9000d464e794ebc802095c90344ea",
-      "md5": "219adc4a263cb026b7ba335afb481fe7"
-    },
-    {
-      "url": "media/masters/rembrandt-rrp-58/323a2caf04c8/thumb.webp",
-      "bytes": 6286,
-      "sha256": "c0d944c166d107bde0676b17483d5275281a6e7defdec76b819037f969839dfc",
-      "md5": "83fa62c6554b9c62a364127995928382"
-    },
-    {
       "url": "media/masters/rembrandt-rrp-59/ebc1134767eb/detail.jpg",
       "bytes": 983004,
       "sha256": "562983885d5f04b2751c3d0089ce7e13b47222aeb55f49b6e34961f92a4191aa",
@@ -8718,6 +8700,24 @@
       "bytes": 5170,
       "sha256": "0271fb9af07bbf5ef68e18b1e7ca5d74a6524feafe29022e75071ef9e45d455c",
       "md5": "68d43b41d84fa841fda220dd254cde5d"
+    },
+    {
+      "url": "media/masters/rembrandt-rrp-82/20f86c947393/detail.jpg",
+      "bytes": 826409,
+      "sha256": "95e48ddfd32c23619d3611162ea49c4ec5dc697adb356b8803b2a53ac90c8dde",
+      "md5": "f9d9e5437b9531e0f5db117e2591cd48"
+    },
+    {
+      "url": "media/masters/rembrandt-rrp-82/20f86c947393/preview.webp",
+      "bytes": 48034,
+      "sha256": "088e417cf5363b0e3e4b75bec5d8767a09a656ecdc101023293c7e7f5409f68e",
+      "md5": "b2887353a2696862067efe04ec4b2c57"
+    },
+    {
+      "url": "media/masters/rembrandt-rrp-82/20f86c947393/thumb.webp",
+      "bytes": 4300,
+      "sha256": "8facdf82920b87f90d821470e108711067c7f29b5c939d8126efff65184c069d",
+      "md5": "804157196083831fd3d5e077585d85d2"
     },
     {
       "url": "media/masters/rembrandt-rrp-83/9b60168feb4a/detail.jpg",

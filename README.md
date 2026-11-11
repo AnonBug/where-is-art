@@ -4,6 +4,10 @@ React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 
 
 [在线浏览](https://anonbug.github.io/where-is-art/) · [GitHub 仓库](https://github.com/AnonBug/where-is-art)
 
+作品信息提供「背景、人物与题材、怎么看这幅画」三部分导读。大图浏览的信息面板直接显示文字，手机竖屏最多占 74% 视口高度；收藏位置说明、参考资料、图像署名及版权默认折叠在「来源与版权」中。普通作品详情仍保留预览图。
+
+4.3.0 为全部 933 条记录加入导读：349 条按具体作品资料整理（提香 80、伦勃朗 90、其他画家 179），另 584 条明确标为背景导读。后者结合已知编目、题材文献与观看提示，不表示每件作品的委托、人物身份或创作缘起均已查明。参考来源保存在每篇导读中；馆方目录、研究和图像中的不确定性仍保留。
+
 > 2026-10-31 底图更新：采用按视野切换的双源方案。世界概览、中国及周边视野使用天地图；完全进入海外的近景使用 OpenFreeMap 青绿矢量地图。浏览器端 Key 已验证，南海断续线和藏南官方边界已可见，巴黎高倍率街道恢复显示。正式地图内容、审图信息与服务条款仍需完整验收，浏览器测试不替代这些工作。
 
 官方依据与接入入口：[天地图地图服务文档](https://lbs.tianditu.gov.cn/server/MapService.html)、[自然资源部标准地图服务系统](https://bzdt.ch.mnr.gov.cn/)、[自然资源部天地图建设方案](https://app.www.gov.cn/govdata/gov/202403/13/512938/article.html)。天地图文档列出 `vec_w` 底图、`cva_w` 注记和 `ibo_w` 全球境界服务，支持 HTTPS 与 WMTS。采用标准成图瓦片时，不能沿用当前矢量样式的逐要素调色方式；青绿视觉须以边界和标注完整可读为前提。
@@ -152,9 +156,11 @@ content/
   masters-research.json        逐件研究证据、修订号和排除理由
   masters-coverage.json        固定版本公开清单的逐行去向
   masters-notes.md             收录范围、辨识修正和维护说明
+  artwork-guides/              逐件解读、题材背景、人物与尺寸依据及编目修正
   map-style-base.json          OpenFreeMap Liberty 原始样式
 scripts/
   build-catalog.mjs            合并唐寅、既有达·芬奇和新增西方绘画数据
+  build-artwork-guides.mjs     离线合并逐件解读与明确标注的背景导读
   build-theme.mjs              单一配色源 → Sass 变量和地图样式
   prepare-media.mjs            离线生成缩略图、预览、整图或 DZI
   check-media.mjs              验证唐寅交付文件
@@ -174,6 +180,15 @@ React 管理界面，MapLibre 和 OpenSeadragon 分别管理自己的画布生�
 仓库中 `src/App.tsx`、`src/AtlasExplorer.tsx`、旧 `components/`、`hooks/`、`lib/` 与 `styles/theme.css` 是上一版源码，保留作为迁移参考，本版入口不导入；旧 JSON 仍作为达·芬奇资料来源。此次未清理原有暂存修改或覆盖旧收藏存储。
 
 ## 内容与图片维护
+
+导读维护于 `content/artwork-guides/`，由 `content:build` 离线合入目录，浏览器不会请求生成服务或实时生成解读：
+
+- `*-overrides.json`：以稳定作品 ID 保存核对过的中文解读与来源。每篇含 `background`、`story`、至少两条 `looking` 以及 `sources`。`scope: individual` 表示依据该作品资料整理，不表示归属或人物身份已经没有争议。
+- `contexts.json`、`subjects.json`、`people.json`：有来源的画家／时期背景、圣经与神话题材、人物身份。圣经和神话按其文本叙事介绍，不作为创作委托或真实历史的证明。
+- `work-facts.json`：2026-11-12 读取的 Wikidata CC0 题材、类型与尺寸数据；只保留明确的厘米尺寸。没有逐件解读的作品采用 `scope: contextual`，页面明确显示具体创作缘起待核实，并结合编目与题材提供观看提示。
+- `catalog-corrections-*.json`：来源核对带来的题名、年代、媒材等修正，在构建时合入作品并保留说明。馆方资料优先于旧目录；多版本作品须核对具体馆藏，不借用另一版本的创作故事。
+
+添加或修改导读后运行下方构建与测试。不要在通用题材里写某一画面的专属细节；具体委托、模特身份及人物位置应进入逐件解读，并保存对应来源。资料不足可以明确标注，不用画家生平填补未知的创作故事。
 
 修改 `content/tang-catalog.json`、`content/foreign-catalog.json`、`content/wu-daozi-catalog.json`、`content/tang-expansion-catalog.json`、`content/masters-catalog.json` 或既有 `public/data.json` 后运行：
 

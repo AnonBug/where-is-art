@@ -122,6 +122,21 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("navigation contracts", () => {
+  it("preserves old links to the merged Chicago portrait, including the viewer and selected image", async () => {
+    mount(
+      "/artworks/rembrandt-rrp-58/view/info?scope=artist:rembrandt&asset=rembrandt-rrp-58-whole",
+    );
+    await waitFor(() =>
+      expect(screen.getByTestId("route").textContent).toBe(
+        "/artworks/rembrandt-gold-chain/view/info?scope=artist%3Arembrandt&asset=rembrandt-gold-chain-whole",
+      ),
+    );
+    const panel = await screen.findByRole("dialog", { name: "作品信息" });
+    expect(within(panel).queryByRole("img")).toBeNull();
+    expect(
+      within(panel).getByRole("heading", { name: "戴金链的老人" }),
+    ).toBeTruthy();
+  });
   it.each([false, true])(
     "clears museum expansion without remounting the map and keeps it collapsed after viewing a work (compact=%s)",
     async (compact) => {

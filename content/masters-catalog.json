@@ -687,16 +687,16 @@
       "note": "目录所列收藏：Toledo Museum of Art。"
     },
     {
-      "id": "rembrandt-rrp-58",
-      "title": "戴金鍊的老人",
+      "id": "rembrandt-rrp-82",
+      "title": "戴金链的老人习作（卡塞尔）",
       "artistIds": [
         "rembrandt"
       ],
-      "dateLabel": "1631",
-      "medium": "木板油画",
-      "description": "伦勃朗相关绘画。原题：Half-figure of a Man Wearing a Gorget and Plumed Hat。依据RRP 绘画目录 58整理。",
-      "sourceUrl": "https://www.wikidata.org/wiki/Q14911808",
-      "note": "目录所列收藏：Art Institute of Chicago。"
+      "dateLabel": "1632",
+      "medium": "橡木板油画",
+      "description": "伦勃朗于 1632 年创作的老人头部与胸像习作（tronie），现藏卡塞尔古典大师画廊，馆藏编号 GK 233。人物身份不详。",
+      "sourceUrl": "https://datenbank.museum-kassel.de/33757/",
+      "note": "馆方记录尺寸 59.3 × 49.3 cm。历史上归属曾有争议；馆方现列为伦勃朗本人作品。与芝加哥艺术博物馆 1631 年《戴金链的老人》（RRP 58）为不同作品。"
     },
     {
       "id": "rembrandt-rrp-59",
@@ -10865,11 +10865,11 @@
       "sourceUrl": "https://en.wikipedia.org/wiki/List_of_paintings_by_Rembrandt"
     },
     {
-      "artworkId": "rembrandt-rrp-58",
-      "venueId": "artic",
+      "artworkId": "rembrandt-rrp-82",
+      "venueId": "masters-q687186",
       "note": "目录／馆藏索引所列收藏关系；不表示实时展出。",
       "verifiedAt": "2026-11-12",
-      "sourceUrl": "https://www.wikidata.org/wiki/Q14911808"
+      "sourceUrl": "https://datenbank.museum-kassel.de/33757/"
     },
     {
       "artworkId": "rembrandt-rrp-59",

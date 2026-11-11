@@ -114,7 +114,7 @@ describe("Wang Wei and Yan Liben collection", () => {
       />,
     );
     expect(
-      screen.getByText("当前展示局部或分段参考图，不是完整长卷。"),
+      screen.getByText("当前展示参考图，图像类型及其与原作的关系见下方说明。"),
     ).toBeTruthy();
   });
   it("rejects accidental missing primary images or contradictory availability", () => {

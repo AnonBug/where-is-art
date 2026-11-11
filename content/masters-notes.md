@@ -12,6 +12,7 @@
 
 ## 已处理的辨识问题
 
+- RRP 58 / 82 已分离：既有 `rembrandt-gold-chain` 保留芝加哥艺术博物馆 1631 年作品（RRP 58，83.1 × 75.7 cm）；重复 `rembrandt-rrp-58` 合并至该原有 ID。卡塞尔 GK 233 的 1632 年老人习作（RRP 82，59.3 × 49.3 cm）恢复为 `rembrandt-rrp-82`。馆方现列伦勃朗本人，历史归属争议保留在说明中。两者使用各自图像与馆藏来源，原 OSS 对象不删除。依据：[芝加哥馆藏](https://www.artic.edu/artworks/95998/old-man-with-a-gold-chain)、[卡塞尔馆藏](https://datenbank.museum-kassel.de/33757/)、[2025 年技术研究](https://www.amjournal.org/publications/123)。
 - 《阿韦罗尔迪多联祭坛画》及其中央面板使用同一个作品 ID，不重复计数。
 - “维纳斯与阿多尼斯”系列总条目不作为另一幅作品；有独立馆藏证据的版本分别保留。
 - 佩萨罗祭坛画原 P18 照片拍的是修复期间陈列的复制品，改用 [原画扫描](https://commons.wikimedia.org/wiki/File:Tizian_039_(2).jpg)。

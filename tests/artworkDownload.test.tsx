@@ -4,9 +4,45 @@ import { cleanup, render, screen } from "@testing-library/react";
 import catalog from "../public/catalog.json";
 import { atlasSchema, assetUrl, primaryImage } from "../src/domain/atlas";
 import { ArtworkDetails } from "../src/features/artworks/ArtworkDetails";
+import userEvent from "@testing-library/user-event";
 
 const data = atlasSchema.parse(catalog);
 afterEach(cleanup);
+
+it("omits the duplicate preview inside the viewer and keeps provenance collapsed until requested", async () => {
+  const user = userEvent.setup();
+  const work = data.artworks.find((work) => work.id === "titian-q572697")!;
+  const { container, rerender } = render(
+    <ArtworkDetails
+      data={data}
+      work={work}
+      showPreview={false}
+      onVenue={vi.fn()}
+    />,
+  );
+  expect(screen.queryByRole("img")).toBeNull();
+  expect(screen.queryByRole("link", { name: /^下载/ })).toBeNull();
+  const disclosure = container.querySelector("details")!;
+  expect(disclosure.open).toBe(false);
+  expect(
+    screen.getByRole("link", { name: /图像来源/ }).closest("details"),
+  ).toBe(disclosure);
+  await user.click(screen.getByText("来源与版权"));
+  expect(disclosure.open).toBe(true);
+  expect(screen.getByRole("link", { name: /图像来源/ })).toBeTruthy();
+  expect(
+    screen.getByText("地图标示收藏机构，不代表作品正在展出。"),
+  ).toBeTruthy();
+  rerender(
+    <ArtworkDetails
+      data={data}
+      work={data.artworks.find((w) => w.id === "mona")!}
+      showPreview={false}
+      onVenue={vi.fn()}
+    />,
+  );
+  expect(container.querySelector("details")!.open).toBe(false);
+});
 
 it.each([
   ["mona", "下载原图", "assets/mona.jpg"],

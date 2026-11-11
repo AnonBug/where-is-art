@@ -79,6 +79,39 @@ a.previewDownload {
   line-height: 1.95;
   margin: 22px 0;
 }
+.reading {
+  margin: 22px 0;
+  section + section {
+    margin-top: 24px;
+  }
+  h2 {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 9px;
+  }
+  p,
+  li {
+    font-size: 14px;
+    line-height: 1.95;
+  }
+  ul {
+    padding-left: 19px;
+    margin: 0;
+  }
+  li + li {
+    margin-top: 9px;
+  }
+  .scopeNote {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 17px;
+  }
+}
+.guideSources {
+  margin-bottom: 12px;
+}
 .note {
   font-size: 12px;
   line-height: 1.9;
@@ -124,10 +157,23 @@ a.previewDownload {
   color: var(--muted);
   margin-top: 12px;
 }
-.sources {
-  margin-top: 25px;
+.provenance {
+  margin-top: 22px;
   border-top: 1px solid var(--line);
-  padding-top: 18px;
+  padding-top: 14px;
+  summary {
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.8;
+    &:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+  }
+}
+.sources {
+  margin-top: 12px;
   font-size: 11px;
   line-height: 1.9;
   color: var(--muted);
@@ -140,7 +186,11 @@ a.previewDownload {
 }
 @media (max-width: 1023px), (pointer: coarse) {
   .copy {
-    padding: 26px 28px calc(35px + env(safe-area-inset-bottom));
+    padding: 18px 20px calc(24px + env(safe-area-inset-bottom));
+    h1 {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
   }
   .preview {
     height: 160px;
@@ -154,5 +204,11 @@ a.previewDownload {
   }
   .description {
     font-size: 16px;
+  }
+  .reading {
+    p,
+    li {
+      font-size: 15px;
+    }
   }
 }

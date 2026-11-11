@@ -1,0 +1,96 @@
+{
+  "rembrandt-rrp-25": {
+    "sourceUrl": "https://www.musee-jacquemart-andre.com/en/oeuvres/supper-emmaus",
+    "note": "雅克马尔—安德烈博物馆将本馆的早期版本定为约 1628 年；与卢浮宫 1648 年版本不同。",
+    "dateLabel": "约 1628"
+  },
+  "rembrandt-rrp-143": {
+    "sourceUrl": "https://www.nationalgallery.org.uk/paintings/rembrandt-belshazzar-s-feast",
+    "note": "伦敦国家美术馆当前馆藏记录将创作年代定为约 1636—1638 年。",
+    "dateLabel": "约 1636—1638",
+    "title": "伯沙撒王的盛宴"
+  },
+  "rembrandt-rrp-172": {
+    "sourceUrl": "https://rembrandtinsocal.org/virtual-exhibition/self-portrait/",
+    "note": "诺顿·西蒙博物馆在南加州馆际伦勃朗项目中将这幅自画像定年为约 1636—1638 年。",
+    "dateLabel": "约 1636—1638"
+  },
+  "rembrandt-rrp-184b": {
+    "sourceUrl": "https://www.rijksmuseum.nl/nl/collectie/SK-C-597",
+    "note": "荷兰国立博物馆当前记录为 1639 年，人物身份注明“可能为玛丽亚·特里普”，保留这一不确定性。",
+    "dateLabel": "1639",
+    "title": "女子肖像（可能为玛丽亚·特里普）"
+  },
+  "rembrandt-rrp-252": {
+    "sourceUrl": "https://rembrandtinsocal.org/virtual-exhibition/juno/",
+    "note": "哈默博物馆在南加州馆际伦勃朗项目中将《朱诺》定年为约 1662—1665 年。",
+    "dateLabel": "约 1662—1665"
+  },
+  "rembrandt-rrp-243": {
+    "sourceUrl": "https://rembrandtinsocal.org/virtual-exhibition/portrait-of-a-boy/",
+    "note": "诺顿·西蒙博物馆将作品定年为约 1655—1660 年；过去认作提图斯的身份现已被馆方否定，男孩身份及原始用途未定。",
+    "dateLabel": "约 1655—1660",
+    "title": "未完成的男孩肖像"
+  },
+  "rembrandt-rrp-320": {
+    "sourceUrl": "https://www.hermitagemuseum.org/digital-collection/43413",
+    "note": "艾尔米塔什博物馆当前作品记录将《浪子回头》定年为约 1668 年。",
+    "dateLabel": "约 1668",
+    "title": "浪子回头"
+  },
+  "rembrandt-rrp-229": {
+    "sourceUrl": "https://www.nationalgallery.org.uk/paintings/rembrandt-a-woman-bathing-in-a-stream-hendrickje-stoffels",
+    "note": "国家美术馆当前题名为《溪中沐浴的女子（亨德里克耶·斯托费尔斯？）》。人物身份与特定圣经、神话题材均未获确认，不将卡利斯托解释写成确定名称。",
+    "title": "溪中沐浴的女子（亨德里克耶·斯托费尔斯？）"
+  },
+  "rembrandt-rrp-98": {
+    "sourceUrl": "https://www.rijksmuseum.nl/nl/collectie/SK-A-4057",
+    "note": "荷兰国立博物馆当前介绍将本画作为幻想服饰的人物习作，不能确定为萨斯基娅的正式肖像。",
+    "title": "穿幻想服饰的年轻女子"
+  },
+  "rembrandt-rrp-238": {
+    "sourceUrl": "http://www.theleidencollection.com/artwork/a-portrait-of-a-rabbi/",
+    "note": "莱顿收藏研究认为老人身份不明，“拉比”只是可能解释；归属曾在不同作者间变动，当前目录列为伦勃朗。文章讨论约 1645—1655 年的宽泛年代，并倾向较早端，故不依据旧目录的单一年份推定具体事件。"
+  },
+  "rembrandt-rrp-132b": {
+    "sourceUrl": "https://www.theleidencollection.com/artwork/portrait-of-petronella-buys-1605-1670/",
+    "note": "莱顿收藏研究列出本画为伦勃朗本人创作与工作室助手参与的不同意见；人物身份与 1635 年断代有档案依据，作者分工仍存在讨论。"
+  },
+  "rembrandt-rrp-132a": {
+    "sourceUrl": "https://www.nationalgallery.org.uk/paintings/rembrandt-portrait-of-philips-lucasz",
+    "note": "国家美术馆说明本画可能有助手参与，也可能因交付时间紧而出现较急促画法；原来触摸金链的左手后来被覆盖。"
+  },
+  "rembrandt-rrp-128": {
+    "title": "友弟德在荷罗孚尼的宴会上（旧称阿尔忒弥西亚或索福尼斯巴）",
+    "dateLabel": "1634",
+    "sourceUrl": "https://www.museodelprado.es/en/the-collection/art-work/judith-at-the-banquet-of-holofernes/08f69e61-f7c5-43f9-a76d-b24fbdc63681",
+    "note": "普拉多当前将题材解释为友弟德在荷罗孚尼宴会上的场景，历史上另有阿尔忒弥西亚、索福尼斯巴等说。“阿尔忒弥西亚”是古代王后姓名，不是月亮与狩猎女神阿尔忒弥斯；删除这一误译。"
+  },
+  "rembrandt-rrp-130": {
+    "title": "狄安娜沐浴：阿克泰翁与卡利斯托的故事",
+    "medium": "布面油画",
+    "sourceUrl": "https://jhna.org/articles/against-the-mirror-indeterminacy-poetics-of-painting-rembrandt-woman-bathing-in-a-stream/",
+    "note": "2024年《荷兰艺术史学刊》研究图6明确著录安霍尔特原作为1634年、布面油画、73.5 × 93.5厘米；旧目录的木板媒材有误。画面合并阿克泰翁误入沐浴之地与卡利斯托怀孕被发现两个不同故事。"
+  },
+  "rembrandt-rrp-212": {
+    "dateLabel": "约1651—1654；约1655—1658续绘",
+    "sourceUrl": "https://www.mauritshuis.nl/en/our-collection/artworks/621-saul-and-david",
+    "note": "莫瑞泰斯皇家美术馆研究与修复后确认本作为伦勃朗，现行著录分为约1651—1654年与约1655—1658年两个创作阶段，区别于旧目录约1645/1652年的时间。"
+  },
+  "rembrandt-rrp-215": {
+    "dateLabel": "1645—1647",
+    "sourceUrl": "https://www.rijksmuseum.nl/en/collection/SK-A-3982",
+    "note": "荷兰国立博物馆现行作品页将油画习作定年1645—1647；对应的蚀刻肖像作于1647年，不能直接把版画年份当作油画唯一年份。"
+  },
+  "rembrandt-rrp-295": {
+    "title": "两位非洲男子",
+    "sourceUrl": "https://www.mauritshuis.nl/en/our-collection/artworks/685-two-african-men",
+    "note": "莫瑞泰斯皇家美术馆现行标题为Two African Men，替换旧目录Two Moors；馆方推测他们是生活在阿姆斯特丹的自由男子，但个人身份并未确证。"
+  },
+  "rembrandt-rrp-206": {
+    "title": "风车",
+    "dateLabel": "1645—1648",
+    "sourceUrl": "https://www.nga.gov/artworks/1201-mill",
+    "note": "美国国家美术馆现行定年为1645/1648，替换旧目录约1645的单一年份；1977—1979年修复清除了变色清漆，不宜继续以旧有昏黄状态推断画家后来经济困境中的心理。"
+  }
+}
