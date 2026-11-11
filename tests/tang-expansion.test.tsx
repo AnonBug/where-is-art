@@ -62,7 +62,9 @@ describe("Wang Wei and Yan Liben collection", () => {
   });
   it("keeps records without photos readable without an empty zoom action", () => {
     const missing = data.artworks.filter(
-      (work) => work.imageStatus === "unavailable",
+      (work) =>
+        work.imageStatus === "unavailable" &&
+        work.artistIds.some((id) => ["wang-wei", "yan-liben"].includes(id)),
     );
     expect(missing).toHaveLength(7);
     const work = missing[0];

@@ -17,12 +17,13 @@ const manifests = await Promise.all(
     "media-manifest.json",
     "foreign-media-manifest.json",
     "wu-daozi-media-manifest.json",
+    "masters-media-manifest.json",
     "legacy-media-manifest.json",
   ].map((name) => readJson(`content/${name}`)),
 );
 const publishedImages = manifests.flatMap((manifest, index) =>
   manifest.images.map((image) => {
-    if (index !== 0 && index !== 3) return image;
+    if (index !== 0 && index !== 3 && index !== 4) return image;
     const { files, processing, ...published } = image;
     return published;
   }),

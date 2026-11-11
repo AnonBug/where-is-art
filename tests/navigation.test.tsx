@@ -297,7 +297,7 @@ describe("navigation contracts", () => {
     const user = userEvent.setup();
     mount();
     await user.click(screen.getByRole("button", { name: "外国" }));
-    expect(await screen.findByText("地图作品数：158")).toBeTruthy();
+    expect(await screen.findByText("地图作品数：869")).toBeTruthy();
     await user.click(screen.getByRole("button", { name: "专题" }));
     await user.click(screen.getByRole("button", { name: /山水之间/ }));
     expect(await screen.findByText("地图作品数：10")).toBeTruthy();

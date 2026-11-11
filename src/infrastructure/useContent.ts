@@ -1,16 +1,12 @@
 import { useEffect, useState } from "react";
-import {
-  atlasSchema,
-  assetUrl,
-  validateRelations,
-  type Atlas,
-} from "../domain/atlas";
+import { atlasSchema, validateRelations, type Atlas } from "../domain/atlas";
 let cached: Atlas | undefined;
 let pending: Promise<Atlas> | undefined;
 async function load() {
   if (cached) return cached;
   if (!pending)
-    pending = fetch(assetUrl("catalog.json"))
+    // Keep each release's catalog with its code; only media uses the OSS base.
+    pending = fetch(`${import.meta.env.BASE_URL}catalog.json`)
       .then(async (response) => {
         if (!response.ok) throw new Error("内容暂时无法加载");
         const data = atlasSchema.parse(await response.json());

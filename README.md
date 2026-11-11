@@ -1,6 +1,6 @@
 # 名画在哪里
 
-React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 和 OpenSeadragon。当前版本收录唐寅 17 幅、达·芬奇相关 21 幅，33 位西方画家的 137 幅作品，传吴道子的两幅长卷，以及王维相关 21 条、阎立本相关 17 条记录，共 215 条作品记录、459 张图像、52 个收藏地点。开发目录沿用「达·芬奇名画地图」。
+React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 和 OpenSeadragon。当前版本在原有 215 条记录基础上扩充提香与伦勃朗绘画，共 933 条作品记录、1,170 张图像。提香 376 条（369 条可浏览）、伦勃朗 350 条；包含明确标注的合作、传作与归属争议，不宣称无争议的亲笔全集。详见 [收录范围与核对记录](content/masters-notes.md)。开发目录沿用「达·芬奇名画地图」。
 
 [在线浏览](https://anonbug.github.io/where-is-art/) · [GitHub 仓库](https://github.com/AnonBug/where-is-art)
 
@@ -31,13 +31,13 @@ npm run build          # 主题生成、类型检查、静态构建及发布体�
 npm run preview        # 预览 dist/，与 dev 使用同一端口
 ```
 
-`dist/` 可重新生成，不提交到 Git。当前没有服务端、账号或数据库。目录 JSON 按资源基础地址加载；地图通过 HTTPS 请求天地图 `vec_w`、`ibo_w`、`cva_w`，使用球面墨卡托 WMTS（1—18 级、256 px PNG）。这些是已绘制的成图瓦片，不是可逐要素改色的 MVT/PBF。
+`dist/` 可重新生成，不提交到 Git。当前没有服务端、账号或数据库。目录 JSON 跟随应用子路径加载，与代码版本一致；地图通过 HTTPS 请求天地图 `vec_w`、`ibo_w`、`cva_w`，使用球面墨卡托 WMTS（1—18 级、256 px PNG）。这些是已绘制的成图瓦片，不是可逐要素改色的 MVT/PBF。
 
 海外近景按资源基础地址加载 `map-style.json`，再请求 OpenFreeMap 矢量瓦片、字体与图标。切换由 `regionalBasemap.ts` 集中控制：zoom ≤ 5 始终使用天地图；达到 5.5 且整个视野离开保守范围后才进入 OpenFreeMap。经度 70°—140°、纬度 0°—56° 是切换保护框，另加 3° 的进入缓冲，不是行政边界，也不绘制在地图上，因此部分邻近地区仍使用天地图。依据视野而非画家分类决定来源；切换替换整张底图，不拼接两套国界，不改变馆藏点坐标。
 
 ## 静态资源地址（OSS / 本地）
 
-应用路由及 JS/CSS 构建产物仍由 `PAGES_BASE_PATH`（Vite `base`）控制。`VITE_ASSET_BASE_URL` 只控制 `public/` 中的图片、缩略图、预览、DZI/瓦片、目录/地图样式 JSON 和品牌图；第三方地图服务及馆方来源链接保持原地址。
+应用路由及 JS/CSS 构建产物仍由 `PAGES_BASE_PATH`（Vite `base`）控制。`VITE_ASSET_BASE_URL` 只控制 `public/` 中的图片、缩略图、预览、DZI/瓦片、地图样式 JSON 和品牌图（`catalog.json` 随应用加载）；第三方地图服务及馆方来源链接保持原地址。
 
 - 开发和生产构建默认读取随项目维护的 `.env`，当前使用 `https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/`。
 - `.env.local` 可以覆盖默认地址；恢复本地媒体后将 `VITE_ASSET_BASE_URL` 留空，即使用本地 `public/`，自动跟随应用子路径。干净克隆不包含图片，不设置覆盖即可使用 OSS。
@@ -56,7 +56,7 @@ VITE_ASSET_BASE_URL= npm run dev
 
 地址必须对应 `public/` 的内容根目录，URL 不含 `public/`。JSON 继续保存 `assets/mona.jpg`、`media/…/detail.dzi` 等相对路径，不要再加 `where-is-art/`。统一的 `assetUrl()` 在加载入口处理首尾斜杠并保留已有绝对 URL；旧版入口仅转换图像的 `path` 字段。OpenSeadragon 根据 DZI 的完整 URL 寻找同目录 `detail_files/<level>/<x>_<y>.jpeg`，因此整套 DZI 与瓦片须保留相对目录结构。查看器使用匿名 CORS，以支持跨域图像和画布读取。
 
-图片、缩略图、Logo、DZI 及瓦片由 OSS 托管，不再随 Git 或默认发布包保存。`public/` 保留目录、旧版数据和地图样式 JSON；`content/media-index.json` 保留全部媒体路径、字节数、SHA-256 和 MD5，用于校验及恢复。媒体生成、恢复后的本地文件被 `.gitignore` 排除；本地资源模式需先恢复文件。新增或更改 `public/` 内容后，应先核对资源端是否同步（包括重新生成的 `catalog.json` 和 `map-style.json`），再使用对应的资源基础地址发布。不会对缺失资源静默改用其他图片。
+图片、缩略图、Logo、DZI 及瓦片由 OSS 托管，不再随 Git 或默认发布包保存。`public/` 保留目录、旧版数据和地图样式 JSON；`content/media-index.json` 保留全部媒体路径、字节数、SHA-256 和 MD5，用于校验及恢复。媒体生成、恢复后的本地文件被 `.gitignore` 排除；本地资源模式需先恢复文件。新增或更改 `public/` 内容后，应先核对资源端是否同步（包括重新生成的 `map-style.json`；`catalog.json` 随应用版本发布），再使用对应的资源基础地址发布。不会对缺失资源静默改用其他图片。
 
 OSS 默认域名的 `Content-Disposition: attachment` 不作为图片不可用的判断依据，以实际图片解码、JSON/DZI 请求及画布绘制为准。本地 OSS 验证使用已允许的 `http://127.0.0.1:8775` 或 `http://localhost:8775`；不要通过关闭浏览器安全检查来绕过 CORS。
 
@@ -67,7 +67,7 @@ OSS 默认域名的 `Content-Disposition: attachment` 不作为图片不可用�
 ```sh
 npm run media:check         # 无网络、无本地图片依赖；CI 使用此命令
 npm run media:check:remote  # 只读检查 OSS 的全部媒体，HEAD 元数据不足时 GET 校验
-npm run media:restore       # 可选：从 OSS 恢复约 910 MB 媒体到被忽略的 public/ 路径
+npm run media:restore       # 可选：从 OSS 恢复全部媒体到被忽略的 public/ 路径
 # 或从已有缓存恢复，缓存根目录包含 assets/、brand/、media/
 npm run media:restore -- --from '/本地资源缓存目录'
 # 只恢复一组资源，例如 Logo
@@ -78,7 +78,7 @@ VITE_ASSET_BASE_URL= npm run dev
 
 恢复时验证大小和 SHA-256，已有文件必须哈希一致，不覆盖本地修改。仅编辑作品文字或目录时，`content:build` 只合并 JSON，不读取或重编码图片。需要重新生成达·芬奇缩略图时，先恢复 `assets/` 图片，再显式运行 `npm run media:legacy`。生成其他新媒体后，恢复完整媒体树，运行 `npm run media:index` 更新文件清单，再运行 `content:build`、`media:check` 和 `media:check:local`。索引生成器会拒绝从不完整的本地副本重建清单，以免丢失已有远端条目。
 
-媒体清单校验不等同于实际文件解码或远端核验。CI 从干净检出重建目录并检查无差异，执行数据/引用/瓦片层级校验及测试构建；媒体维护时显式执行完整本地检查，发布新增媒体前执行远端检查。恢复文件后 Vite 会将本地 `public/` 内容复制到发布包；正式轻量发布应从干净检出构建。
+媒体清单校验不等同于实际文件解码或远端核验。CI 从干净检出重建目录并检查无差异，执行数据/引用/瓦片层级校验及测试构建；媒体维护时显式执行完整本地检查，发布新增媒体前执行远端检查。OSS 模式构建只将 `public/` 的 JSON 随应用发布，即使本地已经恢复图片也不会把媒体复制进发布包；本地资源模式仍复制完整 `public/`。
 
 本次使用普通删除提交，旧图片仍存在于 Git 历史中，未改写历史或强制推送。需要轻量克隆时使用：
 
@@ -98,7 +98,8 @@ git clone --depth 1 https://github.com/AnonBug/where-is-art.git
 - 收藏地点未核实的作品仍可看画，不创建虚构坐标。机构位置不表示实时展出。
 - 藏品较多时，馆点的缩略图网格内部独立滚动，不触发地图缩放。直接打开画家地图或看画链接时，目录同步到对应分类、时期和画家；窄侧栏的长时期名称与年代分行展示。
 - 多个收藏地聚合时，数字圈上方仍显示一张作品缩略图，优先显示当前选中的有图作品，否则显示聚合内第一幅有图作品。点图查看作品信息，点数字圈放大展开收藏地。
-- 暂无画源的 7 条记录保留在资料中，地图、作品列表和专题中隐藏，数量只统计可看画的作品；当前可浏览 208 幅。有局部参考图的作品仍显示，补齐画源后自动恢复展示。仅关联无图作品的馆点也不显示。
+- 画家条目显示可浏览作品数量；合作作品在关联画家下分别计数，多张图和多条收藏关系不重复计数。
+- 暂无已核实可用画源的 14 条记录保留在资料中，地图、作品列表和专题中隐藏，数量只统计可看画的作品；当前可浏览 919 幅。有局部参考图的作品仍显示，补齐画源后自动恢复展示。仅关联无图作品的馆点也不显示。
 
 主要深链接（Hash 路由适配 GitHub Pages）：
 
@@ -144,6 +145,12 @@ content/
   foreign-catalog.json         新增西方画家、作品、馆藏和专题
   foreign-sources.json         下载地址、来源证据与源文件 SHA-256
   foreign-media-manifest.json  网页衍生图的尺寸、体积、哈希与署名
+  masters-catalog.json         提香与伦勃朗新增作品、馆藏与归属说明
+  masters-sources.json         逐图来源、许可、下载与 SHA-256
+  masters-media-manifest.json  新增缩略图、预览、完整图与哈希
+  masters-research.json        逐件研究证据、修订号和排除理由
+  masters-coverage.json        固定版本公开清单的逐行去向
+  masters-notes.md             收录范围、辨识修正和维护说明
   map-style-base.json          OpenFreeMap Liberty 原始样式
 scripts/
   build-catalog.mjs            合并唐寅、既有达·芬奇和新增西方绘画数据
@@ -151,6 +158,7 @@ scripts/
   prepare-media.mjs            离线生成缩略图、预览、整图或 DZI
   check-media.mjs              验证唐寅交付文件
   prepare-foreign-media.mjs    生成西方绘画缩略图、预览和整图
+  prepare-masters-media.mjs    重建提香与伦勃朗的来源固定版本图像
   check-foreign-media.mjs      核对文件哈希、完整解码和来源证据
 public/
   catalog.json                生成的前端目录数据
@@ -166,7 +174,7 @@ React 管理界面，MapLibre 和 OpenSeadragon 分别管理自己的画布生�
 
 ## 内容与图片维护
 
-修改 `content/tang-catalog.json`、`content/foreign-catalog.json`、`content/wu-daozi-catalog.json`、`content/tang-expansion-catalog.json` 或既有 `public/data.json` 后运行：
+修改 `content/tang-catalog.json`、`content/foreign-catalog.json`、`content/wu-daozi-catalog.json`、`content/tang-expansion-catalog.json`、`content/masters-catalog.json` 或既有 `public/data.json` 后运行：
 
 ```sh
 npm run content:build
@@ -193,7 +201,7 @@ npm run media:check:local
 
 ## 西方绘画扩充（2026-11-01）
 
-新增 33 位画家、16 个时期或风格分组、134 幅作品和“西方绘画之旅”专题；2026-11-02 补入蒙德里安三幅代表作后共 137 幅。28 位画家各 4 幅，杜乔、格里斯各 3 幅，莫奈、梵高各 6 幅，蒙德里安 7 幅；既有唐寅与达·芬奇记录保留。时期是浏览目录，允许年代交叠，不表示画家只属于单一流派。
+最初新增 33 位画家、16 个时期或风格分组、134 幅作品和“西方绘画之旅”专题；2026-11-02 补入蒙德里安三幅代表作后共 137 幅。28 位画家各 4 幅，杜乔、格里斯各 3 幅，莫奈、梵高各 6 幅，蒙德里安 7 幅；既有唐寅与达·芬奇记录保留。时期是浏览目录，允许年代交叠，不表示画家只属于单一流派。2026-11-12 的提香／伦勃朗扩充独立维护在 `masters-*` 文件中；原有精选专题和稳定 ID 保留。
 
 新素材来自大都会、芝加哥艺术博物馆、克利夫兰艺术博物馆的开放图像，以及逐文件核对的 Wikimedia Commons 公版复制品。作品资料来源与图像来源分开记录。文件下载到本地后生成缩略图、预览和 JPEG 整图，交付文件由 OSS 托管；用户浏览时不直接访问馆方原图。
 

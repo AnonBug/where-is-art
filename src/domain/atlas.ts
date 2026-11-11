@@ -177,6 +177,20 @@ export const primaryImage = (data: Atlas, id: string) =>
       image.artworkId === id &&
       (image.role === "whole" || image.role === "reference"),
   );
+export function artistWorkCounts(data: Atlas): Map<string, number> {
+  const visible = new Set(
+    data.images
+      .filter((image) => image.role === "whole" || image.role === "reference")
+      .map((image) => image.artworkId),
+  );
+  const counts = new Map(data.artists.map((artist) => [artist.id, 0]));
+  for (const work of data.artworks) {
+    if (!visible.has(work.id)) continue;
+    for (const artistId of new Set(work.artistIds))
+      counts.set(artistId, (counts.get(artistId) ?? 0) + 1);
+  }
+  return counts;
+}
 export const artistLabel = (data: Atlas, work: Artwork) =>
   work.artistIds
     .map(

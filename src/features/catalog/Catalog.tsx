@@ -1,7 +1,8 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useMemo, useRef } from "react";
 import { useSession } from "../../application/session";
 import {
   artistLabel,
+  artistWorkCounts,
   assetUrl,
   primaryImage,
   scopeWorks,
@@ -99,6 +100,7 @@ export function Catalog({
 }: Props) {
   const tab = useSession((state) => state.tab);
   const expanded = useSession((state) => state.expanded[tab]);
+  const artistCounts = useMemo(() => artistWorkCounts(data), [data]);
   const topic = data.topics.find((t) => t.id === topicId);
   const topicWorks = topic ? scopeWorks(data, `topic:${topic.id}`) : [];
   const scrollRef = useSavedScroll(`catalog:${tab}`);
@@ -256,6 +258,9 @@ export function Catalog({
                                   {tab === "foreign" &&
                                     ` · ${artist.countryLabel}`}
                                 </small>
+                              </span>
+                              <span className={s.artistCount}>
+                                {artistCounts.get(artist.id) ?? 0} 幅
                               </span>
                             </button>
                           ))}

@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import mediaIndex from "../content/media-index.json";
 import catalog from "../public/catalog.json";
 import foreignCatalog from "../content/foreign-catalog.json";
+import mastersCatalog from "../content/masters-catalog.json";
+import mastersMedia from "../content/masters-media-manifest.json";
 import wuDaoziCatalog from "../content/wu-daozi-catalog.json";
 import tangExpansion from "../content/tang-expansion-catalog.json";
 import tangExpansionMedia from "../content/tang-expansion-media-manifest.json";
@@ -13,16 +15,39 @@ import {
   venueWorks,
   primaryImage,
   workVenues,
+  artistWorkCounts,
 } from "../src/domain/atlas";
 const data = atlasSchema.parse(catalog);
 const files = new Map(mediaIndex.files.map((file) => [file.url, file]));
 
 describe("atlas content contract", () => {
+  it("counts browsable works per artist, including collaborations but excluding detail-only records", () => {
+    const copy = structuredClone(data);
+    const work = copy.artworks.find((item) => item.id === "baptism")!;
+    const image = primaryImage(copy, work.id)!;
+    copy.images.push({ ...image, id: "extra-detail", role: "detail" });
+    copy.holdings.push(
+      ...copy.holdings.filter((item) => item.artworkId === work.id),
+    );
+    let counts = artistWorkCounts(copy);
+    for (const artist of copy.artists)
+      expect(counts.get(artist.id)).toBe(
+        scopeWorks(copy, `artist:${artist.id}`).length,
+      );
+    expect(counts.get("verrocchio")).toBe(1);
+    copy.images = copy.images.filter(
+      (item) => item.artworkId !== work.id || item.role === "detail",
+    );
+    counts = artistWorkCounts(copy);
+    expect(counts.get("verrocchio")).toBe(0);
+    expect(counts.get("leonardo")).toBe(20);
+  });
   it("resolves all artwork, artist, venue, topic and image relations", () => {
     expect(validateRelations(data)).toEqual([]);
     expect(data.artworks).toHaveLength(
       38 +
         foreignCatalog.artworks.length +
+        mastersCatalog.artworks.length +
         wuDaoziCatalog.artworks.length +
         tangExpansion.artworks.length,
     );
@@ -79,7 +104,9 @@ describe("atlas content contract", () => {
     expect(scopeVenues(copy, selected)).toHaveLength(2);
     const foreign = scopeWorks(data, "category:foreign");
     expect(new Set(foreign.map((w) => w.id)).size).toBe(foreign.length);
-    expect(foreign).toHaveLength(21 + foreignCatalog.artworks.length);
+    expect(foreign).toHaveLength(
+      21 + foreignCatalog.artworks.length + mastersMedia.images.length,
+    );
   });
   it("does not mix topics and artist scopes", () => {
     const landscape = scopeWorks(data, "topic:landscape");

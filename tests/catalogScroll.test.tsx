@@ -36,6 +36,17 @@ afterEach(() => {
 });
 
 describe("mobile directory scroll anchoring", () => {
+  it("shows the browsable painting count next to each artist", () => {
+    mount();
+    expect(screen.getByRole("button", { name: /提香.*369\s*幅/ })).toBeTruthy();
+    expect(
+      screen.getByRole("button", { name: /达·芬奇.*21\s*幅/ }),
+    ).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: /^巴洛克/ }));
+    expect(
+      screen.getByRole("button", { name: /伦勃朗.*350\s*幅/ }),
+    ).toBeTruthy();
+  });
   it("opens topics without a period expansion or a pending scroll target", () => {
     useSession.setState({ tab: "topics" });
     mount();
@@ -63,9 +74,7 @@ describe("mobile directory scroll anchoring", () => {
     } as DOMRect);
     fireEvent.click(target);
     expect(directory.scrollTop).toBe(400);
-    expect(
-      screen.getByRole("button", { name: /卡拉瓦乔/ }),
-    ).toBeTruthy();
+    expect(screen.getByRole("button", { name: /卡拉瓦乔/ })).toBeTruthy();
   });
 
   it("restores a saved position on return and does not realign when closing a period", () => {
