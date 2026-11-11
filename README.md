@@ -26,7 +26,7 @@ npm run dev
 ```sh
 npm test               # 内容契约、关系去重、桌面/手机导航与旧数据兼容
 npm run typecheck      # TypeScript
-npm run media:check    # 唐寅、吴道子瓦片与西方图像的尺寸、体积、解码和来源校验
+npm run media:check    # 离线校验媒体清单、目录引用、文件大小/哈希及完整瓦片层级
 npm run build          # 主题生成、类型检查、静态构建及发布体积检查 → dist/
 npm run preview        # 预览 dist/，与 dev 使用同一端口
 ```
@@ -39,28 +39,52 @@ npm run preview        # 预览 dist/，与 dev 使用同一端口
 
 应用路由及 JS/CSS 构建产物仍由 `PAGES_BASE_PATH`（Vite `base`）控制。`VITE_ASSET_BASE_URL` 只控制 `public/` 中的图片、缩略图、预览、DZI/瓦片、目录/地图样式 JSON 和品牌图；第三方地图服务及馆方来源链接保持原地址。
 
-- 生产构建默认读取随项目维护的 `.env.production`，当前使用 `https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/`。
-- 开发时将 `.env.example` 复制到 `.env.local` 可使用 OSS；未配置或将 `VITE_ASSET_BASE_URL` 留空，则使用本地 `public/`，自动跟随应用子路径。
-- Vite 在构建时写入此配置；修改后需重启开发服务或重新构建。生产模式中 `.env.production` 优先于 `.env.local`；本机生产覆盖请使用 `.env.production.local` 或下面的 shell 环境变量。
+- 开发和生产构建默认读取随项目维护的 `.env`，当前使用 `https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/`。
+- `.env.local` 可以覆盖默认地址；恢复本地媒体后将 `VITE_ASSET_BASE_URL` 留空，即使用本地 `public/`，自动跟随应用子路径。干净克隆不包含图片，不设置覆盖即可使用 OSS。
+- Vite 在构建时写入此配置；修改后需重启开发服务或重新构建。`.env.local` 可用于本机覆盖，shell 环境变量优先于所有 `.env` 文件。
 
 ```sh
-# OSS + GitHub Pages 子路径（使用 .env.production）
+# OSS + GitHub Pages 子路径（使用 .env）
 PAGES_BASE_PATH=/where-is-art/ npm run build
 
-# 本地资源 + GitHub Pages 子路径（显式空值覆盖 .env.production）
+# 本地资源 + GitHub Pages 子路径（先恢复媒体，显式空值覆盖 .env）
 VITE_ASSET_BASE_URL= PAGES_BASE_PATH=/where-is-art/ npm run build
 
-# 根路径、本地资源开发
+# 根路径、本地资源开发（先恢复媒体）
 VITE_ASSET_BASE_URL= npm run dev
 ```
 
 地址必须对应 `public/` 的内容根目录，URL 不含 `public/`。JSON 继续保存 `assets/mona.jpg`、`media/…/detail.dzi` 等相对路径，不要再加 `where-is-art/`。统一的 `assetUrl()` 在加载入口处理首尾斜杠并保留已有绝对 URL；旧版入口仅转换图像的 `path` 字段。OpenSeadragon 根据 DZI 的完整 URL 寻找同目录 `detail_files/<level>/<x>_<y>.jpeg`，因此整套 DZI 与瓦片须保留相对目录结构。查看器使用匿名 CORS，以支持跨域图像和画布读取。
 
-本地资源仍保留，Vite 构建仍会复制 `public/` 到 `dist/`；本次只切换加载地址，不缩减发布包。新增或更改 `public/` 内容后，应先核对资源端是否同步（包括重新生成的 `catalog.json` 和 `map-style.json`），再使用对应的资源基础地址发布。不会对缺失资源静默改用其他图片。
+图片、缩略图、Logo、DZI 及瓦片由 OSS 托管，不再随 Git 或默认发布包保存。`public/` 保留目录、旧版数据和地图样式 JSON；`content/media-index.json` 保留全部媒体路径、字节数、SHA-256 和 MD5，用于校验及恢复。媒体生成、恢复后的本地文件被 `.gitignore` 排除；本地资源模式需先恢复文件。新增或更改 `public/` 内容后，应先核对资源端是否同步（包括重新生成的 `catalog.json` 和 `map-style.json`），再使用对应的资源基础地址发布。不会对缺失资源静默改用其他图片。
 
 OSS 默认域名的 `Content-Disposition: attachment` 不作为图片不可用的判断依据，以实际图片解码、JSON/DZI 请求及画布绘制为准。本地 OSS 验证使用已允许的 `http://127.0.0.1:8775` 或 `http://localhost:8775`；不要通过关闭浏览器安全检查来绕过 CORS。
 
-未来自定义资源域名就绪后，将 `.env.production` 中的值改为 `https://assets.halfbvg.com/where-is-art/`（开发覆盖配置同步替换），重新构建并验证后再发布；无需修改组件或 `PAGES_BASE_PATH`。域名启用前继续使用 OSS 默认地址；资源地址配置本身不修改 DNS、OSS 权限或云端文件。
+未来自定义资源域名就绪后，将 `.env` 中的值改为 `https://assets.halfbvg.com/where-is-art/`（开发覆盖配置同步替换），重新构建并验证后再发布；无需修改组件或 `PAGES_BASE_PATH`。域名启用前继续使用 OSS 默认地址；资源地址配置本身不修改 DNS、OSS 权限或云端文件。
+
+### 本地媒体与维护命令
+
+```sh
+npm run media:check         # 无网络、无本地图片依赖；CI 使用此命令
+npm run media:check:remote  # 只读检查 OSS 的全部媒体，HEAD 元数据不足时 GET 校验
+npm run media:restore       # 可选：从 OSS 恢复约 910 MB 媒体到被忽略的 public/ 路径
+# 或从已有缓存恢复，缓存根目录包含 assets/、brand/、media/
+npm run media:restore -- --from '/本地资源缓存目录'
+# 只恢复一组资源，例如 Logo
+npm run media:restore -- --prefix brand/
+npm run media:check:local   # 恢复完整媒体后：全部 SHA-256 + 原有解码/尺寸/来源检查
+VITE_ASSET_BASE_URL= npm run dev
+```
+
+恢复时验证大小和 SHA-256，已有文件必须哈希一致，不覆盖本地修改。仅编辑作品文字或目录时，`content:build` 只合并 JSON，不读取或重编码图片。需要重新生成达·芬奇缩略图时，先恢复 `assets/` 图片，再显式运行 `npm run media:legacy`。生成其他新媒体后，恢复完整媒体树，运行 `npm run media:index` 更新文件清单，再运行 `content:build`、`media:check` 和 `media:check:local`。索引生成器会拒绝从不完整的本地副本重建清单，以免丢失已有远端条目。
+
+媒体清单校验不等同于实际文件解码或远端核验。CI 从干净检出重建目录并检查无差异，执行数据/引用/瓦片层级校验及测试构建；媒体维护时显式执行完整本地检查，发布新增媒体前执行远端检查。恢复文件后 Vite 会将本地 `public/` 内容复制到发布包；正式轻量发布应从干净检出构建。
+
+本次使用普通删除提交，旧图片仍存在于 Git 历史中，未改写历史或强制推送。需要轻量克隆时使用：
+
+```sh
+git clone --depth 1 https://github.com/AnonBug/where-is-art.git
+```
 
 ## 当前交互
 
@@ -131,9 +155,9 @@ scripts/
 public/
   catalog.json                生成的前端目录数据
   map-style.json              生成的青绿样式
-  brand/logo.png              交接包指定的原始 Logo
-  media/                      网页图像与瓦片
-  assets/                     沿用的达·芬奇图像
+  brand/logo.png              可选本地 Logo 副本，不进 Git
+  media/                      可选本地图像与瓦片，不进 Git
+  assets/                     旧图像索引/世界地图 JSON；图片副本不进 Git
 ```
 
 React 管理界面，MapLibre 和 OpenSeadragon 分别管理自己的画布生命周期。重模块独立懒加载。业务组件使用 `.module.scss`；页面、标记及海外矢量底图的配色集中在 `src/styles/tokens.json`。天地图成图瓦片不应用滤镜或逐层改色。地图署名随当前来源切换。
@@ -152,12 +176,13 @@ npm run build
 
 新增西方内容的时期、画家和专题在 `content/foreign-catalog.json` 中维护，由 `scripts/build-catalog.mjs` 合并；无需修改 React 组件即可扩充同类数据。作品通过稳定 ID 引用画家；收藏关系独立存储，允许多馆藏关联；专题引用作品 ID，不复制作品记录；全图与高清局部是不同图像资源。
 
-网页资源已生成，克隆后无需原件即可开发、校验和部署。只有重新转换唐寅原件时需要交接包里的 `test-data/tang-yin/manifest.json`：
+网页媒体已在 OSS，克隆后默认使用 OSS，无需下载图片即可开发、校验元数据和部署。只有重新转换唐寅原件时需要交接包里的 `test-data/tang-yin/manifest.json`：
 
 ```sh
 ATLAS_ORIGINAL_ROOT='/原件所在目录' npm run media:prepare -- '/交接包/test-data/tang-yin/manifest.json'
-npm run media:check
+npm run media:index       # 本地需有完整媒体树
 npm run content:build
+npm run media:check:local
 ```
 
 唐寅 6 张、传吴道子 2 张、王维与阎立本 11 张图像采用 DZI，共 4,372 张瓦片。普通整图不超过 20,000,000 字节；DZI 只发布缩略图、预览和瓦片，不发布巨幅整图作为回退。瓦片总大小可能超过 20 MB，浏览器只请求当前视野所需层级。普通图和 DZI 共用看画器。
@@ -170,7 +195,7 @@ npm run content:build
 
 新增 33 位画家、16 个时期或风格分组、134 幅作品和“西方绘画之旅”专题；2026-11-02 补入蒙德里安三幅代表作后共 137 幅。28 位画家各 4 幅，杜乔、格里斯各 3 幅，莫奈、梵高各 6 幅，蒙德里安 7 幅；既有唐寅与达·芬奇记录保留。时期是浏览目录，允许年代交叠，不表示画家只属于单一流派。
 
-新素材来自大都会、芝加哥艺术博物馆、克利夫兰艺术博物馆的开放图像，以及逐文件核对的 Wikimedia Commons 公版复制品。作品资料来源与图像来源分开记录。文件下载到本地后生成随站点发布的缩略图、预览和 JPEG 整图；用户浏览时不依赖外部图片链接。
+新素材来自大都会、芝加哥艺术博物馆、克利夫兰艺术博物馆的开放图像，以及逐文件核对的 Wikimedia Commons 公版复制品。作品资料来源与图像来源分开记录。文件下载到本地后生成缩略图、预览和 JPEG 整图，交付文件由 OSS 托管；用户浏览时不直接访问馆方原图。
 
 蒙德里安新增《红、蓝、黄的构图》（1930，苏黎世美术馆B217）、《百老汇爵士乐》（1942—1943，MoMA）和《胜利爵士乐》（1942—1944，海牙美术馆长期借展），并新增苏黎世地图点。第一幅采用馆方公开的公版二维绘画复制图，未将其声明为馆方CC0；后两幅采用Commons图像。《胜利爵士乐》的来源页另有美国版权提示，保留`review-required`及原因，不因API的Public domain字段自动改成已核验。
 
@@ -180,8 +205,9 @@ npm run content:build
 
 ```sh
 npm run media:foreign -- '/本地下载缓存目录'
+npm run media:index       # 本地需有完整媒体树
 npm run content:build
-npm run media:check
+npm run media:check:local
 ```
 
 若下载文件与已记录哈希不一致，脚本会停止，需重新核实图片身份与许可后更新来源，不能直接接受替换。完整选目、版本差异和容量统计见 [西方绘画内容核验](docs/西方绘画内容核验.md)。
@@ -190,26 +216,28 @@ npm run media:check
 
 本次仅加入《送子天王图》（大阪市立美术馆）和《八十七神仙卷》（徐悲鸿纪念馆）。《道子墨宝》暂不纳入；王维、阎立本已在下述扩充中导入。两卷均在详情中注明传名和归属判断，不计作确认亲笔。
 
-下载来源的完整画幅分别为 29,312 × 3,000 和 25,902 × 2,800 像素；按原始分辨率生成 922 张 DZI 瓦片，支持缩放查看细节。原件保存在忽略目录 `output/wu-daozi-originals/`，下载链接与 SHA-256 存入来源清单。网页资源随仓库保存，原件不进入站点构建。
+下载来源的完整画幅分别为 29,312 × 3,000 和 25,902 × 2,800 像素；按原始分辨率生成 922 张 DZI 瓦片，支持缩放查看细节。原件保存在忽略目录 `output/wu-daozi-originals/`，下载链接与 SHA-256 存入来源清单。网页资源由 OSS 托管，来源与媒体清单保存在仓库，原件不进入站点构建。
 
 ```sh
 npm run media:wu-daozi  # 缓存缺失时下载；哈希不符即停止
+npm run media:index       # 本地需有完整媒体树
 npm run content:build
-npm run media:check
+npm run media:check:local
 ```
 
 馆藏、归属、图像版本和容量记录见 [吴道子内容核验](docs/吴道子内容核验.md)。
 
 ## 王维与阎立本扩充（2026-11-02）
 
-王维相关21条、阎立本相关17条作品记录全部导入，265张已下载图像随站点提供。31条记录有图片，7条暂缺图像仍保留资料和收藏关系，当前在地图与列表中隐藏；9条现有主图为局部或分段，明确标成参考图。传统归属、后世摹本、馆方改定和图式传承分别保留说明。
+王维相关21条、阎立本相关17条作品记录全部导入，265张已下载图像通过 OSS 提供。31条记录有图片，7条暂缺图像仍保留资料和收藏关系，当前在地图与列表中隐藏；9条现有主图为局部或分段，明确标成参考图。传统归属、后世摹本、馆方改定和图式传承分别保留说明。
 
 图片保持下载版本的原始像素尺寸，巨幅图用DZI分层加载，普通图以JPEG提供；没有把分段或题跋另算作品，也没有以局部图冒充完整长卷。详情说明、无图提示和可选补充图已适配。原始文件和所有来源仍可追溯。
 
 ```sh
 npm run media:tang-expansion -- '/研究资料/tang-top3-20261101'
+npm run media:index       # 本地需有完整媒体树
 npm run content:build
-npm run media:check
+npm run media:check:local
 ```
 
 完整范围、图像状态和复现说明见 [王维与阎立本内容核验](docs/王维与阎立本内容核验.md)。

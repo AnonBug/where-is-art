@@ -19,7 +19,12 @@
     "media:foreign": "node scripts/prepare-foreign-media.mjs",
     "media:wu-daozi": "node scripts/prepare-wu-daozi-media.mjs",
     "media:tang-expansion": "node scripts/prepare-tang-expansion-media.mjs",
-    "media:check": "node scripts/check-media.mjs && node scripts/check-foreign-media.mjs && node scripts/check-wu-daozi-media.mjs && node scripts/check-tang-expansion-media.mjs"
+    "media:check": "node scripts/check-media-index.mjs",
+    "media:check:local": "node scripts/check-local-media.mjs && node scripts/check-media.mjs && node scripts/check-foreign-media.mjs && node scripts/check-wu-daozi-media.mjs && node scripts/check-tang-expansion-media.mjs",
+    "media:check:remote": "node scripts/check-remote-media.mjs",
+    "media:index": "node scripts/build-media-index.mjs",
+    "media:restore": "node scripts/restore-media.mjs",
+    "media:legacy": "node scripts/prepare-legacy-media.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

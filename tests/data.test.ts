@@ -1,5 +1,4 @@
-import { existsSync } from "node:fs";
-import { fileURLToPath } from "node:url";
+import mediaIndex from "../content/media-index.json";
 import { describe, expect, it } from "vitest";
 import catalogJson from "../public/data.json";
 import imagesJson from "../public/assets/images.json";
@@ -9,6 +8,7 @@ import type { ArtworkImages, Catalog, CollectionRegistry } from "../src/types";
 const catalog = catalogJson as Catalog;
 const images = imagesJson as ArtworkImages;
 const registry = registryJson as CollectionRegistry;
+const files = new Map(mediaIndex.files.map((file) => [file.url, file]));
 
 describe("shared directory data integrity", () => {
   it("has unique stable work and topic identifiers", () => {
@@ -33,14 +33,9 @@ describe("shared directory data integrity", () => {
       }
       expect(work.source, work.id).toMatch(/^https:\/\//);
       expect(images[work.id], work.id).toBeDefined();
-      expect(
-        existsSync(
-          fileURLToPath(
-            new URL(`../public/${images[work.id].path}`, import.meta.url),
-          ),
-        ),
-        work.id,
-      ).toBe(true);
+      expect(files.get(images[work.id].path)?.bytes, work.id).toBe(
+        images[work.id].bytes,
+      );
     }
   });
 

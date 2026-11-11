@@ -20,6 +20,7 @@ jobs:
       - uses: actions/configure-pages@v5
         id: pages
       - run: npm ci
+      - run: npm run content:build && git diff --exit-code --stat -- public/catalog.json
       - run: npm test
       - run: npm run media:check
       - run: |

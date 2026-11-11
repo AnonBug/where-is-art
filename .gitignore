@@ -6,3 +6,9 @@ dist/
 .sites-checkout/
 coverage/
 output/
+
+# Media lives on OSS. Optional local copies must not return to Git.
+/public/media/
+/public/brand/
+/public/assets/*
+!/public/assets/*.json

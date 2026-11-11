@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { existsSync, statSync } from "node:fs";
-import { resolve } from "node:path";
+import mediaIndex from "../content/media-index.json";
 import catalog from "../public/catalog.json";
 import foreignCatalog from "../content/foreign-catalog.json";
 import wuDaoziCatalog from "../content/wu-daozi-catalog.json";
@@ -16,6 +15,7 @@ import {
   workVenues,
 } from "../src/domain/atlas";
 const data = atlasSchema.parse(catalog);
+const files = new Map(mediaIndex.files.map((file) => [file.url, file]));
 
 describe("atlas content contract", () => {
   it("resolves all artwork, artist, venue, topic and image relations", () => {
@@ -96,10 +96,10 @@ describe("atlas content contract", () => {
   it("ships bounded whole images or DZI and preserves separate roll details", () => {
     for (const image of data.images) {
       for (const resource of [image.thumbnail, image.preview, image.delivery]) {
-        const file = resolve("public", resource.url);
-        expect(existsSync(file), resource.url).toBe(true);
+        const file = files.get(resource.url);
+        expect(file, resource.url).toBeDefined();
         if ("bytes" in resource)
-          expect(statSync(file).size, resource.url).toBe(resource.bytes);
+          expect(file!.bytes, resource.url).toBe(resource.bytes);
       }
       if (image.delivery.kind === "image")
         expect(image.delivery.bytes).toBeLessThanOrEqual(20_000_000);

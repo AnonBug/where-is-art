@@ -1,0 +1,762 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "id": "mona-whole",
+      "artworkId": "mona",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1431,
+      "thumbnail": {
+        "url": "media/leonardo/mona/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18460
+      },
+      "preview": {
+        "url": "media/leonardo/mona/preview.webp",
+        "width": 859,
+        "height": 1280,
+        "bytes": 366436
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/mona.jpg",
+        "width": 960,
+        "height": 1431,
+        "bytes": 517340,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/960px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+      "sourceHash": "5f223c31ba0a477eb7cbe5e5f959d822cbfc46081b19b96498cbd5601d9ac81d",
+      "credit": "蒙娜丽莎，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "rocks-paris-whole",
+      "artworkId": "rocks-paris",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1522,
+      "thumbnail": {
+        "url": "media/leonardo/rocks-paris/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 20594
+      },
+      "preview": {
+        "url": "media/leonardo/rocks-paris/preview.webp",
+        "width": 807,
+        "height": 1280,
+        "bytes": 268338
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/rocks-paris.jpg",
+        "width": 960,
+        "height": 1522,
+        "bytes": 440901,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg/960px-Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg",
+      "sourceHash": "064ae3e38dabc3671f44ad384e3cc90d58bbdecd75c9c89011f32cf5793e628c",
+      "credit": "岩间圣母 · 巴黎版，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "ferronniere-whole",
+      "artworkId": "ferronniere",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1359,
+      "thumbnail": {
+        "url": "media/leonardo/ferronniere/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 10074
+      },
+      "preview": {
+        "url": "media/leonardo/ferronniere/preview.webp",
+        "width": 904,
+        "height": 1280,
+        "bytes": 153814
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/ferronniere.jpg",
+        "width": 960,
+        "height": 1359,
+        "bytes": 234933,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg/960px-Leonardo_da_Vinci_%28attrib%29-_la_Belle_Ferroniere.jpg",
+      "sourceHash": "ba81939085a7d55031557f9aa495f89fcd2b5cde3a7edfb03d4150815cc15656",
+      "credit": "美丽的费隆妮叶，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "anne-whole",
+      "artworkId": "anne",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1269,
+      "thumbnail": {
+        "url": "media/leonardo/anne/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 16366
+      },
+      "preview": {
+        "url": "media/leonardo/anne/preview.webp",
+        "width": 960,
+        "height": 1269,
+        "bytes": 243104
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/anne.jpg",
+        "width": 960,
+        "height": 1269,
+        "bytes": 303806,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sainte_Anne_Leonard.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Sainte_Anne_Leonard.jpg/960px-Sainte_Anne_Leonard.jpg",
+      "sourceHash": "a11544c7086b75b753e9c91853350f1b591d37bed66028f9bac04cd4d9e20a68",
+      "credit": "圣母子与圣安妮，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "john-whole",
+      "artworkId": "john",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1243,
+      "thumbnail": {
+        "url": "media/leonardo/john/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 6446
+      },
+      "preview": {
+        "url": "media/leonardo/john/preview.webp",
+        "width": 960,
+        "height": 1243,
+        "bytes": 156210
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/john.jpg",
+        "width": 960,
+        "height": 1243,
+        "bytes": 214761,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg/960px-Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+      "sourceHash": "6b7c9258f05d017e2ff7f73b21f52bcc02910fb17756cea34170c73bfa64bbf6",
+      "credit": "施洗者圣约翰，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "annunciation-whole",
+      "artworkId": "annunciation",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 435,
+      "thumbnail": {
+        "url": "media/leonardo/annunciation/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 28762
+      },
+      "preview": {
+        "url": "media/leonardo/annunciation/preview.webp",
+        "width": 960,
+        "height": 435,
+        "bytes": 125954
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/annunciation.jpg",
+        "width": 960,
+        "height": 435,
+        "bytes": 147010,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg/960px-Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+      "sourceHash": "482b9833110c043308826d4748aea45389edf749e8bc3d8c5754c43f71e903b1",
+      "credit": "天使报喜，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "adoration-whole",
+      "artworkId": "adoration",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 910,
+      "thumbnail": {
+        "url": "media/leonardo/adoration/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18330
+      },
+      "preview": {
+        "url": "media/leonardo/adoration/preview.webp",
+        "width": 960,
+        "height": 910,
+        "bytes": 192294
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/adoration.jpg",
+        "width": 960,
+        "height": 910,
+        "bytes": 233936,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg/960px-Leonardo_da_Vinci_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg",
+      "sourceHash": "2cf6473696dd29986455b408428bf5dab89317e0cf8276f3133e78edb875814e",
+      "credit": "三博士来朝，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "supper-whole",
+      "artworkId": "supper",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 522,
+      "thumbnail": {
+        "url": "media/leonardo/supper/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21740
+      },
+      "preview": {
+        "url": "media/leonardo/supper/preview.webp",
+        "width": 960,
+        "height": 522,
+        "bytes": 137304
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/supper.jpg",
+        "width": 960,
+        "height": 522,
+        "bytes": 155638,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg/960px-Leonardo_da_Vinci_-_The_Last_Supper_high_res.jpg",
+      "sourceHash": "fc2de8290c24dd222afad33c14b546a7b0dcbaf245ebaf71ff6ff959ab171613",
+      "credit": "最后的晚餐，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "musician-whole",
+      "artworkId": "musician",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1260,
+      "thumbnail": {
+        "url": "media/leonardo/musician/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13642
+      },
+      "preview": {
+        "url": "media/leonardo/musician/preview.webp",
+        "width": 960,
+        "height": 1260,
+        "bytes": 215724
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/musician.jpg",
+        "width": 960,
+        "height": 1260,
+        "bytes": 289191,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Portrait_of_a_Musician_-_Pinacoteca_Ambrosiana.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Leonardo_da_Vinci_-_Portrait_of_a_Musician_-_Pinacoteca_Ambrosiana.jpg/960px-Leonardo_da_Vinci_-_Portrait_of_a_Musician_-_Pinacoteca_Ambrosiana.jpg",
+      "sourceHash": "f79db4717b20e9737868f8e03df4b40f58f2ea38197a64fddcc70cf8bef30376",
+      "credit": "音乐家肖像，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "jerome-whole",
+      "artworkId": "jerome",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1311,
+      "thumbnail": {
+        "url": "media/leonardo/jerome/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15856
+      },
+      "preview": {
+        "url": "media/leonardo/jerome/preview.webp",
+        "width": 937,
+        "height": 1280,
+        "bytes": 125346
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/jerome.jpg",
+        "width": 960,
+        "height": 1311,
+        "bytes": 211736,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci%2C_Saint_Jerome.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Leonardo_da_Vinci%2C_Saint_Jerome.jpg/960px-Leonardo_da_Vinci%2C_Saint_Jerome.jpg",
+      "sourceHash": "a87cb08373ed2bf1c3c7923ce272eaf19de7ac28d9af2f4b337b482c12dac5c2",
+      "credit": "旷野中的圣杰罗姆，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "carnation-whole",
+      "artworkId": "carnation",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1292,
+      "thumbnail": {
+        "url": "media/leonardo/carnation/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19490
+      },
+      "preview": {
+        "url": "media/leonardo/carnation/preview.webp",
+        "width": 951,
+        "height": 1280,
+        "bytes": 407222
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/carnation.jpg",
+        "width": 960,
+        "height": 1292,
+        "bytes": 462366,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEONARDO-DA-VINCI_-_MADONNA-MIT-DER-NELKE-7779_917154_BSTGS.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/LEONARDO-DA-VINCI_-_MADONNA-MIT-DER-NELKE-7779_917154_BSTGS.jpg/960px-LEONARDO-DA-VINCI_-_MADONNA-MIT-DER-NELKE-7779_917154_BSTGS.jpg",
+      "sourceHash": "65ed38ee1c95cd792134ddaace5df073725c9cb77b6364fa307da108daf85628",
+      "credit": "康乃馨圣母，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "ermine-whole",
+      "artworkId": "ermine",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1291,
+      "thumbnail": {
+        "url": "media/leonardo/ermine/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 10568
+      },
+      "preview": {
+        "url": "media/leonardo/ermine/preview.webp",
+        "width": 952,
+        "height": 1280,
+        "bytes": 171710
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/ermine.jpg",
+        "width": 960,
+        "height": 1291,
+        "bytes": 241130,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lady_with_an_Ermine_-_Leonardo_da_Vinci_%28adjusted_levels%29.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Lady_with_an_Ermine_-_Leonardo_da_Vinci_%28adjusted_levels%29.jpg/960px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_%28adjusted_levels%29.jpg",
+      "sourceHash": "fb030ee8860e048ec6c1e1a6ab045cd15df3bb2ab4c998de25e6ec3074a86ae2",
+      "credit": "抱银貂的女子，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "ginevra-whole",
+      "artworkId": "ginevra",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1017,
+      "thumbnail": {
+        "url": "media/leonardo/ginevra/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21820
+      },
+      "preview": {
+        "url": "media/leonardo/ginevra/preview.webp",
+        "width": 960,
+        "height": 1017,
+        "bytes": 267396
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/ginevra.jpg",
+        "width": 960,
+        "height": 1017,
+        "bytes": 309063,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg/960px-Leonardo_da_Vinci_-_Ginevra_de%27_Benci_-_Google_Art_Project.jpg",
+      "sourceHash": "802d390a57e41c7dbca78b464b40e87786b8b0aec24e67224eb43ccf834d0b93",
+      "credit": "吉内薇拉·德·本奇肖像，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "benois-whole",
+      "artworkId": "benois",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1538,
+      "thumbnail": {
+        "url": "media/leonardo/benois/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18330
+      },
+      "preview": {
+        "url": "media/leonardo/benois/preview.webp",
+        "width": 799,
+        "height": 1280,
+        "bytes": 337500
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/benois.jpg",
+        "width": 960,
+        "height": 1538,
+        "bytes": 588735,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo%2C_Madonna_Benois.JPG",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Leonardo%2C_Madonna_Benois.JPG/960px-Leonardo%2C_Madonna_Benois.JPG",
+      "sourceHash": "f44314bcf486fb2fce305bff54f69dbfe27685a7b9ea1b1b5ec8a31e3ecdadcb",
+      "credit": "贝诺瓦圣母，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "scapigliata-whole",
+      "artworkId": "scapigliata",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1131,
+      "thumbnail": {
+        "url": "media/leonardo/scapigliata/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24238
+      },
+      "preview": {
+        "url": "media/leonardo/scapigliata/preview.webp",
+        "width": 960,
+        "height": 1131,
+        "bytes": 254894
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/scapigliata.jpg",
+        "width": 960,
+        "height": 1131,
+        "bytes": 300776,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Female_head_%28La_Scapigliata%29_-_WGA12716.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Leonardo_da_Vinci_-_Female_head_%28La_Scapigliata%29_-_WGA12716.jpg/960px-Leonardo_da_Vinci_-_Female_head_%28La_Scapigliata%29_-_WGA12716.jpg",
+      "sourceHash": "6683b30b80e3c8507c42fbc504f60594b37fba60d71c9d0f8c23c5487c1f7fbe",
+      "credit": "蓬发女子，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "rocks-london-whole",
+      "artworkId": "rocks-london",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1480,
+      "thumbnail": {
+        "url": "media/leonardo/rocks-london/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19166
+      },
+      "preview": {
+        "url": "media/leonardo/rocks-london/preview.webp",
+        "width": 830,
+        "height": 1280,
+        "bytes": 140152
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/rocks-london.png",
+        "width": 960,
+        "height": 1480,
+        "bytes": 2205810,
+        "format": "png"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29.png",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29.png/960px-Leonardo_da_Vinci_-_Virgin_of_the_Rocks_%28National_Gallery_London%29.png",
+      "sourceHash": "1253c3b05c3bd484e168e1aefdf5f8753e3f44a02be1c9794c14c9753ee7947d",
+      "credit": "岩间圣母 · 伦敦版，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "baptism-whole",
+      "artworkId": "baptism",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1128,
+      "thumbnail": {
+        "url": "media/leonardo/baptism/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 25382
+      },
+      "preview": {
+        "url": "media/leonardo/baptism/preview.webp",
+        "width": 960,
+        "height": 1128,
+        "bytes": 311394
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/baptism.jpg",
+        "width": 960,
+        "height": 1128,
+        "bytes": 356116,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Verrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Verrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg/960px-Verrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg",
+      "sourceHash": "c03a6839b259c1b52a46ddbb4c68f033312222a6c42c7d6f3a5ae8dc72959313",
+      "credit": "基督受洗，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "asse-whole",
+      "artworkId": "asse",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1208,
+      "thumbnail": {
+        "url": "media/leonardo/asse/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 29878
+      },
+      "preview": {
+        "url": "media/leonardo/asse/preview.webp",
+        "width": 960,
+        "height": 1208,
+        "bytes": 334036
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/asse.jpg",
+        "width": 960,
+        "height": 1208,
+        "bytes": 377080,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:6.2_1980-1990_Saporetti_angolo_sud.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/6.2_1980-1990_Saporetti_angolo_sud.jpg/960px-6.2_1980-1990_Saporetti_angolo_sud.jpg",
+      "sourceHash": "077f61d96fa11f9c4a065d5754c3e2abb466f80d2bffc023a1a12a7b08c6fc02",
+      "credit": "摄影：Castello Sforzesco · CC BY-SA 4.0",
+      "licenseLabel": "CC BY-SA 4.0 许可 · 原图缩放展示",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "litta-whole",
+      "artworkId": "litta",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1225,
+      "thumbnail": {
+        "url": "media/leonardo/litta/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18824
+      },
+      "preview": {
+        "url": "media/leonardo/litta/preview.webp",
+        "width": 960,
+        "height": 1225,
+        "bytes": 348408
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/litta.jpg",
+        "width": 960,
+        "height": 1225,
+        "bytes": 387449,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg/960px-Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+      "sourceHash": "c4283854eff0d6be37a5a8154601793397797849870d971a336eb2a8bb7fa0a8",
+      "credit": "丽塔圣母，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "salvator-whole",
+      "artworkId": "salvator",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1413,
+      "thumbnail": {
+        "url": "media/leonardo/salvator/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15832
+      },
+      "preview": {
+        "url": "media/leonardo/salvator/preview.webp",
+        "width": 870,
+        "height": 1280,
+        "bytes": 324048
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/salvator.jpg",
+        "width": 960,
+        "height": 1413,
+        "bytes": 425298,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg/960px-Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg",
+      "sourceHash": "f0094b42dbe1df125f3c55c3c819a048044886cf02c26e4be5a5dae36b21b68a",
+      "credit": "救世主，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    },
+    {
+      "id": "cartoon-whole",
+      "artworkId": "cartoon",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1290,
+      "thumbnail": {
+        "url": "media/leonardo/cartoon/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 14578
+      },
+      "preview": {
+        "url": "media/leonardo/cartoon/preview.webp",
+        "width": 953,
+        "height": 1280,
+        "bytes": 284240
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "assets/cartoon.jpg",
+        "width": 960,
+        "height": 1290,
+        "bytes": 342997,
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leonardo_-_St._Anne_cartoon.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Leonardo_-_St._Anne_cartoon.jpg/960px-Leonardo_-_St._Anne_cartoon.jpg",
+      "sourceHash": "764a4ef71b893298836b137d3888d747b523a6993d5f3a395a01885f7de216d6",
+      "credit": "伯灵顿宫画稿，图像来源：Wikimedia Commons",
+      "licenseLabel": "图像使用信息以来源页为准",
+      "quality": "standard",
+      "publicationStatus": "review-required"
+    }
+  ]
+}
