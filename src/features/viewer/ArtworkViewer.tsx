@@ -11,6 +11,8 @@ import {
 import { ArtworkImage, IconButton } from "../../shared/ui";
 import { ArtworkDownload } from "../artworks/ArtworkDownload";
 import s from "./ArtworkViewer.module.scss";
+const DOUBLE_CLICK_DELAY = 300;
+const TAP_MOVE_TOLERANCE = 5;
 interface Props {
   data: Atlas;
   work: Artwork;
@@ -46,6 +48,29 @@ export default function ArtworkViewer({
   const [zoom, setZoom] = useState(100);
   const [attempt, setAttempt] = useState(0);
   const [picker, setPicker] = useState(false);
+  const [controlsHidden, setControlsHidden] = useState(false);
+  const toggleTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined,
+  );
+  const suppressTap = useRef(false);
+  const dragDistance = useRef(0);
+  function cancelToggle() {
+    clearTimeout(toggleTimer.current);
+    toggleTimer.current = undefined;
+  }
+  function interactWithCanvas() {
+    cancelToggle();
+    setPicker(false);
+    onCanvasInteraction?.();
+  }
+  useEffect(() => {
+    setControlsHidden(false);
+    setPicker(false);
+  }, [work.id]);
+  useEffect(() => {
+    if (controlsHidden)
+      (viewer.current?.canvas ?? stage.current)?.focus({ preventScroll: true });
+  }, [controlsHidden]);
   useEffect(() => {
     if (!stage.current || !asset) return;
     setHasImage(false);
@@ -89,6 +114,8 @@ export default function ArtworkViewer({
       timeout: 15000,
       animationTime: 0.2,
       blendTime: 0.1,
+      dblClickTimeThreshold: DOUBLE_CLICK_DELAY,
+      clickDistThreshold: TAP_MOVE_TOLERANCE,
       gestureSettingsMouse: {
         scrollToZoom: true,
         clickToZoom: false,
@@ -108,6 +135,26 @@ export default function ArtworkViewer({
       },
     });
     viewer.current = v;
+    v.addHandler("canvas-click", (event) => {
+      cancelToggle();
+      if (!event.quick || suppressTap.current) return;
+      // Wait for the SDK's double-click window so zooming never flashes the UI.
+      toggleTimer.current = setTimeout(() => {
+        toggleTimer.current = undefined;
+        if (!dead) setControlsHidden((hidden) => !hidden);
+      }, DOUBLE_CLICK_DELAY);
+    });
+    v.addHandler("canvas-double-click", cancelToggle);
+    const suppressGestureTap = () => {
+      suppressTap.current = true;
+      cancelToggle();
+    };
+    v.addHandler("canvas-drag", ({ delta }) => {
+      dragDistance.current += Math.hypot(delta.x, delta.y);
+      if (dragDistance.current > TAP_MOVE_TOLERANCE) suppressGestureTap();
+    });
+    v.addHandler("canvas-pinch", suppressGestureTap);
+    v.addHandler("canvas-scroll", suppressGestureTap);
     function updateZoomLimit() {
       // 100% means fit-to-window. Allow at least 400% even for small images,
       // while retaining the higher native-resolution limit of detailed works.
@@ -247,6 +294,7 @@ export default function ArtworkViewer({
       if (state) useSession.getState().saveImageView(snapshotKey, state);
       dead = true;
       clearTimeout(timer);
+      cancelToggle();
       observer.disconnect();
       v.destroy();
       viewer.current = null;
@@ -261,6 +309,7 @@ export default function ArtworkViewer({
     // Opening/closing information must not steal focus during a canvas gesture.
   }, [work.id]);
   function changeZoom(factor: number) {
+    setPicker(false);
     const v = viewer.current;
     if (!v) return;
     v.viewport.zoomBy(factor);
@@ -273,7 +322,19 @@ export default function ArtworkViewer({
       role="dialog"
       aria-modal={infoOpen ? undefined : true}
       aria-label={`欣赏${work.title}`}
+      onPointerDownCapture={cancelToggle}
+      onWheelCapture={cancelToggle}
       onKeyDown={(event) => {
+        cancelToggle();
+        if (controlsHidden && ["Escape", "Tab"].includes(event.key)) {
+          event.preventDefault();
+          event.stopPropagation();
+          setControlsHidden(false);
+          requestAnimationFrame(() =>
+            root.current?.querySelector<HTMLButtonElement>("button")?.focus(),
+          );
+          return;
+        }
         if (!infoOpen && event.key === "Tab") {
           const controls = [
             ...(root.current?.querySelectorAll<HTMLElement>(
@@ -298,99 +359,124 @@ export default function ArtworkViewer({
       <div
         ref={stage}
         className={s.stage}
-        onPointerDownCapture={onCanvasInteraction}
-        onWheelCapture={onCanvasInteraction}
+        role="group"
+        aria-label="画作画布，单击隐藏或显示信息"
+        tabIndex={-1}
+        onPointerDownCapture={(event) => {
+          suppressTap.current = event.isPrimary === false;
+          dragDistance.current = 0;
+          interactWithCanvas();
+        }}
+        onPointerCancelCapture={() => {
+          suppressTap.current = true;
+          interactWithCanvas();
+        }}
+        onWheelCapture={interactWithCanvas}
+        onKeyDownCapture={(event) => {
+          if (["Tab", "Escape"].includes(event.key)) return;
+          interactWithCanvas();
+          if (["Enter", " "].includes(event.key)) {
+            event.preventDefault();
+            event.stopPropagation();
+            if (!event.repeat) setControlsHidden((hidden) => !hidden);
+          }
+        }}
       />
-      <header className={s.header}>
-        <IconButton
-          icon={compact ? "back" : "close"}
-          label="退出看画"
-          onClick={onBack}
-        />
-        <div>
-          <h1>{work.title}</h1>
-          {!compact && (
-            <p>
-              {artistLabel(data, work)} · {work.dateLabel}
-            </p>
-          )}
-        </div>
-        <div className={s.headerActions}>
-          <ArtworkDownload work={work} image={asset} iconOnly />
+      <div hidden={controlsHidden}>
+        <header className={s.header}>
           <IconButton
-            icon="info"
-            label="查看作品信息"
-            onClick={onInfo}
-            data-viewer-info
+            icon={compact ? "back" : "close"}
+            label="退出看画"
+            onClick={onBack}
           />
-        </div>
-      </header>
-      {!asset && (
-        <div className={s.error} role="status">
-          暂无可用图像，可通过作品信息查看资料与收藏位置。
-        </div>
-      )}
-      {error && (
-        <div className={s.error} role="status">
-          <span>{error}</span>
-          <button onClick={() => setAttempt((n) => n + 1)}>重试</button>
-        </div>
-      )}
-      {asset && (
-        <div className={s.toolbar}>
-          <IconButton
-            icon="minus"
-            label="缩小画作"
-            onClick={() => changeZoom(1 / 1.35)}
-          />
-          <span>{zoom}%</span>
-          <IconButton
-            icon="plus"
-            label="放大画作"
-            onClick={() => changeZoom(1.35)}
-          />
-          <i />
-          <IconButton
-            icon="expand"
-            label="还原全图"
-            onClick={() => viewer.current?.viewport.goHome()}
-          />
-        </div>
-      )}
-      {images.length > 1 && (
-        <div className={s.parts}>
-          <button
-            onClick={() => setPicker((value) => !value)}
-            aria-expanded={picker}
-          >
-            {asset?.label}
-            <span>⌃</span>
-          </button>
-          {picker && (
-            <div className={s.picker} aria-label="选择全卷或高清局部">
-              {images.map((image) => (
-                <button
-                  key={image.id}
-                  aria-current={asset?.id === image.id ? "true" : undefined}
-                  onClick={() => {
-                    onAsset(image.id);
-                    setPicker(false);
-                  }}
-                >
-                  {image.label}
-                </button>
-              ))}
-              <p>包含全幅、分段、局部或题跋；每张图片不另计为作品。</p>
-            </div>
-          )}
-        </div>
-      )}
-      {asset?.quality === "standard" && (
-        <span className={s.resolution}>普通清晰度</span>
-      )}
-      {asset?.role === "reference" && asset.quality !== "standard" && (
-        <span className={s.resolution}>局部参考图</span>
-      )}
+          <div>
+            <h1>{work.title}</h1>
+            {!compact && (
+              <p>
+                {artistLabel(data, work)} · {work.dateLabel}
+              </p>
+            )}
+          </div>
+          <div className={s.headerActions}>
+            <ArtworkDownload work={work} image={asset} iconOnly />
+            <IconButton
+              icon="info"
+              label="查看作品信息"
+              onClick={onInfo}
+              data-viewer-info
+            />
+          </div>
+        </header>
+        {!asset && (
+          <div className={s.error} role="status">
+            暂无可用图像，可通过作品信息查看资料与收藏位置。
+          </div>
+        )}
+        {error && (
+          <div className={s.error} role="status">
+            <span>{error}</span>
+            <button onClick={() => setAttempt((n) => n + 1)}>重试</button>
+          </div>
+        )}
+        {asset && (
+          <div className={s.toolbar}>
+            <IconButton
+              icon="minus"
+              label="缩小画作"
+              onClick={() => changeZoom(1 / 1.35)}
+            />
+            <span>{zoom}%</span>
+            <IconButton
+              icon="plus"
+              label="放大画作"
+              onClick={() => changeZoom(1.35)}
+            />
+            <i />
+            <IconButton
+              icon="expand"
+              label="还原全图"
+              onClick={() => {
+                setPicker(false);
+                viewer.current?.viewport.goHome();
+              }}
+            />
+          </div>
+        )}
+        {images.length > 1 && (
+          <div className={s.parts}>
+            <button
+              onClick={() => setPicker((value) => !value)}
+              aria-expanded={picker}
+            >
+              {asset?.label}
+              <span>⌃</span>
+            </button>
+            {picker && (
+              <div className={s.picker} aria-label="选择全卷或高清局部">
+                {images.map((image) => (
+                  <button
+                    key={image.id}
+                    aria-current={asset?.id === image.id ? "true" : undefined}
+                    onClick={() => {
+                      onAsset(image.id);
+                      setPicker(false);
+                    }}
+                  >
+                    {image.label}
+                  </button>
+                ))}
+                <p>包含全幅、分段、局部或题跋；每张图片不另计为作品。</p>
+              </div>
+            )}
+          </div>
+        )}
+        {asset?.quality === "standard" && (
+          <span className={s.resolution}>普通清晰度</span>
+        )}
+        {asset?.role === "reference" && asset.quality !== "standard" && (
+          <span className={s.resolution}>局部参考图</span>
+        )}
+      </div>
     </div>
   );
 }

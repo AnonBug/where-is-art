@@ -3,6 +3,7 @@ import type OpenSeadragon from "openseadragon";
 import {
   act,
   cleanup,
+  createEvent,
   fireEvent,
   render,
   screen,
@@ -25,7 +26,7 @@ Object.assign(sdk.open, { Point: OSD.Point });
 const data = atlasSchema.parse(catalog);
 let resizeViewer: () => void;
 
-function mount(workId = "tang-yin-01") {
+function mount(workId = "tang-yin-01", compact = false) {
   const asset = primaryImage(data, workId)!;
   const size = new OSD.Point(asset.delivery.width, asset.delivery.height);
   const viewport = new OSD.Viewport({
@@ -48,6 +49,8 @@ function mount(workId = "tang-yin-01") {
   const events = new OSD.EventSource();
   const addTiledImage = vi.fn();
   const destroy = vi.fn();
+  const onCanvasInteraction = vi.fn();
+  const onAsset = vi.fn();
   sdk.open.mockReturnValue({
     viewport,
     world: { getItemAt: (index: number) => (index === 0 ? preview : detail) },
@@ -60,11 +63,12 @@ function mount(workId = "tang-yin-01") {
     <ArtworkViewer
       data={data}
       work={data.artworks.find((work) => work.id === workId)!}
-      compact={false}
+      compact={compact}
       infoOpen={false}
       onBack={vi.fn()}
       onInfo={vi.fn()}
-      onAsset={vi.fn()}
+      onAsset={onAsset}
+      onCanvasInteraction={onCanvasInteraction}
     />,
   );
   const emit = (type: string, args = {}) =>
@@ -90,6 +94,8 @@ function mount(workId = "tang-yin-01") {
     detail,
     addTiledImage,
     destroy,
+    onAsset,
+    onCanvasInteraction,
     emit,
     drawPreview,
     zoomIn,
@@ -266,6 +272,172 @@ it("lets a low-resolution image reach 400% before and after detail loads and aft
   });
   expect(viewport.getZoom(true) / viewport.getHomeZoom()).toBeCloseTo(1);
 });
+
+it.each([false, true])(
+  "toggles all viewing controls on a single tap without changing the image view (compact=%s)",
+  (compact) => {
+    const { viewport, emit, drawPreview, zoomIn, destroy } = mount(
+      "tang-yin-11",
+      compact,
+    );
+    drawPreview();
+    zoomIn();
+    const zoom = viewport.getZoom(true);
+    const center = viewport.getCenter(true);
+    const canvas = screen.getByRole("group", { name: /^画作画布/ });
+    fireEvent.click(screen.getByRole("button", { expanded: false }));
+    expect(screen.getByLabelText("选择全卷或高清局部")).toBeTruthy();
+
+    fireEvent.pointerDown(canvas, { isPrimary: true });
+    expect(screen.queryByLabelText("选择全卷或高清局部")).toBeNull();
+    emit("canvas-click", { quick: true });
+    act(() => vi.advanceTimersByTime(350));
+    expect(screen.queryByRole("heading")).toBeNull();
+    expect(screen.queryByRole("button")).toBeNull();
+    expect(screen.queryByRole("link")).toBeNull();
+
+    fireEvent.pointerDown(canvas, { isPrimary: true });
+    emit("canvas-click", { quick: true });
+    act(() => vi.advanceTimersByTime(350));
+    expect(screen.getByRole("heading")).toBeTruthy();
+    expect(screen.getByRole("button", { name: "退出看画" })).toBeTruthy();
+    expect(screen.getByRole("button", { expanded: false })).toBeTruthy();
+    expect(viewport.getZoom(true)).toBe(zoom);
+    expect(viewport.getCenter(true)).toEqual(center);
+    expect(sdk.open).toHaveBeenCalledOnce();
+    expect(destroy).not.toHaveBeenCalled();
+  },
+);
+
+it.each(["pointer", "wheel", "keyboard"])(
+  "closes the image picker on the first canvas %s event without consuming it",
+  (interaction) => {
+    const { onCanvasInteraction, onAsset } = mount("tang-yin-11");
+    const canvas = screen.getByRole("group", { name: /^画作画布/ });
+    const toggle = screen.getByRole("button", { expanded: false });
+    fireEvent.click(toggle);
+    const picker = screen.getByLabelText("选择全卷或高清局部");
+    fireEvent.wheel(picker, { deltaY: 80 });
+    expect(screen.getByLabelText("选择全卷或高清局部")).toBe(picker);
+    expect(onCanvasInteraction).not.toHaveBeenCalled();
+    const event =
+      interaction === "pointer"
+        ? createEvent.pointerDown(canvas, { bubbles: true, cancelable: true })
+        : interaction === "wheel"
+          ? createEvent.wheel(canvas, {
+              bubbles: true,
+              cancelable: true,
+              deltaY: 80,
+            })
+          : createEvent.keyDown(canvas, {
+              bubbles: true,
+              cancelable: true,
+              key: "ArrowRight",
+            });
+    fireEvent(canvas, event);
+    expect(event.defaultPrevented).toBe(false);
+    expect(onCanvasInteraction).toHaveBeenCalledOnce();
+    expect(screen.queryByLabelText("选择全卷或高清局部")).toBeNull();
+    expect(toggle.getAttribute("aria-expanded")).toBe("false");
+    expect(screen.getByRole("heading")).toBeTruthy();
+    expect(onAsset).not.toHaveBeenCalled();
+
+    fireEvent.click(toggle);
+    fireEvent.click(screen.getByRole("button", { name: "局部 1" }));
+    expect(onAsset).toHaveBeenCalledOnce();
+    expect(screen.queryByLabelText("选择全卷或高清局部")).toBeNull();
+  },
+);
+
+it.each(["drag", "pinch", "scroll", "cancel", "second-touch"])(
+  "does not mistake a %s gesture for a tap, including a release at its starting point",
+  (gesture) => {
+    const { emit } = mount();
+    const canvas = screen.getByRole("group", { name: /^画作画布/ });
+    fireEvent.pointerDown(canvas, { isPrimary: true });
+    if (gesture === "cancel") fireEvent.pointerCancel(canvas);
+    else if (gesture === "second-touch") {
+      const event = createEvent.pointerDown(canvas, { bubbles: true });
+      Object.defineProperty(event, "isPrimary", { value: false });
+      fireEvent(canvas, event);
+    } else emit(`canvas-${gesture}`, { delta: new OSD.Point(30, 10) });
+    emit("canvas-click", { quick: true });
+    act(() => vi.advanceTimersByTime(350));
+    expect(screen.getByRole("button", { name: "退出看画" })).toBeTruthy();
+
+    // A fresh tap works, with small finger jitter tolerated.
+    fireEvent.pointerDown(canvas, { isPrimary: true });
+    emit("canvas-drag", { delta: new OSD.Point(1, 1) });
+    emit("canvas-click", { quick: true });
+    act(() => vi.advanceTimersByTime(350));
+    expect(screen.queryByRole("button", { name: "退出看画" })).toBeNull();
+  },
+);
+
+it("keeps double-click zoom enabled without toggling controls or flashing them", () => {
+  const { emit } = mount();
+  const canvas = screen.getByRole("group", { name: /^画作画布/ });
+  const options = sdk.open.mock.calls[0][0];
+  expect(options.gestureSettingsMouse.dblClickToZoom).toBe(true);
+  expect(options.gestureSettingsTouch.dblClickToZoom).toBe(true);
+  fireEvent.pointerDown(canvas, { isPrimary: true });
+  emit("canvas-click", { quick: true });
+  act(() => vi.advanceTimersByTime(100));
+  expect(screen.getByRole("heading")).toBeTruthy();
+  fireEvent.pointerDown(canvas, { isPrimary: true });
+  emit("canvas-click", { quick: true });
+  const event = { preventDefaultAction: false };
+  emit("canvas-double-click", event);
+  act(() => vi.advanceTimersByTime(350));
+  expect(event.preventDefaultAction).toBe(false);
+  expect(screen.getByRole("heading")).toBeTruthy();
+});
+
+it("cancels a pending toggle when another interaction begins and ignores long presses", () => {
+  const { emit, unmount } = mount();
+  const canvas = screen.getByRole("group", { name: /^画作画布/ });
+  for (const interrupt of [
+    () => fireEvent.wheel(canvas, { deltaY: 50 }),
+    () =>
+      fireEvent.pointerDown(screen.getByRole("button", { name: "放大画作" })),
+  ]) {
+    fireEvent.pointerDown(canvas, { isPrimary: true });
+    emit("canvas-click", { quick: true });
+    interrupt();
+    act(() => vi.advanceTimersByTime(350));
+    expect(screen.getByRole("heading")).toBeTruthy();
+  }
+  fireEvent.pointerDown(canvas, { isPrimary: true });
+  emit("canvas-click", { quick: false });
+  act(() => vi.advanceTimersByTime(350));
+  expect(screen.getByRole("heading")).toBeTruthy();
+  emit("canvas-click", { quick: true });
+  unmount();
+  expect(vi.getTimerCount()).toBe(0);
+});
+
+it.each(["Escape", "Tab"])(
+  "restores hidden controls with %s without leaving the viewer",
+  (key) => {
+    mount("tang-yin-15");
+    const canvas = screen.getByRole("group", { name: /^画作画布/ });
+    fireEvent.keyDown(canvas, { key: "Enter" });
+    expect(screen.queryByRole("heading")).toBeNull();
+    expect(screen.getByText("普通清晰度").closest("[hidden]")).toBeTruthy();
+    const event = createEvent.keyDown(canvas, {
+      key,
+      bubbles: true,
+      cancelable: true,
+    });
+    fireEvent(canvas, event);
+    expect(event.defaultPrevented).toBe(true);
+    act(() => vi.advanceTimersByTime(20));
+    expect(document.activeElement).toBe(
+      screen.getByRole("button", { name: "退出看画" }),
+    );
+    expect(screen.getByText("普通清晰度").closest("[hidden]")).toBeNull();
+  },
+);
 
 it("keeps the preview usable after a detail failure and ignores late callbacks after exit", () => {
   const { viewport, addTiledImage, drawPreview, zoomIn, unmount, destroy } =
