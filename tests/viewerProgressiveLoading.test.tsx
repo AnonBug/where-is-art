@@ -117,7 +117,33 @@ afterEach(() => {
   vi.restoreAllMocks();
   vi.useRealTimers();
   vi.unstubAllGlobals();
+  vi.unstubAllEnvs();
 });
+
+it.each(["mona", "tang-yin-02"])(
+  "loads the %s preview and detail from the configured host with anonymous CORS",
+  (workId) => {
+    const base = "https://assets.example/where-is-art/";
+    vi.stubEnv("VITE_ASSET_BASE_URL", base);
+    vi.stubEnv("BASE_URL", "/different-app/");
+    const { asset, addTiledImage } = mount(workId);
+    const options = sdk.open.mock.calls[0][0];
+    expect(options.crossOriginPolicy).toBe("Anonymous");
+    expect(options.tileSources.getTileUrl()).toBe(base + asset.preview.url);
+    const source = addTiledImage.mock.calls[0][0].tileSource;
+    expect(asset.delivery.kind === "dzi" ? source : source.url).toBe(
+      base + asset.delivery.url,
+    );
+    expect(
+      screen.getByRole("link", { name: /^下载/ }).getAttribute("href"),
+    ).toBe(
+      base +
+        (asset.delivery.kind === "dzi"
+          ? asset.preview.url
+          : asset.delivery.url),
+    );
+  },
+);
 
 it.each(["tang-yin-01", "tang-yin-02", "mona"])(
   "keeps %s interactive while detail loads and preserves its view when detail arrives",

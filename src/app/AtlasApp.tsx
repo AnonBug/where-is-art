@@ -11,6 +11,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "../infrastructure/useContent";
 import { useSession } from "../application/session";
 import {
+  assetUrl,
   scopeWorks,
   scopeLabel,
   workVenues,
@@ -187,7 +188,7 @@ export function AtlasApp() {
     return (
       <main className={s.app}>
         <div className={s.loading}>
-          <img src={`${import.meta.env.BASE_URL}brand/logo.png`} alt="" />
+          <img src={assetUrl("brand/logo.png")} alt="" />
           <h1>名画在哪里</h1>
           {error ? (
             <>

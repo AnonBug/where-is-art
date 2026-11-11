@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import { useSession } from "../../application/session";
 import {
   artistLabel,
+  assetUrl,
   primaryImage,
   scopeWorks,
   type Artwork,
@@ -137,10 +138,7 @@ export function Catalog({
   return (
     <aside className={s.catalog} aria-label="名画目录">
       <div className={s.brand}>
-        <img
-          src={`${import.meta.env.BASE_URL}brand/logo.png`}
-          alt="珍珠耳环猫 Logo"
-        />
+        <img src={assetUrl("brand/logo.png")} alt="珍珠耳环猫 Logo" />
         <span>名画在哪里</span>
         {compact && (
           <IconButton icon="map" label="查看当前分布" onClick={onMap} />

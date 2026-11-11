@@ -1,4 +1,5 @@
 import type { CollectionRegistry } from "../types";
+import { assetUrl } from "../domain/atlas";
 
 export function Header({
   registry,
@@ -52,7 +53,7 @@ export function Header({
             <button onClick={onAbout}>关于这张地图 ↗</button>
           </>
         )}
-        <a href="data.json" download="名画在哪里_作品资料.json">
+        <a href={assetUrl("data.json")} download="名画在哪里_作品资料.json">
           下载图录 ↓
         </a>
       </nav>

@@ -31,9 +31,36 @@ npm run build          # 主题生成、类型检查、静态构建及发布体�
 npm run preview        # 预览 dist/，与 dev 使用同一端口
 ```
 
-`dist/` 可重新生成，不提交到 Git。当前没有服务端、账号或数据库。目录 JSON 同站加载；地图通过 HTTPS 请求天地图 `vec_w`、`ibo_w`、`cva_w`，使用球面墨卡托 WMTS（1—18 级、256 px PNG）。这些是已绘制的成图瓦片，不是可逐要素改色的 MVT/PBF。
+`dist/` 可重新生成，不提交到 Git。当前没有服务端、账号或数据库。目录 JSON 按资源基础地址加载；地图通过 HTTPS 请求天地图 `vec_w`、`ibo_w`、`cva_w`，使用球面墨卡托 WMTS（1—18 级、256 px PNG）。这些是已绘制的成图瓦片，不是可逐要素改色的 MVT/PBF。
 
-海外近景加载同站的 `map-style.json`，再请求 OpenFreeMap 矢量瓦片、字体与图标。切换由 `regionalBasemap.ts` 集中控制：zoom ≤ 5 始终使用天地图；达到 5.5 且整个视野离开保守范围后才进入 OpenFreeMap。经度 70°—140°、纬度 0°—56° 是切换保护框，另加 3° 的进入缓冲，不是行政边界，也不绘制在地图上，因此部分邻近地区仍使用天地图。依据视野而非画家分类决定来源；切换替换整张底图，不拼接两套国界，不改变馆藏点坐标。
+海外近景按资源基础地址加载 `map-style.json`，再请求 OpenFreeMap 矢量瓦片、字体与图标。切换由 `regionalBasemap.ts` 集中控制：zoom ≤ 5 始终使用天地图；达到 5.5 且整个视野离开保守范围后才进入 OpenFreeMap。经度 70°—140°、纬度 0°—56° 是切换保护框，另加 3° 的进入缓冲，不是行政边界，也不绘制在地图上，因此部分邻近地区仍使用天地图。依据视野而非画家分类决定来源；切换替换整张底图，不拼接两套国界，不改变馆藏点坐标。
+
+## 静态资源地址（OSS / 本地）
+
+应用路由及 JS/CSS 构建产物仍由 `PAGES_BASE_PATH`（Vite `base`）控制。`VITE_ASSET_BASE_URL` 只控制 `public/` 中的图片、缩略图、预览、DZI/瓦片、目录/地图样式 JSON 和品牌图；第三方地图服务及馆方来源链接保持原地址。
+
+- 生产构建默认读取随项目维护的 `.env.production`，当前使用 `https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/`。
+- 开发时将 `.env.example` 复制到 `.env.local` 可使用 OSS；未配置或将 `VITE_ASSET_BASE_URL` 留空，则使用本地 `public/`，自动跟随应用子路径。
+- Vite 在构建时写入此配置；修改后需重启开发服务或重新构建。生产模式中 `.env.production` 优先于 `.env.local`；本机生产覆盖请使用 `.env.production.local` 或下面的 shell 环境变量。
+
+```sh
+# OSS + GitHub Pages 子路径（使用 .env.production）
+PAGES_BASE_PATH=/where-is-art/ npm run build
+
+# 本地资源 + GitHub Pages 子路径（显式空值覆盖 .env.production）
+VITE_ASSET_BASE_URL= PAGES_BASE_PATH=/where-is-art/ npm run build
+
+# 根路径、本地资源开发
+VITE_ASSET_BASE_URL= npm run dev
+```
+
+地址必须对应 `public/` 的内容根目录，URL 不含 `public/`。JSON 继续保存 `assets/mona.jpg`、`media/…/detail.dzi` 等相对路径，不要再加 `where-is-art/`。统一的 `assetUrl()` 在加载入口处理首尾斜杠并保留已有绝对 URL；旧版入口仅转换图像的 `path` 字段。OpenSeadragon 根据 DZI 的完整 URL 寻找同目录 `detail_files/<level>/<x>_<y>.jpeg`，因此整套 DZI 与瓦片须保留相对目录结构。查看器使用匿名 CORS，以支持跨域图像和画布读取。
+
+本地资源仍保留，Vite 构建仍会复制 `public/` 到 `dist/`；本次只切换加载地址，不缩减发布包。新增或更改 `public/` 内容后，应先核对资源端是否同步（包括重新生成的 `catalog.json` 和 `map-style.json`），再使用对应的资源基础地址发布。不会对缺失资源静默改用其他图片。
+
+OSS 默认域名的 `Content-Disposition: attachment` 不作为图片不可用的判断依据，以实际图片解码、JSON/DZI 请求及画布绘制为准。本地 OSS 验证使用已允许的 `http://127.0.0.1:8775` 或 `http://localhost:8775`；不要通过关闭浏览器安全检查来绕过 CORS。
+
+未来自定义资源域名就绪后，将 `.env.production` 中的值改为 `https://assets.halfbvg.com/where-is-art/`（开发覆盖配置同步替换），重新构建并验证后再发布；无需修改组件或 `PAGES_BASE_PATH`。域名启用前继续使用 OSS 默认地址；资源地址配置本身不修改 DNS、OSS 权限或云端文件。
 
 ## 当前交互
 

@@ -185,9 +185,12 @@ export const artistLabel = (data: Atlas, work: Artwork) =>
     )
     .join("、");
 export function assetUrl(url: string) {
-  return /^https:\/\//.test(url)
-    ? url
-    : `${import.meta.env.BASE_URL}${url.replace(/^\//, "")}`;
+  // JSON media paths are relative to public/, never to the catalog URL or route.
+  // Keep external URLs (including data/blob and protocol-relative URLs) intact.
+  if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(url)) return url;
+  const base =
+    import.meta.env.VITE_ASSET_BASE_URL?.trim() || import.meta.env.BASE_URL;
+  return `${base.replace(/\/+$/, "")}/${url.replace(/^(?:\.\/|\/)+/, "")}`;
 }
 export function validateRelations(data: Atlas): string[] {
   const errors: string[] = [];

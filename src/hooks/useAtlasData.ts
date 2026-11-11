@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { assetUrl } from "../domain/atlas";
 import type {
   AtlasData,
   ArtworkImages,
@@ -8,7 +9,7 @@ import type {
 } from "../types";
 
 async function readJson<T>(path: string, signal: AbortSignal): Promise<T> {
-  const response = await fetch(`${import.meta.env.BASE_URL}${path}`, {
+  const response = await fetch(assetUrl(path), {
     signal,
   });
   if (!response.ok) throw new Error(`无法读取 ${path}（${response.status}）`);
@@ -29,7 +30,18 @@ export function useAtlasData() {
     ])
       .then(([catalog, images, world, registry]) => {
         if (!controller.signal.aborted)
-          setData({ ...catalog, images, world, registry });
+          setData({
+            ...catalog,
+            // Legacy components consume image.path directly; source URLs stay intact.
+            images: Object.fromEntries(
+              Object.entries(images).map(([id, image]) => [
+                id,
+                { ...image, path: assetUrl(image.path) },
+              ]),
+            ),
+            world,
+            registry,
+          });
       })
       .catch((reason: unknown) => {
         if (!controller.signal.aborted)

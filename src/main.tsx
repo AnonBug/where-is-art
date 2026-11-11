@@ -3,6 +3,13 @@ import { createRoot } from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 import "./styles/global.scss";
 import { AtlasApp } from "./app/AtlasApp";
+import { assetUrl } from "./domain/atlas";
+
+const icon = document.createElement("link");
+icon.rel = "icon";
+icon.type = "image/png";
+icon.href = assetUrl("brand/logo.png");
+document.head.append(icon);
 
 const legacyWork = location.hash.match(/^#work=([^&]+)/)?.[1];
 if (legacyWork)

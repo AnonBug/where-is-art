@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect } from "react";
+import { assetUrl } from "./domain/atlas";
 import { CollectionDirectory } from "./components/CollectionDirectory";
 import { useAtlasData } from "./hooks/useAtlasData";
 import { useCollectionNavigation } from "./hooks/useCollectionNavigation";
@@ -29,7 +30,7 @@ export function App() {
         <h1>页面资料暂时未能载入</h1>
         <p>{error}</p>
         <button onClick={() => location.reload()}>重新加载</button>
-        <a href="data.json">打开作品资料</a>
+        <a href={assetUrl("data.json")}>打开作品资料</a>
       </main>
     );
   if (!data)

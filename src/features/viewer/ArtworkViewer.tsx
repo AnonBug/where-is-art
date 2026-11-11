@@ -84,6 +84,7 @@ export default function ArtworkViewer({
       minZoomImageRatio: 0.8,
       imageLoaderLimit: compact ? 3 : 6,
       maxImageCacheCount: compact ? 40 : 90,
+      crossOriginPolicy: "Anonymous",
       loadTilesWithAjax: true,
       timeout: 15000,
       animationTime: 0.2,
