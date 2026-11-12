@@ -14,6 +14,8 @@ import { MemoryRouter, useLocation, useNavigate } from "react-router-dom";
 import catalog from "../public/catalog.json";
 import { atlasSchema, type Artwork } from "../src/domain/atlas";
 import { useSession } from "../src/application/session";
+import { ArtworkFavorite } from "../src/features/artworks/ArtworkFavorite";
+import { FAVORITES_KEY } from "../src/lib/favorites";
 import { AtlasApp } from "../src/app/AtlasApp";
 
 const device = vi.hoisted(() => ({ compact: false }));
@@ -59,11 +61,17 @@ vi.mock("../src/features/map/AtlasMap", () => ({
 }));
 vi.mock("../src/features/viewer/ArtworkViewer", () => ({
   default: ({
+    work,
+    favorite,
+    onToggleFavorite,
     infoOpen,
     onInfo,
     onBack,
     onCanvasInteraction,
   }: {
+    work: Artwork;
+    favorite: boolean;
+    onToggleFavorite: () => void;
     infoOpen: boolean;
     onInfo: () => void;
     onBack: () => void;
@@ -74,6 +82,12 @@ vi.mock("../src/features/viewer/ArtworkViewer", () => ({
         aria-label="测试画作画布"
         onPointerDownCapture={onCanvasInteraction}
         onWheelCapture={onCanvasInteraction}
+      />
+      <ArtworkFavorite
+        title={work.title}
+        favorite={favorite}
+        onToggle={onToggleFavorite}
+        iconOnly
       />
       <button onClick={onInfo}>查看作品信息</button>
       <button onClick={onBack}>退出看画</button>
@@ -102,6 +116,7 @@ function mount(path = "/catalog/china?scope=category:china") {
   );
 }
 beforeEach(() => {
+  localStorage.clear();
   useSession.setState({
     tab: "china",
     topicId: null,
@@ -366,4 +381,62 @@ describe("navigation contracts", () => {
     await user.click(screen.getByRole("button", { name: "返回目录" }));
     expect(screen.getByLabelText("名画目录")).toBeTruthy();
   });
+});
+
+describe("local favorites journeys", () => {
+  it.each([false, true])(
+    "shares favorite state between painting information and viewer (compact=%s)",
+    async (compact) => {
+      device.compact = compact;
+      const user = userEvent.setup();
+      mount("/artworks/mona/view?scope=artist:leonardo");
+      const viewer = await screen.findByTestId("viewer");
+      await user.click(
+        within(viewer).getByRole("button", { name: "收藏《蒙娜丽莎》" }),
+      );
+      expect(JSON.parse(localStorage.getItem(FAVORITES_KEY)!)).toEqual([
+        "mona",
+      ]);
+      await user.click(screen.getByRole("button", { name: "查看作品信息" }));
+      const info = screen.getByRole("dialog", { name: "作品信息" });
+      const favorite = within(info).getByRole("button", {
+        name: "取消收藏《蒙娜丽莎》",
+      });
+      expect(favorite.getAttribute("aria-pressed")).toBe("true");
+      await user.click(favorite);
+      expect(
+        within(viewer)
+          .getByRole("button", { name: "收藏《蒙娜丽莎》" })
+          .getAttribute("aria-pressed"),
+      ).toBe("false");
+      expect(JSON.parse(localStorage.getItem(FAVORITES_KEY)!)).toEqual([]);
+    },
+  );
+
+  it.each([false, true])(
+    "opens a saved work from a direct favorites link and returns to the empty collection after removal (compact=%s)",
+    async (compact) => {
+      device.compact = compact;
+      localStorage.setItem(FAVORITES_KEY, '["mona"]');
+      const user = userEvent.setup();
+      mount("/catalog/favorites");
+      await user.click(
+        await screen.findByRole("button", { name: /^蒙娜丽莎/ }),
+      );
+      expect(screen.getByTestId("route").textContent).toBe(
+        `/artworks/mona${compact ? "/view" : ""}?scope=favorites`,
+      );
+      await user.click(
+        await screen.findByRole("button", { name: "取消收藏《蒙娜丽莎》" }),
+      );
+      await user.click(
+        screen.getByRole("button", { name: compact ? "退出看画" : "关闭详情" }),
+      );
+      expect(screen.getByTestId("route").textContent).toBe(
+        "/catalog/favorites",
+      );
+      expect(screen.getByText("还没有收藏画作")).toBeTruthy();
+      expect(screen.queryByRole("button", { name: /^蒙娜丽莎/ })).toBeNull();
+    },
+  );
 });

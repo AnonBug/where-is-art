@@ -7,12 +7,16 @@ import {
 } from "../../domain/atlas";
 import { ArtworkImage, Icon } from "../../shared/ui";
 import { ArtworkDownload } from "./ArtworkDownload";
+import { ArtworkFavorite } from "./ArtworkFavorite";
 import s from "./ArtworkDetails.module.scss";
 export function ArtworkDetails({
   data,
   work,
   assetId,
   showPreview = true,
+  favorite = false,
+  onToggleFavorite,
+  storageError = false,
   onView,
   onVenue,
 }: {
@@ -20,6 +24,9 @@ export function ArtworkDetails({
   work: Artwork;
   assetId?: string;
   showPreview?: boolean;
+  favorite?: boolean;
+  onToggleFavorite?: () => void;
+  storageError?: boolean;
   onView?: () => void;
   onVenue: (id: string) => void;
 }) {
@@ -67,6 +74,18 @@ export function ArtworkDetails({
           {artistLabel(data, work)} · {work.dateLabel}
         </p>
         <p className={s.medium}>{work.medium}</p>
+        {onToggleFavorite && (
+          <ArtworkFavorite
+            title={work.title}
+            favorite={favorite}
+            onToggle={onToggleFavorite}
+          />
+        )}
+        {storageError && (
+          <p className={s.note} role="status">
+            浏览器未允许保存，收藏仅在本次打开期间保留。
+          </p>
+        )}
         {!image && (
           <p className={s.note}>暂无可用图像，可查看作品资料与收藏位置。</p>
         )}

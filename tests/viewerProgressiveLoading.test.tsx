@@ -1,4 +1,5 @@
 // @vitest-environment jsdom
+import { useState } from "react";
 import type OpenSeadragon from "openseadragon";
 import {
   act,
@@ -59,18 +60,24 @@ function mount(workId = "tang-yin-01", compact = false) {
     forceRedraw: vi.fn(),
     destroy,
   });
-  const view = render(
-    <ArtworkViewer
-      data={data}
-      work={data.artworks.find((work) => work.id === workId)!}
-      compact={compact}
-      infoOpen={false}
-      onBack={vi.fn()}
-      onInfo={vi.fn()}
-      onAsset={onAsset}
-      onCanvasInteraction={onCanvasInteraction}
-    />,
-  );
+  function FavoriteViewer() {
+    const [favorite, setFavorite] = useState(false);
+    return (
+      <ArtworkViewer
+        favorite={favorite}
+        onToggleFavorite={() => setFavorite((value) => !value)}
+        data={data}
+        work={data.artworks.find((work) => work.id === workId)!}
+        compact={compact}
+        infoOpen={false}
+        onBack={vi.fn()}
+        onInfo={vi.fn()}
+        onAsset={onAsset}
+        onCanvasInteraction={onCanvasInteraction}
+      />
+    );
+  }
+  const view = render(<FavoriteViewer />);
   const emit = (type: string, args = {}) =>
     act(() => events.raiseEvent(type, args));
   emit("open");
@@ -458,3 +465,28 @@ it("keeps the preview usable after a detail failure and ignores late callbacks a
   expect(destroy).toHaveBeenCalledOnce();
   expect(screen.queryByRole("dialog")).toBeNull();
 });
+
+it.each([false, true])(
+  "favorites without resetting the canvas or current zoom (compact=%s)",
+  (compact) => {
+    const { viewport, destroy, zoomIn, onCanvasInteraction } = mount(
+      "mona",
+      compact,
+    );
+    zoomIn();
+    const zoom = viewport.getZoom(true);
+    const center = viewport.getCenter(true);
+    fireEvent.click(screen.getByRole("button", { name: "收藏《蒙娜丽莎》" }));
+    expect(
+      screen
+        .getByRole("button", { name: "取消收藏《蒙娜丽莎》" })
+        .getAttribute("aria-pressed"),
+    ).toBe("true");
+    expect(sdk.open).toHaveBeenCalledOnce();
+    expect(destroy).not.toHaveBeenCalled();
+    expect(viewport.getZoom(true)).toBe(zoom);
+    expect(viewport.getCenter(true)).toEqual(center);
+    expect(onCanvasInteraction).not.toHaveBeenCalled();
+    expect(screen.getByRole("button", { name: "退出看画" })).toBeTruthy();
+  },
+);

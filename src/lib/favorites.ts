@@ -12,7 +12,13 @@ export function parseFavorites(value: string | null): Set<string> {
     const parsed: unknown = JSON.parse(value ?? "[]");
     return new Set(
       Array.isArray(parsed)
-        ? parsed.filter((id): id is string => typeof id === "string")
+        ? parsed
+            .filter(
+              (id): id is string => typeof id === "string" && id.length > 0,
+            )
+            .map((id) =>
+              id === "rembrandt-rrp-58" ? "rembrandt-gold-chain" : id,
+            )
         : [],
     );
   } catch {

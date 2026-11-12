@@ -10,6 +10,7 @@ import {
 import { useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "../infrastructure/useContent";
 import { useSession } from "../application/session";
+import { useFavorites } from "../hooks/useFavorites";
 import {
   assetUrl,
   scopeWorks,
@@ -32,12 +33,16 @@ const canonicalArtworkId = (id: string | undefined) =>
   id === "rembrandt-rrp-58" ? "rembrandt-gold-chain" : id;
 export function AtlasApp() {
   const { data, error, retry } = useContent();
+  const { favorites, toggleFavorite, storageError } = useFavorites();
   const location = useLocation();
   const navigate = useNavigate();
   const compact = useCompact();
   const search = new URLSearchParams(location.search);
-  const scope = search.get("scope") || "category:china";
   const path = location.pathname.split("/").filter(Boolean);
+  const scope =
+    path[0] === "catalog" && path[1] === "favorites"
+      ? "favorites"
+      : search.get("scope") || "category:china";
   const isViewer = path[0] === "artworks" && path[2] === "view";
   const isInfo = isViewer && path[3] === "info";
   const isDetail = path[0] === "artworks" && !isViewer;
@@ -48,6 +53,7 @@ export function AtlasApp() {
     path[0] === "catalog" || path[0] === "topics" || !path[0];
   const scopeDrivenScene = !catalogScene;
   const topicId = useSession((state) => state.topicId);
+  const tab = useSession((state) => state.tab);
   const collapsed = useSession((state) => state.collapsed);
   const [focus, setFocus] = useState<{ ids: string[]; nonce: number } | null>(
     null,
@@ -63,8 +69,12 @@ export function AtlasApp() {
     dismissingInfo.current = false;
   }, [location.key]);
   const works = useMemo(
-    () => (data ? scopeWorks(data, scope) : []),
-    [data, scope],
+    () => (data ? scopeWorks(data, scope, favorites) : []),
+    [data, scope, favorites],
+  );
+  const favoriteWorks = useMemo(
+    () => (data ? scopeWorks(data, "favorites", favorites) : []),
+    [data, favorites],
   );
   const work = data?.artworks.find((w) => w.id === canonicalArtworkId(path[1]));
   const selected = canonicalArtworkId(
@@ -162,7 +172,7 @@ export function AtlasApp() {
       navigate("/catalog/china?scope=category:china", { replace: true });
     if (
       path[0] === "catalog" &&
-      ["china", "foreign", "topics"].includes(path[1])
+      ["china", "foreign", "topics", "favorites"].includes(path[1])
     ) {
       useSession.getState().setTab(path[1] as Category);
       if (path[1] === "topics") useSession.getState().setTopic(null);
@@ -178,6 +188,10 @@ export function AtlasApp() {
   }, [location.pathname, go]);
   useEffect(() => {
     if (!data || !scopeDrivenScene) return;
+    if (scope === "favorites") {
+      useSession.setState({ tab: "favorites", topicId: null });
+      return;
+    }
     const [kind, id] = scope.split(":");
     if (kind === "artist") {
       const artist = data.artists.find((item) => item.id === id);
@@ -264,11 +278,15 @@ export function AtlasApp() {
       compact={compact}
       topicId={topicId}
       selected={selected}
+      favoriteWorks={favoriteWorks}
+      storageError={storageError}
       onTab={(tab) => {
         useSession.getState().setTab(tab);
         go(
           `/catalog/${tab}`,
-          tab === "topics" ? {} : { scope: `category:${tab}` },
+          tab === "topics"
+            ? {}
+            : { scope: tab === "favorites" ? "favorites" : `category:${tab}` },
           true,
         );
       }}
@@ -287,7 +305,7 @@ export function AtlasApp() {
         else go("/catalog/topics", {}, true);
       }}
       onMap={showMap}
-      onWork={selectWork}
+      onWork={tab === "favorites" ? (item) => openWork(item.id) : selectWork}
     />
   );
   const showCatalog = () =>
@@ -302,6 +320,9 @@ export function AtlasApp() {
       work={work}
       assetId={isViewer ? search.get("asset") || undefined : undefined}
       showPreview={!isViewer}
+      favorite={favorites.has(work.id)}
+      onToggleFavorite={() => toggleFavorite(work.id)}
+      storageError={storageError}
       onView={
         isDetail
           ? () =>
@@ -419,7 +440,14 @@ export function AtlasApp() {
                     />
                   </header>
                   <div className={s.panelBody}>
-                    <p className={s.listCaption}>本项目收录的作品</p>
+                    <p className={s.listCaption}>
+                      {scope === "favorites"
+                        ? "收藏保存在当前浏览器"
+                        : "本项目收录的作品"}
+                    </p>
+                    {scope === "favorites" && works.length === 0 && (
+                      <EmptyState title="还没有收藏画作" />
+                    )}
                     <ArtworkList
                       data={data}
                       works={works}
@@ -446,6 +474,9 @@ export function AtlasApp() {
             assetId={search.get("asset") || undefined}
             compact={compact}
             infoOpen={isInfo}
+            favorite={favorites.has(work.id)}
+            onToggleFavorite={() => toggleFavorite(work.id)}
+            storageError={storageError}
             onBack={back}
             onInfo={() =>
               isInfo

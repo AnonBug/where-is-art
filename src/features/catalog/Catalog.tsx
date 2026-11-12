@@ -10,7 +10,7 @@ import {
   type Atlas,
   type Category,
 } from "../../domain/atlas";
-import { ArtworkImage, Icon, IconButton } from "../../shared/ui";
+import { ArtworkImage, EmptyState, Icon, IconButton } from "../../shared/ui";
 import s from "./Catalog.module.scss";
 
 export function ArtworkList({
@@ -84,6 +84,8 @@ interface Props {
   onMap: () => void;
   onWork: (work: Artwork) => void;
   compact: boolean;
+  favoriteWorks?: Artwork[];
+  storageError?: boolean;
 }
 export function Catalog({
   data,
@@ -97,6 +99,8 @@ export function Catalog({
   onMap,
   onWork,
   compact,
+  favoriteWorks = [],
+  storageError = false,
 }: Props) {
   const tab = useSession((state) => state.tab);
   const expanded = useSession((state) => state.expanded[tab]);
@@ -152,10 +156,12 @@ export function Catalog({
             ["china", "中国"],
             ["foreign", "外国"],
             ["topics", "专题"],
+            ["favorites", "收藏"],
           ] as const
         ).map(([id, name]) => (
           <button
             key={id}
+            aria-label={id === "favorites" ? "我的收藏" : undefined}
             aria-current={tab === id ? "page" : undefined}
             onClick={() => onTab(id)}
             className={tab === id ? s.activeTab : ""}
@@ -164,7 +170,40 @@ export function Catalog({
           </button>
         ))}
       </nav>
-      {tab === "topics" && topic ? (
+      {tab === "favorites" ? (
+        <>
+          <div className={s.topicHeader}>
+            <div>
+              <h1>我的收藏</h1>
+              {favoriteWorks.length > 0 && (
+                <IconButton
+                  icon="map"
+                  label="查看收藏作品分布"
+                  onClick={onMap}
+                />
+              )}
+            </div>
+            <p>{favoriteWorks.length} 幅作品 · 最近收藏在前</p>
+            <p>仅保存在当前浏览器，清除网站数据后会移除。</p>
+            {storageError && (
+              <p role="status">浏览器未允许保存，收藏仅在本次打开期间保留。</p>
+            )}
+          </div>
+          {favoriteWorks.length ? (
+            <ArtworkList
+              data={data}
+              works={favoriteWorks}
+              selected={selected}
+              onSelect={onWork}
+              scrollKey="favorites"
+            />
+          ) : (
+            <EmptyState title="还没有收藏画作">
+              <p>在作品信息或大图浏览中点爱心，即可收录到这里。</p>
+            </EmptyState>
+          )}
+        </>
+      ) : tab === "topics" && topic ? (
         <>
           <div className={s.topicHeader}>
             <button className={s.backText} onClick={onBack}>

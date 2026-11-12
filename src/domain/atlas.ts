@@ -123,14 +123,27 @@ export type Atlas = z.infer<typeof atlasSchema>;
 export type Artwork = Atlas["artworks"][number];
 export type Venue = Atlas["venues"][number];
 export type ImageAsset = z.infer<typeof imageSchema>;
-export type Category = "china" | "foreign" | "topics";
+export type Category = "china" | "foreign" | "topics" | "favorites";
 export type Scope =
   | `artist:${string}`
   | `topic:${string}`
   | "category:china"
-  | "category:foreign";
+  | "category:foreign"
+  | "favorites";
 
-export function scopeWorks(data: Atlas, scope: string): Artwork[] {
+export function scopeWorks(
+  data: Atlas,
+  scope: string,
+  favorites: ReadonlySet<string> = new Set(),
+): Artwork[] {
+  if (scope === "favorites") {
+    const byId = new Map(data.artworks.map((work) => [work.id, work]));
+    // Keep saved records without images reachable, and retain unknown saved IDs
+    // in storage so a later catalog update can restore them.
+    return [...favorites]
+      .reverse()
+      .flatMap((id) => (byId.has(id) ? [byId.get(id)!] : []));
+  }
   // Keep researched records in the catalog, but only browse works with a
   // whole image or a usable reference image. New media makes them visible again.
   const visible = data.artworks.filter((work) => primaryImage(data, work.id));
@@ -153,6 +166,7 @@ export function scopeWorks(data: Atlas, scope: string): Artwork[] {
   return visible.filter((work) => work.artistIds.some((id) => ids.has(id)));
 }
 export function scopeLabel(data: Atlas, scope: string) {
+  if (scope === "favorites") return "我的收藏";
   const [kind, id] = scope.split(":");
   return kind === "artist"
     ? (data.artists.find((a) => a.id === id)?.name ?? "画家")

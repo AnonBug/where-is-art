@@ -1,0 +1,27 @@
+.favorite {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: transparent;
+  color: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  flex-shrink: 0;
+  &[aria-pressed="true"] svg {
+    fill: currentColor;
+  }
+  &:hover {
+    background: color-mix(in srgb, currentColor 8%, transparent);
+  }
+}
+.iconOnly {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+}

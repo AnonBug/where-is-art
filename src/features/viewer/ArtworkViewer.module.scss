@@ -98,6 +98,19 @@
     margin: 0 4px;
   }
 }
+.storageNotice {
+  position: absolute;
+  left: 50%;
+  bottom: calc(96px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 32px);
+  padding: 10px 14px;
+  border-radius: 7px;
+  background: var(--dark-control);
+  font-size: 12px;
+  line-height: 1.7;
+}
 .error {
   position: absolute;
   top: 110px;

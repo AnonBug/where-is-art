@@ -10,6 +10,7 @@ import {
 } from "../../domain/atlas";
 import { ArtworkImage, IconButton } from "../../shared/ui";
 import { ArtworkDownload } from "../artworks/ArtworkDownload";
+import { ArtworkFavorite } from "../artworks/ArtworkFavorite";
 import s from "./ArtworkViewer.module.scss";
 const DOUBLE_CLICK_DELAY = 300;
 const TAP_MOVE_TOLERANCE = 5;
@@ -23,6 +24,9 @@ interface Props {
   onInfo: () => void;
   onCanvasInteraction?: () => void;
   onAsset: (id: string) => void;
+  favorite?: boolean;
+  onToggleFavorite?: () => void;
+  storageError?: boolean;
 }
 export default function ArtworkViewer({
   data,
@@ -34,6 +38,9 @@ export default function ArtworkViewer({
   onInfo,
   onCanvasInteraction,
   onAsset,
+  favorite = false,
+  onToggleFavorite,
+  storageError = false,
 }: Props) {
   const images = data.images
     .filter((image) => image.artworkId === work.id)
@@ -398,6 +405,14 @@ export default function ArtworkViewer({
             )}
           </div>
           <div className={s.headerActions}>
+            {onToggleFavorite && (
+              <ArtworkFavorite
+                title={work.title}
+                favorite={favorite}
+                onToggle={onToggleFavorite}
+                iconOnly
+              />
+            )}
             <ArtworkDownload work={work} image={asset} iconOnly />
             <IconButton
               icon="info"
@@ -407,6 +422,11 @@ export default function ArtworkViewer({
             />
           </div>
         </header>
+        {storageError && (
+          <p className={s.storageNotice} role="status">
+            浏览器未允许保存，收藏仅在本次打开期间保留。
+          </p>
+        )}
         {!asset && (
           <div className={s.error} role="status">
             暂无可用图像，可通过作品信息查看资料与收藏位置。
