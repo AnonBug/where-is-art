@@ -490,10 +490,7 @@ export default function ArtworkViewer({
             )}
           </div>
         )}
-        {asset?.quality === "standard" && (
-          <span className={s.resolution}>普通清晰度</span>
-        )}
-        {asset?.role === "reference" && asset.quality !== "standard" && (
+        {asset?.role === "reference" && (
           <span className={s.resolution}>局部参考图</span>
         )}
       </div>

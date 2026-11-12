@@ -427,10 +427,11 @@ it.each(["Escape", "Tab"])(
   "restores hidden controls with %s without leaving the viewer",
   (key) => {
     mount("tang-yin-15");
+    const exit = screen.getByRole("button", { name: "退出看画" });
     const canvas = screen.getByRole("group", { name: /^画作画布/ });
     fireEvent.keyDown(canvas, { key: "Enter" });
     expect(screen.queryByRole("heading")).toBeNull();
-    expect(screen.getByText("普通清晰度").closest("[hidden]")).toBeTruthy();
+    expect(exit.closest("[hidden]")).toBeTruthy();
     const event = createEvent.keyDown(canvas, {
       key,
       bubbles: true,
@@ -442,7 +443,7 @@ it.each(["Escape", "Tab"])(
     expect(document.activeElement).toBe(
       screen.getByRole("button", { name: "退出看画" }),
     );
-    expect(screen.getByText("普通清晰度").closest("[hidden]")).toBeNull();
+    expect(exit.closest("[hidden]")).toBeNull();
   },
 );
 

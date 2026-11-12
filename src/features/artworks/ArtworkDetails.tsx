@@ -179,11 +179,6 @@ export function ArtworkDetails({
                 ) : (
                   <p>{image.licenseLabel}</p>
                 )}
-                {image.quality === "standard" && (
-                  <p>
-                    当前为普通清晰度图像，{image.width} × {image.height} 像素。
-                  </p>
-                )}
               </>
             )}
           </div>
