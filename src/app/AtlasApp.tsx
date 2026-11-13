@@ -9,6 +9,7 @@ import {
 } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "../infrastructure/useContent";
+import { useArtworkContent } from "../infrastructure/useArtworkContent";
 import { useSession } from "../application/session";
 import { useFavorites } from "../hooks/useFavorites";
 import {
@@ -16,7 +17,7 @@ import {
   scopeWorks,
   scopeLabel,
   workVenues,
-  type Artwork,
+  type ArtworkSummary,
   type Category,
 } from "../domain/atlas";
 import { useCompact } from "../platform/usePlatform";
@@ -46,6 +47,22 @@ export function AtlasApp() {
   const isViewer = path[0] === "artworks" && path[2] === "view";
   const isInfo = isViewer && path[3] === "info";
   const isDetail = path[0] === "artworks" && !isViewer;
+  const requestedId = canonicalArtworkId(
+    isDetail || isViewer ? path[1] : undefined,
+  );
+  const content = useArtworkContent(data, requestedId);
+  const artworkData = useMemo(
+    () =>
+      data && content.data
+        ? {
+            artists: data.artists,
+            venues: data.venues,
+            holdings: data.holdings,
+            images: content.data.images,
+          }
+        : undefined,
+    [data, content.data],
+  );
   const isAllWorks = path[0] === "works";
   const panel = isDetail || isAllWorks;
   const expandedVenue = search.get("venue") || undefined;
@@ -76,7 +93,8 @@ export function AtlasApp() {
     () => (data ? scopeWorks(data, "favorites", favorites) : []),
     [data, favorites],
   );
-  const work = data?.artworks.find((w) => w.id === canonicalArtworkId(path[1]));
+  const summary = data?.artworks.find((w) => w.id === requestedId);
+  const work = content.data?.work;
   const selected = canonicalArtworkId(
     isDetail || isViewer ? path[1] : search.get("artwork") || undefined,
   );
@@ -219,10 +237,10 @@ export function AtlasApp() {
   }, [panel, isViewer, back]);
   useEffect(() => {
     document.title =
-      work && (isDetail || isViewer)
-        ? `${work.title} · 名画在哪里`
+      summary && (isDetail || isViewer)
+        ? `${summary.title} · 名画在哪里`
         : `${title} · 名画在哪里`;
-  }, [work, isDetail, isViewer, title]);
+  }, [summary, isDetail, isViewer, title]);
   if (!data)
     return (
       <main className={s.app}>
@@ -246,7 +264,7 @@ export function AtlasApp() {
       expandedVenue ? { venue: expandedVenue } : {},
     );
   const locate = (ids: string[]) => setFocus({ ids, nonce: Date.now() });
-  const selectWork = (item: Artwork) => {
+  const selectWork = (item: ArtworkSummary) => {
     const venues = workVenues(data, item.id).filter((v) => v.coordinates);
     if (!venues.length) {
       go(`/artworks/${item.id}`);
@@ -314,33 +332,50 @@ export function AtlasApp() {
         ? `/topics/${topicId}`
         : `/catalog/${useSession.getState().tab}`,
     );
-  const information = work ? (
-    <ArtworkDetails
-      data={data}
-      work={work}
-      assetId={isViewer ? search.get("asset") || undefined : undefined}
-      showPreview={!isViewer}
-      favorite={favorites.has(work.id)}
-      onToggleFavorite={() => toggleFavorite(work.id)}
-      storageError={storageError}
-      onView={
-        isDetail
-          ? () =>
-              go(
-                `/artworks/${work.id}/view`,
-                expandedVenue ? { venue: expandedVenue } : {},
-              )
-          : undefined
-      }
-      onVenue={(id) => {
-        go("/map", { venue: id, artwork: work.id });
-      }}
-    />
-  ) : (
-    <EmptyState title="暂未找到这幅作品">
-      <button onClick={showCatalog}>返回目录</button>
-    </EmptyState>
+  const loadingInformation = (
+    <div className={s.contentStatus}>
+      <h1>{summary?.title}</h1>
+      {content.error ? (
+        <>
+          <p role="alert">{content.error}</p>
+          <button onClick={content.retry}>重新加载作品</button>
+          <button onClick={() => window.location.reload()}>刷新页面</button>
+        </>
+      ) : (
+        <p role="status">正在加载作品资料…</p>
+      )}
+    </div>
   );
+  const information =
+    work && artworkData ? (
+      <ArtworkDetails
+        data={artworkData}
+        work={work}
+        assetId={isViewer ? search.get("asset") || undefined : undefined}
+        showPreview={!isViewer}
+        favorite={favorites.has(work.id)}
+        onToggleFavorite={() => toggleFavorite(work.id)}
+        storageError={storageError}
+        onView={
+          isDetail
+            ? () =>
+                go(
+                  `/artworks/${work.id}/view`,
+                  expandedVenue ? { venue: expandedVenue } : {},
+                )
+            : undefined
+        }
+        onVenue={(id) => {
+          go("/map", { venue: id, artwork: work.id });
+        }}
+      />
+    ) : summary ? (
+      loadingInformation
+    ) : (
+      <EmptyState title="暂未找到这幅作品">
+        <button onClick={showCatalog}>返回目录</button>
+      </EmptyState>
+    );
   const panelTitle = isAllWorks ? `${title} · 作品` : "作品信息";
   return (
     <main
@@ -464,12 +499,12 @@ export function AtlasApp() {
           )}
         </>
       )}
-      {isViewer && work && (
+      {isViewer && work && artworkData && (
         <Suspense
           fallback={<div className={s.viewerLoading}>正在准备画布…</div>}
         >
           <ArtworkViewer
-            data={data}
+            data={artworkData}
             work={work}
             assetId={search.get("asset") || undefined}
             compact={compact}
@@ -502,7 +537,15 @@ export function AtlasApp() {
           />
         </Suspense>
       )}
-      {isViewer && !work && (
+      {isViewer && summary && !work && (
+        <div className={s.viewerLoading}>
+          <div>
+            <IconButton icon="back" label="退出看画" onClick={back} />
+            {loadingInformation}
+          </div>
+        </div>
+      )}
+      {isViewer && !summary && (
         <EmptyState title="暂未找到这幅作品">
           <button onClick={showCatalog}>返回目录</button>
         </EmptyState>

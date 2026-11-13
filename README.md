@@ -37,13 +37,40 @@ npm run build          # 主题生成、类型检查、静态构建及发布体�
 npm run preview        # 预览 dist/，与 dev 使用同一端口
 ```
 
-`dist/` 可重新生成，不提交到 Git。当前没有服务端、账号或数据库。目录 JSON 跟随应用子路径加载，与代码版本一致；地图通过 HTTPS 请求天地图 `vec_w`、`ibo_w`、`cva_w`，使用球面墨卡托 WMTS（1—18 级、256 px PNG）。这些是已绘制的成图瓦片，不是可逐要素改色的 MVT/PBF。
+`dist/` 可重新生成，不提交到 Git。当前没有服务端、账号或数据库。4.5.0 起目录与作品详情从 OSS 独立加载，网站代码仍部署在 GitHub Pages。地图通过 HTTPS 请求天地图 `vec_w`、`ibo_w`、`cva_w`，使用球面墨卡托 WMTS（1—18 级、256 px PNG）。这些是已绘制的成图瓦片，不是可逐要素改色的 MVT/PBF。
+
+### 渐进式内容加载
+
+首屏从 `VITE_CONTENT_BASE_URL` 请求很小的 `current.json`，锁定 `releases/<内容哈希>/catalog-index.json`。索引包含画家、专题、作品标题、主图缩略图路径及地图馆藏关系，不包含导读、完整图片地址和许可等详情。打开作品信息或看画器时，再请求该版本内的 `artwork-details/<内容哈希>/<作品ID>.json`。同一作品的并发请求合并，最近 40 件详情保存在会话内存中；返回目录、切换专题或显示收藏不触发详情预取。加载失败可以单独重试；切换作品后忽略旧请求的结果。
+
+当前 6,130 件作品的首屏 JSON 约 1.95 MB（本地 gzip 测算约 294 KB），相比完整目录的 19.85 MB 减少约 90%；每件详情中位约 2.9 KB。作品数量、地图位置、收藏 ID 和来源资料均保留，原始图片质量与像素尺寸不受影响。`public/catalog.json` 继续作为完整内容输出和维护校验依据，当前前端不请求它。
+
+`scripts/build-content-delivery.mjs` 生成摘要和逐件详情，并以完整目录与交付格式的内容哈希隔离版本；生成物不提交 Git。`content:build`、`dev`、`test`、`build` 都会自动生成，干净检出无需联网或下载图片。默认生产包不包含完整目录、索引和详情 JSON。OSS 的版本文件使用 gzip 与一年不可变缓存，入口使用 `no-cache`；已打开页面固定使用同一版本，新打开页面读取最新入口。旧版本不自动删除，避免内容更新影响仍在浏览的页面。
+
+### 发布和维护 OSS 内容
+
+可编辑源数据仍在仓库 `content/`，`public/catalog.json` 是可复现的完整输出；OSS 是浏览器实际读取的发布副本。内容只改文字或馆藏关系时，发布 OSS 即可生效，无需重新部署网页。结构变化须同步升级代码与内容格式，当前支持 `schemaVersion: 1`。
+
+```sh
+npm run content:build
+VITE_CONTENT_BASE_URL= npm run dev   # 本地预览尚未发布的内容
+npm test
+npm run content:prepare             # 只生成发布文件，不上传
+npm run content:publish             # 使用本机已登录的 aliyun ossutil
+npm run content:check:remote        # 验证当前版本和 CORS
+```
+
+发布脚本先把 6,133 个 gzip JSON 上传到新版本目录（6,130 份详情、索引、完整目录、图片映射），逐个用 HEAD 验证大小、ETag/MD5、编码和缓存；再检查 JSON 解码与 CORS，最后更新 `current.json`。不需要重新上传或下载画作。脚本使用当前阿里云 CLI 登录，不把凭据写入代码、前端或 GitHub。重复执行跳过已存在文件，但仍核对全部文件；发生不一致时停止，不覆盖不可变版本。维护约定为单一发布者，避免多台机器同时切换入口。
+
+`current.json` 提供 `index`、`catalog`、`images` 三个相对路径。`image-manifest.json` 维护作品 ID → 图像 ID → 缩略图、预览、大图／瓦片的映射，同时保留现有来源地址、已知来源哈希和许可。`sourceImageUrl` 只是已记录的来源图地址，不保证是最高分辨率，也不表示已有独立 OSS 原始图归档；缺失的原始图信息不编造。
+
+更新前的入口会备份到本地忽略目录 `output/content-release/previous-current-*.json`；回退时将所需备份重新上传为 OSS 的 `current.json`，使用 `Content-Type: application/json; charset=utf-8` 与 `Cache-Control: no-cache,max-age=0,must-revalidate`，随后运行远程检查。旧版本目录保留，可从完整目录和图片映射恢复已发布资料。GitHub Pages 发布流程会验证 OSS 当前版本与本次构建一致，防止代码先上线而内容尚未上传。
 
 海外近景按资源基础地址加载 `map-style.json`，再请求 OpenFreeMap 矢量瓦片、字体与图标。切换由 `regionalBasemap.ts` 集中控制：zoom ≤ 5 始终使用天地图；达到 5.5 且整个视野离开保守范围后才进入 OpenFreeMap。经度 70°—140°、纬度 0°—56° 是切换保护框，另加 3° 的进入缓冲，不是行政边界，也不绘制在地图上，因此部分邻近地区仍使用天地图。依据视野而非画家分类决定来源；切换替换整张底图，不拼接两套国界，不改变馆藏点坐标。
 
 ## 静态资源地址（OSS / 本地）
 
-应用路由及 JS/CSS 构建产物仍由 `PAGES_BASE_PATH`（Vite `base`）控制。`VITE_ASSET_BASE_URL` 只控制 `public/` 中的图片、缩略图、预览、DZI/瓦片、地图样式 JSON 和品牌图（`catalog.json` 随应用加载）；第三方地图服务及馆方来源链接保持原地址。
+应用路由及 JS/CSS 构建产物仍由 `PAGES_BASE_PATH`（Vite `base`）控制。`VITE_ASSET_BASE_URL` 控制图片、缩略图、预览、DZI/瓦片、地图样式 JSON 和品牌图；`VITE_CONTENT_BASE_URL` 单独控制版本入口与目录资料，当前为同一 OSS 前缀下的 `content/`。第三方地图服务及馆方来源链接保持原地址。
 
 - 开发和生产构建默认读取随项目维护的 `.env`，当前使用 `https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/`。
 - `.env.local` 可以覆盖默认地址；恢复本地媒体后将 `VITE_ASSET_BASE_URL` 留空，即使用本地 `public/`，自动跟随应用子路径。干净克隆不包含图片，不设置覆盖即可使用 OSS。
@@ -54,15 +81,15 @@ npm run preview        # 预览 dist/，与 dev 使用同一端口
 PAGES_BASE_PATH=/where-is-art/ npm run build
 
 # 本地资源 + GitHub Pages 子路径（先恢复媒体，显式空值覆盖 .env）
-VITE_ASSET_BASE_URL= PAGES_BASE_PATH=/where-is-art/ npm run build
+VITE_ASSET_BASE_URL= VITE_CONTENT_BASE_URL= PAGES_BASE_PATH=/where-is-art/ npm run build
 
 # 根路径、本地资源开发（先恢复媒体）
-VITE_ASSET_BASE_URL= npm run dev
+VITE_ASSET_BASE_URL= VITE_CONTENT_BASE_URL= npm run dev
 ```
 
 地址必须对应 `public/` 的内容根目录，URL 不含 `public/`。JSON 继续保存 `assets/mona.jpg`、`media/…/detail.dzi` 等相对路径，不要再加 `where-is-art/`。统一的 `assetUrl()` 在加载入口处理首尾斜杠并保留已有绝对 URL；旧版入口仅转换图像的 `path` 字段。OpenSeadragon 根据 DZI 的完整 URL 寻找同目录 `detail_files/<level>/<x>_<y>.jpeg`，因此整套 DZI 与瓦片须保留相对目录结构。查看器使用匿名 CORS，以支持跨域图像和画布读取。
 
-图片、缩略图、Logo、DZI 及瓦片由 OSS 托管，不再随 Git 或默认发布包保存。`public/` 保留目录、旧版数据和地图样式 JSON；`content/media-index.json` 保留全部媒体路径、字节数、SHA-256 和 MD5，用于校验及恢复。媒体生成、恢复后的本地文件被 `.gitignore` 排除；本地资源模式需先恢复文件。新增或更改 `public/` 内容后，应先核对资源端是否同步（包括重新生成的 `map-style.json`；`catalog.json` 随应用版本发布），再使用对应的资源基础地址发布。不会对缺失资源静默改用其他图片。
+图片、缩略图、Logo、DZI 及瓦片由 OSS 托管，不再随 Git 或默认发布包保存。`public/` 保留完整目录源输出、旧版数据和地图样式 JSON；`content/media-index.json` 保留全部媒体路径、字节数、SHA-256 和 MD5，用于校验及恢复。媒体生成、恢复后的本地文件被 `.gitignore` 排除；本地资源模式需先恢复文件。新增或更改资源后，应先同步到 OSS（包括重新生成的 `map-style.json`；作品内容通过 `content:publish` 发布），再上线对应代码。不会对缺失资源静默改用其他图片。
 
 OSS 默认域名的 `Content-Disposition: attachment` 不作为图片不可用的判断依据，以实际图片解码、JSON/DZI 请求及画布绘制为准。本地 OSS 验证使用已允许的 `http://127.0.0.1:8775` 或 `http://localhost:8775`；不要通过关闭浏览器安全检查来绕过 CORS。
 
@@ -84,7 +111,7 @@ VITE_ASSET_BASE_URL= npm run dev
 
 恢复时验证大小和 SHA-256，已有文件必须哈希一致，不覆盖本地修改。仅编辑作品文字或目录时，`content:build` 只合并 JSON，不读取或重编码图片。需要重新生成达·芬奇缩略图时，先恢复 `assets/` 图片，再显式运行 `npm run media:legacy`。生成其他新媒体后，恢复完整媒体树，运行 `npm run media:index` 更新文件清单，再运行 `content:build`、`media:check` 和 `media:check:local`。索引生成器会拒绝从不完整的本地副本重建清单，以免丢失已有远端条目。
 
-媒体清单校验不等同于实际文件解码或远端核验。CI 从干净检出重建目录并检查无差异，执行数据/引用/瓦片层级校验及测试构建；媒体维护时显式执行完整本地检查，发布新增媒体前执行远端检查。OSS 模式构建只将 `public/` 的 JSON 随应用发布，即使本地已经恢复图片也不会把媒体复制进发布包；本地资源模式仍复制完整 `public/`。
+媒体清单校验不等同于实际文件解码或远端核验。CI 从干净检出重建目录并检查无差异，执行数据/引用/瓦片层级校验及测试构建；媒体维护时显式执行完整本地检查，发布新增媒体前执行远端检查。默认 OSS 模式不把媒体、完整作品目录和逐件详情复制进网站发布包，只保留旧版兼容数据和地图样式等小文件；同时清空两个 OSS 配置的本地模式仍复制完整 `public/`。
 
 本次使用普通删除提交，旧图片仍存在于 Git 历史中，未改写历史或强制推送。需要轻量克隆时使用：
 

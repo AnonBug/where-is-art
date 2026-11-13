@@ -23,6 +23,22 @@ const data = atlasSchema.parse(catalog);
 vi.mock("../src/infrastructure/useContent", () => ({
   useContent: () => ({ data, error: "", retry: vi.fn() }),
 }));
+vi.mock("../src/infrastructure/useArtworkContent", () => ({
+  useArtworkContent: (_index: unknown, id: string | undefined) => {
+    const work = data.artworks.find((item) => item.id === id);
+    return {
+      data: work
+        ? {
+            work,
+            images: data.images.filter((image) => image.artworkId === id),
+          }
+        : undefined,
+      error: "",
+      loading: false,
+      retry: vi.fn(),
+    };
+  },
+}));
 vi.mock("../src/platform/usePlatform", () => ({
   useCompact: () => device.compact,
 }));

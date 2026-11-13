@@ -3,7 +3,7 @@ import {
   primaryImage,
   workVenues,
   type Artwork,
-  type Atlas,
+  type ArtworkContext,
 } from "../../domain/atlas";
 import { ArtworkImage, Icon } from "../../shared/ui";
 import { ArtworkDownload } from "./ArtworkDownload";
@@ -20,7 +20,7 @@ export function ArtworkDetails({
   onView,
   onVenue,
 }: {
-  data: Atlas;
+  data: ArtworkContext;
   work: Artwork;
   assetId?: string;
   showPreview?: boolean;

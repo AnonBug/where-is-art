@@ -1,17 +1,17 @@
 import type { CSSProperties } from "react";
 import {
   primaryImage,
-  type Atlas,
-  type Artwork,
-  type Venue,
+  type BrowseAtlas,
+  type ArtworkSummary,
+  type VenueSummary,
 } from "../../domain/atlas";
 import { ArtworkImage } from "../../shared/ui";
 import s from "./VenueMarker.module.scss";
 
 interface Props {
-  data: Atlas;
-  venue: Venue;
-  works: Artwork[];
+  data: BrowseAtlas;
+  venue: VenueSummary;
+  works: ArtworkSummary[];
   selected?: string;
   expanded: boolean;
   showLabel: boolean;

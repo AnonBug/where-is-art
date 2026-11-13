@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import assert from "node:assert/strict";
 import { enrichArtworkGuides } from "./build-artwork-guides.mjs";
+import { buildContentDelivery } from "./build-content-delivery.mjs";
 const read = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 const tang = await read("content/tang-catalog.json");
 const media = await read("content/media-manifest.json");
@@ -198,6 +199,7 @@ const data = {
   images,
 };
 await fs.writeFile("public/catalog.json", JSON.stringify(data));
+await buildContentDelivery(data);
 console.log(
   `内容已生成：${artworks.length} 幅作品，${images.length} 张图像，${venues.length} 个收藏机构。`,
 );

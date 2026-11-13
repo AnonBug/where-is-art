@@ -6,7 +6,7 @@ import {
   assetUrl,
   primaryImage,
   type Artwork,
-  type Atlas,
+  type ArtworkContext,
 } from "../../domain/atlas";
 import { ArtworkImage, IconButton } from "../../shared/ui";
 import { ArtworkDownload } from "../artworks/ArtworkDownload";
@@ -15,7 +15,7 @@ import s from "./ArtworkViewer.module.scss";
 const DOUBLE_CLICK_DELAY = 300;
 const TAP_MOVE_TOLERANCE = 5;
 interface Props {
-  data: Atlas;
+  data: ArtworkContext;
   work: Artwork;
   assetId?: string;
   compact: boolean;

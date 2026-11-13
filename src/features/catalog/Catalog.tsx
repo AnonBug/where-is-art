@@ -6,8 +6,8 @@ import {
   assetUrl,
   primaryImage,
   scopeWorks,
-  type Artwork,
-  type Atlas,
+  type ArtworkSummary,
+  type BrowseAtlas,
   type Category,
 } from "../../domain/atlas";
 import { ArtworkImage, EmptyState, Icon, IconButton } from "../../shared/ui";
@@ -20,10 +20,10 @@ export function ArtworkList({
   onSelect,
   scrollKey,
 }: {
-  data: Atlas;
-  works: Artwork[];
+  data: BrowseAtlas;
+  works: ArtworkSummary[];
   selected?: string;
-  onSelect: (work: Artwork) => void;
+  onSelect: (work: ArtworkSummary) => void;
   scrollKey: string;
 }) {
   const ref = useSavedScroll(scrollKey);
@@ -73,7 +73,7 @@ export function useSavedScroll(key: string) {
   return ref;
 }
 interface Props {
-  data: Atlas;
+  data: BrowseAtlas;
   scope: string;
   topicId: string | null;
   selected?: string;
@@ -82,9 +82,9 @@ interface Props {
   onTopic: (id: string) => void;
   onBack: () => void;
   onMap: () => void;
-  onWork: (work: Artwork) => void;
+  onWork: (work: ArtworkSummary) => void;
   compact: boolean;
-  favoriteWorks?: Artwork[];
+  favoriteWorks?: ArtworkSummary[];
   storageError?: boolean;
 }
 export function Catalog({

@@ -15,9 +15,9 @@ import { useSession, type Camera } from "../../application/session";
 import {
   scopeVenues,
   venueWorks,
-  type Atlas,
-  type Artwork,
-  type Venue,
+  type BrowseAtlas,
+  type ArtworkSummary,
+  type VenueSummary,
 } from "../../domain/atlas";
 import { IconButton } from "../../shared/ui";
 import { ClusterMarker } from "./ClusterMarker";
@@ -31,8 +31,8 @@ import {
 import s from "./AtlasMap.module.scss";
 setWorkerUrl(workerUrl);
 interface Props {
-  data: Atlas;
-  works: Artwork[];
+  data: BrowseAtlas;
+  works: ArtworkSummary[];
   scope: string;
   historyKey: string;
   selected?: string;
@@ -51,8 +51,8 @@ interface Props {
 interface RenderMarker {
   key: string;
   node: HTMLElement;
-  venue?: Venue;
-  works: Artwork[];
+  venue?: VenueSummary;
+  works: ArtworkSummary[];
   cluster?: number;
   coordinates: [number, number];
   showLabel: boolean;

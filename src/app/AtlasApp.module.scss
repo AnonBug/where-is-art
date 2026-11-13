@@ -161,6 +161,25 @@
   color: var(--paper);
   background: var(--dark);
 }
+.contentStatus {
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 14px;
+  }
+  button {
+    justify-self: start;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    background: transparent;
+    padding: 8px 14px;
+  }
+}
 .mapHeader {
   position: absolute;
   inset: 0 0 auto;

@@ -1,10 +1,14 @@
-import { primaryImage, type Atlas, type Artwork } from "../../domain/atlas";
+import {
+  primaryImage,
+  type BrowseAtlas,
+  type ArtworkSummary,
+} from "../../domain/atlas";
 import { ArtworkImage } from "../../shared/ui";
 import s from "./ClusterMarker.module.scss";
 
 interface Props {
-  data: Atlas;
-  works: Artwork[];
+  data: BrowseAtlas;
+  works: ArtworkSummary[];
   selected?: string;
   onExpand: () => void;
   onWork: (id: string) => void;

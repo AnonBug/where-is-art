@@ -123,6 +123,59 @@ export type Atlas = z.infer<typeof atlasSchema>;
 export type Artwork = Atlas["artworks"][number];
 export type Venue = Atlas["venues"][number];
 export type ImageAsset = z.infer<typeof imageSchema>;
+// Browsing needs only identifiers, captions, thumbnails and map relations.
+// Reading and viewing a work loads its complete metadata separately.
+export const browseAtlasSchema = atlasSchema.extend({
+  artworks: z.array(
+    atlasSchema.shape.artworks.element
+      .pick({
+        id: true,
+        title: true,
+        artistIds: true,
+        imageStatus: true,
+      })
+      .extend({ id: z.string().regex(/^[a-zA-Z0-9][a-zA-Z0-9_.-]*$/) }),
+  ),
+  images: z.array(
+    imageSchema.pick({ id: true, artworkId: true, role: true }).extend({
+      thumbnail: z.object({ url: z.string() }),
+    }),
+  ),
+  venues: z.array(
+    atlasSchema.shape.venues.element.pick({
+      id: true,
+      name: true,
+      city: true,
+      country: true,
+      coordinates: true,
+    }),
+  ),
+  holdings: z.array(
+    atlasSchema.shape.holdings.element.pick({ artworkId: true, venueId: true }),
+  ),
+});
+export const catalogIndexSchema = browseAtlasSchema.extend({
+  detailBase: z.string().regex(/^artwork-details\/[a-f0-9]{20}\/$/),
+});
+export const artworkContentSchema = z.object({
+  work: atlasSchema.shape.artworks.element,
+  images: z.array(imageSchema),
+});
+export type BrowseAtlas = z.infer<typeof browseAtlasSchema>;
+export type CatalogIndex = z.infer<typeof catalogIndexSchema> & {
+  /** Runtime-only base of the pinned content release, never read from JSON. */
+  contentBase?: string;
+};
+export type ArtworkSummary = BrowseAtlas["artworks"][number];
+export type ImageSummary = BrowseAtlas["images"][number];
+export type VenueSummary = BrowseAtlas["venues"][number];
+export type ArtworkContent = z.infer<typeof artworkContentSchema>;
+export type ArtworkContext = Pick<
+  BrowseAtlas,
+  "artists" | "venues" | "holdings"
+> & {
+  images: ImageAsset[];
+};
 export type Category = "china" | "foreign" | "topics" | "favorites";
 export type Scope =
   | `artist:${string}`
@@ -131,11 +184,11 @@ export type Scope =
   | "category:foreign"
   | "favorites";
 
-export function scopeWorks(
-  data: Atlas,
+export function scopeWorks<T extends ArtworkSummary>(
+  data: Omit<BrowseAtlas, "artworks"> & { artworks: T[] },
   scope: string,
   favorites: ReadonlySet<string> = new Set(),
-): Artwork[] {
+): T[] {
   if (scope === "favorites") {
     const byId = new Map(data.artworks.map((work) => [work.id, work]));
     // Keep saved records without images reachable, and retain unknown saved IDs
@@ -170,7 +223,7 @@ export function scopeWorks(
   );
   return visible.filter((work) => work.artistIds.some((id) => ids.has(id)));
 }
-export function scopeLabel(data: Atlas, scope: string) {
+export function scopeLabel(data: BrowseAtlas, scope: string) {
   if (scope === "favorites") return "我的收藏";
   const [kind, id] = scope.split(":");
   return kind === "artist"
@@ -181,7 +234,11 @@ export function scopeLabel(data: Atlas, scope: string) {
         ? "外国名画"
         : "中国名画";
 }
-export function venueWorks(data: Atlas, works: Artwork[], venueIds: string[]) {
+export function venueWorks<T extends ArtworkSummary>(
+  data: Pick<BrowseAtlas, "holdings">,
+  works: T[],
+  venueIds: string[],
+) {
   const ids = new Set(
     data.holdings
       .filter((holding) => venueIds.includes(holding.venueId))
@@ -189,26 +246,35 @@ export function venueWorks(data: Atlas, works: Artwork[], venueIds: string[]) {
   );
   return works.filter((work) => ids.has(work.id));
 }
-export function workVenues(data: Atlas, workId: string) {
+export function workVenues<T extends VenueSummary>(
+  data: Pick<BrowseAtlas, "holdings"> & { venues: T[] },
+  workId: string,
+) {
   const ids = new Set(
     data.holdings.filter((h) => h.artworkId === workId).map((h) => h.venueId),
   );
   return data.venues.filter((v) => ids.has(v.id));
 }
-export function scopeVenues(data: Atlas, works: Artwork[]) {
+export function scopeVenues<T extends VenueSummary>(
+  data: Pick<BrowseAtlas, "holdings"> & { venues: T[] },
+  works: ArtworkSummary[],
+) {
   const workIds = new Set(works.map((w) => w.id));
   const ids = new Set(
     data.holdings.filter((h) => workIds.has(h.artworkId)).map((h) => h.venueId),
   );
   return data.venues.filter((v) => ids.has(v.id) && v.coordinates);
 }
-export const primaryImage = (data: Atlas, id: string) =>
+export const primaryImage = <T extends ImageSummary>(
+  data: { images: T[] },
+  id: string,
+) =>
   data.images.find(
     (image) =>
       image.artworkId === id &&
       (image.role === "whole" || image.role === "reference"),
   );
-export function artistWorkCounts(data: Atlas): Map<string, number> {
+export function artistWorkCounts(data: BrowseAtlas): Map<string, number> {
   const visible = new Set(
     data.images
       .filter((image) => image.role === "whole" || image.role === "reference")
@@ -222,7 +288,10 @@ export function artistWorkCounts(data: Atlas): Map<string, number> {
   }
   return counts;
 }
-export const artistLabel = (data: Atlas, work: Artwork) =>
+export const artistLabel = (
+  data: Pick<Atlas, "artists">,
+  work: Pick<Artwork, "artistIds">,
+) =>
   work.artistIds
     .map(
       (id) =>
@@ -237,7 +306,7 @@ export function assetUrl(url: string) {
     import.meta.env.VITE_ASSET_BASE_URL?.trim() || import.meta.env.BASE_URL;
   return `${base.replace(/\/+$/, "")}/${url.replace(/^(?:\.\/|\/)+/, "")}`;
 }
-export function validateRelations(data: Atlas): string[] {
+export function validateBrowseRelations(data: BrowseAtlas): string[] {
   const errors: string[] = [];
   for (const key of [
     "artists",
@@ -254,7 +323,7 @@ export function validateRelations(data: Atlas): string[] {
   const venues = new Set(data.venues.map((v) => v.id));
   const artistIds = new Set(data.artists.map((a) => a.id));
   const periodIds = new Set(data.periods.map((p) => p.id));
-  const imagesByWork = new Map<string, ImageAsset[]>();
+  const imagesByWork = new Map<string, ImageSummary[]>();
   for (const image of data.images) {
     const images = imagesByWork.get(image.artworkId) ?? [];
     images.push(image);
@@ -293,6 +362,20 @@ export function validateRelations(data: Atlas): string[] {
   for (const image of data.images) {
     if (!workIds.has(image.artworkId))
       errors.push(`图像 ${image.id} 无对应作品`);
+  }
+  for (const topic of data.topics)
+    if (
+      !topic.artworkIds.length ||
+      new Set(topic.artworkIds).size !== topic.artworkIds.length ||
+      topic.artworkIds.some((id) => !workIds.has(id))
+    )
+      errors.push(`专题 ${topic.id} 无效`);
+  return errors;
+}
+
+export function validateRelations(data: Atlas): string[] {
+  const errors = validateBrowseRelations(data);
+  for (const image of data.images) {
     if (
       image.width <= 0 ||
       image.height <= 0 ||
@@ -303,12 +386,5 @@ export function validateRelations(data: Atlas): string[] {
     if (image.delivery.kind === "image" && image.delivery.bytes > 20_000_000)
       errors.push(`${image.id} 超过高清文件限制`);
   }
-  for (const topic of data.topics)
-    if (
-      !topic.artworkIds.length ||
-      new Set(topic.artworkIds).size !== topic.artworkIds.length ||
-      topic.artworkIds.some((id) => !workIds.has(id))
-    )
-      errors.push(`专题 ${topic.id} 无效`);
   return errors;
 }

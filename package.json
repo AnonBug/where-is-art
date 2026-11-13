@@ -1,6 +1,6 @@
 {
   "name": "art-atlas",
-  "version": "4.4.1",
+  "version": "4.5.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -8,12 +8,13 @@
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 8775 --strictPort",
-    "build": "node scripts/build-theme.mjs && tsc --noEmit && vite build && node scripts/check-site-size.mjs",
+    "build": "node scripts/build-content-delivery.mjs && node scripts/build-theme.mjs && tsc --noEmit && vite build && node scripts/check-site-size.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 8775 --strictPort",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "pretest": "node scripts/build-content-delivery.mjs",
     "format": "prettier --write src tests index.html vite.config.ts tsconfig.json package.json",
-    "predev": "node scripts/build-theme.mjs",
+    "predev": "node scripts/build-content-delivery.mjs && node scripts/build-theme.mjs",
     "content:build": "node scripts/build-catalog.mjs",
     "media:prepare": "node scripts/prepare-media.mjs",
     "media:foreign": "node scripts/prepare-foreign-media.mjs",
@@ -25,7 +26,10 @@
     "media:index": "node scripts/build-media-index.mjs",
     "media:restore": "node scripts/restore-media.mjs",
     "media:legacy": "node scripts/prepare-legacy-media.mjs",
-    "media:masters": "node scripts/prepare-masters-media.mjs"
+    "media:masters": "node scripts/prepare-masters-media.mjs",
+    "content:prepare": "npm run content:build && node scripts/publish-content.mjs --prepare",
+    "content:publish": "npm run content:build && node scripts/publish-content.mjs --publish",
+    "content:check:remote": "node scripts/publish-content.mjs --verify"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

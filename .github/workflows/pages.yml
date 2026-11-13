@@ -23,6 +23,7 @@ jobs:
       - run: npm run content:build && git diff --exit-code --stat -- public/catalog.json
       - run: npm test
       - run: npm run media:check
+      - run: npm run content:check:remote -- --expected-local
       - run: |
           if [ -z "$VITE_TIANDITU_KEY" ]; then
             echo "Configure the VITE_TIANDITU_KEY Actions secret with a Tianditu browser Key."

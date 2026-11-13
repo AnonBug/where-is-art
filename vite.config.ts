@@ -8,6 +8,13 @@ export default defineConfig(({ mode }) => {
   const externalMedia = Boolean(
     (process.env.VITE_ASSET_BASE_URL ?? env.VITE_ASSET_BASE_URL ?? "").trim(),
   );
+  const externalContent = Boolean(
+    (
+      process.env.VITE_CONTENT_BASE_URL ??
+      env.VITE_CONTENT_BASE_URL ??
+      ""
+    ).trim(),
+  );
   return {
     plugins: [
       react(),
@@ -15,17 +22,26 @@ export default defineConfig(({ mode }) => {
         name: "publish-json-with-external-media",
         apply: "build",
         async generateBundle() {
-          if (!externalMedia) return;
+          if (!externalMedia && !externalContent) return;
           const visit = async (directory: string) => {
             for (const entry of await fs.readdir(
               path.join("public", directory),
               { withFileTypes: true },
             )) {
               const fileName = path.posix.join(directory, entry.name);
+              if (
+                externalContent &&
+                [
+                  "catalog.json",
+                  "catalog-index.json",
+                  "artwork-details",
+                ].includes(fileName)
+              )
+                continue;
               if (entry.isDirectory()) {
-                if (!["media", "brand"].includes(fileName))
+                if (!externalMedia || !["media", "brand"].includes(fileName))
                   await visit(fileName);
-              } else if (entry.name.endsWith(".json")) {
+              } else if (!externalMedia || entry.name.endsWith(".json")) {
                 this.emitFile({
                   type: "asset",
                   fileName,
@@ -39,6 +55,9 @@ export default defineConfig(({ mode }) => {
       },
     ],
     base: process.env.PAGES_BASE_PATH || "/",
-    build: { outDir: "dist", copyPublicDir: !externalMedia },
+    build: {
+      outDir: "dist",
+      copyPublicDir: !externalMedia && !externalContent,
+    },
   };
 });

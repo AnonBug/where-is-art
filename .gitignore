@@ -7,6 +7,11 @@ dist/
 coverage/
 output/
 
+# Rebuilt from catalog.json before development, tests and builds.
+/public/catalog-index.json
+/public/catalog-index.json.tmp
+/public/artwork-details/
+
 # Media lives on OSS. Optional local copies must not return to Git.
 /public/media/
 /public/brand/
