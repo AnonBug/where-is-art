@@ -226,6 +226,14 @@ export function Catalog({
         </>
       ) : (
         <div ref={scrollRef} className={s.directory}>
+          {tab === "foreign" && (
+            <div className={s.directoryIntro}>
+              <h2>时期与流派</h2>
+              <p>
+                按主要艺术时期与流派归类；年代为约略范围，流派之间存在交叉。
+              </p>
+            </div>
+          )}
           {tab === "topics"
             ? data.topics.map((topic) => (
                 <button

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02",
-  "scopeNote": "西方绘画主线首批；时期为便于浏览的编辑分组，日期为大致范围，流派之间允许交叠。画家可跨越多个风格，本批归入一个主要目录。",
+  "updatedAt": "2026-11-13",
+  "scopeNote": "西方绘画按主要艺术时期与流派归类；年代为约略范围，流派之间存在交叉。画家可跨越多个风格，目录按主要关联提供一个入口，不表示全部作品都属于同一风格。",
   "periods": [
     {
       "id": "medieval",
@@ -21,15 +21,15 @@
       "id": "mannerism",
       "category": "foreign",
       "name": "风格主义",
-      "dateLabel": "16世纪至17世纪初",
-      "sourceUrl": "https://www.metmuseum.org/essays/mannerism-bronzino-1503-1572-and-his-contemporaries"
+      "dateLabel": "约1520—1600年",
+      "sourceUrl": "https://www.nationalgalleries.org/art-and-artists/glossary-terms/mannerism"
     },
     {
       "id": "baroque",
       "category": "foreign",
       "name": "巴洛克",
-      "dateLabel": "17世纪至18世纪初",
-      "sourceUrl": "https://www.nga.gov/artworks/baroque"
+      "dateLabel": "17世纪—18世纪中叶",
+      "sourceUrl": "https://www.nationalgalleries.org/art-and-artists/glossary-terms/baroque"
     },
     {
       "id": "rococo",
@@ -49,7 +49,7 @@
       "id": "romanticism",
       "category": "foreign",
       "name": "浪漫主义",
-      "dateLabel": "18世纪末—19世纪",
+      "dateLabel": "18世纪末—19世纪中叶",
       "sourceUrl": "https://www.metmuseum.org/essays/romanticism"
     },
     {
@@ -83,16 +83,16 @@
     {
       "id": "symbolism",
       "category": "foreign",
-      "name": "象征与新艺术",
+      "name": "象征主义",
       "dateLabel": "19世纪末—20世纪初",
-      "sourceUrl": "https://www.belvedere.at/en/press/klimt-collection-belvedere"
+      "sourceUrl": "https://www.metmuseum.org/essays/symbolism"
     },
     {
       "id": "expressionism",
       "category": "foreign",
-      "name": "表现主义先声",
+      "name": "表现主义",
       "dateLabel": "19世纪末—20世纪初",
-      "sourceUrl": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939"
+      "sourceUrl": "https://www.nationalgalleries.org/art-and-artists/glossary-terms/expressionism"
     },
     {
       "id": "fauvism",
@@ -111,8 +111,8 @@
     {
       "id": "abstraction",
       "category": "foreign",
-      "name": "早期抽象绘画",
-      "dateLabel": "20世纪初",
+      "name": "抽象艺术",
+      "dateLabel": "20世纪初起",
       "sourceUrl": "https://www.nga.gov/educational-resources/inquiring-eye-early-modernism-1900-1940"
     }
   ],
@@ -3327,7 +3327,7 @@
     {
       "id": "western-journey",
       "title": "西方绘画之旅",
-      "description": "从中世纪圣像到早期抽象绘画，沿33位画家、137幅作品走过西方绘画主要时期。",
+      "description": "从中世纪圣像到早期抽象绘画，沿33位画家、137幅作品走过西方绘画主要时期与流派。",
       "artworkIds": [
         "duccio-madonna",
         "duccio-maesta",

@@ -64,6 +64,23 @@
 .period {
   margin-bottom: 6px;
 }
+.directoryIntro {
+  padding: 0 8px 12px;
+  h2 {
+    margin: 0 0 5px;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+    text-wrap: balance;
+  }
+}
 .periodHeading {
   display: flex;
   align-items: center;
