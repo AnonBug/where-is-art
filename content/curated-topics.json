@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-14",
+  "topics": [
+    {
+      "id": "signature",
+      "title": "一人一幅成名作",
+      "description": "各选一件代表作认识画家；早期绘画含传名与摹本，具体归属见作品说明。",
+      "artworkIds": [
+        "tang-yin-06",
+        "mona",
+        "wu-daozi-songzi",
+        "wang-wei-wangchuan",
+        "yan-liben-buniantu",
+        "duccio-maesta",
+        "botticelli-birth-venus",
+        "raphael-athens",
+        "titian-venus-urbino",
+        "bruegel-hunters",
+        "el-greco-toledo",
+        "caravaggio-matthew",
+        "rembrandt-night-watch",
+        "vermeer-pearl",
+        "velazquez-meninas",
+        "fragonard-swing",
+        "david-horatii",
+        "ingres-odalisque",
+        "goya-third-may",
+        "turner-temeraire",
+        "delacroix-liberty",
+        "courbet-ornans",
+        "millet-gleaners",
+        "manet-olympia",
+        "monet-q328523",
+        "renoir-moulin",
+        "degas-rehearsal",
+        "cassatt-bath",
+        "cezanne-card-players",
+        "van-gogh-starry-night",
+        "gauguin-q890678",
+        "seurat-grande-jatte",
+        "klimt-kiss",
+        "munch-scream",
+        "matisse-dance",
+        "gris-picasso",
+        "kandinsky-cannons",
+        "mondrian-red-blue-yellow"
+      ]
+    },
+    {
+      "id": "rembrandt-self-portraits",
+      "title": "伦勃朗的自画像",
+      "description": "从青年到晚年，循着自画像看面容、装束与光线的变化。",
+      "artworkIds": [
+        "rembrandt-rrp-19",
+        "rembrandt-rrp-18",
+        "rembrandt-rrp-20",
+        "rembrandt-rrp-29",
+        "rembrandt-rrp-30",
+        "rembrandt-rrp-31",
+        "rembrandt-rrp-33",
+        "rembrandt-rrp-66",
+        "rembrandt-rrp-69",
+        "rembrandt-rrp-96",
+        "rembrandt-rrp-97",
+        "rembrandt-rrp-122",
+        "rembrandt-rrp-123",
+        "rembrandt-rrp-135",
+        "rembrandt-rrp-172",
+        "rembrandt-rrp-178",
+        "rembrandt-rrp-179",
+        "rembrandt-rrp-189",
+        "rembrandt-rrp-199",
+        "rembrandt-rrp-224",
+        "rembrandt-rrp-256",
+        "rembrandt-rrp-273",
+        "rembrandt-rrp-264",
+        "rembrandt-rrp-274",
+        "rembrandt-rrp-275",
+        "rembrandt-rrp-281",
+        "rembrandt-rrp-282",
+        "rembrandt-rrp-294",
+        "rembrandt-rrp-302",
+        "rembrandt-rrp-319",
+        "rembrandt-rrp-321",
+        "rembrandt-rrp-322",
+        "rembrandt-rrp-323"
+      ]
+    },
+    {
+      "id": "monet-water-lilies",
+      "title": "莫奈的睡莲",
+      "description": "精选不同时期的睡莲与睡莲池，从吉维尼的桥与倒影，看到橘园的大幅组画。",
+      "artworkIds": [
+        "monet-q63952027",
+        "monet-q20881317",
+        "monet-q3877094",
+        "monet-q3220338",
+        "monet-q19905213",
+        "monet-q26708368",
+        "monet-water-lily-pond",
+        "monet-q3835893",
+        "monet-q63952029",
+        "monet-q18918056",
+        "monet-q20538929",
+        "monet-water-lilies",
+        "monet-q20538824",
+        "monet-q38623024",
+        "monet-q79162790",
+        "monet-q20198390",
+        "monet-q17494554",
+        "monet-q7973309",
+        "monet-q28797618",
+        "monet-q28797619",
+        "monet-q28797622",
+        "monet-q28797620",
+        "monet-q28797624",
+        "monet-q28797625"
+      ]
+    },
+    {
+      "id": "van-gogh-sunflowers",
+      "title": "梵高的向日葵",
+      "description": "从巴黎的剪枝花朵到阿尔勒的瓶花，对照不同版本的色彩与构图。",
+      "artworkIds": [
+        "van-gogh-q9213165",
+        "van-gogh-q26220251",
+        "van-gogh-q24022718",
+        "van-gogh-q19836156",
+        "van-gogh-q26220281",
+        "van-gogh-q21948547",
+        "van-gogh-sunflowers",
+        "van-gogh-q26220282",
+        "van-gogh-q18689440",
+        "van-gogh-q20809059"
+      ]
+    },
+    {
+      "id": "danae",
+      "title": "达那厄",
+      "description": "同一个神话，不同的表达：并看提香的五个版本与伦勃朗笔下的达那厄。",
+      "artworkIds": [
+        "titian-q14425558",
+        "titian-q124940185",
+        "titian-q3701421",
+        "titian-q3701422",
+        "titian-q14425553",
+        "rembrandt-rrp-149"
+      ]
+    }
+  ],
+  "curation": {
+    "signature": {
+      "note": "成名作作为代表作入口，不断言每件是画家首次成名之作。保留原有唐寅与达·芬奇的选择；其余画家各一件。韦罗基奥现仅有与达·芬奇合作的《基督受洗》，不重复占用一人一幅名额。吴道子、王维、阎立本条目沿用原作说明中的传名、临摹与归属限定，不改写为亲笔。"
+    },
+    "rembrandt-self-portraits": {
+      "note": "按目录约略起始年代排列。包括以自己为模特的角色装扮；排除现有目录明确标注作者归属存在限定或不同意见的五条记录。不宣称穷尽全部自画像。",
+      "excludedArtworkIds": [
+        "rembrandt-rrp-134",
+        "rembrandt-rrp-146",
+        "rembrandt-rrp-154",
+        "rembrandt-rrp-170",
+        "rembrandt-rrp-235a"
+      ],
+      "sources": [
+        "https://www.nationalgallery.org.uk/paintings/rembrandt-self-portrait-at-the-age-of-63"
+      ]
+    },
+    "monet-water-lilies": {
+      "note": "24件精选，按早期池塘与日本桥、1900年代水面、晚期绘画、橘园组画组织；不是全部睡莲目录。橘园收录现有目录中可浏览的六幅组画，不虚构缺失作品。逐件来源、尺寸与收藏沿用目录。",
+      "sources": [
+        "https://www.musee-orangerie.fr/en/node/197502",
+        "https://www.artic.edu/artworks/16568",
+        "https://www.metmuseum.org/art/collection/search/438008"
+      ]
+    },
+    "van-gogh-sunflowers": {
+      "note": "收录四件巴黎剪枝静物与六件阿尔勒瓶花版本；不将混合花卉、庭园、房屋或已毁的五朵向日葵影像并作现存系列。未知收藏地点的作品留在列表，不增加地图坐标。",
+      "excludedArtworkIds": [
+        "van-gogh-q11770758",
+        "van-gogh-q19836161",
+        "van-gogh-q26220198",
+        "van-gogh-q26221241"
+      ],
+      "sources": [
+        "https://www.vangoghmuseum.nl/en/collection/s0031V1962",
+        "https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers"
+      ]
+    },
+    "danae": {
+      "note": "按现有作品ID收录提香五个版本与伦勃朗一件，保留作品本身题名“达娜厄”。阿普斯利邸、普拉多、那不勒斯、维也纳、冬宫版本不合并；不添加尚未入库画家的图像，也不为未关联馆点的作品补造坐标。",
+      "sources": [
+        "https://www.gardnermuseum.org/danae",
+        "https://www.nga.gov/sites/default/files/2025-07/titians-danae-brochure.pdf",
+        "https://hermitagemuseum.org/explore/history/Danae"
+      ]
+    }
+  }
+}

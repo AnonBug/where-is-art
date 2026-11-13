@@ -6,6 +6,7 @@ import {
   assetUrl,
   primaryImage,
   scopeWorks,
+  workVenues,
   type ArtworkSummary,
   type BrowseAtlas,
   type Category,
@@ -19,12 +20,14 @@ export function ArtworkList({
   selected,
   onSelect,
   scrollKey,
+  showVenues = false,
 }: {
   data: BrowseAtlas;
   works: ArtworkSummary[];
   selected?: string;
   onSelect: (work: ArtworkSummary) => void;
   scrollKey: string;
+  showVenues?: boolean;
 }) {
   const ref = useSavedScroll(scrollKey);
   return (
@@ -49,10 +52,23 @@ export function ArtworkList({
               {artistLabel(data, work)} ·{" "}
               {data.artists.find((a) => a.id === work.artistIds[0])
                 ?.category === "china"
-                ? "明"
+                ? data.periods.find(
+                    (period) =>
+                      period.id ===
+                      data.artists.find(
+                        (artist) => artist.id === work.artistIds[0],
+                      )?.periodId,
+                  )?.name
                 : data.artists.find((a) => a.id === work.artistIds[0])
                     ?.countryLabel}
             </small>
+            {showVenues && workVenues(data, work.id).length > 0 && (
+              <small>
+                {workVenues(data, work.id)
+                  .map((venue) => venue.name)
+                  .join(" · ")}
+              </small>
+            )}
           </span>
           <Icon name="chevron" size={16} />
         </button>
@@ -219,6 +235,7 @@ export function Catalog({
           <ArtworkList
             data={data}
             works={topicWorks}
+            showVenues
             selected={selected}
             onSelect={onWork}
             scrollKey={`topic:${topic.id}`}

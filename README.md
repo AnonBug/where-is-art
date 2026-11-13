@@ -12,6 +12,8 @@ React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 
 
 4.5.5 按更新清单的作品 ID 替换 187 幅作品的全图、预览图和缩略图，保留指定 OSS HTTPS 地址及新的内容哈希目录；作品事实与收藏关系不变。图片来源、许可、署名和使用条件在「来源与版权」展示，包括蒙德里安 `mondrian-q24046283` 的非商业展示条件。网页全图的下载按钮改为「下载图片」，不将其称为馆方原图。更新清单存于 `content/imports/oss-image-upgrades-2026-11-13.csv`，`scripts/update-oss-images.mjs` 默认只核验，显式传入 `--apply` 才修改本地图片清单；随后运行 `npm run content:build`。
 
+4.5.6 新增「伦勃朗的自画像」33 幅、「莫奈的睡莲」精选 24 幅、「梵高的向日葵」10 幅和「达那厄」6 幅（提香五个版本、伦勃朗一幅）；「一人一幅成名作」从 2 幅扩充至 38 位画家各一幅。专题由 `content/curated-topics.json` 显式维护作品 ID、顺序和选录依据，不按题名自动收录、不复制作品事实或图片数据。韦罗基奥仅有合作作品，暂不单列；早期中国绘画保留传名与摹本说明。专题列表显示已有收藏机构，便于区分同名版本；位置未核实的作品仍可浏览，不新增地图坐标。
+
 > 2026-10-31 底图更新：采用按视野切换的双源方案。世界概览、中国及周边视野使用天地图；完全进入海外的近景使用 OpenFreeMap 青绿矢量地图。浏览器端 Key 已验证，南海断续线和藏南官方边界已可见，巴黎高倍率街道恢复显示。正式地图内容、审图信息与服务条款仍需完整验收，浏览器测试不替代这些工作。
 
 官方依据与接入入口：[天地图地图服务文档](https://lbs.tianditu.gov.cn/server/MapService.html)、[自然资源部标准地图服务系统](https://bzdt.ch.mnr.gov.cn/)、[自然资源部天地图建设方案](https://app.www.gov.cn/govdata/gov/202403/13/512938/article.html)。天地图文档列出 `vec_w` 底图、`cva_w` 注记和 `ibo_w` 全球境界服务，支持 HTTPS 与 WMTS。采用标准成图瓦片时，不能沿用当前矢量样式的逐要素调色方式；青绿视觉须以边界和标注完整可读为前提。
@@ -182,6 +184,7 @@ content/
   wu-daozi-sources.json        归属依据、原图下载地址和 SHA-256
   wu-daozi-media-manifest.json 原始分辨率瓦片与全文件哈希
   foreign-catalog.json         新增西方画家、作品、馆藏和专题
+  curated-topics.json          精选专题作品 ID、顺序、选录与排除依据
   foreign-sources.json         下载地址、来源证据与源文件 SHA-256
   foreign-media-manifest.json  网页衍生图的尺寸、体积、哈希与署名
   masters-catalog.json         提香与伦勃朗新增作品、馆藏与归属说明

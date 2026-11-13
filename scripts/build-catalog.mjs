@@ -6,6 +6,7 @@ const read = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 const tang = await read("content/tang-catalog.json");
 const media = await read("content/media-manifest.json");
 const foreign = await read("content/foreign-catalog.json");
+const curated = await read("content/curated-topics.json");
 const foreignMedia = await read("content/foreign-media-manifest.json");
 const masters = await read("content/masters-catalog.json");
 const mastersMedia = await read("content/masters-media-manifest.json");
@@ -147,12 +148,7 @@ const topics = [
       "tang-yin-18",
     ],
   },
-  {
-    id: "signature",
-    title: "一人一幅成名作",
-    description: "从唐寅与达·芬奇各选一幅代表作，走近两种笔墨。",
-    artworkIds: ["tang-yin-06", "mona"],
-  },
+  curated.topics.find((topic) => topic.id === "signature"),
   {
     id: "leonardo",
     title: "达·芬奇的世界",
@@ -160,7 +156,16 @@ const topics = [
     artworkIds: legacy.works.map((work) => work.id),
   },
   ...foreign.topics,
+  ...curated.topics.filter((topic) => topic.id !== "signature"),
 ];
+const artworkIds = new Set(artworks.map((work) => work.id));
+assert.equal(new Set(topics.map((topic) => topic?.id)).size, topics.length);
+for (const topic of topics) {
+  assert.ok(topic?.artworkIds.length, "Topics must have an ID and artworks");
+  assert.equal(new Set(topic.artworkIds).size, topic.artworkIds.length);
+  for (const id of topic.artworkIds)
+    assert.ok(artworkIds.has(id), `Unknown artwork ${id} in topic ${topic.id}`);
+}
 // File hashes are build/CI evidence; the viewer only needs the image contract.
 const images = [
   ...tangExpansionMedia.images.map(({ files, processing, ...image }) => image),
@@ -187,6 +192,7 @@ const data = {
     tangExpansion.updatedAt,
     masters.updatedAt,
     ossImport.updatedAt,
+    curated.updatedAt,
   ]
     .sort()
     .at(-1),
