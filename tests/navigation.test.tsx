@@ -68,7 +68,11 @@ vi.mock("../src/features/map/AtlasMap", () => ({
       />
       <span>地图作品数：{works.length}</span>
       <button onClick={() => onWork(works[0].id)}>地图缩略图</button>
+      {works[1] && (
+        <button onClick={() => onWork(works[1].id)}>另一幅地图画作</button>
+      )}
       <button onClick={() => onVenue("palace-beijing")}>地图博物馆</button>
+      <button onClick={() => onVenue("shanghai-museum")}>另一座博物馆</button>
       <button onClick={onVenueCollapse}>缩小至区域地图</button>
       <button onClick={onOverview}>地图整体分布</button>
       <output data-testid="expanded-venue">{expandedVenue}</output>
@@ -123,7 +127,15 @@ function NavigationProbe() {
     </>
   );
 }
-function mount(path = "/catalog/china?scope=category:china") {
+function mount(
+  path:
+    | string
+    | {
+        pathname: string;
+        search: string;
+        state: Record<string, unknown>;
+      } = "/catalog/china?scope=category:china",
+) {
   render(
     <MemoryRouter initialEntries={[path]}>
       <AtlasApp />
@@ -395,6 +407,106 @@ describe("navigation contracts", () => {
     await user.click(screen.getByRole("button", { name: "退出看画" }));
     expect(await screen.findByLabelText("测试地图")).toBeTruthy();
     await user.click(screen.getByRole("button", { name: "返回目录" }));
+    expect(screen.getByLabelText("名画目录")).toBeTruthy();
+  });
+
+  it.each(["返回目录", "浏览器后退"])(
+    "returns to the directory with %s after opening multiple museums and paintings",
+    async (returnButton) => {
+      device.compact = true;
+      const user = userEvent.setup();
+      mount();
+      await user.click(screen.getByRole("button", { name: /唐寅\s*1470/ }));
+      for (const [museum, artwork] of [
+        ["地图博物馆", "地图缩略图"],
+        ["另一座博物馆", "另一幅地图画作"],
+      ]) {
+        await user.click(await screen.findByRole("button", { name: museum }));
+        await user.click(screen.getByRole("button", { name: artwork }));
+        await user.click(
+          await screen.findByRole("button", { name: "退出看画" }),
+        );
+        expect(await screen.findByLabelText("测试地图")).toBeTruthy();
+      }
+      expect(screen.getByTestId("route").textContent).toContain(
+        "venue=shanghai-museum",
+      );
+      await user.click(screen.getByRole("button", { name: returnButton }));
+      expect(screen.getByTestId("route").textContent).toBe(
+        "/catalog/china?scope=category:china",
+      );
+      expect(screen.getByLabelText("名画目录")).toBeTruthy();
+    },
+  );
+
+  it.each(["关闭详情", "浏览器后退"])(
+    "closes directly to the map with %s after switching paintings inside its information panel",
+    async (returnButton) => {
+      const user = userEvent.setup();
+      mount("/map?scope=artist:tang-yin");
+      await user.click(
+        await screen.findByRole("button", { name: "地图缩略图" }),
+      );
+      await user.click(screen.getByRole("button", { name: "另一幅地图画作" }));
+      await user.click(screen.getByRole("button", { name: returnButton }));
+      expect(screen.getByTestId("route").textContent).toBe(
+        "/map?scope=artist:tang-yin",
+      );
+      expect(screen.queryByRole("dialog", { name: "作品信息" })).toBeNull();
+    },
+  );
+
+  it.each([
+    ["artist:monet", "/catalog/foreign"],
+    ["topic:landscape", "/topics/landscape"],
+    ["favorites", "/catalog/favorites"],
+  ])(
+    "returns a shared %s map to its matching directory",
+    async (scope, directory) => {
+      device.compact = true;
+      const user = userEvent.setup();
+      mount(`/map?scope=${scope}&venue=palace-beijing`);
+      await user.click(await screen.findByRole("button", { name: "返回目录" }));
+      expect(screen.getByTestId("route").textContent).toBe(
+        `${directory}?scope=${encodeURIComponent(scope)}`,
+      );
+      expect(screen.getByLabelText("名画目录")).toBeTruthy();
+    },
+  );
+
+  it("returns a topic map to its topic and then to the topic directory", async () => {
+    device.compact = true;
+    const user = userEvent.setup();
+    mount();
+    await user.click(screen.getByRole("button", { name: "专题" }));
+    await user.click(screen.getByRole("button", { name: /山水之间/ }));
+    await user.click(screen.getByRole("button", { name: /事茗图卷\s*唐寅/ }));
+    await user.click(await screen.findByRole("button", { name: "地图博物馆" }));
+    await user.click(screen.getByRole("button", { name: "返回目录" }));
+    expect(screen.getByTestId("route").textContent).toContain(
+      "/topics/landscape?",
+    );
+    await user.click(screen.getByRole("button", { name: "返回专题" }));
+    expect(screen.getByTestId("route").textContent).toContain(
+      "/catalog/topics?",
+    );
+  });
+
+  it("skips legacy map history when the directory button has a map parent", async () => {
+    device.compact = true;
+    const user = userEvent.setup();
+    mount({
+      pathname: "/map",
+      search: "?scope=artist:titian&venue=uffizi",
+      state: {
+        depth: 4,
+        from: "/map?scope=artist:titian&venue=masters-q866498",
+      },
+    });
+    await user.click(await screen.findByRole("button", { name: "返回目录" }));
+    expect(screen.getByTestId("route").textContent).toBe(
+      "/catalog/foreign?scope=artist%3Atitian",
+    );
     expect(screen.getByLabelText("名画目录")).toBeTruthy();
   });
 });

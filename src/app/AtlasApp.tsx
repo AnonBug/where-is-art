@@ -262,6 +262,7 @@ export function AtlasApp() {
     go(
       `/artworks/${id}${compact ? "/view" : ""}`,
       expandedVenue ? { venue: expandedVenue } : {},
+      isDetail && !compact,
     );
   const locate = (ids: string[]) => setFocus({ ids, nonce: Date.now() });
   const selectWork = (item: ArtworkSummary) => {
@@ -326,12 +327,34 @@ export function AtlasApp() {
       onWork={tab === "favorites" ? (item) => openWork(item.id) : selectWork}
     />
   );
-  const showCatalog = () =>
-    go(
+  const showCatalog = () => {
+    const directoryPath =
       topicId && useSession.getState().tab === "topics"
         ? `/topics/${topicId}`
-        : `/catalog/${useSession.getState().tab}`,
-    );
+        : `/catalog/${useSession.getState().tab}`;
+    // This control means "directory", not "previous map operation". Reuse
+    // the actual directory entry when available, including its scroll state.
+    if (
+      location.state?.depth > 0 &&
+      location.state?.from?.split("?")[0] === directoryPath
+    ) {
+      navigate(-1);
+    } else {
+      // Shared links and older map histories may have no directory parent.
+      // Clear their ancestry so later controls cannot replay stale map steps.
+      navigate(`${directoryPath}?${new URLSearchParams({ scope })}`, {
+        replace: true,
+        state: null,
+      });
+    }
+    requestAnimationFrame(() => {
+      document
+        .querySelector<HTMLButtonElement>(
+          '[aria-label="名画目录"] button[aria-current="true"]',
+        )
+        ?.focus({ preventScroll: true });
+    });
+  };
   const loadingInformation = (
     <div className={s.contentStatus}>
       <h1>{summary?.title}</h1>
@@ -414,7 +437,9 @@ export function AtlasApp() {
                     focus={focus}
                     onFocusHandled={handleFocus}
                     onWork={openWork}
-                    onVenue={(id) => go("/map", { venue: id })}
+                    onVenue={(id) =>
+                      go("/map", { venue: id }, path[0] === "map")
+                    }
                     onVenueCollapse={() => {
                       const query = new URLSearchParams(location.search);
                       query.delete("venue");
@@ -447,7 +472,11 @@ export function AtlasApp() {
               )}
               {compact && !panel && (
                 <header className={s.mapHeader}>
-                  <IconButton icon="back" label="返回目录" onClick={back} />
+                  <IconButton
+                    icon="back"
+                    label="返回目录"
+                    onClick={showCatalog}
+                  />
                   <h1>{title}</h1>
                   <IconButton
                     icon="list"
