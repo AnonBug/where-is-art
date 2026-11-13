@@ -149,6 +149,8 @@ export function AtlasApp() {
         },
         true,
       );
+    else if (isViewer && scope.startsWith("topic:"))
+      go(`/topics/${scope.slice("topic:".length)}`, {}, true);
     else if (isViewer || panel) go("/map", {}, true);
     else go(`/catalog/${useSession.getState().tab}`, {}, true);
     requestAnimationFrame(() => {
@@ -217,7 +219,15 @@ export function AtlasApp() {
       useSession.setState((state) => ({
         tab: artist.category,
         topicId: null,
-        expanded: { ...state.expanded, [artist.category]: artist.periodId },
+        expanded: {
+          ...state.expanded,
+          [artist.category]: [
+            ...new Set([
+              ...(state.expanded[artist.category] ?? []),
+              artist.periodId,
+            ]),
+          ],
+        },
       }));
     } else if (kind === "topic" && data.topics.some((item) => item.id === id)) {
       useSession.setState({ tab: "topics", topicId: id });
@@ -324,7 +334,13 @@ export function AtlasApp() {
         else go("/catalog/topics", {}, true);
       }}
       onMap={showMap}
-      onWork={tab === "favorites" ? (item) => openWork(item.id) : selectWork}
+      onWork={
+        tab === "topics" && topicId
+          ? (item) => go(`/artworks/${item.id}/view`)
+          : tab === "favorites"
+            ? (item) => openWork(item.id)
+            : selectWork
+      }
     />
   );
   const showCatalog = () => {

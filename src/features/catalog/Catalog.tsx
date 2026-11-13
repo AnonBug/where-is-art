@@ -124,39 +124,25 @@ export function Catalog({
   const topic = data.topics.find((t) => t.id === topicId);
   const topicWorks = topic ? scopeWorks(data, `topic:${topic.id}`) : [];
   const scrollRef = useSavedScroll(`catalog:${tab}`);
-  const pendingPeriod = useRef<{
-    element: HTMLElement;
-    id: string;
-    tab: Category;
-  } | null>(null);
+  const alignedScope = useRef<string | null>(null);
   useLayoutEffect(() => {
-    const target = pendingPeriod.current;
-    pendingPeriod.current = null;
-    const directory = scrollRef.current;
-    if (
-      compact &&
-      target &&
-      target.id === expanded &&
-      target.tab === tab &&
-      directory?.contains(target.element)
-    ) {
-      // Measure the section after the previous one has collapsed. The heading
-      // itself may already be sticky, so its position cannot locate the section.
-      directory.scrollTop +=
-        target.element.getBoundingClientRect().top -
-        directory.getBoundingClientRect().top -
-        directory.clientTop;
-      return;
-    }
+    const key = `${tab}:${scope}`;
     if (
       !scope.startsWith("artist:") ||
+      alignedScope.current === key ||
       useSession.getState().scroll[`catalog:${tab}`] !== undefined
     )
       return;
-    scrollRef.current
-      ?.querySelector<HTMLElement>('button[aria-current="true"]')
-      ?.scrollIntoView?.({ block: "nearest" });
-  }, [scope, tab, expanded, scrollRef, compact]);
+    // Reveal the artist once when opening a shared link, without moving the
+    // directory again as the user opens or closes other folders.
+    const target = scrollRef.current?.querySelector<HTMLElement>(
+      'button[aria-current="true"]',
+    );
+    if (target) {
+      target.scrollIntoView?.({ block: "nearest" });
+      alignedScope.current = key;
+    }
+  }, [scope, tab, expanded, scrollRef]);
   return (
     <aside className={s.catalog} aria-label="名画目录">
       <div className={s.brand}>
@@ -268,27 +254,18 @@ export function Catalog({
             : data.periods
                 .filter((period) => period.category === tab)
                 .map((period) => (
-                  <section
-                    key={period.id}
-                    className={`${s.period} ${expanded === period.id ? s.expandedPeriod : ""}`}
-                  >
+                  <section key={period.id} className={s.period}>
                     <button
                       className={s.periodHeading}
-                      aria-expanded={expanded === period.id}
-                      onClick={(event) => {
-                        pendingPeriod.current =
-                          compact && expanded !== period.id
-                            ? {
-                                element: event.currentTarget.parentElement!,
-                                id: period.id,
-                                tab,
-                              }
-                            : null;
+                      aria-expanded={expanded?.includes(period.id) ?? false}
+                      onClick={() => {
                         useSession.getState().togglePeriod(tab, period.id);
                       }}
                     >
                       <Icon
-                        name={expanded === period.id ? "down" : "chevron"}
+                        name={
+                          expanded?.includes(period.id) ? "down" : "chevron"
+                        }
                         size={13}
                       />
                       <span className={s.folderIcon}>
@@ -299,7 +276,7 @@ export function Catalog({
                         <small>{period.dateLabel}</small>
                       </span>
                     </button>
-                    {expanded === period.id && (
+                    {expanded?.includes(period.id) && (
                       <div className={s.artists}>
                         {data.artists
                           .filter((artist) => artist.periodId === period.id)

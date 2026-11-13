@@ -26,7 +26,7 @@ function mount(compact = true) {
 beforeEach(() => {
   useSession.setState({
     tab: "foreign",
-    expanded: { foreign: "renaissance" },
+    expanded: { china: ["ming"], foreign: ["renaissance"] },
     scroll: {},
   });
 });
@@ -35,7 +35,7 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 
-describe("mobile directory scroll anchoring", () => {
+describe("independent directory folders and saved scroll", () => {
   it("shows the browsable painting count next to each artist", () => {
     mount();
     expect(screen.getByRole("button", { name: /提香.*369\s*幅/ })).toBeTruthy();
@@ -47,35 +47,34 @@ describe("mobile directory scroll anchoring", () => {
       screen.getByRole("button", { name: /伦勃朗.*350\s*幅/ }),
     ).toBeTruthy();
   });
-  it("opens topics without a period expansion or a pending scroll target", () => {
+  it("opens topics without requiring period expansion state", () => {
     useSession.setState({ tab: "topics" });
     mount();
     expect(screen.getByText(data.topics[0].title)).toBeTruthy();
   });
 
-  it("aligns the newly opened period using its position after the previous period collapses", () => {
-    mount();
-    const previous = screen.getByRole("button", { name: /^文艺复兴/ });
-    const target = screen.getByRole("button", { name: /^巴洛克/ });
-    const section = target.parentElement!;
-    const directory = section.parentElement!;
-    directory.scrollTop = 600;
-    vi.spyOn(directory, "getBoundingClientRect").mockReturnValue({
-      top: 150,
-    } as DOMRect);
-    vi.spyOn(section, "getBoundingClientRect").mockImplementation(() => {
+  it.each([true, false])(
+    "opens and closes folders independently without repositioning the directory (compact=%s)",
+    (compact) => {
+      mount(compact);
+      const previous = screen.getByRole("button", { name: /^文艺复兴/ });
+      const target = screen.getByRole("button", { name: /^巴洛克/ });
+      const section = target.parentElement!;
+      const directory = section.parentElement!;
+      directory.scrollTop = 600;
+      fireEvent.click(target);
+      expect(directory.scrollTop).toBe(600);
+      expect(previous.getAttribute("aria-expanded")).toBe("true");
+      expect(target.getAttribute("aria-expanded")).toBe("true");
+      expect(screen.getByRole("button", { name: /卡拉瓦乔/ })).toBeTruthy();
+      expect(screen.getByRole("button", { name: /提香.*369/ })).toBeTruthy();
+      fireEvent.click(previous);
       expect(previous.getAttribute("aria-expanded")).toBe("false");
       expect(target.getAttribute("aria-expanded")).toBe("true");
-      return { top: -50 } as DOMRect;
-    });
-    // A sticky heading can already be at the top while its section starts above it.
-    vi.spyOn(target, "getBoundingClientRect").mockReturnValue({
-      top: 150,
-    } as DOMRect);
-    fireEvent.click(target);
-    expect(directory.scrollTop).toBe(400);
-    expect(screen.getByRole("button", { name: /卡拉瓦乔/ })).toBeTruthy();
-  });
+      expect(screen.getByRole("button", { name: /卡拉瓦乔/ })).toBeTruthy();
+      expect(directory.scrollTop).toBe(600);
+    },
+  );
 
   it("restores a saved position on return and does not realign when closing a period", () => {
     useSession.setState({ scroll: { "catalog:foreign": 420 } });
@@ -94,13 +93,22 @@ describe("mobile directory scroll anchoring", () => {
     ).toBe(260);
   });
 
-  it("does not apply mobile scroll alignment on desktop", () => {
-    mount(false);
-    const target = screen.getByRole("button", { name: /^巴洛克/ });
-    const directory = target.parentElement!.parentElement!;
-    directory.scrollTop = 600;
-    fireEvent.click(target);
-    expect(target.getAttribute("aria-expanded")).toBe("true");
-    expect(directory.scrollTop).toBe(600);
+  it("remembers multiple open folders separately for each category", () => {
+    const view = mount();
+    fireEvent.click(screen.getByRole("button", { name: /^巴洛克/ }));
+    view.unmount();
+    useSession.getState().togglePeriod("china", "tang");
+    mount();
+    expect(
+      screen
+        .getByRole("button", { name: /^文艺复兴/ })
+        .getAttribute("aria-expanded"),
+    ).toBe("true");
+    expect(
+      screen
+        .getByRole("button", { name: /^巴洛克/ })
+        .getAttribute("aria-expanded"),
+    ).toBe("true");
+    expect(useSession.getState().expanded.china).toEqual(["ming", "tang"]);
   });
 });

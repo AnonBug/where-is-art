@@ -149,7 +149,7 @@ beforeEach(() => {
     tab: "china",
     topicId: null,
     collapsed: false,
-    expanded: { china: "ming", foreign: "renaissance" },
+    expanded: { china: ["ming"], foreign: ["renaissance"] },
     scroll: {},
     cameras: {},
     imageViews: {},
@@ -351,34 +351,50 @@ describe("navigation contracts", () => {
     expect(await screen.findByTestId("expanded-venue")).toBeTruthy();
     expect(screen.queryByRole("button", { name: "关闭详情" })).toBeNull();
   });
-  it("switches country scope without mixing works and returns through topic, detail and viewer", async () => {
-    const user = userEvent.setup();
-    mount();
-    await user.click(screen.getByRole("button", { name: "外国" }));
-    expect(await screen.findByText("地图作品数：5574")).toBeTruthy();
-    await user.click(screen.getByRole("button", { name: "专题" }));
-    await user.click(screen.getByRole("button", { name: /山水之间/ }));
-    expect(await screen.findByText("地图作品数：10")).toBeTruthy();
-    await user.click(screen.getByRole("button", { name: /事茗图卷\s*唐寅/ }));
-    expect(screen.getByTestId("route").textContent).toContain(
-      "/topics/landscape",
+  it.each([false, true])(
+    "opens topic artworks directly in the viewer and restores the topic list (compact=%s)",
+    async (compact) => {
+      device.compact = compact;
+      const user = userEvent.setup();
+      mount();
+      await user.click(screen.getByRole("button", { name: "外国" }));
+      if (!compact)
+        expect(await screen.findByText("地图作品数：5574")).toBeTruthy();
+      await user.click(screen.getByRole("button", { name: "专题" }));
+      await user.click(screen.getByRole("button", { name: /山水之间/ }));
+      if (!compact)
+        expect(await screen.findByText("地图作品数：10")).toBeTruthy();
+      screen.getByLabelText("作品列表").scrollTop = 250;
+      await user.click(screen.getByRole("button", { name: /事茗图卷\s*唐寅/ }));
+      expect(screen.getByTestId("route").textContent).toContain(
+        "/artworks/tang-yin-02/view?scope=topic%3Alandscape",
+      );
+      expect(screen.queryByRole("heading", { name: "作品信息" })).toBeNull();
+      expect(await screen.findByLabelText("测试看画器")).toBeTruthy();
+      expect(screen.queryByLabelText("测试地图")).toBeNull();
+      await user.click(screen.getByRole("button", { name: "查看作品信息" }));
+      expect(screen.getByTestId("route").textContent).toContain("/view/info");
+      await user.click(screen.getByRole("button", { name: "浏览器后退" }));
+      await waitFor(() =>
+        expect(screen.getByTestId("route").textContent).toContain("/view?"),
+      );
+      await user.click(screen.getByRole("button", { name: "退出看画" }));
+      expect(screen.queryByRole("heading", { name: "作品信息" })).toBeNull();
+      expect(screen.getByTestId("route").textContent).toContain(
+        "/topics/landscape",
+      );
+      expect(screen.getByLabelText("作品列表").scrollTop).toBe(250);
+    },
+  );
+  it("returns a shared topic viewer to its topic when no navigation history exists", async () => {
+    mount("/artworks/titian-q124940185/view?scope=topic:danae");
+    await userEvent.click(
+      await screen.findByRole("button", { name: "退出看画" }),
     );
-    expect(screen.queryByRole("heading", { name: "作品信息" })).toBeNull();
-    await user.click(screen.getByRole("button", { name: "地图缩略图" }));
-    await user.click(screen.getByRole("button", { name: "放大欣赏事茗图卷" }));
-    expect(await screen.findByLabelText("测试看画器")).toBeTruthy();
-    await user.click(screen.getByRole("button", { name: "查看作品信息" }));
-    expect(screen.getByTestId("route").textContent).toContain("/view/info");
-    await user.click(screen.getByRole("button", { name: "浏览器后退" }));
-    await waitFor(() =>
-      expect(screen.getByTestId("route").textContent).toContain("/view?"),
+    expect(screen.getByTestId("route").textContent).toBe(
+      "/topics/danae?scope=topic%3Adanae",
     );
-    await user.click(screen.getByRole("button", { name: "退出看画" }));
-    expect(screen.getByRole("heading", { name: "作品信息" })).toBeTruthy();
-    await user.click(screen.getByRole("button", { name: "关闭详情" }));
-    expect(screen.getByTestId("route").textContent).toContain(
-      "/topics/landscape",
-    );
+    expect(screen.getByRole("heading", { name: "达那厄" })).toBeTruthy();
   });
   it("opens a shared foreign artist map with the matching directory and period", async () => {
     mount("/map?scope=artist:monet");
@@ -390,6 +406,11 @@ describe("navigation contracts", () => {
     expect(
       screen
         .getByRole("button", { name: /^印象派/ })
+        .getAttribute("aria-expanded"),
+    ).toBe("true");
+    expect(
+      screen
+        .getByRole("button", { name: /^文艺复兴/ })
         .getAttribute("aria-expanded"),
     ).toBe("true");
   });
@@ -480,7 +501,7 @@ describe("navigation contracts", () => {
     mount();
     await user.click(screen.getByRole("button", { name: "专题" }));
     await user.click(screen.getByRole("button", { name: /山水之间/ }));
-    await user.click(screen.getByRole("button", { name: /事茗图卷\s*唐寅/ }));
+    await user.click(screen.getByRole("button", { name: "查看专题整体分布" }));
     await user.click(await screen.findByRole("button", { name: "地图博物馆" }));
     await user.click(screen.getByRole("button", { name: "返回目录" }));
     expect(screen.getByTestId("route").textContent).toContain(

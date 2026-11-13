@@ -12,7 +12,7 @@ export interface ImageView {
 }
 interface Session {
   tab: Category;
-  expanded: Record<string, string>;
+  expanded: Record<string, string[]>;
   collapsed: boolean;
   topicId: string | null;
   scroll: Record<string, number>;
@@ -28,7 +28,7 @@ interface Session {
 }
 export const useSession = create<Session>((set) => ({
   tab: "china",
-  expanded: { china: "ming", foreign: "renaissance" },
+  expanded: { china: ["ming"], foreign: ["renaissance"] },
   collapsed: false,
   topicId: null,
   scroll: {},
@@ -39,7 +39,9 @@ export const useSession = create<Session>((set) => ({
     set((s) => ({
       expanded: {
         ...s.expanded,
-        [category]: s.expanded[category] === id ? "" : id,
+        [category]: (s.expanded[category] ?? []).includes(id)
+          ? s.expanded[category].filter((period) => period !== id)
+          : [...(s.expanded[category] ?? []), id],
       },
     })),
   setCollapsed: (collapsed) => set({ collapsed }),

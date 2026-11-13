@@ -338,21 +338,8 @@
     }
   }
   .directory {
-    --directory-padding: 12px;
-    padding: var(--directory-padding) 16px;
+    padding: 12px 16px;
     overflow-anchor: none;
-  }
-  .period:last-child {
-    // Leave room at the end so even the final, short section can reach the top.
-    min-height: calc(100% + var(--directory-padding));
-    margin-bottom: 0;
-  }
-  .expandedPeriod > .periodHeading {
-    position: sticky;
-    // Cover the scroll container's top padding while pinned below the tabs.
-    top: calc(-1 * var(--directory-padding));
-    z-index: 1;
-    background: color-mix(in srgb, var(--line) 28%, var(--paper));
   }
   .artist {
     min-height: 52px;
