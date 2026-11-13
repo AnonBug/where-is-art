@@ -34,6 +34,7 @@ it("scrolls an expanded collection without passing gestures to the map and still
         expanded
         showLabel
         onExpand={vi.fn()}
+        onCollapse={vi.fn()}
         onWork={openWork}
       />
     </div>,
@@ -54,4 +55,41 @@ it("scrolls an expanded collection without passing gestures to the map and still
     screen.getByRole("button", { name: `查看${works[0].title}` }),
   );
   expect(openWork).toHaveBeenCalledWith(works[0].id);
+});
+
+it("offers a dedicated close button and makes the pin and label toggle the collection", () => {
+  const data = atlasSchema.parse(catalog);
+  const venue = data.venues.find((item) => item.id === "artic")!;
+  const works = venueWorks(data, scopeWorks(data, "category:foreign"), [
+    venue.id,
+  ]);
+  const onExpand = vi.fn();
+  const onCollapse = vi.fn();
+  const props = {
+    data,
+    venue,
+    works,
+    showLabel: true,
+    onExpand,
+    onCollapse,
+    onWork: vi.fn(),
+  };
+  const view = render(<VenueMarker {...props} expanded={false} />);
+  expect(
+    screen.queryByRole("button", { name: `收起${venue.name}的作品` }),
+  ).toBeNull();
+  fireEvent.click(screen.getByRole("button", { name: /当前范围.*展开作品/ }));
+  expect(onExpand).toHaveBeenCalledOnce();
+  view.rerender(<VenueMarker {...props} expanded />);
+  fireEvent.click(
+    screen.getByRole("button", { name: `收起${venue.name}的作品` }),
+  );
+  fireEvent.click(screen.getByRole("button", { name: /当前范围.*收起作品/ }));
+  fireEvent.click(
+    screen.getByRole("button", {
+      name: new RegExp(`^${venue.name}.*· ${works.length}$`),
+    }),
+  );
+  expect(onCollapse).toHaveBeenCalledTimes(3);
+  expect(onExpand).toHaveBeenCalledOnce();
 });

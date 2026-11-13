@@ -31,11 +31,14 @@
     box-shadow: 0 0 0 1px rgba(104, 134, 106, 0.3);
   }
 }
-.thumbnails {
+.collection {
   position: absolute;
   bottom: calc(50% + 18px);
   left: 50%;
   transform: translateX(-50%);
+  pointer-events: auto;
+}
+.thumbnails {
   display: grid;
   grid-template-columns: repeat(var(--columns), 60px);
   gap: 8px;
@@ -87,6 +90,11 @@
   span {
     padding-left: 7px;
   }
+  .chevron {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+  }
 }
 .selected {
   .pin::before {
@@ -97,9 +105,51 @@
     color: var(--accent);
   }
 }
+.expanded .collection {
+  min-width: 220px;
+  width: max(220px, calc(var(--columns) * 84px + 10px));
+  padding: 4px;
+  border: 1px solid rgba(104, 134, 106, 0.4);
+  border-radius: 12px;
+  background: rgba(246, 240, 226, 0.98);
+  box-shadow: 0 4px 16px rgba(37, 60, 59, 0.18);
+}
+.collectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+  min-height: 44px;
+  > span {
+    flex: 1;
+    min-width: 0;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  small {
+    margin-left: 6px;
+    color: var(--muted);
+    font-size: 11px;
+  }
+  button {
+    flex: none;
+    min-width: 60px;
+    min-height: 44px;
+    border: 0;
+    background: none;
+    color: var(--accent);
+    font-size: 12px;
+    span {
+      font-size: 18px;
+      vertical-align: -1px;
+    }
+  }
+}
 .expanded .thumbnails {
   grid-template-columns: repeat(var(--columns), 76px);
-  max-height: calc(50dvh - 105px);
+  max-height: max(96px, calc(50dvh - 150px));
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-width: thin;
@@ -115,11 +165,20 @@
   overflow: hidden;
 }
 @media (max-width: 1023px), (pointer: coarse) {
+  .expanded .collection {
+    width: max(220px, calc(var(--columns) * 72px + 10px));
+  }
   .expanded .thumbnails {
     grid-template-columns: repeat(var(--columns), 64px);
   }
 }
 @media (orientation: landscape) and (max-height: 600px) {
+  .expanded .collection {
+    width: max(
+      220px,
+      min(calc(var(--work-count) * 72px + 10px), calc(100vw - 70px))
+    );
+  }
   .expanded .thumbnails {
     grid-template-columns: none;
     grid-template-rows: auto;

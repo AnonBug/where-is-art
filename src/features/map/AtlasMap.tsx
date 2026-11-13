@@ -23,6 +23,7 @@ import { IconButton } from "../../shared/ui";
 import { ClusterMarker } from "./ClusterMarker";
 import { VenueMarker } from "./VenueMarker";
 import { bindVenueZoom, VENUE_FOCUS_ZOOM } from "./venueZoom";
+import { autoExpandedVenues } from "./venueExpansion";
 import { createTiandituStyle } from "../../infrastructure/tianditu";
 import {
   bindRegionalBasemap,
@@ -56,6 +57,7 @@ interface RenderMarker {
   cluster?: number;
   coordinates: [number, number];
   showLabel: boolean;
+  autoExpanded: boolean;
 }
 export default function AtlasMap({
   data,
@@ -85,6 +87,9 @@ export default function AtlasMap({
   });
   venueSelection.current = { id: expandedVenue, collapse: onVenueCollapse };
   const [autoExpandVenues, setAutoExpandVenues] = useState(false);
+  const [collapsedVenues, setCollapsedVenues] = useState<Set<string>>(
+    () => new Set(),
+  );
   const [renderMarkers, setRenderMarkers] = useState<RenderMarker[]>([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
@@ -273,7 +278,7 @@ export default function AtlasMap({
     if (useSession.getState().cameras[`${scope}:${historyKey}`]) return;
     map.easeTo({
       center: venue.coordinates,
-      zoom: VENUE_FOCUS_ZOOM,
+      zoom: Math.max(map.getZoom(), VENUE_FOCUS_ZOOM),
       padding: { top: 0, bottom: 0, left: 0, right: 0 },
       duration: matchMedia("(prefers-reduced-motion: reduce)").matches
         ? 0
@@ -399,6 +404,7 @@ export default function AtlasMap({
           cluster: clusterId,
           coordinates,
           showLabel,
+          autoExpanded: false,
         });
       }
       for (const [key, marker] of markers.current) {
@@ -407,15 +413,38 @@ export default function AtlasMap({
           markers.current.delete(key);
         }
       }
-      setRenderMarkers(next);
+      const automatic = autoExpandedVenues(
+        next.map((marker) => ({
+          id: marker.key,
+          ...map.project(marker.coordinates),
+          count: marker.works.length,
+          cluster: marker.cluster !== undefined,
+        })),
+        {
+          width: map.getContainer().clientWidth,
+          height: map.getContainer().clientHeight,
+          windowHeight: window.innerHeight,
+          compact,
+          landscape:
+            window.innerWidth > window.innerHeight && window.innerHeight <= 600,
+        },
+      );
+      setRenderMarkers(
+        next.map((marker) => ({
+          ...marker,
+          autoExpanded: automatic.has(marker.key),
+        })),
+      );
     }
     update();
     // MapLibre also fires moveend after zooming; one update covers both.
     map.on("moveend", update);
+    map.on("resize", update);
     return () => {
       map.off("moveend", update);
+      map.off("resize", update);
     };
-  }, [data, works, venues, selected, expandedVenue, cluster, ready]);
+  }, [data, works, venues, selected, expandedVenue, cluster, ready, compact]);
   return (
     <div className={s.map} data-basemap={provider}>
       <div
@@ -453,9 +482,31 @@ export default function AtlasMap({
                 venue={marker.venue}
                 works={marker.works}
                 selected={selected}
-                expanded={autoExpandVenues || marker.venue.id === expandedVenue}
+                expanded={
+                  marker.venue.id === expandedVenue ||
+                  (!expandedVenue &&
+                    autoExpandVenues &&
+                    marker.autoExpanded &&
+                    !collapsedVenues.has(marker.key))
+                }
                 showLabel={marker.showLabel}
-                onExpand={() => onVenue(marker.venue!.id)}
+                onExpand={() => {
+                  setCollapsedVenues((previous) => {
+                    const next = new Set(previous);
+                    next.delete(marker.key);
+                    return next;
+                  });
+                  onVenue(marker.venue!.id);
+                }}
+                onCollapse={() => {
+                  setCollapsedVenues((previous) =>
+                    new Set(previous).add(marker.key),
+                  );
+                  if (expandedVenue === marker.venue!.id) {
+                    preserveCameraOnNavigation.current = true;
+                    onVenueCollapse();
+                  }
+                }}
                 onWork={onWork}
               />
             )

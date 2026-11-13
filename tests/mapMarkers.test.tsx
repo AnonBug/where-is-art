@@ -57,10 +57,14 @@ const sdk = vi.hoisted(() => {
     getCenter() {
       return { lng: 116, lat: 40 };
     }
+    getContainer() {
+      return { clientWidth: 20000, clientHeight: 10000 };
+    }
     project([lng, lat]: [number, number]) {
       return { x: lng * 100, y: lat * 100 };
     }
     addControl() {}
+    easeTo = vi.fn();
     resize() {}
     remove() {
       this.listeners.clear();
@@ -142,6 +146,7 @@ function zoomTo(map: InstanceType<typeof sdk.TestMap>, zoom: number) {
 }
 beforeEach(() => {
   sdk.TestMap.instances = [];
+  vi.stubGlobal("matchMedia", () => ({ matches: false }));
   useSession.setState({ cameras: { [scope]: { center: [116, 40], zoom: 7 } } });
   vi.stubGlobal(
     "ResizeObserver",
@@ -238,5 +243,105 @@ describe("map preview continuity", () => {
     fireEvent.click(button);
     expect(onWork).toHaveBeenCalledWith("tang-yin-01");
     expect(props.onWork).not.toHaveBeenCalled();
+  });
+
+  it("keeps nearby museums collapsed, opens only the chosen one, and remembers a manual close", () => {
+    const { map, props, rerender, container } = mount();
+    map.project = () => ({ x: 500, y: 400 });
+    zoomTo(map, 11);
+    expect(container.querySelectorAll('[data-expanded="true"]')).toHaveLength(
+      0,
+    );
+    const selected = { ...props, expandedVenue: "palace-beijing" };
+    rerender(
+      <StrictMode>
+        <AtlasMap {...selected} />
+      </StrictMode>,
+    );
+    expect(container.querySelectorAll('[data-expanded="true"]')).toHaveLength(
+      1,
+    );
+    expect(
+      container
+        .querySelector('[data-venue-id="palace-beijing"]')
+        ?.getAttribute("data-expanded"),
+    ).toBe("true");
+    fireEvent.click(
+      screen.getByRole("button", { name: "收起故宫博物院的作品" }),
+    );
+    expect(props.onVenueCollapse).toHaveBeenCalledOnce();
+    rerender(
+      <StrictMode>
+        <AtlasMap {...props} />
+      </StrictMode>,
+    );
+    // Even after the neighbouring museums leave view, an explicit close wins.
+    map.project = ([lng, lat]) => ({ x: lng * 100, y: lat * 100 });
+    zoomTo(map, 12);
+    expect(
+      container
+        .querySelector('[data-venue-id="palace-beijing"]')
+        ?.getAttribute("data-expanded"),
+    ).toBe("false");
+    fireEvent.click(
+      screen.getByRole("button", { name: /故宫博物院，当前范围.*展开作品/ }),
+    );
+    expect(props.onVenue).toHaveBeenCalledWith("palace-beijing");
+    rerender(
+      <StrictMode>
+        <AtlasMap {...selected} />
+      </StrictMode>,
+    );
+    expect(
+      container
+        .querySelector('[data-venue-id="palace-beijing"]')
+        ?.getAttribute("data-expanded"),
+    ).toBe("true");
+    rerender(
+      <StrictMode>
+        <AtlasMap {...props} expandedVenue="shanghai-museum" />
+      </StrictMode>,
+    );
+    expect(container.querySelectorAll('[data-expanded="true"]')).toHaveLength(
+      1,
+    );
+    expect(
+      container
+        .querySelector('[data-venue-id="shanghai-museum"]')
+        ?.getAttribute("data-expanded"),
+    ).toBe("true");
+  });
+
+  it("can close an automatically opened museum without changing the route or reopening on resize", () => {
+    const { map, props, container } = mount();
+    zoomTo(map, 9);
+    fireEvent.click(
+      screen.getByRole("button", { name: "收起故宫博物院的作品" }),
+    );
+    expect(props.onVenueCollapse).not.toHaveBeenCalled();
+    act(() => map.emit("resize"));
+    zoomTo(map, 10);
+    expect(
+      container
+        .querySelector('[data-venue-id="palace-beijing"]')
+        ?.getAttribute("data-expanded"),
+    ).toBe("false");
+  });
+
+  it("keeps a street-level zoom when opening another museum", () => {
+    const { map, props, rerender } = mount();
+    zoomTo(map, 15);
+    rerender(
+      <StrictMode>
+        <AtlasMap
+          {...props}
+          historyKey="new-selection"
+          expandedVenue="palace-beijing"
+        />
+      </StrictMode>,
+    );
+    expect(map.easeTo).toHaveBeenCalledWith(
+      expect.objectContaining({ zoom: 15 }),
+    );
   });
 });
