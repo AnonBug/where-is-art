@@ -45,7 +45,7 @@ it("omits the duplicate preview inside the viewer and keeps provenance collapsed
 });
 
 it.each([
-  ["mona", "下载原图", "assets/mona.jpg"],
+  ["mona", "下载图片", "assets/mona.jpg"],
   [
     "tang-yin-02",
     "下载全图（低清）",
@@ -61,7 +61,7 @@ it.each([
     });
     expect(link.getAttribute("href")).toBe(assetUrl(url));
     expect(link.getAttribute("download")).toBe(
-      id === "mona" ? "蒙娜丽莎-全图-原图.jpg" : "事茗图卷-全图-低清预览.webp",
+      id === "mona" ? "蒙娜丽莎-全图-图片.jpg" : "事茗图卷-全图-低清预览.webp",
     );
   },
 );

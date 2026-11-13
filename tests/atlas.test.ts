@@ -129,7 +129,12 @@ describe("atlas content contract", () => {
   it("ships bounded whole images or DZI and preserves separate roll details", () => {
     for (const image of data.images) {
       for (const resource of [image.thumbnail, image.preview, image.delivery]) {
-        const file = files.get(resource.url);
+        const file = files.get(
+          resource.url.replace(
+            "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/",
+            "",
+          ),
+        );
         expect(file, resource.url).toBeDefined();
         if ("bytes" in resource)
           expect(file!.bytes, resource.url).toBe(resource.bytes);

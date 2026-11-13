@@ -37,6 +37,7 @@ export const imageSchema = z.object({
   credit: z.string(),
   licenseLabel: z.string().optional(),
   licenseUrl: z.string().optional(),
+  usageTerms: z.string().optional(),
   quality: z.enum(["high", "standard"]),
   publicationStatus: z
     .enum(["cleared", "review-required"])

@@ -206,6 +206,7 @@ export function ArtworkDetails({
                   图像来源 <Icon name="external" size={13} />
                 </a>
                 <p>{image.credit}</p>
+                {image.usageTerms && <p>{image.usageTerms}</p>}
                 {image.licenseUrl ? (
                   <a href={image.licenseUrl} target="_blank" rel="noreferrer">
                     {image.licenseLabel}

@@ -10,6 +10,8 @@ React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 
 
 4.5.4 取消自动补全背景与观看提示：从发布内容中移除 5,781 份 `contextual` 导读，保留 349 份按具体作品资料整理的介绍（提香 80、伦勃朗 90、其他画家 179）。早期背景草稿留在编辑源文件中，不在页面展示。已知题名、年代、媒材、收藏关系和来源不变，导入目录中的目录编号、馆藏号独立展示；未知年代与媒材不再占位。
 
+4.5.5 按更新清单的作品 ID 替换 187 幅作品的全图、预览图和缩略图，保留指定 OSS HTTPS 地址及新的内容哈希目录；作品事实与收藏关系不变。图片来源、许可、署名和使用条件在「来源与版权」展示，包括蒙德里安 `mondrian-q24046283` 的非商业展示条件。网页全图的下载按钮改为「下载图片」，不将其称为馆方原图。更新清单存于 `content/imports/oss-image-upgrades-2026-11-13.csv`，`scripts/update-oss-images.mjs` 默认只核验，显式传入 `--apply` 才修改本地图片清单；随后运行 `npm run content:build`。
+
 > 2026-10-31 底图更新：采用按视野切换的双源方案。世界概览、中国及周边视野使用天地图；完全进入海外的近景使用 OpenFreeMap 青绿矢量地图。浏览器端 Key 已验证，南海断续线和藏南官方边界已可见，巴黎高倍率街道恢复显示。正式地图内容、审图信息与服务条款仍需完整验收，浏览器测试不替代这些工作。
 
 官方依据与接入入口：[天地图地图服务文档](https://lbs.tianditu.gov.cn/server/MapService.html)、[自然资源部标准地图服务系统](https://bzdt.ch.mnr.gov.cn/)、[自然资源部天地图建设方案](https://app.www.gov.cn/govdata/gov/202403/13/512938/article.html)。天地图文档列出 `vec_w` 底图、`cva_w` 注记和 `ibo_w` 全球境界服务，支持 HTTPS 与 WMTS。采用标准成图瓦片时，不能沿用当前矢量样式的逐要素调色方式；青绿视觉须以边界和标注完整可读为前提。
@@ -65,6 +67,8 @@ npm run content:check:remote        # 验证当前版本和 CORS
 `current.json` 提供 `index`、`catalog`、`images` 三个相对路径。`image-manifest.json` 维护作品 ID → 图像 ID → 缩略图、预览、大图／瓦片的映射，同时保留现有来源地址、已知来源哈希和许可。`sourceImageUrl` 只是已记录的来源图地址，不保证是最高分辨率，也不表示已有独立 OSS 原始图归档；缺失的原始图信息不编造。
 
 更新前的入口会备份到本地忽略目录 `output/content-release/previous-current-*.json`；回退时将所需备份重新上传为 OSS 的 `current.json`，使用 `Content-Type: application/json; charset=utf-8` 与 `Cache-Control: no-cache,max-age=0,must-revalidate`，随后运行远程检查。旧版本目录保留，可从完整目录和图片映射恢复已发布资料。GitHub Pages 发布流程会验证 OSS 当前版本与本次构建一致，防止代码先上线而内容尚未上传。
+
+手动清理已替换图片时，须先发布并验证新引用，再按明确对象清单清理，不能递归删除画家或作品目录。若旧图已经清理，回退旧内容版本前还须从清理备份恢复其引用的图片。2026-11-13 的 187 幅图片清理备份保存在本机仓库外的 `~/Library/Application Support/where-is-art/backups/2026-11-13-hd-upgrade/`；删除审计与对象摘要随备份保存。
 
 海外近景按资源基础地址加载 `map-style.json`，再请求 OpenFreeMap 矢量瓦片、字体与图标。切换由 `regionalBasemap.ts` 集中控制：zoom ≤ 5 始终使用天地图；达到 5.5 且整个视野离开保守范围后才进入 OpenFreeMap。经度 70°—140°、纬度 0°—56° 是切换保护框，另加 3° 的进入缓冲，不是行政边界，也不绘制在地图上，因此部分邻近地区仍使用天地图。依据视野而非画家分类决定来源；切换替换整张底图，不拼接两套国界，不改变馆藏点坐标。
 

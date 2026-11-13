@@ -1,10 +1,12 @@
 import assert from "node:assert/strict";
 import { readJson, readMediaIndex } from "./lib/media-index.mjs";
+import { mediaPath, ossBase } from "./lib/oss-csv.mjs";
 
 const files = await readMediaIndex();
 const byUrl = new Map(files.map((file) => [file.url, file]));
 const used = new Set();
 function requireFile(url) {
+  if (url.startsWith(ossBase)) url = mediaPath(url);
   const file = byUrl.get(url);
   assert.ok(file, `Missing media in index: ${url}`);
   used.add(url);
