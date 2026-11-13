@@ -8,6 +8,8 @@ const foreign = await read("content/foreign-catalog.json");
 const foreignMedia = await read("content/foreign-media-manifest.json");
 const masters = await read("content/masters-catalog.json");
 const mastersMedia = await read("content/masters-media-manifest.json");
+const ossImport = await read("content/oss-import-catalog.json");
+const ossImportMedia = await read("content/oss-import-media-manifest.json");
 const wuDaozi = await read("content/wu-daozi-catalog.json");
 const wuDaoziMedia = await read("content/wu-daozi-media-manifest.json");
 const tangExpansion = await read("content/tang-expansion-catalog.json");
@@ -82,6 +84,7 @@ const artworks = [
   })),
   ...foreign.artworks,
   ...masters.artworks,
+  ...ossImport.artworks,
 ];
 const venues = [
   ...wuDaozi.venues,
@@ -98,6 +101,7 @@ const venues = [
   })),
   ...foreign.venues,
   ...masters.venues,
+  ...ossImport.venues,
 ];
 const holdings = [
   ...wuDaozi.holdings,
@@ -122,6 +126,7 @@ const holdings = [
     })),
   ...foreign.holdings,
   ...masters.holdings,
+  ...ossImport.holdings,
 ];
 const topics = [
   {
@@ -162,6 +167,7 @@ const images = [
   ...foreignMedia.images,
   ...wuDaoziMedia.images.map(({ files, processing, ...image }) => image),
   ...mastersMedia.images.map(({ files, processing, ...image }) => image),
+  ...ossImportMedia.images.map(({ files, processing, ...image }) => image),
 ];
 for (const work of legacy.works) {
   const info = legacyImages[work.id];
@@ -179,6 +185,7 @@ const data = {
     wuDaozi.updatedAt,
     tangExpansion.updatedAt,
     masters.updatedAt,
+    ossImport.updatedAt,
   ]
     .sort()
     .at(-1),

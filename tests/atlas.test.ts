@@ -4,6 +4,8 @@ import catalog from "../public/catalog.json";
 import foreignCatalog from "../content/foreign-catalog.json";
 import mastersCatalog from "../content/masters-catalog.json";
 import mastersMedia from "../content/masters-media-manifest.json";
+import ossCatalog from "../content/oss-import-catalog.json";
+import ossMedia from "../content/oss-import-media-manifest.json";
 import wuDaoziCatalog from "../content/wu-daozi-catalog.json";
 import tangExpansion from "../content/tang-expansion-catalog.json";
 import tangExpansionMedia from "../content/tang-expansion-media-manifest.json";
@@ -48,6 +50,7 @@ describe("atlas content contract", () => {
       38 +
         foreignCatalog.artworks.length +
         mastersCatalog.artworks.length +
+        ossCatalog.artworks.length +
         wuDaoziCatalog.artworks.length +
         tangExpansion.artworks.length,
     );
@@ -105,7 +108,10 @@ describe("atlas content contract", () => {
     const foreign = scopeWorks(data, "category:foreign");
     expect(new Set(foreign.map((w) => w.id)).size).toBe(foreign.length);
     expect(foreign).toHaveLength(
-      21 + foreignCatalog.artworks.length + mastersMedia.images.length,
+      21 +
+        foreignCatalog.artworks.length +
+        mastersMedia.images.length +
+        ossMedia.images.length,
     );
   });
   it("does not mix topics and artist scopes", () => {

@@ -28,7 +28,14 @@ export function validateFiles(files) {
       Number.isSafeInteger(file.bytes) && file.bytes > 0,
       `Invalid size: ${file.url}`,
     );
-    assert.match(file.sha256, /^[a-f0-9]{64}$/);
+    if (file.sha256 === "") {
+      assert.equal(
+        file.verification,
+        "oss-content-md5",
+        `Missing digest evidence: ${file.url}`,
+      );
+      assert.match(file.url, /^media\/masters\//);
+    } else assert.match(file.sha256, /^[a-f0-9]{64}$/);
     assert.match(file.md5, /^[a-f0-9]{32}$/);
   }
   return files;
@@ -63,7 +70,9 @@ export function assetBase() {
 
 export function verifyBytes(file, bytes) {
   assert.equal(bytes.length, file.bytes, `Size mismatch: ${file.url}`);
-  assert.equal(hash(bytes), file.sha256, `SHA-256 mismatch: ${file.url}`);
+  if (file.sha256)
+    assert.equal(hash(bytes), file.sha256, `SHA-256 mismatch: ${file.url}`);
+  assert.equal(hash(bytes, "md5"), file.md5, `MD5 mismatch: ${file.url}`);
 }
 
 export async function forEachFile(files, action, concurrency = 8) {

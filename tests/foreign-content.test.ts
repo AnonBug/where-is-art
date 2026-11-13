@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import catalog from "../public/catalog.json";
 import foreign from "../content/foreign-catalog.json";
 import sources from "../content/foreign-sources.json";
+import ossResearch from "../content/oss-import-research.json";
 import {
   atlasSchema,
   scopeWorks,
@@ -23,7 +24,11 @@ describe("Western painting corpus", () => {
       expect(
         scopeWorks(data, `artist:${artist.id}`).length,
       ).toBeGreaterThanOrEqual(3);
-      if (!["titian", "rembrandt"].includes(artist.id))
+      if (
+        !["titian", "rembrandt", ...Object.keys(ossResearch.counts)].includes(
+          artist.id,
+        )
+      )
         expect(
           scopeWorks(data, `artist:${artist.id}`).length,
         ).toBeLessThanOrEqual(8);
@@ -34,8 +39,8 @@ describe("Western painting corpus", () => {
         .sort(),
     ).toEqual(foreign.artworks.map((w) => w.id).sort());
     expect(scopeWorks(data, "artist:leonardo")).toHaveLength(21);
-    expect(scopeWorks(data, "artist:monet")).toHaveLength(6);
-    expect(scopeWorks(data, "artist:van-gogh")).toHaveLength(6);
+    expect(scopeWorks(data, "artist:monet")).toHaveLength(2024);
+    expect(scopeWorks(data, "artist:van-gogh")).toHaveLength(961);
   });
 
   it("connects every addition to a sourced holding and a local whole image with its reviewed status", () => {

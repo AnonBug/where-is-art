@@ -18,12 +18,13 @@ const manifests = await Promise.all(
     "foreign-media-manifest.json",
     "wu-daozi-media-manifest.json",
     "masters-media-manifest.json",
+    "oss-import-media-manifest.json",
     "legacy-media-manifest.json",
   ].map((name) => readJson(`content/${name}`)),
 );
 const publishedImages = manifests.flatMap((manifest, index) =>
   manifest.images.map((image) => {
-    if (index !== 0 && index !== 3 && index !== 4) return image;
+    if (index !== 0 && index !== 3 && index !== 4 && index !== 5) return image;
     const { files, processing, ...published } = image;
     return published;
   }),
@@ -51,6 +52,8 @@ for (const image of catalog.images) {
         `Hash mismatch: ${resource.url}`,
       );
     assert.ok(resource.width > 0 && resource.height > 0);
+    if (resource.md5)
+      assert.equal(file.md5, resource.md5, `MD5 mismatch: ${resource.url}`);
   }
   assert.ok(image.thumbnail.bytes <= 100_000, image.id);
   assert.ok(image.preview.bytes <= 500_000, image.id);

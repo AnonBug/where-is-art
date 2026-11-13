@@ -146,7 +146,12 @@ export function scopeWorks(
   }
   // Keep researched records in the catalog, but only browse works with a
   // whole image or a usable reference image. New media makes them visible again.
-  const visible = data.artworks.filter((work) => primaryImage(data, work.id));
+  const visibleIds = new Set(
+    data.images
+      .filter((image) => image.role === "whole" || image.role === "reference")
+      .map((image) => image.artworkId),
+  );
+  const visible = data.artworks.filter((work) => visibleIds.has(work.id));
   const [kind, id] = scope.split(":");
   if (kind === "topic") {
     const byId = new Map(visible.map((work) => [work.id, work]));
@@ -249,6 +254,12 @@ export function validateRelations(data: Atlas): string[] {
   const venues = new Set(data.venues.map((v) => v.id));
   const artistIds = new Set(data.artists.map((a) => a.id));
   const periodIds = new Set(data.periods.map((p) => p.id));
+  const imagesByWork = new Map<string, ImageAsset[]>();
+  for (const image of data.images) {
+    const images = imagesByWork.get(image.artworkId) ?? [];
+    images.push(image);
+    imagesByWork.set(image.artworkId, images);
+  }
   for (const artist of data.artists)
     if (!periodIds.has(artist.periodId))
       errors.push(`画家 ${artist.id} 的时期不存在`);
@@ -258,7 +269,7 @@ export function validateRelations(data: Atlas): string[] {
       work.artistIds.some((id) => !artistIds.has(id))
     )
       errors.push(`作品 ${work.id} 的画家不存在`);
-    const images = data.images.filter((image) => image.artworkId === work.id);
+    const images = imagesByWork.get(work.id) ?? [];
     if (work.imageStatus === "unavailable") {
       if (images.length) errors.push(`作品 ${work.id} 标记无图但存在图像`);
     } else if (

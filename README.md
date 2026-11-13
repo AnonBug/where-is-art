@@ -1,6 +1,6 @@
 # 名画在哪里
 
-React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 和 OpenSeadragon。当前版本在原有 215 条记录基础上扩充提香与伦勃朗绘画，共 933 条作品记录、1,170 张图像。提香 376 条（369 条可浏览）、伦勃朗 350 条；包含明确标注的合作、传作与归属争议，不宣称无争议的亲笔全集。详见 [收录范围与核对记录](content/masters-notes.md)。开发目录沿用「达·芬奇名画地图」。
+React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 和 OpenSeadragon。当前共 6,130 条作品记录、5,875 张图像。2026-11-13 按用户提供的 OSS 目录扩充拉斐尔、马奈、莫奈、梵高、高更与蒙德里安，新增 5,197 条记录并复用已有 31 条。六位画家共 4,736 条可浏览、492 条暂缺图像；未将公开目录中的合作、传作、争议归属或未核验记录宣称为确定的亲笔全集。详见 [本次 OSS 导入说明](docs/OSS作品导入.md) 与 [提香、伦勃朗收录范围](content/masters-notes.md)。开发目录沿用「达·芬奇名画地图」。
 
 [在线浏览](https://anonbug.github.io/where-is-art/) · [GitHub 仓库](https://github.com/AnonBug/where-is-art)
 
@@ -182,6 +182,8 @@ React 管理界面，MapLibre 和 OpenSeadragon 分别管理自己的画布生�
 仓库中 `src/App.tsx`、`src/AtlasExplorer.tsx`、旧 `components/`、`hooks/`、`lib/` 与 `styles/theme.css` 是上一版源码，保留作为迁移参考，本版入口不导入；旧 JSON 仍作为达·芬奇资料来源。此次未清理原有暂存修改或覆盖旧收藏存储。
 
 ## 内容与图片维护
+
+用户上传的六位画家目录独立维护在 `content/oss-import-*`，由 `content:build` 合并。原始 CSV、行级索引修订号、图像许可与署名保留；已有作品 ID、精选专题和逐件导读不变。新增作品的导读明确为编目信息与通用观看提示，没有把 CSV 的导读类型字段当作已提供解读正文。复现步骤见 [OSS 作品导入说明](docs/OSS作品导入.md)。
 
 导读维护于 `content/artwork-guides/`，由 `content:build` 离线合入目录，浏览器不会请求生成服务或实时生成解读：
 

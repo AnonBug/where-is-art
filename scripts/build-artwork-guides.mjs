@@ -202,6 +202,7 @@ export async function enrichArtworkGuides(artworks, artists) {
         }
       : original;
     if (overrides[work.id]) return { ...work, guide: overrides[work.id] };
+    if (work.guide) return work;
     const facts = factFile.records[work.id] ?? {};
     const artist = artists.find((artist) => artist.id === work.artistIds[0]);
     const context = contexts[artist?.id] ?? contexts[artist?.periodId];

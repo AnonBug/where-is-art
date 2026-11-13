@@ -8,7 +8,7 @@ import {
   writeFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
-import { join, resolve } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import index from "../content/media-index.json";
@@ -43,7 +43,13 @@ function run(
   });
 }
 
-it.each(["missing tile", "wrong size", "unsafe path", "wrong hash"])(
+it.each([
+  "missing tile",
+  "wrong size",
+  "unsafe path",
+  "wrong hash",
+  "missing evidence",
+])(
   "rejects a media index with %s without requiring local images",
   (problem) => {
     const directory = fixture();
@@ -59,6 +65,7 @@ it.each(["missing tile", "wrong size", "unsafe path", "wrong hash"])(
     if (problem === "missing tile") copy.files.splice(tile, 1);
     else if (problem === "wrong size") image.bytes++;
     else if (problem === "unsafe path") image.url = "media/../escape.jpg";
+    else if (problem === "missing evidence") image.sha256 = "";
     else image.sha256 = "0".repeat(64);
     writeFileSync(
       join(directory, "content/media-index.json"),
@@ -71,33 +78,43 @@ it.each(["missing tile", "wrong size", "unsafe path", "wrong hash"])(
   },
 );
 
-it("restores verified local copies and refuses to overwrite an edited file", () => {
-  const directory = fixture();
-  const backup = join(directory, "backup");
-  const bytes = Buffer.from("media restoration fixture");
-  const file = {
-    url: "brand/logo.png",
-    bytes: bytes.length,
-    sha256: createHash("sha256").update(bytes).digest("hex"),
-    md5: createHash("md5").update(bytes).digest("hex"),
-  };
-  writeFileSync(
-    join(directory, "content/media-index.json"),
-    JSON.stringify({ version: 1, files: [file] }),
-  );
-  mkdirSync(join(backup, "brand"), { recursive: true });
-  writeFileSync(join(backup, file.url), bytes);
-  expect(run(directory, "restore-media.mjs", ["--from", backup]).status).toBe(
-    0,
-  );
-  const target = join(directory, "public", file.url);
-  expect(readFileSync(target)).toEqual(bytes);
-  expect(run(directory, "restore-media.mjs", ["--from", backup]).status).toBe(
-    0,
-  );
-  writeFileSync(target, "local edit");
-  expect(
-    run(directory, "restore-media.mjs", ["--from", backup]).status,
-  ).not.toBe(0);
-  expect(readFileSync(target, "utf8")).toBe("local edit");
-});
+it.each(["sha256", "oss-content-md5"])(
+  "restores %s verified local copies and refuses to overwrite an edited file",
+  (verification) => {
+    const directory = fixture();
+    const backup = join(directory, "backup");
+    const bytes = Buffer.from("media restoration fixture");
+    const file = {
+      url:
+        verification === "sha256"
+          ? "brand/logo.png"
+          : "media/masters/fixture/detail.jpg",
+      bytes: bytes.length,
+      sha256:
+        verification === "sha256"
+          ? createHash("sha256").update(bytes).digest("hex")
+          : "",
+      md5: createHash("md5").update(bytes).digest("hex"),
+      verification,
+    };
+    writeFileSync(
+      join(directory, "content/media-index.json"),
+      JSON.stringify({ version: 1, files: [file] }),
+    );
+    mkdirSync(dirname(join(backup, file.url)), { recursive: true });
+    writeFileSync(join(backup, file.url), bytes);
+    expect(run(directory, "restore-media.mjs", ["--from", backup]).status).toBe(
+      0,
+    );
+    const target = join(directory, "public", file.url);
+    expect(readFileSync(target)).toEqual(bytes);
+    expect(run(directory, "restore-media.mjs", ["--from", backup]).status).toBe(
+      0,
+    );
+    writeFileSync(target, "local edit");
+    expect(
+      run(directory, "restore-media.mjs", ["--from", backup]).status,
+    ).not.toBe(0);
+    expect(readFileSync(target, "utf8")).toBe("local edit");
+  },
+);
