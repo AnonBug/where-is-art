@@ -83,8 +83,7 @@ describe("user supplied six-artist OSS catalogue", () => {
     ).toBe("individual");
     expect(
       imported.artworks.every(
-        (work: { guide: { scope: string } }) =>
-          work.guide.scope === "contextual",
+        (work: { guide?: unknown }) => work.guide === undefined,
       ),
     ).toBe(true);
   });

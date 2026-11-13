@@ -70,14 +70,16 @@ export const atlasSchema = z.object({
       artistIds: z.array(z.string()),
       dateLabel: z.string(),
       medium: z.string(),
+      catalogNumber: z.string().optional(),
+      inventoryNumber: z.string().optional(),
       description: z.string(),
       sourceUrl: z.string(),
       note: z.string().default(""),
       guide: z
         .object({
-          background: z.string(),
-          story: z.string(),
-          looking: z.array(z.string()).min(1),
+          background: z.string().optional(),
+          story: z.string().optional(),
+          looking: z.array(z.string()).optional(),
           scope: z.enum(["individual", "contextual"]),
           scopeNote: z.string().optional(),
           sources: z

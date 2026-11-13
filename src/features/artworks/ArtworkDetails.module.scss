@@ -74,6 +74,23 @@ a.previewDownload {
 .medium {
   margin-top: 6px;
 }
+.metadata {
+  margin: 12px 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  div {
+    display: flex;
+    gap: 10px;
+  }
+  dt {
+    flex: none;
+  }
+  dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+}
 .description {
   font-size: 14px;
   line-height: 1.95;

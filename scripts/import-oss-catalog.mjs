@@ -271,25 +271,9 @@ for (const row of rows) {
     note,
   };
   if (!hasImage) work.imageStatus = "unavailable";
-  // The CSV does not contain individual essays. Do not infer iconography from
-  // the artist (e.g. Mondrian's early figurative work is not all abstraction).
-  work.guide = {
-    scope: "contextual",
-    scopeNote:
-      "依据本次作品目录提供编目信息与通用观看提示；本作具体创作背景、人物身份和题材解读仍待核实。",
-    background: `《${work.title}》在本次目录中归入${row["画家"]}，年代记为${work.dateLabel}，媒材为${work.medium}。${work.description}${row["目录编号"] ? `目录编号：${row["目录编号"]}。` : ""}${row["馆藏号"] ? `馆藏号：${row["馆藏号"]}。` : ""}归属、年代和名称沿用所提供目录；如来源保留疑问，应结合原始编目阅读。`,
-    story: `现有资料主要提供题名、年代、媒材与收藏索引，尚不足以确认这件作品的具体委托、人物身份或创作缘起。同名作品可能存在不同版本，可用题名、馆藏号与来源页面交叉辨认，再结合可靠的作品研究理解画中内容。${row["说明"]}`,
-    looking: [
-      ...(hasImage
-        ? []
-        : [
-            "本条目暂无可用图像；请先在资料来源中确认对应作品，以下提示不构成对画面细节的描述。",
-          ]),
-      "先看整个画幅，留意目光最先停留的位置，再比较主要形状、明暗和色彩的分布。哪些关系让画面显得平衡，哪些带来变化？",
-      "从全幅切换到局部，观察边缘、表面和笔触，再回到整体比较这些细节如何影响观看。图像的裁切、拍摄光线与分辨率也会影响屏幕上的观感。",
-    ],
-    sources: [{ label: "本作编目资料", url: sourceUrl }],
-  };
+  // Import known catalogue fields without generating a reading guide.
+  if (row["目录编号"]) work.catalogNumber = row["目录编号"];
+  if (row["馆藏号"]) work.inventoryNumber = row["馆藏号"];
   artworks.push(work);
   const venueId = collectionFor(row);
   if (venueId)

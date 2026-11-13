@@ -17,7 +17,9 @@ const index = catalogIndexSchema.parse(JSON.parse(indexBytes.toString()));
 
 describe("progressive delivery", () => {
   it("keeps the initial payload small without guides or full-image metadata", () => {
-    expect(indexBytes.length).toBeLessThan(fullBytes.length * 0.11);
+    // Removing unsupported prose shrinks the full catalogue, not the index.
+    // Keep an absolute first-load budget independent of editorial verbosity.
+    expect(indexBytes.length).toBeLessThan(2_100_000);
     expect(gzipSync(indexBytes).length).toBeLessThan(350_000);
     expect(index.artworks).toHaveLength(full.artworks.length);
     expect(indexBytes.toString()).not.toContain('"guide":');

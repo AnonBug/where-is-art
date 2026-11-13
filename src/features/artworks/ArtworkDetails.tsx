@@ -35,6 +35,18 @@ export function ArtworkDetails({
       (image) => image.id === assetId && image.artworkId === work.id,
     ) ?? primaryImage(data, work.id);
   const venues = workVenues(data, work.id);
+  // Ignore old contextual payloads too, including cached or shared revisions.
+  const guide = work.guide?.scope === "individual" ? work.guide : undefined;
+  const background = guide?.background?.trim();
+  const story = guide?.story?.trim();
+  const looking = guide?.looking?.filter((line) => line.trim()) ?? [];
+  const hasReading = !!(background || story || looking.length);
+  const description = /^(提香|伦勃朗)相关绘画。/.test(work.description)
+    ? work.description.match(/原题：[^。]+。/)?.[0]
+    : work.description.trim();
+  const knownValue = (value: string) =>
+    !/^(年代|媒材|材质)待核实$|^绘画（材料待核实）$/.test(value.trim()) &&
+    value.trim();
   const preview = (
     <ArtworkImage
       key={image?.id ?? work.id}
@@ -71,9 +83,27 @@ export function ArtworkDetails({
       <div className={s.copy}>
         <h1>{work.title}</h1>
         <p className={s.byline}>
-          {artistLabel(data, work)} · {work.dateLabel}
+          {[artistLabel(data, work), knownValue(work.dateLabel)]
+            .filter(Boolean)
+            .join(" · ")}
         </p>
-        <p className={s.medium}>{work.medium}</p>
+        {knownValue(work.medium) && <p className={s.medium}>{work.medium}</p>}
+        {(work.catalogNumber || work.inventoryNumber) && (
+          <dl className={s.metadata}>
+            {work.catalogNumber && (
+              <div>
+                <dt>目录编号</dt>
+                <dd>{work.catalogNumber}</dd>
+              </div>
+            )}
+            {work.inventoryNumber && (
+              <div>
+                <dt>馆藏号</dt>
+                <dd>{work.inventoryNumber}</dd>
+              </div>
+            )}
+          </dl>
+        )}
         {onToggleFavorite && (
           <ArtworkFavorite
             title={work.title}
@@ -94,34 +124,37 @@ export function ArtworkDetails({
             当前展示参考图，图像类型及其与原作的关系见下方说明。
           </p>
         )}
-        {work.guide ? (
+        {hasReading ? (
           <div className={s.reading}>
-            {work.guide.scopeNote && (
-              <p className={s.scopeNote}>{work.guide.scopeNote}</p>
+            {guide?.scopeNote && (
+              <p className={s.scopeNote}>{guide.scopeNote}</p>
             )}
-            <section>
-              <h2>
-                {work.guide.scope === "individual" ? "作品背景" : "相关背景"}
-              </h2>
-              <p>{work.guide.background}</p>
-            </section>
-            <section>
-              <h2>人物与题材</h2>
-              <p>{work.guide.story}</p>
-            </section>
-            <section>
-              <h2>怎么看这幅画</h2>
-              <ul>
-                {work.guide.looking.map((line) => (
-                  <li key={line}>{line}</li>
-                ))}
-              </ul>
-            </section>
+            {background && (
+              <section>
+                <h2>作品背景</h2>
+                <p>{background}</p>
+              </section>
+            )}
+            {story && (
+              <section>
+                <h2>人物与题材</h2>
+                <p>{story}</p>
+              </section>
+            )}
+            {!!looking.length && (
+              <section>
+                <h2>怎么看这幅画</h2>
+                <ul>
+                  {looking.map((line) => (
+                    <li key={line}>{line}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
           </div>
         ) : (
-          <p className={s.description}>{work.description}</p>
+          description && <p className={s.description}>{description}</p>
         )}
-        {work.note && <p className={s.note}>{work.note}</p>}
         <div className={s.venues}>
           {venues.length ? (
             venues.map((venue) => (
@@ -147,11 +180,12 @@ export function ArtworkDetails({
         <details className={s.provenance} key={work.id}>
           <summary>来源与版权</summary>
           <p className={s.caption}>地图标示收藏机构，不代表作品正在展出。</p>
+          {work.note && <p className={s.note}>{work.note}</p>}
           <div className={s.sources}>
-            {work.guide && (
+            {hasReading && guide && (
               <div className={s.guideSources}>
                 <p>解读参考</p>
-                {work.guide.sources.map((source) => (
+                {guide.sources.map((source) => (
                   <a
                     key={source.url}
                     href={source.url}

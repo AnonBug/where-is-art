@@ -192,7 +192,7 @@ const data = {
     .at(-1),
   periods,
   artists,
-  artworks: await enrichArtworkGuides(artworks, artists),
+  artworks: await enrichArtworkGuides(artworks),
   venues,
   holdings,
   topics,

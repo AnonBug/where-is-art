@@ -7,33 +7,46 @@ const data = atlasSchema.parse(catalog);
 const work = (id: string) => data.artworks.find((item) => item.id === id)!;
 
 describe("artwork reading guides", () => {
-  it("provides sourced background, subject and viewing guidance for every catalog entry", () => {
+  it("publishes individual guides only and leaves unsupported interpretation absent", () => {
+    expect(data.artworks.filter((item) => item.guide)).toHaveLength(349);
+    expect(work("manet-q3205630").guide).toBeUndefined();
+    expect(work("manet-q3205630").catalogNumber).toBe("369");
+    expect(work("manet-q3205630").inventoryNumber).toBe("1955/0009");
     for (const item of data.artworks) {
       const guide = item.guide;
-      expect(guide, item.id).toBeDefined();
-      expect(guide!.background.length, item.id).toBeGreaterThan(30);
-      expect(guide!.story.length, item.id).toBeGreaterThan(30);
-      expect(guide!.looking.length, item.id).toBeGreaterThanOrEqual(2);
-      expect(guide!.sources.length, item.id).toBeGreaterThan(0);
-      for (const source of guide!.sources) {
+      expect(item.description).not.toMatch(/相关绘画。依据/);
+      if (!guide) continue;
+      expect(guide.scope, item.id).toBe("individual");
+      expect(
+        guide.background || guide.story || guide.looking?.length,
+        item.id,
+      ).toBeTruthy();
+      expect(guide.sources.length, item.id).toBeGreaterThan(0);
+      for (const source of guide.sources) {
         expect(new URL(source.url).protocol).toMatch(/^https?:$/);
         expect(source.label.length).toBeGreaterThan(0);
       }
-      if (guide!.scope === "contextual")
-        expect(guide!.scopeNote?.length, item.id).toBeGreaterThan(10);
     }
     for (const id of Object.keys(facts.records))
       expect(work(id), id).toBeDefined();
   });
 
   it("does not turn shared names or everyday shepherds into unrelated biblical scenes", () => {
-    expect(work("rembrandt-rrp-77b").guide!.story).not.toMatch(
+    expect(work("rembrandt-rrp-77b").guide?.story ?? "").not.toMatch(
       /苏珊娜传|两名长老|但以理/,
     );
-    expect(work("millet-flock").guide!.story).not.toContain("《路加福音》");
-    expect(work("titian-q20068831").guide!.story).not.toContain("《路加福音》");
-    expect(work("rembrandt-rrp-140").guide!.story).not.toContain("剃去头发");
-    expect(work("rembrandt-rrp-160").guide!.story).not.toContain("剃去头发");
+    expect(work("millet-flock").guide?.story ?? "").not.toContain(
+      "《路加福音》",
+    );
+    expect(work("titian-q20068831").guide?.story ?? "").not.toContain(
+      "《路加福音》",
+    );
+    expect(work("rembrandt-rrp-140").guide?.story ?? "").not.toContain(
+      "剃去头发",
+    );
+    expect(work("rembrandt-rrp-160").guide?.story ?? "").not.toContain(
+      "剃去头发",
+    );
   });
 
   it("keeps the Chicago and Kassel old men as separate works with their own sources and images", () => {
