@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-22",
   "images": [
     {
       "id": "duccio-madonna-whole",
@@ -6711,6 +6711,447 @@
         "sourceHeight": 4724,
         "sourceBytes": 13191652,
         "downloadKind": "original",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-triumph-venus-whole",
+      "artworkId": "boucher-triumph-venus",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3840,
+      "height": 3065,
+      "thumbnail": {
+        "url": "media/foreign/boucher-triumph-venus/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18018,
+        "sha256": "f2ac42babd893e5c4fd4c53a2c738cc22f351b2206b04251c757ace758a07107"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-triumph-venus/preview.webp",
+        "width": 1280,
+        "height": 1021,
+        "bytes": 174488,
+        "sha256": "560cc1056b4de00432c3f7601ee8ef0a27dbea5441ab433d4f37f75d0fe908e1"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-triumph-venus/detail.jpg",
+        "width": 3840,
+        "height": 3065,
+        "bytes": 2360425,
+        "sha256": "38f60a35dc21c06522b5d1f92816d56ef442488bf9dd28432892eed40ad6b848",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Triumph_of_Venus,_by_Fran%C3%A7ois_Boucher.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Triumph_of_Venus%2C_by_Fran%C3%A7ois_Boucher.jpg/3840px-The_Triumph_of_Venus%2C_by_Fran%C3%A7ois_Boucher.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "68b08bcb1d36a3e15c7ebb25cf8b70c01a9729364f3bf1d3092d4f887a9a35d4",
+      "credit": "François Boucher；瑞典国立博物馆；Wikimedia Commons",
+      "licenseLabel": "Public domain（Wikimedia Commons）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 3840,
+        "sourceHeight": 3065,
+        "sourceBytes": 3036460,
+        "downloadKind": "commons-bounded-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-diana-bath-whole",
+      "artworkId": "boucher-diana-bath",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3840,
+      "height": 2799,
+      "thumbnail": {
+        "url": "media/foreign/boucher-diana-bath/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 26654,
+        "sha256": "84744c5d134fd439c38f0a88ab08406a2470e360a64c8a4c7683a00fb8a35449"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-diana-bath/preview.webp",
+        "width": 1280,
+        "height": 933,
+        "bytes": 343390,
+        "sha256": "7336bc3fa0f196d1eca46574bf1144aae4dcd48275bf0f598f6e4170d72cf885"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-diana-bath/detail.jpg",
+        "width": 3840,
+        "height": 2799,
+        "bytes": 3114845,
+        "sha256": "170aa195a255dd3336802fd02648861f39d726e80af6e57631c24fe6d0533337",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Diana_Resting_after_her_Bath,_1742.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Fran%C3%A7ois_Boucher_-_Diana_Resting_after_her_Bath%2C_1742.jpg/3840px-Fran%C3%A7ois_Boucher_-_Diana_Resting_after_her_Bath%2C_1742.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "4ec3c46b41e9e8dcdceb34822c95d00f9c62da877c15c1cc6af678aea8c9394e",
+      "credit": "François Boucher；卢浮宫；Wikimedia Commons",
+      "licenseLabel": "Public domain（Wikimedia Commons）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 3840,
+        "sourceHeight": 2799,
+        "sourceBytes": 4010375,
+        "downloadKind": "commons-bounded-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-toilette-venus-whole",
+      "artworkId": "boucher-toilette-venus",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2433,
+      "thumbnail": {
+        "url": "media/foreign/boucher-toilette-venus/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19720,
+        "sha256": "def98b60208a115d3a5a6edab8ec3c4a5dfc25e811452c4c271f23a2b0f3da6b"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-toilette-venus/preview.webp",
+        "width": 1010,
+        "height": 1280,
+        "bytes": 218308,
+        "sha256": "3257c3dcb66d8644d3863f644c53b4d321c7525fe03b110a2ff4845a8275930c"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-toilette-venus/detail.jpg",
+        "width": 1920,
+        "height": 2433,
+        "bytes": 956293,
+        "sha256": "37243af76373ba5f427d49e1d74b1d92fccc969fc37b3e0ebd561301e26d326c",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Toilette_of_Venus_MET_DP-411-01.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/The_Toilette_of_Venus_MET_DP-411-01.jpg/1920px-The_Toilette_of_Venus_MET_DP-411-01.jpg",
+      "sourceHash": "f9191be9baa09e90fa216f0aef53d5e7db87e079237406c24e3bdedab5cf0ac6",
+      "credit": "François Boucher；大都会艺术博物馆；Wikimedia Commons",
+      "licenseLabel": "CC0 1.0（大都会开放图像，经Wikimedia Commons提供）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2433,
+        "sourceBytes": 1311078,
+        "downloadKind": "commons-bounded-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-setting-sun-whole",
+      "artworkId": "boucher-setting-sun",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1552,
+      "thumbnail": {
+        "url": "media/foreign/boucher-setting-sun/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24802,
+        "sha256": "452dcb5a0de408b11208fd9c4609a57768d0f54ed7be0b6fe57f2651b19fc4a7"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-setting-sun/preview.webp",
+        "width": 1056,
+        "height": 1280,
+        "bytes": 167642,
+        "sha256": "921fa91ea066a94d10c7055b02895896daa9d2dcee1776b115c2edac9074623a"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-setting-sun/detail.jpg",
+        "width": 1280,
+        "height": 1552,
+        "bytes": 273257,
+        "sha256": "332a43c87cdfef897298e25d11046ac0913fff22ddd4582fa034a501e5d7e735",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_028.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fran%C3%A7ois_Boucher_028.jpg/1280px-Fran%C3%A7ois_Boucher_028.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "d762caf58c32fdbcac6d3114f375e3ea67e93f407695cd21d715a9d136a51e80",
+      "credit": "François Boucher；华莱士收藏馆；Wikimedia Commons",
+      "licenseLabel": "Public domain（Wikimedia Commons）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1552,
+        "sourceBytes": 360111,
+        "downloadKind": "commons-bounded-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-aurora-cephalus-whole",
+      "artworkId": "boucher-aurora-cephalus",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1100,
+      "height": 3840,
+      "thumbnail": {
+        "url": "media/foreign/boucher-aurora-cephalus/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13730,
+        "sha256": "7ff6750839891e9c4d330673a926509887377ace03f74416406a3f0ac53434ca"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-aurora-cephalus/preview.webp",
+        "width": 367,
+        "height": 1280,
+        "bytes": 69926,
+        "sha256": "494a476b41e607cf6ba5a89716c45ba72504cefc1ea8c9914293c01ad6c7dc4e"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-aurora-cephalus/detail.jpg",
+        "width": 1100,
+        "height": 3840,
+        "bytes": 780677,
+        "sha256": "c473efe224c75624eb883c71accc57d90b17637662adcbffd1de551b40c7784f",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Aurora_and_Cephalus_-_71.PA.55_-_J._Paul_Getty_Museum.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Fran%C3%A7ois_Boucher_-_Aurora_and_Cephalus_-_71.PA.55_-_J._Paul_Getty_Museum.jpg/1280px-Fran%C3%A7ois_Boucher_-_Aurora_and_Cephalus_-_71.PA.55_-_J._Paul_Getty_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "5c9761527e6a000fb705628985590826cbbe30053f6c4decbaa39bcec6e271b7",
+      "credit": "François Boucher；保罗·盖蒂博物馆；Wikimedia Commons",
+      "licenseLabel": "Public domain（Wikimedia Commons）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 4467,
+        "sourceBytes": 1629649,
+        "downloadKind": "commons-bounded-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-venus-waves-whole",
+      "artworkId": "boucher-venus-waves",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1080,
+      "height": 3840,
+      "thumbnail": {
+        "url": "media/foreign/boucher-venus-waves/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 25482,
+        "sha256": "4d147e9b5c914f7f988db7baa3e70b7ed9f4b527292842d41f277e7507c3dc29"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-venus-waves/preview.webp",
+        "width": 360,
+        "height": 1280,
+        "bytes": 70598,
+        "sha256": "e6eb07d177aca30058ba5398f8bba052d881b76c1521bca5e17585a57132b6b6"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-venus-waves/detail.jpg",
+        "width": 1080,
+        "height": 3840,
+        "bytes": 778748,
+        "sha256": "4d95392c7a398348ebd8458b4a0be1975dc2efb6fdb18bcf94a5e015f54847e8",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Venus_on_the_Waves_-_71.PA.54_-_J._Paul_Getty_Museum.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Fran%C3%A7ois_Boucher_-_Venus_on_the_Waves_-_71.PA.54_-_J._Paul_Getty_Museum.jpg/1280px-Fran%C3%A7ois_Boucher_-_Venus_on_the_Waves_-_71.PA.54_-_J._Paul_Getty_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "36de0a511e127de754cdaa979f33a07790bc2d07366bccb0ea993852e739e4ee",
+      "credit": "François Boucher；保罗·盖蒂博物馆；Wikimedia Commons",
+      "licenseLabel": "Public domain（Wikimedia Commons）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 4550,
+        "sourceBytes": 1688132,
+        "downloadKind": "commons-bounded-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-psyche-gifts-whole",
+      "artworkId": "fragonard-psyche-gifts",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 833,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-psyche-gifts/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 31062,
+        "sha256": "a478b1c8da7f99ea3ccfe344e6d3dd9956d4c1115ca11dbf53ef92f83cd4fd4c"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-psyche-gifts/preview.webp",
+        "width": 960,
+        "height": 833,
+        "bytes": 159146,
+        "sha256": "437ba30f71935804cee3e72c29b5dada718856d2707e9d23db0ae63ac419ebdc"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-psyche-gifts/detail.jpg",
+        "width": 960,
+        "height": 833,
+        "bytes": 170299,
+        "sha256": "ec6ade32547896bc650a28dd7863743d24f744b21bd57010ea76257c51e8338c",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_Psyche_Showing_Her_Sisters_Her_Gifts_from_Cupid_-_WGA8050.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Jean-Honor%C3%A9_Fragonard_-_Psyche_Showing_Her_Sisters_Her_Gifts_from_Cupid_-_WGA8050.jpg/960px-Jean-Honor%C3%A9_Fragonard_-_Psyche_Showing_Her_Sisters_Her_Gifts_from_Cupid_-_WGA8050.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "5c371c9eac17302c48680ffe2af85bc2b4ab2e5a45a1d64425aabd778c58e8d4",
+      "credit": "Jean-Honoré Fragonard；英国国家美术馆；Wikimedia Commons",
+      "licenseLabel": "Public domain（Wikimedia Commons）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 960,
+        "sourceHeight": 833,
+        "sourceBytes": 214330,
+        "downloadKind": "commons-bounded-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-diana-endymion-whole",
+      "artworkId": "fragonard-diana-endymion",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3840,
+      "height": 2692,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-diana-endymion/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 16714,
+        "sha256": "f943157a56a43a741578c03e958e1230cb28594df7933fb010a0ab8ddccc973c"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-diana-endymion/preview.webp",
+        "width": 1280,
+        "height": 897,
+        "bytes": 134012,
+        "sha256": "2e9f72645163a63592921396a0e046a167c9fb1b81043d23d78849779e43d3af"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-diana-endymion/detail.jpg",
+        "width": 3840,
+        "height": 2692,
+        "bytes": 1783708,
+        "sha256": "41367998162b0d2411aba6cbb4046de07d5273fdfd1a7d1d61ca2913e3ffbc54",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diana_and_Endymion_A31382.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Diana_and_Endymion_A31382.jpg/3840px-Diana_and_Endymion_A31382.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "9a8108eebe527dda6228cb3996d9b815ae232adb7c7d1090bf885740261264a2",
+      "credit": "Jean-Honoré Fragonard；国家美术馆；Wikimedia Commons",
+      "licenseLabel": "Public domain（Wikimedia Commons）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 3840,
+        "sourceHeight": 2692,
+        "sourceBytes": 2248175,
+        "downloadKind": "commons-bounded-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-fountain-love-getty-whole",
+      "artworkId": "fragonard-fountain-love-getty",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2350,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-fountain-love-getty/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 8488,
+        "sha256": "00c3c2aaee537a4f12392bd59519372fa5266929fc80951e90aca67243d03f0c"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-fountain-love-getty/preview.webp",
+        "width": 1046,
+        "height": 1280,
+        "bytes": 125430,
+        "sha256": "ffab0a661907c7fabca0496c1f9a9d72637cb60debefd5a211d6a17db983b0e2"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-fountain-love-getty/detail.jpg",
+        "width": 1920,
+        "height": 2350,
+        "bytes": 667145,
+        "sha256": "6000f3dc38c18c8986a25575a5d17a9059ae623c7f23ef8e24742568902f7734",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_(French_-_The_Fountain_of_Love_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Jean-Honor%C3%A9_Fragonard_%28French_-_The_Fountain_of_Love_-_Google_Art_Project.jpg/1920px-Jean-Honor%C3%A9_Fragonard_%28French_-_The_Fountain_of_Love_-_Google_Art_Project.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "sourceHash": "beb433fb3557c8542b53a2fbdfc82348b110fe44c110a6250cb0a3f6f25f7cf1",
+      "credit": "Jean-Honoré Fragonard；保罗·盖蒂博物馆；Wikimedia Commons / Google Art Project",
+      "licenseLabel": "Public domain（Wikimedia Commons）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2350,
+        "sourceBytes": 928020,
+        "downloadKind": "commons-bounded-thumbnail",
         "longestEdgeLimit": 3840,
         "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
       }

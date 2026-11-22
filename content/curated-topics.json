@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-14",
+  "updatedAt": "2026-11-22",
   "topics": [
     {
       "id": "signature",
@@ -22,6 +22,7 @@
         "rembrandt-night-watch",
         "vermeer-pearl",
         "velazquez-meninas",
+        "boucher-toilette-venus",
         "fragonard-swing",
         "david-horatii",
         "ingres-odalisque",
@@ -136,6 +137,37 @@
       ]
     },
     {
+      "id": "mondrian-lines-and-colors",
+      "title": "蒙德里安的线条与色块",
+      "description": "精选24幅几何抽象作品，从黑色网格与红黄蓝色块、菱形画布中的留白，到纽约时期跳动的彩色线条。",
+      "artworkIds": [
+        "mondrian-q19883822",
+        "mondrian-q24058759",
+        "mondrian-q18710661",
+        "mondrian-lozenge",
+        "mondrian-q18667211",
+        "mondrian-q19883834",
+        "mondrian-q20891041",
+        "mondrian-q19882856",
+        "mondrian-q20192533",
+        "mondrian-q19883941",
+        "mondrian-q60469855",
+        "mondrian-q24021136",
+        "mondrian-q24058770",
+        "mondrian-red-blue-yellow",
+        "mondrian-q19882859",
+        "mondrian-q24058799",
+        "mondrian-q20891219",
+        "mondrian-q24050829",
+        "mondrian-gray-red",
+        "mondrian-q20881339",
+        "mondrian-q15965694",
+        "mondrian-q18710663",
+        "mondrian-broadway-boogie",
+        "mondrian-victory-boogie"
+      ]
+    },
+    {
       "id": "danae",
       "title": "达那厄",
       "description": "同一个神话，不同的表达：并看提香的五个版本与伦勃朗笔下的达那厄。",
@@ -146,6 +178,23 @@
         "titian-q3701422",
         "titian-q14425553",
         "rembrandt-rrp-149"
+      ]
+    },
+    {
+      "id": "rococo-myth-and-love",
+      "title": "洛可可的神话与爱情",
+      "description": "布歇与弗拉戈纳尔的10幅精选：从维纳斯、狄安娜与普绪克的神话，到《秋千》和《爱之泉》中的爱情想象。",
+      "artworkIds": [
+        "boucher-triumph-venus",
+        "boucher-diana-bath",
+        "boucher-toilette-venus",
+        "boucher-setting-sun",
+        "boucher-aurora-cephalus",
+        "boucher-venus-waves",
+        "fragonard-psyche-gifts",
+        "fragonard-diana-endymion",
+        "fragonard-swing",
+        "fragonard-fountain-love-getty"
       ]
     }
   ],
@@ -187,12 +236,45 @@
         "https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers"
       ]
     },
+    "mondrian-lines-and-colors": {
+      "note": "精选现有目录中24件有完整图像的几何抽象作品，按目录起始年代排列，范围为1920—1944年；不是全部抽象作品目录。逐张核对站内预览，选录横竖直线、矩形色面及菱形画布的构图，末尾以《纽约城》《百老汇爵士乐》《胜利爵士乐》展示彩色线条与碎片色块的变化。早期树木、风车、农舍、花卉、人物和立体主义探索不纳入。同名构图按稳定作品ID、目录编号和馆藏号区分，不因题名相同合并；1930年代表作沿用苏黎世B217的既有ID，不将其他红蓝黄版本当作该作。作品事实、收藏关系、原文题名和图像使用条件沿用目录，不新增地图坐标或修改许可；《胜利爵士乐》保留未完成及图像复核状态。",
+      "excludedArtworkIds": [
+        "mondrian-red-tree",
+        "mondrian-farm",
+        "mondrian-q5598238",
+        "mondrian-q22115377"
+      ],
+      "sources": [
+        "https://www.moma.org/collection/works/79300",
+        "https://www.artic.edu/artworks/109819",
+        "https://www.clevelandart.org/art/1967.215",
+        "https://collection.kunsthaus.ch/en/collection/item/2455/",
+        "https://www.kunstmuseum.nl/en/collection/lozenge-composition-yellow-lines",
+        "https://www.centrepompidou.fr/fr/ressources/oeuvre/c5pRBL",
+        "https://www.moma.org/collection/works/78682",
+        "https://www.kunstmuseum.nl/en/collection/victory-boogie-woogie"
+      ]
+    },
     "danae": {
       "note": "按现有作品ID收录提香五个版本与伦勃朗一件，保留作品本身题名“达娜厄”。阿普斯利邸、普拉多、那不勒斯、维也纳、冬宫版本不合并；不添加尚未入库画家的图像，也不为未关联馆点的作品补造坐标。",
       "sources": [
         "https://www.gardnermuseum.org/danae",
         "https://www.nga.gov/sites/default/files/2025-07/titians-danae-brochure.pdf",
         "https://hermitagemuseum.org/explore/history/Danae"
+      ]
+    },
+    "rococo-myth-and-love": {
+      "note": "精选布歇六幅、弗拉戈纳尔四幅，其中《秋千》复用已有条目，其余九幅新增。以轻盈色彩、柔和肌肤、织物与流动构图组织神话场景；《秋千》为世俗爱情场景，《爱之泉》为晚期爱情寓意，作为主题延伸。按画家分组，组内约略按年代排列。不宣称穷尽两位画家的神话作品。《太阳落下》为华莱士P486、1752年；《曙光女神与刻法洛斯》为盖蒂1769年版本；《爱之泉》为盖蒂99.PA.30，均与其他同题版本区分。《狄安娜与恩底弥翁》沿用美国国家美术馆现归属并保留旧归属说明。馆藏事实以机构作品页为依据，图片来自Commons的公有领域或CC0文件，逐件记录下载版本、哈希与许可。",
+      "sources": [
+        "https://collection.nationalmuseum.se/sv/collection/item/17773/",
+        "https://collections.louvre.fr/ark:/53355/cl010066275",
+        "https://www.metmuseum.org/art/collection/search/435739",
+        "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65420&service=ExternalInterface&viewType=detailView",
+        "https://www.getty.edu/art/collection/object/103RBW",
+        "https://www.getty.edu/art/collection/object/103RBV",
+        "https://www.nationalgallery.org.uk/paintings/jean-honore-fragonard-psyche-showing-her-sisters-her-gifts-from-cupid",
+        "https://www.nga.gov/artworks/46026-diana-and-endymion",
+        "https://www.getty.edu/art/collection/object/103QRW"
       ]
     }
   }

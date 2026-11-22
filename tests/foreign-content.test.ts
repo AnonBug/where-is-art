@@ -13,8 +13,8 @@ import {
 const data = atlasSchema.parse(catalog);
 describe("Western painting corpus", () => {
   it("makes each researched artist available in a populated period and scope", () => {
-    expect(foreign.artists).toHaveLength(33);
-    expect(foreign.artworks).toHaveLength(137);
+    expect(foreign.artists).toHaveLength(34);
+    expect(foreign.artworks).toHaveLength(146);
     for (const artist of foreign.artists) {
       expect(
         data.periods.some(
@@ -33,11 +33,12 @@ describe("Western painting corpus", () => {
           scopeWorks(data, `artist:${artist.id}`).length,
         ).toBeLessThanOrEqual(8);
     }
-    expect(
-      scopeWorks(data, "topic:western-journey")
-        .map((w) => w.id)
-        .sort(),
-    ).toEqual(foreign.artworks.map((w) => w.id).sort());
+    // This topic is paused at its original selection; new artist entries
+    // remain available in their own scopes without extending the topic.
+    const journey = scopeWorks(data, "topic:western-journey");
+    expect(journey).toHaveLength(137);
+    expect(journey.some((w) => w.id === "fragonard-swing")).toBe(true);
+    expect(journey.some((w) => w.artistIds.includes("boucher"))).toBe(false);
     expect(scopeWorks(data, "artist:leonardo")).toHaveLength(21);
     expect(scopeWorks(data, "artist:monet")).toHaveLength(2024);
     expect(scopeWorks(data, "artist:van-gogh")).toHaveLength(961);

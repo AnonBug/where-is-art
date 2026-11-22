@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-22",
   "scopeNote": "西方绘画按主要艺术时期与流派归类；年代为约略范围，流派之间存在交叉。画家可跨越多个风格，目录按主要关联提供一个入口，不表示全部作品都属于同一风格。",
   "periods": [
     {
@@ -206,6 +206,15 @@
       "lifeLabel": "1599—1660",
       "countryLabel": "西班牙",
       "sourceUrl": "https://www.metmuseum.org/art/collection/search/437869"
+    },
+    {
+      "id": "boucher",
+      "name": "弗朗索瓦·布歇",
+      "category": "foreign",
+      "periodId": "rococo",
+      "lifeLabel": "1703—1770",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435739"
     },
     {
       "id": "fragonard",
@@ -2059,6 +2068,131 @@
       "description": "菱形画布上，红、黄、蓝与灰白色块密集交织，节奏比《百老汇爵士乐》更加细碎。留在画面的胶带和纸片，保存了艺术家不断调整构图的过程。",
       "sourceUrl": "https://www.kunstmuseum.nl/en/collection/victory-boogie-woogie",
       "note": "又译《胜利布吉伍吉》。蒙德里安去世时仍未完成的最后作品。荷兰国家所有，长期借展于海牙美术馆，馆号0810747；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-triumph-venus",
+      "artistIds": [
+        "boucher"
+      ],
+      "title": "维纳斯的凯旋",
+      "originalTitle": "The Triumph of Venus",
+      "dateLabel": "1740年",
+      "medium": "布面油画",
+      "description": "维纳斯与海中仙女、海神和爱神聚集在波浪间，交错的人体与扬起的织物把海面化为一座流动的舞台。",
+      "sourceUrl": "https://collection.nationalmuseum.se/sv/collection/item/17773/",
+      "note": "",
+      "inventoryNumber": "NM 770"
+    },
+    {
+      "id": "boucher-diana-bath",
+      "artistIds": [
+        "boucher"
+      ],
+      "title": "狄安娜出浴",
+      "originalTitle": "Diane sortant du bain",
+      "dateLabel": "1742年",
+      "medium": "布面油画",
+      "description": "狄安娜与女伴在林间沐浴后休息，蓝色织物托起柔和的肌肤色调，狩猎器物点明女神的身份。",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066275",
+      "note": "",
+      "inventoryNumber": "INV 2712"
+    },
+    {
+      "id": "boucher-toilette-venus",
+      "artistIds": [
+        "boucher"
+      ],
+      "title": "维纳斯梳妆",
+      "originalTitle": "The Toilette of Venus",
+      "dateLabel": "1751年",
+      "medium": "布面油画",
+      "description": "维纳斯在爱神的帮助下梳妆，鲜花、珍珠、鸽子与华丽织物环绕着她，把神话场景变成精致的闺房。",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435739",
+      "note": "",
+      "inventoryNumber": "20.155.9"
+    },
+    {
+      "id": "boucher-setting-sun",
+      "artistIds": [
+        "boucher"
+      ],
+      "title": "太阳落下",
+      "originalTitle": "The Setting of the Sun",
+      "dateLabel": "1752年",
+      "medium": "布面油画",
+      "description": "阿波罗结束白日的行程，向海中迎接他的忒提斯伸出手臂；云彩、波浪与众神共同构成黄昏的壮丽场景。",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65420&service=ExternalInterface&viewType=detailView",
+      "note": "华莱士收藏馆P486，1752年；须与P485《太阳升起》（1753年）区分，不混用图像或年代。",
+      "inventoryNumber": "P486"
+    },
+    {
+      "id": "boucher-aurora-cephalus",
+      "artistIds": [
+        "boucher"
+      ],
+      "title": "曙光女神与刻法洛斯",
+      "originalTitle": "Aurora and Cephalus",
+      "dateLabel": "1769年",
+      "medium": "布面油画",
+      "description": "曙光女神从粉蓝色天空中凝望沉睡的刻法洛斯，细长画幅把轻盈的神祇与地面上的青年、猎犬连在一起。",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103RBW",
+      "note": "盖蒂博物馆1769年版本；不与布歇1733年同题作品或其他画稿混同。",
+      "inventoryNumber": "71.PA.55"
+    },
+    {
+      "id": "boucher-venus-waves",
+      "artistIds": [
+        "boucher"
+      ],
+      "title": "波浪上的维纳斯",
+      "originalTitle": "Venus on the Waves",
+      "dateLabel": "1769年",
+      "medium": "布面油画",
+      "description": "维纳斯倚卧在丰厚的织物间，爱神与鸽子围绕着她，浅蓝、粉红和淡紫色向高处的天空延展。",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103RBV",
+      "note": "",
+      "inventoryNumber": "71.PA.54"
+    },
+    {
+      "id": "fragonard-psyche-gifts",
+      "artistIds": [
+        "fragonard"
+      ],
+      "title": "普绪克向姐妹展示丘比特的礼物",
+      "originalTitle": "Psyche showing her Sisters her Gifts from Cupid",
+      "dateLabel": "1753年",
+      "medium": "布面油画",
+      "description": "普绪克在华丽宫殿中向两位姐妹展示丘比特的礼物，仙女、花朵和珠宝围绕着她，富足场景中暗藏嫉妒。",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/jean-honore-fragonard-psyche-showing-her-sisters-her-gifts-from-cupid",
+      "note": "现存画布曾被裁切，今日所见构图并非原始全貌。",
+      "inventoryNumber": "NG6445"
+    },
+    {
+      "id": "fragonard-diana-endymion",
+      "artistIds": [
+        "fragonard"
+      ],
+      "title": "狄安娜与恩底弥翁",
+      "originalTitle": "Diana and Endymion",
+      "dateLabel": "约1753—1756年",
+      "medium": "布面油画",
+      "description": "月亮女神狄安娜乘云接近熟睡的恩底弥翁，红色衣袍与蓝色披衣在森林的阴影中相互映衬。",
+      "sourceUrl": "https://www.nga.gov/artworks/46026-diana-and-endymion",
+      "note": "沿用美国国家美术馆现归属：弗拉戈纳尔；旧文献中曾作布歇，保留这一归属史。"
+    },
+    {
+      "id": "fragonard-fountain-love-getty",
+      "artistIds": [
+        "fragonard"
+      ],
+      "title": "爱之泉（盖蒂版）",
+      "originalTitle": "The Fountain of Love",
+      "dateLabel": "约1785年",
+      "medium": "布面油画",
+      "description": "恋人共同奔向爱神递来的泉水，水雾与树叶在昏暗背景中翻涌，爱情被表现为强烈而近乎梦幻的吸引。",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103QRW",
+      "note": "盖蒂博物馆99.PA.30版本，与伦敦华莱士收藏馆版本分开；作为洛可可向晚期爱情寓意画延伸的例子。",
+      "inventoryNumber": "99.PA.30"
     }
   ],
   "venues": [
@@ -3321,6 +3455,69 @@
       "note": "荷兰国家所有，长期借展于海牙美术馆；不代表实时展出。",
       "verifiedAt": "2026-11-02",
       "sourceUrl": "https://www.kunstmuseum.nl/en/collection/victory-boogie-woogie"
+    },
+    {
+      "artworkId": "boucher-triumph-venus",
+      "venueId": "masters-q842858",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collection.nationalmuseum.se/sv/collection/item/17773/"
+    },
+    {
+      "artworkId": "boucher-diana-bath",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066275"
+    },
+    {
+      "artworkId": "boucher-toilette-venus",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435739"
+    },
+    {
+      "artworkId": "boucher-setting-sun",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65420&service=ExternalInterface&viewType=detailView"
+    },
+    {
+      "artworkId": "boucher-aurora-cephalus",
+      "venueId": "masters-q731126",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103RBW"
+    },
+    {
+      "artworkId": "boucher-venus-waves",
+      "venueId": "masters-q731126",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103RBV"
+    },
+    {
+      "artworkId": "fragonard-psyche-gifts",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/jean-honore-fragonard-psyche-showing-her-sisters-her-gifts-from-cupid"
+    },
+    {
+      "artworkId": "fragonard-diana-endymion",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/46026-diana-and-endymion"
+    },
+    {
+      "artworkId": "fragonard-fountain-love-getty",
+      "venueId": "masters-q731126",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103QRW"
     }
   ],
   "topics": [

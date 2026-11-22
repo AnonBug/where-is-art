@@ -138394,7 +138394,169 @@
       "bytes": 15480,
       "sha256": "c2bd9f4190d3607fe26a806e45c9a462b56828efd62442a4bdf15ff2d925e040",
       "md5": "a2b4b3436422829bdb82a19825ff7f2f"
+    },
+    {
+      "url": "media/foreign/boucher-triumph-venus/thumb.webp",
+      "bytes": 18018,
+      "sha256": "f2ac42babd893e5c4fd4c53a2c738cc22f351b2206b04251c757ace758a07107",
+      "md5": "1b73d80cd2546984c52e30dccc58f874"
+    },
+    {
+      "url": "media/foreign/boucher-triumph-venus/preview.webp",
+      "bytes": 174488,
+      "sha256": "560cc1056b4de00432c3f7601ee8ef0a27dbea5441ab433d4f37f75d0fe908e1",
+      "md5": "fd31a101571e2aeb6efb14e2d86908f4"
+    },
+    {
+      "url": "media/foreign/boucher-triumph-venus/detail.jpg",
+      "bytes": 2360425,
+      "sha256": "38f60a35dc21c06522b5d1f92816d56ef442488bf9dd28432892eed40ad6b848",
+      "md5": "e2be0a198d6875b5f5370dd550c4e1c1"
+    },
+    {
+      "url": "media/foreign/boucher-diana-bath/thumb.webp",
+      "bytes": 26654,
+      "sha256": "84744c5d134fd439c38f0a88ab08406a2470e360a64c8a4c7683a00fb8a35449",
+      "md5": "08af4c4851835c9f8b5c99c6341d7052"
+    },
+    {
+      "url": "media/foreign/boucher-diana-bath/preview.webp",
+      "bytes": 343390,
+      "sha256": "7336bc3fa0f196d1eca46574bf1144aae4dcd48275bf0f598f6e4170d72cf885",
+      "md5": "8b1e5bba9d472134443574e6b159af6e"
+    },
+    {
+      "url": "media/foreign/boucher-diana-bath/detail.jpg",
+      "bytes": 3114845,
+      "sha256": "170aa195a255dd3336802fd02648861f39d726e80af6e57631c24fe6d0533337",
+      "md5": "72bf4d496619aa173048f98979f3e978"
+    },
+    {
+      "url": "media/foreign/boucher-toilette-venus/thumb.webp",
+      "bytes": 19720,
+      "sha256": "def98b60208a115d3a5a6edab8ec3c4a5dfc25e811452c4c271f23a2b0f3da6b",
+      "md5": "337069450877f11bf8518fa85acc97ba"
+    },
+    {
+      "url": "media/foreign/boucher-toilette-venus/preview.webp",
+      "bytes": 218308,
+      "sha256": "3257c3dcb66d8644d3863f644c53b4d321c7525fe03b110a2ff4845a8275930c",
+      "md5": "649038f6322ab3fe05b76d8cd85ba03c"
+    },
+    {
+      "url": "media/foreign/boucher-toilette-venus/detail.jpg",
+      "bytes": 956293,
+      "sha256": "37243af76373ba5f427d49e1d74b1d92fccc969fc37b3e0ebd561301e26d326c",
+      "md5": "2dfce37d9b03d437f1d37cbb2f85c323"
+    },
+    {
+      "url": "media/foreign/boucher-setting-sun/thumb.webp",
+      "bytes": 24802,
+      "sha256": "452dcb5a0de408b11208fd9c4609a57768d0f54ed7be0b6fe57f2651b19fc4a7",
+      "md5": "9cbd4505b875a7896dd4c5ee2dca7af3"
+    },
+    {
+      "url": "media/foreign/boucher-setting-sun/preview.webp",
+      "bytes": 167642,
+      "sha256": "921fa91ea066a94d10c7055b02895896daa9d2dcee1776b115c2edac9074623a",
+      "md5": "84799fd31acf0f703bafed8a9139d7d9"
+    },
+    {
+      "url": "media/foreign/boucher-setting-sun/detail.jpg",
+      "bytes": 273257,
+      "sha256": "332a43c87cdfef897298e25d11046ac0913fff22ddd4582fa034a501e5d7e735",
+      "md5": "053bd2743d2ed33242f0ed45c1eb4187"
+    },
+    {
+      "url": "media/foreign/boucher-aurora-cephalus/thumb.webp",
+      "bytes": 13730,
+      "sha256": "7ff6750839891e9c4d330673a926509887377ace03f74416406a3f0ac53434ca",
+      "md5": "3c8bc2cb80822260f5f14f01e2272e3e"
+    },
+    {
+      "url": "media/foreign/boucher-aurora-cephalus/preview.webp",
+      "bytes": 69926,
+      "sha256": "494a476b41e607cf6ba5a89716c45ba72504cefc1ea8c9914293c01ad6c7dc4e",
+      "md5": "a5d9062f24c178dc99a2f507bf8181ca"
+    },
+    {
+      "url": "media/foreign/boucher-aurora-cephalus/detail.jpg",
+      "bytes": 780677,
+      "sha256": "c473efe224c75624eb883c71accc57d90b17637662adcbffd1de551b40c7784f",
+      "md5": "ec5da6924c5a227b5153705bd9feef80"
+    },
+    {
+      "url": "media/foreign/boucher-venus-waves/thumb.webp",
+      "bytes": 25482,
+      "sha256": "4d147e9b5c914f7f988db7baa3e70b7ed9f4b527292842d41f277e7507c3dc29",
+      "md5": "bcec93410ca5aacb73284f373f794817"
+    },
+    {
+      "url": "media/foreign/boucher-venus-waves/preview.webp",
+      "bytes": 70598,
+      "sha256": "e6eb07d177aca30058ba5398f8bba052d881b76c1521bca5e17585a57132b6b6",
+      "md5": "ec80d8b16a54b695ef49f1e8897dfc26"
+    },
+    {
+      "url": "media/foreign/boucher-venus-waves/detail.jpg",
+      "bytes": 778748,
+      "sha256": "4d95392c7a398348ebd8458b4a0be1975dc2efb6fdb18bcf94a5e015f54847e8",
+      "md5": "559600c15b3e476350992dbf88e0eb9a"
+    },
+    {
+      "url": "media/foreign/fragonard-psyche-gifts/thumb.webp",
+      "bytes": 31062,
+      "sha256": "a478b1c8da7f99ea3ccfe344e6d3dd9956d4c1115ca11dbf53ef92f83cd4fd4c",
+      "md5": "9cccb1471d3fc0d1b84e3e3dd1507acd"
+    },
+    {
+      "url": "media/foreign/fragonard-psyche-gifts/preview.webp",
+      "bytes": 159146,
+      "sha256": "437ba30f71935804cee3e72c29b5dada718856d2707e9d23db0ae63ac419ebdc",
+      "md5": "bade51a8d1f25b65c4ff61e8e6d29118"
+    },
+    {
+      "url": "media/foreign/fragonard-psyche-gifts/detail.jpg",
+      "bytes": 170299,
+      "sha256": "ec6ade32547896bc650a28dd7863743d24f744b21bd57010ea76257c51e8338c",
+      "md5": "3ef41adde6948b80724c6b33b1799dc8"
+    },
+    {
+      "url": "media/foreign/fragonard-diana-endymion/thumb.webp",
+      "bytes": 16714,
+      "sha256": "f943157a56a43a741578c03e958e1230cb28594df7933fb010a0ab8ddccc973c",
+      "md5": "32afade5ed6356da67a874e5c70f9ab9"
+    },
+    {
+      "url": "media/foreign/fragonard-diana-endymion/preview.webp",
+      "bytes": 134012,
+      "sha256": "2e9f72645163a63592921396a0e046a167c9fb1b81043d23d78849779e43d3af",
+      "md5": "7aeea36cdd793e00d1acaf59eb33476b"
+    },
+    {
+      "url": "media/foreign/fragonard-diana-endymion/detail.jpg",
+      "bytes": 1783708,
+      "sha256": "41367998162b0d2411aba6cbb4046de07d5273fdfd1a7d1d61ca2913e3ffbc54",
+      "md5": "6f4a659ea8b06e5660317e691603587f"
+    },
+    {
+      "url": "media/foreign/fragonard-fountain-love-getty/thumb.webp",
+      "bytes": 8488,
+      "sha256": "00c3c2aaee537a4f12392bd59519372fa5266929fc80951e90aca67243d03f0c",
+      "md5": "b21238fe4e9bd434f8728ff030e52dac"
+    },
+    {
+      "url": "media/foreign/fragonard-fountain-love-getty/preview.webp",
+      "bytes": 125430,
+      "sha256": "ffab0a661907c7fabca0496c1f9a9d72637cb60debefd5a211d6a17db983b0e2",
+      "md5": "cc5df2327de50a358b05753b69266f1a"
+    },
+    {
+      "url": "media/foreign/fragonard-fountain-love-getty/detail.jpg",
+      "bytes": 667145,
+      "sha256": "6000f3dc38c18c8986a25575a5d17a9059ae623c7f23ef8e24742568902f7734",
+      "md5": "b1643d99b3fa863fde1be549aa8a9fe2"
     }
   ],
-  "updatedAt": "2026-11-13"
+  "updatedAt": "2026-11-22"
 }

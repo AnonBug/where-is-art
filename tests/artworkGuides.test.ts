@@ -8,7 +8,7 @@ const work = (id: string) => data.artworks.find((item) => item.id === id)!;
 
 describe("artwork reading guides", () => {
   it("publishes individual guides only and leaves unsupported interpretation absent", () => {
-    expect(data.artworks.filter((item) => item.guide)).toHaveLength(349);
+    expect(data.artworks.filter((item) => item.guide)).toHaveLength(358);
     expect(work("manet-q3205630").guide).toBeUndefined();
     expect(work("manet-q3205630").catalogNumber).toBe("369");
     expect(work("manet-q3205630").inventoryNumber).toBe("1955/0009");

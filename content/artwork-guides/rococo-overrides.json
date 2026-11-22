@@ -1,0 +1,145 @@
+{
+  "boucher-triumph-venus": {
+    "scope": "individual",
+    "background": "这幅画由瑞典收藏家卡尔·古斯塔夫·特辛委托。瑞典国家博物馆将其题名为《维纳斯的凯旋》，馆藏编号NM 770；这是1740年的斯德哥尔摩版本。",
+    "story": "海中诞生的维纳斯被海洋生灵与爱神环绕。画面以相互回应的姿势和视线组织群像，将神话主题转化为充满生命感的海上聚会。",
+    "looking": [
+      "沿人物手臂、背部与波浪的曲线移动视线，观察画面如何避免僵硬的左右对称。",
+      "比较浅色肌肤、蓝绿海水与粉色织物，看柔和色彩怎样区分相互交叠的人物。"
+    ],
+    "sources": [
+      {
+        "label": "瑞典国立博物馆：The Triumph of Venus",
+        "url": "https://collection.nationalmuseum.se/sv/collection/item/17773/"
+      }
+    ]
+  },
+  "boucher-diana-bath": {
+    "scope": "individual",
+    "background": "卢浮宫记录本作绘于1742年，并参加了同年的沙龙，展览题名说明狄安娜出浴后与一位女伴休息。",
+    "story": "画面选择女神暂时放下狩猎活动的时刻，以近距离的人物姿态呈现安静的休憩。神话身份与日常沐浴场景相互叠合。",
+    "looking": [
+      "看人物低头、屈膝和手臂形成的曲线，怎样把视线引向画面中央。",
+      "比较蓝色织物的阴影和皮肤的暖色亮部，体会布料与肌肤不同的触感。"
+    ],
+    "sources": [
+      {
+        "label": "卢浮宫：Diane sortant du bain",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010066275"
+      }
+    ]
+  },
+  "boucher-toilette-venus": {
+    "scope": "individual",
+    "background": "布歇为蓬巴杜夫人的贝尔维尤城堡创作此画，原用于浴室套间的室内装饰。如今收藏于纽约大都会艺术博物馆。",
+    "story": "爱与美的女神在沐浴后整理仪容。爱神为她装点鲜花与珍珠，鸽子的白羽衬托出肌肤的温暖色泽。",
+    "looking": [
+      "从维纳斯的身体看到镜框、沙发和翻卷的织物，寻找不对称构图中的平衡。",
+      "留意珍珠、羽毛、鲜花与绒布：画家用多种柔软质感强化场景的亲密气氛。"
+    ],
+    "sources": [
+      {
+        "label": "大都会艺术博物馆：The Toilette of Venus",
+        "url": "https://www.metmuseum.org/art/collection/search/435739"
+      }
+    ]
+  },
+  "boucher-setting-sun": {
+    "scope": "individual",
+    "background": "本作于1752年完成，与次年的《太阳升起》成对。蓬巴杜夫人委托它们作为戈布兰工坊织造挂毯的等大画稿，画作也在1753年沙龙展出。",
+    "story": "太阳神驾车穿越天空后返回海洋，忒提斯迎接他的归来。布歇让日夜交替成为众神相会的场景。",
+    "looking": [
+      "从阿波罗伸出的手臂看向忒提斯，再沿海浪观察前景人物，分辨画面的层次。",
+      "比较高处渐暗的天空与人物身上的亮色，观察黄昏如何通过色彩与衣褶表现。"
+    ],
+    "sources": [
+      {
+        "label": "华莱士收藏馆：The Setting of the Sun",
+        "url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65420&service=ExternalInterface&viewType=detailView"
+      }
+    ]
+  },
+  "boucher-aurora-cephalus": {
+    "scope": "individual",
+    "background": "这幅画属于贝尔热雷·德·弗鲁维尔为巴黎住宅委托的六件神话装饰画，完成于1769年，与《波浪上的维纳斯》同藏盖蒂博物馆。",
+    "story": "曙光女神爱上凡人刻法洛斯，在他熟睡时凝望他。天空中的女神与贴近地面的青年形成轻盈和沉静的对照。",
+    "looking": [
+      "从天空向下看到熟睡的青年和猎犬，体会狭长画幅组织空间的方式。",
+      "对比天空的浅粉、浅蓝与地面人物的红褐色，观察色彩怎样区分神界与人间。"
+    ],
+    "sources": [
+      {
+        "label": "保罗·盖蒂博物馆：Aurora and Cephalus",
+        "url": "https://www.getty.edu/art/collection/object/103RBW"
+      }
+    ]
+  },
+  "boucher-venus-waves": {
+    "scope": "individual",
+    "background": "本作与《曙光女神与刻法洛斯》同属为巴黎住宅设计的六幅神话装饰画。盖蒂博物馆指出，画中的快速笔触接近布歇的挂毯设计风格。",
+    "story": "维纳斯在爱神与鸽子的陪伴下休憩。画面没有强调复杂事件，而是让姿态、衣料和天空共同营造轻松的神话世界。",
+    "looking": [
+      "看下部人物与上方大面积天空之间的比例，体会装饰画如何适应狭长墙面。",
+      "观察织物边缘与云层中较为松动的笔触，以及粉红、淡紫和蓝色的呼应。"
+    ],
+    "sources": [
+      {
+        "label": "保罗·盖蒂博物馆：Venus on the Waves",
+        "url": "https://www.getty.edu/art/collection/object/103RBV"
+      }
+    ]
+  },
+  "fragonard-psyche-gifts": {
+    "scope": "individual",
+    "background": "这是弗拉戈纳尔1753年的早期作品，反映他跟随布歇学习后的影响。英国国家美术馆说明，画布后来被裁切，因此今天看到的构图已不是原始全貌。",
+    "story": "普绪克得到丘比特的爱与丰厚礼物，招待来访的姐妹。姐妹的羡慕逐渐转为嫉妒，画面上方持蛇的寓意人物提示了故事的危险转折。",
+    "looking": [
+      "先看白衣普绪克与来访姐妹的姿态，再寻找上方持蛇的人物，比较表面的华美与潜在的紧张。",
+      "沿柱子、人物与布料形成的斜线观察空间，留意弗拉戈纳尔比布歇更活跃的运动感。"
+    ],
+    "sources": [
+      {
+        "label": "英国国家美术馆：Psyche showing her Sisters her Gifts from Cupid",
+        "url": "https://www.nationalgallery.org.uk/paintings/jean-honore-fragonard-psyche-showing-her-sisters-her-gifts-from-cupid"
+      }
+    ]
+  },
+  "fragonard-diana-endymion": {
+    "scope": "individual",
+    "background": "美国国家美术馆将本作归于弗拉戈纳尔，年代约1753至1756年。它曾长期被认为出自布歇，反映了两人在这一时期的密切风格联系。",
+    "story": "狄安娜与永恒沉睡的恩底弥翁相会。画面用静止的青年和飘浮的女神对照，呈现神话中的夜间探访。",
+    "looking": [
+      "看恩底弥翁松弛的手与支起的膝，再看女神随云而来的姿势，体会静止和运动的对比。",
+      "比较青年红袍与女神蓝衣，注意森林暗部如何让两块色彩成为视觉中心。"
+    ],
+    "sources": [
+      {
+        "label": "国家美术馆：Diana and Endymion",
+        "url": "https://www.nga.gov/artworks/46026-diana-and-endymion"
+      }
+    ]
+  },
+  "fragonard-fountain-love-getty": {
+    "scope": "individual",
+    "background": "本作属于弗拉戈纳尔晚期的爱情寓意画。盖蒂博物馆与英国国家美术馆的研究区分了盖蒂版和华莱士版：盖蒂版笔触更松动，仍保有鲜明的洛可可趣味。",
+    "story": "爱神向恋人递出一杯爱之泉的水。他们迫不及待地向前倾身，画面将爱情的渴望凝聚在即将饮水的一刻。",
+    "looking": [
+      "沿两位恋人身体的共同倾斜方向看到杯子，观察动作怎样集中在同一个目标上。",
+      "看喷泉水雾与树叶之间的明暗交错，比较它与布歇明亮粉彩场景的气氛差异。"
+    ],
+    "sources": [
+      {
+        "label": "保罗·盖蒂博物馆：The Fountain of Love",
+        "url": "https://www.getty.edu/art/collection/object/103QRW"
+      },
+      {
+        "label": "盖蒂博物馆：弗拉戈纳尔的爱情寓意画展览研究",
+        "url": "https://www.getty.edu/art/exhibitions/consuming_passion/"
+      },
+      {
+        "label": "英国国家美术馆：两版《爱之泉》的技术研究",
+        "url": "https://www.nationalgallery.org.uk/technical-bulletin/leonard_roy_schaefer2008"
+      }
+    ]
+  }
+}
