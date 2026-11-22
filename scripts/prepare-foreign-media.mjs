@@ -9,8 +9,12 @@ import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
+const args = process.argv.slice(2);
+const onlyArg = args.find((arg) => arg.startsWith("--only="));
+const only = onlyArg ? new Set(onlyArg.slice(7).split(",")) : null;
 const sourceRoot = path.resolve(
-  process.argv[2] || path.join(root, "output/foreign-originals"),
+  args.find((arg) => !arg.startsWith("--")) ||
+    path.join(root, "output/foreign-originals"),
 );
 const sources = JSON.parse(
   await fs.readFile(path.join(root, "content/foreign-sources.json"), "utf8"),
@@ -32,7 +36,12 @@ await fs.mkdir(sourceRoot, { recursive: true });
 
 async function sourceBytes(source) {
   assert.match(source.artworkId, /^[a-z0-9-]+$/);
-  assert.equal(source.cacheFilename, `${source.artworkId}.jpg`);
+  assert.ok(
+    ["jpg", "png", "webp"].some(
+      (extension) => source.cacheFilename === `${source.artworkId}.${extension}`,
+    ),
+    `Unsupported source filename: ${source.cacheFilename}`,
+  );
   assert.match(source.downloadSha256, /^[a-f0-9]{64}$/);
   const file = path.join(sourceRoot, source.cacheFilename);
   let bytes;
@@ -105,7 +114,23 @@ async function publish(bytes, directory, filename, size, byteLimit, format) {
 }
 
 const images = [];
+if (only) {
+  for (const id of only)
+    assert.ok(
+      sources.sources.some((source) => source.artworkId === id),
+      `Unknown artwork: ${id}`,
+    );
+}
 for (const source of sources.sources) {
+  // Content-only additions must not re-download the already published corpus.
+  if (only && !only.has(source.artworkId)) {
+    const existing = previous.find(
+      (image) => image.artworkId === source.artworkId,
+    );
+    assert.ok(existing, `Missing previous manifest entry: ${source.artworkId}`);
+    images.push(existing);
+    continue;
+  }
   const publicationStatus = source.publicationStatus ?? "cleared";
   assert.ok(["cleared", "review-required"].includes(publicationStatus));
   const bytes = await sourceBytes(source);

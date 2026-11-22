@@ -1,0 +1,122 @@
+{
+  "gossaert-danae": {
+    "scope": "individual",
+    "background": "这幅1527年的作品现藏慕尼黑老绘画陈列馆。馆方将它放在达那厄图像由中世纪的贞洁寓意转向文艺复兴神话表现的脉络中。",
+    "looking": [
+      "观察石柱和穹顶怎样把达那厄围在一个封闭空间内。",
+      "沿着上方光线与金雨向下看，比较蓝色衣袍和肤色的明暗。"
+    ],
+    "sources": [
+      {
+        "label": "馆方作品记录",
+        "url": "https://www.sammlung.pinakothek.de/de/artwork/7yxYmBnxYm"
+      }
+    ]
+  },
+  "correggio-danae": {
+    "scope": "individual",
+    "background": "本作属于柯雷乔为曼图亚公爵费德里科二世·贡扎加创作的“朱庇特之爱”系列。博尔盖塞美术馆将床边的有翼少年解释为婚姻之神许墨奈俄斯，右下的小爱神则以试金的动作呼应金雨。",
+    "looking": [
+      "比较上方金雨、床边伸出的手与右下试金动作，看看同一主题如何分布在三个位置。",
+      "留意白色床单与人物肤色之间细微的冷暖变化。"
+    ],
+    "sources": [
+      {
+        "label": "馆方作品记录",
+        "url": "https://www.collezionegalleriaborghese.it/en/opere/danae"
+      }
+    ]
+  },
+  "tintoretto-danae": {
+    "scope": "individual",
+    "background": "里昂美术馆指出，这幅画把神话中的金雨画成可以收集的金币，并通过侍女的动作强化了世俗生活的意味。",
+    "looking": [
+      "顺着身体、床单与侍女的倾斜方向观察构图。",
+      "对照明亮的皮肤、暗色背景和散落的金币，观察光怎样串联画面。"
+    ],
+    "sources": [
+      {
+        "label": "馆方作品记录",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010058893"
+      },
+      {
+        "label": "里昂美术馆：丁托列托《达那厄》专题说明",
+        "url": "https://www.mba-lyon.fr/sites/mba/files/content/medias/documents/2019-12/fiche_focus_tintoret_bd.pdf"
+      }
+    ]
+  },
+  "goltzius-danae": {
+    "scope": "individual",
+    "background": "霍尔齐乌斯的这幅1603年油画现藏洛杉矶郡艺术博物馆。馆方题名强调她正在熟睡，而周围人物正为朱庇特的到来作准备。",
+    "looking": [
+      "先找出中央熟睡人物，再逐一观察周围小爱神与年长人物的动作。",
+      "对比白色织物、金属器皿和红色帷幔的质感。"
+    ],
+    "sources": [
+      {
+        "label": "馆方作品记录",
+        "url": "https://collections.lacma.org/object/47496"
+      }
+    ]
+  },
+  "artemisia-danae": {
+    "scope": "individual",
+    "background": "圣路易斯艺术博物馆将本作定为约1612年，并归于阿尔特米西娅·真蒂莱斯基。画面特别细致地处理了金发、织物和金币等表面质感，反映她早期从父亲工作室习得的绘画技巧。",
+    "looking": [
+      "比较金发、金币和床单三种表面的光泽。",
+      "留意前景闭目人物与背景侍女之间的空间距离。"
+    ],
+    "sources": [
+      {
+        "label": "馆方作品记录",
+        "url": "https://www.slam.org/collection/objects/15612/"
+      }
+    ]
+  },
+  "orazio-danae-getty": {
+    "scope": "individual",
+    "background": "这幅画属于热那亚收藏家乔瓦尼·安东尼奥·绍利委托奥拉齐奥创作的一组作品。盖蒂馆藏说明强调画家对光线、色彩与不同织物表面效果的细致处理。",
+    "looking": [
+      "对照金黄、白与深红三种织物，观察光泽和褶皱的差异。",
+      "从达那厄的手势看向上方的金雨，再看丘比特如何连接两者。"
+    ],
+    "sources": [
+      {
+        "label": "馆方作品记录",
+        "url": "https://www.getty.edu/art/collection/object/103QTA"
+      }
+    ]
+  },
+  "klimt-danae": {
+    "scope": "individual",
+    "background": "阿尔贝蒂娜出版的克里姆特作品研究将《达那厄》列于1907—1908年，指出该画在1908年维也纳艺术展上首次展出，并讨论了画家如何重新使用早先的人体习作来发展姿态。",
+    "looking": [
+      "沿蜷曲的身体与红发看画面如何形成接近圆形的轮廓。",
+      "比较金雨中的几何形状与紫色织物中的圆形纹样。"
+    ],
+    "sources": [
+      {
+        "label": "阿尔贝蒂娜：克里姆特《达那厄》作品研究",
+        "url": "https://ao.albertina.at/groups/-danae-"
+      },
+      {
+        "label": "克里姆特基金会：作品与私人收藏信息",
+        "url": "https://www.klimt-database.com/en/klimts-artworks/1907-1909/gustav-klimt-at-his-zenith/"
+      }
+    ]
+  },
+  "schiele-danae": {
+    "scope": "individual",
+    "background": "这件作品署年1909，曾以《青春的涌动》（Jugendströmung）之名参加当年维也纳国际艺术展，现通常以《达那厄》为题编目。苏富比目录将媒材记为布面油彩与金属颜料，并对应到席勒作品全集的P148号。",
+    "looking": [
+      "比较人物身体的弧线与背景中重复出现的金色形状。",
+      "与克里姆特的版本并看，观察两幅画如何以不同方向安排身体和装饰纹样。"
+    ],
+    "sources": [
+      {
+        "label": "苏富比：席勒《达那厄》编目资料",
+        "url": "https://www.sothebys.com/en/buy/auction/2026/masterpieces-from-the-lewis-collection-l26900/danae"
+      }
+    ]
+  }
+}

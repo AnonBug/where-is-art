@@ -422,6 +422,85 @@
       "lifeLabel": "1872—1944",
       "countryLabel": "荷兰",
       "sourceUrl": "https://www.artic.edu/artworks/109819"
+    },
+    {
+      "id": "watteau",
+      "name": "让-安托万·华托",
+      "category": "foreign",
+      "periodId": "rococo",
+      "lifeLabel": "1684—1721",
+      "countryLabel": "法国",
+      "sourceUrl": "https://www.nationalgallery.org.uk/artists/jean-antoine-watteau"
+    },
+    {
+      "id": "gossaert",
+      "name": "扬·戈萨尔特",
+      "category": "foreign",
+      "periodId": "renaissance",
+      "lifeLabel": "1478—1532",
+      "countryLabel": "尼德兰",
+      "sourceUrl": "https://www.sammlung.pinakothek.de/de/artwork/7yxYmBnxYm",
+      "directoryVisible": false
+    },
+    {
+      "id": "correggio",
+      "name": "柯雷乔",
+      "category": "foreign",
+      "periodId": "renaissance",
+      "lifeLabel": "约1489—1534",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://www.collezionegalleriaborghese.it/en/opere/danae",
+      "directoryVisible": false
+    },
+    {
+      "id": "tintoretto",
+      "name": "丁托列托",
+      "category": "foreign",
+      "periodId": "mannerism",
+      "lifeLabel": "约1518—1594",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010058893",
+      "directoryVisible": false
+    },
+    {
+      "id": "goltzius",
+      "name": "亨德里克·霍尔齐乌斯",
+      "category": "foreign",
+      "periodId": "mannerism",
+      "lifeLabel": "1558—1617",
+      "countryLabel": "荷兰",
+      "sourceUrl": "https://collections.lacma.org/object/47496",
+      "directoryVisible": false
+    },
+    {
+      "id": "artemisia-gentileschi",
+      "name": "阿尔特米西娅·真蒂莱斯基",
+      "category": "foreign",
+      "periodId": "baroque",
+      "lifeLabel": "1593—约1656",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://www.slam.org/collection/objects/15612/",
+      "directoryVisible": false
+    },
+    {
+      "id": "orazio-gentileschi",
+      "name": "奥拉齐奥·真蒂莱斯基",
+      "category": "foreign",
+      "periodId": "baroque",
+      "lifeLabel": "1563—1639",
+      "countryLabel": "意大利",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103QTA",
+      "directoryVisible": false
+    },
+    {
+      "id": "schiele",
+      "name": "埃贡·席勒",
+      "category": "foreign",
+      "periodId": "expressionism",
+      "lifeLabel": "1890—1918",
+      "countryLabel": "奥地利",
+      "sourceUrl": "https://www.sothebys.com/en/buy/auction/2026/masterpieces-from-the-lewis-collection-l26900/danae",
+      "directoryVisible": false
     }
   ],
   "artworks": [
@@ -2193,6 +2272,1192 @@
       "sourceUrl": "https://www.getty.edu/art/collection/object/103QRW",
       "note": "盖蒂博物馆99.PA.30版本，与伦敦华莱士收藏馆版本分开；作为洛可可向晚期爱情寓意画延伸的例子。",
       "inventoryNumber": "99.PA.30"
+    },
+    {
+      "id": "boucher-pompadour-munich",
+      "title": "蓬巴杜夫人肖像（慕尼黑版）",
+      "dateLabel": "1756年",
+      "inventoryNumber": "HUW 18",
+      "sourceUrl": "https://www.sammlung.pinakothek.de/de/artwork/Dj4mX97G5A/francois-boucher/madame-de-pompadour",
+      "originalTitle": "Madame de Pompadour",
+      "description": "蓬巴杜夫人斜倚沙发，书籍、信件与华丽衣饰共同塑造她的文化赞助人形象。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-pompadour-wallace",
+      "title": "蓬巴杜夫人肖像（华莱士版）",
+      "dateLabel": "1759年",
+      "inventoryNumber": "P418",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/madame-de-pompadours-portrait/",
+      "originalTitle": "Madame de Pompadour",
+      "description": "站立的蓬巴杜夫人置身园林，身旁的犬与雕塑呼应友谊、忠诚的主题。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-breakfast",
+      "title": "早餐",
+      "dateLabel": "1739年",
+      "inventoryNumber": "RF 926",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010059924",
+      "originalTitle": "Le Déjeuner",
+      "description": "人物围坐在小桌旁，精致室内陈设与照料孩子的动作构成日常生活场景。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-rinaldo-armida",
+      "title": "里纳尔多与阿尔米达",
+      "dateLabel": "1734年",
+      "inventoryNumber": "INV 2720",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066934",
+      "originalTitle": "Renaud et Armide",
+      "description": "塔索史诗中的骑士与女巫，被安排在繁茂花园和古典建筑之间。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-europa",
+      "title": "欧罗巴的劫掠",
+      "dateLabel": "1747年",
+      "inventoryNumber": "INV 2714",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066442",
+      "originalTitle": "L’Enlèvement d’Europe",
+      "description": "欧罗巴坐在化为公牛的朱庇特背上，随从、海景与空中人物构成繁复的神话群像。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-hercules-omphale",
+      "title": "赫拉克勒斯与翁法勒",
+      "dateLabel": "1732—1734年",
+      "inventoryNumber": "Ж-2764",
+      "sourceUrl": "https://collection.pushkinmuseum.art/entity/OBJECT/77638",
+      "originalTitle": "Hercules and Omphale",
+      "description": "大力神与吕底亚女王的亲密相拥，使英雄神话转向爱情和角色颠倒的主题。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-rising-sun",
+      "title": "太阳升起",
+      "dateLabel": "1753年",
+      "inventoryNumber": "P485",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65419&service=ExternalInterface&viewType=detailView",
+      "originalTitle": "The Rising of the Sun",
+      "description": "太阳神阿波罗启程，水中与云端的人物共同组成晨光中的宏大场面。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-apollo-shepherdess",
+      "title": "阿波罗向牧羊女伊塞显露神性",
+      "dateLabel": "1750年",
+      "inventoryNumber": "1794-1-1",
+      "sourceUrl": "https://musees.tours.fr/collections/apollon-revelant-sa-divinite-a-la-bergere-isse/",
+      "originalTitle": "Apollon révélant sa divinité à la bergère Issé",
+      "description": "阿波罗在云端显露真实身份，伊塞与周围人物的姿态回应这一戏剧性时刻。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-venus-vulcan-wallace",
+      "title": "维纳斯与伏尔甘",
+      "dateLabel": "约1754年",
+      "inventoryNumber": "P429",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-myths/the-venus-series/",
+      "originalTitle": "Venus and Vulcan",
+      "description": "维纳斯来到火神的锻造场，轻盈的云层与沉重的工具并置。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-mercury-bacchus",
+      "title": "墨丘利将幼年巴克斯交给宁芙",
+      "dateLabel": "约1732—1734年",
+      "inventoryNumber": "P487",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-myths/mercury-confiding-the-infant-bacchus-to-the-nymphs/",
+      "originalTitle": "Mercury Confiding the Infant Bacchus to the Nymphs",
+      "description": "墨丘利把襁褓中的巴克斯交给宁芙照料，人物在岩壁与天空之间层层展开。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-pastoral-autumn",
+      "title": "田园之秋：喷泉旁的情侣",
+      "dateLabel": "1749年",
+      "inventoryNumber": "P482",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-pastoral/pastoral-with-a-couple-near-a-fountain-and-pastoral-with-a-bagpipe-player/",
+      "originalTitle": "Pastoral with a Couple near a Fountain",
+      "description": "情侣在树荫与古典喷泉旁休憩，田园被处理成适于交谈和相爱的理想场所。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-shepherds-reposing",
+      "title": "休憩的牧羊人与牧羊女",
+      "dateLabel": "1761年",
+      "inventoryNumber": "P431",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-pastoral/shepherd-and-shepherdess-reposing/",
+      "originalTitle": "Shepherd and Shepherdess Reposing",
+      "description": "牧人与牧羊女在椭圆形林间场景中相伴，鲜花与羊群围绕他们。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-jupiter-callisto-met",
+      "title": "朱庇特化身狄安娜与卡利斯托",
+      "dateLabel": "1763年",
+      "inventoryNumber": "1982.60.45",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435747",
+      "originalTitle": "Jupiter, in the Guise of Diana, and Callisto",
+      "description": "朱庇特假扮狄安娜接近卡利斯托，鹰与月牙等标志提示神话人物的身份。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-angelica-medoro",
+      "title": "安杰莉卡与梅多罗",
+      "dateLabel": "1763年",
+      "inventoryNumber": "1982.60.46",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435742",
+      "originalTitle": "Angelica and Medoro",
+      "description": "阿里奥斯托诗篇中的恋人围绕刻字的树木相依，爱神为场景增加寓意。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-interrupted-sleep",
+      "title": "被打断的睡眠",
+      "dateLabel": "1750年",
+      "inventoryNumber": "49.7.46",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435738",
+      "originalTitle": "The Interrupted Sleep",
+      "description": "牧羊女的休憩被同伴轻轻打断，树林、羊与细小动作构成田园插曲。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-shepherds-idyll",
+      "title": "牧羊人的田园诗",
+      "dateLabel": "1768年",
+      "inventoryNumber": "53.225.1",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435745",
+      "originalTitle": "Shepherd’s Idyll",
+      "description": "牧人与羊群活动于树木、建筑和远景围成的开阔田园。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-washerwomen",
+      "title": "洗衣妇",
+      "dateLabel": "1768年",
+      "inventoryNumber": "53.225.2",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435746",
+      "originalTitle": "Washerwomen",
+      "description": "水边洗衣与乡间劳作被安置在树木和石桥相连的想象风景中。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-bath-venus",
+      "title": "维纳斯沐浴",
+      "dateLabel": "1751年",
+      "inventoryNumber": "1943.7.2",
+      "sourceUrl": "https://www.nga.gov/artworks/12200-bath-venus",
+      "originalTitle": "The Bath of Venus",
+      "description": "维纳斯在水边与爱神相伴，蓝色织物、白鸽和草木组成柔和的色彩层次。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-allegory-music",
+      "title": "音乐的寓意",
+      "dateLabel": "1764年",
+      "inventoryNumber": "1946.7.2",
+      "sourceUrl": "https://www.nga.gov/artworks/32680-allegory-music",
+      "originalTitle": "Allegory of Music",
+      "description": "拨奏弦乐器的女性寓意形象坐在云上，乐谱与爱神环绕其侧。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-allegory-painting",
+      "title": "绘画的寓意",
+      "dateLabel": "1765年",
+      "inventoryNumber": "1946.7.1",
+      "sourceUrl": "https://www.nga.gov/artworks/32679-allegory-painting",
+      "originalTitle": "Allegory of Painting",
+      "description": "绘画的女性拟人形象在椭圆画布上作画，调色板与画笔说明她的身份。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-pan-syrinx",
+      "title": "潘与绪任克斯",
+      "dateLabel": "1759年",
+      "inventoryNumber": "NG1090",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/francois-boucher-pan-and-syrinx",
+      "originalTitle": "Pan and Syrinx",
+      "description": "潘神追逐绪任克斯的神话被浓缩为溪边人物与芦苇交织的小幅场景。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-watermill",
+      "title": "有水磨的风景",
+      "dateLabel": "1755年",
+      "inventoryNumber": "NG6374",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/francois-boucher-landscape-with-a-watermill",
+      "originalTitle": "Landscape with a Watermill",
+      "description": "水磨、树木与水边活动共同组成宁静的乡村景色。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-toilette-thyssen",
+      "title": "梳妆（美人痣）",
+      "dateLabel": "1742年",
+      "inventoryNumber": "58 (1967.4)",
+      "sourceUrl": "https://www.museothyssen.org/en/collection/artists/boucher-francois/toilette",
+      "originalTitle": "La Toilette",
+      "description": "两位女子在室内整理仪容，镜子、衣饰和生活用具构成细密的日常画面。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "boucher-venus-mercury-cupid",
+      "title": "维纳斯与墨丘利教导丘比特",
+      "dateLabel": "1738年",
+      "inventoryNumber": "47.29.10",
+      "sourceUrl": "https://collections.lacma.org/object/12883",
+      "originalTitle": "Venus and Mercury Instructing Cupid",
+      "description": "维纳斯与墨丘利围绕学习中的丘比特，神话人物组成横向的教育寓意场景。",
+      "artistIds": [
+        "boucher"
+      ],
+      "medium": "布面油画",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-bolt",
+      "title": "门闩",
+      "originalTitle": "Le Verrou",
+      "dateLabel": "约1777—1778年",
+      "inventoryNumber": "RF 1974-2",
+      "medium": "布面油画",
+      "description": "抬向门闩的手臂与红色帷幕构成强烈斜线，把室内人物的动作推向戏剧性的瞬间。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Honore_Fragonard_The_Bolt.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-stolen-kiss",
+      "title": "偷吻",
+      "originalTitle": "Le Baiser volé",
+      "dateLabel": "约1787—1789年",
+      "inventoryNumber": "ГЭ-1300",
+      "medium": "布面油画",
+      "description": "门边的一吻与隔壁仍在进行的社交活动并置，衣裙的光泽和回望的姿态强化了短暂的情节。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.hermitagemuseum.org/digital-collection/37606?lng=en",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-coresus-callirhoe",
+      "title": "科瑞苏斯为救卡莉罗厄而献身",
+      "originalTitle": "Le Grand Prêtre Corésus se sacrifie pour sauver Callirhoé",
+      "dateLabel": "1765年",
+      "inventoryNumber": "INV 4541",
+      "medium": "布面油画",
+      "description": "祭坛前的牺牲、昏倒的女子和惊惧的围观者组成宏大的历史画场面。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard,_il_gran_sacerdote_coreso_si_sacrifica_per_salvare_calliro%C3%A8,_salon_del_1765.JPG",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-education-virgin",
+      "title": "圣母的教育",
+      "originalTitle": "The Education of the Virgin",
+      "dateLabel": "约1773年",
+      "medium": "布面油画",
+      "description": "安娜指导年幼的玛利亚读书，温柔的家庭动作承载了宗教题材。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.famsf.org/artworks/the-education-of-the-virgin",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-inspiration",
+      "title": "灵感",
+      "originalTitle": "L’Inspiration",
+      "dateLabel": "1769年",
+      "inventoryNumber": "MI 1060",
+      "medium": "布面油画",
+      "description": "人物停下书写并抬头凝望，松动的笔触把思考表现为突然到来的精神活动。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_Inspiration.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-saint-non",
+      "title": "身着西班牙服装的圣农修道院长",
+      "originalTitle": "Jean-Claude Richard, Abbot of Saint-Non, Dressed à l’Espagnole",
+      "dateLabel": "约1769年",
+      "inventoryNumber": "065010-000",
+      "medium": "布面油画",
+      "description": "鲜明衣饰与迅疾的笔触赋予圣农修道院长的肖像一种舞台装扮般的活力。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.museunacional.cat/en/colleccio/jean-claude-richard-abbot-saint-non-dressed-lespagnole/jean-honore-fragonard/065010-000",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-meunier",
+      "title": "默尼耶先生肖像（旧称狄德罗肖像）",
+      "originalTitle": "Portrait de Monsieur Meunier",
+      "dateLabel": "约1769年",
+      "inventoryNumber": "RF 1972-14",
+      "medium": "布面油画",
+      "description": "人物转头离开书本，衣褶与面部以轻快笔触塑造；卢浮宫现行题名为默尼耶先生肖像。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010064338",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-woman-dog",
+      "title": "抱犬的女子（库尔松夫人肖像）",
+      "originalTitle": "Marie Emilie Coignet de Courson, a Woman with a Dog",
+      "dateLabel": "约1769年",
+      "inventoryNumber": "37.118",
+      "medium": "布面油画",
+      "description": "女子怀抱小犬，明亮衣领与蓬松毛发映衬出肖像轻松亲近的气氛。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436323",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-man-costume",
+      "title": "身着戏装的男子肖像",
+      "originalTitle": "Portrait of a Man in Costume",
+      "dateLabel": "约1767—1768年",
+      "inventoryNumber": "1977.123",
+      "medium": "布面油画",
+      "description": "历史式服装、鲜明的面部与转身姿态，使肖像兼有角色扮演与人物研究的意味。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.artic.edu/artworks/93900/portrait-of-a-man-in-costume",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-music-lesson",
+      "title": "音乐课",
+      "originalTitle": "La Leçon de musique",
+      "dateLabel": "约1765—1770年",
+      "inventoryNumber": "INV 4543",
+      "medium": "布面油画",
+      "description": "年轻人的身体与目光在乐器旁聚拢，音乐教学成为描绘亲密交流的场景。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010062959",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-love-pursuit",
+      "title": "爱情的进程：追求",
+      "originalTitle": "The Progress of Love: The Pursuit",
+      "dateLabel": "1771—1772年",
+      "inventoryNumber": "1915.1.45",
+      "medium": "布面油画",
+      "description": "青年递花追求女子，奔跑与回望的动作在浓密花园中展开。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://collections.frick.org/objects/175",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-love-meeting",
+      "title": "爱情的进程：幽会",
+      "originalTitle": "The Progress of Love: The Meeting",
+      "dateLabel": "1771—1772年",
+      "inventoryNumber": "1915.1.46",
+      "medium": "布面油画",
+      "description": "青年越过花园围墙与女子相会，树木和雕像围拢出私密的舞台。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://collections.frick.org/objects/174",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-love-crowned",
+      "title": "爱情的进程：为恋人加冠",
+      "originalTitle": "The Progress of Love: The Lover Crowned",
+      "dateLabel": "1771—1772年",
+      "inventoryNumber": "1915.1.48",
+      "medium": "布面油画",
+      "description": "女子为恋人戴上花冠，花园中的画家记录这场爱情仪式。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://collections.frick.org/objects/173",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-love-letters",
+      "title": "爱情的进程：情书",
+      "originalTitle": "The Progress of Love: Love Letters",
+      "dateLabel": "1771—1772年",
+      "inventoryNumber": "1915.1.47",
+      "medium": "布面油画",
+      "description": "恋人并坐阅读书信，柔和的姿态让追逐与幽会之后的情感趋于安静。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://collections.frick.org/objects/166",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-musical-contest",
+      "title": "音乐竞赛",
+      "originalTitle": "The Musical Contest",
+      "dateLabel": "约1754—1755年",
+      "medium": "布面油画",
+      "description": "田园人物围绕音乐聚集，服饰、花木和身体的斜线营造轻盈活泼的节奏。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard_musical.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-seesaw",
+      "title": "跷跷板",
+      "originalTitle": "The See-Saw",
+      "dateLabel": "约1750—1752年",
+      "inventoryNumber": "148 (1956.13)",
+      "medium": "布面油画",
+      "description": "跷跷板上的青年男女将游戏变成调情；此为马德里提森博物馆收藏的版本。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.museothyssen.org/en/collection/artists/fragonard-jean-honore/see-saw",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-blindmans-buff-toledo",
+      "title": "捉迷藏（托莱多版）",
+      "originalTitle": "Blindman’s Buff",
+      "dateLabel": "约1750—1752年",
+      "inventoryNumber": "1954.43",
+      "medium": "布面油画",
+      "description": "蒙眼游戏、伸出的双手和相互呼应的目光形成田园爱情场景，与《跷跷板》原为配对作品。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://emuseum.toledomuseum.org/objects/55186",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-horse-rider",
+      "title": "骑马游戏",
+      "originalTitle": "A Game of Horse and Rider",
+      "dateLabel": "约1775—1780年",
+      "inventoryNumber": "1946.7.5",
+      "medium": "布面油画",
+      "description": "花园里的群体游戏被宏大的树木和天空包围，人物的欢闹融入景观。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.nga.gov/artworks/32683-game-horse-and-rider",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-hot-cockles",
+      "title": "猜手游戏",
+      "originalTitle": "A Game of Hot Cockles",
+      "dateLabel": "约1775—1780年",
+      "inventoryNumber": "1946.7.6",
+      "medium": "布面油画",
+      "description": "一群人在树荫下玩猜手游戏，弯曲的枝叶与人物动作共同组织画面的节奏。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.nga.gov/artworks/32684-game-hot-cockles",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-swing-nga",
+      "title": "秋千（华盛顿版）",
+      "originalTitle": "The Swing",
+      "dateLabel": "约1775—1780年",
+      "inventoryNumber": "1961.9.17",
+      "medium": "布面油画",
+      "description": "高大的园林环境包围秋千上的人物；此画与华莱士收藏馆著名的粉裙《秋千》是两件作品。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.nga.gov/artworks/46116-swing",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-visit-nursery",
+      "title": "探访育婴室",
+      "originalTitle": "A Visit to the Nursery",
+      "dateLabel": "约1775年",
+      "inventoryNumber": "1946.7.7",
+      "medium": "布面油画",
+      "description": "家庭成员围绕婴儿聚集，明暗和聚拢的姿态使日常探访带有温情。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.nga.gov/artworks/32685-visit-nursery",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-fete-saint-cloud",
+      "title": "圣克卢的节庆",
+      "originalTitle": "La Fête à Saint-Cloud",
+      "dateLabel": "约1775—1780年",
+      "medium": "布面油画",
+      "description": "大片树冠与开阔天空下散布着节庆人群，园林成为兼容表演、游乐和交往的空间。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://www.chateauversailles.fr/sites/default/files/dp-jardins-des-lumieres-bd_4.pdf",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "fragonard-isle-love",
+      "title": "爱之岛",
+      "originalTitle": "The Isle of Love",
+      "dateLabel": "约1770年",
+      "inventoryNumber": "436",
+      "medium": "布面油画",
+      "description": "人物与繁密树木、建筑和水面融为一体，构成充满幻想的爱情花园。",
+      "artistIds": [
+        "fragonard"
+      ],
+      "sourceUrl": "https://gulbenkian.pt/museu/en/works/the-isle-of-love/",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-pilgrimage-cythera",
+      "title": "朝圣西苔岛（卢浮宫版）",
+      "originalTitle": "Pèlerinage à l’île de Cythère",
+      "dateLabel": "1717年",
+      "inventoryNumber": "INV 8525",
+      "medium": "布面油画",
+      "description": "恋人从维纳斯雕像旁向岸边移动，连续的姿态把风景与爱情的时间感联系起来。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27Embarquement_pour_Cyth%C3%A8re,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-embarkation-cythera",
+      "title": "舟发西苔岛（柏林版）",
+      "originalTitle": "L’Embarquement pour Cythère",
+      "dateLabel": "约1718—1719年",
+      "inventoryNumber": "GK 1198",
+      "medium": "布面油画",
+      "description": "华托再次描绘西苔岛的恋人与船只，以更多人物和装饰细节展开这一主题。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Embarkation_for_Cythera.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-pierrot",
+      "title": "皮埃罗（旧称吉尔）",
+      "originalTitle": "Pierrot, anciennement dit Gilles",
+      "dateLabel": "约1718—1719年",
+      "inventoryNumber": "MI 1121",
+      "medium": "布面油画",
+      "description": "白衣演员正面站立，与身后较低处的同伴形成距离；喜剧角色因此呈现出难以确定的情绪。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010059617",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-gersaint",
+      "title": "热尔桑画店的招牌",
+      "originalTitle": "L’Enseigne de Gersaint",
+      "dateLabel": "1720年",
+      "inventoryNumber": "GK 1200",
+      "medium": "布面油画",
+      "description": "顾客、店员和装框画作构成画商店铺的横向场景；现存左右两部分作为同一作品收录。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_047.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-mezzetin",
+      "title": "梅泽坦",
+      "originalTitle": "Mezzetin",
+      "dateLabel": "约1718—1720年",
+      "inventoryNumber": "34.138",
+      "medium": "布面油画",
+      "description": "条纹戏服的乐师仰头弹唱，身后的雕像与园景衬托出独处的情绪。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437926",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-italian-comedians",
+      "title": "意大利喜剧演员",
+      "originalTitle": "The Italian Comedians",
+      "dateLabel": "可能作于1720年",
+      "inventoryNumber": "1946.7.9",
+      "medium": "布面油画",
+      "description": "演员们面对观众排列，白衣皮埃罗成为群像的视觉中心，舞台角色与现实人物相互交叠。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://www.nga.gov/artworks/32687-italian-comedians",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-french-comedians",
+      "title": "法国喜剧演员",
+      "originalTitle": "The French Comedians",
+      "dateLabel": "约1720年",
+      "inventoryNumber": "49.7.54",
+      "medium": "布面油画",
+      "description": "身着戏服的人物在表演式空间中交流，衣料的亮色与暗背景形成鲜明层次。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437925",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-indifferent",
+      "title": "冷漠者",
+      "originalTitle": "L’Indifférent",
+      "dateLabel": "约1717年",
+      "inventoryNumber": "MI 1122",
+      "medium": "木板油画",
+      "description": "独立的小幅人物张开双臂，轻盈的站姿和衣料反光让画面仿佛停在舞步之间。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_L%27indiff%C3%A9rent.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-finette",
+      "title": "菲内特",
+      "originalTitle": "La Finette",
+      "dateLabel": "约1717年",
+      "inventoryNumber": "MI 1123",
+      "medium": "木板油画",
+      "description": "女子持弦乐器坐于风景中，紧凑的小幅构图把注意力集中在姿态与衣裙的光泽上。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_La_Finette_-_WGA25469.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-music-lesson",
+      "title": "音乐课",
+      "originalTitle": "The Music Lesson (Pour nous prouver que cette belle)",
+      "dateLabel": "约1717—1718年",
+      "inventoryNumber": "P377",
+      "medium": "木板油画",
+      "description": "站立的乐师演奏长颈弦乐器，听者的姿态和目光构成安静的户外聚会。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65311&service=ExternalInterface",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-champs-elysees",
+      "title": "香榭丽舍",
+      "originalTitle": "Les Champs-Élysées",
+      "dateLabel": "约1717—1718年",
+      "inventoryNumber": "P389",
+      "medium": "布面油画",
+      "description": "林间空地上散坐着相互交谈的人物，幽深的树荫把群像连成一片闲适的园景。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_019.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-triumph-beauties",
+      "title": "阿尔勒坎与科隆比娜",
+      "originalTitle": "Harlequin and Columbine (Voulez-vous triompher des belles?)",
+      "dateLabel": "约1714—1717年",
+      "inventoryNumber": "P387",
+      "medium": "木板油画",
+      "description": "菱格服装与黑面具标识出阿尔勒坎，戏剧人物置身林间，使舞台与田园相接。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65321&service=ExternalInterface",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-pleasures-ball",
+      "title": "舞会的乐趣",
+      "originalTitle": "Les Plaisirs du bal",
+      "dateLabel": "约1715—1717年",
+      "inventoryNumber": "DPG156",
+      "medium": "布面油画",
+      "description": "舞者、乐师和观看的人群分布在建筑与花园之间，华丽衣饰连接起舞会的节奏。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/explore/explore-the-collection/the-pleasures-of-the-ball/",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-judgment-paris",
+      "title": "帕里斯的评判",
+      "originalTitle": "Le Jugement de Pâris",
+      "dateLabel": "约1718—1721年",
+      "inventoryNumber": "MI 1126",
+      "medium": "木板油画",
+      "description": "神话中的评判场景被压缩到紧凑的小幅画面，明亮的人体与暗色背景形成对照。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_Le_jugement_de_P%C3%A2ris.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-diana-bath",
+      "title": "沐浴的狄安娜",
+      "originalTitle": "Diane au bain",
+      "dateLabel": "约1715—1716年",
+      "inventoryNumber": "RF 1977-447",
+      "medium": "布面油画",
+      "description": "狩猎女神在水边停留，弯曲的身体和轻柔衣料以亲近的尺度呈现神话题材。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Diana_at_her_Bath_-_WGA25446.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-jupiter-antiope",
+      "title": "宁芙与萨堤尔（旧称朱庇特与安提俄珀）",
+      "originalTitle": "Nymphe et satyre, dit aussi Jupiter et Antiope",
+      "dateLabel": "约1715—1716年",
+      "inventoryNumber": "MI 1129",
+      "medium": "布面油画",
+      "description": "林间沉睡的宁芙与俯身的萨堤尔形成明暗对照；旧题名将两者解释为朱庇特与安提俄珀。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010059597",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-feast-love",
+      "title": "爱情的盛宴",
+      "originalTitle": "The Feast of Love",
+      "dateLabel": "约1718—1719年",
+      "inventoryNumber": "Gal.-Nr. 782",
+      "medium": "布面油画",
+      "description": "成组恋人在树木与雕像之间交谈，彼此的靠近、回望与疏离构成细腻的情感变化。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://skd-online-collection.skd.museum/Details/Index/439094",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-fetes-venitiennes",
+      "title": "威尼斯的节庆",
+      "originalTitle": "Fêtes vénitiennes",
+      "dateLabel": "1718—1719年",
+      "inventoryNumber": "NG 439",
+      "medium": "布面油画",
+      "description": "盛装舞者在园中表演，乐师与旁观者围绕他们形成优雅而略带戏剧感的社交场景。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_F%C3%AAtes_Venitiennes_-_Google_Art_Project.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-love-french",
+      "title": "法国剧场中的爱情",
+      "originalTitle": "L’Amour au théâtre français",
+      "dateLabel": "约1716年",
+      "inventoryNumber": "468",
+      "medium": "布面油画",
+      "description": "法式服装与从容的舞蹈、交谈姿态构成户外群像，与意大利戏剧主题的配对画形成呼应。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_The_French_Comedy_-_WGA25442.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-love-italian",
+      "title": "意大利剧场中的爱情",
+      "originalTitle": "L’Amour au théâtre italien",
+      "dateLabel": "约1716—1718年",
+      "inventoryNumber": "470",
+      "medium": "布面油画",
+      "description": "意大利喜剧角色聚集在暮色中，局部光源照亮衣饰与面孔，营造亲密而神秘的气氛。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_025.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-faux-pas",
+      "title": "失足",
+      "originalTitle": "Le Faux-Pas",
+      "dateLabel": "约1716—1718年",
+      "inventoryNumber": "MI 1127",
+      "medium": "布面油画",
+      "description": "一男一女在林间相互倚近，伸出的手臂与侧转的身体使动作含义保持开放。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Faux-Pas_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1127.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-country-dance",
+      "title": "乡村舞蹈",
+      "originalTitle": "The Country Dance",
+      "dateLabel": "约1706—1710年",
+      "inventoryNumber": "74.98",
+      "medium": "布面油画",
+      "description": "舞蹈和奏乐的人物聚集在乡村环境中，展现华托早期对日常娱乐与动作的兴趣。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_The_Country_Dance_-_Google_Art_Project.jpg",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-perfect-chord",
+      "title": "完美的和声",
+      "originalTitle": "L’Accord parfait",
+      "dateLabel": "约1719年",
+      "inventoryNumber": "AC1999.18.1",
+      "medium": "木板油画",
+      "description": "长笛演奏者与身旁听众彼此呼应，音乐使人物之间的关系变得可见。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://collections.lacma.org/object/85250",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-portal-valenciennes",
+      "title": "瓦朗谢讷城门",
+      "originalTitle": "The Portal of Valenciennes",
+      "dateLabel": "约1710—1711年",
+      "inventoryNumber": "1991.1.173",
+      "medium": "木板油画",
+      "description": "士兵在城门附近停歇；与华托著名的雅宴画相比，这幅早期作品描绘了军旅生活的间歇。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://www.frick.org/exhibitions/watteau/173",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-capricious",
+      "title": "闹别扭的女子",
+      "originalTitle": "La Boudeuse",
+      "dateLabel": "约1718年",
+      "inventoryNumber": "ГЭ-4120",
+      "medium": "布面油画",
+      "description": "女子背对身旁的男子，身体的朝向与两人的距离让无言的情绪成为画面的中心。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://www.hermitagemuseum.org/digital-collection/37767?lng=en",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-love-lesson",
+      "title": "爱情课",
+      "originalTitle": "The Love Lesson",
+      "dateLabel": "1716—1717年",
+      "inventoryNumber": "NM 5015",
+      "medium": "木板油画",
+      "description": "林间人物围绕音乐与交谈相聚，乐器、视线和衣饰把爱情暗示编织进社交场面。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://collection.nationalmuseum.se/en/collection/item/22065/",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-surprise",
+      "title": "惊喜",
+      "originalTitle": "La Surprise",
+      "dateLabel": "约1718—1719年",
+      "inventoryNumber": "2017.72",
+      "medium": "木板油画",
+      "description": "一对拥吻的恋人与弹奏吉他的喜剧角色并置，亲密动作与旁观形成微妙的戏剧关系。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://www.getty.edu/cona/CONAFullSubject.aspx?subid=700009299",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-perspective",
+      "title": "透景：克罗扎园中的林间远眺",
+      "originalTitle": "La Perspective (View through the Trees in the Park of Pierre Crozat)",
+      "dateLabel": "约1715年",
+      "inventoryNumber": "23.573",
+      "medium": "布面油画",
+      "description": "树木形成通向远处建筑的视线通道，近景人物的闲坐与深远空间相互映衬。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://collections.mfa.org/objects/32097",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-scale-love",
+      "title": "爱情的音阶",
+      "originalTitle": "The Scale of Love",
+      "dateLabel": "可能作于1717—1718年",
+      "inventoryNumber": "NG2897",
+      "medium": "布面油画",
+      "description": "吉他演奏者和听者在树下相伴，音乐与相互倾听的姿态成为爱情的比喻。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/jean-antoine-watteau-the-scale-of-love",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "watteau-worried-lover",
+      "title": "忧虑的恋人",
+      "originalTitle": "L’Amante inquiète",
+      "dateLabel": "约1717—1720年",
+      "inventoryNumber": "PE 372",
+      "medium": "木板油画",
+      "description": "独坐的女子以收拢的姿态和低垂的目光呈现内心活动，朴素背景强调人物的沉思。",
+      "artistIds": [
+        "watteau"
+      ],
+      "sourceUrl": "https://chateaudechantilly.fr/categ-collection/peintures/lamante-inquiete/",
+      "note": "具体馆藏版本见来源链接；馆藏归属不代表实时展出。"
+    },
+    {
+      "id": "gossaert-danae",
+      "title": "达那厄",
+      "originalTitle": "Danaë",
+      "artistIds": [
+        "gossaert"
+      ],
+      "dateLabel": "1527年",
+      "medium": "橡木板油画",
+      "inventoryNumber": "38",
+      "description": "达那厄坐在古典建筑围合的空间里，蓝色衣袍、石柱与从上方降落的金雨形成鲜明对照。",
+      "sourceUrl": "https://www.sammlung.pinakothek.de/de/artwork/7yxYmBnxYm",
+      "note": "年代与馆藏号采用巴伐利亚国家绘画收藏馆记录。"
+    },
+    {
+      "id": "correggio-danae",
+      "title": "达那厄",
+      "originalTitle": "Danaë",
+      "artistIds": [
+        "correggio"
+      ],
+      "dateLabel": "1530—1531年",
+      "medium": "布面油画",
+      "inventoryNumber": "125",
+      "description": "达那厄与有翼少年围绕床褥展开动作，右下方两个小爱神正在试金石上检验黄金。",
+      "sourceUrl": "https://www.collezionegalleriaborghese.it/en/opere/danae",
+      "note": "年代采用博尔盖塞美术馆目录的1530—1531年。当前网页图像为公开复制品，保留实际像素尺寸，不作放大。"
+    },
+    {
+      "id": "tintoretto-danae",
+      "title": "达那厄",
+      "originalTitle": "Danaë",
+      "artistIds": [
+        "tintoretto"
+      ],
+      "dateLabel": "约1550—1560年",
+      "medium": "布面油画",
+      "inventoryNumber": "A 91",
+      "description": "达那厄斜卧在床上，身旁侍女接取金币；身体、衣褶与手势构成连贯的斜向运动。",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010058893",
+      "note": "年代采用里昂美术馆专题说明的约1550—1560年；另有资料定为约1570年。卢浮宫目录记录该画寄存里昂美术馆。"
+    },
+    {
+      "id": "goltzius-danae",
+      "title": "准备迎接朱庇特的熟睡的达那厄",
+      "originalTitle": "The Sleeping Danaë Being Prepared for Jupiter",
+      "artistIds": [
+        "goltzius"
+      ],
+      "dateLabel": "1603年",
+      "medium": "布面油画",
+      "inventoryNumber": "M.84.191",
+      "description": "熟睡的达那厄被小爱神、金币与华丽器物围绕，神话场景铺陈成繁复的室内群像。",
+      "sourceUrl": "https://collections.lacma.org/object/47496",
+      "note": "题名、年代及馆藏号采用洛杉矶郡艺术博物馆目录；不与同题版画混淆。"
+    },
+    {
+      "id": "artemisia-danae",
+      "title": "达那厄",
+      "originalTitle": "Danaë",
+      "artistIds": [
+        "artemisia-gentileschi"
+      ],
+      "dateLabel": "约1612年",
+      "medium": "铜板油画",
+      "inventoryNumber": "93:1986",
+      "description": "达那厄闭目躺卧，金币落在身体与织物之间，远处侍女伸手接取金雨。",
+      "sourceUrl": "https://www.slam.org/collection/objects/15612/",
+      "note": "采用圣路易斯艺术博物馆现行归属：阿尔特米西娅·真蒂莱斯基。此作过去曾归于其父奥拉齐奥；它是铜板油画，与盖蒂所藏父亲的布面作品不同。"
+    },
+    {
+      "id": "orazio-danae-getty",
+      "title": "达那厄与金雨",
+      "originalTitle": "Danaë and the Shower of Gold",
+      "artistIds": [
+        "orazio-gentileschi"
+      ],
+      "dateLabel": "1621—1623年",
+      "medium": "布面油画",
+      "inventoryNumber": "2016.6",
+      "description": "达那厄伸手迎向金雨，黄色床罩、白色床单与深红床垫共同衬出人物和丘比特。",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103QTA",
+      "note": "此处收录盖蒂博物馆2016.6号藏品，年代采用现行馆藏目录的1621—1623年；不与克利夫兰版本合并。"
+    },
+    {
+      "id": "klimt-danae",
+      "title": "达那厄",
+      "originalTitle": "Danaë",
+      "artistIds": [
+        "klimt"
+      ],
+      "dateLabel": "1907—1908年",
+      "medium": "布面油画",
+      "description": "蜷曲的身体、红发和紫色纹饰围成紧凑的画面，金雨成为醒目的装饰性色带。",
+      "sourceUrl": "https://ao.albertina.at/groups/-danae-",
+      "note": "私人收藏；未核实当前可公开参观的收藏地点，不在地图上标点。阿尔贝蒂娜的作品研究用于核对年代与草图关系，并不表示该油画由阿尔贝蒂娜收藏。"
+    },
+    {
+      "id": "schiele-danae",
+      "title": "达那厄",
+      "originalTitle": "Danaë",
+      "artistIds": [
+        "schiele"
+      ],
+      "dateLabel": "1909年",
+      "medium": "布面油彩与金属颜料",
+      "catalogNumber": "Kallir P148",
+      "description": "卧姿女性横贯装饰性背景，弯曲的身体与金色纹样形成对照；这件早期作品通常以《达那厄》为题编目。",
+      "sourceUrl": "https://www.sothebys.com/en/buy/auction/2026/masterpieces-from-the-lewis-collection-l26900/danae",
+      "note": "私人收藏，当前收藏地点未公开核实。2026年苏富比拍卖目录曾记录此作；拍卖地点和往年借展机构不视作当前馆藏位置。当前图像像素有限，不放大源图。"
     }
   ],
   "venues": [
@@ -2494,6 +3759,57 @@
       "sourceUrl": "https://www.kunsthaus.ch/en/",
       "coordinateSourceUrl": "https://en.wikipedia.org/wiki/Kunsthaus_Z%C3%BCrich",
       "coordinateNote": "机构参考位置，不代表具体展厅或实时展出。"
+    },
+    {
+      "id": "charlottenburg",
+      "name": "夏洛滕堡宫",
+      "city": "柏林",
+      "country": "德国",
+      "coordinates": [
+        13.295833,
+        52.521111
+      ],
+      "sourceUrl": "https://www.spsg.de/en/palaces-gardens/object/charlottenburg-palace-old-palace",
+      "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q154996",
+      "coordinateNote": "收藏机构参考位置，不代表实时展出或对公众开放；来源：https://www.wikidata.org/wiki/Q154996"
+    },
+    {
+      "id": "gulbenkian",
+      "name": "卡洛斯特·古尔本基安博物馆",
+      "city": "里斯本",
+      "country": "葡萄牙",
+      "coordinates": [
+        -9.1541666666667,
+        38.736666666667
+      ],
+      "sourceUrl": "https://gulbenkian.pt/museu/en/",
+      "coordinateSourceUrl": "https://www.wikidata.org/wiki/Q211262",
+      "coordinateNote": "收藏机构参考位置，不代表实时展出或对公众开放；来源：https://www.wikidata.org/wiki/Q211262"
+    },
+    {
+      "id": "banque-france-toulouse",
+      "name": "法兰西银行（图卢兹府邸收藏）",
+      "city": "巴黎",
+      "country": "法国",
+      "coordinates": [
+        2.3401333333333,
+        48.8653333333333
+      ],
+      "sourceUrl": "https://www.banque-france.fr/",
+      "coordinateSourceUrl": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Toulouse",
+      "coordinateNote": "收藏机构参考位置，不代表实时展出或对公众开放；来源：https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Toulouse"
+    },
+    {
+      "id": "galleria-borghese",
+      "name": "博尔盖塞美术馆",
+      "city": "罗马",
+      "country": "意大利",
+      "coordinates": [
+        12.492144,
+        41.91421
+      ],
+      "sourceUrl": "https://www.collezionegalleriaborghese.it/en/opere/danae",
+      "coordinateNote": "机构参考位置，坐标核对Wikidata Q841506；不代表实时展出或具体展厅。"
     }
   ],
   "holdings": [
@@ -3518,6 +4834,587 @@
       "note": "馆藏归属已核对，不代表实时展出。",
       "verifiedAt": "2026-11-22",
       "sourceUrl": "https://www.getty.edu/art/collection/object/103QRW"
+    },
+    {
+      "artworkId": "boucher-pompadour-munich",
+      "venueId": "munich",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.sammlung.pinakothek.de/de/artwork/Dj4mX97G5A/francois-boucher/madame-de-pompadour"
+    },
+    {
+      "artworkId": "boucher-pompadour-wallace",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/madame-de-pompadours-portrait/"
+    },
+    {
+      "artworkId": "boucher-breakfast",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010059924"
+    },
+    {
+      "artworkId": "boucher-rinaldo-armida",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066934"
+    },
+    {
+      "artworkId": "boucher-europa",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010066442"
+    },
+    {
+      "artworkId": "boucher-hercules-omphale",
+      "venueId": "masters-q4872",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collection.pushkinmuseum.art/entity/OBJECT/77638"
+    },
+    {
+      "artworkId": "boucher-rising-sun",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65419&service=ExternalInterface&viewType=detailView"
+    },
+    {
+      "artworkId": "boucher-apollo-shepherdess",
+      "venueId": "masters-q2404549",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://musees.tours.fr/collections/apollon-revelant-sa-divinite-a-la-bergere-isse/"
+    },
+    {
+      "artworkId": "boucher-venus-vulcan-wallace",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-myths/the-venus-series/"
+    },
+    {
+      "artworkId": "boucher-mercury-bacchus",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-myths/mercury-confiding-the-infant-bacchus-to-the-nymphs/"
+    },
+    {
+      "artworkId": "boucher-pastoral-autumn",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-pastoral/pastoral-with-a-couple-near-a-fountain-and-pastoral-with-a-bagpipe-player/"
+    },
+    {
+      "artworkId": "boucher-shepherds-reposing",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-pastoral/shepherd-and-shepherdess-reposing/"
+    },
+    {
+      "artworkId": "boucher-jupiter-callisto-met",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435747"
+    },
+    {
+      "artworkId": "boucher-angelica-medoro",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435742"
+    },
+    {
+      "artworkId": "boucher-interrupted-sleep",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435738"
+    },
+    {
+      "artworkId": "boucher-shepherds-idyll",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435745"
+    },
+    {
+      "artworkId": "boucher-washerwomen",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/435746"
+    },
+    {
+      "artworkId": "boucher-bath-venus",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/12200-bath-venus"
+    },
+    {
+      "artworkId": "boucher-allegory-music",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/32680-allegory-music"
+    },
+    {
+      "artworkId": "boucher-allegory-painting",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/32679-allegory-painting"
+    },
+    {
+      "artworkId": "boucher-pan-syrinx",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/francois-boucher-pan-and-syrinx"
+    },
+    {
+      "artworkId": "boucher-watermill",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/francois-boucher-landscape-with-a-watermill"
+    },
+    {
+      "artworkId": "boucher-toilette-thyssen",
+      "venueId": "masters-q176251",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.museothyssen.org/en/collection/artists/boucher-francois/toilette"
+    },
+    {
+      "artworkId": "boucher-venus-mercury-cupid",
+      "venueId": "masters-q1641836",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.lacma.org/object/12883"
+    },
+    {
+      "artworkId": "fragonard-bolt",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Honore_Fragonard_The_Bolt.jpg"
+    },
+    {
+      "artworkId": "fragonard-stolen-kiss",
+      "venueId": "hermitage",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.hermitagemuseum.org/digital-collection/37606?lng=en"
+    },
+    {
+      "artworkId": "fragonard-coresus-callirhoe",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard,_il_gran_sacerdote_coreso_si_sacrifica_per_salvare_calliro%C3%A8,_salon_del_1765.JPG"
+    },
+    {
+      "artworkId": "fragonard-education-virgin",
+      "venueId": "oss-venue-q2468251",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.famsf.org/artworks/the-education-of-the-virgin"
+    },
+    {
+      "artworkId": "fragonard-inspiration",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_Inspiration.jpg"
+    },
+    {
+      "artworkId": "fragonard-saint-non",
+      "venueId": "masters-q861252",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.museunacional.cat/en/colleccio/jean-claude-richard-abbot-saint-non-dressed-lespagnole/jean-honore-fragonard/065010-000"
+    },
+    {
+      "artworkId": "fragonard-meunier",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010064338"
+    },
+    {
+      "artworkId": "fragonard-woman-dog",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/436323"
+    },
+    {
+      "artworkId": "fragonard-man-costume",
+      "venueId": "artic",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.artic.edu/artworks/93900/portrait-of-a-man-in-costume"
+    },
+    {
+      "artworkId": "fragonard-music-lesson",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010062959"
+    },
+    {
+      "artworkId": "fragonard-love-pursuit",
+      "venueId": "masters-q682827",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.frick.org/objects/175"
+    },
+    {
+      "artworkId": "fragonard-love-meeting",
+      "venueId": "masters-q682827",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.frick.org/objects/174"
+    },
+    {
+      "artworkId": "fragonard-love-crowned",
+      "venueId": "masters-q682827",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.frick.org/objects/173"
+    },
+    {
+      "artworkId": "fragonard-love-letters",
+      "venueId": "masters-q682827",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.frick.org/objects/166"
+    },
+    {
+      "artworkId": "fragonard-musical-contest",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard_musical.jpg"
+    },
+    {
+      "artworkId": "fragonard-seesaw",
+      "venueId": "masters-q176251",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.museothyssen.org/en/collection/artists/fragonard-jean-honore/see-saw"
+    },
+    {
+      "artworkId": "fragonard-blindmans-buff-toledo",
+      "venueId": "masters-q1743116",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://emuseum.toledomuseum.org/objects/55186"
+    },
+    {
+      "artworkId": "fragonard-horse-rider",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/32683-game-horse-and-rider"
+    },
+    {
+      "artworkId": "fragonard-hot-cockles",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/32684-game-hot-cockles"
+    },
+    {
+      "artworkId": "fragonard-swing-nga",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/46116-swing"
+    },
+    {
+      "artworkId": "fragonard-visit-nursery",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/32685-visit-nursery"
+    },
+    {
+      "artworkId": "fragonard-fete-saint-cloud",
+      "venueId": "banque-france-toulouse",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.chateauversailles.fr/sites/default/files/dp-jardins-des-lumieres-bd_4.pdf"
+    },
+    {
+      "artworkId": "fragonard-isle-love",
+      "venueId": "gulbenkian",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://gulbenkian.pt/museu/en/works/the-isle-of-love/"
+    },
+    {
+      "artworkId": "watteau-pilgrimage-cythera",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27Embarquement_pour_Cyth%C3%A8re,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg"
+    },
+    {
+      "artworkId": "watteau-embarkation-cythera",
+      "venueId": "charlottenburg",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Embarkation_for_Cythera.jpg"
+    },
+    {
+      "artworkId": "watteau-pierrot",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010059617"
+    },
+    {
+      "artworkId": "watteau-gersaint",
+      "venueId": "charlottenburg",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_047.jpg"
+    },
+    {
+      "artworkId": "watteau-mezzetin",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437926"
+    },
+    {
+      "artworkId": "watteau-italian-comedians",
+      "venueId": "washington",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nga.gov/artworks/32687-italian-comedians"
+    },
+    {
+      "artworkId": "watteau-french-comedians",
+      "venueId": "met",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/437925"
+    },
+    {
+      "artworkId": "watteau-indifferent",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_L%27indiff%C3%A9rent.jpg"
+    },
+    {
+      "artworkId": "watteau-finette",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_La_Finette_-_WGA25469.jpg"
+    },
+    {
+      "artworkId": "watteau-music-lesson",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65311&service=ExternalInterface"
+    },
+    {
+      "artworkId": "watteau-champs-elysees",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_019.jpg"
+    },
+    {
+      "artworkId": "watteau-triumph-beauties",
+      "venueId": "wallace",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65321&service=ExternalInterface"
+    },
+    {
+      "artworkId": "watteau-pleasures-ball",
+      "venueId": "masters-q1241163",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.dulwichpicturegallery.org.uk/explore/explore-the-collection/the-pleasures-of-the-ball/"
+    },
+    {
+      "artworkId": "watteau-judgment-paris",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_Le_jugement_de_P%C3%A2ris.jpg"
+    },
+    {
+      "artworkId": "watteau-diana-bath",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Diana_at_her_Bath_-_WGA25446.jpg"
+    },
+    {
+      "artworkId": "watteau-jupiter-antiope",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010059597"
+    },
+    {
+      "artworkId": "watteau-feast-love",
+      "venueId": "dresden",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://skd-online-collection.skd.museum/Details/Index/439094"
+    },
+    {
+      "artworkId": "watteau-fetes-venitiennes",
+      "venueId": "masters-q942713",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_F%C3%AAtes_Venitiennes_-_Google_Art_Project.jpg"
+    },
+    {
+      "artworkId": "watteau-love-french",
+      "venueId": "masters-q165631",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_The_French_Comedy_-_WGA25442.jpg"
+    },
+    {
+      "artworkId": "watteau-love-italian",
+      "venueId": "masters-q165631",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_025.jpg"
+    },
+    {
+      "artworkId": "watteau-faux-pas",
+      "venueId": "louvre",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Faux-Pas_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1127.jpg"
+    },
+    {
+      "artworkId": "watteau-country-dance",
+      "venueId": "masters-q1117704",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_The_Country_Dance_-_Google_Art_Project.jpg"
+    },
+    {
+      "artworkId": "watteau-perfect-chord",
+      "venueId": "masters-q1641836",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.lacma.org/object/85250"
+    },
+    {
+      "artworkId": "watteau-portal-valenciennes",
+      "venueId": "masters-q682827",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.frick.org/exhibitions/watteau/173"
+    },
+    {
+      "artworkId": "watteau-capricious",
+      "venueId": "hermitage",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.hermitagemuseum.org/digital-collection/37767?lng=en"
+    },
+    {
+      "artworkId": "watteau-love-lesson",
+      "venueId": "masters-q842858",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collection.nationalmuseum.se/en/collection/item/22065/"
+    },
+    {
+      "artworkId": "watteau-surprise",
+      "venueId": "masters-q731126",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.getty.edu/cona/CONAFullSubject.aspx?subid=700009299"
+    },
+    {
+      "artworkId": "watteau-perspective",
+      "venueId": "mfa-boston",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.mfa.org/objects/32097"
+    },
+    {
+      "artworkId": "watteau-scale-love",
+      "venueId": "london",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.nationalgallery.org.uk/paintings/jean-antoine-watteau-the-scale-of-love"
+    },
+    {
+      "artworkId": "watteau-worried-lover",
+      "venueId": "oss-venue-q1236032",
+      "note": "馆藏归属已核对，不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://chateaudechantilly.fr/categ-collection/peintures/lamante-inquiete/"
+    },
+    {
+      "artworkId": "gossaert-danae",
+      "venueId": "munich",
+      "note": "具体馆藏版本已核对；收藏关系不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.sammlung.pinakothek.de/de/artwork/7yxYmBnxYm"
+    },
+    {
+      "artworkId": "correggio-danae",
+      "venueId": "galleria-borghese",
+      "note": "具体馆藏版本已核对；收藏关系不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.collezionegalleriaborghese.it/en/opere/danae"
+    },
+    {
+      "artworkId": "tintoretto-danae",
+      "venueId": "masters-q511",
+      "note": "具体馆藏版本已核对；收藏关系不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.louvre.fr/ark:/53355/cl010058893"
+    },
+    {
+      "artworkId": "goltzius-danae",
+      "venueId": "masters-q1641836",
+      "note": "具体馆藏版本已核对；收藏关系不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://collections.lacma.org/object/47496"
+    },
+    {
+      "artworkId": "artemisia-danae",
+      "venueId": "masters-q1760539",
+      "note": "具体馆藏版本已核对；收藏关系不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.slam.org/collection/objects/15612/"
+    },
+    {
+      "artworkId": "orazio-danae-getty",
+      "venueId": "masters-q731126",
+      "note": "具体馆藏版本已核对；收藏关系不代表实时展出。",
+      "verifiedAt": "2026-11-22",
+      "sourceUrl": "https://www.getty.edu/art/collection/object/103QTA"
     }
   ],
   "topics": [

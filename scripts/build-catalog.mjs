@@ -12,6 +12,8 @@ const masters = await read("content/masters-catalog.json");
 const mastersMedia = await read("content/masters-media-manifest.json");
 const ossImport = await read("content/oss-import-catalog.json");
 const ossImportMedia = await read("content/oss-import-media-manifest.json");
+const publishedMunch = await read("content/published-munch-catalog.json");
+const publishedMunchMedia = await read("content/published-munch-media-manifest.json");
 const wuDaozi = await read("content/wu-daozi-catalog.json");
 const wuDaoziMedia = await read("content/wu-daozi-media-manifest.json");
 const tangExpansion = await read("content/tang-expansion-catalog.json");
@@ -87,6 +89,7 @@ const artworks = [
   ...foreign.artworks,
   ...masters.artworks,
   ...ossImport.artworks,
+  ...publishedMunch.artworks,
 ];
 const venues = [
   ...wuDaozi.venues,
@@ -104,6 +107,7 @@ const venues = [
   ...foreign.venues,
   ...masters.venues,
   ...ossImport.venues,
+  ...publishedMunch.venues,
 ];
 const holdings = [
   ...wuDaozi.holdings,
@@ -129,6 +133,7 @@ const holdings = [
   ...foreign.holdings,
   ...masters.holdings,
   ...ossImport.holdings,
+  ...publishedMunch.holdings,
 ];
 const topics = [
   {
@@ -184,6 +189,7 @@ for (const work of legacy.works) {
   assert.equal(image.delivery.bytes, info.bytes);
   images.push(image);
 }
+images.push(...publishedMunchMedia.images);
 const data = {
   version: 1,
   updatedAt: [
@@ -193,6 +199,7 @@ const data = {
     masters.updatedAt,
     ossImport.updatedAt,
     curated.updatedAt,
+    publishedMunch.updatedAt,
   ]
     .sort()
     .at(-1),

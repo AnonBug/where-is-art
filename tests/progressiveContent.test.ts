@@ -19,7 +19,8 @@ describe("progressive delivery", () => {
   it("keeps the initial payload small without guides or full-image metadata", () => {
     // Removing unsupported prose shrinks the full catalogue, not the index.
     // Keep an absolute first-load budget independent of editorial verbosity.
-    expect(indexBytes.length).toBeLessThan(2_100_000);
+    // Includes the 1,088 already published Munch records restored to local sources.
+    expect(indexBytes.length).toBeLessThan(2_500_000);
     expect(gzipSync(indexBytes).length).toBeLessThan(350_000);
     expect(index.artworks).toHaveLength(full.artworks.length);
     expect(indexBytes.toString()).not.toContain('"guide":');

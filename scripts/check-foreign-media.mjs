@@ -13,14 +13,19 @@ const catalog = await read("content/foreign-catalog.json");
 const { sources } = await read("content/foreign-sources.json");
 const { images } = await read("content/foreign-media-manifest.json");
 const publicCatalog = await read("public/catalog.json");
+const onlyArg = process.argv.find((arg) => arg.startsWith("--only="));
+const only = onlyArg ? new Set(onlyArg.slice(7).split(",")) : null;
 const ids = catalog.artworks.map((work) => work.id).sort();
+if (only)
+  for (const id of only) assert.ok(ids.includes(id), `Unknown artwork: ${id}`);
 assert.deepEqual(sources.map((s) => s.artworkId).sort(), ids);
 assert.deepEqual(images.map((s) => s.artworkId).sort(), ids);
-assert.deepEqual(
-  (await fs.readdir(path.join(root, "public/media/foreign"))).sort(),
-  ids,
-  "Remove derivatives for works no longer in the corpus",
-);
+if (!only)
+  assert.deepEqual(
+    (await fs.readdir(path.join(root, "public/media/foreign"))).sort(),
+    ids,
+    "Remove derivatives for works no longer in the corpus",
+  );
 assert.ok(!JSON.stringify([catalog, sources, images]).includes("/Users/"));
 let totalBytes = 0;
 let largestImageBytes = 0;
@@ -28,6 +33,7 @@ sharp.concurrency(1);
 sharp.cache({ memory: 16, items: 4, files: 4 });
 
 for (const image of images) {
+  if (only && !only.has(image.artworkId)) continue;
   assert.deepEqual(
     (
       await fs.readdir(path.join(root, "public/media/foreign", image.artworkId))
@@ -44,7 +50,7 @@ for (const image of images) {
   }
   assert.match(
     image.licenseUrl,
-    /^https:\/\/creativecommons\.org\/publicdomain\//,
+    /^https:\/\/creativecommons\.org\/(publicdomain\/|licenses\/by\/3\.0\/)/,
   );
   assert.equal(image.delivery.kind, "image");
   assert.ok(Math.max(image.width, image.height) <= 3840);
@@ -58,12 +64,31 @@ for (const image of images) {
     `Run content:build after changing ${image.id}`,
   );
   if (source.provider === "commons") {
-    assert.equal(source.rightsEvidence.license, "Public domain");
-    assert.equal(source.rightsEvidence.copyrighted, "False");
+    const cc0 = source.rightsEvidence.license === "CC0";
+    const ccBy = source.rightsEvidence.license === "CC BY 3.0";
+    if (cc0) {
+      assert.ok(source.rightsEvidence.licenseTemplates.includes("Cc-zero") ||
+        (source.rightsEvidence.licenseTemplates.includes("NGADC") &&
+          source.rightsEvidence.licenseUrl === "https://creativecommons.org/publicdomain/zero/1.0/"));
+      assert.equal(
+        image.licenseUrl,
+        "https://creativecommons.org/publicdomain/zero/1.0/",
+      );
+    } else if (ccBy) {
+      assert.ok(source.rightsEvidence.licenseTemplates.includes("Cc-by-3.0"));
+      assert.equal(image.licenseUrl, "https://creativecommons.org/licenses/by/3.0/");
+      assert.ok(source.rightsEvidence.photographer);
+      assert.ok(image.credit.includes(source.rightsEvidence.photographer));
+      assert.ok(image.credit.includes("尺寸调整"));
+    } else {
+      assert.equal(source.rightsEvidence.license, "Public domain");
+      assert.equal(source.rightsEvidence.copyrighted, "False");
+    }
     if (source.rightsEvidence.unitedStatesCopyrightWarning) {
       assert.equal(image.publicationStatus, "review-required");
     }
     if (
+      !cc0 && !ccBy &&
       !source.rightsEvidence.licenseTemplates.some((s) => s.startsWith("PD-"))
     ) {
       // Commons extmetadata can omit templates present on the file page.
@@ -111,6 +136,7 @@ console.log(
     {
       status: "passed",
       corpus: "western",
+      checkedImages: only ? only.size : images.length,
       artists: catalog.artists.length,
       artworks: ids.length,
       images: images.length,

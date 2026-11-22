@@ -329,3 +329,12 @@ npm run preview
 工作流依据 [GitHub Pages 自定义工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) 配置。底图使用[天地图](https://www.tianditu.gov.cn/)和 [OpenFreeMap](https://openfreemap.org/)，由 [MapLibre](https://maplibre.org/) 渲染，保留相应来源署名。
 
 设计依据为交接包需求稿 V1.1、图像资源评估和 `docs/第一版技术方案.md`。浏览器尺寸测试不能替代 iPhone／Android 真机的内存、手势和旋转性能验收。
+
+
+## 达那厄专题与画家目录入口
+
+**专题可以使用没有独立目录入口的画家作品。** 仍需在 `artists` 中保存画家基本资料供作品署名、国别与时期关联使用；为该画家设置 `directoryVisible: false` 后，中国／外国画家目录不显示其入口。省略此字段或设为 `true` 时沿用原有显示方式。若某时期下没有可显示的画家，也不显示空文件夹。该开关只控制目录入口，不删除作品，也不限制专题、大图、收藏、分类总地图或已有画家链接；图库及专题仍通过稳定作品 ID 复用数据。未来要建立画家目录，只需移除开关或设为 `true`，再补选一件 `signature` 代表作，无需迁移图片或修改作品 ID。
+
+2026-11-22「达那厄」扩充为14幅、10位画家：保留提香五个版本与伦勃朗一幅，新增戈萨尔特、柯雷乔、丁托列托、霍尔齐乌斯、真蒂莱斯基父女、克里姆特和席勒各一幅。新增七位画家的资料设为 `directoryVisible: false`；克里姆特复用既有目录。导读维护于 `content/artwork-guides/danae-overrides.json`，选目与依据见 `curation.danae`。克里姆特和席勒的私人收藏作品没有未经核实的馆点。图片保留实际像素，柯雷乔与席勒当前图源为标准清晰度，不作放大。此开关涉及前端代码，首次上线须同时发布前端与内容；仅发布内容到旧前端时，旧前端仍会列出这些画家。
+
+本次发布同时将线上已有的蒙克及洛可可作品同步回编辑源文件，保留所有原有记录与图片地址；只新增达那厄专题的八件作品。

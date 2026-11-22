@@ -13,8 +13,8 @@ import {
 const data = atlasSchema.parse(catalog);
 describe("Western painting corpus", () => {
   it("makes each researched artist available in a populated period and scope", () => {
-    expect(foreign.artists).toHaveLength(34);
-    expect(foreign.artworks).toHaveLength(146);
+    expect(foreign.artists).toHaveLength(42);
+    expect(foreign.artworks).toHaveLength(231);
     for (const artist of foreign.artists) {
       expect(
         data.periods.some(
@@ -23,9 +23,13 @@ describe("Western painting corpus", () => {
       ).toBe(true);
       expect(
         scopeWorks(data, `artist:${artist.id}`).length,
-      ).toBeGreaterThanOrEqual(3);
+      ).toBeGreaterThanOrEqual(
+        "directoryVisible" in artist && artist.directoryVisible === false
+          ? 1
+          : 3,
+      );
       if (
-        !["titian", "rembrandt", ...Object.keys(ossResearch.counts)].includes(
+        !["titian", "rembrandt", "munch", "boucher", "fragonard", "watteau", ...Object.keys(ossResearch.counts)].includes(
           artist.id,
         )
       )
@@ -42,13 +46,22 @@ describe("Western painting corpus", () => {
     expect(scopeWorks(data, "artist:leonardo")).toHaveLength(21);
     expect(scopeWorks(data, "artist:monet")).toHaveLength(2024);
     expect(scopeWorks(data, "artist:van-gogh")).toHaveLength(961);
+    for (const id of ["boucher", "fragonard", "watteau"])
+      expect(scopeWorks(data, `artist:${id}`)).toHaveLength(30);
+    expect(scopeWorks(data, "artist:munch")).toHaveLength(1092);
   });
 
-  it("connects every addition to a sourced holding and a local whole image with its reviewed status", () => {
+  it("retains sourced holdings where known and a whole image for every addition", () => {
     for (const work of foreign.artworks) {
       const venue = workVenues(data, work.id);
-      expect(venue).toHaveLength(1);
-      expect(venue[0].coordinates).not.toBeNull();
+      const privateCollection = ["klimt-danae", "schiele-danae"].includes(work.id);
+      if (privateCollection) {
+        expect(venue).toEqual([]);
+        expect(work.note).toContain("私人收藏");
+      } else {
+        expect(venue).toHaveLength(1);
+        expect(venue[0].coordinates).not.toBeNull();
+      }
       const image = primaryImage(data, work.id)!;
       expect(image.delivery.url).toMatch(/^media\/foreign\//);
       const source = sources.sources.find((s) => s.artworkId === work.id)!;
@@ -58,9 +71,10 @@ describe("Western painting corpus", () => {
       expect(
         sources.sources.find((s) => s.artworkId === work.id)?.objectSourceUrl,
       ).toBe(work.sourceUrl);
-      expect(
-        foreign.holdings.find((h) => h.artworkId === work.id)?.sourceUrl,
-      ).toBe(work.sourceUrl);
+      if (!privateCollection)
+        expect(
+          foreign.holdings.find((h) => h.artworkId === work.id)?.sourceUrl,
+        ).toBe(work.sourceUrl);
     }
   });
 

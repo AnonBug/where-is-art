@@ -170,14 +170,22 @@
     {
       "id": "danae",
       "title": "达那厄",
-      "description": "同一个神话，不同的表达：并看提香的五个版本与伦勃朗笔下的达那厄。",
+      "description": "从戈萨尔特、柯雷乔到克里姆特与席勒，14幅作品对照10位画家笔下的金雨神话；保留提香五个版本。",
       "artworkIds": [
+        "gossaert-danae",
+        "correggio-danae",
         "titian-q14425558",
         "titian-q124940185",
         "titian-q3701421",
         "titian-q3701422",
         "titian-q14425553",
-        "rembrandt-rrp-149"
+        "tintoretto-danae",
+        "goltzius-danae",
+        "artemisia-danae",
+        "orazio-danae-getty",
+        "rembrandt-rrp-149",
+        "klimt-danae",
+        "schiele-danae"
       ]
     },
     {
@@ -279,11 +287,30 @@
       ]
     },
     "danae": {
-      "note": "按现有作品ID收录提香五个版本与伦勃朗一件，保留作品本身题名“达娜厄”。阿普斯利邸、普拉多、那不勒斯、维也纳、冬宫版本不合并；不添加尚未入库画家的图像，也不为未关联馆点的作品补造坐标。",
+      "note": "保留原有提香五个不同馆藏版本与伦勃朗一件，新增八位画家各一件，共14幅、10位画家；按画家与大致年代串联，提香的版本集中展示。新增七条画家资料仅用于署名与关联，directoryVisible=false；克里姆特复用原有画家。私人收藏不补造馆藏或地图位置。年代、媒材、归属分别以记录中的馆方或作品目录来源为准。",
+      "addedArtworkIds": [
+        "gossaert-danae",
+        "correggio-danae",
+        "tintoretto-danae",
+        "goltzius-danae",
+        "artemisia-danae",
+        "orazio-danae-getty",
+        "klimt-danae",
+        "schiele-danae"
+      ],
       "sources": [
         "https://www.gardnermuseum.org/danae",
         "https://www.nga.gov/sites/default/files/2025-07/titians-danae-brochure.pdf",
-        "https://hermitagemuseum.org/explore/history/Danae"
+        "https://hermitagemuseum.org/explore/history/Danae",
+        "https://www.sammlung.pinakothek.de/de/artwork/7yxYmBnxYm",
+        "https://www.collezionegalleriaborghese.it/en/opere/danae",
+        "https://collections.louvre.fr/ark:/53355/cl010058893",
+        "https://collections.lacma.org/object/47496",
+        "https://www.slam.org/collection/objects/15612/",
+        "https://www.getty.edu/art/collection/object/103QTA",
+        "https://ao.albertina.at/groups/-danae-",
+        "https://www.sothebys.com/en/buy/auction/2026/masterpieces-from-the-lewis-collection-l26900/danae",
+        "https://www.mba-lyon.fr/sites/mba/files/content/medias/documents/2019-12/fiche_focus_tintoret_bd.pdf"
       ]
     },
     "rococo-myth-and-love": {

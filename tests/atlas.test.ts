@@ -6,6 +6,8 @@ import mastersCatalog from "../content/masters-catalog.json";
 import mastersMedia from "../content/masters-media-manifest.json";
 import ossCatalog from "../content/oss-import-catalog.json";
 import ossMedia from "../content/oss-import-media-manifest.json";
+import publishedMunch from "../content/published-munch-catalog.json";
+import publishedMunchMedia from "../content/published-munch-media-manifest.json";
 import wuDaoziCatalog from "../content/wu-daozi-catalog.json";
 import tangExpansion from "../content/tang-expansion-catalog.json";
 import tangExpansionMedia from "../content/tang-expansion-media-manifest.json";
@@ -51,6 +53,7 @@ describe("atlas content contract", () => {
         foreignCatalog.artworks.length +
         mastersCatalog.artworks.length +
         ossCatalog.artworks.length +
+        publishedMunch.artworks.length +
         wuDaoziCatalog.artworks.length +
         tangExpansion.artworks.length,
     );
@@ -111,7 +114,7 @@ describe("atlas content contract", () => {
       21 +
         foreignCatalog.artworks.length +
         mastersMedia.images.length +
-        ossMedia.images.length,
+        ossMedia.images.length + publishedMunchMedia.images.length,
     );
   });
   it("does not mix topics and artist scopes", () => {

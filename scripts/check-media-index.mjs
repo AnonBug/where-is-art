@@ -22,6 +22,7 @@ const manifests = await Promise.all(
     "masters-media-manifest.json",
     "oss-import-media-manifest.json",
     "legacy-media-manifest.json",
+    "published-munch-media-manifest.json",
   ].map((name) => readJson(`content/${name}`)),
 );
 const publishedImages = manifests.flatMap((manifest, index) =>
@@ -38,6 +39,9 @@ assert.deepEqual(
 );
 
 let tiles = 0;
+// Preserve pre-existing remote Munch derivatives without rewriting immutable URLs.
+// New images still have the standard 500 KB preview limit.
+const restoredMunch = new Map(manifests.at(-1).images.map((image) => [image.id, image]));
 for (const image of catalog.images) {
   for (const resource of [image.thumbnail, image.preview, image.delivery]) {
     const file = requireFile(resource.url);
@@ -58,7 +62,8 @@ for (const image of catalog.images) {
       assert.equal(file.md5, resource.md5, `MD5 mismatch: ${resource.url}`);
   }
   assert.ok(image.thumbnail.bytes <= 100_000, image.id);
-  assert.ok(image.preview.bytes <= 500_000, image.id);
+  const restoredPreview = restoredMunch.get(image.id)?.preview;
+  assert.ok(image.preview.bytes <= Math.max(500_000, restoredPreview?.bytes ?? 0), image.id);
   const delivery = image.delivery;
   assert.equal(delivery.width, image.width);
   assert.equal(delivery.height, image.height);

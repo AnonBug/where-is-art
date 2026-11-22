@@ -18,8 +18,8 @@ const original = read("content/foreign-catalog.json");
 
 describe("user supplied six-artist OSS catalogue", () => {
   it("reconciles every source row once and retains all existing stable IDs", () => {
-    expect(data.artworks).toHaveLength(6139);
-    expect(data.images).toHaveLength(5884);
+    expect(data.artworks).toHaveLength(7312);
+    expect(data.images).toHaveLength(7057);
     expect(imported.artworks).toHaveLength(5197);
     expect(manifest.images).toHaveLength(4705);
     expect(research.records).toHaveLength(5228);

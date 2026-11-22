@@ -7155,6 +7155,4171 @@
         "longestEdgeLimit": 3840,
         "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
       }
+    },
+    {
+      "id": "boucher-pompadour-munich-whole",
+      "artworkId": "boucher-pompadour-munich",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2461,
+      "thumbnail": {
+        "url": "media/foreign/boucher-pompadour-munich/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24066,
+        "sha256": "a88fbc0357dfc86eb2508b8917bbdce5ea8dbe283ed2f10fa1c209ced6403afe"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-pompadour-munich/preview.webp",
+        "width": 999,
+        "height": 1280,
+        "bytes": 255732,
+        "sha256": "c08716303a7611c4d867d9049aa6651fbe1e2f6385676900ce8481045dfb8abc"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-pompadour-munich/detail.jpg",
+        "width": 1920,
+        "height": 2461,
+        "bytes": 1023238,
+        "sha256": "3eb99a38ddce6a7fb34837625d3418b904917c4ee4bd969eed8428ab8f90a561",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Madame_de_Pompadour.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Madame_de_Pompadour.jpg/1920px-Madame_de_Pompadour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "48e756863648cdd74e56999e206cc6d83de0a1140840e5a157e605ce69b6f657",
+      "credit": "François Boucher；Madame de Pompadour；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2461,
+        "sourceBytes": 1429768,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-pompadour-wallace-whole",
+      "artworkId": "boucher-pompadour-wallace",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1698,
+      "thumbnail": {
+        "url": "media/foreign/boucher-pompadour-wallace/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 28874,
+        "sha256": "ce3f01482b8bb93450b6c1ebd9241b503bf138e2f21e36cb0b35d5e327b4c08c"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-pompadour-wallace/preview.webp",
+        "width": 965,
+        "height": 1280,
+        "bytes": 246914,
+        "sha256": "df636d257c6bc9f84cf6cd842ab10b2fe25eb285e8f758bfc7265a1690cfd77b"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-pompadour-wallace/detail.jpg",
+        "width": 1280,
+        "height": 1698,
+        "bytes": 389495,
+        "sha256": "0a3d8675c3b32adb4bee798ea637996ee451efd0c30cd0921f49e795bd25cda2",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Madame_de_Pompadour,_1759.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Fran%C3%A7ois_Boucher_-_Madame_de_Pompadour%2C_1759.jpg/1280px-Fran%C3%A7ois_Boucher_-_Madame_de_Pompadour%2C_1759.jpg",
+      "sourceHash": "ce09ac7331e74ea9cc1702d639bd5d7ab2541a566bf4ddc5d2fc2168e6d37ca3",
+      "credit": "François Boucher；Madame de Pompadour；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1698,
+        "sourceBytes": 504410,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-breakfast-whole",
+      "artworkId": "boucher-breakfast",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1577,
+      "thumbnail": {
+        "url": "media/foreign/boucher-breakfast/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23390,
+        "sha256": "9aa986a8e4f71a502c0cb8ac62d9e3430fcfea065e90f427e358b9610ddccaac"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-breakfast/preview.webp",
+        "width": 1039,
+        "height": 1280,
+        "bytes": 214690,
+        "sha256": "b80343f494c7eeff9e2d3c7bf2f4e33799fb93cdad7653494c5469d434158086"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-breakfast/detail.jpg",
+        "width": 1280,
+        "height": 1577,
+        "bytes": 334726,
+        "sha256": "5c0425632e12b0081e4ab53331a645377f4d6f94a8cc73cc732514d01356a310",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_002.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Fran%C3%A7ois_Boucher_002.jpg/1280px-Fran%C3%A7ois_Boucher_002.jpg",
+      "sourceHash": "8f030bb6c9a9a8d30acc4f66eafe7166e14d61b091e2a3d0ef36b6dbe5e75f43",
+      "credit": "François Boucher；Le Déjeuner；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1577,
+        "sourceBytes": 428938,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-rinaldo-armida-whole",
+      "artworkId": "boucher-rinaldo-armida",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1524,
+      "thumbnail": {
+        "url": "media/foreign/boucher-rinaldo-armida/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 29636,
+        "sha256": "3f52d7eeac59aa9105f69ca215a44d83c0a112c0682a201fb59d0c87c4d8ca64"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-rinaldo-armida/preview.webp",
+        "width": 1280,
+        "height": 1016,
+        "bytes": 365990,
+        "sha256": "fc9d80ffbde994eb060c99f2e52fa71904a5de69a28c3b11963c82e5929154f2"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-rinaldo-armida/detail.jpg",
+        "width": 1920,
+        "height": 1524,
+        "bytes": 749233,
+        "sha256": "d772efd235bb16c4f611dbdf88536a512234d7703707bae90a64877faa76781a",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Rinaldo_and_Armida_-_WGA2878.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Fran%C3%A7ois_Boucher_-_Rinaldo_and_Armida_-_WGA2878.jpg/1920px-Fran%C3%A7ois_Boucher_-_Rinaldo_and_Armida_-_WGA2878.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "7bbf0e55594e4508d73cd15d6a75d85f8cd36b421666979ac166ac3bdaa2faf2",
+      "credit": "François Boucher；Renaud et Armide；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1524,
+        "sourceBytes": 1021353,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-europa-whole",
+      "artworkId": "boucher-europa",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1570,
+      "thumbnail": {
+        "url": "media/foreign/boucher-europa/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24588,
+        "sha256": "4f284aa823e93489509bcb4ac35ca6017920a3ecd13e5e47423b9e796a697325"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-europa/preview.webp",
+        "width": 1280,
+        "height": 1047,
+        "bytes": 321210,
+        "sha256": "3ff86c17f455f58d1714f37174d4de87a71e3370a5efd2121d37734bf4a0fed4"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-europa/detail.jpg",
+        "width": 1920,
+        "height": 1570,
+        "bytes": 695942,
+        "sha256": "bb49d91da0d4bb5f0b116dbd3b9fea81c6c304fb8b12c987e74030f8d92fbbc5",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_The_Rape_of_Europa,_1747.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Fran%C3%A7ois_Boucher_-_The_Rape_of_Europa%2C_1747.jpg/1920px-Fran%C3%A7ois_Boucher_-_The_Rape_of_Europa%2C_1747.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "27e0b697012839869c1c7cffbe7d45933c6196439a942872d167ce122bd52639",
+      "credit": "François Boucher；L’Enlèvement d’Europe；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1570,
+        "sourceBytes": 957168,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-hercules-omphale-whole",
+      "artworkId": "boucher-hercules-omphale",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2365,
+      "thumbnail": {
+        "url": "media/foreign/boucher-hercules-omphale/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19408,
+        "sha256": "6151b2df8ca08d57b4359a8d7da43ef2a88ce105311d6fe61c081178193244ab"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-hercules-omphale/preview.webp",
+        "width": 1039,
+        "height": 1280,
+        "bytes": 277702,
+        "sha256": "5299d53010dbbfd107ff45923d799774d1336191d5d26857da7c1b1102e006ab"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-hercules-omphale/detail.jpg",
+        "width": 1920,
+        "height": 2365,
+        "bytes": 1040705,
+        "sha256": "afa170a91a3b8dd2d1af13fc9cffc122c3be296007aec7162844373bcb8f6a29",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Hercules_and_Omphale_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Fran%C3%A7ois_Boucher_-_Hercules_and_Omphale_-_Google_Art_Project.jpg/1920px-Fran%C3%A7ois_Boucher_-_Hercules_and_Omphale_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "bda0a344504a4bd9c94651c4930b3b84f703313f5cd64506c2506078e9d3d24e",
+      "credit": "François Boucher；Hercules and Omphale；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2365,
+        "sourceBytes": 1417162,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-rising-sun-whole",
+      "artworkId": "boucher-rising-sun",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2276,
+      "thumbnail": {
+        "url": "media/foreign/boucher-rising-sun/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 25388,
+        "sha256": "349d5547c22886f0590cad1e8b24dd9a33b1ac1fcc38c0d077d591b5f307126b"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-rising-sun/preview.webp",
+        "width": 1080,
+        "height": 1280,
+        "bytes": 158040,
+        "sha256": "173a5f63d647c116e125f84fdf243d5e7ab552bbff78f591a708a83f7759e481"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-rising-sun/detail.jpg",
+        "width": 1920,
+        "height": 2276,
+        "bytes": 456439,
+        "sha256": "7bd1146dfba43fc3c0d818ba15d74f16bea1ab5be89bc20ba7a750a06978ade4",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_027.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Fran%C3%A7ois_Boucher_027.jpg/1920px-Fran%C3%A7ois_Boucher_027.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "57cf1b28f149fdc9e9b7f8189f682d2749927c794cb5f6dfe29a2acc953e4e7e",
+      "credit": "François Boucher；The Rising of the Sun；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2276,
+        "sourceBytes": 608805,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-apollo-shepherdess-whole",
+      "artworkId": "boucher-apollo-shepherdess",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1049,
+      "thumbnail": {
+        "url": "media/foreign/boucher-apollo-shepherdess/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21808,
+        "sha256": "6e12ad305d1209247c083e97279b70844d7f29d26541d84132c8bb06530facd4"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-apollo-shepherdess/preview.webp",
+        "width": 1280,
+        "height": 1049,
+        "bytes": 179562,
+        "sha256": "3eb22ea864f007b6265f225619d9173ade61655b9ec2e8f6819036ce8d6126fa"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-apollo-shepherdess/detail.jpg",
+        "width": 1280,
+        "height": 1049,
+        "bytes": 212990,
+        "sha256": "d929a7bd005032df7d65c9f1a30d49b2d372493409e076077dc2046c4bb147ca",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollon_r%C3%A9v%C3%A9lant_sa_divinit%C3%A9_%C3%A0_la_berg%C3%A8re_Iss%C3%A9,_par_Fran%C3%A7ois_Boucher.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Apollon_r%C3%A9v%C3%A9lant_sa_divinit%C3%A9_%C3%A0_la_berg%C3%A8re_Iss%C3%A9%2C_par_Fran%C3%A7ois_Boucher.jpg/1280px-Apollon_r%C3%A9v%C3%A9lant_sa_divinit%C3%A9_%C3%A0_la_berg%C3%A8re_Iss%C3%A9%2C_par_Fran%C3%A7ois_Boucher.jpg",
+      "sourceHash": "9049c1a2fe9127126844eda8c824bc7297cc2fda30e20f7823f9b86e9ba74d7b",
+      "credit": "François Boucher；Apollon révélant sa divinité à la bergère Issé；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1049,
+        "sourceBytes": 277912,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-venus-vulcan-wallace-whole",
+      "artworkId": "boucher-venus-vulcan-wallace",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1881,
+      "height": 3840,
+      "thumbnail": {
+        "url": "media/foreign/boucher-venus-vulcan-wallace/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 27026,
+        "sha256": "90c332c6c10038d2c55c1682692a938b5566300779ff3f3d315b36dfdea6fb33"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-venus-vulcan-wallace/preview.webp",
+        "width": 627,
+        "height": 1280,
+        "bytes": 133106,
+        "sha256": "cff638ef7d188e6a533693a79988f1845876044aeef5d55d5f2999d3d4b01ba8"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-venus-vulcan-wallace/detail.jpg",
+        "width": 1881,
+        "height": 3840,
+        "bytes": 654532,
+        "sha256": "3430952e8097d27543f6aeb3af587c0e0888a74882f1a1cbac775f7e45fb02b3",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boucher_Venus_and_Vulcan.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Boucher_Venus_and_Vulcan.jpg/1920px-Boucher_Venus_and_Vulcan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "e9238e27bce6f06598d10dbff668162e7783ad43327926721052b55987caffe6",
+      "credit": "François Boucher；Venus and Vulcan；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 3919,
+        "sourceBytes": 947771,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-mercury-bacchus-whole",
+      "artworkId": "boucher-mercury-bacchus",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1113,
+      "thumbnail": {
+        "url": "media/foreign/boucher-mercury-bacchus/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 26966,
+        "sha256": "eab4fff7db5a6fef9777bd4988ef87e963701e311a28cf0181415a55fe648ac8"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-mercury-bacchus/preview.webp",
+        "width": 1280,
+        "height": 1113,
+        "bytes": 300610,
+        "sha256": "e4bf09f870104d9d72c20f0ada2d81369379773604592dfc0ab2785eb5e115e0"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-mercury-bacchus/detail.jpg",
+        "width": 1280,
+        "height": 1113,
+        "bytes": 297496,
+        "sha256": "2cb718a4cc6a077e5ec4773e4fd023c5069399b28dec1e0ee4be561a3e9c99c2",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boucher_-_Mercury_confiding_the_Infant_Bacchus_to_the_Nymphs,_c._1732_-_1734.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Boucher_-_Mercury_confiding_the_Infant_Bacchus_to_the_Nymphs%2C_c._1732_-_1734.jpg/1280px-Boucher_-_Mercury_confiding_the_Infant_Bacchus_to_the_Nymphs%2C_c._1732_-_1734.jpg",
+      "sourceHash": "a7c2412717cd5b6428b8445403fd7a2633704f1368419536a47184b3bce3d846",
+      "credit": "François Boucher；Mercury Confiding the Infant Bacchus to the Nymphs；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1113,
+        "sourceBytes": 391875,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-pastoral-autumn-whole",
+      "artworkId": "boucher-pastoral-autumn",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 1283,
+      "thumbnail": {
+        "url": "media/foreign/boucher-pastoral-autumn/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23510,
+        "sha256": "d066fb1c6d90d5f4f9cde44eb5311a047460b0d2c3efc2d714956b090666c84f"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-pastoral-autumn/preview.webp",
+        "width": 958,
+        "height": 1280,
+        "bytes": 191876,
+        "sha256": "75487288b7a9f72276700dd4f4d67331d105a65ca43bcb79a5ce6bc6d28da307"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-pastoral-autumn/detail.jpg",
+        "width": 960,
+        "height": 1283,
+        "bytes": 219539,
+        "sha256": "58c63354b79ccf826fb613a0c00d71390cbee38ff46e9aec6f9d86ce6cd61468",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_An_Autumn_Pastoral_-_WGA02894.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Fran%C3%A7ois_Boucher_-_An_Autumn_Pastoral_-_WGA02894.jpg/960px-Fran%C3%A7ois_Boucher_-_An_Autumn_Pastoral_-_WGA02894.jpg",
+      "sourceHash": "8682017d3e7e1ea873d83db6ab752880ee5d0691dec4bfdcde42a53508372ffa",
+      "credit": "François Boucher；Pastoral with a Couple near a Fountain；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 960,
+        "sourceHeight": 1283,
+        "sourceBytes": 283907,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-shepherds-reposing-whole",
+      "artworkId": "boucher-shepherds-reposing",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 845,
+      "height": 1000,
+      "thumbnail": {
+        "url": "media/foreign/boucher-shepherds-reposing/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 28638,
+        "sha256": "0ba2138477a2c78fa2ba030d6a60d563bf8d1b6d4e0a05712764933b1e4390ac"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-shepherds-reposing/preview.webp",
+        "width": 845,
+        "height": 1000,
+        "bytes": 206880,
+        "sha256": "7da2128bc7089bf3ab633582f70956fdc1b8366ef6279c087fa99bf4bf4d37ea"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-shepherds-reposing/detail.jpg",
+        "width": 845,
+        "height": 1000,
+        "bytes": 176364,
+        "sha256": "d502f1ecc18a8809f77a13daa4b44ec42d55d26aa6ead38a4b7898b88b0d88be",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Shepherd_and_Shepherdess_Reposing_-_WGA02915.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Fran%C3%A7ois_Boucher_-_Shepherd_and_Shepherdess_Reposing_-_WGA02915.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "7846fea8995d00c189f29ca335d50e40c3de527525701a722370b09343b954d2",
+      "credit": "François Boucher；Shepherd and Shepherdess Reposing；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 845,
+        "sourceHeight": 1000,
+        "sourceBytes": 161226,
+        "downloadKind": "commons-original",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-jupiter-callisto-met-whole",
+      "artworkId": "boucher-jupiter-callisto-met",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2271,
+      "thumbnail": {
+        "url": "media/foreign/boucher-jupiter-callisto-met/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18368,
+        "sha256": "1909ec93a7cb9f069da0975f01eac83d0b8442c2c959a4744484084c983cfb8d"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-jupiter-callisto-met/preview.webp",
+        "width": 1082,
+        "height": 1280,
+        "bytes": 198376,
+        "sha256": "ead4389b8f799f8acee15e7b1fa059d861a5cbda23b12cbd7511664dfc964a2a"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-jupiter-callisto-met/detail.jpg",
+        "width": 1920,
+        "height": 2271,
+        "bytes": 714242,
+        "sha256": "cab6a78b7f1b92c391b5e12146da72750c50da7d3e49985eafdc696a5b196a60",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jupiter,_in_the_Guise_of_Diana,_and_Callisto_MET_DP339911.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Jupiter%2C_in_the_Guise_of_Diana%2C_and_Callisto_MET_DP339911.jpg/1920px-Jupiter%2C_in_the_Guise_of_Diana%2C_and_Callisto_MET_DP339911.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "39ba9da6e7b73d75fa5ea2d53a53f0cc9681dc48821608a6b1384f322608c0a1",
+      "credit": "François Boucher；Jupiter, in the Guise of Diana, and Callisto；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2271,
+        "sourceBytes": 971076,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-angelica-medoro-whole",
+      "artworkId": "boucher-angelica-medoro",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2279,
+      "thumbnail": {
+        "url": "media/foreign/boucher-angelica-medoro/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18228,
+        "sha256": "42196ef7cff390667142c07f515e390005752b05c5118925d8c87ea697c6fc15"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-angelica-medoro/preview.webp",
+        "width": 1078,
+        "height": 1280,
+        "bytes": 219114,
+        "sha256": "ce6a8e8125b702846cae206fd72cef620554caef41f629f89b4c107cdf10f27a"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-angelica-medoro/detail.jpg",
+        "width": 1920,
+        "height": 2279,
+        "bytes": 776674,
+        "sha256": "fee261d66c1c939b978373fc53c1d7aa8d6a835bd035b7e4f2ad0cab8cb6b2b1",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angelica_and_Medoro_MET_DP339914.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Angelica_and_Medoro_MET_DP339914.jpg/1920px-Angelica_and_Medoro_MET_DP339914.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "b1b6d922a6cc6868406e7f7c8122634c295b8604b9af5488110d7969cec23311",
+      "credit": "François Boucher；Angelica and Medoro；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2279,
+        "sourceBytes": 1065774,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-interrupted-sleep-whole",
+      "artworkId": "boucher-interrupted-sleep",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2122,
+      "thumbnail": {
+        "url": "media/foreign/boucher-interrupted-sleep/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19344,
+        "sha256": "8e34b8f453d5897edaae7b6c3a2dfc32b38fcdd51e7309f28906c1d027a20f95"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-interrupted-sleep/preview.webp",
+        "width": 1158,
+        "height": 1280,
+        "bytes": 303504,
+        "sha256": "19d6a7275dae5180df8c80b4544bd3739b4fb2873a2c8c64c4185130e9cddd5e"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-interrupted-sleep/detail.jpg",
+        "width": 1920,
+        "height": 2122,
+        "bytes": 874217,
+        "sha256": "5a331f0e9e605f334851dd427a667a8babb657fe4b86ebe0e1ec9b57b768e738",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Interrupted_Sleep_MET_DP-414-001.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/The_Interrupted_Sleep_MET_DP-414-001.jpg/1920px-The_Interrupted_Sleep_MET_DP-414-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "b922e171fb356bcfcc69fb9929e0b75169bb369eea70d846607d3bda4fe2d5ef",
+      "credit": "François Boucher；The Interrupted Sleep；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2122,
+        "sourceBytes": 1194517,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-shepherds-idyll-whole",
+      "artworkId": "boucher-shepherds-idyll",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1303,
+      "thumbnail": {
+        "url": "media/foreign/boucher-shepherds-idyll/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13508,
+        "sha256": "b41295a0352826a5c4347bebad7d6ab0036a1894e703fc029823aeea6b1cd39b"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-shepherds-idyll/preview.webp",
+        "width": 1257,
+        "height": 1280,
+        "bytes": 178198,
+        "sha256": "16b3149d42d70de7bc9231ea10c2eded26512334554b4d34111554723b9aa9d2"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-shepherds-idyll/detail.jpg",
+        "width": 1280,
+        "height": 1303,
+        "bytes": 226572,
+        "sha256": "8d390b385fe520a2c3e2b4ef7d8fbfb540ce7e6e528cca75b1f677c1e1ddab90",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shepherd%27s_Idyll_MET_DP259114.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Shepherd%27s_Idyll_MET_DP259114.jpg/1280px-Shepherd%27s_Idyll_MET_DP259114.jpg",
+      "sourceHash": "2fc3bd2048ed42c76fa1f9c3e06b85ace37bb5e11705cc305768e57481fa1042",
+      "credit": "François Boucher；Shepherd’s Idyll；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1303,
+        "sourceBytes": 307208,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-washerwomen-whole",
+      "artworkId": "boucher-washerwomen",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1307,
+      "thumbnail": {
+        "url": "media/foreign/boucher-washerwomen/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 11652,
+        "sha256": "ae356a277a8dbb36a0e5e554003abdb1cf336f0d0fe52a469820cc033b03c7c7"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-washerwomen/preview.webp",
+        "width": 1254,
+        "height": 1280,
+        "bytes": 150794,
+        "sha256": "6cf08170048daa44183a1eac4073a209380c36b2a0fd5a6a55cd513121a81ce6"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-washerwomen/detail.jpg",
+        "width": 1280,
+        "height": 1307,
+        "bytes": 197253,
+        "sha256": "1c54434c5345319fd8e7c3c77ac9b945b888bc95033a0148017a07f9de2a1398",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Washerwomen_MET_DP259119.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Washerwomen_MET_DP259119.jpg/1280px-Washerwomen_MET_DP259119.jpg",
+      "sourceHash": "3a8c93be6212fa6e73a7ca1dae2dc7a906cd1eeed2d2a4adff9c91c23f8de958",
+      "credit": "François Boucher；Washerwomen；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1307,
+        "sourceBytes": 203747,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-bath-venus-whole",
+      "artworkId": "boucher-bath-venus",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2454,
+      "thumbnail": {
+        "url": "media/foreign/boucher-bath-venus/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23924,
+        "sha256": "5c7bf362c88e17e412828dd0b44c3d66f23b36b5d8b913d0dcc90c36f7915e0f"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-bath-venus/preview.webp",
+        "width": 1001,
+        "height": 1280,
+        "bytes": 271816,
+        "sha256": "0c0f7c5a6732d8f083ea815b7162c88cedf0555c20b577a876281c68eecfbdee"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-bath-venus/detail.jpg",
+        "width": 1920,
+        "height": 2454,
+        "bytes": 1035612,
+        "sha256": "8fe5c69b90e5baacab20e924101e6a5f20aefcb2b9d4f568eb221c1be6eb57cb",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher,_The_Bath_of_Venus,_1751,_NGA_12200.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Fran%C3%A7ois_Boucher%2C_The_Bath_of_Venus%2C_1751%2C_NGA_12200.jpg/1920px-Fran%C3%A7ois_Boucher%2C_The_Bath_of_Venus%2C_1751%2C_NGA_12200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "6a6721c145b20843f3728e7d245e5c29e6a9e80ec300b919aa69005ba5d74312",
+      "credit": "François Boucher；The Bath of Venus；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2454,
+        "sourceBytes": 1394514,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-allegory-music-whole",
+      "artworkId": "boucher-allegory-music",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1531,
+      "thumbnail": {
+        "url": "media/foreign/boucher-allegory-music/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15724,
+        "sha256": "38fdc39a32d3b2d05442febe34f2ee664e4216251009a87754e20083a8effcc1"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-allegory-music/preview.webp",
+        "width": 1280,
+        "height": 1021,
+        "bytes": 183594,
+        "sha256": "e61bb6b20454bd18a385d18555c79b03068feee05518bc1450a2503204868c8c"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-allegory-music/detail.jpg",
+        "width": 1920,
+        "height": 1531,
+        "bytes": 493659,
+        "sha256": "8ae37288ea6fa44bb74aaced00800f6337e663c381e380e5ab15270305ea1bbd",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher,_Allegory_of_Music,_1764,_NGA_32680.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Fran%C3%A7ois_Boucher%2C_Allegory_of_Music%2C_1764%2C_NGA_32680.jpg/1920px-Fran%C3%A7ois_Boucher%2C_Allegory_of_Music%2C_1764%2C_NGA_32680.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "bccc86cf3d627ed3221e24078a2cf662729fb7b0dd6fba9737f21ec4cf47eaa8",
+      "credit": "François Boucher；Allegory of Music；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1531,
+        "sourceBytes": 685717,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-allegory-painting-whole",
+      "artworkId": "boucher-allegory-painting",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1512,
+      "thumbnail": {
+        "url": "media/foreign/boucher-allegory-painting/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 17626,
+        "sha256": "c64e157d726f952f7591e4d83baf82b29212005a99e3adf58aea6caddfb0eaba"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-allegory-painting/preview.webp",
+        "width": 1280,
+        "height": 1008,
+        "bytes": 192540,
+        "sha256": "f649331e2b8aff58c94a7182aed134cefb298c7e53107dd722111651d62168b0"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-allegory-painting/detail.jpg",
+        "width": 1920,
+        "height": 1512,
+        "bytes": 507710,
+        "sha256": "8290db9e3f4d5d9c1032794833a45829e0761562f0fc26503fddce27be2107a9",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher,_Allegory_of_Painting,_1765,_NGA_32679.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fran%C3%A7ois_Boucher%2C_Allegory_of_Painting%2C_1765%2C_NGA_32679.jpg/1920px-Fran%C3%A7ois_Boucher%2C_Allegory_of_Painting%2C_1765%2C_NGA_32679.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "b70ec92babac5b10070b68210e914709291b722fa5f729c88175cee1a709b710",
+      "credit": "François Boucher；Allegory of Painting；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1512,
+        "sourceBytes": 698089,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-pan-syrinx-whole",
+      "artworkId": "boucher-pan-syrinx",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1487,
+      "thumbnail": {
+        "url": "media/foreign/boucher-pan-syrinx/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15096,
+        "sha256": "09615c78cc29b9951709f7437276ae3a4d6c429ecd061fd473b6e2e1dae7982e"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-pan-syrinx/preview.webp",
+        "width": 1280,
+        "height": 991,
+        "bytes": 234726,
+        "sha256": "63bd408cd6604fc54c7d8bc7a1e5d10c658b7e2f8b3db8715615f28196c849fe"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-pan-syrinx/detail.jpg",
+        "width": 1920,
+        "height": 1487,
+        "bytes": 555750,
+        "sha256": "5e5b09906a0c5da7a4c6dc5dbc75551988f4c7c0c64da3dd495331480a58ebd5",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher_-_Pan_and_Syrinx,_1759.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Fran%C3%A7ois_Boucher_-_Pan_and_Syrinx%2C_1759.jpg/1920px-Fran%C3%A7ois_Boucher_-_Pan_and_Syrinx%2C_1759.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "f5e74b1ecb7bcdfcd95a83645f601e5643351752da9210d4b5f64f4bad7b1379",
+      "credit": "François Boucher；Pan and Syrinx；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1487,
+        "sourceBytes": 745964,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-watermill-whole",
+      "artworkId": "boucher-watermill",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 500,
+      "height": 404,
+      "thumbnail": {
+        "url": "media/foreign/boucher-watermill/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 27074,
+        "sha256": "6b5952fc0305208d9e5cac7080cb0b283bdf81a4f3372bd1184d7efef34de155"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-watermill/preview.webp",
+        "width": 500,
+        "height": 404,
+        "bytes": 57350,
+        "sha256": "9f5c3ca6432c7ea3bc148845c0088b4d66e82be6d741a18a4d13d15997323881"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-watermill/detail.jpg",
+        "width": 500,
+        "height": 404,
+        "bytes": 50753,
+        "sha256": "11ce7854302a32174c954c825d812a315a1ca4de90068855ce414242cbfcfc1b",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boucher_-_Landscape_with_a_Watermill,_1755.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Boucher_-_Landscape_with_a_Watermill%2C_1755.jpg/500px-Boucher_-_Landscape_with_a_Watermill%2C_1755.jpg",
+      "sourceHash": "f5cbc3fe97bdd8aa6f8d6f912e270623e28cd36f13c574f384a1ae887ae528db",
+      "credit": "François Boucher；Landscape with a Watermill；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 500,
+        "sourceHeight": 404,
+        "sourceBytes": 69535,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-toilette-thyssen-whole",
+      "artworkId": "boucher-toilette-thyssen",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1576,
+      "thumbnail": {
+        "url": "media/foreign/boucher-toilette-thyssen/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 29800,
+        "sha256": "e1d9e187c01c37c524024e64f305dd7d85c66363c09077899967e7604274e82c"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-toilette-thyssen/preview.webp",
+        "width": 1280,
+        "height": 1051,
+        "bytes": 351624,
+        "sha256": "51803fa53aaa2a8732f761f6bcd122f93ca67408a32d4b25e5903a91c22eafd4"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-toilette-thyssen/detail.jpg",
+        "width": 1920,
+        "height": 1576,
+        "bytes": 711253,
+        "sha256": "581137addbd60dafc359afb52f182d78412c5a27a9715ead0a3b16e07b88c4eb",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boucher_toilette_1742.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Boucher_toilette_1742.jpg/1920px-Boucher_toilette_1742.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "7d6379292b2208a01c6e06959574a9ca362e988a9b527d1edb86f6db3f47f89a",
+      "credit": "François Boucher；La Toilette；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1576,
+        "sourceBytes": 913468,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "boucher-venus-mercury-cupid-whole",
+      "artworkId": "boucher-venus-mercury-cupid",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1246,
+      "thumbnail": {
+        "url": "media/foreign/boucher-venus-mercury-cupid/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13962,
+        "sha256": "b7168ea84c1e015654ee657d44c7c783007ae025d6bbfdd6c38535eaa2299632"
+      },
+      "preview": {
+        "url": "media/foreign/boucher-venus-mercury-cupid/preview.webp",
+        "width": 1280,
+        "height": 831,
+        "bytes": 99716,
+        "sha256": "6f3cbbaa889d12d7e93cbfde8b22453370bad073233449580b877ce73b0c547a"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/boucher-venus-mercury-cupid/detail.jpg",
+        "width": 1920,
+        "height": 1246,
+        "bytes": 238344,
+        "sha256": "6b4ed22271fff8b06f93f78116cd20308855628be40e6e99b2ea4258a2dc806b",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venus_and_Mercury_Instructing_Cupid_LACMA_47.29.10.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Venus_and_Mercury_Instructing_Cupid_LACMA_47.29.10.jpg/1920px-Venus_and_Mercury_Instructing_Cupid_LACMA_47.29.10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "7d3d74bdae65d103aec4c87e0bf324d0c03fd4629957d2c39c0cd91120e2eaec",
+      "credit": "François Boucher；Venus and Mercury Instructing Cupid；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1246,
+        "sourceBytes": 316734,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-bolt-whole",
+      "artworkId": "fragonard-bolt",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1512,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-bolt/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 14918,
+        "sha256": "f426e258400e1c521abd7255418af66c0e916c7e9ffeb431c5bea8de9e1f00d8"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-bolt/preview.webp",
+        "width": 1280,
+        "height": 1008,
+        "bytes": 255098,
+        "sha256": "e77c55a54ec4cbda4ea71fb41832e96d6fc8fc2823c414749bdf6f959e656d0b"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-bolt/detail.jpg",
+        "width": 1920,
+        "height": 1512,
+        "bytes": 560702,
+        "sha256": "93ced42fb80f41e4c4c414cdfb2fea1151b6ef4b707de00541881219d65aeeff",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Honore_Fragonard_The_Bolt.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Jean_Honore_Fragonard_The_Bolt.jpg/1920px-Jean_Honore_Fragonard_The_Bolt.jpg",
+      "sourceHash": "8b44e5c56743b005ac49ad1c2f518fce07bc082443206821d09e07219aa96194",
+      "credit": "Jean-Honoré Fragonard；Le Verrou；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1512,
+        "sourceBytes": 683595,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-stolen-kiss-whole",
+      "artworkId": "fragonard-stolen-kiss",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1575,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-stolen-kiss/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 16026,
+        "sha256": "ce9b6e87985c7b9ba284dafe4db32a5fa838fc798dcff99ce6e9b4b7f2fe9fc2"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-stolen-kiss/preview.webp",
+        "width": 1280,
+        "height": 1050,
+        "bytes": 222746,
+        "sha256": "82211397274b47d2cfc80128edfa90ac3797c8618eccbd45931469f9fa6554c9"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-stolen-kiss/detail.jpg",
+        "width": 1920,
+        "height": 1575,
+        "bytes": 524233,
+        "sha256": "ac4ebcf2967f689aece2d46e93aa9590a0e69f77812d0ce66a01a8d83bfc68e8",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_The_Stolen_Kiss.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Jean-Honor%C3%A9_Fragonard_-_The_Stolen_Kiss.jpg/1920px-Jean-Honor%C3%A9_Fragonard_-_The_Stolen_Kiss.jpg",
+      "sourceHash": "b9c2aa6f18ed5cc86e8233ac998a95168786f0c499697eded1d4387c91204e1b",
+      "credit": "Jean-Honoré Fragonard；Le Baiser volé；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1575,
+        "sourceBytes": 708776,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-coresus-callirhoe-whole",
+      "artworkId": "fragonard-coresus-callirhoe",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1494,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-coresus-callirhoe/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18284,
+        "sha256": "87746ffe207426bc642d0a165c7bd6f64926819e40349ea6b483b27df2f30c25"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-coresus-callirhoe/preview.webp",
+        "width": 1280,
+        "height": 996,
+        "bytes": 191830,
+        "sha256": "690a073018cc25d82977f2dbe400ab5c978d9fc9938a1b7c3d26a3acb2d43793"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-coresus-callirhoe/detail.jpg",
+        "width": 1920,
+        "height": 1494,
+        "bytes": 477487,
+        "sha256": "49209204fec45040e984daca8b595cb10401e3ebaad32333473c0ec416ed1cb7",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard,_il_gran_sacerdote_coreso_si_sacrifica_per_salvare_calliro%C3%A8,_salon_del_1765.JPG",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Fragonard%2C_il_gran_sacerdote_coreso_si_sacrifica_per_salvare_calliro%C3%A8%2C_salon_del_1765.JPG/1920px-Fragonard%2C_il_gran_sacerdote_coreso_si_sacrifica_per_salvare_calliro%C3%A8%2C_salon_del_1765.JPG",
+      "sourceHash": "e5c489ab5b79ae030ca1dedd0230557c761cdecc65132bad9a875990cbea7b6b",
+      "credit": "Jean-Honoré Fragonard；Le Grand Prêtre Corésus se sacrifie pour sauver Callirhoé；摄影：Sailko（Wikimedia Commons），CC BY 3.0；网页版本经尺寸调整和格式转换，缩略图有裁切。",
+      "licenseLabel": "CC BY 3.0（摄影）",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1494,
+        "sourceBytes": 632985,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-education-virgin-whole",
+      "artworkId": "fragonard-education-virgin",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1407,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-education-virgin/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13380,
+        "sha256": "74e37ae62306d5cb4d55627d187e1f956f4707048ad6032bcce63538342c010f"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-education-virgin/preview.webp",
+        "width": 1280,
+        "height": 938,
+        "bytes": 114268,
+        "sha256": "ecc425eb2e500a69d9c545ff632c29225a04eca1582e19d02a6f90afb0ba7380"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-education-virgin/detail.jpg",
+        "width": 1920,
+        "height": 1407,
+        "bytes": 351012,
+        "sha256": "c1694c33b137a84ebedc04ce77ad304ed5d72e57efe9a3785bb43c5d7680a857",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Education_of_the_Virgin_by_Jean-Honor%C3%A9_Fragonard.JPG",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Education_of_the_Virgin_by_Jean-Honor%C3%A9_Fragonard.JPG/1920px-Education_of_the_Virgin_by_Jean-Honor%C3%A9_Fragonard.JPG",
+      "sourceHash": "8bb838fbd70df35061c55a4ff13fb1c5a62f648449e03eae6be763efb52b5c35",
+      "credit": "Jean-Honoré Fragonard；The Education of the Virgin；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1407,
+        "sourceBytes": 475467,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-inspiration-whole",
+      "artworkId": "fragonard-inspiration",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1605,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-inspiration/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 12286,
+        "sha256": "b3c757e67b27c5d3ef650b1fcb8ea86542936e85c9c82bc453f2f14d0ad98730"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-inspiration/preview.webp",
+        "width": 1021,
+        "height": 1280,
+        "bytes": 108150,
+        "sha256": "f98a1b684205808b4710f0f8920a3bbfd8d1e41c4d962674e11bc57d5018486a"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-inspiration/detail.jpg",
+        "width": 1280,
+        "height": 1605,
+        "bytes": 226111,
+        "sha256": "a4aed9410f315ac2ad86ac4233571e7594ab3208948ef33d71d120b7486d61e0",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_Inspiration.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Jean-Honor%C3%A9_Fragonard_-_Inspiration.jpg/1280px-Jean-Honor%C3%A9_Fragonard_-_Inspiration.jpg",
+      "sourceHash": "56382b80c3a6b52d9de14a7f72af214af3ee9b68e134ca2e728e50987c54a89f",
+      "credit": "Jean-Honoré Fragonard；L’Inspiration；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1605,
+        "sourceBytes": 315721,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-saint-non-whole",
+      "artworkId": "fragonard-saint-non",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2398,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-saint-non/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21112,
+        "sha256": "86efc1c82b075caf41fbc09d4f7ba170c47f23678a4ab0ee76b9c2449f3e5696"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-saint-non/preview.webp",
+        "width": 1025,
+        "height": 1280,
+        "bytes": 375376,
+        "sha256": "c7371b5692c2152651ca2e3447a3d2b622062f9ee9e4e2034db9a27a1319c5db"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-saint-non/detail.jpg",
+        "width": 1920,
+        "height": 2398,
+        "bytes": 1323741,
+        "sha256": "fc8d26f0dc0830f9b78afe658386ff6cda96a2d9d61f9d947262df3c043a7cce",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_Jean-Claude_Richard,_Abbot_of_Saint-Non,_Dressed_%27a_l%27Espagnole%27_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Jean-Honor%C3%A9_Fragonard_-_Jean-Claude_Richard%2C_Abbot_of_Saint-Non%2C_Dressed_%27a_l%27Espagnole%27_-_Google_Art_Project.jpg/1920px-Jean-Honor%C3%A9_Fragonard_-_Jean-Claude_Richard%2C_Abbot_of_Saint-Non%2C_Dressed_%27a_l%27Espagnole%27_-_Google_Art_Project.jpg",
+      "sourceHash": "e99a293b98eecbe1f887145433a0d4c51afb946dca9c03c57d2207b582519ed3",
+      "credit": "Jean-Honoré Fragonard；Jean-Claude Richard, Abbot of Saint-Non, Dressed à l’Espagnole；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2398,
+        "sourceBytes": 1767595,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-meunier-whole",
+      "artworkId": "fragonard-meunier",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 500,
+      "height": 626,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-meunier/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 17728,
+        "sha256": "8f3ac0f9a65416c97e3910e1a79b7357ec24db02aa808e621af6825519c36569"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-meunier/preview.webp",
+        "width": 500,
+        "height": 626,
+        "bytes": 63230,
+        "sha256": "ab321d55ab5facc2a4c813d19ee4f3d0db8aae0b5f2a309059ad9b2b83baf6d6"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-meunier/detail.jpg",
+        "width": 500,
+        "height": 626,
+        "bytes": 61986,
+        "sha256": "0ddc66ef25d9478b4b696a175c62c2dcbe99840992bed803e0b187727b5c5959",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_Denis_Diderot_(Fanciful_Figure)_-_WGA8064.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Jean-Honor%C3%A9_Fragonard_-_Denis_Diderot_%28Fanciful_Figure%29_-_WGA8064.jpg/500px-Jean-Honor%C3%A9_Fragonard_-_Denis_Diderot_%28Fanciful_Figure%29_-_WGA8064.jpg",
+      "sourceHash": "2a687d36de31bdbd7bce0a208212945ab2120f3790b773e4da0b9ee94f74d146",
+      "credit": "Jean-Honoré Fragonard；Portrait de Monsieur Meunier；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 500,
+        "sourceHeight": 626,
+        "sourceBytes": 81545,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-woman-dog-whole",
+      "artworkId": "fragonard-woman-dog",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2399,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-woman-dog/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13910,
+        "sha256": "eeeb803120e0fd85ea3d53d5fef1217c7d32de06ed0342c015037ce18173a8ad"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-woman-dog/preview.webp",
+        "width": 1024,
+        "height": 1280,
+        "bytes": 255824,
+        "sha256": "94b5096cda6db56cabaf35a5d828dcc4cfc4ad0f37ae183d9ae0e50d0254f540"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-woman-dog/detail.jpg",
+        "width": 1920,
+        "height": 2399,
+        "bytes": 1037064,
+        "sha256": "6672ce47e384c8b64ded44d8967a1c433827611904da09d63036cd6cfb494b63",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Woman_with_a_Dog_MET_DP-1019-01.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/A_Woman_with_a_Dog_MET_DP-1019-01.jpg/1920px-A_Woman_with_a_Dog_MET_DP-1019-01.jpg",
+      "sourceHash": "dd955622bed37a275a8f5ba65dc60b93730ec9e9c7fce9d5c55d6252f854de09",
+      "credit": "Jean-Honoré Fragonard；Marie Emilie Coignet de Courson, a Woman with a Dog；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2399,
+        "sourceBytes": 1421261,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-man-costume-whole",
+      "artworkId": "fragonard-man-costume",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1591,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-man-costume/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 13498,
+        "sha256": "2cedfab5cff518144b38f8c62e13fe622a7a52b93ff9ab7ec662773c605998aa"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-man-costume/preview.webp",
+        "width": 1030,
+        "height": 1280,
+        "bytes": 274724,
+        "sha256": "020fb525a66d304899ceb79706eee246a73579876d6ee38d93141324e7b92449"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-man-costume/detail.jpg",
+        "width": 1280,
+        "height": 1591,
+        "bytes": 406617,
+        "sha256": "a795fbb2ba7eba47519fab19ca920a944843599621756384d7b8dd39fe6c281d",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Honor%C3%A9_Fragonard_-_Portrait_of_a_Man_in_Spanish_Costume_-_1977.123_-_Art_Institute_of_Chicago.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Jean_Honor%C3%A9_Fragonard_-_Portrait_of_a_Man_in_Spanish_Costume_-_1977.123_-_Art_Institute_of_Chicago.jpg/1280px-Jean_Honor%C3%A9_Fragonard_-_Portrait_of_a_Man_in_Spanish_Costume_-_1977.123_-_Art_Institute_of_Chicago.jpg",
+      "sourceHash": "e5520636591479ef6322bab8d83c55927a1317fb52f9f60609076b4699319261",
+      "credit": "Jean-Honoré Fragonard；Portrait of a Man in Costume；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1591,
+        "sourceBytes": 536838,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-music-lesson-whole",
+      "artworkId": "fragonard-music-lesson",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 851,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-music-lesson/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23318,
+        "sha256": "c38501eda388ed6bac5e87e796e614d2b7a91bf7302fbf30e58bf6ee7337acf4"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-music-lesson/preview.webp",
+        "width": 960,
+        "height": 851,
+        "bytes": 148326,
+        "sha256": "a35bf02a7d97ff699347386437b9dd27ebaa3f6373ceae37b352cb151c0ac464"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-music-lesson/detail.jpg",
+        "width": 960,
+        "height": 851,
+        "bytes": 159310,
+        "sha256": "51e0902148ea7830ff19f920e9edf3c86ace7884b99ffd7266f91f41370b2cf0",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_Music_Lesson_-_WGA08067.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Jean-Honor%C3%A9_Fragonard_-_Music_Lesson_-_WGA08067.jpg/960px-Jean-Honor%C3%A9_Fragonard_-_Music_Lesson_-_WGA08067.jpg",
+      "sourceHash": "f38c0779766ac0f3266f5ba8078dd4fa24a49d484267794b50e3327791d5da75",
+      "credit": "Jean-Honoré Fragonard；La Leçon de musique；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 960,
+        "sourceHeight": 851,
+        "sourceBytes": 202485,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-love-pursuit-whole",
+      "artworkId": "fragonard-love-pursuit",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2838,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-love-pursuit/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22946,
+        "sha256": "3872673c2fb87e57731cdc5a526195a6bcb5d859a7ca95666a6bcb4a2bc77622"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-love-pursuit/preview.webp",
+        "width": 866,
+        "height": 1280,
+        "bytes": 277032,
+        "sha256": "999bd2844e1f82d97603a9ebf1fd22d986dce0807b4d6a23e4329bc44e88f515"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-love-pursuit/detail.jpg",
+        "width": 1920,
+        "height": 2838,
+        "bytes": 1163794,
+        "sha256": "600afa6f9ef49dd6298778dc495572d785cd5e560e2b9c1e9fff3ceeb23c893c",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Progress_of_Love_-_The_Pursuit_-_Fragonard_1771-72.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/The_Progress_of_Love_-_The_Pursuit_-_Fragonard_1771-72.jpg/1920px-The_Progress_of_Love_-_The_Pursuit_-_Fragonard_1771-72.jpg",
+      "sourceHash": "1e79402aa4b2811b796d453b962414d3de169a391bc9e0991af84d4afed761bf",
+      "credit": "Jean-Honoré Fragonard；The Progress of Love: The Pursuit；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2838,
+        "sourceBytes": 1518271,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-love-meeting-whole",
+      "artworkId": "fragonard-love-meeting",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2479,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-love-meeting/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 25834,
+        "sha256": "c6a4ef2f4c6cc93482aa6fee4649380c82b8b0e66faf1044353fde5e22521dd7"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-love-meeting/preview.webp",
+        "width": 991,
+        "height": 1280,
+        "bytes": 299650,
+        "sha256": "349775cad0f3f91833c9ae745777174ef97f1d89d82655c8961a6e5a85b62ad8"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-love-meeting/detail.jpg",
+        "width": 1920,
+        "height": 2479,
+        "bytes": 1118804,
+        "sha256": "5491430e98f4f8a96e1f8fab6ffa084c4f0391cf7ab7cb64fce850b5636e0733",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Honor%C3%A9_Fragonard_-_Les_Progr%C3%A8s_de_l%27amour_-_Le_rendez-vous_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Jean-Honor%C3%A9_Fragonard_-_Les_Progr%C3%A8s_de_l%27amour_-_Le_rendez-vous_-_Google_Art_Project.jpg/1920px-Jean-Honor%C3%A9_Fragonard_-_Les_Progr%C3%A8s_de_l%27amour_-_Le_rendez-vous_-_Google_Art_Project.jpg",
+      "sourceHash": "f696ca2ff13ba8d1ab7f76c53386e1f2cbe7b52feefd254a21b42494b2202943",
+      "credit": "Jean-Honoré Fragonard；The Progress of Love: The Meeting；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2479,
+        "sourceBytes": 1527951,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-love-crowned-whole",
+      "artworkId": "fragonard-love-crowned",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2537,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-love-crowned/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24696,
+        "sha256": "8a2ff528f937301fa15f67e7ba55521b0e97ec2490fb903b0ace10ebe7c05929"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-love-crowned/preview.webp",
+        "width": 969,
+        "height": 1280,
+        "bytes": 331758,
+        "sha256": "4c3fe48aeaeda0756a6b345eda2231171577b7dd7b739a44ac24d8ec2b35e9cf"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-love-crowned/detail.jpg",
+        "width": 1920,
+        "height": 2537,
+        "bytes": 1284213,
+        "sha256": "f61f5ae6e544a23901c48a2c731ea08d54b716989d88176c597c87db3ee820e1",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Progress_of_Love_-_The_Lover_Crowned_-_Fragonard_1771-72.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/The_Progress_of_Love_-_The_Lover_Crowned_-_Fragonard_1771-72.jpg/1920px-The_Progress_of_Love_-_The_Lover_Crowned_-_Fragonard_1771-72.jpg",
+      "sourceHash": "f6aff9e3fb4f8d3550cf6b199d644718832f6ea71842b6eed4436ea330b15e71",
+      "credit": "Jean-Honoré Fragonard；The Progress of Love: The Lover Crowned；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2537,
+        "sourceBytes": 1718038,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-love-letters-whole",
+      "artworkId": "fragonard-love-letters",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2816,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-love-letters/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 23002,
+        "sha256": "0ad9615156db4b8be8128629237b02149ef91c8e107489561e9d199d4401156e"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-love-letters/preview.webp",
+        "width": 873,
+        "height": 1280,
+        "bytes": 242636,
+        "sha256": "7846e133ded60cdbcf2a477ff4610624f93b342265bc8e91dad483f9a9c3f4d1"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-love-letters/detail.jpg",
+        "width": 1920,
+        "height": 2816,
+        "bytes": 1235270,
+        "sha256": "e9419ee28c4ee86fa811ef885049268af9b3e11b4e9d61645e401eec64b693ff",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Progress_of_Love_-_Love_Letters_-_Fragonard_1771-72.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/The_Progress_of_Love_-_Love_Letters_-_Fragonard_1771-72.jpg/1920px-The_Progress_of_Love_-_Love_Letters_-_Fragonard_1771-72.jpg",
+      "sourceHash": "fc3e42ab7c4674a6c46c6c5e179f04ef1ca2144cb22ac414334c1dd2cc257943",
+      "credit": "Jean-Honoré Fragonard；The Progress of Love: Love Letters；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2816,
+        "sourceBytes": 1635973,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-musical-contest-whole",
+      "artworkId": "fragonard-musical-contest",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 828,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-musical-contest/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 35892,
+        "sha256": "df5c65141e2a083f1e988b6a6851039886c5e9b02ddea28be3e4bb737c7b20a8"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-musical-contest/preview.webp",
+        "width": 960,
+        "height": 828,
+        "bytes": 259400,
+        "sha256": "966d059f254318f998ce624ad51497d277290cfa912ed6fd652b77871d483b5a"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-musical-contest/detail.jpg",
+        "width": 960,
+        "height": 828,
+        "bytes": 233912,
+        "sha256": "549a0826bf8d8394bd14f78cef680855c08ce6945bdf09b1094fb6c865226f8b",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard_musical.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Fragonard_musical.jpg/960px-Fragonard_musical.jpg",
+      "sourceHash": "9e384031f738772d0bdbbae479ef5a80700b602274dfb305ca372f516d1e739c",
+      "credit": "Jean-Honoré Fragonard；The Musical Contest；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 960,
+        "sourceHeight": 828,
+        "sourceBytes": 299883,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-seesaw-whole",
+      "artworkId": "fragonard-seesaw",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2455,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-seesaw/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 26764,
+        "sha256": "02982e3646d6ac2ec992126b9682b2a469b2da0255b2196514c36e17695a0b3f"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-seesaw/preview.webp",
+        "width": 1001,
+        "height": 1280,
+        "bytes": 397914,
+        "sha256": "77b740ad3a414ede159c8fcbac932bd75b4ff77bf55868e5e386eacae39a7008"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-seesaw/detail.jpg",
+        "width": 1920,
+        "height": 2455,
+        "bytes": 1443950,
+        "sha256": "7e58e2f7fb1bad38a236127faf9ad330305223cba3f23fbd387eccb0e9c0e57c",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard,_The_See-Saw.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fragonard%2C_The_See-Saw.jpg/1920px-Fragonard%2C_The_See-Saw.jpg",
+      "sourceHash": "eda0d3b446bdd76bc56d7c894cc6f9b32ad4e4ebb7bb5a5a1516543f944cceca",
+      "credit": "Jean-Honoré Fragonard；The See-Saw；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2455,
+        "sourceBytes": 1847751,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-blindmans-buff-toledo-whole",
+      "artworkId": "fragonard-blindmans-buff-toledo",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 500,
+      "height": 618,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-blindmans-buff-toledo/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 45246,
+        "sha256": "5725c19df19513aa7ab1726f5c4b1375da4ae8b87ff40b500c083da91c8c0d7b"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-blindmans-buff-toledo/preview.webp",
+        "width": 500,
+        "height": 618,
+        "bytes": 159648,
+        "sha256": "2f73d204f2bd1d3eb1a372e8acc36e450406ad2b86bbeec0dc4aa5ae634adbde"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-blindmans-buff-toledo/detail.jpg",
+        "width": 500,
+        "height": 618,
+        "bytes": 128866,
+        "sha256": "1c14041032f5ac5431d7fd5cd15a6a49be442493de91c74b1a0f56471555e0b2",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard_collin_maillard.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Fragonard_collin_maillard.jpg/500px-Fragonard_collin_maillard.jpg",
+      "sourceHash": "a4821c9f70764d7afddaeaf49644b6d53aab1a4ee3dc4fa6ea84ce0a2de7e067",
+      "credit": "Jean-Honoré Fragonard；Blindman’s Buff；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 500,
+        "sourceHeight": 618,
+        "sourceBytes": 176308,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-horse-rider-whole",
+      "artworkId": "fragonard-horse-rider",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2551,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-horse-rider/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15784,
+        "sha256": "f360f895815da6683f855e7fca219e281794ffdedb5c8d12c717cc8fa2f035cb"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-horse-rider/preview.webp",
+        "width": 963,
+        "height": 1280,
+        "bytes": 220966,
+        "sha256": "1f6b864d4bf2e97aa432c1f5b89289875362a4a8fce0a92c0d2d0024044d0e77"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-horse-rider/detail.jpg",
+        "width": 1920,
+        "height": 2551,
+        "bytes": 1078227,
+        "sha256": "8d1581871bf872c61deb9dfb7441aa842097c498c0f384073594b1a1ffc77101",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Honor%C3%A9_Fragonard,_A_Game_of_Horse_and_Rider,_c._1775-1780,_NGA_32683.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Jean_Honor%C3%A9_Fragonard%2C_A_Game_of_Horse_and_Rider%2C_c._1775-1780%2C_NGA_32683.jpg/1920px-Jean_Honor%C3%A9_Fragonard%2C_A_Game_of_Horse_and_Rider%2C_c._1775-1780%2C_NGA_32683.jpg",
+      "sourceHash": "87177b93a436ea0fcd5a3a2971a28c5afd07bfdc662af84712e23002975b4b7d",
+      "credit": "Jean-Honoré Fragonard；A Game of Horse and Rider；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2551,
+        "sourceBytes": 1445808,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-hot-cockles-whole",
+      "artworkId": "fragonard-hot-cockles",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2451,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-hot-cockles/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18220,
+        "sha256": "126214e57584501a197682d534ee78eb018c31db38008de04ef343df149702f2"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-hot-cockles/preview.webp",
+        "width": 1003,
+        "height": 1280,
+        "bytes": 249584,
+        "sha256": "f5b725a88cce9ed7d7f3d46301a4f285b0c5777af7caa72ff41ac5390919a8d9"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-hot-cockles/detail.jpg",
+        "width": 1920,
+        "height": 2451,
+        "bytes": 1117950,
+        "sha256": "69483dad71eda76116fab7126b9ae446741426103eab5ec6576e6ef48f3840c8",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Honor%C3%A9_Fragonard,_A_Game_of_Hot_Cockles,_c._1775-1780,_NGA_32684.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Jean_Honor%C3%A9_Fragonard%2C_A_Game_of_Hot_Cockles%2C_c._1775-1780%2C_NGA_32684.jpg/1920px-Jean_Honor%C3%A9_Fragonard%2C_A_Game_of_Hot_Cockles%2C_c._1775-1780%2C_NGA_32684.jpg",
+      "sourceHash": "20fc7feff65395dada62f1b3c96c5a120a773819e7b8cc816daf33156c8327fe",
+      "credit": "Jean-Honoré Fragonard；A Game of Hot Cockles；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2451,
+        "sourceBytes": 1525036,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-swing-nga-whole",
+      "artworkId": "fragonard-swing-nga",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2244,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-swing-nga/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 14436,
+        "sha256": "7dd0d59ed0f74eb2ab23b47f014313b72b09734b7290d39e8a84d1ac3bd83466"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-swing-nga/preview.webp",
+        "width": 1095,
+        "height": 1280,
+        "bytes": 213170,
+        "sha256": "f3f1646ade9db97dda1891c281d0723ad270455291a3ab78c359d312bf89e4b9"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-swing-nga/detail.jpg",
+        "width": 1920,
+        "height": 2244,
+        "bytes": 799799,
+        "sha256": "b456d32aac0d71cb136bf2a2e6856715718e00fb553b701a4de74b75c5d86e96",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Honor%C3%A9_Fragonard,_The_Swing,_c._1775-1780,_NGA_46116.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Jean_Honor%C3%A9_Fragonard%2C_The_Swing%2C_c._1775-1780%2C_NGA_46116.jpg/1920px-Jean_Honor%C3%A9_Fragonard%2C_The_Swing%2C_c._1775-1780%2C_NGA_46116.jpg",
+      "sourceHash": "9e7dad6f0fe32789e4915fa77dce7b852d9ad9e9c533c1c9f87255581f1d4353",
+      "credit": "Jean-Honoré Fragonard；The Swing；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2244,
+        "sourceBytes": 1096292,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-visit-nursery-whole",
+      "artworkId": "fragonard-visit-nursery",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1518,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-visit-nursery/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15250,
+        "sha256": "9ec24bc11b40dd6565dbf3836603f90e090d69ef3825703056ede9e22bff3607"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-visit-nursery/preview.webp",
+        "width": 1280,
+        "height": 1012,
+        "bytes": 316778,
+        "sha256": "4d3252fd79b6307eeaeb1f7012c75a08a2c778a4ed753c19abaa1b2198d40285"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-visit-nursery/detail.jpg",
+        "width": 1920,
+        "height": 1518,
+        "bytes": 724302,
+        "sha256": "d656500f129444e27c93e998b8c4b6b60f73ff5764f2b5b7b06e0b97db73eeeb",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean_Honor%C3%A9_Fragonard,_The_Visit_to_the_Nursery,_c._1775,_NGA_32685.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Jean_Honor%C3%A9_Fragonard%2C_The_Visit_to_the_Nursery%2C_c._1775%2C_NGA_32685.jpg/1920px-Jean_Honor%C3%A9_Fragonard%2C_The_Visit_to_the_Nursery%2C_c._1775%2C_NGA_32685.jpg",
+      "sourceHash": "a642cc88c777f54389ac2f043fda45a99fd15d413e7c5489593f86bced2f6905",
+      "credit": "Jean-Honoré Fragonard；A Visit to the Nursery；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1518,
+        "sourceBytes": 994920,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-fete-saint-cloud-whole",
+      "artworkId": "fragonard-fete-saint-cloud",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 500,
+      "height": 324,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-fete-saint-cloud/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21628,
+        "sha256": "142a8ba92a753ab12e929ec7a3e2ac1f12b9d06a418d573cdd4a50181b3ca6ba"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-fete-saint-cloud/preview.webp",
+        "width": 500,
+        "height": 324,
+        "bytes": 37552,
+        "sha256": "936b6ed50a3c4d4309006d9e98896bc2dc4226b7a883233a2cda65193dc1b717"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-fete-saint-cloud/detail.jpg",
+        "width": 500,
+        "height": 324,
+        "bytes": 37731,
+        "sha256": "7fe5e9ea7d8efa99d5ceb3bcf238359f45944beae0b8366357932197de92e886",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fragonard_-_La_F%C3%AAte_%C3%A0_Saint-Cloud,_Banque_de_France.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Fragonard_-_La_F%C3%AAte_%C3%A0_Saint-Cloud%2C_Banque_de_France.jpg/500px-Fragonard_-_La_F%C3%AAte_%C3%A0_Saint-Cloud%2C_Banque_de_France.jpg",
+      "sourceHash": "21ccc4bf8f2afca460919776b59202e3d1b171a13c43f793d9972ba7c266b124",
+      "credit": "Jean-Honoré Fragonard；La Fête à Saint-Cloud；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 500,
+        "sourceHeight": 324,
+        "sourceBytes": 48643,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "fragonard-isle-love-whole",
+      "artworkId": "fragonard-isle-love",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1609,
+      "thumbnail": {
+        "url": "media/foreign/fragonard-isle-love/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 32744,
+        "sha256": "5a069632ebc8b398d95deca7e2a92f52d5e9851666904332af4465a1937d6482"
+      },
+      "preview": {
+        "url": "media/foreign/fragonard-isle-love/preview.webp",
+        "width": 1280,
+        "height": 1073,
+        "bytes": 370168,
+        "sha256": "6d3528025be3a86c07e29faede689c97d20a0d044421ccb89f11a7b2f17475ce"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/fragonard-isle-love/detail.jpg",
+        "width": 1920,
+        "height": 1609,
+        "bytes": 677650,
+        "sha256": "de785d20c3d9e9d6f9e26a089a741a9228960f1f743de36a2b0dafb7808a7775",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-honor%C3%A9_fragonard,_l%27isola_dell%27amore,_1770_ca._01.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Jean-honor%C3%A9_fragonard%2C_l%27isola_dell%27amore%2C_1770_ca._01.jpg/1920px-Jean-honor%C3%A9_fragonard%2C_l%27isola_dell%27amore%2C_1770_ca._01.jpg",
+      "sourceHash": "c904b4e12e6b41ec8fff233062e59adb41cad1a6e0a3555b840c60e879b614a7",
+      "credit": "Jean-Honoré Fragonard；The Isle of Love；摄影：Sailko（Wikimedia Commons），CC BY 3.0；网页版本经尺寸调整和格式转换，缩略图有裁切。",
+      "licenseLabel": "CC BY 3.0（摄影）",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1609,
+        "sourceBytes": 872885,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-pilgrimage-cythera-whole",
+      "artworkId": "watteau-pilgrimage-cythera",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1259,
+      "thumbnail": {
+        "url": "media/foreign/watteau-pilgrimage-cythera/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24052,
+        "sha256": "b26547fb16f4f1ab984f7a991ca072f7b422a3d966c0e409662a1fddb737e8cc"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-pilgrimage-cythera/preview.webp",
+        "width": 1280,
+        "height": 839,
+        "bytes": 314976,
+        "sha256": "73b48266a1992cf1c326fec55d564ccf9790669f0f9b7f774b22833aacb99d16"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-pilgrimage-cythera/detail.jpg",
+        "width": 1920,
+        "height": 1259,
+        "bytes": 630496,
+        "sha256": "569c0098b90ccf8a45c92839ff6e8af8f44da801d1b4d65d9100357f84e9bc01",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27Embarquement_pour_Cyth%C3%A8re,_by_Antoine_Watteau,_from_C2RMF_retouched.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/L%27Embarquement_pour_Cyth%C3%A8re%2C_by_Antoine_Watteau%2C_from_C2RMF_retouched.jpg/1920px-L%27Embarquement_pour_Cyth%C3%A8re%2C_by_Antoine_Watteau%2C_from_C2RMF_retouched.jpg",
+      "sourceHash": "bdf72a0abb34402e1c4ee6ba4ea31b504b49d085e97ec977643c270cb807827a",
+      "credit": "Jean-Antoine Watteau；Pèlerinage à l’île de Cythère；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1259,
+        "sourceBytes": 861883,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-embarkation-cythera-whole",
+      "artworkId": "watteau-embarkation-cythera",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1274,
+      "thumbnail": {
+        "url": "media/foreign/watteau-embarkation-cythera/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 26420,
+        "sha256": "3abf2178beef78b147ed26bd05d99dc15a35f01dd89d712f23360eda7ec18ff5"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-embarkation-cythera/preview.webp",
+        "width": 1280,
+        "height": 849,
+        "bytes": 247954,
+        "sha256": "9025fbe3c9099ef637c2acd5d3afd50b72bdfdd4763f8a03b19e6b15fb1a3cec"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-embarkation-cythera/detail.jpg",
+        "width": 1920,
+        "height": 1274,
+        "bytes": 467285,
+        "sha256": "d9c960a17dd7a3658056a4bcdb25f4a8a3de8dc162db4b413176d439e847d93d",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Embarkation_for_Cythera.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Antoine_Watteau_-_Embarkation_for_Cythera.jpg/1920px-Antoine_Watteau_-_Embarkation_for_Cythera.jpg",
+      "sourceHash": "3bd8926bc34173dae645a6344571ac811d2b8ae3cf4ddd63adb60721f4ecea8a",
+      "credit": "Jean-Antoine Watteau；L’Embarquement pour Cythère；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1274,
+        "sourceBytes": 596846,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-pierrot-whole",
+      "artworkId": "watteau-pierrot",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2396,
+      "thumbnail": {
+        "url": "media/foreign/watteau-pierrot/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19198,
+        "sha256": "f7bea28d995689247cfe8be18642348ba74af6d53e1197f48901a773d1f6137b"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-pierrot/preview.webp",
+        "width": 1026,
+        "height": 1280,
+        "bytes": 154772,
+        "sha256": "c1b52a18991884de336216f1f84c539c6a9d20dc3259621f99af4200f72fa006"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-pierrot/detail.jpg",
+        "width": 1920,
+        "height": 2396,
+        "bytes": 470697,
+        "sha256": "0d421e6c65877e312eff467f14aab657aaed118e8833bcf005246b32bc6e8e28",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_Pierrot,_dit_autrefois_Gilles.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Jean-Antoine_Watteau_-_Pierrot%2C_dit_autrefois_Gilles.jpg/1920px-Jean-Antoine_Watteau_-_Pierrot%2C_dit_autrefois_Gilles.jpg",
+      "sourceHash": "524c8a658b7f77ecceff514e941f0d648191e1289cdd43595d174a2c3f8cc6f6",
+      "credit": "Jean-Antoine Watteau；Pierrot, anciennement dit Gilles；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2396,
+        "sourceBytes": 650201,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-gersaint-whole",
+      "artworkId": "watteau-gersaint",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1005,
+      "thumbnail": {
+        "url": "media/foreign/watteau-gersaint/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19130,
+        "sha256": "e4437781dfacf03af8252684b32cf8ce9170e8abf238e4fed9c20a37934367b6"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-gersaint/preview.webp",
+        "width": 1280,
+        "height": 670,
+        "bytes": 164036,
+        "sha256": "4d1055d8540bc053346ed98a8b37a62070122cb4e4d464339f3cd5927b9e2ed7"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-gersaint/detail.jpg",
+        "width": 1920,
+        "height": 1005,
+        "bytes": 359473,
+        "sha256": "b8789a07f7fee2b4104f709a290a021f9371c9bc32eea5d6810a228a2e2da575",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_047.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Antoine_Watteau_047.jpg/1920px-Antoine_Watteau_047.jpg",
+      "sourceHash": "8aa164e0e21152abebd6d4385a65e6b0a3abcb845415b685e50364c5ff7d04d9",
+      "credit": "Jean-Antoine Watteau；L’Enseigne de Gersaint；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1005,
+        "sourceBytes": 460119,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-mezzetin-whole",
+      "artworkId": "watteau-mezzetin",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1627,
+      "thumbnail": {
+        "url": "media/foreign/watteau-mezzetin/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19042,
+        "sha256": "fcfb8fbec7d6a03a4998ead7679da2f8e119f56b72ff1fc04169e0ca978d542e"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-mezzetin/preview.webp",
+        "width": 1007,
+        "height": 1280,
+        "bytes": 315942,
+        "sha256": "e95aeacfcdcac5ef2c5d9bbfef0dbf9cb6ed311e02bc684d45abf767a05f78d1"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-mezzetin/detail.jpg",
+        "width": 1280,
+        "height": 1627,
+        "bytes": 472392,
+        "sha256": "1d8f2444e4303bdf4dda412908bacb23611f277c446f77eb0f07878ce2fbf450",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mezzetin_MET_DP170811.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Mezzetin_MET_DP170811.jpg/1280px-Mezzetin_MET_DP170811.jpg",
+      "sourceHash": "11403dfbfbd8b8a08e2a57bfd6db6fffd4534753cfb8f1a277ecb03cda9ca4c8",
+      "credit": "Jean-Antoine Watteau；Mezzetin；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1627,
+        "sourceBytes": 620767,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-italian-comedians-whole",
+      "artworkId": "watteau-italian-comedians",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1593,
+      "thumbnail": {
+        "url": "media/foreign/watteau-italian-comedians/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21210,
+        "sha256": "184020ff74eb147574497dbb9e50e0582acde7235b1c4ce908defde22211e7a1"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-italian-comedians/preview.webp",
+        "width": 1280,
+        "height": 1062,
+        "bytes": 281066,
+        "sha256": "0e962bbf989fb361db86ba3106878e37220f86369d40310b9cf507554f91b269"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-italian-comedians/detail.jpg",
+        "width": 1920,
+        "height": 1593,
+        "bytes": 628668,
+        "sha256": "ac6c4bad39df465958d02bd8f48e5d4408281a418c6569fc3c3ab41006b74ad6",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau,_The_Italian_Comedians,_probably_1720,_NGA_32687.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Antoine_Watteau%2C_The_Italian_Comedians%2C_probably_1720%2C_NGA_32687.jpg/1920px-Antoine_Watteau%2C_The_Italian_Comedians%2C_probably_1720%2C_NGA_32687.jpg",
+      "sourceHash": "7be3b0c7dc546fa74bf690bc34e578af1bace4d6bde1938d6414b33ed5965c1b",
+      "credit": "Jean-Antoine Watteau；The Italian Comedians；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1593,
+        "sourceBytes": 854588,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-french-comedians-whole",
+      "artworkId": "watteau-french-comedians",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1527,
+      "thumbnail": {
+        "url": "media/foreign/watteau-french-comedians/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 16306,
+        "sha256": "3eac0dc22836b65fa7e23cc41745c31cce8fe566586dac5f774f2a400399f6f1"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-french-comedians/preview.webp",
+        "width": 1280,
+        "height": 1018,
+        "bytes": 225588,
+        "sha256": "ad700a122b9004570d43619e9dc08b8faa25aff7d97c093470c5b457d0c86b50"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-french-comedians/detail.jpg",
+        "width": 1920,
+        "height": 1527,
+        "bytes": 532239,
+        "sha256": "cd95ddddc680403fe6f182c20f4c1930f2c4bc4ea95c4f2243668f3e1efb67d3",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_French_Comedians_MET_DP120381.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/The_French_Comedians_MET_DP120381.jpg/1920px-The_French_Comedians_MET_DP120381.jpg",
+      "sourceHash": "9acbc3ce43f97460637804c8e03829664cc83e98a467fbb8eae53eb3452af4d0",
+      "credit": "Jean-Antoine Watteau；The French Comedians；Wikimedia Commons（CC0）",
+      "licenseLabel": "CC0（公共领域贡献）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1527,
+        "sourceBytes": 712840,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-indifferent-whole",
+      "artworkId": "watteau-indifferent",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2586,
+      "thumbnail": {
+        "url": "media/foreign/watteau-indifferent/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 26042,
+        "sha256": "1f94bb72bc21ff7aa8de06c32ce44837ca1413401eaaa2de4469c6f5761631d0"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-indifferent/preview.webp",
+        "width": 950,
+        "height": 1280,
+        "bytes": 175374,
+        "sha256": "8a715f621dd7934b60ad4511f70bd52b784fefdbea8cc82016c7a494357c503b"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-indifferent/detail.jpg",
+        "width": 1920,
+        "height": 2586,
+        "bytes": 530822,
+        "sha256": "d3a801d28ea54c0c81745363032d0b0f7ecc4bb1799425d9828a7700130349d9",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_L%27indiff%C3%A9rent.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Jean-Antoine_Watteau_-_L%27indiff%C3%A9rent.jpg/1920px-Jean-Antoine_Watteau_-_L%27indiff%C3%A9rent.jpg",
+      "sourceHash": "6d059b4e8d4b3a3c841d447e4a18e7af7bbff51c0def0aa8f5be1e859f476503",
+      "credit": "Jean-Antoine Watteau；L’Indifférent；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2586,
+        "sourceBytes": 735320,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-finette-whole",
+      "artworkId": "watteau-finette",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 500,
+      "height": 680,
+      "thumbnail": {
+        "url": "media/foreign/watteau-finette/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 33264,
+        "sha256": "001fef6740e2035f9f1ac223c9eecc4823122a4bcce33a6e98fed9c2daae6df4"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-finette/preview.webp",
+        "width": 500,
+        "height": 680,
+        "bytes": 96252,
+        "sha256": "4703f091cf00306b9051b68dd3daa778b080647d50feb6e32bc17b5e9136ab15"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-finette/detail.jpg",
+        "width": 500,
+        "height": 680,
+        "bytes": 87477,
+        "sha256": "c82e96119b58c107cc9979ba73de82ed8886d21c9cad22277b942024691c3262",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_La_Finette_-_WGA25469.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Antoine_Watteau_-_La_Finette_-_WGA25469.jpg/500px-Antoine_Watteau_-_La_Finette_-_WGA25469.jpg",
+      "sourceHash": "5a6f863a4f49f8f16132e0216dd8727ac03469afc6aac5aea44f666c28002e50",
+      "credit": "Jean-Antoine Watteau；La Finette；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 500,
+        "sourceHeight": 680,
+        "sourceBytes": 112024,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-music-lesson-whole",
+      "artworkId": "watteau-music-lesson",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 500,
+      "height": 397,
+      "thumbnail": {
+        "url": "media/foreign/watteau-music-lesson/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 40040,
+        "sha256": "5a313e0b2f490a0956bfb7ab7e975c20a9aa7a01fd2ec41fab652d560f5d26f9"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-music-lesson/preview.webp",
+        "width": 500,
+        "height": 397,
+        "bytes": 79594,
+        "sha256": "92897867aa4e3e1e93f009a56d01108fd380c8a624eafca1d7f403dce5572ca9"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-music-lesson/detail.jpg",
+        "width": 500,
+        "height": 397,
+        "bytes": 67537,
+        "sha256": "3ab4f3161dc665847450de8669511b59e68f5882885b4eeb03bb37f336149497",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_(1684-1721)_-_Pour_nous_prouver_que_cette_belle_-_P377_-_The_Wallace_Collection.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Jean-Antoine_Watteau_%281684-1721%29_-_Pour_nous_prouver_que_cette_belle_-_P377_-_The_Wallace_Collection.jpg/500px-Jean-Antoine_Watteau_%281684-1721%29_-_Pour_nous_prouver_que_cette_belle_-_P377_-_The_Wallace_Collection.jpg",
+      "sourceHash": "921401b27bd8b5af2640c7a8f32785ede08589607e881dc4cd6d63a0ab0f7595",
+      "credit": "Jean-Antoine Watteau；The Music Lesson (Pour nous prouver que cette belle)；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 500,
+        "sourceHeight": 397,
+        "sourceBytes": 91148,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-champs-elysees-whole",
+      "artworkId": "watteau-champs-elysees",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1424,
+      "thumbnail": {
+        "url": "media/foreign/watteau-champs-elysees/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 24952,
+        "sha256": "8275108a46d27b62817476eb5786717fa6a72788d056e16a4cfc146787051984"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-champs-elysees/preview.webp",
+        "width": 1280,
+        "height": 949,
+        "bytes": 155880,
+        "sha256": "16176006b8022c0af1267f956ede44d48e45c53da6f299c76e0baf1d0ca8fdbd"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-champs-elysees/detail.jpg",
+        "width": 1920,
+        "height": 1424,
+        "bytes": 325885,
+        "sha256": "5bbda5719aeba1f58a7471e101e7bc07c7c180fe2d0c9d703559981f48de9df1",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_019.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Antoine_Watteau_019.jpg/1920px-Antoine_Watteau_019.jpg",
+      "sourceHash": "a90a72c8be7f388f6365ca4c725f1087c16126a7dea71a1d8c08a90efdd481a8",
+      "credit": "Jean-Antoine Watteau；Les Champs-Élysées；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1424,
+        "sourceBytes": 443075,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-triumph-beauties-whole",
+      "artworkId": "watteau-triumph-beauties",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2545,
+      "thumbnail": {
+        "url": "media/foreign/watteau-triumph-beauties/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21154,
+        "sha256": "952ac85e0a7fc2ba9b285295834bced9637dba492fd25934e2d0baf352717982"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-triumph-beauties/preview.webp",
+        "width": 966,
+        "height": 1280,
+        "bytes": 162940,
+        "sha256": "7aedf29754c6814334e54f3a232c3e98340eb65f3c3934df6cee1c70d2f9227f"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-triumph-beauties/detail.jpg",
+        "width": 1920,
+        "height": 2545,
+        "bytes": 509073,
+        "sha256": "e29ad41b823fea67e8b67c747a449dcc4b1eeca9f88c3d754d31813db6bbefe3",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_009.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Antoine_Watteau_009.jpg/1920px-Antoine_Watteau_009.jpg",
+      "sourceHash": "9c626574698a262d233933fb005bb2e25b560adec95ee3d5d56327b25dc4045c",
+      "credit": "Jean-Antoine Watteau；Harlequin and Columbine (Voulez-vous triompher des belles?)；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2545,
+        "sourceBytes": 698206,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-pleasures-ball-whole",
+      "artworkId": "watteau-pleasures-ball",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1535,
+      "thumbnail": {
+        "url": "media/foreign/watteau-pleasures-ball/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 29480,
+        "sha256": "8b62be3aac10fb23f160d5bd1ec6f07e61240249793d1c7ed0bc42ef637a3f09"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-pleasures-ball/preview.webp",
+        "width": 1280,
+        "height": 1023,
+        "bytes": 484084,
+        "sha256": "1c6d5a7c65cbacc25ede45c6e697250e078dd81bcc0c640765e5f87bbf6e317b"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-pleasures-ball/detail.jpg",
+        "width": 1920,
+        "height": 1535,
+        "bytes": 963204,
+        "sha256": "200e489f2530ab93154b6af3b2cc6b38f54a0846d2157587b68b7098b1923977",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watteau,_Jean-Antoine_-_Les_Plaisirs_du_Bal_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Watteau%2C_Jean-Antoine_-_Les_Plaisirs_du_Bal_-_Google_Art_Project.jpg/1920px-Watteau%2C_Jean-Antoine_-_Les_Plaisirs_du_Bal_-_Google_Art_Project.jpg",
+      "sourceHash": "cba606a59e46b6ec3420d599a777bef03a0a1d93545cf6705908834ffe6b5e74",
+      "credit": "Jean-Antoine Watteau；Les Plaisirs du bal；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1535,
+        "sourceBytes": 1320006,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-judgment-paris-whole",
+      "artworkId": "watteau-judgment-paris",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 2004,
+      "thumbnail": {
+        "url": "media/foreign/watteau-judgment-paris/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22966,
+        "sha256": "679ae10d7eec3eecb79347c5d17d0a2ba440c322f440c4ff7891cf625142bfd4"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-judgment-paris/preview.webp",
+        "width": 818,
+        "height": 1280,
+        "bytes": 181900,
+        "sha256": "ab9631d1a55463f4c5447579e52d008aba4bdeab7c4fc07ec6cc89506df2c4b9"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-judgment-paris/detail.jpg",
+        "width": 1280,
+        "height": 2004,
+        "bytes": 381317,
+        "sha256": "55742c6a58c55c97539e0e42836cf14a81ac10e1562cd51e50cf4bb1c8a52a67",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_Le_jugement_de_P%C3%A2ris.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Jean-Antoine_Watteau_-_Le_jugement_de_P%C3%A2ris.jpg/1280px-Jean-Antoine_Watteau_-_Le_jugement_de_P%C3%A2ris.jpg",
+      "sourceHash": "b2578f7688de33b19499d7d660ea3fbe16813650a39fedbb5425cea42acbf340",
+      "credit": "Jean-Antoine Watteau；Le Jugement de Pâris；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 2004,
+        "sourceBytes": 510899,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-diana-bath-whole",
+      "artworkId": "watteau-diana-bath",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 960,
+      "height": 761,
+      "thumbnail": {
+        "url": "media/foreign/watteau-diana-bath/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22830,
+        "sha256": "e513eff74b80e3ee0aba44f2ddb22302d858b44784f3d90134ce012c2f0c6eeb"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-diana-bath/preview.webp",
+        "width": 960,
+        "height": 761,
+        "bytes": 134564,
+        "sha256": "0c08216327b6c0459c58c75bfd386b71aea473b001a9c6a3852c21ff5c224fbd"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-diana-bath/detail.jpg",
+        "width": 960,
+        "height": 761,
+        "bytes": 139553,
+        "sha256": "cacc17f69058920111abf4e1ef0da5d167d412fb505b6780ed23079587d711d6",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_Diana_at_her_Bath_-_WGA25446.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Antoine_Watteau_-_Diana_at_her_Bath_-_WGA25446.jpg/960px-Antoine_Watteau_-_Diana_at_her_Bath_-_WGA25446.jpg",
+      "sourceHash": "8974d6d0237de43cb401edb67303fb64c9b23984e5f9625c968c714f9cbfb148",
+      "credit": "Jean-Antoine Watteau；Diane au bain；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 960,
+        "sourceHeight": 761,
+        "sourceBytes": 179034,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-jupiter-antiope-whole",
+      "artworkId": "watteau-jupiter-antiope",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1276,
+      "thumbnail": {
+        "url": "media/foreign/watteau-jupiter-antiope/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22600,
+        "sha256": "ae7c541c908a8b44dc5bbd0cda5e9c4fae488f0e96d3d594406238815ccc8558"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-jupiter-antiope/preview.webp",
+        "width": 1280,
+        "height": 851,
+        "bytes": 316094,
+        "sha256": "60f85c881b19114f2ac5e536b7a4b26b392622f1e93cb9f49e974da8f4fa6d37"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-jupiter-antiope/detail.jpg",
+        "width": 1920,
+        "height": 1276,
+        "bytes": 594859,
+        "sha256": "c40f9dd00f20da18b946daef3c3e8e5a9640c4e5744cc013de63a32f7d587d81",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nymphe_et_satyre_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1129.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Nymphe_et_satyre_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1129.jpg/1920px-Nymphe_et_satyre_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1129.jpg",
+      "sourceHash": "76472704e704cb7d7c41e3b057a5aba1e160382dd1f7547f1084af21e3093fa0",
+      "credit": "Jean-Antoine Watteau；Nymphe et satyre, dit aussi Jupiter et Antiope；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1276,
+        "sourceBytes": 786905,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-feast-love-whole",
+      "artworkId": "watteau-feast-love",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1573,
+      "thumbnail": {
+        "url": "media/foreign/watteau-feast-love/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 30872,
+        "sha256": "d63cc3637171ea8488eda362715f2dfd1577720ee5cc080b5137a92740d0cd59"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-feast-love/preview.webp",
+        "width": 1280,
+        "height": 1049,
+        "bytes": 487608,
+        "sha256": "25caefa0d73003225f9fc2be885eef83c23286148fdd31452108ea4e9a4e3cf1"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-feast-love/detail.jpg",
+        "width": 1920,
+        "height": 1573,
+        "bytes": 928160,
+        "sha256": "6e127dd94f93241e3d5bff3c37643f9b9ff29d7174937f81408240d8230fd62e",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_The_Feast_of_Love_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Antoine_Watteau_-_The_Feast_of_Love_-_Google_Art_Project.jpg/1920px-Antoine_Watteau_-_The_Feast_of_Love_-_Google_Art_Project.jpg",
+      "sourceHash": "2e7aea3c19382bbd82cf0e0c54363741273e7f90ff0fbbb83866ab06d188ce77",
+      "credit": "Jean-Antoine Watteau；The Feast of Love；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1573,
+        "sourceBytes": 1242026,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-fetes-venitiennes-whole",
+      "artworkId": "watteau-fetes-venitiennes",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2372,
+      "thumbnail": {
+        "url": "media/foreign/watteau-fetes-venitiennes/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 19162,
+        "sha256": "3962494734d8eab1aadac2284880994ecb9309be030706418ac5fdcc95a948e2"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-fetes-venitiennes/preview.webp",
+        "width": 1036,
+        "height": 1280,
+        "bytes": 274942,
+        "sha256": "227887603474c67d865da5f4e3f9cf61750d173db327e9f151d2890a30044653"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-fetes-venitiennes/detail.jpg",
+        "width": 1920,
+        "height": 2372,
+        "bytes": 910551,
+        "sha256": "f941de9150958cd731bf9d7b8b50b9fd10a1d8d97f228616cf60f7dc2ba712dd",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_F%C3%AAtes_Venitiennes_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Jean-Antoine_Watteau_-_F%C3%AAtes_Venitiennes_-_Google_Art_Project.jpg/1920px-Jean-Antoine_Watteau_-_F%C3%AAtes_Venitiennes_-_Google_Art_Project.jpg",
+      "sourceHash": "35ca6d37455087eededf10a280a251bf87a03eeb35aa092d3a4a66979d2c1589",
+      "credit": "Jean-Antoine Watteau；Fêtes vénitiennes；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2372,
+        "sourceBytes": 1204985,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-love-french-whole",
+      "artworkId": "watteau-love-french",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 985,
+      "thumbnail": {
+        "url": "media/foreign/watteau-love-french/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21544,
+        "sha256": "f759f1ce234a2fc022d88d31a3c62e824281a7749982c86f423d8d744bca7c73"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-love-french/preview.webp",
+        "width": 1280,
+        "height": 985,
+        "bytes": 181992,
+        "sha256": "e9c999c6d238887591bf6b8b05538b4e756195b043823b78fb5b1324416095cf"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-love-french/detail.jpg",
+        "width": 1280,
+        "height": 985,
+        "bytes": 208572,
+        "sha256": "1e1bf01b0340e70492716874417c6788940fa5568be650ffb2afdcbe3ac39281",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_The_French_Comedy_-_WGA25442.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Antoine_Watteau_-_The_French_Comedy_-_WGA25442.jpg/1280px-Antoine_Watteau_-_The_French_Comedy_-_WGA25442.jpg",
+      "sourceHash": "48d2d24eee05a1020e48fc11692da05fa916129a4cc1e1b96b7e0cc104c4829f",
+      "credit": "Jean-Antoine Watteau；L’Amour au théâtre français；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 985,
+        "sourceBytes": 270002,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-love-italian-whole",
+      "artworkId": "watteau-love-italian",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 995,
+      "thumbnail": {
+        "url": "media/foreign/watteau-love-italian/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 10436,
+        "sha256": "71feb7ac5cbd3bf895fbc0cadd536ff79096f4ed90f1c476bbf56af68bb70dc1"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-love-italian/preview.webp",
+        "width": 1280,
+        "height": 995,
+        "bytes": 86070,
+        "sha256": "b846be676cd0802d5093b0580dbc26e1afdda243194652de949711f8f73e64e3"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-love-italian/detail.jpg",
+        "width": 1280,
+        "height": 995,
+        "bytes": 122873,
+        "sha256": "2cdece1b08680359c51096708fd74be4be48c6b810f73fe7f957f0de4442ca0c",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_025.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Antoine_Watteau_025.jpg/1280px-Antoine_Watteau_025.jpg",
+      "sourceHash": "dc2f0d2de3e4d3853f308ca28094d39609150bb4100e0f66b13c96a3a3599e9f",
+      "credit": "Jean-Antoine Watteau；L’Amour au théâtre italien；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 995,
+        "sourceBytes": 173803,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-faux-pas-whole",
+      "artworkId": "watteau-faux-pas",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2402,
+      "thumbnail": {
+        "url": "media/foreign/watteau-faux-pas/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18122,
+        "sha256": "796ede2d882dba3e9771b46b289dde210cb50e7e2cfad6de41400fff121a3bab"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-faux-pas/preview.webp",
+        "width": 1023,
+        "height": 1280,
+        "bytes": 289290,
+        "sha256": "d26466da40e26545c55f07a481e348ea58ba5a51abd9e5442cdfa70328c727f6"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-faux-pas/detail.jpg",
+        "width": 1920,
+        "height": 2402,
+        "bytes": 949750,
+        "sha256": "55ead111e0d3b0fc4a9a5f6ca1a52556093718f6c2d8ae44d52c5395db3d6b99",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Faux-Pas_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1127.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Le_Faux-Pas_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1127.jpg/1920px-Le_Faux-Pas_-_Jean-Antoine_Watteau_-_Mus%C3%A9e_du_Louvre_Peintures_MI_1127.jpg",
+      "sourceHash": "d56a135a4ed652e0c7df03a32a66ff99787737dde3523705d90b9162caf25f9e",
+      "credit": "Jean-Antoine Watteau；Le Faux-Pas；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2402,
+        "sourceBytes": 1270989,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-country-dance-whole",
+      "artworkId": "watteau-country-dance",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1592,
+      "thumbnail": {
+        "url": "media/foreign/watteau-country-dance/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21592,
+        "sha256": "652fc05e18da085cb48482da12676b7d0f3bd2a9d96c69636d60a80bb4b07a0a"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-country-dance/preview.webp",
+        "width": 1280,
+        "height": 1061,
+        "bytes": 302104,
+        "sha256": "47448d49f859e2efab89da3be5eba39be42c26082cbd8083d1cffd742c34cdaf"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-country-dance/detail.jpg",
+        "width": 1920,
+        "height": 1592,
+        "bytes": 629189,
+        "sha256": "7d343967fd964c205bb0836eed6c3f6e8e60cab6273979f75e93e40e8cc560c1",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_The_Country_Dance_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Jean-Antoine_Watteau_-_The_Country_Dance_-_Google_Art_Project.jpg/1920px-Jean-Antoine_Watteau_-_The_Country_Dance_-_Google_Art_Project.jpg",
+      "sourceHash": "d74f4ffe8a7891fc125ed4485ed91787fcb73e6f322535ec946a2b7e00ae4901",
+      "credit": "Jean-Antoine Watteau；The Country Dance；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1592,
+        "sourceBytes": 830959,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-perfect-chord-whole",
+      "artworkId": "watteau-perfect-chord",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2418,
+      "thumbnail": {
+        "url": "media/foreign/watteau-perfect-chord/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 21342,
+        "sha256": "a94b6a0960cee53ed964ea134b7ddd786de2b8157c4a1708265ba3f46bb83ee5"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-perfect-chord/preview.webp",
+        "width": 1016,
+        "height": 1280,
+        "bytes": 174108,
+        "sha256": "f6f3fe553f77291d12820978d8260e53536257a66c2bce180cf1fb24fb6223a4"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-perfect-chord/detail.jpg",
+        "width": 1920,
+        "height": 2418,
+        "bytes": 534106,
+        "sha256": "f9dda1caf46729141d7f16abbfb754632714adf70fa7d65c658aa98e2d9bcf37",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Perfect_Accord_LACMA_AC1999.18.1.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/The_Perfect_Accord_LACMA_AC1999.18.1.jpg/1920px-The_Perfect_Accord_LACMA_AC1999.18.1.jpg",
+      "sourceHash": "c85b9487b8ed19e8411915fe5319aa2ac810ec14c8778c8ead1a32324fbb02d8",
+      "credit": "Jean-Antoine Watteau；L’Accord parfait；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2418,
+        "sourceBytes": 703896,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-portal-valenciennes-whole",
+      "artworkId": "watteau-portal-valenciennes",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 500,
+      "height": 335,
+      "thumbnail": {
+        "url": "media/foreign/watteau-portal-valenciennes/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 31540,
+        "sha256": "2f115b29fafefc5c4f43a81fa19c2562c359106f4b6f643b16e2e7c5ca356edd"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-portal-valenciennes/preview.webp",
+        "width": 500,
+        "height": 335,
+        "bytes": 54882,
+        "sha256": "209226ffca1e4ae8313f8c3a7bbee92d6ec73635000f901999318625cd3697e3"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-portal-valenciennes/detail.jpg",
+        "width": 500,
+        "height": 335,
+        "bytes": 46324,
+        "sha256": "16905b90c6331ac8a197a941660f58245940980a16aa0d75328c3ef425f51755",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watteau._The_Portal_of_Valenciennes_(1709).jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Watteau._The_Portal_of_Valenciennes_%281709%29.jpg/500px-Watteau._The_Portal_of_Valenciennes_%281709%29.jpg",
+      "sourceHash": "b197d65ff8a15b8b7a515357d06bb20037fb664ecbf52fde5298f04015d8272f",
+      "credit": "Jean-Antoine Watteau；The Portal of Valenciennes；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 500,
+        "sourceHeight": 335,
+        "sourceBytes": 62443,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-capricious-whole",
+      "artworkId": "watteau-capricious",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2398,
+      "thumbnail": {
+        "url": "media/foreign/watteau-capricious/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 26020,
+        "sha256": "852d4e1344cee64b3e4cf5195e7350bb3dd2234ec9485d48ec1e65c336f86ccf"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-capricious/preview.webp",
+        "width": 1025,
+        "height": 1280,
+        "bytes": 440354,
+        "sha256": "15bac51589ba7e9c0b3f51fa608720462a767ab20186e750fac433bbed9302de"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-capricious/detail.jpg",
+        "width": 1920,
+        "height": 2398,
+        "bytes": 1293131,
+        "sha256": "5862cc5259c6a308e3f742970e69f84d5962fd81ad521e223131fd348b2498ed",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_030.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Antoine_Watteau_030.jpg/1920px-Antoine_Watteau_030.jpg",
+      "sourceHash": "04777d5a190a171081c17964078915b971675600214da7ffa162a944f372247c",
+      "credit": "Jean-Antoine Watteau；La Boudeuse；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2398,
+        "sourceBytes": 1675235,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-love-lesson-whole",
+      "artworkId": "watteau-love-lesson",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1380,
+      "thumbnail": {
+        "url": "media/foreign/watteau-love-lesson/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 26702,
+        "sha256": "147953dcd948e9b3ff4ed371a6bbfdc09c603a3d81f30b059aaa10b7b9d3d15d"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-love-lesson/preview.webp",
+        "width": 1280,
+        "height": 920,
+        "bytes": 395976,
+        "sha256": "65988f7fe999b32719499b39a51253b8dec45121a5d788f79fef585843df912b"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-love-lesson/detail.jpg",
+        "width": 1920,
+        "height": 1380,
+        "bytes": 764477,
+        "sha256": "cde6d540cca5ebcbe46671bf000640fa21d5915acb24ce76e0217e71e6996009",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_The_Love_Lesson_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Antoine_Watteau_-_The_Love_Lesson_-_Google_Art_Project.jpg/1920px-Antoine_Watteau_-_The_Love_Lesson_-_Google_Art_Project.jpg",
+      "sourceHash": "531c42c7a95a6fb2c30c53b6970cb64557f6238a25013fce82be96498520ac95",
+      "credit": "Jean-Antoine Watteau；The Love Lesson；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1380,
+        "sourceBytes": 1032938,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-surprise-whole",
+      "artworkId": "watteau-surprise",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2491,
+      "thumbnail": {
+        "url": "media/foreign/watteau-surprise/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15374,
+        "sha256": "53f0b38bdce92f11d56edfd828dfee2b88d850f666d8ef95221386c07e1aaff3"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-surprise/preview.webp",
+        "width": 987,
+        "height": 1280,
+        "bytes": 264916,
+        "sha256": "7d909a8cc402e226808081e4b517334a9d6e51ed9ddc596a78b4959b103d7b89"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-surprise/detail.jpg",
+        "width": 1920,
+        "height": 2491,
+        "bytes": 1096568,
+        "sha256": "857aa11c49a27c53321917eb35ca79f1926d6d2a7a5b713da2f62881930e5787",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_La_Surprise_(Getty_Center).jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Jean-Antoine_Watteau_-_La_Surprise_%28Getty_Center%29.jpg/1920px-Jean-Antoine_Watteau_-_La_Surprise_%28Getty_Center%29.jpg",
+      "sourceHash": "73ad989ded5ec1d32e80535ea4267e084e2c5ac342b633d0bb0c2a5ad4226a42",
+      "credit": "Jean-Antoine Watteau；La Surprise；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2491,
+        "sourceBytes": 1406881,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-perspective-whole",
+      "artworkId": "watteau-perspective",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1280,
+      "height": 1077,
+      "thumbnail": {
+        "url": "media/foreign/watteau-perspective/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 15590,
+        "sha256": "cae47130e0e5f8ac702a799a3c6d9af8620fec94cb84d9f236979f3afa5ce9c5"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-perspective/preview.webp",
+        "width": 1280,
+        "height": 1077,
+        "bytes": 299222,
+        "sha256": "4fc5fef99d374887db83e9acd3ef0d7d4b369e35dccfe673f11b1ed158da58a4"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-perspective/detail.jpg",
+        "width": 1280,
+        "height": 1077,
+        "bytes": 280276,
+        "sha256": "3e638a99669f49ab23aa308ae21adbe793fad0d905b2b0d2b85569d50ede8669",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_-_La_Perspective_(ca.1715).jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Antoine_Watteau_-_La_Perspective_%28ca.1715%29.jpg/1280px-Antoine_Watteau_-_La_Perspective_%28ca.1715%29.jpg",
+      "sourceHash": "b52473f5b304ae675c256c5c58783d7826f14fba8d6a6be5539b562e8612a83e",
+      "credit": "Jean-Antoine Watteau；La Perspective (View through the Trees in the Park of Pierre Crozat)；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1280,
+        "sourceHeight": 1077,
+        "sourceBytes": 369336,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-scale-love-whole",
+      "artworkId": "watteau-scale-love",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 1626,
+      "thumbnail": {
+        "url": "media/foreign/watteau-scale-love/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 18662,
+        "sha256": "e4b10a4e10cb5d09ff6c7446d29fc24076b481c335084035f866d97c2445857c"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-scale-love/preview.webp",
+        "width": 1280,
+        "height": 1084,
+        "bytes": 249742,
+        "sha256": "5834e201f450dbd66767ae44fded8bf43a4ca03353f46182729284d33e1d192f"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-scale-love/detail.jpg",
+        "width": 1920,
+        "height": 1626,
+        "bytes": 557514,
+        "sha256": "4e0dfe782fd0366ac05dc789c565fac14fab0743ef3dbfe8713424fb51e221cb",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_The_Love_Song.JPG",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Jean-Antoine_Watteau_-_The_Love_Song.JPG/1920px-Jean-Antoine_Watteau_-_The_Love_Song.JPG",
+      "sourceHash": "58639077ae05e69936c8aed93852feed3426023814c366ce60cbd7272994d242",
+      "credit": "Jean-Antoine Watteau；The Scale of Love；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 1626,
+        "sourceBytes": 725152,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "watteau-worried-lover-whole",
+      "artworkId": "watteau-worried-lover",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1920,
+      "height": 2604,
+      "thumbnail": {
+        "url": "media/foreign/watteau-worried-lover/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 27310,
+        "sha256": "c82cbf632842a0104660b1f0a9cb783827ce3d02e7ada7d0f22e17d1f17bd133"
+      },
+      "preview": {
+        "url": "media/foreign/watteau-worried-lover/preview.webp",
+        "width": 944,
+        "height": 1280,
+        "bytes": 362716,
+        "sha256": "86af900bdfeea8a5ed30fa98d8d36d1ea5d5b809a08fde1a38bb95b3288579c2"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/watteau-worried-lover/detail.jpg",
+        "width": 1920,
+        "height": 2604,
+        "bytes": 1267808,
+        "sha256": "8828df883a869f7eb0a987ea14ab31548cac0dc3c2aca4843acd242f3caddeb6",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Antoine_Watteau_-_L%E2%80%99Amante_inqui%C3%A8te_-_Google_Art_Project.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Jean-Antoine_Watteau_-_L%E2%80%99Amante_inqui%C3%A8te_-_Google_Art_Project.jpg/1920px-Jean-Antoine_Watteau_-_L%E2%80%99Amante_inqui%C3%A8te_-_Google_Art_Project.jpg",
+      "sourceHash": "fa3a31e1dcd20621938d0a0b5445c16e3a2d85f1276680d7a8aafdd89fc401f2",
+      "credit": "Jean-Antoine Watteau；L’Amante inquiète；Wikimedia Commons（Public domain）",
+      "licenseLabel": "公有领域（Public domain）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1920,
+        "sourceHeight": 2604,
+        "sourceBytes": 1605821,
+        "downloadKind": "commons-cached-thumbnail",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "gossaert-danae-whole",
+      "artworkId": "gossaert-danae",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 2024,
+      "height": 2444,
+      "thumbnail": {
+        "url": "media/foreign/gossaert-danae/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 34470,
+        "sha256": "f8052cb77d220bf2deea8a7b3185ab06876221b5e5b1087a03bccc4ca6ef5ffd"
+      },
+      "preview": {
+        "url": "media/foreign/gossaert-danae/preview.webp",
+        "width": 1060,
+        "height": 1280,
+        "bytes": 492902,
+        "sha256": "5b8a653aea5352de7f7622e79ddffa38fbfc4f27fc75d8fe970a2f37f87c6b61"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/gossaert-danae/detail.jpg",
+        "width": 2024,
+        "height": 2444,
+        "bytes": 1148711,
+        "sha256": "23d044ced9c43593a0ba68f8dcf9d261b2bf55aef82f2812c531ab635c15a1c6",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jan_Gossaert_003.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Jan_Gossaert_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "a0a49593b8ed8e5ecf40558ce963479b79ff0ba899d1dcb55064b8814245cd66",
+      "credit": "扬·戈萨尔特；Wikimedia Commons；Jan Gossaert 003.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 2024,
+        "sourceHeight": 2444,
+        "sourceBytes": 1230026,
+        "downloadKind": "original",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "correggio-danae-whole",
+      "artworkId": "correggio-danae",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1239,
+      "height": 1000,
+      "thumbnail": {
+        "url": "media/foreign/correggio-danae/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 17598,
+        "sha256": "fcbeed63b43e20928ab0897080a4e2556f4777ffae527e6cdf802cc3f3c1885d"
+      },
+      "preview": {
+        "url": "media/foreign/correggio-danae/preview.webp",
+        "width": 1239,
+        "height": 1000,
+        "bytes": 148520,
+        "sha256": "32f12dff0a8e7c76a859245b6f4543c399d5fc629985315f087158fefa80adca"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/correggio-danae/detail.jpg",
+        "width": 1239,
+        "height": 1000,
+        "bytes": 159392,
+        "sha256": "286872049f035d3a526f6331a8e47476c5dfdf225ba07706640b8f61b7f78ba2",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Correggio_-_Dana%C3%AB_-_WGA05341.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Correggio_-_Dana%C3%AB_-_WGA05341.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "8c38211d90c4a17da00005ee1a0ab098e689a9cc925a79f2f18b49b0129297f7",
+      "credit": "柯雷乔；Wikimedia Commons；Correggio - Danaë - WGA05341.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1239,
+        "sourceHeight": 1000,
+        "sourceBytes": 147533,
+        "downloadKind": "original",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "tintoretto-danae-whole",
+      "artworkId": "tintoretto-danae",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 2040,
+      "height": 1558,
+      "thumbnail": {
+        "url": "media/foreign/tintoretto-danae/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 27900,
+        "sha256": "e83fde5e7a7aab515fa9f799df74d5dba5503ff4ca49746d62338cee43e2f9e3"
+      },
+      "preview": {
+        "url": "media/foreign/tintoretto-danae/preview.webp",
+        "width": 1280,
+        "height": 978,
+        "bytes": 285806,
+        "sha256": "5a0c792e90a87b311efecf2d69514939e31b8cdc51431ce797320fee2b9be3bd"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/tintoretto-danae/detail.jpg",
+        "width": 2040,
+        "height": 1558,
+        "bytes": 633832,
+        "sha256": "909824353c6078338d4044ae0a431a1ae802ae7ccf8866a256c2e3eb1410b7b6",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tintoret-Dana%C3%A9-Lyon.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Tintoret-Dana%C3%A9-Lyon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "3b59a39b93fd164a313f6966a9e63368a49f0b61477ba95dd1474d29b151e113",
+      "credit": "丁托列托；Wikimedia Commons；Tintoret-Danaé-Lyon.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 2040,
+        "sourceHeight": 1558,
+        "sourceBytes": 1420351,
+        "downloadKind": "original",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "goltzius-danae-whole",
+      "artworkId": "goltzius-danae",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 2100,
+      "height": 1824,
+      "thumbnail": {
+        "url": "media/foreign/goltzius-danae/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 22636,
+        "sha256": "eb588a3ef618886a24ea3ee92f87ec4388ef6154a58b399164164075c640f65c"
+      },
+      "preview": {
+        "url": "media/foreign/goltzius-danae/preview.webp",
+        "width": 1280,
+        "height": 1112,
+        "bytes": 253596,
+        "sha256": "677174665bc8faddf230db9115b36900ce010a1137806d2e1cf742b44b6e7a85"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/goltzius-danae/detail.jpg",
+        "width": 2100,
+        "height": 1824,
+        "bytes": 628267,
+        "sha256": "9c5a9538331bf1d62c0bc1bd93a518be6e700b57fd23a9411f32c535c57c418e",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Sleeping_Danae_Being_Prepared_to_Receive_Jupiter_LACMA_M.84.191_-_b.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/The_Sleeping_Danae_Being_Prepared_to_Receive_Jupiter_LACMA_M.84.191_-_b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "8167734ff48d0a9d494c225c1f3d2cc07790a378cfa76db1acdf296c7a63cef4",
+      "credit": "亨德里克·霍尔齐乌斯；Wikimedia Commons；The Sleeping Danae Being Prepared to Receive Jupiter LACMA M.84.191 - b.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 2100,
+        "sourceHeight": 1824,
+        "sourceBytes": 2963242,
+        "downloadKind": "original",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "artemisia-danae-whole",
+      "artworkId": "artemisia-danae",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3160,
+      "height": 2464,
+      "thumbnail": {
+        "url": "media/foreign/artemisia-danae/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 11060,
+        "sha256": "10e9a32ce787f7c273e4db6a37d0183f162f8d145ed546f154e07b9604206046"
+      },
+      "preview": {
+        "url": "media/foreign/artemisia-danae/preview.webp",
+        "width": 1280,
+        "height": 998,
+        "bytes": 70410,
+        "sha256": "60108d73417e5e31f0f14a8b0e5a92b0f38184bf7c6581ef0f97a368249ac145"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/artemisia-danae/detail.jpg",
+        "width": 3160,
+        "height": 2464,
+        "bytes": 599382,
+        "sha256": "92519b0220ff6f74a682e8c39e442b0723bd116337eb86dd1417b56dd02a8308",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_-_Dana%C3%AB_-_93-1986_-_Saint_Louis_Art_Museum.jpg",
+      "sourceImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Artemisia_Gentileschi_-_Dana%C3%AB_-_93-1986_-_Saint_Louis_Art_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourceHash": "6a4314663d0a0703b694f9b93faac28d4941d779b434bffad27c238b25a5036f",
+      "credit": "阿尔特米西娅·真蒂莱斯基；Wikimedia Commons；Artemisia Gentileschi - Danaë - 93-1986 - Saint Louis Art Museum.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 3160,
+        "sourceHeight": 2464,
+        "sourceBytes": 1560525,
+        "downloadKind": "original",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "orazio-danae-getty-whole",
+      "artworkId": "orazio-danae-getty",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 3840,
+      "height": 2724,
+      "thumbnail": {
+        "url": "media/foreign/orazio-danae-getty/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 14068,
+        "sha256": "5dd73063653a3e8fff637a5a7531deffc71db05f74c5f76c56c9d6a62c1b385f"
+      },
+      "preview": {
+        "url": "media/foreign/orazio-danae-getty/preview.webp",
+        "width": 1280,
+        "height": 908,
+        "bytes": 101230,
+        "sha256": "9fceb99b338ad6bd809e6d0a60b7b3ffb0269f79958968155ac77459f22d781d"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/orazio-danae-getty/detail.jpg",
+        "width": 3840,
+        "height": 2724,
+        "bytes": 1458848,
+        "sha256": "3c7afad84b656198a50aba987e717ba66d2e9e43b15a1a79d6ca693a5add9b06",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orazio_Gentileschi_-_Dana%C3%AB_and_the_Shower_of_Gold_-_2016.6_-_J._Paul_Getty_Museum.jpg",
+      "sourceImageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Orazio_Gentileschi_-_Dana%C3%AB_and_the_Shower_of_Gold_-_2016.6_-_J._Paul_Getty_Museum.jpg/3840px-Orazio_Gentileschi_-_Dana%C3%AB_and_the_Shower_of_Gold_-_2016.6_-_J._Paul_Getty_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceHash": "f1dbddb1576ba73f90371d6a5e3cfdfe5c2b08b903b476025f6fa71bbe3e5945",
+      "credit": "奥拉齐奥·真蒂莱斯基；Wikimedia Commons；Orazio Gentileschi - Danaë and the Shower of Gold - 2016.6 - J. Paul Getty Museum.jpg",
+      "licenseLabel": "Public domain（Commons 公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 3840,
+        "sourceHeight": 2724,
+        "sourceBytes": 1955882,
+        "downloadKind": "commons-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "klimt-danae-whole",
+      "artworkId": "klimt-danae",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 1600,
+      "height": 1549,
+      "thumbnail": {
+        "url": "media/foreign/klimt-danae/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 20892,
+        "sha256": "d9a51b722dbd3cb06adcbce7edcb68ae1e2afc940f47286a29a47cf65dda1e12"
+      },
+      "preview": {
+        "url": "media/foreign/klimt-danae/preview.webp",
+        "width": 1280,
+        "height": 1239,
+        "bytes": 128586,
+        "sha256": "ab243dc12b850b9660501a603f525cde9bc391f9ca8e35fee248299ce2483590"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/klimt-danae/detail.jpg",
+        "width": 1600,
+        "height": 1549,
+        "bytes": 245003,
+        "sha256": "9ce5b36f17967e861a7d97589fd2ef6ef810a53be63d017a39d516f79f969d3e",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://iklimt.com/klimt-public-domain-images/",
+      "sourceImageUrl": "https://iklimt.com/wp-content/uploads/2026/11/gustav-klimt-danae-c.webp",
+      "sourceHash": "effafda2b3754ce46f58aeea45a2bae2fb60f5ef2dde3cf34b5e90c59c40044c",
+      "credit": "古斯塔夫·克里姆特；iKlimt，图源标注 Wikimedia Commons；Danaë",
+      "licenseLabel": "Public domain（来源页面标注公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "high",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 1600,
+        "sourceHeight": 1549,
+        "sourceBytes": 136460,
+        "downloadKind": "web-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
+    },
+    {
+      "id": "schiele-danae-whole",
+      "artworkId": "schiele-danae",
+      "role": "whole",
+      "label": "全图",
+      "order": 0,
+      "width": 750,
+      "height": 481,
+      "thumbnail": {
+        "url": "media/foreign/schiele-danae/thumb.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 25158,
+        "sha256": "8ddc9632644040c4559c65e8d123dcffe0b9e151efef74c7f668a61d79de0f4c"
+      },
+      "preview": {
+        "url": "media/foreign/schiele-danae/preview.webp",
+        "width": 750,
+        "height": 481,
+        "bytes": 75886,
+        "sha256": "fb25cdcf772861fbd951d6576fb0c65af5b3b40122a66332458fa8f6cbd511ae"
+      },
+      "delivery": {
+        "kind": "image",
+        "url": "media/foreign/schiele-danae/detail.jpg",
+        "width": 750,
+        "height": 481,
+        "bytes": 72603,
+        "sha256": "bea696d6e702ef5b0595d065a3aa03b97338d1f9e07f8783de7020820efe7d27",
+        "format": "jpeg"
+      },
+      "sourceUrl": "https://www.wikiart.org/en/egon-schiele/danae-1909",
+      "sourceImageUrl": "https://uploads3.wikiart.org/images/egon-schiele/danae-1909.jpg!Large.jpg",
+      "sourceHash": "6ccd68e1c81a6c8b761c23c18215ca1566a8d43236bfbd7edab991d26cbdbcab",
+      "credit": "埃贡·席勒；WikiArt；Danaë",
+      "licenseLabel": "Public domain（来源页面标注公版复制品）",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "quality": "standard",
+      "publicationStatus": "cleared",
+      "processing": {
+        "profile": "web-v1-jpeg84-webp84-3840",
+        "sourceWidth": 750,
+        "sourceHeight": 481,
+        "sourceBytes": 71477,
+        "downloadKind": "web-rendition",
+        "longestEdgeLimit": 3840,
+        "note": "网页全图保留画面比例，最长边不超过3840像素，不放大源图；原始来源与下载版本分别记录。"
+      }
     }
   ]
 }

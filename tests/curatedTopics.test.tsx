@@ -14,6 +14,8 @@ import {
   scopeWorks,
   scopeVenues,
   primaryImage,
+  artistLabel,
+  catalogIndexSchema,
 } from "../src/domain/atlas";
 import { ArtworkList, Catalog } from "../src/features/catalog/Catalog";
 import { useSession } from "../src/application/session";
@@ -60,7 +62,10 @@ describe("curated topics", () => {
     expect(new Set(artists).size).toBe(artists.length);
     expect([...artists].sort()).toEqual(
       data.artists
-        .filter((artist) => artist.id !== "verrocchio")
+        .filter(
+          (artist) =>
+            !["verrocchio", "watteau"].includes(artist.id) && artist.directoryVisible !== false,
+        )
         .map((artist) => artist.id)
         .sort(),
     );
@@ -100,7 +105,18 @@ describe("curated topics", () => {
   it("keeps Danae versions distinct and leaves unmapped works accessible in the list", () => {
     const works = scopeWorks(data, "topic:danae");
     expect(new Set(works.flatMap((work) => work.artistIds))).toEqual(
-      new Set(["titian", "rembrandt"]),
+      new Set([
+        "gossaert",
+        "correggio",
+        "titian",
+        "tintoretto",
+        "goltzius",
+        "artemisia-gentileschi",
+        "orazio-gentileschi",
+        "rembrandt",
+        "klimt",
+        "schiele",
+      ]),
     );
     expect(
       works.filter((work) => work.artistIds.includes("titian")),
@@ -113,6 +129,12 @@ describe("curated topics", () => {
     expect(scopeVenues(data, [prado]).map((venue) => venue.name)).toContain(
       "普拉多博物馆",
     );
+    for (const id of ["klimt-danae", "schiele-danae"]) {
+      const work = works.find((work) => work.id === id)!;
+      expect(primaryImage(data, id)?.role).toBe("whole");
+      expect(scopeVenues(data, [work])).toEqual([]);
+      expect(work.note).toContain("私人收藏");
+    }
   });
 
   it("labels same-title topic rows with their collections and selects the correct artwork ID", () => {
@@ -133,7 +155,7 @@ describe("curated topics", () => {
       />,
     );
     const rows = within(screen.getByLabelText("作品列表"));
-    expect(rows.getAllByRole("button")).toHaveLength(6);
+    expect(rows.getAllByRole("button")).toHaveLength(14);
     const prado = rows.getByRole("button", {
       name: /达娜厄.*提香.*普拉多博物馆/,
     });
@@ -141,6 +163,69 @@ describe("curated topics", () => {
     expect(onWork.mock.calls[0][0].id).toBe("titian-q14425553");
     expect(
       rows.getByRole("button", { name: /达娜厄.*伦勃朗.*艾尔米塔什/ }),
+    ).toBeTruthy();
+  });
+
+  it("keeps topic-only attribution in the delivered schema without adding artist or empty period entries", () => {
+    const copy = structuredClone(data);
+    const gossaert = copy.artists.find((artist) => artist.id === "gossaert")!;
+    const work = copy.artworks.find((work) => work.id === "gossaert-danae")!;
+    expect(gossaert.directoryVisible).toBe(false);
+    // Simulate a period containing only an artist used by a topic.
+    copy.periods.push({
+      id: "topic-only-period",
+      name: "专题专用时期",
+      category: "foreign",
+      dateLabel: "1527",
+    });
+    gossaert.periodId = "topic-only-period";
+    const index = catalogIndexSchema.parse({
+      ...copy,
+      detailBase: "artwork-details/0123456789abcdef0123/",
+    });
+    expect(
+      index.artists.find((artist) => artist.id === gossaert.id)
+        ?.directoryVisible,
+    ).toBe(false);
+    expect(artistLabel(index, work)).toBe("扬·戈萨尔特");
+    expect(
+      scopeWorks(index, "topic:danae").some((item) => item.id === work.id),
+    ).toBe(true);
+    expect(
+      scopeWorks(index, "favorites", new Set([work.id])).map((item) => item.id),
+    ).toEqual([work.id]);
+    expect(scopeVenues(index, [work]).map((venue) => venue.id)).toEqual([
+      "munich",
+    ]);
+
+    useSession.setState({
+      tab: "foreign",
+      expanded: {
+        foreign: copy.periods
+          .filter((p) => p.category === "foreign")
+          .map((p) => p.id),
+      },
+      scroll: {},
+    });
+    render(
+      <Catalog
+        data={index}
+        scope="category:foreign"
+        topicId={null}
+        compact
+        onWork={vi.fn()}
+        onTab={vi.fn()}
+        onArtist={vi.fn()}
+        onTopic={vi.fn()}
+        onBack={vi.fn()}
+        onMap={vi.fn()}
+      />,
+    );
+    expect(screen.queryByRole("button", { name: /扬·戈萨尔特/ })).toBeNull();
+    expect(screen.queryByRole("button", { name: /专题专用时期/ })).toBeNull();
+    // Existing records omit the switch and continue to appear.
+    expect(
+      screen.getByRole("button", { name: /古斯塔夫·克里姆特/ }),
     ).toBeTruthy();
   });
 });

@@ -62,6 +62,8 @@ export const atlasSchema = z.object({
       periodId: z.string(),
       lifeLabel: z.string(),
       countryLabel: z.string(),
+      // Attribution is required even when an artist has no directory entry.
+      directoryVisible: z.boolean().optional(),
     }),
   ),
   artworks: z.array(

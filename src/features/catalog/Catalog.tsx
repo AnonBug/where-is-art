@@ -121,6 +121,9 @@ export function Catalog({
   const tab = useSession((state) => state.tab);
   const expanded = useSession((state) => state.expanded[tab]);
   const artistCounts = useMemo(() => artistWorkCounts(data), [data]);
+  const directoryArtists = data.artists.filter(
+    (artist) => artist.directoryVisible !== false,
+  );
   const topic = data.topics.find((t) => t.id === topicId);
   const topicWorks = topic ? scopeWorks(data, `topic:${topic.id}`) : [];
   const scrollRef = useSavedScroll(`catalog:${tab}`);
@@ -252,7 +255,13 @@ export function Catalog({
                 </button>
               ))
             : data.periods
-                .filter((period) => period.category === tab)
+                .filter(
+                  (period) =>
+                    period.category === tab &&
+                    directoryArtists.some(
+                      (artist) => artist.periodId === period.id,
+                    ),
+                )
                 .map((period) => (
                   <section key={period.id} className={s.period}>
                     <button
@@ -278,7 +287,7 @@ export function Catalog({
                     </button>
                     {expanded?.includes(period.id) && (
                       <div className={s.artists}>
-                        {data.artists
+                        {directoryArtists
                           .filter((artist) => artist.periodId === period.id)
                           .map((artist) => (
                             <button

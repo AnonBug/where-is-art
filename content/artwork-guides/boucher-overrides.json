@@ -1,0 +1,338 @@
+{
+  "boucher-pompadour-munich": {
+    "scope": "individual",
+    "background": "这件1756年的大幅肖像由蓬巴杜夫人委托，现由慕尼黑老绘画陈列馆展藏；不要与华莱士收藏馆1759年的站姿肖像混淆。",
+    "looking": [
+      "留意手中的书与桌上的书写用品，它们将肖像与阅读、通信联系起来。",
+      "比较蓝绿色裙装、粉色蝴蝶结与室内金色装饰的色彩呼应。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Madame de Pompadour",
+        "url": "https://www.sammlung.pinakothek.de/de/artwork/Dj4mX97G5A/francois-boucher/madame-de-pompadour"
+      }
+    ]
+  },
+  "boucher-pompadour-wallace": {
+    "scope": "individual",
+    "background": "这是布歇为蓬巴杜夫人绘制的最后一幅肖像。华莱士收藏馆指出，画中的友谊雕塑与宠犬回应她与路易十五关系的变化。",
+    "looking": [
+      "从人物的脸部看向背后的雕塑，比较两种侧脸轮廓。",
+      "看浅色丝绸如何从深绿色树丛中显现，花边和裙褶怎样分散亮点。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Madame de Pompadour",
+        "url": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/madame-de-pompadours-portrait/"
+      }
+    ]
+  },
+  "boucher-breakfast": {
+    "scope": "individual",
+    "background": "卢浮宫记录这幅室内风俗画作于1739年。人物的具体身份不在此作确定指认，观看重点是家庭活动与物品构成的空间。",
+    "looking": [
+      "沿桌边观察人物的目光和手势如何相连。",
+      "留意镜面、钟饰和远处柜格，与前景人物比较细节的疏密。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Le Déjeuner",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010059924"
+      }
+    ]
+  },
+  "boucher-rinaldo-armida": {
+    "scope": "individual",
+    "background": "本作是布歇于1734年获接纳为法国皇家绘画与雕塑学院院士时提交的作品，题材取自塔索《被解放的耶路撒冷》。",
+    "looking": [
+      "比较人物柔软的身体曲线与背后坚硬的石柱。",
+      "顺着衣褶和手臂看向两位主角，观察爱情场景如何成为画面中心。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Renaud et Armide",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010066934"
+      }
+    ]
+  },
+  "boucher-europa": {
+    "scope": "individual",
+    "background": "布歇为1747年的皇家绘画竞赛创作此画，并在同年沙龙展出。这里收录卢浮宫版本，不与早期同题作品合并。",
+    "looking": [
+      "从公牛与欧罗巴组成的低处群像向高处云层移动视线。",
+      "观察前景暖色衣料怎样从海天的蓝绿色中跳出。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：L’Enlèvement d’Europe",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010066442"
+      }
+    ]
+  },
+  "boucher-hercules-omphale": {
+    "scope": "individual",
+    "background": "年代采用普希金博物馆现行目录的1732—1734年。故事中的赫拉克勒斯为翁法勒服役，英雄的力量与情感上的顺从形成反差。",
+    "looking": [
+      "对照两位成年主角的肤色与相互环绕的手臂。",
+      "看帷幔、织物和身体构成的斜线，体会画面聚拢的动势。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Hercules and Omphale",
+        "url": "https://collection.pushkinmuseum.art/entity/OBJECT/77638"
+      }
+    ]
+  },
+  "boucher-rising-sun": {
+    "scope": "individual",
+    "background": "蓬巴杜夫人委托本作与《太阳落下》作为戈布兰挂毯的等大画稿。画作在1753年沙龙展出；年代依华莱士馆藏目录，不沿用旧图片标签中的1748年。",
+    "looking": [
+      "比较中部的明亮天空与画面边缘的暗色，寻找光线汇聚的位置。",
+      "把海浪、人体和云层连成一条上升的观看路线。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：The Rising of the Sun",
+        "url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?module=collection&objectId=65419&service=ExternalInterface&viewType=detailView"
+      }
+    ]
+  },
+  "boucher-apollo-shepherdess": {
+    "scope": "individual",
+    "background": "图尔美术馆将本作与歌剧《伊塞》联系起来：阿波罗此前化身牧人，此刻向伊塞揭示神的身份。布歇并未照搬舞台，而以神话群像扩展场景。",
+    "looking": [
+      "看金色光芒与云团如何标出阿波罗的出现。",
+      "比较中央人物的抬头动作与前景宁芙的卧姿，区分戏剧中心和周围陪衬。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Apollon révélant sa divinité à la bergère Issé",
+        "url": "https://musees.tours.fr/collections/apollon-revelant-sa-divinite-a-la-bergere-isse/"
+      }
+    ]
+  },
+  "boucher-venus-vulcan-wallace": {
+    "scope": "individual",
+    "background": "这幅狭长装饰画属于华莱士收藏馆的维纳斯系列。维纳斯请求伏尔甘为她的儿子埃涅阿斯打造武器，神话场面结合了爱与锻造的意象。",
+    "looking": [
+      "沿狭长画幅由下部铁砧和工具看到上方云层。",
+      "比较维纳斯的浅色肌肤与伏尔甘的暖褐肤色，观察明暗对比。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Venus and Vulcan",
+        "url": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-myths/the-venus-series/"
+      }
+    ]
+  },
+  "boucher-mercury-bacchus": {
+    "scope": "individual",
+    "background": "这幅早期大型神话画原为律师德尔贝的台球室创作。这里收录华莱士收藏馆的完成稿，与同题油画草稿分开。",
+    "looking": [
+      "观察人物如何围绕婴儿形成近似三角形的群组。",
+      "看墨丘利伸出的手臂怎样连接上方天空与下方宁芙。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Mercury Confiding the Infant Bacchus to the Nymphs",
+        "url": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-myths/mercury-confiding-the-infant-bacchus-to-the-nymphs/"
+      }
+    ]
+  },
+  "boucher-pastoral-autumn": {
+    "scope": "individual",
+    "background": "本作又称《田园之秋》，与《吹风笛者的田园》成对，曾装饰特吕代纳乡间宅邸的大沙龙。华莱士收藏馆将这种风景解释为想象中的阿卡迪亚。",
+    "looking": [
+      "先看前景相望的人物，再看高处石瓮与树木形成的背景。",
+      "比较精致衣饰与野生枝叶，体会宫廷田园想象的人工安排。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Pastoral with a Couple near a Fountain",
+        "url": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-pastoral/pastoral-with-a-couple-near-a-fountain-and-pastoral-with-a-bagpipe-player/"
+      }
+    ]
+  },
+  "boucher-shepherds-reposing": {
+    "scope": "individual",
+    "background": "这幅小型田园画曾由收藏家朗东·德·布瓦塞收藏。馆方特别指出其花篮、枝叶和羊毛上较厚且灵动的笔触。",
+    "looking": [
+      "比较椭圆边界与树干、人物姿态形成的弧线。",
+      "放大花篮和羊毛，观察小笔触与人物衣褶的处理差别。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Shepherd and Shepherdess Reposing",
+        "url": "https://www.wallacecollection.org/explore/explore-in-depth/bouchers-paintings/the-paintings/the-pastoral/shepherd-and-shepherdess-reposing/"
+      }
+    ]
+  },
+  "boucher-jupiter-callisto-met": {
+    "scope": "individual",
+    "background": "本作与《安杰莉卡与梅多罗》曾一起参加1765年沙龙。大都会指出，斜置的人体、云层与衣褶使椭圆画幅中的空间显得不稳定。",
+    "looking": [
+      "寻找画中的鹰与月牙，区分外表身份与故事中的伪装。",
+      "看人物身体如何斜穿椭圆，而没有与画框竖轴对齐。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Jupiter, in the Guise of Diana, and Callisto",
+        "url": "https://www.metmuseum.org/art/collection/search/435747"
+      }
+    ]
+  },
+  "boucher-angelica-medoro": {
+    "scope": "individual",
+    "background": "题材取自《疯狂的奥兰多》中的安杰莉卡与梅多罗。此画与大都会收藏的《朱庇特化身狄安娜与卡利斯托》为一对，并在1765年沙龙展出。",
+    "looking": [
+      "从人物伸出的手看向树干上的刻字动作。",
+      "观察椭圆边缘、枝干和披风如何围拢主角。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Angelica and Medoro",
+        "url": "https://www.metmuseum.org/art/collection/search/435742"
+      }
+    ]
+  },
+  "boucher-interrupted-sleep": {
+    "scope": "individual",
+    "background": "这是蓬巴杜夫人贝尔维尤城堡的一幅门楣画，与另一件作品成对安装于室内木饰中，并在1753年沙龙受到关注。",
+    "looking": [
+      "看枝条、人物手臂和衣褶形成的交叉斜线。",
+      "留意人物与边缘树叶的比例，想象从门下向上观看的视角。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：The Interrupted Sleep",
+        "url": "https://www.metmuseum.org/art/collection/search/435738"
+      }
+    ]
+  },
+  "boucher-shepherds-idyll": {
+    "scope": "individual",
+    "background": "本作与《洗衣妇》构成一对大型装饰画。大都会认为它们可能为埃农维尔城堡的罗兰·迪夫里委托，但这一原始委托关系仍带有推测。",
+    "looking": [
+      "比较前景人物、树林间建筑与远处天空的层次。",
+      "在大面积绿褐色中寻找人物服饰的小块亮色。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Shepherd’s Idyll",
+        "url": "https://www.metmuseum.org/art/collection/search/435745"
+      }
+    ]
+  },
+  "boucher-washerwomen": {
+    "scope": "individual",
+    "background": "这件晚年大型装饰画与《牧羊人的田园诗》成对，使用了布歇长期经营的田园与乡村活动母题。",
+    "looking": [
+      "沿水面看向人物、桥和远景，观察空间如何逐步展开。",
+      "对比前景人物的动作与天空、树冠较松散的笔触。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Washerwomen",
+        "url": "https://www.metmuseum.org/art/collection/search/435746"
+      }
+    ]
+  },
+  "boucher-bath-venus": {
+    "scope": "individual",
+    "background": "本作也常以《维纳斯安慰爱神》之名流传，本次只计为一件作品。它原为蓬巴杜夫人贝尔维尤城堡的浴室套间创作。",
+    "looking": [
+      "看白鸽厚实的亮部与水面的透明感如何对照。",
+      "沿维纳斯倾斜的姿势和蓝色织物寻找不对称构图的平衡。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：The Bath of Venus",
+        "url": "https://www.nga.gov/artworks/12200-bath-venus"
+      }
+    ]
+  },
+  "boucher-allegory-music": {
+    "scope": "individual",
+    "background": "美国国家美术馆将本作定年为1764年；它与馆藏《绘画的寓意》形成可比较的一对艺术寓意画。这里收录油画，不与同题素描混淆。",
+    "looking": [
+      "观察乐器、手指和谱页怎样提示音乐主题。",
+      "比较浅色云团与红色织物，看看画面重心如何偏向一侧。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Allegory of Music",
+        "url": "https://www.nga.gov/artworks/32680-allegory-music"
+      }
+    ]
+  },
+  "boucher-allegory-painting": {
+    "scope": "individual",
+    "background": "这幅艺术寓意画以云端人物表现绘画活动。馆方收藏史可追溯到它与《音乐的寓意》的配对，但不宜据此断言原始委托细节。",
+    "looking": [
+      "在画中画上寻找正在形成的轮廓，再看人物手里的工具。",
+      "比较绿色裙装、粉色云层与画布暖灰色之间的关系。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Allegory of Painting",
+        "url": "https://www.nga.gov/artworks/32679-allegory-painting"
+      }
+    ]
+  },
+  "boucher-pan-syrinx": {
+    "scope": "individual",
+    "background": "英国国家美术馆记录这是一幅适于私人近距离观看的小型绘画。故事中绪任克斯逃避潘神追逐，最终变为芦苇；画中的植物与水域回应这一情节。",
+    "looking": [
+      "分辨前景卧姿人物与后方潘神的距离。",
+      "观察芦苇、衣料和肢体曲线怎样把人物连成横向构图。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Pan and Syrinx",
+        "url": "https://www.nationalgallery.org.uk/paintings/francois-boucher-pan-and-syrinx"
+      }
+    ]
+  },
+  "boucher-watermill": {
+    "scope": "individual",
+    "background": "馆方将本作定年为1755年。画中可见钓鱼、取水与洗衣等活动，具体地点不在此作确定指认。",
+    "looking": [
+      "看高树如何围出如舞台般的空间。",
+      "寻找绿灰色风景中的红色小点，观察人物如何引导视线。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Landscape with a Watermill",
+        "url": "https://www.nationalgallery.org.uk/paintings/francois-boucher-landscape-with-a-watermill"
+      }
+    ]
+  },
+  "boucher-toilette-thyssen": {
+    "scope": "individual",
+    "background": "此画由瑞典驻巴黎使节卡尔·古斯塔夫·特辛委托，属于布歇较少见的室内风俗画。画中梳妆人物与神话中的维纳斯题材应分开理解。",
+    "looking": [
+      "比较坐姿和站姿人物的衣褶方向。",
+      "观察镜面、屏风与散置物品怎样组织这间亲密的室内空间。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：La Toilette",
+        "url": "https://www.museothyssen.org/en/collection/artists/boucher-francois/toilette"
+      }
+    ]
+  },
+  "boucher-venus-mercury-cupid": {
+    "scope": "individual",
+    "background": "洛杉矶县立艺术博物馆记录本作作于1738年，由赫斯特杂志公司捐赠。此处保留馆方图像所呈现的装饰性画幅与画框。",
+    "looking": [
+      "看三位人物的手势如何将视线引向中央的学习活动。",
+      "比较横卧姿态与画框流动的曲线，体会作品的室内装饰性。"
+    ],
+    "sources": [
+      {
+        "label": "收藏机构：Venus and Mercury Instructing Cupid",
+        "url": "https://collections.lacma.org/object/12883"
+      }
+    ]
+  }
+}
