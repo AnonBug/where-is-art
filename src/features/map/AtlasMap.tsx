@@ -92,6 +92,8 @@ export default function AtlasMap({
   );
   const [renderMarkers, setRenderMarkers] = useState<RenderMarker[]>([]);
   const [error, setError] = useState("");
+  // Keep dismissal separate from errors: tiles can keep failing after a close.
+  const [errorDismissed, setErrorDismissed] = useState(false);
   const [loading, setLoading] = useState(true);
   const [attempt, setAttempt] = useState(0);
   const [ready, setReady] = useState(0);
@@ -186,8 +188,10 @@ export default function AtlasMap({
     mapRef.current = map;
     // Handle errors here so SDK logging never prints a tile URL containing the Key.
     let failed = false;
+    let timer: ReturnType<typeof setTimeout>;
     const fail = () => {
       failed = true;
+      clearTimeout(timer);
       setLoading(false);
       setError("地图加载失败，请重试或先浏览作品。");
     };
@@ -206,7 +210,6 @@ export default function AtlasMap({
       useSession.getState().saveCamera(scope, camera);
       useSession.getState().saveCamera(`${scope}:${keyRef.current}`, camera);
     };
-    let timer: ReturnType<typeof setTimeout>;
     const startLoading = () => {
       failed = false;
       setError("");
@@ -520,11 +523,33 @@ export default function AtlasMap({
           正在展开地图…
         </div>
       )}
-      {error && (
+      {error && !errorDismissed && (
         <div className={s.error} role="status">
+          <IconButton
+            icon="close"
+            label="关闭地图加载提示"
+            className={s.errorClose}
+            onClick={() => setErrorDismissed(true)}
+          />
           <p>{error}</p>
-          <button onClick={() => setAttempt((n) => n + 1)}>重新加载</button>
-          <button onClick={onList}>浏览作品</button>
+          <div className={s.errorActions}>
+            <button
+              onClick={() => {
+                setErrorDismissed(false);
+                setAttempt((n) => n + 1);
+              }}
+            >
+              重新加载
+            </button>
+            <button
+              onClick={() => {
+                setErrorDismissed(true);
+                onList();
+              }}
+            >
+              浏览作品
+            </button>
+          </div>
         </div>
       )}
       {!loading && !error && !venues.length && (

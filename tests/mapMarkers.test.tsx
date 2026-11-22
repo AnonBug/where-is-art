@@ -64,6 +64,9 @@ const sdk = vi.hoisted(() => {
       return { x: lng * 100, y: lat * 100 };
     }
     addControl() {}
+    loaded() {
+      return true;
+    }
     easeTo = vi.fn();
     resize() {}
     remove() {
@@ -111,7 +114,7 @@ vi.mock("../src/infrastructure/regionalBasemap", () => ({
 const data = atlasSchema.parse(catalog);
 const scope = "artist:tang-yin";
 const works = scopeWorks(data, scope);
-function mount() {
+function mount(overrides: Partial<ComponentProps<typeof AtlasMap>> = {}) {
   const props: ComponentProps<typeof AtlasMap> = {
     data,
     works,
@@ -126,6 +129,7 @@ function mount() {
     onVenueCollapse: vi.fn(),
     onOverview: vi.fn(),
     onList: vi.fn(),
+    ...overrides,
   };
   const view = render(
     <StrictMode>
@@ -158,7 +162,76 @@ beforeEach(() => {
 });
 afterEach(() => {
   cleanup();
+  vi.useRealTimers();
   vi.unstubAllGlobals();
+});
+
+describe.each([true, false])("map loading notices (compact=%s)", (compact) => {
+  it("stays dismissed through repeated tile errors, timeouts and layout changes", () => {
+    vi.useFakeTimers();
+    const { map, props, rerender } = mount({ compact });
+    act(() => map.emit("error"));
+    fireEvent.click(screen.getByRole("button", { name: "关闭地图加载提示" }));
+    act(() => {
+      map.emit("error");
+      vi.advanceTimersByTime(14000);
+    });
+    expect(screen.queryByRole("status")).toBeNull();
+    expect(props.onList).not.toHaveBeenCalled();
+    expect(
+      screen.getByRole("button", { name: "查看王蜀宫妓图" }),
+    ).not.toBeNull();
+
+    rerender(
+      <StrictMode>
+        <AtlasMap {...props} compact={!compact} />
+      </StrictMode>,
+    );
+    act(() => sdk.TestMap.instances.at(-1)!.emit("error"));
+    expect(screen.queryByRole("status")).toBeNull();
+  });
+
+  it("can dismiss a slow-loading notice before late tile errors arrive", () => {
+    vi.useFakeTimers();
+    const { map } = mount({ compact });
+    act(() => vi.advanceTimersByTime(14000));
+    expect(screen.getByRole("status").textContent).toContain("底图加载较慢");
+    fireEvent.click(screen.getByRole("button", { name: "关闭地图加载提示" }));
+    act(() => map.emit("error"));
+    expect(screen.queryByRole("status")).toBeNull();
+  });
+
+  it("dismisses the notice when browsing works and keeps later errors hidden", () => {
+    const { map, props } = mount({ compact });
+    act(() => map.emit("error"));
+    fireEvent.click(screen.getByRole("button", { name: "浏览作品" }));
+    expect(props.onList).toHaveBeenCalledOnce();
+    act(() => map.emit("error"));
+    expect(screen.queryByRole("status")).toBeNull();
+  });
+
+  it("retries with a fresh map and allows the new failure notice to close", () => {
+    const { map } = mount({ compact });
+    act(() => map.emit("error"));
+    fireEvent.click(screen.getByRole("button", { name: "重新加载" }));
+    const retryMap = sdk.TestMap.instances.at(-1)!;
+    expect(retryMap).not.toBe(map);
+    expect(screen.getByRole("status").textContent).toBe("正在展开地图…");
+    expect(map.listeners.size).toBe(0);
+    act(() => retryMap.emit("error"));
+    expect(screen.getByRole("status").textContent).toContain("地图加载失败");
+    fireEvent.click(screen.getByRole("button", { name: "关闭地图加载提示" }));
+    expect(screen.queryByRole("status")).toBeNull();
+  });
+
+  it("clears the slow-loading notice when the map finishes loading", () => {
+    vi.useFakeTimers();
+    const { map } = mount({ compact });
+    act(() => vi.advanceTimersByTime(14000));
+    expect(screen.getByRole("status").textContent).toContain("底图加载较慢");
+    act(() => map.emit("idle"));
+    expect(screen.queryByRole("status")).toBeNull();
+  });
 });
 
 describe("map preview continuity", () => {
