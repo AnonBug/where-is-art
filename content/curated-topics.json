@@ -196,6 +196,29 @@
         "fragonard-swing",
         "fragonard-fountain-love-getty"
       ]
+    },
+    {
+      "id": "cats-in-art",
+      "title": "名画里的猫猫",
+      "description": "从马奈夫人膝上的黑白猫，到梵高花园里穿过草地的黑猫。沿着床尾、桌脚和炉火找一找，看看画家把猫画在了哪里。",
+      "artworkIds": [
+        "gauguin-q110247466",
+        "manet-q26492744",
+        "gauguin-q97770355",
+        "gauguin-q76424035",
+        "manet-olympia",
+        "gauguin-q117379785",
+        "gauguin-q19984441",
+        "manet-q1245431",
+        "gauguin-q780986",
+        "rembrandt-rrp-209",
+        "titian-q11091772",
+        "titian-q3937710",
+        "van-gogh-q26221226",
+        "gauguin-q107206387",
+        "gauguin-list-c3f491bebc13",
+        "gauguin-q890678"
+      ]
     }
   ],
   "curation": {
