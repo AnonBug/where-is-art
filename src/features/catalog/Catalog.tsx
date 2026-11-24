@@ -15,6 +15,7 @@ import { ArtworkImage, EmptyState, Icon, IconButton } from "../../shared/ui";
 import s from "./Catalog.module.scss";
 import { AiSearch, useAiSearch } from "./AiSearch";
 import searchStyles from "./AiSearch.module.scss";
+import { AnalyticsNotice } from "./AnalyticsNotice";
 
 export function ArtworkList({
   data,
@@ -354,6 +355,7 @@ export function Catalog({
       <div className={s.footnote}>
         <span>循着画作，走近收藏之地</span>
         <span className={s.dot} /> <span>持续收录中</span>
+        <AnalyticsNotice />
       </div>
     </aside>
   );
