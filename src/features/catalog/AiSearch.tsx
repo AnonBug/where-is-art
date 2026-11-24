@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { create } from "zustand";
+import {
+  trackSearch,
+  trackSearchSelection,
+} from "../../infrastructure/analytics";
 import { z } from "zod";
 import {
   artistLabel,
@@ -98,7 +102,10 @@ export function AiSearch({
       const parsed = responseSchema.parse(await response.json());
       if (revision && parsed.revision !== revision)
         throw new Error("作品目录已更新，请刷新页面后重试");
-      if (!controller.signal.aborted) useAiSearch.setState({ result: parsed });
+      if (!controller.signal.aborted) {
+        useAiSearch.setState({ result: parsed });
+        trackSearch(parsed.mode, parsed.total);
+      }
     } catch (cause) {
       if (!controller.signal.aborted || controller.signal.reason === "timeout")
         setError(
@@ -209,7 +216,13 @@ export function AiSearch({
               if (!work) return null;
               return (
                 <article key={item.id} className={s.result}>
-                  <button className={s.card} onClick={() => onSelect(work)}>
+                  <button
+                    className={s.card}
+                    onClick={() => {
+                      trackSearchSelection(work);
+                      onSelect(work);
+                    }}
+                  >
                     <span className={s.thumb}>
                       <ArtworkImage
                         src={primaryImage(data, item.id)?.thumbnail.url}

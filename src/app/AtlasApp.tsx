@@ -11,6 +11,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useContent } from "../infrastructure/useContent";
 import { useArtworkContent } from "../infrastructure/useArtworkContent";
 import { useSession } from "../application/session";
+import { analyticsPage } from "../application/analyticsPage";
+import { trackPage } from "../infrastructure/analytics";
 import { useFavorites } from "../hooks/useFavorites";
 import {
   assetUrl,
@@ -37,6 +39,11 @@ export function AtlasApp() {
   const { favorites, toggleFavorite, storageError } = useFavorites();
   const location = useLocation();
   const navigate = useNavigate();
+  useEffect(() => {
+    if (!data) return;
+    const page = analyticsPage(data, location.pathname, location.search);
+    if (page) trackPage(page);
+  }, [data, location.pathname, location.search]);
   const compact = useCompact();
   const search = new URLSearchParams(location.search);
   const path = location.pathname.split("/").filter(Boolean);

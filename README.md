@@ -4,6 +4,19 @@ React + TypeScript 的名画收藏地图，采用 Sass Modules、MapLibre GL JS 
 
 [在线浏览](https://anonbug.github.io/where-is-art/) · [GitHub 仓库](https://github.com/AnonBug/where-is-art)
 
+### 访问统计（2026-11-25）
+
+备案过渡期使用 Umami Cloud Hobby 免费版（美国 Oregon 区域），[统计后台](https://cloud.umami.is/analytics/us/websites/8eb9eaf5-f557-4262-aefe-f3ea7aeada0a) 通过创建站点时使用的 Google 账号登录。账户时区为 `Asia/Shanghai`；按“今天”或自选日期查看访客与浏览量，页面排行切到标题可读到画作、画家和专题名称。免费额度及保留时间以 [Umami 当前套餐](https://umami.is/pricing) 为准；页面、事件及自定义属性都会消耗额度。
+
+- 目录数据加载后记录页面浏览：分类目录、专题、画家/专题收藏地图、作品列表、作品资料与大图。HashRouter 的根路径跳转、重复渲染、馆藏点展开、图片切换/缩放及大图信息浮层不重复计数；离开后返回同一页面会再次计数。访客数使用 Umami 的去重估算，不等于精确自然人数；目录加载失败、浏览器拦截上报或关闭统计会导致漏计。
+- `image_download`：下载链接点击，`artwork` 为作品题名和 ID；不代表文件一定下载完成。
+- `search_complete`：成功取得搜索结果，属性仅 `mode` 和 `results`；`search_result_open`：点击搜索结果，属性仅 `artwork`。不上传搜索原文、收藏清单或 URL 中的任意参数，不启用录屏、回放、热图或高频缩放事件。
+- 目录底部“访问统计说明”可在当前浏览器关闭后续上报（存储可用时刷新后仍生效）。也尊重浏览器 DNT 和 `umami.disabled`。开发模式及域名白名单之外的预览不加载统计脚本。
+
+公开配置在 `.env`：`VITE_UMAMI_WEBSITE_ID`、`VITE_UMAMI_SCRIPT_URL`、`VITE_UMAMI_DOMAINS`。这些值会进入前端，不能填管理 API key。清空站点 ID 并重新构建可整体停用。备案完成后改为自建服务的脚本地址和站点 ID，再构建部署；已有云端历史不会自动合并到自建数据库。服务器里的自建 Umami 保持原状。
+
+实现入口：`src/infrastructure/analytics.ts`（异步加载、有限队列、失败隔离）、`src/application/analyticsPage.ts`（已知目录实体生成规范页面）、`tests/analytics.test.ts`（去重、返回、隐私字段、禁用及失败场景）。上报失败不会阻断看画、搜索或下载。
+
 作品信息只显示有资料支持的内容；「作品背景、人物与题材、怎么看这幅画」按实际内容逐节展示，没有正文就不显示标题。大图浏览的信息面板直接显示文字，手机竖屏最多占 74% 视口高度；收藏位置说明、校对备注、参考资料、图像署名及版权默认折叠在「来源与版权」中。普通作品详情仍保留预览图。
 
 4.3.1 加入本地收藏：作品信息和大图工具栏均可收藏／取消收藏，目录「收藏」按最近收藏排列，也可查看收藏作品的地图分布。收藏只保存在当前浏览器，不需要账号，不上传到服务器；刷新后保留，清除网站数据会移除，设备之间不自动同步。兼容旧版收藏，浏览器拒绝保存时会提示仅本次打开有效。

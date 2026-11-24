@@ -1,5 +1,6 @@
 import type { Artwork, ImageAsset } from "../../domain/atlas";
 import { artworkDownload } from "../../domain/artworkDownload";
+import { trackDownload } from "../../infrastructure/analytics";
 import { Icon } from "../../shared/ui";
 import s from "./ArtworkDownload.module.scss";
 
@@ -21,6 +22,7 @@ export function ArtworkDownload({
       className={`${iconOnly ? s.iconDownload : s.download} ${className}`}
       href={download.href}
       download={download.filename}
+      onClick={() => trackDownload(work)}
       aria-label={`${download.label}：${work.title} · ${image!.label}`}
       title={`${download.label} · ${download.description}`}
     >

@@ -318,6 +318,31 @@
   padding: 12px;
   letter-spacing: 0.4px;
 }
+.analyticsNotice {
+  width: 100%;
+  text-align: center;
+  summary {
+    cursor: pointer;
+  }
+  p {
+    text-align: left;
+    line-height: 1.65;
+    margin: 8px 0 0;
+  }
+  button {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: default;
+    text-decoration: none;
+  }
+}
 .dot {
   width: 3px;
   height: 3px;
