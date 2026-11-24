@@ -6,6 +6,7 @@ import { spawn } from "node:child_process";
 import assert from "node:assert/strict";
 import { loadEnv } from "vite";
 import { buildContentDelivery } from "./build-content-delivery.mjs";
+import { CORPUS_FILE } from "../server/ai-search/corpus.mjs";
 
 const env = { ...loadEnv("production", process.cwd()), ...process.env };
 const base = new URL(
@@ -133,6 +134,7 @@ if (mode === "--verify") {
     await fs.readFile("public/catalog-index.json"),
   );
   await add("catalog.json", Buffer.from(JSON.stringify(data)));
+  await add(CORPUS_FILE, await fs.readFile(path.join("public", CORPUS_FILE)));
   // Keep known source references and actual serving files distinct. A source URL
   // is not proof of an archived original or the source's maximum resolution.
   await add(
