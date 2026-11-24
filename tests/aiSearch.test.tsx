@@ -30,6 +30,51 @@ afterEach(() => {
 });
 
 describe("AI search", () => {
+  it("shows the exact story excerpt and an external reference separately from the artwork button", async () => {
+    const text = "画中人物正在回应远处的光，而背景故事记录了她的遭遇。";
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(
+        async () =>
+          new Response(
+            JSON.stringify({
+              ...reply,
+              semantic: true,
+              results: [
+                {
+                  ...reply.results[0],
+                  evidence: {
+                    field: "story",
+                    label: "背景故事",
+                    text,
+                    sources: [
+                      { label: "馆藏解读", url: "https://museum.example/work" },
+                    ],
+                  },
+                },
+              ],
+            }),
+          ),
+      ),
+    );
+    const onSelect = vi.fn();
+    render(
+      <AiSearch
+        data={data}
+        revision={revision}
+        onSelect={onSelect}
+        endpoint="https://search.example"
+      />,
+    );
+    fireEvent.click(screen.getByRole("button", { name: "AI 搜索" }));
+    expect(await screen.findByText(text)).toBeTruthy();
+    expect(screen.getByText("找到 1 幅有文字依据的作品")).toBeTruthy();
+    fireEvent.click(screen.getByText("背景故事 · 原文依据"));
+    const link = screen.getByRole("link", { name: "馆藏解读" });
+    expect(link.getAttribute("href")).toBe("https://museum.example/work");
+    expect(link.closest("button")).toBeNull();
+    expect(onSelect).not.toHaveBeenCalled();
+  });
   it("sends only the query and catalog revision, opens a real work and retains results on return", async () => {
     const fetch = vi.fn(async () => new Response(JSON.stringify(reply)));
     vi.stubGlobal("fetch", fetch);

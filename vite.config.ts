@@ -34,6 +34,7 @@ export default defineConfig(({ mode }) => {
                 [
                   "catalog.json",
                   "catalog-index.json",
+                  "search-text-v1.json",
                   "artwork-details",
                 ].includes(fileName)
               )

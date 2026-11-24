@@ -3,6 +3,10 @@ import path from "node:path";
 import crypto from "node:crypto";
 import assert from "node:assert/strict";
 import { pathToFileURL } from "node:url";
+import {
+  CORPUS_FILE,
+  createSearchCorpus,
+} from "../server/ai-search/corpus.mjs";
 
 export function contentRevision(data) {
   return crypto
@@ -78,6 +82,10 @@ export async function buildContentDelivery(data, publicRoot = "public") {
     }),
   );
   const index = createCatalogIndex(data, revision);
+  await fs.writeFile(
+    path.join(publicRoot, CORPUS_FILE),
+    JSON.stringify(createSearchCorpus(data, revision)),
+  );
   // Publish the index only after every detail file exists.
   const json = JSON.stringify(index);
   const temporary = path.join(publicRoot, "catalog-index.json.tmp");

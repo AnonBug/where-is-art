@@ -11,12 +11,38 @@ import {
 import { ArtworkImage, Icon } from "../../shared/ui";
 import s from "./AiSearch.module.scss";
 
+const evidenceSchema = z.object({
+  field: z.enum(["description", "background", "story", "looking"]),
+  label: z.string(),
+  text: z.string().max(500),
+  sources: z
+    .array(
+      z.object({
+        label: z.string(),
+        url: z
+          .string()
+          .url()
+          .refine((url) => /^https?:\/\//.test(url)),
+      }),
+    )
+    .max(3),
+});
 const responseSchema = z.object({
   revision: z.string(),
   mode: z.enum(["ai", "keyword"]),
   total: z.number().int().nonnegative(),
   message: z.string(),
-  results: z.array(z.object({ id: z.string(), reason: z.string() })).max(30),
+  semantic: z.boolean().optional(),
+  results: z
+    .array(
+      z.object({
+        id: z.string(),
+        reason: z.string(),
+        evidence: evidenceSchema.optional(),
+        supportingEvidence: z.array(evidenceSchema).max(1).optional(),
+      }),
+    )
+    .max(30),
 });
 type SearchResult = z.infer<typeof responseSchema>;
 export const useAiSearch = create<{
@@ -54,7 +80,7 @@ export function AiSearch({
     const controller = new AbortController();
     request.current?.abort();
     request.current = controller;
-    const timer = window.setTimeout(() => controller.abort("timeout"), 35_000);
+    const timer = window.setTimeout(() => controller.abort("timeout"), 55_000);
     try {
       const response = await fetch(endpoint, {
         method: "POST",
@@ -99,7 +125,7 @@ export function AiSearch({
           <Icon name="back" size={16} /> 返回目录
         </button>
         <h1>想找哪一幅画？</h1>
-        <p>用一句话，搜索画家、作品、专题或收藏地点。</p>
+        <p>描述画家、收藏地点，或画中的情节与故事。</p>
         <form
           onSubmit={(event) => {
             event.preventDefault();
@@ -113,7 +139,7 @@ export function AiSearch({
             rows={2}
             maxLength={200}
             value={query}
-            placeholder="例如：巴黎收藏的莫奈作品"
+            placeholder="例如：宙斯化作金雨的画"
             onChange={(event) =>
               useAiSearch.setState({ query: event.target.value })
             }
@@ -135,21 +161,23 @@ export function AiSearch({
         </form>
         {!visibleResult && !busy && !error && (
           <div className={s.examples} aria-label="搜索示例">
-            {["巴黎收藏的莫奈作品", "伦勃朗的自画像", "关于宙斯的画"].map(
-              (text) => (
-                <button key={text} onClick={() => void search(text)}>
-                  {text}
-                  <Icon name="chevron" size={12} />
-                </button>
-              ),
-            )}
+            {[
+              "宙斯化作金雨的画",
+              "为焚毁的城市哀伤的老人",
+              "巴黎收藏的莫奈作品",
+            ].map((text) => (
+              <button key={text} onClick={() => void search(text)}>
+                {text}
+                <Icon name="chevron" size={12} />
+              </button>
+            ))}
           </div>
         )}
       </div>
       <div className={s.results} aria-busy={busy}>
         {busy && (
           <p className={s.status} role="status">
-            正在理解描述，并查找已收录的作品…
+            正在检索作品资料，并核对相关文字依据…
           </p>
         )}
         {error && (
@@ -163,7 +191,7 @@ export function AiSearch({
             <div className={s.status} role="status">
               <strong>
                 {visibleResult.total
-                  ? `找到 ${visibleResult.total} 幅作品`
+                  ? `找到 ${visibleResult.total} 幅${visibleResult.semantic ? "有文字依据的" : ""}作品`
                   : "暂未找到匹配作品"}
               </strong>
               <p>{visibleResult.message}</p>
@@ -171,39 +199,70 @@ export function AiSearch({
                 <p>先展示前 30 幅，可补充条件缩小范围。</p>
               )}
               {visibleResult.total === 0 && (
-                <p>试试具体画名、画家，或“画家 + 收藏城市”。</p>
+                <p>
+                  试试更具体的人物、情节或画面线索；没有文字依据的作品可能不会出现。
+                </p>
               )}
             </div>
             {visibleResult.results.map((item) => {
               const work = data.artworks.find((w) => w.id === item.id);
               if (!work) return null;
               return (
-                <button
-                  key={item.id}
-                  className={s.card}
-                  onClick={() => onSelect(work)}
-                >
-                  <span className={s.thumb}>
-                    <ArtworkImage
-                      src={primaryImage(data, item.id)?.thumbnail.url}
-                      alt=""
-                      loading="lazy"
-                    />
-                  </span>
-                  <span className={s.copy}>
-                    <strong>{work.title}</strong>
-                    <small>{artistLabel(data, work)}</small>
-                    <small>
-                      {workVenues(data, work.id)
-                        .map((v) => v.name)
-                        .join(" · ") || "收藏地点未详"}
-                    </small>
-                    {item.reason && (
-                      <span className={s.reason}>{item.reason}</span>
-                    )}
-                  </span>
-                  <Icon name="chevron" size={14} />
-                </button>
+                <article key={item.id} className={s.result}>
+                  <button className={s.card} onClick={() => onSelect(work)}>
+                    <span className={s.thumb}>
+                      <ArtworkImage
+                        src={primaryImage(data, item.id)?.thumbnail.url}
+                        alt=""
+                        loading="lazy"
+                      />
+                    </span>
+                    <span className={s.copy}>
+                      <strong>{work.title}</strong>
+                      <small>{artistLabel(data, work)}</small>
+                      <small>
+                        {workVenues(data, work.id)
+                          .map((v) => v.name)
+                          .join(" · ") || "收藏地点未详"}
+                      </small>
+                      {item.reason && (
+                        <span className={s.reason}>{item.reason}</span>
+                      )}
+                    </span>
+                    <Icon name="chevron" size={14} />
+                  </button>
+                  {(item.evidence
+                    ? [item.evidence, ...(item.supportingEvidence || [])]
+                    : []
+                  ).map((evidence, index) => (
+                    <details key={index} className={s.evidence}>
+                      <summary>
+                        <span>
+                          {evidence.label} · {index ? "补充依据" : "原文依据"}
+                        </span>
+                        <q>{evidence.text}</q>
+                        <small>展开原文与参考来源</small>
+                      </summary>
+                      <div className={s.sources}>
+                        {evidence.sources.length ? (
+                          evidence.sources.map((source) => (
+                            <a
+                              key={source.url}
+                              href={source.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {source.label}
+                              <Icon name="external" size={12} />
+                            </a>
+                          ))
+                        ) : (
+                          <small>站内作品资料，暂无外部来源链接</small>
+                        )}
+                      </div>
+                    </details>
+                  ))}
+                </article>
               );
             })}
             <button
