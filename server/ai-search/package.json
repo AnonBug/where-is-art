@@ -1,0 +1,6 @@
+{
+  "name": "where-is-art-ai-search",
+  "private": true,
+  "type": "module",
+  "dependencies": { "ali-oss": "6.23.0" }
+}

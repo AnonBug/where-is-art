@@ -309,6 +309,12 @@ export function AtlasApp() {
       selected={selected}
       favoriteWorks={favoriteWorks}
       storageError={storageError}
+      searchRevision={data.detailBase?.split("/")[1]}
+      onSearchWork={(work) =>
+        go(`/artworks/${work.id}/view`, {
+          scope: `artist:${work.artistIds[0]}`,
+        })
+      }
       onTab={(tab) => {
         useSession.getState().setTab(tab);
         go(

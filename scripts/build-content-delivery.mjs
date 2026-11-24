@@ -4,39 +4,18 @@ import crypto from "node:crypto";
 import assert from "node:assert/strict";
 import { pathToFileURL } from "node:url";
 
-export async function buildContentDelivery(data, publicRoot = "public") {
-  const revision = crypto
+export function contentRevision(data) {
+  return crypto
     .createHash("sha256")
     .update("art-atlas-content-v1\n")
     .update(JSON.stringify(data))
     .digest("hex")
     .slice(0, 20);
+}
+
+export function createCatalogIndex(data, revision = contentRevision(data)) {
   const detailBase = `artwork-details/${revision}/`;
-  const directory = path.join(publicRoot, detailBase);
-  await fs.mkdir(directory, { recursive: true });
-  const imagesByWork = new Map();
-  for (const image of data.images) {
-    const images = imagesByWork.get(image.artworkId) ?? [];
-    images.push(image);
-    imagesByWork.set(image.artworkId, images);
-  }
-  const sizes = [];
-  let next = 0;
-  await Promise.all(
-    Array.from({ length: 24 }, async () => {
-      while (next < data.artworks.length) {
-        const work = data.artworks[next++];
-        assert.match(work.id, /^[a-zA-Z0-9][a-zA-Z0-9_.-]*$/);
-        const json = JSON.stringify({
-          work,
-          images: imagesByWork.get(work.id) ?? [],
-        });
-        await fs.writeFile(path.join(directory, `${work.id}.json`), json);
-        sizes.push(Buffer.byteLength(json));
-      }
-    }),
-  );
-  const index = {
+  return {
     version: data.version,
     updatedAt: data.updatedAt,
     detailBase,
@@ -69,6 +48,36 @@ export async function buildContentDelivery(data, publicRoot = "public") {
       venueId,
     })),
   };
+}
+
+export async function buildContentDelivery(data, publicRoot = "public") {
+  const revision = contentRevision(data);
+  const detailBase = `artwork-details/${revision}/`;
+  const directory = path.join(publicRoot, detailBase);
+  await fs.mkdir(directory, { recursive: true });
+  const imagesByWork = new Map();
+  for (const image of data.images) {
+    const images = imagesByWork.get(image.artworkId) ?? [];
+    images.push(image);
+    imagesByWork.set(image.artworkId, images);
+  }
+  const sizes = [];
+  let next = 0;
+  await Promise.all(
+    Array.from({ length: 24 }, async () => {
+      while (next < data.artworks.length) {
+        const work = data.artworks[next++];
+        assert.match(work.id, /^[a-zA-Z0-9][a-zA-Z0-9_.-]*$/);
+        const json = JSON.stringify({
+          work,
+          images: imagesByWork.get(work.id) ?? [],
+        });
+        await fs.writeFile(path.join(directory, `${work.id}.json`), json);
+        sizes.push(Buffer.byteLength(json));
+      }
+    }),
+  );
+  const index = createCatalogIndex(data, revision);
   // Publish the index only after every detail file exists.
   const json = JSON.stringify(index);
   const temporary = path.join(publicRoot, "catalog-index.json.tmp");

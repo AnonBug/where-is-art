@@ -7,6 +7,7 @@ import { assetUrl } from "../domain/atlas";
 import s from "./ui.module.scss";
 
 const paths = {
+  search: "M21 21l-5-5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z",
   back: "m12 19-7-7 7-7M5 12h14",
   close: "M18 6 6 18M6 6l12 12",
   plus: "M12 5v14M5 12h14",
