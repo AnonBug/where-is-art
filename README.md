@@ -328,6 +328,32 @@ npm run preview
 
 工作流依据 [GitHub Pages 自定义工作流文档](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) 配置。底图使用[天地图](https://www.tianditu.gov.cn/)和 [OpenFreeMap](https://openfreemap.org/)，由 [MapLibre](https://maplibre.org/) 渲染，保留相应来源署名。
 
+## AI 搜索与阿里云函数计算
+
+目录顶部的「描述你想找的画」支持自然语言搜索。浏览器向 `.env` 中的公开 `VITE_AI_SEARCH_URL` 发出 POST 请求；上海地域的 FC 3.0 函数 `where-is-art-ai-search` 使用 DeepSeek `deepseek-flash` 将描述解析为画家、站内专题、题名和收藏地条件，再从 OSS 目录筛选真实作品。访客无需登录，DeepSeek Key 仅保存在函数环境变量中，不能设置成 `VITE_` 变量。
+
+请求示例：`{"query":"巴黎收藏的莫奈作品","revision":"50e1fc60ada47c15f48c","mode":"ai"}`。网页自动传入当前目录版本；不传 `revision` 时读取线上 `current.json`。接口只返回最多 30 个真实作品 ID、匹配依据和总数，不提供通用聊天、实时展出或未经目录支持的视觉推断。关键词模式 `mode: "keyword"` 不调用模型。
+
+默认按北京时间每天全站最多 100 次、每 IP 最多 20 次未命中缓存的 AI 调用。OSS 私有 AppendObject 每追加一字节预留一次调用，跨实例和重启仍有效；计数失败、限额用完或模型故障时改用关键词搜索。失败的模型请求也占用已预留次数；缓存为实例内一小时，保留最多 256 项。IP 每日通过 HMAC 匿名化保存，应用不记录原始 IP 或搜索文本。FC 保留并发上限为 2，无预留实例。此限额约束模型调用次数，不是阿里云账单总额上限；FC 请求、算力、公网流量及 OSS 请求/存储仍按阿里云规则计费，DeepSeek 另行计费。
+
+后端依赖和自动检查：
+
+```sh
+npm ci --ignore-scripts --prefix server/ai-search
+npm test
+npm run content:check:app
+```
+
+部署需要已登录的官方 `aliyun` CLI，执行：
+
+```sh
+node scripts/deploy-ai-search.mjs /绝对路径/私有密钥文件.env.local
+```
+
+文件只需含 `DEEPSEEK_API_KEY`。脚本创建/复用 FC 服务关联角色，以及仅能读写 `where-is-art-private/ai-search/quota/*` 的专用函数角色；上传明确列出的代码与依赖，保留已有配额哈希密钥，设置额度及并发后创建匿名 HTTPS 触发器。请求文件以 0600 权限临时保存并自动移除。允许网页来源为生产 GitHub Pages 和本地 8775 端口；CORS 是浏览器来源约束，防滥用主要依赖持久化额度。健康检查为同一域名下的 `/health`，只显示配置是否齐备，不消耗模型额度。调整额度需修改脚本中的环境变量并重新部署；紧急停用可用 FC `DisableFunctionInvocation`，或将前端入口撤回。
+
+内容与前端独立发布：`content:check:app` 先验证仓库对应内容已上传，再校验当前线上内容的校验和、结构、引用和图片格式兼容性，允许更新的作品目录继续在线，不会将内容指针回退。
+
 设计依据为交接包需求稿 V1.1、图像资源评估和 `docs/第一版技术方案.md`。浏览器尺寸测试不能替代 iPhone／Android 真机的内存、手势和旋转性能验收。
 
 

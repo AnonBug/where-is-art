@@ -29,7 +29,8 @@
     "media:masters": "node scripts/prepare-masters-media.mjs",
     "content:prepare": "npm run content:build && node scripts/publish-content.mjs --prepare",
     "content:publish": "npm run content:build && node scripts/publish-content.mjs --publish",
-    "content:check:remote": "node scripts/publish-content.mjs --verify"
+    "content:check:remote": "node scripts/publish-content.mjs --verify",
+    "content:check:app": "node scripts/check-app-content.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

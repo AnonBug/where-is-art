@@ -13,6 +13,8 @@ import {
 } from "../../domain/atlas";
 import { ArtworkImage, EmptyState, Icon, IconButton } from "../../shared/ui";
 import s from "./Catalog.module.scss";
+import { AiSearch, useAiSearch } from "./AiSearch";
+import searchStyles from "./AiSearch.module.scss";
 
 export function ArtworkList({
   data,
@@ -99,6 +101,8 @@ interface Props {
   onBack: () => void;
   onMap: () => void;
   onWork: (work: ArtworkSummary) => void;
+  onSearchWork?: (work: ArtworkSummary) => void;
+  searchRevision?: string;
   compact: boolean;
   favoriteWorks?: ArtworkSummary[];
   storageError?: boolean;
@@ -114,10 +118,13 @@ export function Catalog({
   onBack,
   onMap,
   onWork,
+  onSearchWork = onWork,
+  searchRevision,
   compact,
   favoriteWorks = [],
   storageError = false,
 }: Props) {
+  const searchOpen = useAiSearch((state) => state.open);
   const tab = useSession((state) => state.tab);
   const expanded = useSession((state) => state.expanded[tab]);
   const artistCounts = useMemo(() => artistWorkCounts(data), [data]);
@@ -155,170 +162,194 @@ export function Catalog({
           <IconButton icon="map" label="查看当前分布" onClick={onMap} />
         )}
       </div>
-      <nav className={s.tabs} aria-label="目录分类">
-        {(
-          [
-            ["china", "中国"],
-            ["foreign", "外国"],
-            ["topics", "专题"],
-            ["favorites", "收藏"],
-          ] as const
-        ).map(([id, name]) => (
-          <button
-            key={id}
-            aria-label={id === "favorites" ? "我的收藏" : undefined}
-            aria-current={tab === id ? "page" : undefined}
-            onClick={() => onTab(id)}
-            className={tab === id ? s.activeTab : ""}
-          >
-            {name}
-          </button>
-        ))}
-      </nav>
-      {tab === "favorites" ? (
-        <>
-          <div className={s.topicHeader}>
-            <div>
-              <h1>我的收藏</h1>
-              {favoriteWorks.length > 0 && (
-                <IconButton
-                  icon="map"
-                  label="查看收藏作品分布"
-                  onClick={onMap}
-                />
-              )}
-            </div>
-            <p>{favoriteWorks.length} 幅作品 · 最近收藏在前</p>
-            <p>仅保存在当前浏览器，清除网站数据后会移除。</p>
-            {storageError && (
-              <p role="status">浏览器未允许保存，收藏仅在本次打开期间保留。</p>
-            )}
-          </div>
-          {favoriteWorks.length ? (
-            <ArtworkList
-              data={data}
-              works={favoriteWorks}
-              selected={selected}
-              onSelect={onWork}
-              scrollKey="favorites"
-            />
-          ) : (
-            <EmptyState title="还没有收藏画作">
-              <p>在作品信息或大图浏览中点爱心，即可收录到这里。</p>
-            </EmptyState>
-          )}
-        </>
-      ) : tab === "topics" && topic ? (
-        <>
-          <div className={s.topicHeader}>
-            <button className={s.backText} onClick={onBack}>
-              <Icon name="back" size={17} />
-              返回专题
-            </button>
-            <div>
-              <h1>{topic.title}</h1>
-              <IconButton icon="map" label="查看专题整体分布" onClick={onMap} />
-            </div>
-            <p>{topicWorks.length} 幅作品</p>
-          </div>
-          <ArtworkList
-            data={data}
-            works={topicWorks}
-            showVenues
-            selected={selected}
-            onSelect={onWork}
-            scrollKey={`topic:${topic.id}`}
-          />
-        </>
+      {searchOpen ? (
+        <AiSearch
+          data={data}
+          revision={searchRevision}
+          onSelect={onSearchWork}
+        />
       ) : (
-        <div ref={scrollRef} className={s.directory}>
-          {tab === "foreign" && (
-            <div className={s.directoryIntro}>
-              <h2>时期与流派</h2>
-              <p>
-                按主要艺术时期与流派归类；年代为约略范围，流派之间存在交叉。
-              </p>
+        <>
+          <button
+            className={searchStyles.entry}
+            onClick={() => useAiSearch.setState({ open: true })}
+          >
+            <Icon name="search" size={16} />
+            <span>描述你想找的画</span>
+            <small>AI 搜索</small>
+          </button>
+          <nav className={s.tabs} aria-label="目录分类">
+            {(
+              [
+                ["china", "中国"],
+                ["foreign", "外国"],
+                ["topics", "专题"],
+                ["favorites", "收藏"],
+              ] as const
+            ).map(([id, name]) => (
+              <button
+                key={id}
+                aria-label={id === "favorites" ? "我的收藏" : undefined}
+                aria-current={tab === id ? "page" : undefined}
+                onClick={() => onTab(id)}
+                className={tab === id ? s.activeTab : ""}
+              >
+                {name}
+              </button>
+            ))}
+          </nav>
+          {tab === "favorites" ? (
+            <>
+              <div className={s.topicHeader}>
+                <div>
+                  <h1>我的收藏</h1>
+                  {favoriteWorks.length > 0 && (
+                    <IconButton
+                      icon="map"
+                      label="查看收藏作品分布"
+                      onClick={onMap}
+                    />
+                  )}
+                </div>
+                <p>{favoriteWorks.length} 幅作品 · 最近收藏在前</p>
+                <p>仅保存在当前浏览器，清除网站数据后会移除。</p>
+                {storageError && (
+                  <p role="status">
+                    浏览器未允许保存，收藏仅在本次打开期间保留。
+                  </p>
+                )}
+              </div>
+              {favoriteWorks.length ? (
+                <ArtworkList
+                  data={data}
+                  works={favoriteWorks}
+                  selected={selected}
+                  onSelect={onWork}
+                  scrollKey="favorites"
+                />
+              ) : (
+                <EmptyState title="还没有收藏画作">
+                  <p>在作品信息或大图浏览中点爱心，即可收录到这里。</p>
+                </EmptyState>
+              )}
+            </>
+          ) : tab === "topics" && topic ? (
+            <>
+              <div className={s.topicHeader}>
+                <button className={s.backText} onClick={onBack}>
+                  <Icon name="back" size={17} />
+                  返回专题
+                </button>
+                <div>
+                  <h1>{topic.title}</h1>
+                  <IconButton
+                    icon="map"
+                    label="查看专题整体分布"
+                    onClick={onMap}
+                  />
+                </div>
+                <p>{topicWorks.length} 幅作品</p>
+              </div>
+              <ArtworkList
+                data={data}
+                works={topicWorks}
+                showVenues
+                selected={selected}
+                onSelect={onWork}
+                scrollKey={`topic:${topic.id}`}
+              />
+            </>
+          ) : (
+            <div ref={scrollRef} className={s.directory}>
+              {tab === "foreign" && (
+                <div className={s.directoryIntro}>
+                  <h2>时期与流派</h2>
+                  <p>
+                    按主要艺术时期与流派归类；年代为约略范围，流派之间存在交叉。
+                  </p>
+                </div>
+              )}
+              {tab === "topics"
+                ? data.topics.map((topic) => (
+                    <button
+                      key={topic.id}
+                      className={s.topic}
+                      onClick={() => onTopic(topic.id)}
+                    >
+                      <span>
+                        <strong>{topic.title}</strong>
+                        <small>{topic.description}</small>
+                      </span>
+                      <Icon name="chevron" size={18} />
+                    </button>
+                  ))
+                : data.periods
+                    .filter(
+                      (period) =>
+                        period.category === tab &&
+                        directoryArtists.some(
+                          (artist) => artist.periodId === period.id,
+                        ),
+                    )
+                    .map((period) => (
+                      <section key={period.id} className={s.period}>
+                        <button
+                          className={s.periodHeading}
+                          aria-expanded={expanded?.includes(period.id) ?? false}
+                          onClick={() => {
+                            useSession.getState().togglePeriod(tab, period.id);
+                          }}
+                        >
+                          <Icon
+                            name={
+                              expanded?.includes(period.id) ? "down" : "chevron"
+                            }
+                            size={13}
+                          />
+                          <span className={s.folderIcon}>
+                            <Icon name="folder" size={18} />
+                          </span>
+                          <span className={s.periodCopy}>
+                            <strong>{period.name}</strong>
+                            <small>{period.dateLabel}</small>
+                          </span>
+                        </button>
+                        {expanded?.includes(period.id) && (
+                          <div className={s.artists}>
+                            {directoryArtists
+                              .filter((artist) => artist.periodId === period.id)
+                              .map((artist) => (
+                                <button
+                                  key={artist.id}
+                                  className={`${s.artist} ${scope === `artist:${artist.id}` ? s.selected : ""}`}
+                                  aria-current={
+                                    scope === `artist:${artist.id}`
+                                      ? "true"
+                                      : undefined
+                                  }
+                                  onClick={() => onArtist(artist.id)}
+                                >
+                                  <Icon name="artist" size={15} />
+                                  <span className={s.artistCopy}>
+                                    <strong>{artist.name}</strong>
+                                    <small>
+                                      {artist.lifeLabel}
+                                      {tab === "foreign" &&
+                                        ` · ${artist.countryLabel}`}
+                                    </small>
+                                  </span>
+                                  <span className={s.artistCount}>
+                                    {artistCounts.get(artist.id) ?? 0} 幅
+                                  </span>
+                                </button>
+                              ))}
+                          </div>
+                        )}
+                      </section>
+                    ))}
             </div>
           )}
-          {tab === "topics"
-            ? data.topics.map((topic) => (
-                <button
-                  key={topic.id}
-                  className={s.topic}
-                  onClick={() => onTopic(topic.id)}
-                >
-                  <span>
-                    <strong>{topic.title}</strong>
-                    <small>{topic.description}</small>
-                  </span>
-                  <Icon name="chevron" size={18} />
-                </button>
-              ))
-            : data.periods
-                .filter(
-                  (period) =>
-                    period.category === tab &&
-                    directoryArtists.some(
-                      (artist) => artist.periodId === period.id,
-                    ),
-                )
-                .map((period) => (
-                  <section key={period.id} className={s.period}>
-                    <button
-                      className={s.periodHeading}
-                      aria-expanded={expanded?.includes(period.id) ?? false}
-                      onClick={() => {
-                        useSession.getState().togglePeriod(tab, period.id);
-                      }}
-                    >
-                      <Icon
-                        name={
-                          expanded?.includes(period.id) ? "down" : "chevron"
-                        }
-                        size={13}
-                      />
-                      <span className={s.folderIcon}>
-                        <Icon name="folder" size={18} />
-                      </span>
-                      <span className={s.periodCopy}>
-                        <strong>{period.name}</strong>
-                        <small>{period.dateLabel}</small>
-                      </span>
-                    </button>
-                    {expanded?.includes(period.id) && (
-                      <div className={s.artists}>
-                        {directoryArtists
-                          .filter((artist) => artist.periodId === period.id)
-                          .map((artist) => (
-                            <button
-                              key={artist.id}
-                              className={`${s.artist} ${scope === `artist:${artist.id}` ? s.selected : ""}`}
-                              aria-current={
-                                scope === `artist:${artist.id}`
-                                  ? "true"
-                                  : undefined
-                              }
-                              onClick={() => onArtist(artist.id)}
-                            >
-                              <Icon name="artist" size={15} />
-                              <span className={s.artistCopy}>
-                                <strong>{artist.name}</strong>
-                                <small>
-                                  {artist.lifeLabel}
-                                  {tab === "foreign" &&
-                                    ` · ${artist.countryLabel}`}
-                                </small>
-                              </span>
-                              <span className={s.artistCount}>
-                                {artistCounts.get(artist.id) ?? 0} 幅
-                              </span>
-                            </button>
-                          ))}
-                      </div>
-                    )}
-                  </section>
-                ))}
-        </div>
+        </>
       )}
       <div className={s.footnote}>
         <span>循着画作，走近收藏之地</span>
