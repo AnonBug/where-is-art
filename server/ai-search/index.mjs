@@ -9,6 +9,7 @@ import {
 import { reserveQuota } from "./quota.mjs";
 import { createHash } from "node:crypto";
 import { CORPUS_FILE, createSearchCorpus } from "./corpus.mjs";
+import { addVisualAnnotations } from "./visual.mjs";
 import {
   retrieveCandidates,
   reviewMessages,
@@ -30,10 +31,11 @@ async function getJson(url) {
     });
   return response.json();
 }
-async function loadCatalog(revision) {
+async function loadCatalog(revision, visual = false) {
   if (!revision) revision = (await getJson(`${ROOT}current.json`)).revision;
   if (!/^[a-f0-9]{20}$/.test(revision)) throw new Error("Invalid revision");
-  if (catalogs.has(revision)) return catalogs.get(revision);
+  const cacheKey = `${revision}:${visual}`;
+  if (catalogs.has(cacheKey)) return catalogs.get(cacheKey);
   const data = await getJson(`${ROOT}releases/${revision}/catalog-index.json`);
   if (data.detailBase !== `artwork-details/${revision}/`)
     throw new Error("Revision mismatch");
@@ -52,9 +54,13 @@ async function loadCatalog(revision) {
     if (digest !== revision) throw new Error("Revision mismatch");
     corpus = createSearchCorpus(full, revision);
   }
-  const catalog = prepareCatalog(data, revision, corpus);
+  const catalog = prepareCatalog(
+    data,
+    revision,
+    visual ? addVisualAnnotations(data, corpus) : corpus,
+  );
   if (catalogs.size >= 3) catalogs.delete(catalogs.keys().next().value);
-  catalogs.set(revision, catalog);
+  catalogs.set(cacheKey, catalog);
   return catalog;
 }
 async function askModel(messages, maxTokens) {
@@ -181,6 +187,8 @@ export function createHandler({
       input.query.trim().length < 1 ||
       input.query.length > 200 ||
       !["ai", "keyword", undefined].includes(input.mode) ||
+      (input.visualAnnotations !== undefined &&
+        typeof input.visualAnnotations !== "boolean") ||
       (input.revision !== undefined && !/^[a-f0-9]{20}$/.test(input.revision))
     )
       return reply(400, { message: "请输入 1–200 字的搜索内容" });
@@ -195,19 +203,24 @@ export function createHandler({
       for (const [key, time] of recent)
         if (now() - time > 60_000) recent.delete(key);
     try {
-      const catalog = await getCatalog(input.revision);
+      // Existing open clients only accept the original evidence fields.
+      const catalog =
+        input.visualAnnotations === true
+          ? await getCatalog(input.revision, true)
+          : await getCatalog(input.revision);
       const fallback = (message) =>
         reply(200, {
           ...keywordSearch(catalog, query),
           revision: catalog.revision,
           mode: "keyword",
+          visualCount: catalog.visualCount || 0,
           message,
         });
       if (input.mode === "keyword")
         return fallback(
-          "按关键词匹配画名、馆藏和已收录的描述、背景、故事与导读，未进行 AI 语义核对",
+          "按关键词匹配画名、馆藏和已收录的作品文字与标注，未进行 AI 语义核对",
         );
-      const cacheKey = `${catalog.revision}:${normalize(query)}`;
+      const cacheKey = `${catalog.revision}:${input.visualAnnotations === true}:${normalize(query)}`;
       const cached = cache.get(cacheKey);
       if (cached && now() - cached.time < 3600_000)
         return reply(200, { ...cached.result, cached: true });
@@ -261,10 +274,11 @@ export function createHandler({
           ...checked,
           revision: catalog.revision,
           mode: "ai",
+          visualCount: catalog.visualCount || 0,
           limited: matchedCount > candidates.length,
           message: checked.total
-            ? `已核对站内描述、背景、故事和导读，结果附原文依据。${matchedCount > candidates.length ? "本次核对最相关的 20 幅候选，可补充条件继续查找。" : ""}`
-            : "已检索现有文字，暂未找到有充分依据的作品；部分作品尚无详细描述。",
+            ? `已核对作品文字${catalog.visualCount ? "与 AI 视觉标注" : ""}，结果附匹配依据。${matchedCount > candidates.length ? "本次核对最相关的 20 幅候选，可补充条件继续查找。" : ""}`
+            : "已检索现有资料，暂未找到有充分依据的作品；未标注的画面可能无法按情绪或细节搜到。",
         };
       } else
         result = {

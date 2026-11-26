@@ -16,7 +16,14 @@ import { ArtworkImage, Icon } from "../../shared/ui";
 import s from "./AiSearch.module.scss";
 
 const evidenceSchema = z.object({
-  field: z.enum(["description", "background", "story", "looking"]),
+  field: z.enum([
+    "description",
+    "background",
+    "story",
+    "looking",
+    "visual_description",
+    "visual_emotion",
+  ]),
   label: z.string(),
   text: z.string().max(500),
   sources: z
@@ -37,6 +44,7 @@ const responseSchema = z.object({
   total: z.number().int().nonnegative(),
   message: z.string(),
   semantic: z.boolean().optional(),
+  visualCount: z.number().int().nonnegative().optional(),
   results: z
     .array(
       z.object({
@@ -89,7 +97,12 @@ export function AiSearch({
       const response = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: value.trim(), revision, mode }),
+        body: JSON.stringify({
+          query: value.trim(),
+          revision,
+          mode,
+          visualAnnotations: true,
+        }),
         signal: controller.signal,
         credentials: "omit",
       });
@@ -132,7 +145,7 @@ export function AiSearch({
           <Icon name="back" size={16} /> 返回目录
         </button>
         <h1>想找哪一幅画？</h1>
-        <p>描述画家、收藏地点，或画中的情节与故事。</p>
+        <p>描述想看的画面、情绪，也可以找画家、收藏地点与故事。</p>
         <form
           onSubmit={(event) => {
             event.preventDefault();
@@ -146,7 +159,7 @@ export function AiSearch({
             rows={2}
             maxLength={200}
             value={query}
-            placeholder="例如：宙斯化作金雨的画"
+            placeholder="例如：有孤独感的画，但不要惊恐"
             onChange={(event) =>
               useAiSearch.setState({ query: event.target.value })
             }
@@ -168,18 +181,20 @@ export function AiSearch({
         </form>
         {!visibleResult && !busy && !error && (
           <div className={s.examples} aria-label="搜索示例">
-            {[
-              "宙斯化作金雨的画",
-              "为焚毁的城市哀伤的老人",
-              "巴黎收藏的莫奈作品",
-            ].map((text) => (
-              <button key={text} onClick={() => void search(text)}>
-                {text}
-                <Icon name="chevron" size={12} />
-              </button>
-            ))}
+            {["有孤独感的画作", "一个人但很自在的画", "宙斯化作金雨的画"].map(
+              (text) => (
+                <button key={text} onClick={() => void search(text)}>
+                  {text}
+                  <Icon name="chevron" size={12} />
+                </button>
+              ),
+            )}
           </div>
         )}
+        <p className={s.coverage}>
+          画面与情绪搜索试用中，目前覆盖 {visibleResult?.visualCount ?? 100}{" "}
+          幅标注作品。感受因人而异。
+        </p>
       </div>
       <div className={s.results} aria-busy={busy}>
         {busy && (
@@ -254,9 +269,18 @@ export function AiSearch({
                           {evidence.label} · {index ? "补充依据" : "原文依据"}
                         </span>
                         <q>{evidence.text}</q>
-                        <small>展开原文与参考来源</small>
+                        <small>
+                          {evidence.field.startsWith("visual_")
+                            ? "展开标注与对应画面"
+                            : "展开原文与参考来源"}
+                        </small>
                       </summary>
                       <div className={s.sources}>
+                        {evidence.field.startsWith("visual_") && (
+                          <small className={s.annotationNote}>
+                            根据画面生成的 AI 标注，情绪为可能的观看感受。
+                          </small>
+                        )}
                         {evidence.sources.length ? (
                           evidence.sources.map((source) => (
                             <a

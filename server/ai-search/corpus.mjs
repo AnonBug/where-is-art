@@ -4,6 +4,8 @@ export const FIELD_LABELS = {
   background: "创作背景",
   story: "背景故事",
   looking: "赏析导读",
+  visual_description: "AI 画面标注",
+  visual_emotion: "AI 情绪标注",
 };
 
 function sources(items) {

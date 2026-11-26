@@ -30,6 +30,54 @@ afterEach(() => {
 });
 
 describe("AI search", () => {
+  it("renders visual evidence with the annotation's scope and original image link", async () => {
+    const text = "孤独：空旷滩面只有一个很小的人影。";
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(
+        async () =>
+          new Response(
+            JSON.stringify({
+              ...reply,
+              semantic: true,
+              visualCount: 100,
+              results: [
+                {
+                  ...reply.results[0],
+                  evidence: {
+                    field: "visual_emotion",
+                    label: "AI 情绪标注",
+                    text,
+                    sources: [
+                      {
+                        label: "对应画面",
+                        url: "https://example.com/preview.webp",
+                      },
+                    ],
+                  },
+                },
+              ],
+            }),
+          ),
+      ),
+    );
+    render(
+      <AiSearch
+        data={data}
+        revision={revision}
+        onSelect={vi.fn()}
+        endpoint="https://search.example"
+      />,
+    );
+    fireEvent.click(screen.getByRole("button", { name: "AI 搜索" }));
+    expect(await screen.findByText(text)).toBeTruthy();
+    expect(screen.getByText(/目前覆盖 100 幅标注作品/)).toBeTruthy();
+    fireEvent.click(screen.getByText("AI 情绪标注 · 原文依据"));
+    expect(screen.getByText(/情绪为可能的观看感受/)).toBeTruthy();
+    expect(
+      screen.getByRole("link", { name: "对应画面" }).getAttribute("href"),
+    ).toBe("https://example.com/preview.webp");
+  });
   it("shows the exact story excerpt and an external reference separately from the artwork button", async () => {
     const text = "画中人物正在回应远处的光，而背景故事记录了她的遭遇。";
     vi.stubGlobal(
@@ -99,6 +147,7 @@ describe("AI search", () => {
       query: "巴黎的蒙娜丽莎",
       revision,
       mode: "ai",
+      visualAnnotations: true,
     });
     expect(init.credentials).toBe("omit");
     expect(init.headers).toEqual({ "Content-Type": "application/json" });

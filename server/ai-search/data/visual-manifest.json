@@ -1,0 +1,1114 @@
+{
+  "catalog_revision": "53c20b880021864a89b7",
+  "catalog_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/content/releases/53c20b880021864a89b7/catalog.json",
+  "sampling": {
+    "eligible_artworks": 6996,
+    "sample_size": 100,
+    "unit": "artwork_id",
+    "eligibility": "至少有一张在目录中标为 whole 且带预览链接的全图，每幅作品只计一次。",
+    "method": "从按作品 ID 升序排列的候选集中用 Python random.Random(seed).sample 无放回抽取。",
+    "seed": 39322359699354
+  },
+  "works": [
+    {
+      "artwork_id": "monet-q64572602",
+      "title": "Rounded Flower Bed (Corbeille de fleurs)",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q64572602-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q64572602/6626218f49e1/preview.webp",
+      "image_sha256": "a0b04c36c535d960ce6b882c2ab29eac8874903e2333a0e0f163e605d1100b65",
+      "annotation_file": "works/monet-q64572602.json"
+    },
+    {
+      "artwork_id": "monet-q1167912",
+      "title": "Luncheon on the Grass",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q1167912-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q1167912/b106089a4a2d/preview.webp",
+      "image_sha256": "cbc7a74b01740115215e7318e3f954f61e0e38df5dad9fe93cd56614bf8a86d9",
+      "annotation_file": "works/monet-q1167912.json"
+    },
+    {
+      "artwork_id": "zx-ci00159107",
+      "title": "兰花图轴",
+      "artists": [
+        "郑燮（郑板桥）"
+      ],
+      "image_id": "zx-ci00159107-v01",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/zheng-xie/zx-ci00159107-v01/0ddb856b8699/preview.webp",
+      "image_sha256": "a376f785db44a99143ad2cf147391be678dac034c5f3dcca4fb9be9448ae7c1a",
+      "annotation_file": "works/zx-ci00159107.json"
+    },
+    {
+      "artwork_id": "mondrian-q102260320",
+      "title": "Country road and farm",
+      "artists": [
+        "皮特·蒙德里安"
+      ],
+      "image_id": "mondrian-q102260320-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/mondrian-q102260320/5963eb621880/preview.webp",
+      "image_sha256": "6a7717ce8d7e02915ca79fbe13045c4f8b6af68c309bea5fafca6921e54fb153",
+      "annotation_file": "works/mondrian-q102260320.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00122b",
+      "title": "The Scream",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00122b-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00122b/f892066be47e/preview.webp",
+      "image_sha256": "98e0ca742935dd5eafd435f161a06bc447a02ecc373f6c368f09cbd7fd8bad5c",
+      "annotation_file": "works/munch-mm-m-00122b.json"
+    },
+    {
+      "artwork_id": "manet-q12159335",
+      "title": "Landscape with a Village Church",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q12159335-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q12159335/39c490900462/preview.webp",
+      "image_sha256": "9fa5fa4ac204af9dc284590ad62f2f6fa67a7eab62aa1402b83dc8cebc15e138",
+      "annotation_file": "works/manet-q12159335.json"
+    },
+    {
+      "artwork_id": "monet-q85225152",
+      "title": "The Highway Bridge at Argenteuil",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q85225152-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q85225152/144a2b6dae6b/preview.webp",
+      "image_sha256": "4a2f4ffd841ac9674fe1a0e41cdb651bc74beaf701b8a61fb69f119dca62455b",
+      "annotation_file": "works/monet-q85225152.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00364",
+      "title": "Bathing Man",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00364-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00364/973ac9ec0fa6/preview.webp",
+      "image_sha256": "cff32322d98a0543dfbadbc111dc660cf9543ec98d342ce4bd57440b4255bfc3",
+      "annotation_file": "works/munch-mm-m-00364.json"
+    },
+    {
+      "artwork_id": "gauguin-q124973441",
+      "title": "Landscape",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q124973441-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q124973441/3994b80560bb/preview.webp",
+      "image_sha256": "8ba7ea429a7cf5d4ab0868f1e4fc9e05b9d2e0de8ae3c4cbbc393a4dad56caa3",
+      "annotation_file": "works/gauguin-q124973441.json"
+    },
+    {
+      "artwork_id": "monet-list-7dad40dd40c7",
+      "title": "Torrent of the Creuse",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-7dad40dd40c7-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-7dad40dd40c7/640bf0e628f6/preview.webp",
+      "image_sha256": "8bda76dda78aa4a35955247f151d312337fde7bb33161cf54cb55a2ddfa1c793",
+      "annotation_file": "works/monet-list-7dad40dd40c7.json"
+    },
+    {
+      "artwork_id": "manet-q104254388",
+      "title": "The Bar",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q104254388-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q104254388/4a26f14eba9c/preview.webp",
+      "image_sha256": "15876799d881c9e7f835c16f11def773310eda8004328910f0d36278cfe22cf8",
+      "annotation_file": "works/manet-q104254388.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00802",
+      "title": "Tree Trunks",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00802-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00802/aa035a2663c0/preview.webp",
+      "image_sha256": "5dde99790e064f594271a406e7fad7373d94c848ae6b1f774afc68d36c0cb465",
+      "annotation_file": "works/munch-mm-m-00802.json"
+    },
+    {
+      "artwork_id": "monet-q111039644",
+      "title": "L'église à Vétheuil",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q111039644-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q111039644/0690350573b6/preview.webp",
+      "image_sha256": "c89cf8174adee56a2e53db1d20fc375ed4136e1dffd749230e82c56946978fa6",
+      "annotation_file": "works/monet-q111039644.json"
+    },
+    {
+      "artwork_id": "mondrian-q24046413",
+      "title": "tableau n. 4",
+      "artists": [
+        "皮特·蒙德里安"
+      ],
+      "image_id": "mondrian-q24046413-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/mondrian-q24046413/6be8fa9a0311/preview.webp",
+      "image_sha256": "ee65066fedaca225715d1790df538f15f29ad489c38e46aef789d4dffec21c04",
+      "annotation_file": "works/mondrian-q24046413.json"
+    },
+    {
+      "artwork_id": "mondrian-q102255484",
+      "title": "Willows bordering an irrigation ditch near a haystack",
+      "artists": [
+        "皮特·蒙德里安"
+      ],
+      "image_id": "mondrian-q102255484-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/mondrian-q102255484/846b9cc98832/preview.webp",
+      "image_sha256": "ab749ca67d390e860916f2830c517cb6df907b65298bd9e8f080c88dbd060104",
+      "annotation_file": "works/mondrian-q102255484.json"
+    },
+    {
+      "artwork_id": "delacroix-liberty",
+      "title": "自由引导人民",
+      "artists": [
+        "欧仁·德拉克洛瓦"
+      ],
+      "image_id": "delacroix-liberty-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/foreign/delacroix-liberty/preview.webp",
+      "image_sha256": "12bebd18c336003639f2977c40eb6d19c397b710babb3ce0c09f19f63bb6fbdc",
+      "annotation_file": "works/delacroix-liberty.json"
+    },
+    {
+      "artwork_id": "mondrian-q78686758",
+      "title": "Composition with Red, Blue, Yellow, Black, and Gray",
+      "artists": [
+        "皮特·蒙德里安"
+      ],
+      "image_id": "mondrian-q78686758-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/mondrian-q78686758/ae1d69f37a6b/preview.webp",
+      "image_sha256": "1e0c3b04befcd66cd542b0026c502b4bd3698e57c8d5a597f63d44e5eeddaf16",
+      "annotation_file": "works/mondrian-q78686758.json"
+    },
+    {
+      "artwork_id": "van-gogh-q24022798",
+      "title": "Tree Trunks with Ivy",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q24022798-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q24022798/e3d1ed98b6ca/preview.webp",
+      "image_sha256": "131ad56a071376439476b6d5dd4734473abe46e71e6be94cb9d9d987aae31417",
+      "annotation_file": "works/van-gogh-q24022798.json"
+    },
+    {
+      "artwork_id": "gauguin-list-824e68c6dff9",
+      "title": "Pots et Bouquets",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-list-824e68c6dff9-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-list-824e68c6dff9/74af17ff4030/preview.webp",
+      "image_sha256": "939403be183c9401006c9879f90bb9971f0c99a7168baedebc40728b0f564a83",
+      "annotation_file": "works/gauguin-list-824e68c6dff9.json"
+    },
+    {
+      "artwork_id": "gauguin-q18573810",
+      "title": "Landscape from Arles",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q18573810-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q18573810/7a1a746683fd/preview.webp",
+      "image_sha256": "c354ef3cef90e57b52da405017ccb78b13564171b0402128bf63fa76717b09f0",
+      "annotation_file": "works/gauguin-q18573810.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00246",
+      "title": "Jealousy Motif",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00246-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00246/b1fde45ad52d/preview.webp",
+      "image_sha256": "40befde98a96c37dcb174e3a1df6fe59893f20c6abc5257a52269f1d3c94ee16",
+      "annotation_file": "works/munch-mm-m-00246.json"
+    },
+    {
+      "artwork_id": "monet-q20724999",
+      "title": "Ladies in Flowers",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q20724999-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q20724999/d4095485b5d5/preview.webp",
+      "image_sha256": "8c73fbc045bcfd96b33e575a112e77e4e57c0ed68d104ec0245f58a6a228af72",
+      "annotation_file": "works/monet-q20724999.json"
+    },
+    {
+      "artwork_id": "gauguin-q19869304",
+      "title": "Painting of an interior at rue Carcel (Carcel Street), Paris",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q19869304-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q19869304/cfd7eea3d489/preview.webp",
+      "image_sha256": "af010cb28dd169e956a465008cca10c364b4fa88936b1e202b416263ad79b7af",
+      "annotation_file": "works/gauguin-q19869304.json"
+    },
+    {
+      "artwork_id": "van-gogh-q26220119",
+      "title": "Cottage with Peasant Woman Digging",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q26220119-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q26220119/4b5ab51ec268/preview.webp",
+      "image_sha256": "8084d5391acebc75cbbe53a98287c50aa0bf9050c6f481e0d8ccc4ad3cb5ebd7",
+      "annotation_file": "works/van-gogh-q26220119.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00684",
+      "title": "Geniuses in Sun Rays",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00684-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00684/194184b4fff0/preview.webp",
+      "image_sha256": "0ebab6f479d4226e955a3bdaf36e06fed2e6e2d323d5a6233ae4c1ab35bed80c",
+      "annotation_file": "works/munch-mm-m-00684.json"
+    },
+    {
+      "artwork_id": "ingres-grisaille",
+      "title": "灰调宫女",
+      "artists": [
+        "让-奥古斯特-多米尼克·安格尔"
+      ],
+      "image_id": "ingres-grisaille-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/foreign/ingres-grisaille/preview.webp",
+      "image_sha256": "c67b9c1d1bf3066c0ad97aa204b5dfa44a18667ba28f11b5fb9e7c005e2f36b2",
+      "annotation_file": "works/ingres-grisaille.json"
+    },
+    {
+      "artwork_id": "manet-q17495098",
+      "title": "Portrait of Antonin Proust",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q17495098-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q17495098/8bf2f53428cd/preview.webp",
+      "image_sha256": "245707202627f541345fb1580cfb901c4f9f0207cf5ffd9717fb32eea9d92f5a",
+      "annotation_file": "works/manet-q17495098.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00500",
+      "title": "Sunbathing",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00500-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00500/0050e2aafbaf/preview.webp",
+      "image_sha256": "fe01f0b74a20c23b0263a1d73c26ee1fb23cfae045e6ff62c49cb5f7d3a67636",
+      "annotation_file": "works/munch-mm-m-00500.json"
+    },
+    {
+      "artwork_id": "mondrian-q24050954",
+      "title": "Irrigation ditch with two willows",
+      "artists": [
+        "皮特·蒙德里安"
+      ],
+      "image_id": "mondrian-q24050954-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/mondrian-q24050954/87bed3bbc9e3/preview.webp",
+      "image_sha256": "da245bd4e3aab921da937fd011bd30a5d0c375f169c1d704addf16d651362ab0",
+      "annotation_file": "works/mondrian-q24050954.json"
+    },
+    {
+      "artwork_id": "gauguin-q82119551",
+      "title": "Rupe Tahiti",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q82119551-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q82119551/7d653ce6ff0e/preview.webp",
+      "image_sha256": "e0be3405772195c6b60a45ba8e716037fafaf80e4badcc2f4a6dddf74d86676e",
+      "annotation_file": "works/gauguin-q82119551.json"
+    },
+    {
+      "artwork_id": "mondrian-q102256053",
+      "title": "Geinrust farm surrounded by dense foliage",
+      "artists": [
+        "皮特·蒙德里安"
+      ],
+      "image_id": "mondrian-q102256053-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/mondrian-q102256053/22b978712fb3/preview.webp",
+      "image_sha256": "e433bd913ef14abe6fe62934db4e0b86433d75705d96c55edffb24e5ce48f0b2",
+      "annotation_file": "works/mondrian-q102256053.json"
+    },
+    {
+      "artwork_id": "monet-list-090b74467025",
+      "title": "The Train at Jeufosse",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-090b74467025-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-090b74467025/ead9316a0104/preview.webp",
+      "image_sha256": "931d402b3f1a232b9eae925a8a5285c60622bde96642ca393a591e74eaba5391",
+      "annotation_file": "works/monet-list-090b74467025.json"
+    },
+    {
+      "artwork_id": "monet-q50771186",
+      "title": "River at Lavacourt",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q50771186-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q50771186/5ca8b2296edc/preview.webp",
+      "image_sha256": "581f8f38c41de26e6c7adde5605eb0f802d69abb03f1702314d3a2cdd313bb91",
+      "annotation_file": "works/monet-q50771186.json"
+    },
+    {
+      "artwork_id": "zx-ci00020508",
+      "title": "赠杏花楼主竹石图轴",
+      "artists": [
+        "郑燮（郑板桥）"
+      ],
+      "image_id": "zx-ci00020508-v01",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/zheng-xie/zx-ci00020508-v01/92166eda42a2/preview.webp",
+      "image_sha256": "ccde3bad9d0c93065782335f4b3562d6dd3f7ce8e6a0f7a76a19c31a236fb3ae",
+      "annotation_file": "works/zx-ci00020508.json"
+    },
+    {
+      "artwork_id": "van-gogh-q26221127",
+      "title": "The Novel Reader",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q26221127-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q26221127/0f0c83402cc1/preview.webp",
+      "image_sha256": "d67b9b10a0319a087613ed7abc2e70f05b7d4ff81d7fed2c98eaec0c7578f897",
+      "annotation_file": "works/van-gogh-q26221127.json"
+    },
+    {
+      "artwork_id": "monet-q3828905",
+      "title": "The clouds",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q3828905-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q3828905/05ab0375e67e/preview.webp",
+      "image_sha256": "10d7adce863c15b3b44fa8e590b73791c73f92efef4b392908846de47687497a",
+      "annotation_file": "works/monet-q3828905.json"
+    },
+    {
+      "artwork_id": "van-gogh-q26221275",
+      "title": "The State Lottery Office",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q26221275-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q26221275/1d31acea546f/preview.webp",
+      "image_sha256": "0ab878020d062879410d6199a621dd2e3ac61103b32dbdb15ba9a05ef0ceeb2d",
+      "annotation_file": "works/van-gogh-q26221275.json"
+    },
+    {
+      "artwork_id": "van-gogh-q13528770",
+      "title": "唐基老爹",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q13528770-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q13528770/8d58dc35ef93/preview.webp",
+      "image_sha256": "cc96d4dc98fccd8f025942f09dfe7c2fc5a65fa95c06c5f759ddd61d5144b7e6",
+      "annotation_file": "works/van-gogh-q13528770.json"
+    },
+    {
+      "artwork_id": "monet-q105099611",
+      "title": "Nymphéas",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q105099611-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q105099611/ac8ed785721c/preview.webp",
+      "image_sha256": "ba00dbcece0e1c0e0a06d9a8b34628ab6f2f3592b0805962ad4412b313d09ca0",
+      "annotation_file": "works/monet-q105099611.json"
+    },
+    {
+      "artwork_id": "titian-q58241051",
+      "title": "忏悔的抹大拉",
+      "artists": [
+        "提香"
+      ],
+      "image_id": "titian-q58241051-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/titian-q58241051/672e6ea5cba8/preview.webp",
+      "image_sha256": "b0466c3d60bf8b77838b218aeac58c38228b325ee3fa57b94e22834efba04ee6",
+      "annotation_file": "works/titian-q58241051.json"
+    },
+    {
+      "artwork_id": "gauguin-q110996846",
+      "title": "Fruit in a Bowl",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q110996846-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q110996846/c264c1cade3f/preview.webp",
+      "image_sha256": "891046ce8e471b950964c5488ec31cc42e7197d7d7f5b39040e023f966c670d0",
+      "annotation_file": "works/gauguin-q110996846.json"
+    },
+    {
+      "artwork_id": "monet-q114627846",
+      "title": "Water Lilies",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q114627846-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q114627846/7b16d0a55661/preview.webp",
+      "image_sha256": "f329894a32a5df284f0fe67916569b8cf119f9792e8fb7ac66eff292ba6b4f8c",
+      "annotation_file": "works/monet-q114627846.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00925",
+      "title": "History: Study for the Old Man",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00925-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00925/fa0fb55edebb/preview.webp",
+      "image_sha256": "353d4a8e9a500a6ed1cf57fff04a32180a018082d7c4b90cf40d78b6c9ea3149",
+      "annotation_file": "works/munch-mm-m-00925.json"
+    },
+    {
+      "artwork_id": "monet-q3212522",
+      "title": "La Rue Montorgueil",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q3212522-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q3212522/35fbc1dccd46/preview.webp",
+      "image_sha256": "8f35573adddc57df8dc9ff655877d60c44c16dfa9b2cba911914dcb7d542f1d5",
+      "annotation_file": "works/monet-q3212522.json"
+    },
+    {
+      "artwork_id": "monet-q136341519",
+      "title": "Water Lilies",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q136341519-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q136341519/5d1c694dd289/preview.webp",
+      "image_sha256": "c2e67ffbe57f4c88cbdb02073233c09a03d755b629955970b32e51023698d3d5",
+      "annotation_file": "works/monet-q136341519.json"
+    },
+    {
+      "artwork_id": "van-gogh-q7617094",
+      "title": "Still Life with Straw Hat",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q7617094-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q7617094/98b1bc393c4b/preview.webp",
+      "image_sha256": "4fcce15d225aec4cf4d7b9cdd1b72108ea49e90cabd7774973eb7fbcbc444d93",
+      "annotation_file": "works/van-gogh-q7617094.json"
+    },
+    {
+      "artwork_id": "rembrandt-rrp-224",
+      "title": "The So-called Large Vienna Self-portrait with Beret",
+      "artists": [
+        "伦勃朗"
+      ],
+      "image_id": "rembrandt-rrp-224-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/rembrandt-rrp-224/d443eedadaa9/preview.webp",
+      "image_sha256": "98b50b6b4470430b1b768f3f040c18f651412fc190746101b0d57bec3c18c836",
+      "annotation_file": "works/rembrandt-rrp-224.json"
+    },
+    {
+      "artwork_id": "monet-q17491016",
+      "title": "Anchored Chasse-marée",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q17491016-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q17491016/1a3937561ddf/preview.webp",
+      "image_sha256": "a9dbfc5afe85f37dfe7f9f05805f0bda7c002663da56c602b2de4340aba88179",
+      "annotation_file": "works/monet-q17491016.json"
+    },
+    {
+      "artwork_id": "gauguin-q117709294",
+      "title": "Fruit",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q117709294-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q117709294/d8366f0f0ef8/preview.webp",
+      "image_sha256": "54955840d21f99b99ea3ccbc3ece37c6f3701d8b35db63c7c295684f2bcd4d51",
+      "annotation_file": "works/gauguin-q117709294.json"
+    },
+    {
+      "artwork_id": "monet-q49473320",
+      "title": "Peupliers près de Giverny, temps couvert",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q49473320-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q49473320/ffd393d37c41/preview.webp",
+      "image_sha256": "06eefdb092c0489370044dcd9f87bc90b2fca5c2e8cd444e20670506cedfab00",
+      "annotation_file": "works/monet-q49473320.json"
+    },
+    {
+      "artwork_id": "titian-q7232270",
+      "title": "Portrait of Giacomo Doria",
+      "artists": [
+        "提香"
+      ],
+      "image_id": "titian-q7232270-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/titian-q7232270/c90cc1e6b11b/preview.webp",
+      "image_sha256": "75aaad408c81941ccb4bd913aa4deaf501a1a0da2b800e68319ebcbf0b2ec3b0",
+      "annotation_file": "works/titian-q7232270.json"
+    },
+    {
+      "artwork_id": "manet-q19833784",
+      "title": "The Jetty of Boulogne-sur-Mer",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q19833784-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q19833784/19d8de1c391e/preview.webp",
+      "image_sha256": "82ccad92196aeec5d1524ea4d219e249ed63fe1adfa6f47e914fde8c6b7bc505",
+      "annotation_file": "works/manet-q19833784.json"
+    },
+    {
+      "artwork_id": "monet-list-a1eee521ebc9",
+      "title": "Low Tide at Pourville",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-a1eee521ebc9-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-a1eee521ebc9/2efe4233e994/preview.webp",
+      "image_sha256": "f939f78213aff356f148f5c2a5625ba9527384ea499a8b1feb2d99eb84ee4b1f",
+      "annotation_file": "works/monet-list-a1eee521ebc9.json"
+    },
+    {
+      "artwork_id": "monet-q63952042",
+      "title": "Le Pont japonais",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q63952042-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q63952042/f0738aea79e2/preview.webp",
+      "image_sha256": "051d62369b92e854a9a4b54c6e756cced7fbf7f1b0755236b87b6525e16ae7a9",
+      "annotation_file": "works/monet-q63952042.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00121",
+      "title": "By the Deathbed. Fever",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00121-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00121/3e2a01c65279/preview.webp",
+      "image_sha256": "80bb6b00d1f915dd1402157a6f61acde40c506c3c1e9af8dcae76ef34fea35d5",
+      "annotation_file": "works/munch-mm-m-00121.json"
+    },
+    {
+      "artwork_id": "gauguin-q97730676",
+      "title": "Still Life with a Sketch after Delacroix",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q97730676-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q97730676/f589766abcf3/preview.webp",
+      "image_sha256": "c76638a8d9567926c4340e54d0a9ccaafcd40aa65bb6fbec91e6b6818b34c9f9",
+      "annotation_file": "works/gauguin-q97730676.json"
+    },
+    {
+      "artwork_id": "rembrandt-rrp-109",
+      "title": "三王来拜",
+      "artists": [
+        "伦勃朗"
+      ],
+      "image_id": "rembrandt-rrp-109-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/rembrandt-rrp-109/52883345d67f/preview.webp",
+      "image_sha256": "2a395c59058d904ea90a5e75764c56d3736abb37fe34fad995229721d52ea51b",
+      "annotation_file": "works/rembrandt-rrp-109.json"
+    },
+    {
+      "artwork_id": "monet-list-49eeaddb1180",
+      "title": "Storm at Port-Goulphar, Belle-Ile",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-49eeaddb1180-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-49eeaddb1180/73a82232932c/preview.webp",
+      "image_sha256": "47887130edb93108393a163ae807d471ccef6cb81f7029a5fa496fa1da4e5f3c",
+      "annotation_file": "works/monet-list-49eeaddb1180.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00001",
+      "title": "Bathing Men",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00001-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00001/e14c0168c0de/preview.webp",
+      "image_sha256": "0423fc03d042d8be60a4831482f76ec63d5c2b17f8ab67eb2ddb5f36cc4c74fc",
+      "annotation_file": "works/munch-mm-m-00001.json"
+    },
+    {
+      "artwork_id": "manet-q19882750",
+      "title": "Portrait of Countess Albazzi",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q19882750-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q19882750/b06851a15be9/preview.webp",
+      "image_sha256": "44e5412ab8f55a1f256a37f2e4a812b5b5940a7b0048a0001c4dd318f0be96bc",
+      "annotation_file": "works/manet-q19882750.json"
+    },
+    {
+      "artwork_id": "monet-list-69eea26e4cb6",
+      "title": "Waterloo Bridge, Overcast",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-69eea26e4cb6-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-69eea26e4cb6/f712e2dddf00/preview.webp",
+      "image_sha256": "2014a10659dea71348abe515150b0e7d2bd48beaf9062b9de789b872b6c9aa76",
+      "annotation_file": "works/monet-list-69eea26e4cb6.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-01027b",
+      "title": "Sunrays",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-01027b-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-01027b/5659ffb9d1e5/preview.webp",
+      "image_sha256": "4ad8af050b2c355d7c891ad445205903e10f921d19893eac818a2766bb314df6",
+      "annotation_file": "works/munch-mm-m-01027b.json"
+    },
+    {
+      "artwork_id": "van-gogh-q18689434",
+      "title": "Farmhouse in a wheat field",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q18689434-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q18689434/eb588453d8ef/preview.webp",
+      "image_sha256": "ef0e00c8fc1d6a4c04d165fd4e9082f423fdb2b6ebcf31c488256dfcad30fc1a",
+      "annotation_file": "works/van-gogh-q18689434.json"
+    },
+    {
+      "artwork_id": "gauguin-q17494183",
+      "title": "Marine avec vache",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q17494183-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q17494183/145d12028c0a/preview.webp",
+      "image_sha256": "847d63d1a661b9fae730b3791dd373d3e2a218a382807058d410b5b53b080478",
+      "annotation_file": "works/gauguin-q17494183.json"
+    },
+    {
+      "artwork_id": "monet-list-2f66c5af3eec",
+      "title": "Haystacks, Overcast Day",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-2f66c5af3eec-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-2f66c5af3eec/c419098b1517/preview.webp",
+      "image_sha256": "c05b1a81cb7670107268c77aa0319fb18469b5302c4a50c5ee7b0863065f1319",
+      "annotation_file": "works/monet-list-2f66c5af3eec.json"
+    },
+    {
+      "artwork_id": "zx-hen7066674518210646016",
+      "title": "兰石横轴",
+      "artists": [
+        "郑燮（郑板桥）"
+      ],
+      "image_id": "zx-hen7066674518210646016-v01",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/zheng-xie/zx-hen7066674518210646016-v01/1b14ada0b150/preview.webp",
+      "image_sha256": "16e6908446f153a112f287507c446ef59d414b9c6292fcac0e6d074d96ce0811",
+      "annotation_file": "works/zx-hen7066674518210646016.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00279",
+      "title": "Käte Perls",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00279-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00279/0fcfab0c23c1/preview.webp",
+      "image_sha256": "58fd0f9554c3faade61ca6987f5abdcd223c785f316e1535951130b6fd6b0aa3",
+      "annotation_file": "works/munch-mm-m-00279.json"
+    },
+    {
+      "artwork_id": "monet-list-7510c6febde4",
+      "title": "'' The House Seen from the Rose Garden",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-7510c6febde4-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-7510c6febde4/0483bf1eebb7/preview.webp",
+      "image_sha256": "704cb25c082909982df5bfae518e383ae042f16a6219b3203bfb3f406270f17f",
+      "annotation_file": "works/monet-list-7510c6febde4.json"
+    },
+    {
+      "artwork_id": "van-gogh-q19835885",
+      "title": "Self-Portrait",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q19835885-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q19835885/144f01e24564/preview.webp",
+      "image_sha256": "be2ac6da16beec6abebdecd78996047c11e3fa438fb1013e90141dadb9e2ffc5",
+      "annotation_file": "works/van-gogh-q19835885.json"
+    },
+    {
+      "artwork_id": "vandyck-jupiter-antiope-ghent",
+      "title": "朱庇特与安提俄珀",
+      "artists": [
+        "安东尼·凡·戴克"
+      ],
+      "image_id": "vandyck-jupiter-antiope-ghent-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/foreign/vandyck-jupiter-antiope-ghent/preview.webp",
+      "image_sha256": "35a6dedf6381f53f0219c67ad70e5426558870e223ebdd275ff82fe2d075f280",
+      "annotation_file": "works/vandyck-jupiter-antiope-ghent.json"
+    },
+    {
+      "artwork_id": "monet-q139494923",
+      "title": "Forest road",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q139494923-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q139494923/8c01b05c1a4f/preview.webp",
+      "image_sha256": "9c4f5feac9ebc62938d9ac7047ab37b6b09aad8524da1f74deac84002e06bff4",
+      "annotation_file": "works/monet-q139494923.json"
+    },
+    {
+      "artwork_id": "monet-q38623024",
+      "title": "Water Lilies, Water Landscape",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q38623024-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q38623024/eae076c19bbd/preview.webp",
+      "image_sha256": "e2a9dfc4f5bd846689f1bd8e9bed53ff41e87b5e5d17d1c6b8d0fdf6f1bc9992",
+      "annotation_file": "works/monet-q38623024.json"
+    },
+    {
+      "artwork_id": "monet-list-77d4f19b3b27",
+      "title": "Hanging Pheasants",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-77d4f19b3b27-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-77d4f19b3b27/583d5d306324/preview.webp",
+      "image_sha256": "fa975f2f6a929d57dcc12d3c4e74b02212f9584ecf6b51444907bf19b8f867c1",
+      "annotation_file": "works/monet-list-77d4f19b3b27.json"
+    },
+    {
+      "artwork_id": "monet-q141170948",
+      "title": "Water Lilies",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q141170948-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q141170948/854dcb09c9a1/preview.webp",
+      "image_sha256": "c89f223d23a7ea56897b8ee9d9c335de49d7f2410c16c3c1b26b1009d8a9e87b",
+      "annotation_file": "works/monet-q141170948.json"
+    },
+    {
+      "artwork_id": "monet-q22338327",
+      "title": "View At Rouelles, Le Havre",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q22338327-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q22338327/a6d2af4357e8/preview.webp",
+      "image_sha256": "713693779ec2523fd10d09baf8dedfb2cf166352c78f5c24ffe3a1f820b807ba",
+      "annotation_file": "works/monet-q22338327.json"
+    },
+    {
+      "artwork_id": "monet-q10271033",
+      "title": "Vétheuil Church",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q10271033-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q10271033/480ed200c284/preview.webp",
+      "image_sha256": "d4a1043e6dffdccadd2ebdd47aa1c506d4acdae4b90784287790cf5d9141fb4e",
+      "annotation_file": "works/monet-q10271033.json"
+    },
+    {
+      "artwork_id": "van-gogh-q26220277",
+      "title": "Thistles",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q26220277-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q26220277/a3ca00549b03/preview.webp",
+      "image_sha256": "649d088fd6a12b75a6762d958d3b65c85c5c6be23535b7a141e66fa32ba84511",
+      "annotation_file": "works/van-gogh-q26220277.json"
+    },
+    {
+      "artwork_id": "cm26-liu-songnian-72",
+      "title": "罗汉图轴（猿献石榴）",
+      "artists": [
+        "刘松年"
+      ],
+      "image_id": "cm26-liu-songnian-72-v01",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/chinese-masters-20261126/cm26-liu-songnian-72-v01/58cdba59c5ae/preview.webp",
+      "image_sha256": "546400723bd3436dfdd68cd24e25cb04b47078fd4b57a0fb113dfc7992fe1634",
+      "annotation_file": "works/cm26-liu-songnian-72.json"
+    },
+    {
+      "artwork_id": "monet-list-3da7d1f950aa",
+      "title": "Weeping Willow",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-3da7d1f950aa-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-3da7d1f950aa/293b79370afe/preview.webp",
+      "image_sha256": "3cdd1a3a06aa9192f4428a0dbb1533b4a94416e4d1a1688661c012484b2d197b",
+      "annotation_file": "works/monet-list-3da7d1f950aa.json"
+    },
+    {
+      "artwork_id": "monet-q28094131",
+      "title": "Water Lilies (Nymphéas)",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q28094131-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q28094131/676db41d33a5/preview.webp",
+      "image_sha256": "7f6c1185234efbbf0f9b20c4274b68932fe4dac48efbfd09211eb7ec518f86a5",
+      "annotation_file": "works/monet-q28094131.json"
+    },
+    {
+      "artwork_id": "wang-wei-fusheng",
+      "title": "伏生授经图卷",
+      "artists": [
+        "王维"
+      ],
+      "image_id": "wang-wei-fusheng-img-0089",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/tang-expansion/wang-wei-fusheng-img-0089/preview.webp",
+      "image_sha256": "17926527ba68f0cf29f8e711cc91ee6e22f763db1ebdbe8c60bb1a9de61795f3",
+      "annotation_file": "works/wang-wei-fusheng.json"
+    },
+    {
+      "artwork_id": "munch-mm-m-00426",
+      "title": "Runaway Horse in Street",
+      "artists": [
+        "爱德华·蒙克"
+      ],
+      "image_id": "munch-mm-m-00426-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/munch-mm-m-00426/8190d30518f3/preview.webp",
+      "image_sha256": "81fa418e1c0332d18a7615927623d0d4a5a6d162f1f12fe93bca468e567cb273",
+      "annotation_file": "works/munch-mm-m-00426.json"
+    },
+    {
+      "artwork_id": "gauguin-q20189713",
+      "title": "Still Life with Peonies",
+      "artists": [
+        "保罗·高更"
+      ],
+      "image_id": "gauguin-q20189713-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/gauguin-q20189713/16dcca205042/preview.webp",
+      "image_sha256": "567ba64b7a816551080b8e1e5531796ec16deabf1d2e4b6a3b25cf2f31379ef0",
+      "annotation_file": "works/gauguin-q20189713.json"
+    },
+    {
+      "artwork_id": "rembrandt-rrp-243",
+      "title": "未完成的男孩肖像",
+      "artists": [
+        "伦勃朗"
+      ],
+      "image_id": "rembrandt-rrp-243-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/rembrandt-rrp-243/e284e33794d9/preview.webp",
+      "image_sha256": "8ed72cf68f842f04b43620c34a9abdd572fba9089eda55bb743216fb847eaecb",
+      "annotation_file": "works/rembrandt-rrp-243.json"
+    },
+    {
+      "artwork_id": "rembrandt-rrp-262",
+      "title": "The Risen Christ",
+      "artists": [
+        "伦勃朗"
+      ],
+      "image_id": "rembrandt-rrp-262-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/rembrandt-rrp-262/e6a7d46014a4/preview.webp",
+      "image_sha256": "dafc97f76594bd45d123441453970cc6b9a87fd5d2319efddfce3f4041df3143",
+      "annotation_file": "works/rembrandt-rrp-262.json"
+    },
+    {
+      "artwork_id": "monet-list-95e67fbaeb39",
+      "title": "Man with a Pipe",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-list-95e67fbaeb39-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-list-95e67fbaeb39/9a5a5dbfd013/preview.webp",
+      "image_sha256": "27ff2ea5a8a47439b97648ba8381e8546eb1736d0f70943b62e4e56b71c9aca4",
+      "annotation_file": "works/monet-list-95e67fbaeb39.json"
+    },
+    {
+      "artwork_id": "mondrian-q102256163",
+      "title": "Bend in the Gein with poplars II",
+      "artists": [
+        "皮特·蒙德里安"
+      ],
+      "image_id": "mondrian-q102256163-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/mondrian-q102256163/ebcd65f66dc6/preview.webp",
+      "image_sha256": "c0719049fdcb5d10f9728d567bcacf1ee1da16c2f3008a927ddcc3950ca74ee4",
+      "annotation_file": "works/mondrian-q102256163.json"
+    },
+    {
+      "artwork_id": "watteau-gersaint",
+      "title": "热尔桑画店的招牌",
+      "artists": [
+        "让-安托万·华托"
+      ],
+      "image_id": "watteau-gersaint-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/foreign/watteau-gersaint/preview.webp",
+      "image_sha256": "4d1055d8540bc053346ed98a8b37a62070122cb4e4d464339f3cd5927b9e2ed7",
+      "annotation_file": "works/watteau-gersaint.json"
+    },
+    {
+      "artwork_id": "monet-q108479165",
+      "title": "Still Life with a Honeydew Melon",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q108479165-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q108479165/99adf0308776/preview.webp",
+      "image_sha256": "d2b7e1731309b815afdd2e047576a042d6f3c86a767a3f598f7c0f1c49f4bd9f",
+      "annotation_file": "works/monet-q108479165.json"
+    },
+    {
+      "artwork_id": "monet-q50818695",
+      "title": "The Sunken Road in the Cliff at Varangeville",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q50818695-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q50818695/ad9bde1da82d/preview.webp",
+      "image_sha256": "1e8c53a3741b8d79a8753a3e4bfa8ae3c0da25cded82172f829b9f6d2ca3036f",
+      "annotation_file": "works/monet-q50818695.json"
+    },
+    {
+      "artwork_id": "manet-q20188681",
+      "title": "A King Charles Spaniel",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q20188681-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q20188681/6d062a70f0fc/preview.webp",
+      "image_sha256": "2f4140235c0db7021faf5b4ebb662ad144ed2dea34b29f2cef880c9727d1add2",
+      "annotation_file": "works/manet-q20188681.json"
+    },
+    {
+      "artwork_id": "cm26-liu-songnian-936",
+      "title": "罗汉图轴（罗汉与蛮王）",
+      "artists": [
+        "刘松年"
+      ],
+      "image_id": "cm26-liu-songnian-936-v01",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/chinese-masters-20261126/cm26-liu-songnian-936-v01/350f86f9df82/preview.webp",
+      "image_sha256": "1efb20f3c28136ca64dcd3a0b5291b2e3569f323885cd265ec55e234a6dcc423",
+      "annotation_file": "works/cm26-liu-songnian-936.json"
+    },
+    {
+      "artwork_id": "van-gogh-q127100811",
+      "title": "Weaver",
+      "artists": [
+        "文森特·梵高"
+      ],
+      "image_id": "van-gogh-q127100811-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/van-gogh-q127100811/5c46f7945e9f/preview.webp",
+      "image_sha256": "b951a265c925316b0441e756786acf2545a99339d60efcc6c886157ab7530428",
+      "annotation_file": "works/van-gogh-q127100811.json"
+    },
+    {
+      "artwork_id": "rembrandt-rrp-221",
+      "title": "An Old Man in an Armchair",
+      "artists": [
+        "伦勃朗"
+      ],
+      "image_id": "rembrandt-rrp-221-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/rembrandt-rrp-221/a1a27beb60db/preview.webp",
+      "image_sha256": "a76881a88481dccc449cc843059acf2d1a256dbdb4c9154e6068abc18960a037",
+      "annotation_file": "works/rembrandt-rrp-221.json"
+    },
+    {
+      "artwork_id": "rembrandt-q123786559",
+      "title": "扬·威廉斯·范德普吕姆肖像",
+      "artists": [
+        "伦勃朗"
+      ],
+      "image_id": "rembrandt-q123786559-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/rembrandt-q123786559/5b0042330089/preview.webp",
+      "image_sha256": "5b7aba33b5d0432d6926f65db8b8d1f1d66b9a1665f0f135c896c4c65de29a68",
+      "annotation_file": "works/rembrandt-q123786559.json"
+    },
+    {
+      "artwork_id": "mondrian-q102257571",
+      "title": "Composition with color planes and gray lines 3",
+      "artists": [
+        "皮特·蒙德里安"
+      ],
+      "image_id": "mondrian-q102257571-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/mondrian-q102257571/fdc378991bce/preview.webp",
+      "image_sha256": "90e52ff6d2cb89ea02dbcee4f6929c77f3e3b4bb277f2673575b72813db0134b",
+      "annotation_file": "works/mondrian-q102257571.json"
+    },
+    {
+      "artwork_id": "manet-q2860945",
+      "title": "阿让特伊",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q2860945-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q2860945/201979dd1d31/preview.webp",
+      "image_sha256": "a98bd95a38b81b63e7c4ecb5d9a916760a5160ceea53c5155849d351142767ef",
+      "annotation_file": "works/manet-q2860945.json"
+    },
+    {
+      "artwork_id": "monet-q79790758",
+      "title": "The Pink Skiff",
+      "artists": [
+        "克洛德·莫奈"
+      ],
+      "image_id": "monet-q79790758-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/monet-q79790758/2c9b4926f9fb/preview.webp",
+      "image_sha256": "54920e92f4607382e533f9fbd0bdea0d605ecc395c90b17e6a4ba821e26f6ac0",
+      "annotation_file": "works/monet-q79790758.json"
+    },
+    {
+      "artwork_id": "manet-q18413225",
+      "title": "Jeune Fille dans les fleurs",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q18413225-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q18413225/d15581fdd0d6/preview.webp",
+      "image_sha256": "2e118daa3119e42b634d798e76326008efbbab038dae8e84f4d5858746a2f932",
+      "annotation_file": "works/manet-q18413225.json"
+    },
+    {
+      "artwork_id": "manet-q96098653",
+      "title": "La jetée de Boulogne",
+      "artists": [
+        "爱德华·马奈"
+      ],
+      "image_id": "manet-q96098653-whole",
+      "image_url": "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/media/masters/manet-q96098653/b54d5748a20e/preview.webp",
+      "image_sha256": "97d10455590ca90343927c2feed3764b150f371e9594aab86062ff70de289646",
+      "annotation_file": "works/manet-q96098653.json"
+    }
+  ]
+}

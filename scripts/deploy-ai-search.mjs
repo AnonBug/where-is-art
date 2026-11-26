@@ -1,4 +1,5 @@
-// Usage: node scripts/deploy-ai-search.mjs /absolute/path/to/.env.local
+// Usage: node scripts/deploy-ai-search.mjs [private environment file]
+// Omitting the file reuses the existing function's key without printing it.
 // Credentials are read only in memory. Temporary request files are private and removed.
 import { execFileSync, spawnSync } from "node:child_process";
 import { readFileSync, writeFileSync, mkdtempSync, rmSync } from "node:fs";
@@ -37,12 +38,9 @@ function cli(product, action, args = [], body) {
   return result.stdout.trim() ? JSON.parse(result.stdout) : {};
 }
 try {
-  if (!process.argv[2])
-    throw new Error("Provide the private DeepSeek environment file path");
-  key = parseEnv(
-    readFileSync(resolve(process.argv[2]), "utf8"),
-  ).DEEPSEEK_API_KEY;
-  if (!key) throw new Error("DEEPSEEK_API_KEY missing");
+  key = process.argv[2]
+    ? parseEnv(readFileSync(resolve(process.argv[2]), "utf8")).DEEPSEEK_API_KEY
+    : undefined;
   const identity = cli("sts", "GetCallerIdentity");
   const account = identity.AccountId;
   try {
@@ -125,6 +123,11 @@ try {
   const previous = exists
     ? cli("fc", "GetFunction", ["--functionName", name])
     : {};
+  key ||= previous.environmentVariables?.DEEPSEEK_API_KEY;
+  if (!key)
+    throw new Error(
+      "DEEPSEEK_API_KEY missing; provide a private environment file",
+    );
   const zip = join(directory, "function.zip");
   execFileSync(
     "zip",
@@ -136,6 +139,8 @@ try {
       "quota.mjs",
       "corpus.mjs",
       "retrieval.mjs",
+      "visual.mjs",
+      "data",
       "package.json",
       "package-lock.json",
       "node_modules",
@@ -156,6 +161,7 @@ try {
     role: role.Arn,
     code: { zipFile: readFileSync(zip).toString("base64") },
     environmentVariables: {
+      ...previous.environmentVariables,
       DEEPSEEK_API_KEY: key,
       QUOTA_BUCKET: "halfbvg-art-assets",
       QUOTA_HASH_SECRET:

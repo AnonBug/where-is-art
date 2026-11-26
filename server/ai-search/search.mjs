@@ -32,12 +32,18 @@ export function prepareCatalog(
         typeof p.text !== "string" ||
         !p.text.trim() ||
         p.text.length > 500 ||
-        !Array.isArray(p.sources)
+        !Array.isArray(p.sources) ||
+        (p.searchHints !== undefined &&
+          (typeof p.searchHints !== "string" || p.searchHints.length > 2000))
       )
         throw new Error("Invalid passage");
     documents.set(
       doc.id,
-      doc.passages.map((p) => ({ ...p, normalized: normalize(p.text) })),
+      doc.passages.map((p) => ({
+        ...p,
+        normalized: normalize(p.text),
+        retrievalText: normalize(`${p.text} ${p.searchHints || ""}`),
+      })),
     );
   }
   const artists = new Map(data.artists.map((a) => [a.id, a]));
@@ -86,17 +92,23 @@ export function prepareCatalog(
         searchText: `${text} ${passages.map((p) => p.normalized).join(" ")}`,
       };
     });
-  return { revision, artists: data.artists, topics: data.topics, works };
+  return {
+    revision,
+    artists: data.artists,
+    topics: data.topics,
+    works,
+    visualCount: corpus.visualCount || 0,
+  };
 }
 
 export function validatePlan(value, catalog) {
   if (!value || typeof value !== "object" || Array.isArray(value))
     throw new Error("Invalid plan");
-  const list = (key, maxLength = 80) => {
+  const list = (key, maxLength = 80, maxItems = 8) => {
     const v = value[key] ?? [];
     if (
       !Array.isArray(v) ||
-      v.length > 8 ||
+      v.length > maxItems ||
       v.some((x) => typeof x !== "string" || !x.trim() || x.length > maxLength)
     )
       throw new Error("Invalid filters");
@@ -107,7 +119,9 @@ export function validatePlan(value, catalog) {
     topicIds: list("topicIds"),
     places: list("places", 40),
     terms: list("terms", 40),
-    contentTerms: list("contentTerms", 40),
+    // Recall-only synonyms sometimes exceed the requested eight terms. Accept
+    // a bounded surplus without dropping any semantic evidence constraints.
+    contentTerms: list("contentTerms", 40, 16),
     evidenceGroups: value.evidenceGroups ?? [],
     unsupported: value.unsupported === true,
   };
@@ -118,7 +132,7 @@ export function validatePlan(value, catalog) {
       (group) =>
         !Array.isArray(group) ||
         !group.length ||
-        group.length > 6 ||
+        group.length > 12 ||
         group.some(
           (word) =>
             typeof word !== "string" || !word.trim() || word.length > 30,
@@ -256,7 +270,12 @@ export function plannerPrompt(catalog) {
 输出结构：{"artistIds":[],"topicIds":[],"places":[],"terms":[],"contentTerms":[],"evidenceGroups":[],"unsupported":false}。普通数组最多8项。
 画家和专题只能使用下列 ID；同字段内为或，不同字段之间为且。places仅用于用户明确要求的收藏城市、国家或机构，使用中文关键词；不得从画家国籍推断收藏地。
 terms仅用于用户明确指定的画名关键词。topicIds用于直接找已有专题，如“关于宙斯的画”“伦勃朗的自画像”。
-涉及情节、人物行为、创作经历、情绪、寓意、颜色或画面细节时，必须使用contentTerms，供全文检索描述、背景、故事和导读。提供2至8个有辨识度的词，可扩展同义词或译名。不要臆造画名、画家、地点、专题作为硬过滤，只有用户明示时才填artistIds/places/terms/topicIds。
+“风景、肖像、静物、抽象”是一般画面类型，不能因此限定到同名精选专题；只有用户明确说要该专题时才使用这些topicIds，否则按画面内容检索。
+涉及情节、人物行为、创作经历、情绪、寓意、颜色或画面细节时，必须使用contentTerms，供全文检索描述、背景、故事、导读和AI画面/情绪标注。提供2至8个有辨识度的词，可扩展同义词或译名。不要臆造画名、画家、地点、专题作为硬过滤，只有用户明示时才填artistIds/places/terms/topicIds。
+情绪和画面查询是支持的，即使只有部分作品具有视觉标注。孤独、孤寂、寂寥、疏离可作相关召回词，但独处不等于孤独、安静不等于悲伤。表达“感觉、像、氛围”的句子应提炼情绪与画面线索，不要求原文逐字出现用户的比喻；“像没人理解自己”可提炼为孤独、疏离，不是人物生平事实。
+“像没人理解自己的感觉” → contentTerms:["孤独","疏离","孤寂","寂寥"],evidenceGroups:[["孤独","疏离","孤寂","寂寥"]]。不要添加“理解/不理解”的事实词组。
+evidenceGroups只包含肯定要求，不要将“不要、没有、不含、但不”等否定要求变成必须命中的词组。否定限制交给下一步依据原始查询核对，不能用推测补齐。例：“孤独但不要惊恐” → contentTerms:["孤独","孤寂","寂寥","疏离"],evidenceGroups:[["孤独","孤寂","寂寥","疏离"]]；“一个人但很自在” → contentTerms:["独处","独自","一个人","自在","安适","闲适"],evidenceGroups:[["独处","独自","一个人","单独"],["自在","安适","闲适","悠闲","放松"]]。
+例：“没有人的寂寞风景” → topicIds:[],contentTerms:["寂寥","孤寂","空寂","海岸","树林","河湾","水渠"],evidenceGroups:[["寂寥","孤寂","空寂","孤独"],["风景","海岸","树林","河湾","水渠","水岸"]]。不要添加必须出现“无人”的词组，画面是否有人由下一步阅读完整画面描述核对。
 有contentTerms时，必须同时给出evidenceGroups：1至4组核心文字依据，每组1至6个同义词或同名异译，单词最多30字。组内为或、组间为且：选中的原文及题名必须命中每一组。至少保留用户点名的人物/实体、核心情节/行为，不能用相关但不同的词替代，不用宽泛的“作品”“画”“故事”。不要把未由用户提供的画家或作品名称作为必须命中的条件。语义关系另交给下一步核对。
 例：“宙斯化作金雨” → contentTerms:["金雨","黄金雨","金币","达那厄","达娜厄"],evidenceGroups:[["宙斯","朱庇特"],["金雨","黄金雨"],["化作","化为","化身","变成"]]；“为焚毁的城市哀伤的老人” → contentTerms:["焚毁","城市","哀伤","火光","耶利米"],evidenceGroups:[["焚毁","毁灭","燃烧"],["哀伤","悲伤","哀悼"]]；“把妻子谎称妹妹” → evidenceGroups:[["妻子","夫妻"],["妹妹"]]；“表现失去亲人的悲痛” → contentTerms:["丧亲","死亡","悲痛","哀悼","病逝"],evidenceGroups:[["丧亲","亲人","母亲","父亲","孩子","妻子","丈夫"],["死亡","去世","病逝","失去"],["悲痛","哀悼","悲伤","哀伤"]]（每组最多6词）。
 不支持创作年份区间过滤、实时展出、与作品检索无关的请求，返回unsupported:true。其余用户明确要求的限制不能省略。
