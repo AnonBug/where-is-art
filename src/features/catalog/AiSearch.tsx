@@ -192,8 +192,9 @@ export function AiSearch({
           </div>
         )}
         <p className={s.coverage}>
-          画面与情绪搜索试用中，目前覆盖 {visibleResult?.visualCount ?? 100}{" "}
-          幅标注作品。感受因人而异。
+          {visibleResult?.visualCount !== undefined
+            ? `画面与情绪搜索目前覆盖 ${visibleResult.visualCount} 幅标注作品。感受因人而异。`
+            : "画面与情绪搜索持续收录中，搜索后显示当前标注覆盖数量。感受因人而异。"}
         </p>
       </div>
       <div className={s.results} aria-busy={busy}>

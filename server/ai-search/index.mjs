@@ -10,6 +10,7 @@ import { reserveQuota } from "./quota.mjs";
 import { createHash } from "node:crypto";
 import { CORPUS_FILE, createSearchCorpus } from "./corpus.mjs";
 import { addVisualAnnotations } from "./visual.mjs";
+import { createVisualLoader } from "./visual-source.mjs";
 import {
   retrieveCandidates,
   reviewMessages,
@@ -18,7 +19,6 @@ import {
 
 const ROOT =
   "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/content/";
-const catalogs = new Map();
 
 async function getJson(url) {
   const response = await fetch(url, {
@@ -31,38 +31,73 @@ async function getJson(url) {
     });
   return response.json();
 }
-async function loadCatalog(revision, visual = false) {
-  if (!revision) revision = (await getJson(`${ROOT}current.json`)).revision;
-  if (!/^[a-f0-9]{20}$/.test(revision)) throw new Error("Invalid revision");
-  const cacheKey = `${revision}:${visual}`;
-  if (catalogs.has(cacheKey)) return catalogs.get(cacheKey);
-  const data = await getJson(`${ROOT}releases/${revision}/catalog-index.json`);
-  if (data.detailBase !== `artwork-details/${revision}/`)
-    throw new Error("Revision mismatch");
-  let corpus;
-  try {
-    corpus = await getJson(`${ROOT}releases/${revision}/${CORPUS_FILE}`);
-  } catch (error) {
-    if (error.status !== 404) throw error;
-    // Older immutable releases can still be searched after a front-end refresh.
-    const full = await getJson(`${ROOT}releases/${revision}/catalog.json`);
-    const digest = createHash("sha256")
-      .update("art-atlas-content-v1\n")
-      .update(JSON.stringify(full))
-      .digest("hex")
-      .slice(0, 20);
-    if (digest !== revision) throw new Error("Revision mismatch");
-    corpus = createSearchCorpus(full, revision);
+export function createCatalogLoader({
+  fetchJson = getJson,
+  loadVisual = createVisualLoader(),
+} = {}) {
+  const catalogs = new Map(),
+    bases = new Map(),
+    pending = new Map();
+  async function loadBase(revision) {
+    if (bases.has(revision)) return bases.get(revision);
+    if (pending.has(revision)) return pending.get(revision);
+    const task = (async () => {
+      const data = await fetchJson(
+        `${ROOT}releases/${revision}/catalog-index.json`,
+      );
+      if (data.detailBase !== `artwork-details/${revision}/`)
+        throw new Error("Revision mismatch");
+      let corpus;
+      try {
+        corpus = await fetchJson(`${ROOT}releases/${revision}/${CORPUS_FILE}`);
+      } catch (error) {
+        if (error.status !== 404) throw error;
+        const full = await fetchJson(
+          `${ROOT}releases/${revision}/catalog.json`,
+        );
+        const digest = createHash("sha256")
+          .update("art-atlas-content-v1\n")
+          .update(JSON.stringify(full))
+          .digest("hex")
+          .slice(0, 20);
+        if (digest !== revision) throw new Error("Revision mismatch");
+        corpus = createSearchCorpus(full, revision);
+      }
+      if (bases.size >= 3) bases.delete(bases.keys().next().value);
+      bases.set(revision, { data, corpus });
+      return { data, corpus };
+    })();
+    pending.set(revision, task);
+    try {
+      return await task;
+    } finally {
+      pending.delete(revision);
+    }
   }
-  const catalog = prepareCatalog(
-    data,
-    revision,
-    visual ? addVisualAnnotations(data, corpus) : corpus,
-  );
-  if (catalogs.size >= 3) catalogs.delete(catalogs.keys().next().value);
-  catalogs.set(cacheKey, catalog);
-  return catalog;
+  return async function loadCatalog(revision, visual = false) {
+    if (!revision) revision = (await fetchJson(`${ROOT}current.json`)).revision;
+    if (!/^[a-f0-9]{20}$/.test(revision)) throw new Error("Invalid revision");
+    // Always check the remote visual TTL before reusing a prepared catalog.
+    const snapshot = visual ? await loadVisual() : null;
+    const cacheKey = `${revision}:${snapshot?.revision || "none"}`;
+    if (catalogs.has(cacheKey))
+      return {
+        ...catalogs.get(cacheKey),
+        visualStale: snapshot?.stale || false,
+      };
+    const { data, corpus } = await loadBase(revision);
+    const catalog = prepareCatalog(
+      data,
+      revision,
+      snapshot ? addVisualAnnotations(data, corpus, snapshot) : corpus,
+    );
+    catalog.visualRevision = snapshot?.revision || "none";
+    if (catalogs.size >= 3) catalogs.delete(catalogs.keys().next().value);
+    catalogs.set(cacheKey, catalog);
+    return { ...catalog, visualStale: snapshot?.stale || false };
+  };
 }
+const loadCatalog = createCatalogLoader();
 async function askModel(messages, maxTokens) {
   if (!process.env.DEEPSEEK_API_KEY) throw new Error("Model unavailable");
   const response = await fetch("https://api.deepseek.com/chat/completions", {
@@ -208,19 +243,33 @@ export function createHandler({
         input.visualAnnotations === true
           ? await getCatalog(input.revision, true)
           : await getCatalog(input.revision);
+      const visualMeta =
+        input.visualAnnotations === true
+          ? {
+              visualCount: catalog.visualCount || 0,
+              visualRevision: catalog.visualRevision || "none",
+              visualStale: catalog.visualStale || false,
+            }
+          : {};
+      const freshnessNote = catalog.visualStale
+        ? catalog.visualCount
+          ? " 视觉标注更新暂时不可用，当前使用最近一次成功读取的版本。"
+          : " 视觉标注暂时无法读取，本次仅检索原有作品资料。"
+        : "";
       const fallback = (message) =>
         reply(200, {
           ...keywordSearch(catalog, query),
           revision: catalog.revision,
           mode: "keyword",
           visualCount: catalog.visualCount || 0,
-          message,
+          ...visualMeta,
+          message: message + freshnessNote,
         });
       if (input.mode === "keyword")
         return fallback(
           "按关键词匹配画名、馆藏和已收录的作品文字与标注，未进行 AI 语义核对",
         );
-      const cacheKey = `${catalog.revision}:${input.visualAnnotations === true}:${normalize(query)}`;
+      const cacheKey = `${catalog.revision}:${input.visualAnnotations === true}:${catalog.visualRevision || "none"}:${Boolean(catalog.visualStale)}:${normalize(query)}`;
       const cached = cache.get(cacheKey);
       if (cached && now() - cached.time < 3600_000)
         return reply(200, { ...cached.result, cached: true });
@@ -290,6 +339,11 @@ export function createHandler({
             : "依据站内已收录作品匹配，收藏地点不代表实时展出",
         };
       if (cache.size >= 256) cache.delete(cache.keys().next().value);
+      result = {
+        ...result,
+        ...visualMeta,
+        message: result.message + freshnessNote,
+      };
       cache.set(cacheKey, { time: now(), result });
       return reply(200, result);
     } catch {

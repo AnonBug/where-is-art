@@ -30,7 +30,9 @@
     "content:prepare": "npm run content:build && node scripts/publish-content.mjs --prepare",
     "content:publish": "npm run content:build && node scripts/publish-content.mjs --publish",
     "content:check:remote": "node scripts/publish-content.mjs --verify",
-    "content:check:app": "node scripts/check-app-content.mjs"
+    "content:check:app": "node scripts/check-app-content.mjs",
+    "annotations:prepare": "node scripts/publish-visual-annotations.mjs",
+    "annotations:publish": "node scripts/publish-visual-annotations.mjs --publish"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

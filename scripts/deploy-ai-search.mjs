@@ -140,7 +140,7 @@ try {
       "corpus.mjs",
       "retrieval.mjs",
       "visual.mjs",
-      "data",
+      "visual-source.mjs",
       "package.json",
       "package-lock.json",
       "node_modules",

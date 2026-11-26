@@ -1,10 +1,33 @@
 import { describe, it, expect, vi } from "vitest";
-import {
-  addVisualAnnotations,
-  visualAnnotations,
-  visualManifest,
-  VISUAL_SOURCE,
-} from "./visual.mjs";
+import { addVisualAnnotations as addSnapshot } from "./visual.mjs";
+import { batchEntries } from "./visual-source.mjs";
+import { readFileSync } from "node:fs";
+const VISUAL_SOURCE =
+  "https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/annotations/visual-semantics/53c20b880021864a89b7-39322359699354/";
+const visualAnnotations = JSON.parse(
+  readFileSync(
+    new URL(
+      "../../tests/fixtures/visual-search/annotations.json",
+      import.meta.url,
+    ),
+  ),
+);
+const visualManifest = JSON.parse(
+  readFileSync(
+    new URL(
+      "../../tests/fixtures/visual-search/manifest.json",
+      import.meta.url,
+    ),
+  ),
+);
+const addVisualAnnotations = (data, corpus, annotations = visualAnnotations) =>
+  addSnapshot(data, corpus, {
+    entries: batchEntries(
+      annotations,
+      visualManifest,
+      VISUAL_SOURCE + "manifest.json",
+    ),
+  });
 import { prepareCatalog, validatePlan } from "./search.mjs";
 import { retrieveCandidates, reviewedResults } from "./retrieval.mjs";
 import { createHandler } from "./index.mjs";

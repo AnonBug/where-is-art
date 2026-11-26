@@ -30,6 +30,27 @@ afterEach(() => {
 });
 
 describe("AI search", () => {
+  it("shows live annotation coverage rather than a hardcoded sample count", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(
+        async () =>
+          new Response(JSON.stringify({ ...reply, visualCount: 293 })),
+      ),
+    );
+    render(
+      <AiSearch
+        data={data}
+        revision={revision}
+        onSelect={vi.fn()}
+        endpoint="https://search.example"
+      />,
+    );
+    expect(screen.getByText(/搜索后显示当前标注覆盖数量/)).toBeTruthy();
+    expect(screen.queryByText(/覆盖 100 幅/)).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "AI 搜索" }));
+    expect(await screen.findByText(/覆盖 293 幅标注作品/)).toBeTruthy();
+  });
   it("renders visual evidence with the annotation's scope and original image link", async () => {
     const text = "孤独：空旷滩面只有一个很小的人影。";
     vi.stubGlobal(

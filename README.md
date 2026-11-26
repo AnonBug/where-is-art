@@ -347,11 +347,24 @@ npm run preview
 
 请求示例：`{"query":"有孤独感的画作","revision":"f037e97c404b757e47c4","mode":"ai","visualAnnotations":true}`。网页自动传入当前目录版本；不传 `revision` 时读取线上 `current.json`。接口只返回最多 30 个真实作品 ID、匹配依据和总数，不提供通用聊天或实时展出。关键词模式 `mode: "keyword"` 不调用模型。不发送 `visualAnnotations:true` 的旧客户端继续使用原有文字证据，避免新证据类型影响已打开的旧页面。
 
-2026-11-26 加入 100 幅作品的 AI 视觉标注试用。来源是[用户提供的标注合集](https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/annotations/visual-semantics/53c20b880021864a89b7-39322359699354/annotations.json)及同目录 `manifest.json`，原始快照保存在 `server/ai-search/data/`，不改原作品介绍与 OSS 内容入口。函数加载目录时按作品 ID、全图 ID 和带版本的媒体目录匹配；图片被替换或作品不在该版本时跳过标注。响应 `visualCount` 表示本次目录实际可用的视觉标注数量，当前线上目录可用 100 幅。
+视觉标注由 OSS 的[统一清单](https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/annotations/visual-semantics/current.json)管理，函数从清单中的各批 `manifest.json`、`annotations.json` 读取数据，不再打包标注副本。首批 100 幅和拉斐尔 193 幅整图标注共 293 幅；缺图和仅参考图记录不作为全图视觉证据。最初的 100 幅快照仅留在 `tests/fixtures/visual-search/` 作回归测试，不进入函数部署包。
 
-检索使用画面描述、情绪依据、氛围及 800 条自然语言示例；示例只帮助找候选，不作为结果证据。近义词扩展覆盖孤独/寂寞/孤寂等表达，独处与孤独分开处理。先按文字与证据组召回最多 20 幅，再由现有 DeepSeek 模型核对完整查询，包括排除条件与情绪比喻。无需新增向量数据库或另一家模型服务，每次查询仍最多两次模型调用。情绪强度不当作置信度或跨作品的客观分数。
+搜索实例在请求时最多每 60 秒检查一次清单；首次请求直接读取。清单更新后验证版本摘要、各批 SHA-256 与字段结构，合并后整批切换；同一作品 ID 以后列批次为准。准备好的检索目录和查询结果缓存都包含标注版本，已有作品新增标注也会生效，不需要更新作品目录版本或部署代码。读取失败时使用该实例上次成功读取的版本并提示；冷启动还没有有效版本时，仅搜索原有作品资料并提示。网络故障恢复后重试。
 
-结果区将 `visual_description`、`visual_emotion` 显示为「AI 画面标注」「AI 情绪标注」，并链接原始标注和对应画面。情绪是可能的观看感受，不能当作馆方史实、画家创作动机或人物真实心理。界面提示当前 100 幅的覆盖范围；未标注作品仍可通过已有资料搜索，但不能保证按未记载的画面细节找出。验证方法和查询样例见 [视觉搜索验证](docs/visual-search-validation.md)。
+函数仍按作品 ID、全图 ID 和媒体目录匹配网页正在使用的作品目录；图片被替换或作品尚未进入该目录时跳过标注。响应 `visualCount` 是该目录实际可用的标注数量，`visualRevision` 是清单版本，`visualStale` 表示本次使用旧标注或暂时没有可用标注。页面覆盖数量来自实际响应。
+
+后续新增标注：先上传完整批次（合集、清单与逐幅文件），再注册清单。发布命令读取 OSS 并校验所有活动批次，备份旧入口、更新统一清单并回读验证；按单一发布者流程使用，发现校验期间清单变化会拒绝覆盖，重跑即可合并。新批次上传到任意目录不会自动注册，须把此命令作为标注发布流程的最后一步：
+
+```sh
+npm run annotations:prepare -- 'https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/annotations/visual-semantics/批次目录/manifest.json'
+npm run annotations:publish -- 'https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/where-is-art/annotations/visual-semantics/批次目录/manifest.json'
+```
+
+后续搜索会在一分钟缓存到期后的下一次请求自动获取新增标注，无需重新部署函数或网页。注册器支持本次随机抽样清单，以及包含 `annotated_whole`、`missing_image`、`reference_only` 状态的画家批次清单。格式细节与回退方式见 [OSS 标注发布说明](docs/visual-annotation-publishing.md)。
+
+检索使用画面描述、情绪依据、氛围及各批自然语言示例；示例只帮助找候选，不作为结果证据。近义词扩展覆盖孤独/寂寞/孤寂等表达，独处与孤独分开处理。先按文字与证据组召回最多 20 幅，再由现有 DeepSeek 模型核对完整查询，包括排除条件与情绪比喻。无需新增向量数据库或另一家模型服务，每次查询仍最多两次模型调用。情绪强度不当作置信度或跨作品的客观分数。
+
+结果区将 `visual_description`、`visual_emotion` 显示为「AI 画面标注」「AI 情绪标注」，并链接原始标注和对应画面。情绪是可能的观看感受，不能当作馆方史实、画家创作动机或人物真实心理。界面显示实际标注覆盖数量；未标注作品仍可通过已有资料搜索，但不能保证按未记载的画面细节找出。验证方法和查询样例见 [视觉搜索验证](docs/visual-search-validation.md)。
 
 故事检索覆盖已发布的 `description`、`guide.background`、`guide.story` 和 `guide.looking`。`search-text-v1.json` 按内容版本保存原文段落及参考来源；不纳入 contextual 草稿、备注或模型补写的故事。先由模型扩展检索词，再按短语及词语稀有度排序，从有文字的作品中取最多 20 幅候选、每幅最多两个相关段落，交给第二次模型请求核对全部语义限制。AI 只选择候选编号与证据编号，响应中的引文、字段名和来源由服务端复制原文，不能由模型编造。网页可展开原文并打开参考来源。语义结果的 `total` 是本次核对后匹配的数量，不代表完整图库的穷尽统计；候选截断时会提示补充条件。
 
